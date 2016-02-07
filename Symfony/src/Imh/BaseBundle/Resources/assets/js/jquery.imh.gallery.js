@@ -106,13 +106,13 @@ $(function() {
 
         window.addEventListener(orientationEvent, function() {
 
-            var wWidth      = $(this).width(),
-                wHeight     = $(this).height(),
-                ratio       = wWidth/wHeight;
-
             orientation = getOrientation(ratio);
 
-            var _destroy = function() {
+            var wWidth      = $(this).width(),
+                wHeight     = $(this).height(),
+                ratio       = wWidth/wHeight,
+
+            _destroy = function() {
                 sly.destroy();
                 $container.isotope('destroy');
             },
