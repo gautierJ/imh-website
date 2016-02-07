@@ -1,0 +1,24 @@
+<section class="top-page">
+    <a href="#" title="Aller en haut">
+        <img class="arrow empty" src="{{ asset('bundles/imhbase/images/empty.gif') }}" alt="" />
+        <img class="circle empty" src="{{ asset('bundles/imhbase/images/empty.gif') }}" alt="" />
+    </a>
+</section>
+
+<section id="comment">
+    <div class="box">
+        {% include 'SonataCommentBundle:Thread:async.html.twig' with {'id': media|sonata_urlsafeid } %}
+
+
+
+        <section>
+
+        </section>
+
+        <footer>
+            <a href="#" title="Plus de commentaires">Plus de commentaires</a>
+        </footer>
+    </div>
+
+
+</section>

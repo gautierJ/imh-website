@@ -1,0 +1,9 @@
+sonata_media_gallery_index:
+    path:     /
+    defaults: { _controller: ApplicationSonataMediaBundle:Gallery:index }
+
+sonata_media_gallery_view:
+    path:     /view/{id}
+    defaults: { _controller: ApplicationSonataMediaBundle:Gallery:view }
+    requirements:
+        id:  .*

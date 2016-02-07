@@ -1,0 +1,16 @@
+<aside id="sidebar-main">
+    <div class="block-triangle"></div>
+    {% block menu_navigation %}
+        <div class="navigation-menu">
+            <span>{{ 'sonata.media.gallery.menu.title_1'|trans }}</span>
+            {{ knp_menu_render('main', {'currentAsLink':false}) }}
+        </div>
+    {% endblock %}
+
+    {% block menu_gallery %}
+        <div class="navigation-menu gallery-menu">
+            <span>{{ 'sonata.media.gallery.menu.title_2'|trans }}</span>
+            {{ knp_menu_render('gallery', {'currentAsLink':false, 'allow_safe_labels': true}) }}
+        </div>
+    {% endblock %}
+</aside>

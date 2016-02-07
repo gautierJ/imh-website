@@ -1,0 +1,82 @@
+{% extends 'ImhBaseBundle::layout.html.twig' %}
+
+{% block title %}{{ 'imh.base.repertoire.page_title'|trans }}{% endblock%}
+
+{% block stylesheets %}
+    {{ parent() }}
+
+    {% stylesheets output='assets/compiled/css/repertoire.css' filter='compass'
+    '@ImhBaseBundle/Resources/assets/sass/repertoire.scss'
+    %}
+    <link rel="stylesheet" href="{{ asset_url }}" type="text/css"/>
+    {% endstylesheets %}
+{% endblock %}
+
+{% block main %}
+    <img id="bkg-image" class="lazy" data-original="{{ asset('bundles/imhbase/images/strings.jpg') }}" />
+    <noscript><img src="{{ asset('bundles/imhbase/images/strings.jpg') }}" alt="Harp strings"></noscript>
+
+    <div class="main-content-wrapper">
+        <section class="middle shadows">
+            <nav class="lang">
+                {% include 'ImhBaseBundle:Menu:lang.html.twig' %}
+            </nav>
+            <h2 class="title">{{ 'imh.base.repertoire.concert.title'|trans }}</h2>
+            <ul class="concert-wrapper clearfix">
+                {% for i in range(0,3) -%}
+                    <li>
+                        <img src="{{ asset('bundles/imhbase/images/'~('imh.base.repertoire.concert.'~i~'.name')|trans~'.jpg') }}" alt="{{ ('imh.base.repertoire.concert.'~i~'.composer')|trans }}"><!--
+                        --><div class="concert">
+                            <p>{{ ('imh.base.repertoire.concert.'~i~'.composer')|trans }}</p>
+                            <p>{{ ('imh.base.repertoire.concert.'~i~'.life')|trans }}</p>
+                            <p class="work">{{ ('imh.base.repertoire.concert.'~i~'.work')|trans }}</p>
+                            <p class="arrangement">{{ ('imh.base.repertoire.concert.'~i~'.arrangement')|trans }}</p>
+                            <div class="duration">
+                                {{ ('imh.base.repertoire.concert.duration')|trans }}{{ ('imh.base.repertoire.concert.'~i~'.duration')|trans }}
+                            </div>
+                        </div>
+                    </li>
+                {%- endfor %}
+            </ul>
+            {#<h2 class="title">{{ 'imh.base.repertoire.recital.title'|trans }}</h2>#}
+        </section>
+    </div>
+{% endblock %}
+
+{% block sidebar %}
+    <aside id="sidebar-main">
+        {% block menu_navigation %}
+            <div class="navigation-menu">
+                {{ knp_menu_render('main', {'currentAsLink':false}) }}
+            </div>
+        {% endblock %}
+
+        {% block menu_gallery %}{% endblock %}
+    </aside>
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+
+    {% javascripts output='assets/compiled/js/biography.js'
+    '@ImhBaseBundle/Resources/assets/js/jquery.imh.scrollmove.js'
+    %}
+    <script type="text/javascript" src="{{ asset_url }}"></script>
+    {% endjavascripts %}
+
+    <script type="text/javascript">
+        $(function () {
+            'use strict';
+
+            /* Lazy Load */
+            $('img.lazy').show().lazyload({
+                effect : 'fadeIn',
+                placeholder: '../../../bundles/imhbase/images/empty.gif'
+            });
+
+            if (!Modernizr.touchevents) {
+                $('.navigation-menu').scrollMove(); // Menu plugin
+            }
+        });
+    </script>
+{% endblock %}

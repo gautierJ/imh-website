@@ -1,0 +1,121 @@
+imh:
+  base:
+    menu:
+      home:           'Accueil'
+      biography:      'Biographie'
+      repertoire:     'Répertoire'
+      gallery:        'Galerie'
+      video:          'Vidéos'
+      contact:        'Contact'
+
+    menu_lang:
+      0:
+        text:         'Français'
+        locale:       'fr'
+        t_locale:     'fr'
+        title:        'Traduction française'
+      1:
+        text:         'Anglais'
+        locale:       'en'
+        t_locale:     'en'
+        title:        'Traduction anglaise'
+      2:
+        text:         'Russe'
+        locale:       'ru'
+        t_locale:     'ru'
+        title:        'Traduction russe'
+
+    home:
+      page_title:     'Accueil | Ionella Marinutsa'
+
+    biography:
+      page_title:     'Biographie | Ionella Marinutsa'
+      main_text: >
+        <p>Née en 1992 à Saint-Pétersbourg, Ionella Marinutsa est baignée dès sa tendre enfance dans les milieux artistiques et musicaux de la capitale culturelle russe. Fille de peintre, Ionella manifeste très tôt un vif intérêt et une sensibilité raffinée pour l'art pictural et la musique. Elle joue ses premières notes de piano à l'âge de cinq ans avant d'intégrer, l'année suivante, la classe de harpe au lycée des Beaux-Arts du nom de Okhtinski de Saint-Pétersbourg. Concours municipaux et internationaux jalonnent ses années d'apprentissage, tout comme les concerts annuels de harpe organisés par les conservatoires de la ville.</p>
+        <p>En 2003 et 2006, la jeune harpiste se présente avec succès aux festivals de harpe de Moscou "La harpe en Russie - hier, aujourd'hui et demain" et "Les notes enchanteresses de la Harpe".</p>
+        <p>Ionella poursuit ses études au Conservatoire M.S. Moussorgski de Saint-Pétersbourg dans la classe du professeur I.A. Donskaya-Tishchenko. Toute jeune diplômée, elle remporte en 2010 le Premier Prix du Concours International "Symphonie" à Volgograd (Russie) et se voit décerner, la même année, le Prix Spécial du Jury "pour la meilleure interprétation de la musique hongroise" lors du II Concours International des harpistes à Szeged (Hongrie). A 20 ans, elle est lauréate du Concours International des harpistes Ksenia Erdely à Saint-Pétersbourg.</p>
+        <p>La jeune musicienne assiste à plusieurs Masterclass auprès de harpistes de renommée, tels que Florence Sitruk (Suisse), Isabelle Moretti (France), Emmanuel Ceysson (Franсe), Germaine Lorenzini (France) et Marie-Pierre Langlamet (Allemagne).</p>
+        <p>En 2012, Ionella est admise à l'Ecole Normale de Musique de Paris A. Cortot, où elle prolonge et approfondit ses compétences musicales sous la direction de son professeur de harpe Isabelle Perrin. Titulaire du Diplôme Supérieur d'Exécution, la jeune musicienne décide de poursuivre ses études au Pôle Supérieur d'Enseignement Artistique de Paris en intégrant la classe de Gislaine Petit-Volta.</p>
+        <p>En avril 2015, Ionella remporte avec succès le Premier Prix d'un des plus anciens concours de musique, le Concours International Léopold Bellan (France) dans la catégorie "Harpe".</p>
+        <p>Parallèlement à ses études, la jeune harpiste mène une activité de concertiste qui la propulse au devant des scènes de Russie et d'Europe. Sélectionnée en 2011 en tant que soliste de la "Maison de la Musique de Saint-Pétersbourg" dans le cadre de l'organisation "Les Musiciens de Russie", Ionella entreprend régulièrement des tournées à travers son pays. Elle joue, en récital ou accompagnée d'un orchestre symphonique, à la Philarmonie de Togliatti, de Samara, de Ekaterinbourg, ou à la "Maison de la Musique de Saint-Pétersbourg". En vertu de son expérience et son talent de soliste, Ionella est sollicitée à plusieurs reprises pour des concerts. En 2014 et 2015, elle donne deux récitals à la salle Cortot à Paris et accompagne à la harpe le chœur d'Enfants Caecilie, dirigé par Alice Korovitch (Paris).
+        Au printemps 2015, la jeune artiste de 22 ans est invitée à jouer un récital de harpe dans le cadre du Festival International de Musique d'Albe (Italie), qui la couronne d'un vif succès auprès du public et de la presse.</p>
+
+      prizes:
+        title:        'Prix aux Concours Internationaux'
+        list: >
+          <li>2015 – <strong>1<sup>er</sup> Prix</strong> au 89<sup>ème</sup> Concours International Léopold Bellan (Paris).</li>
+          <li>2012 – <strong>5<sup>ème</sup> Prix</strong> au Concours International de Harpe « Crystal Key » (Saint-Pétersbourg).</li>
+          <li>2010 – <strong>Prix Spécial</strong> pour la meilleure interprétation de la musique Hongroise au 2<sup>ème</sup> Concours International des Harpistes en Hongrie (Szeged).</li>
+          <li>2010 – <strong>1<sup>er</sup> Prix</strong> au 7<sup>ème</sup> Concours International « Symphony » pour Jeunes Musiciens (Volgograd).</li>
+          <li>2005 – <strong>3<sup>ème</sup> Prix</strong> au Concours ouvert aux Jeunes Violonistes, Violoncellistes et Harpistes (Saint-Pétersbourg).</li>
+          <li>2003 – <strong>2<sup>ème</sup> Prix</strong> au Concours Métropolitain pour Jeunes Harpistes (Saint-Pétersbourg).</li>
+
+      download:       'Télécharger la biographie'
+
+    repertoire:
+      page_title:     'Répertoire | Ionella Marinutsa'
+      concert:
+        title:        'Concerts (avec harpe et orchestre)'
+        duration:     'Durée : '
+        0:
+          composer:   'Georg Friedrich HAENDEL'
+          life:       '(1685-1759)'
+          name:       'haendel'
+          work:       'CONCERTO POUR HARPE, B-DUR, OP. 4, NO. 6 HWV 294'
+          duration:   'environ 14 minutes'
+          arrangement: 'Avec orchestre à cordes'
+        1:
+          composer:   'Claude DEBUSSY'
+          life:       '(1862-1918)'
+          name:       'debussy'
+          work:       'DANSES SACRÉE ET PROFANE'
+          duration:   'environ 10 minutes'
+          arrangement: 'Avec orchestre à cordes'
+        2:
+          composer:   'Reinhold GLIERE'
+          life:       '(1874-1956)'
+          name:       'gliere'
+          work:       'CONCERTO POUR HARPE, OP. 34'
+          duration:   'environ 25 minutes'
+          arrangement: 'Avec orchestre symphonique'
+        3:
+          composer:   'Maurice RAVEL'
+          life:       '(1875-1937)'
+          name:       'ravel'
+          work:       'INTRODUCTION ET ALLEGRO'
+          duration:   'environ 12 minutes'
+          arrangement: 'Avec quatuor à cordes, flûte et clarinette'
+      recital:
+        title:        'Récitals'
+
+    contact:
+      page_title:     'Contact | Ionella Marinutsa'
+      answer:         'Laissez-moi un message, je serai ravie de vous répondre !'
+      lastname:       'Nom * :'
+      firstname:      'Prénom * :'
+      email:          'Email * :'
+      subject:        'Sujet * :'
+      message:        'Message * :'
+      send:           'Envoyer'
+      mandatory:      'Champs obligatoires'
+
+    footer:
+      site:           'Ionella-marinutsa.com'
+      language:       'Langues'
+      schools:
+        title:        'Ecoles'
+        enmp:
+          text:       'Ecole Normale de Musique de Paris'
+          title:      "Site web de l'Ecole Normale de Musique de Paris"
+        crsr:
+          text:       'Conservatoire Russe Serge Rachmaninoff'
+          title:      'Site web du Conservatoire Russe Serge Rachmaninoff'
+      follow:
+        title:        'Me suivre'
+        fb:           'Facebook'
+        tw:           'Twitter'
+        g+:           'Google +'
+      engine:
+        title:        'Propulsé par'
+        framework:    'Symfony Framework'
+      copyright:      'Ionella Marinutsa. Tous droits réservés.'

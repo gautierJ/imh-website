@@ -1,0 +1,35 @@
+parameters:
+    imh_base.menu_builder.class: Imh\BaseBundle\Menu\MenuBuilder
+    imh_base.menu.main.class: Knp\Menu\MenuItem
+    imh_base.form.type.contact.class: Imh\BaseBundle\Form\Type\ContactFormType
+    imh_base.twig.trans_extension.class: Imh\BaseBundle\Twig\Extension\TransLengthExtension
+
+services:
+    imh_base.menu_builder:
+        class: %imh_base.menu_builder.class%
+        arguments: ["@knp_menu.factory", "@templating"] #[@service_id, "plain_value", %parameter%]
+        calls:
+           - [ setContainer, [ @service_container ] ]
+
+    imh_base.menu.main:
+        class: %imh_base.menu.main.class%
+        factory_service: imh_base.menu_builder # the menu builder service above
+        factory_method: createMainMenu # the method name to generate the menu
+        arguments: ["@request"]
+        scope: request # needed as we have the request as a dependency here
+        tags:
+            - { name: knp_menu.menu, alias: main } # The alias is what is used to retrieve the menu
+
+    imh_base.menu.gallery:
+        class: %imh_base.menu.main.class%
+        factory_service: imh_base.menu_builder
+        factory_method: createGalleryMenu
+        arguments: ["@request"]
+        scope: request
+        tags:
+            - { name: knp_menu.menu, alias: gallery }
+
+    imh_base.form.type.contact:
+        class: %imh_base.form.type.contact.class%
+        tags:
+            - { name: form.type, alias: imh_base_contact }

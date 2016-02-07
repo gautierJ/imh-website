@@ -1,0 +1,24 @@
+parameters:
+    application_sonata_media.custom_class: Application\Sonata\MediaBundle\Provider\CustomYouTubeProvider
+
+services:
+    sonata.media.resizer.fixedDimensions:
+        class: Application\Sonata\MediaBundle\Resizer\FixedDimensionsResizer
+        arguments: [@sonata.media.adapter.image.gd, 'outbound', @sonata.media.metadata.proxy]
+
+    sonata.media.provider.custom:
+          class: %application_sonata_media.custom_class%
+          tags:
+              - { name: sonata.media.provider }
+          arguments:
+              - sonata.media.provider.custom
+              - @sonata.media.filesystem.local
+              - @sonata.media.cdn.server
+              - @sonata.media.generator.default
+              - @sonata.media.thumbnail.format
+              - @sonata.media.buzz.browser
+              - @sonata.media.metadata.proxy
+
+          calls:
+              - [setTemplates, [{helper_thumbnail: "SonataMediaBundle:Provider:thumbnail.html.twig", helper_view: "ApplicationSonataMediaBundle:Provider:view_customYoutube.html.twig" }]]
+              - [setResizer, [@sonata.media.resizer.fixedDimensions]]

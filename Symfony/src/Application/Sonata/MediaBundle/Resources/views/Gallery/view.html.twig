@@ -1,0 +1,88 @@
+{% extends '::full-layout.html.twig' %}
+
+{% block title %}{{ 'sonata.media.gallery.page_title'|trans }}{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+
+    {% stylesheets output='assets/compiled/css/gallery.css' filter='compass'
+    '@ApplicationSonataMediaBundle/Resources/assets/sass/gallery.scss'
+    %}
+    <link rel="stylesheet" href="{{ asset_url }}" type="text/css"/>
+    {% endstylesheets %}
+{% endblock %}
+
+{% block navigation %}{% endblock %}
+
+{% block main %}
+    <div id="gallery-wrapper" class="loading">
+        <div id="frame">
+            <ul id="sonata-media-gallery-media-list" class="clearfix slidee">
+               {% spaceless %}
+               {% for galleryHasMedia in gallery.GalleryHasMedias %}
+                   <li class="sonata-media-gallery-media-item">
+                        <a class="sonata-media-gallery-media-item-link" href="#">  {# {{ url('sonata_media_view', {'id': galleryHasMedia.media|sonata_urlsafeid }) }} #}
+                            {% thumbnail galleryHasMedia.media, gallery.defaultFormat with {'class': 'media-object'} %}
+                            {#<div class="media-bar clearfix">
+                                {% if galleryHasMedia.media.description != "" %}<p class="media-description">{{ galleryHasMedia.media.description|raw }}</p>{% endif %}
+                            </div>#}
+                            <div class="media-btns">
+                                {#<span class="zoom">
+                                    <img src="{{ asset('bundles/imhbase/images/empty.gif') }}" alt="" />
+                                </span>#}<span class="close">
+                                        <img src="{{ asset('bundles/imhbase/images/empty.gif') }}" alt="" />
+                                    </span>
+                            </div>
+                        </a>
+                    </li>
+                {% endfor %}
+                {% endspaceless %}
+            </ul>
+        </div>
+        <div id="trigger">
+            <a href="#" title="More pictures : {{ gallery.name }}">
+                <img src="{{ asset('bundles/imhbase/images/empty.gif') }}" alt="" />
+            </a>
+        </div>
+        <div id="scrollbar">
+            <div class="handle">
+                <div class="mousearea"></div>
+            </div>
+        </div>
+    </div>
+    <img id="spinner" src="{{ asset('bundles/imhbase/images/tail-spin_white.svg') }}" alt="loading">
+{% endblock %}
+
+{% block footer %}{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+
+    <script src="{{ asset('/assets/lib/sly/sly.min.js') }}"></script>
+    <script src="{{ asset('/assets/lib/infinite-scroll/jquery.infinite-scroll.js') }}"></script>
+    {#<script src="{{ asset('/assets/lib/infinite-scroll/behaviors/local.js') }}"></script>#}
+    <script src="{{ asset('/assets/lib/infinite-scroll/behaviors/manual-trigger.js') }}"></script>
+
+    <script src="{{ asset('/assets/lib/isotope/imagesloaded.pkgd.min.js') }}"></script>
+    <script src="{{ asset('/assets/lib/isotope/isotope.pkgd.min.js') }}"></script>
+    <script src="{{ asset('/assets/lib/isotope/masonry-horizontal.js') }}"></script>
+    <script src="{{ asset('/assets/lib/isotope/packery.pkgd.min.js') }}"></script>
+    <script src="{{ asset('/assets/lib/isotope/smartresize.js') }}"></script>
+
+    {% javascripts output='assets/compiled/js/gallery.js'
+        '@ImhBaseBundle/Resources/assets/js/jquery.imh.gallery.js'
+        '@ImhBaseBundle/Resources/assets/js/jquery.imh.shape.js'
+    %}
+    <script type="text/javascript" src="{{ asset_url }}"></script>
+    {% endjavascripts %}
+
+    <script type="text/javascript">
+        $(function () {
+            'use strict';
+
+            var triangle = $('.block-triangle');
+            triangle.shape(window);
+            $(window).on('resize', function () { triangle.shape(this); });
+        });
+    </script>
+{% endblock %}

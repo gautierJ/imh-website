@@ -1,0 +1,171 @@
+{% extends 'ImhBaseBundle::layout.html.twig' %}
+
+{% block title %}{{ 'imh.base.biography.page_title'|trans }}{% endblock%}
+
+{% block stylesheets %}
+    {{ parent() }}
+
+    <link rel="stylesheet" href="{{ asset('/assets/lib/owl-carousel/owl.carousel.css') }}" type="text/css" />
+
+    {% stylesheets output='assets/compiled/css/biography.css' filter='compass'
+    '@ImhBaseBundle/Resources/assets/sass/biography.scss'
+    %}
+    <link rel="stylesheet" href="{{ asset_url }}" type="text/css"/>
+    {% endstylesheets %}
+{% endblock %}
+
+{% block main %}
+    <img id="bkg-image" class="lazy" data-original="{{ asset('bundles/imhbase/images/strings.jpg') }}" />
+    <noscript><img src="{{ asset('bundles/imhbase/images/strings.jpg') }}" alt="Harp strings"></noscript>
+
+    <div class="main-content-wrapper">
+        <section class="middle shadows">
+            <nav class="lang">
+                {% include 'ImhBaseBundle:Menu:lang.html.twig' %}
+            </nav>
+            <div class="biography-content clearfix">
+                <div class="carousel">
+                    <div class="item"><img class="lazyOwl" data-src="{{ asset('bundles/imhbase/images/bio_03.jpg') }}" alt="" /></div>
+                    <div class="item"><img class="lazyOwl" data-src="{{ asset('bundles/imhbase/images/bio_02.jpg') }}" alt="" /></div>
+                    <div class="item"><img class="lazyOwl" data-src="{{ asset('bundles/imhbase/images/bio_01.jpg') }}" alt="" /></div>
+                </div>
+                <div class="scrollbar">
+                    <div class="handle">
+                        <div class="mousearea"></div>
+                    </div>
+                </div>
+                <div class="text">
+                    <div class="frame">
+                        <div class="slidee">
+                            {{ 'imh.base.biography.main_text'|trans|raw }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="prizes closed">
+                <h2 class="slider-title">{{ 'imh.base.biography.prizes.title'|trans }}</h2>
+                <ul class="slider-content">
+                    {{ 'imh.base.biography.prizes.list'|trans|raw }}
+                </ul>
+            </div>
+            <div class="download">
+                {#<a class="bio" href="{{ path('sonata_media_download', {'id': media|sonata_urlsafeid }) }}"><img class="empty" src="{{ asset('bundles/imhbase/images/empty.gif') }}" alt="" /></a>#}
+                <a href="" class="bio" title="{{ 'imh.base.biography.download'|trans }}"><img class="empty" src="{{ asset('bundles/imhbase/images/empty.gif') }}" alt="" /></a>
+            </div>
+        </section>
+    </div>
+{% endblock %}
+
+{% block sidebar %}
+    <aside id="sidebar-main">
+        {% block menu_navigation %}
+            <div class="navigation-menu">
+                {{ knp_menu_render('main', {'currentAsLink':false}) }}
+            </div>
+        {% endblock %}
+
+        {% block menu_gallery %}{% endblock %}
+    </aside>
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+
+    <script src="{{ asset('/assets/lib/owl-carousel/jquery.owl.carousel.js') }}"></script>
+    <script src="{{ asset('/assets/lib/sly/sly.min.js') }}"></script>
+
+    {% javascripts output='assets/compiled/js/biography.js'
+    '@ImhBaseBundle/Resources/assets/js/jquery.imh.scrollmove.js'
+    %}
+    <script type="text/javascript" src="{{ asset_url }}"></script>
+    {% endjavascripts %}
+
+    <script type="text/javascript">
+        $(function () {
+            'use strict';
+
+            var $carousel    = $(".carousel"),
+                $text        = $(".text"),
+                $scrollbar   = $(".scrollbar"),
+                $prizes      = $(".prizes"),
+                $sT          = $(".slider-title"),
+                $sC          = $(".slider-content"),
+                cssReady     = 'ready',
+                isVisible    = false,
+                sly;
+
+            /* Lazy Load */
+            $('img.lazy').show().lazyload({
+                effect : 'fadeIn',
+                placeholder: '../../../bundles/imhbase/images/empty.gif'
+            });
+
+            if (!Modernizr.touchevents) {
+                $('.navigation-menu').scrollMove(); // Menu plugin
+            } else {
+
+            }
+
+            var h = $sC.height();
+            $sC.css('max-height', 0);
+
+            $sT.on('click', function (e) {
+                $prizes.toggleClass('closed');
+                $prizes.hasClass('closed') ? $sC.css('max-height', 0) : $sC.css('max-height', h);
+                e.preventDefault();
+            });
+
+            var recalcHeight = function(isVisible) {
+                var $item = $('.item'),
+                    $elts = $('.loading, .text, .scrollbar');
+                $elts.height($item.height());
+                if(!isVisible) $elts.css('visibility', 'visible');
+            };
+
+            $(window).on('load', function () {
+                sly = new Sly($text, {
+                    scrollBy: 200,
+                    speed: 2000,
+                    easing: 'easeOutQuad',
+                    scrollBar: $scrollbar,
+                    //dynamicHandle: 1,
+                    dragHandle: 1,
+                    clickBar: 1,
+                    mouseDragging: 1,
+                    touchDragging: 1,
+                    releaseSwing: 1
+                });
+
+                $carousel.owlCarousel({
+                    slideSpeed: 300,
+                    paginationSpeed: 400,
+                    singleItem: true,
+                    lazyLoad: true,
+                    lazyFollow: false,
+                    afterLazyLoad: function(event) {
+                        recalcHeight(isVisible);
+                        $carousel.addClass(cssReady);
+                        var ctrls = $(".owl-controls");
+                        ctrls.css('marginLeft', -(ctrls.width()/2) + 'px');
+                        sly.init();
+                    }
+                });
+            });
+
+            var delay = (function(){
+                var timer = 0;
+                return function(callback, ms){
+                    clearTimeout (timer);
+                    timer = setTimeout(callback, ms);
+                };
+            })();
+
+            $(window).on('resize', function () {
+                delay(function(){
+                    recalcHeight(isVisible = true);
+                    sly.reload();
+                }, 500);
+            });
+        });
+    </script>
+{% endblock %}

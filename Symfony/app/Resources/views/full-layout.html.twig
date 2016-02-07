@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html xmlns:og="http://ogp.me/ns#"
+      xmlns:fb="http://ogp.me/ns/fb#" lang="{{ app.request.locale }}">
+    <head>
+	    <meta name="google-site-verification" content="DyjxY61nVz2XJcFkNef-caFR5ONIJMVPf4oocyZ2CYM">
+        <meta charset="utf-8" />
+        <meta name="description" content="Official site with biography, prizes, repertoire, galleries, and videos.">
+        <meta name="keywords" content="ionella marinutsa, harp, harpist, classical music, concert, classical concert, harp concert, conservatory, conservatory serge rachmaninoff, national school of music of paris">
+        <meta http-equiv="content-language" content="fr,en,ru">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+
+        {% block facebookOpenGraphTags %}{% endblock %}
+
+        <link rel="icon" type="image/x-icon" href="{{ asset('bundles/imhbase/images/favicon.ico') }}" />
+
+        <title>{% block title %}{{ ('imh.base.home.page_title')|trans }}{% endblock %}</title>
+
+        <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+
+        <!--[if gte IE 9]>
+        <style type="text/css">
+            .gradient { filter: none; }
+        </style>
+        <![endif]-->
+
+        {% block stylesheets %}
+            <link rel="stylesheet" href="{{ asset('/assets/lib/initializr/css/normalize.css') }}" type="text/css" />
+
+            {% stylesheets output='assets/compiled/css/main.css' filter='compass, cssrewrite'
+            '@ImhBaseBundle/Resources/assets/sass/media_queries.scss'
+            '@ImhBaseBundle/Resources/assets/sass/fonts.scss'
+            '@ImhBaseBundle/Resources/assets/sass/global.scss'
+            '@ImhBaseBundle/Resources/assets/sass/sidebar.scss'
+            '@ImhBaseBundle/Resources/assets/sass/navigation.scss'
+            '@ImhBaseBundle/Resources/assets/sass/lang.scss'
+            '@ImhBaseBundle/Resources/assets/sass/footer.scss'
+            %}
+            <link rel="stylesheet" href="{{ asset_url }}" type="text/css"/>
+            {% endstylesheets %}
+        {% endblock %}
+    </head>
+
+    {% block body %}
+        <body>
+            {% block facebookSDK %}{% endblock %}
+
+            {% block flashes %}{% endblock %}
+
+            <div id="wrapper">
+                <header id="header">
+                    {% block navigation %}
+                        {% include 'ImhBaseBundle:Menu:navigation.html.twig' %}
+                    {% endblock %}
+                </header>
+
+                <section id="content">
+                    {% block main %}{% endblock %}
+                </section>
+
+                {% block sidebar %}
+                    {% include 'ImhBaseBundle:Part:sidebar.html.twig' %}
+                {% endblock %}
+
+                {% block footer %}
+                    {% include 'ImhBaseBundle:Part:footer.html.twig' %}
+                {% endblock %}
+            </div>
+
+            {% block javascripts %}
+                <script src="{{ asset('/assets/lib/analytics/ga.js') }}"></script>
+                <script src="{{ asset('/assets/lib/jQuery/jquery.min.js') }}"></script>
+                <script src="{{ asset('/assets/lib/jQuery/jquery.easing.1.3.js') }}"></script>
+                <script src="{{ asset('/assets/lib/lazyload/jquery.lazyload.min.js') }}"></script>
+                <script src="{{ asset('/assets/lib/modernizr/modernizr-custom.js') }}"></script>
+
+                {#FOSJsRoutingBundle#}
+                <script src="{{ asset('bundles/fosjsrouting/js/router.js') }}"></script>
+                <script src="{{ path('fos_js_routing_js', {"callback": "fos.Router.setData"}) }}"></script>
+
+                {% javascripts output='assets/compiled/js/fontspy.js'
+                '@ImhBaseBundle/Resources/assets/js/jquery.fontspy.js'
+                %}
+
+                {#'@ImhBaseBundle/Resources/assets/js/_jquery.ajax.js'#}
+                <script type="text/javascript" src="{{ asset_url }}"></script>
+                {% endjavascripts %}
+            {% endblock %}
+        </body>
+    {% endblock %}
+</html>

@@ -1,0 +1,375 @@
+@import "../../../../../../Imh/BaseBundle/Resources/assets/sass/variables";
+@import "../../../../../../Imh/BaseBundle/Resources/assets/sass/mixins";
+
+body {
+  background-color: $color-black;
+}
+
+#wrapper {
+  height: 100%;
+
+  #header {
+    background: url("/bundles/imhbase/images/points.png") repeat scroll 2px -2px;
+    height: 100px;
+    width: 100%;
+    margin-bottom: 1.5%;
+  }
+
+  #sidebar-main {
+    position: fixed;
+    right: 0;
+    left: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, .95);
+    padding: 0 70px;
+
+    .block-triangle {
+      @include opacity(.95);
+      border-bottom-color: $color-black;
+
+      &+.navigation-menu {
+        margin-top: 130px;
+      }
+    }
+
+    .gallery-menu li.first, .navigation-menu > span {
+      color: $color-grey-medium;
+    }
+
+    .navigation-menu {
+      position: static;
+      display: block;
+
+      &.gallery-menu {
+        margin-top: 40px;
+
+        > ul {
+          border: none;
+          margin: 0;
+        }
+      }
+
+      ul {
+        background: $color-black;
+        border: 1px solid $color-grey-dark;
+
+        li {
+          a {
+            color: $color-grey-light;
+            white-space: nowrap;
+          }
+
+          &:hover {
+            &:after {
+              background-color: $color-white;
+              border-color: $color-white;
+            }
+          }
+        }
+
+        li.current {
+          a, span {
+            background: $color-black;
+            border-color: $color-grey-dark;
+            color: $color-grey-light;
+          }
+
+          &:after {
+            background-color: $color-white;
+            border-color: $color-white;
+            box-shadow: none;
+          }
+        }
+
+        li:first-child {
+          margin-top: 17px;
+        }
+
+        li:last-child {
+          margin-bottom: 17px;
+        }
+
+        li:after {
+          border-color: $color-grey-darker;
+        }
+      }
+    }
+  }
+}
+
+#content {
+  padding: 0 1.5%;
+  width: 97%;
+  height: calc(98.5% - 100px);
+  height: -webkit-calc(98.5% - 100px);
+  position: relative;
+
+  #gallery-wrapper {
+    @include transition(opacity, 0.3s, linear, 0.5s);
+    position: relative;
+    height: 93%;
+
+    #frame {
+      height: 100%;
+    }
+
+    #trigger {
+      position: absolute;
+      right: 18%;
+      top: 0;
+      width: 30px;
+      height: 100%;
+      z-index: 9999;
+
+      a {
+        position: relative;
+        top: 50%;
+        margin-top: -31px;
+        display: block;
+
+        img {
+          background: url("/bundles/imhbase/images/sprite.png") no-repeat scroll 0 -241px;
+          height: 62px;
+          width: 30px;
+          display: block;
+        }
+        &:hover {
+          img {
+            background-position: -30px -241px;
+          }
+        }
+      }
+    }
+
+    #scrollbar {
+      position: absolute;
+      left: 0;
+      bottom: -15px;
+      width: 70%;
+      height: 5px;
+      background: $color-grey-darker;
+
+      .handle {
+        @include transition(background, 0.3s, ease-in, 0s);
+        cursor: pointer;
+        background: $color-grey-dark;
+        width: 100px; /* overriden if dynamicHandle: 1 */
+        height: 100%;
+
+        &:hover {
+          background: $color-grey-medium;
+        }
+
+        .mousearea {
+          position: absolute;
+          top: -12px;
+          left: 0;
+          height: 25px;
+          width: 100%;
+        }
+      }
+    }
+    &.loading {
+      @include transition(opacity, 0.2s, linear, 0s);
+      @include opacity(0);
+
+      &+#spinner {
+        @include transition(opacity, 0.2s, linear, 0.3s);
+        @include opacity(1);
+      }
+    }
+  }
+
+  #sonata-media-gallery-media-list { // isotope container
+    height: 100%; // height is mandatory (either px or %)
+
+    .sonata-media-gallery-media-item {
+      height: 50%;
+
+        //      &.newElts {
+        //        @include opacity(1);
+        //        @include transition(opacity, 2s, linear, 0s);
+        //      }
+
+      .sonata-media-gallery-media-item-link {
+        display: block;
+        overflow: hidden;
+        position: relative;
+        height: 100%;
+
+        .media-object {
+          @include transition(all, 1s, ease, 0s);
+          display: block;
+          height: 100%;
+          width: auto;
+        }
+
+        .media-btns {
+          display: none;
+        }
+
+        /*.media-bar {
+          background-color: rgb(0, 0, 0);
+          background-color: rgba(0, 0, 0, 0.8);
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          width: 100%;
+          height: 70px;
+
+          @include transform(translate(0, 100%));
+          -webkit-transition:-webkit-transform .3s cubic-bezier(0,.92,.08,1) .2s;
+          -moz-transition:   -moz-transform .3s cubic-bezier(0,.92,.08,1) .2s;
+          -ms-transition:    -ms-transform .3s cubic-bezier(0,.92,.08,1) .2s;
+          transition:        transform .3s cubic-bezier(0,.92,.08,1) .2s;
+
+          .media-description {
+            float: left;
+            color: $color-white;
+            margin: 0 0 0 10px;
+            height: 37px;
+            line-height: 37px;
+            font-weight: bold;
+          }
+        }*/
+
+        &:hover {
+          .media-object {
+            @include transform(scale(1.1));
+          }
+
+          .media-bar {
+            @include transform(translate(0, 0%));
+          }
+        }
+      }
+
+      &.expanded {
+        height: 100%;
+        width: auto;
+        background: none;
+
+        .sonata-media-gallery-media-item-link {
+          cursor: default;
+
+          .media-object {
+            transition: none;
+            height: 100%;
+            width: auto;
+          }
+
+          .media-btns {
+            display: block;
+            position: absolute;
+            top: 0;
+            right: 0;
+            background-color: rgb(0, 0, 0);
+            background-color: rgba(0, 0, 0, 0.5);
+            @include transition(opacity, 0.2s, linear, 0s);
+            @include opacity(0);
+
+            > span {
+              display: inline-block;
+              cursor: pointer;
+              text-align: center;
+              height: 20px;
+              line-height: 23px;
+              width: 20px;
+              vertical-align: middle;
+              padding: 8px;
+              @include transition(background-color, 0.2s, ease-in, 0s);
+
+              &.zoom {
+                img {
+                  background: url("/bundles/imhbase/images/sprite.png") no-repeat scroll -96px -131px;
+                  height: 20px;
+                  width: 19px;
+                }
+              }
+
+              &.close {
+                img {
+                  background: url("/bundles/imhbase/images/sprite.png") no-repeat scroll -115px -131px;
+                  height: 12px;
+                  width: 12px;
+                }
+              }
+            }
+          }
+
+          &:hover {
+            .media-object {
+              @include transform(none);
+            }
+
+            .media-btns {
+              @include opacity(1);
+
+              > span {
+                //              border-width: 1px;
+                //              border-style: solid;
+                //              border-color: rgb(0, 0, 0);
+                //              border-color: rgba(0, 0, 0, 0.8);
+
+                &:hover {
+                  background-color: rgb(0, 0, 0);
+                  background-color: rgba(0, 0, 0, 0.8);
+                }
+              }
+            }
+            /*.media-bar {
+              @include transform(translate(0, 0%));
+            }*/
+          }
+        }
+      }
+    }
+  }
+
+  #spinner, #infscr-loading {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -22px 0 0 -22px;
+
+    img {
+      display: block;
+    }
+  }
+  #spinner {
+    top: 47%;
+    @include transition(opacity, 0.2s, linear, 0s);
+    @include opacity(0);
+  }
+}
+
+#footer {
+  background: none;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.95);
+  position: fixed;
+  bottom: 0;
+  display: none;
+  border-top: none;
+
+  .footer-column {
+    border-left-color: $color-grey-darker;
+
+    ul li a, ul li span {
+      color: $color-grey-dark;
+      &:hover {
+        color: $color-grey-medium;
+      }
+    }
+
+    ul li.current a, ul li.current span {
+      background-color: $color-grey-darker;
+      color: $color-grey-medium;
+      border-color: $color-grey-dark;
+    }
+  }
+
+  p {
+    color: $color-grey-dark;
+  }
+}

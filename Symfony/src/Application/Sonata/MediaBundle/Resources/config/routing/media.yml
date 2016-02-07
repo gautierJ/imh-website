@@ -1,0 +1,11 @@
+sonata_media_view:
+    path:     /view/{id}/{format}
+    defaults: { _controller: ApplicationSonataMediaBundle:Media:view, id: 1, format: reference }
+    requirements:
+        id:  \d+
+
+sonata_media_download:
+    path:     /download/{id}/{format}
+    defaults: { _controller: SonataMediaBundle:Media:download, format: reference }
+    requirements:
+        id:  .*

@@ -1,0 +1,206 @@
+{% extends 'ImhBaseBundle::layout.html.twig' %}
+
+{% block contentSecurityPolicyTag %}
+    <meta http-equiv="Content-Security-Policy" content="default-src https://www.youtube.com/player_api; child-src 'none'; object-src 'none'">
+{% endblock %}
+
+{% block facebookOpenGraphTags %}
+    {#<meta property="og:title" content="{{ media.name }}">#}
+    <meta property="og:site_name" content="IMH - Ionella Marinutsa / Harpist">
+    <meta property="og:url" content="http://www.youtube.com/watch?v=h8EVGzL7PSI">
+    <meta property="og:description" content="" />
+    <meta property="og:image" content="https://i.ytimg.com/vi/h8EVGzL7PSI/hqdefault.jpg">
+
+    <meta property="og:type" content="video">
+    <meta property="og:video" content="http://www.youtube.com/v/h8EVGzL7PSI?version=3&amp;autohide=1">
+    <meta property="og:video:secure_url" content="https://www.youtube.com/v/h8EVGzL7PSI?version=3&amp;autohide=1">
+    <meta property="og:video:width" content="640" />
+    <meta property="og:video:height" content="360" />
+    <meta property="og:video:type" content="application/x-shockwave-flash" />
+
+    <meta property="fb:app_id" content="761674913903863" />
+{% endblock %}
+
+{% block title %}{{ 'sonata.media.video.page_title'|trans }} ~ {{ media.name }}{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+
+    {% stylesheets output='assets/compiled/css/video.css' filter='compass'
+    '@ApplicationSonataMediaBundle/Resources/assets/sass/video_player.scss'
+    '@ImhBaseBundle/Resources/assets/sass/jquery.nouislider.scss'
+    '@ApplicationSonataCommentBundle/Resources/assets/sass/comments.scss'
+    %}
+    <link rel="stylesheet" href="{{ asset_url }}" type="text/css"/>
+    {% endstylesheets %}
+{% endblock %}
+
+{% block facebookSDK %}
+    <div id="fb-root"></div>
+    <script type="text/javascript">
+        window.fbAsyncInit = function() {
+            FB.init({
+                appId   : '761674913903863',
+                xfbml   : true,
+                version : 'v2.2'
+            });
+        };
+
+        (function(d, s, id){
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) {return;}
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/fr_FR/sdk.js";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+{% endblock %}
+
+{% block main %}
+    <img id="bkg-image" class="lazy" data-original="{{ asset('bundles/imhbase/images/notes.jpg') }}" />
+    <noscript><img src="{{ asset('bundles/imhbase/images/notes.jpg') }}" alt="Score"></noscript>
+
+    <div class="main-content-wrapper">
+        <section class="middle shadows gradient">
+            <a class="bio" href="{{ path('sonata_media_download', {'id': media|sonata_urlsafeid }) }}"><img class="empty" src="{{ asset('bundles/imhbase/images/empty.gif') }}" alt="" />download media</a>
+
+            <nav class="lang">
+                {% include 'ImhBaseBundle:Menu:lang.html.twig' %}
+            </nav>
+
+            <div class="media-content clearfix">
+                <div class="media">
+                    {% media media, 'big' %}
+                    <div class="layer">
+                        <a href="#" title="{{ media.name }}">
+                            <img class="play empty" src="{{ asset('bundles/imhbase/images/empty.gif') }}" alt="" />
+                            <img class="media-image" src="{% path media, 'big' %}" />
+                        </a>
+                    </div>
+                    <div class="progress-bar-wrapper clearfix">
+                        <div class="progress-bar">
+                            <div class="buffer">
+                                <div class="advancement"></div>
+                            </div>
+                        </div>
+                        <span class="time">
+                            <span class="current">00:00 /</span>&nbsp;<span class="total">00:00</span>
+                        </span>
+                    </div>
+                </div>
+                {#<aside class="actions">
+                    <ul>
+                        <li class="display"><a href="#"><img class="empty" src="{{ asset('bundles/imhbase/images/empty.gif') }}" alt="" />{{ 'sonata.media.video.display'|trans }}</a></li>
+                        <li class="like"><a href="#"><img class="empty" src="{{ asset('bundles/imhbase/images/empty.gif') }}" alt="" />{{ 'sonata.media.video.like'|trans }}</a></li>
+                        <li class="download"><a href="#"><img class="empty" src="{{ asset('bundles/imhbase/images/empty.gif') }}" alt="" />{{ 'sonata.media.video.download'|trans }}</a></li>
+                    </ul>
+                </aside>#}
+            </div>
+        </section>
+
+        <section class="player-control-bar clearfix">
+            <div class="views">
+                <span class="nb">{{ count }}</span>
+                <span class="txt">{{ 'sonata.media.video.total_views'|trans|raw }}</span>
+            </div>
+            <div class="video-info">
+                {% if media.description != "" %}<h3 class="description">{{ media.description }}</h3>{% endif %}
+                <h2 class="name">{{ media.name }}</h2>
+            </div>
+            <nav class="controls">
+                <ul class="clearfix">
+                    <li class="play-pause">
+                        <a href="#" title=""><img class="bkg empty" src="{{ asset('bundles/imhbase/images/empty.gif') }}" alt="" />Play</a>
+                    </li>
+                    <li class="volume">
+                        <div class="wrap-level">
+                            <div class="level">
+                                <img src="{{ asset('bundles/imhbase/images/volume.png') }}" width="20" height="106" alt="Volume level" />
+                                <div class="slider"></div>
+                            </div>
+                        </div>
+                        <a href="#" title="Volume">
+                            <img class="bkg empty" src="{{ asset('bundles/imhbase/images/empty.gif') }}" alt="" />
+                            {{ 'sonata.media.video.volume'|trans }}
+                        </a>
+                    </li>
+                    <li class="fullscreen">
+                        <a href="#" title="Fullscreen">
+                            <img class="bkg empty" src="{{ asset('bundles/imhbase/images/empty.gif') }}" alt="" />
+                            {{ 'sonata.media.video.fullscreen'|trans }}
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="share">
+                {#<span class="txt">Partagez<br/> cette vidéo :</span>#}
+                <a class="twitter-share-button" href="https://twitter.com/share?url=https://www.youtube.com/embed/{{ providerRef }}&text={{ media.name }}"></a>
+                <span class="fb-like" data-href="https://www.youtube.com/embed/{{ providerRef }}" data-layout="button_count" data-action="like" data-show-faces="false" data-share="true"></span>
+            </div>
+        </section>
+
+        <nav id="media-gallery">
+            <div id="imageFlow">
+                <ul class="bank">
+                    {% include 'ApplicationSonataMediaBundle:Media:thumbnail_list.html.twig' %}
+                </ul>
+            </div>
+            <div class="scrollbar">
+                <a href="#" class="left" title="Previous">Prev.</a>
+                <a href="#" class="right" title="Next">Next</a>
+                <div class="bar">&nbsp;</div>
+            </div>
+        </nav>
+    </div>
+
+    {#{% include 'ApplicationSonataCommentBundle:Comment:view.html.twig' %}#}
+{% endblock %}
+
+{% block sidebar %}
+    <aside id="sidebar-main">
+        {% block menu_navigation %}
+            <div class="navigation-menu">
+                {{ knp_menu_render('main', {'currentAsLink':false}) }}
+            </div>
+        {% endblock %}
+
+        {% block menu_gallery %}{% endblock %}
+    </aside>
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+
+    {#<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5435ad1b0682d3b2" async="async"></script>#}
+
+    {% javascripts output='assets/compiled/js/video.js'
+    '@ImhBaseBundle/Resources/assets/js/imageFlow.js'
+    '@ImhBaseBundle/Resources/assets/js/screenfull.js'
+    '@ImhBaseBundle/Resources/assets/js/jquery.imh.scrollmove.js'
+    '@ImhBaseBundle/Resources/assets/js/jquery.nouislider.js'
+    '@ImhBaseBundle/Resources/assets/js/jquery.imh.player.js'
+    '@ImhBaseBundle/Resources/assets/js/twitter.js'
+    %}
+    <script type="text/javascript" src="{{ asset_url }}"></script>
+    {% endjavascripts %}
+
+    <script type="text/javascript">
+        $(function () {
+            'use strict';
+
+            /* Lazy Load */
+            $('img.lazy').show().lazyload({
+                effect : 'fadeIn',
+                placeholder: '../../../bundles/imhbase/images/empty.gif'
+            });
+
+            if (!Modernizr.touchevents) {
+                $('.navigation-menu').scrollMove(); // Menu plugin
+            }
+
+            //$('#' + contentSelector).contentHeightAdjust();
+        });
+    </script>
+{% endblock %}
+
+

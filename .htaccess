@@ -1,0 +1,19 @@
+SetEnv PHP_VER 5_4
+SetEnv REGISTER_GLOBALS 0
+
+SetEnv SHORT_OPEN_TAGS 0
+SetEnv SESSION_AUTOSTART 0
+SetEnv ZEND_OPTIMIZER 1
+
+# Désactivation des magic quotes
+SetEnv MAGIC_QUOTES 0
+SetEnv SESSION_AUTOSTART 0
+
+# Désactivation du paramètre GET 'PHPSESSID' rajouté par OVH
+SetEnv SESSION_USE_TRANS_SID 0
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^(.*)$ web/$1 [QSA,L]
+</IfModule>

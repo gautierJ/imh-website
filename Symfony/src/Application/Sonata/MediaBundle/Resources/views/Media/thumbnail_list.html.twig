@@ -1,0 +1,13 @@
+{% for thumb in options %}
+    <li {% if thumb.current is defined %} class="{{ thumb.current }}" {% endif %}>
+        <a href="{{ path('sonata_media_view', {'id': thumb.id}) }}" title="{{ thumb.title }}">
+            <img src="{{ thumb.src }}" alt="{{ thumb.title }}" width="{{ thumb.width }}" height="{{ thumb.height }}" />
+            <span class="duration">{{ thumb.duration }}</span>
+                <span class="legend">
+                    <span class="title">{{ thumb.jsonData.title }}</span>
+                    <span class="description">{{ thumb.jsonData.viewCount }} {{ 'sonata.media.video.views'|trans }}</span>
+                </span>
+            <span class="decoration"></span>
+        </a>
+    </li>
+{% endfor %}

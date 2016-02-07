@@ -1,0 +1,9 @@
+<ul>
+    {% set params = app.request.attributes.get('_route_params')|merge(app.request.query.all()) %}
+    {% for i in range(0,2) -%}
+        {% set langParams = params|merge({'_locale': ('imh.base.menu_lang.'~i~'.locale')|trans}) %}
+        <li {% if app.request.attributes.get('_locale') == ('imh.base.menu_lang.'~i~'.locale')|trans %}class="current"{% endif %}>
+            <a href="{{ path(app.request.attributes.get('_route'), langParams) }}" title="{{ ('imh.base.menu_lang.'~i~'.title')|trans }}">{{ ('imh.base.menu_lang.'~i~'.t_locale')|trans }}</a>
+        </li>
+    {%- endfor %}
+</ul>

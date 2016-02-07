@@ -1,0 +1,136 @@
+/* line 4, assetic_compasswPmENn.scss */
+#footer {
+  background: url("/bundles/imhbase/images/header-bg.png") repeat scroll 0 0;
+  min-height: 110px;
+  width: 100%;
+  border-top: 1px solid lightgrey;
+  color: #898989;
+  text-align: center;
+  padding-bottom: 20px;
+}
+/* line 13, assetic_compasswPmENn.scss */
+#footer .footer-column {
+  border-left: 1px dotted #dddddd;
+  display: inline-block;
+  padding: 0 40px 0 20px;
+  margin-top: 25px;
+  text-align: left;
+  vertical-align: top;
+  min-height: 100px;
+}
+/* line 22, assetic_compasswPmENn.scss */
+#footer .footer-column:first-child {
+  border: none;
+}
+/* line 26, assetic_compasswPmENn.scss */
+#footer .footer-column h3 {
+  font-weight: bold;
+  margin: 5px 0 15px;
+  font-size: 1.083em;
+}
+/* line 32, assetic_compasswPmENn.scss */
+#footer .footer-column ul {
+  list-style: square inside none;
+}
+/* line 35, assetic_compasswPmENn.scss */
+#footer .footer-column ul li {
+  margin-bottom: 4px;
+  white-space: nowrap;
+}
+/* line 39, assetic_compasswPmENn.scss */
+#footer .footer-column ul li a, #footer .footer-column ul li span {
+  color: #898989;
+  font-size: 0.917em;
+  font-family: Helvetica, Arial, sans-serif;
+  display: inline-block;
+  -webkit-transition: all 0.2s ease-in 0s;
+  -moz-transition: all 0.2s ease-in 0s;
+  -o-transition: all 0.2s ease-in 0s;
+  transition: all 0.2s ease-in 0s;
+}
+/* line 47, assetic_compasswPmENn.scss */
+#footer .footer-column ul li a:hover, #footer .footer-column ul li span:hover {
+  color: #3f3f3f;
+}
+/* line 53, assetic_compasswPmENn.scss */
+#footer .footer-column ul li.current {
+  list-style: none;
+}
+/* line 55, assetic_compasswPmENn.scss */
+#footer .footer-column ul li.current a, #footer .footer-column ul li.current span {
+  color: #3f3f3f;
+  background: white;
+  border: 1px solid lightgrey;
+  border-radius: 16px;
+  padding: 6px 10px;
+}
+/* line 67, assetic_compasswPmENn.scss */
+#footer .footer-column.site {
+  padding-right: 30px;
+}
+/* line 70, assetic_compasswPmENn.scss */
+#footer .footer-column.site ul {
+  width: 175px;
+}
+/* line 73, assetic_compasswPmENn.scss */
+#footer .footer-column.site ul li {
+  float: left;
+  width: 75px;
+  padding-right: 10px;
+}
+/* line 110, assetic_compasswPmENn.scss */
+#footer .footer-column.follow .fb, #footer .footer-column.follow .tw, #footer .footer-column.follow .gp {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 7px;
+}
+/* line 116, assetic_compasswPmENn.scss */
+#footer .footer-column.follow .fb img {
+  background: url("/bundles/imhbase/images/sprite.png") no-repeat scroll -8px -131px;
+  height: 16px;
+  width: 8px;
+}
+/* line 122, assetic_compasswPmENn.scss */
+#footer .footer-column.follow .fb:hover img {
+  background-position: 0 -131px;
+}
+/* line 128, assetic_compasswPmENn.scss */
+#footer .footer-column.follow .tw img {
+  background: url("/bundles/imhbase/images/sprite.png") no-repeat scroll -34px -131px;
+  height: 16px;
+  width: 18px;
+}
+/* line 134, assetic_compasswPmENn.scss */
+#footer .footer-column.follow .tw:hover img {
+  background-position: -16px -131px;
+}
+/* line 140, assetic_compasswPmENn.scss */
+#footer .footer-column.follow .gp img {
+  background: url("/bundles/imhbase/images/sprite.png") no-repeat scroll -74px -131px;
+  height: 18px;
+  width: 22px;
+}
+/* line 146, assetic_compasswPmENn.scss */
+#footer .footer-column.follow .gp:hover img {
+  background-position: -52px -131px;
+}
+/* line 155, assetic_compasswPmENn.scss */
+#footer .footer-column.powered a img {
+  background: url("/bundles/imhbase/images/sprite.png") no-repeat scroll -221px -131px;
+  width: 63px;
+  height: 61px;
+  display: block;
+}
+/* line 162, assetic_compasswPmENn.scss */
+#footer .footer-column.powered a:hover img {
+  background-position: -158px -131px;
+}
+/* line 170, assetic_compasswPmENn.scss */
+#footer p {
+  font-size: 0.917em;
+  margin: 20px 0 0;
+}
+/* line 174, assetic_compasswPmENn.scss */
+#footer p span {
+  font-size: 1.083em;
+}

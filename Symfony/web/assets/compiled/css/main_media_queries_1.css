@@ -1,0 +1,59 @@
+@media screen and (device-aspect-ratio: 16 / 9), screen and (device-aspect-ratio: 16 / 10) {
+  /* line 3, assetic_compassfxmjM4.scss */
+  .bkg-image {
+    right: -250px;
+  }
+}
+@media all and (orientation: portrait) {
+  /* line 11, assetic_compassfxmjM4.scss */
+  #home-content.makeAnimation .bkg-image-ctn {
+    width: 100%;
+  }
+  /* line 14, assetic_compassfxmjM4.scss */
+  #home-content.makeAnimation .block-myself {
+    display: none;
+  }
+}
+/* ----------- iPad 3 and 4 ----------- */
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+  /* line 28, assetic_compassfxmjM4.scss */
+  .navigation-menu {
+    left: -9999px;
+  }
+}
+/* Portrait */
+/* Landscape */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+  /* line 50, assetic_compassfxmjM4.scss */
+  #home-content .block-myself h1 {
+    font-size: 2em;
+  }
+  /* line 53, assetic_compassfxmjM4.scss */
+  #home-content .block-myself h2 {
+    font-size: 2em;
+  }
+  /* line 56, assetic_compassfxmjM4.scss */
+  #home-content .block-myself h3 {
+    font-size: 1.5em;
+  }
+}
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  /* line 70, assetic_compassfxmjM4.scss */
+  #home-content .block-myself .block-center {
+    margin-top: -60px;
+  }
+  /* line 73, assetic_compassfxmjM4.scss */
+  #home-content .block-myself h1 {
+    font-size: 2em;
+  }
+  /* line 76, assetic_compassfxmjM4.scss */
+  #home-content .block-myself h2 {
+    font-size: 2em;
+  }
+  /* line 79, assetic_compassfxmjM4.scss */
+  #home-content .block-myself h3 {
+    font-size: 1em;
+  }
+}

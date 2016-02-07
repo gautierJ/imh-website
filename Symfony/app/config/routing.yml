@@ -1,0 +1,78 @@
+imh_base:
+    resource: "@ImhBaseBundle/Resources/config/routing.yml"
+    prefix: /{_locale}
+    requirements:
+      _locale: en|fr|ru
+
+imh_base_homepage:
+    path: /
+    defaults: { _controller: ImhBaseBundle:Page:index }
+
+admin:
+    resource: '@SonataAdminBundle/Resources/config/routing/sonata_admin.xml'
+    prefix: /admin
+
+_sonata_admin:
+    resource: .
+    type: sonata_admin
+    prefix: /admin
+
+sonata_user:
+    resource: '@SonataUserBundle/Resources/config/routing/admin_security.xml'
+    prefix: /admin
+
+sonata_user_impersonating:
+    pattern: /
+    defaults: { _controller: SonataPageBundle:Page:catchAll }
+
+#gallery:
+#    resource: '@SonataMediaBundle/Resources/config/routing/gallery.xml'
+#    prefix: /media/gallery
+
+gallery:
+    resource: '@ApplicationSonataMediaBundle/Resources/config/routing/gallery.yml'
+    prefix: /{_locale}/media/gallery
+    requirements:
+      _locale: en|fr|ru
+
+#media:
+#    resource: '@SonataMediaBundle/Resources/config/routing/media.xml'
+#    prefix: /media
+
+media:
+    resource: '@ApplicationSonataMediaBundle/Resources/config/routing/media.yml'
+    prefix: /{_locale}/media
+    requirements:
+      _locale: en|fr|ru
+
+_liip_imagine:
+    resource: "@LiipImagineBundle/Resources/config/routing.xml"
+
+fos_comment_api:
+    type: rest
+    resource: "@FOSCommentBundle/Resources/config/routing.yml"
+    prefix: /api
+    defaults: { _format: html }
+
+fos_js_routing:
+    resource: "@FOSJsRoutingBundle/Resources/config/routing/routing.xml"
+
+fos_user_security:
+    resource: "@FOSUserBundle/Resources/config/routing/security.xml"
+
+fos_user_profile:
+    resource: "@FOSUserBundle/Resources/config/routing/profile.xml"
+    prefix: /profile
+
+fos_user_register:
+    resource: "@FOSUserBundle/Resources/config/routing/registration.xml"
+    prefix: /register
+
+fos_user_resetting:
+    resource: "@FOSUserBundle/Resources/config/routing/resetting.xml"
+    prefix: /resetting
+
+fos_user_change_password:
+    resource: "@FOSUserBundle/Resources/config/routing/change_password.xml"
+    prefix: /change-password
+

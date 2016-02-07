@@ -1,0 +1,37 @@
+{% extends 'ImhBaseBundle::layout.html.twig' %}
+
+{% block title %}{{ status_text }} - IMH{% endblock %}
+
+{% block body %}
+    <body>
+        <h2>Error</h2>
+        <h1>{{ status_code }}</h1>
+        <p>{{ status_text }}</p>
+        <p>Vous allez être redirigé dans <span id="timer">5</span> secondes</p>
+
+        {% block javascripts %}
+            {{ parent() }}
+
+            <script type="text/javascript">
+                $(function () {
+                    'use strict';
+
+                    var count = 5,
+                        counter = setInterval(timer, 1000);
+
+                    function timer() {
+                        count -= 1;
+                        if (count <= 0) {
+                            clearInterval(counter);
+                            document.location = '{{ path('imh_base_homepage') }}';
+                        }
+                        $("#timer").html(count);
+                    }
+                });
+            </script>
+        {% endblock %}
+    </body>
+{% endblock %}
+
+
+

@@ -1,0 +1,12 @@
+imh_base_biography:
+    path:     /biography
+    defaults: { _controller: ImhBaseBundle:Page:biography }
+
+imh_base_repertoire:
+    path:     /repertoire
+    defaults: { _controller: ImhBaseBundle:Page:repertoire }
+
+imh_base_contact:
+    path:     /contact
+    defaults: { _controller: ImhBaseBundle:Contact:index }
+

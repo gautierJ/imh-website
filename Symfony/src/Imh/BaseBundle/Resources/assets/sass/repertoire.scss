@@ -1,0 +1,87 @@
+@import "variables";
+@import "mixins";
+
+#content {
+  .main-content-wrapper {
+    .middle {
+      padding: 26px 60px 45px;
+      width: 100%;
+      min-height: 774px;
+
+      .title {
+        position: relative;
+        text-align: center;
+        font-family: "Georgia", Times, serif;
+        font-size: $sixteenpx;
+        font-weight: normal;
+        color: $color-grey-dark;
+        background-color: $color-grey-extremlight;
+        line-height: 40px;
+        margin: 0 0 20px;
+        text-transform: uppercase;
+        border: 1px solid $color-grey-light;
+      }
+    }
+
+    .concert-wrapper {
+      font-family: "Georgia", Times, serif;
+      margin-top: 60px;
+      font-size: $fourteenpx;
+      padding: 0 3%;
+
+      li {
+        width: 47%;
+        float: left;
+        margin-bottom: 60px;
+        padding-right: 6%;
+
+        &:nth-child(2n) {
+          padding-right: 0;
+        }
+
+        img {
+          display: inline-block;
+          margin-right: 5%;
+          width: 45%;
+        }
+
+        .concert {
+          display: inline-block;
+          vertical-align: top;
+          width: 45%;
+
+          > p {
+            margin-top: 0;
+
+            &:first-child {
+              font-weight: bold;
+            }
+          }
+
+          p {
+            margin: 2px 0;
+
+            &.work {
+              font-size: $elevenpx;
+              margin: 10px 0;
+              text-transform: uppercase;
+            }
+
+            &.arrangement {
+              font-style: italic;
+            }
+          }
+
+          .duration {
+            font-style: italic;
+
+            p {
+              font-size: $tenpx;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+

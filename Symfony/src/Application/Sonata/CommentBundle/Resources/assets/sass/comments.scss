@@ -1,0 +1,253 @@
+@import "../../../../../../Imh/BaseBundle/Resources/assets/sass/variables";
+@import "../../../../../../Imh/BaseBundle/Resources/assets/sass/mixins";
+
+.top-page {
+  text-align: center;
+  height: 30px;
+  width: 100%;
+  position: relative;
+  margin-top: 120px;
+
+  &:after {
+    background: $color-brown-light;
+    bottom: -1px;
+    content: "";
+    display: block;
+    height: 1px;
+    left: 50%;
+    position: absolute;
+    @include transition(all, 0.3s, ease, 0s);
+    width: 0;
+  }
+
+  &:hover:after {
+    left: 0;
+    width: 100%;
+  }
+
+  a {
+    position: relative;
+    display: block;
+    height: 37px;
+
+    .arrow, .circle {
+      background: url("/bundles/imhbase/images/sprite.png") no-repeat;
+      position: absolute;
+      left: 50%;
+    }
+
+    .arrow {
+      background-position: -246px -106px;
+      height: 14px;
+      width: 27px;
+      margin-left: -13px;
+      display: block;
+      margin-top: 8px;
+      opacity: 0.3;
+    }
+
+    .circle {
+      background-position: -280px -81px;
+      height: 7px;
+      width: 7px;
+      top: 27px;
+      margin-left: -3px;
+      z-index: 1;
+    }
+
+    &:hover {
+      .arrow {
+        background-position: -246px -81px;
+        opacity: 1;
+      }
+
+      .circle {
+        background-position: -280px -92px;
+      }
+    }
+  }
+}
+
+#comment {
+//  background: url("/bundles/imhbase/images/header-bg2.png") repeat;
+  background: url("/bundles/imhbase/images/stripes.png") repeat;
+  min-height: 300px;
+  border-top: 1px solid $color-grey-ultralight;
+  padding: 30px 0 100px;
+
+  .box {
+    width: 843px;
+    margin: 0 auto;
+
+    .fos_comment_comment_form_holder {
+      background-color: $color-white;
+      border: 1px solid $color-grey-light;
+      padding: 23px;
+
+      #fos_comment_comment_body {
+        border: 1px solid $color-grey-medium;
+      }
+    }
+
+    > section {
+      article {
+
+      }
+    }
+
+    footer {
+      text-align: center;
+      width: 100%;
+
+      a {
+        background-color: $color-white;
+        font-size: $elevenpx;
+        color: $color-grey-medium;
+        padding: 5px 15px;
+        border: 1px solid $color-grey-light;
+        display: inline-block;
+        @include transition(all, 0.2s, ease, 0s);
+
+        &:hover {
+          border: 1px solid $color-grey-medium;
+          color: $color-grey-dark;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+.fos_comment_thread_show {
+  margin-top: 2em;
+  padding: 1em 20px;
+  width: 472px;
+  background: #f0f0f0;
+  box-shadow: 0 0 7px #bbb;
+  -moz-box-shadow: 0 0 7px #bbb;
+  -webkit-box-shadow: 0 0 7px #bbb;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+}
+
+.fos_comment_thread_show h3 {
+  font-size: 1.3em;
+  font-weight: bold;
+  margin-bottom: 1em;
+  color: #a0a0a0;
+}
+
+.fos_comment_comment_show {
+  color: #555;
+}
+
+.fos_comment_comment_metas {
+  margin: 1.5em 0 0.5em 0;
+  padding: 1em 20px;
+  background: #e6e6e6;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+}
+
+.fos_comment_comment_body {
+  line-height: 1.5em;
+}
+
+.fos_comment_comments .fos_comment_comments {
+  margin-left: 2em;
+}
+
+.fos_comment_comment_reply {
+  text-align: right;
+}
+
+.fos_comment_comment_reply.replying {
+  text-align: left;
+  margin-top: 1em;
+  padding: 1em 20px;
+  background: #d6d6d6;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+}
+
+.fos_comment_comment_reply_show_form {
+  padding: 2px 5px;
+  font-size: 0.8em;
+}
+
+.fos_comment_comment_reply.fos_comment_replying button.fos_comment_comment_reply_show_form {
+  display: none;
+}
+
+.fos_comment_thread_comments {
+  margin-bottom: 1.5em;
+}
+
+.fos_comment_reply_prototype {
+  display: none;
+}
+
+.fos_comment_thread_show > form.fos_comment_comment_form {
+  margin-bottom: 1em;
+}
+
+form.fos_comment_comment_form.processing {
+  opacity: 0.5;
+}
+
+form.fos_comment_comment_form label.author_name {
+  margin-top: 3px;
+  float:left;
+}
+
+form.fos_comment_comment_form label.author_name input {
+  padding: 2px 5px;
+}
+
+form.fos_comment_comment_form textarea {
+  width: 98%;
+  height: 6em;
+  padding: 1%;
+}
+form.fos_comment_comment_form.error textarea {
+  border-color: red;
+}
+
+.fos_comment_form_errors {
+  color: #ff0000;
+}
+
+.fos_comment_submit {
+  text-align: right;
+}
+
+.fos_comment_submit input {
+  font-size: 1.2em;
+  padding: 3px 12px;
+  margin-top: 3px;
+}
+
+a.fos_comment_thread_feed {
+  width: 16px;
+  height: 16px;
+  display: block;
+  float: right;
+}
+
+.fos_comment_comment_voting {
+  float: right;
+}
+
+.fos_comment_comment_score {
+  display: inline-block;
+}

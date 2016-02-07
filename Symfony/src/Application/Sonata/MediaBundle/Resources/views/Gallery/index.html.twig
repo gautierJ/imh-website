@@ -1,0 +1,7 @@
+<ul>
+    {% for gallery in galleries %}
+        <li {% if app.request.attributes.get('_route') == 'sonata_media_gallery_view' and app.request.attributes.get('_route_params')['id'] == gallery|sonata_urlsafeid %}class="current"{% endif %}>
+            <a href="{{ url('sonata_media_gallery_view', {'id' : gallery|sonata_urlsafeid }) }}">{{ gallery.name }}</a>
+        </li>
+    {% endfor %}
+</ul>
