@@ -2,1016 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c0a3912b-1f5f-43e4-8888-ad38ab854110" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/179a8ed4f601e24f204b0391d36223896808b95e.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/374c0368edb6c873aa5991b92169082104988460.doc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/3c19b5efd4868e97c86f35018d2a4c97cf6c6205.doc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/4cb55146f1ab08d08d36a81cef6d480e2959e629.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/5401bec3a861bcf4a60e667d6baab370713e3ca5.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/564e44ca3d3ca4e9914ba000cd38614b20fad395.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/5af229f74b40fa7dcee490cfe059736659ee2bd8.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/62c2e617d5e3d57d3c4e33178788a86730434bba.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/6ff2e86c224c5672a51b43b85aafd1b5899c32ce.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/71fed6e97f40c66a3a51c3c2dbd61c9200b43c6a.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/743e752af149e61325fdb15330c9ea21cf286655.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/74f0c1d35806de974a7830d49d069a5aaf548d9b.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/75a4b032e45c371fd8e8258a7d3a464dbe5b9844.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/79f5282b3cd691d25ba99bb9a3aec244a380b1b5.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/7df950ad5f605a658a4bf38b399967706ad5a3f6.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/7ebd843c0e8210bc4b790d42013acbab8ac902f7.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/7f5bd9e14271822daf969c40fed5403ece4befa7.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/85d158bde613ed8a363add56b9f99592bad516a1.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/869f2b0911dc22b17297417aba3e17247f56db1c.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/8c7950057cfe900243a89342f865fc61715861f4.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/906f55f94e9cb2c6223a5725777f1ffff3bddeb9.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/998a1741c17cc0800ed0c96270ff7222b5b3d84e.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/9f2614672e377c1f9d32aa54e68d6811a1b9a88e.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/a43b7d8be3d1a1387fc74b7c2679a3c7854ca9e2.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/ad1b0477a6410b13c60a8c0052f78c2eb7e5bbc2.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/apple-touch-icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/b74989e72cfe00b35b19e9669ab28098ca2adc7d.doc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/b94d7b8d396a1204d70199cb4a62a985c83ed381.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/bae218c1cfae071ca47477c42b4f568591e83dcd.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/bc3d57563770572daa8840c395e6b3f884f87837.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Imh/BaseBundle/Resources/public/images/bio_01.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Imh/BaseBundle/Resources/public/images/bio_02.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Imh/BaseBundle/Resources/public/images/bio_03.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/c623b6f44b2bf9975c927304cfee323ca1e1c84d.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/ceb83fa159a649e13bf76953163838016b16f7b1.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/assets/fonts/cinzel-black-webfont.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/assets/fonts/cinzel-black-webfont.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/assets/fonts/cinzel-black-webfont.woff2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/assets/fonts/cinzel-black-webfont.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/assets/fonts/cinzel-bold-webfont.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/assets/fonts/cinzel-bold-webfont.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/assets/fonts/cinzel-bold-webfont.woff2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/assets/fonts/cinzel-bold-webfont.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/assets/fonts/cinzel-regular-webfont.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/assets/fonts/cinzel-regular-webfont.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/assets/fonts/cinzel-regular-webfont.woff2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/assets/fonts/cinzel-regular-webfont.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/d0a94eae940e30bf3e987667c3e32773569d8869.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/d34f70d3d61c5a268502f2b7ea6ea5c83e63854d.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/d4b4138081aa3a7866b615eb62c9c90be1975159.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/d4dbd25d8438292a0dbdb57c78e928ebadad4a0e.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/dc582d4a8c82895ca8721cf2cbb0be4496b17504.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/deb4911f8b7ea74299ddfd563a5358173b1a0d54.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Imh/BaseBundle/Resources/public/images/debussy.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/e62bd7ac1c3fe9f7cb945e255766ae137a15cc02.doc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/ee7c14e363ab59d37d1051c12d90ffecfe6bdc04.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Imh/BaseBundle/Resources/public/images/empty.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/f723517e2257cbcba16f27b7c5a1091e651216a2.doc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/fab3d39820fad8ce866e727acec43d2ba6061130.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Imh/BaseBundle/Resources/public/images/favicon.ico" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/favicon.ico" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/fccb4e7f02445f73673ae0b182d6f0ae1666204c.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Imh/BaseBundle/Resources/public/images/gliere.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Imh/BaseBundle/Resources/public/images/grabbing.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Imh/BaseBundle/Resources/public/images/haendel.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Imh/BaseBundle/Resources/public/images/header-bg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Imh/BaseBundle/Resources/public/images/header-bg2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Imh/BaseBundle/Resources/public/images/ionella.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Imh/BaseBundle/Resources/public/images/ionella_bw.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Imh/BaseBundle/Resources/public/images/logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Imh/BaseBundle/Resources/public/images/notes.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/assets/fonts/opensans-condbold-webfont.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/assets/fonts/opensans-condbold-webfont.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/assets/fonts/opensans-condlight-webfont.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/assets/fonts/opensans-condlight-webfont.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/assets/fonts/opensans-condlightitalic-webfont.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/assets/fonts/opensans-condlightitalic-webfont.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Imh/BaseBundle/Resources/public/images/points.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Imh/BaseBundle/Resources/public/images/points_light.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Imh/BaseBundle/Resources/public/images/ravel.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Imh/BaseBundle/Resources/public/images/separation.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Imh/BaseBundle/Resources/public/images/flow/sl.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Imh/BaseBundle/Resources/public/images/sprite.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Imh/BaseBundle/Resources/public/images/flow/sr.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Imh/BaseBundle/Resources/public/images/strings.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Imh/BaseBundle/Resources/public/images/stripes.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_100_admin.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_100_default_big.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_100_default_small.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_100_reference.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_101_admin.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_101_default_big.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_101_default_small.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_101_reference.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_102_admin.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_102_default_big.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_102_default_small.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_102_reference.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_103_admin.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_103_default_big.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_103_default_small.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_103_reference.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_104_admin.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_104_default_big.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_104_default_small.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_104_reference.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_105_admin.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_105_default_big.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_105_default_small.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_106_admin.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_106_default_big.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_106_default_small.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_107_admin.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_107_default_big.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_107_default_small.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_108_admin.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_108_default_big.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_108_default_small.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_109_admin.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_109_default_big.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_109_default_small.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_110_admin.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_110_default_big.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_110_default_small.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_111_admin.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_111_default_big.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_111_default_small.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_112_admin.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_112_default_big.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_112_default_small.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_113_admin.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_113_default_big.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_113_default_small.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_114_admin.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_114_default_big.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_114_default_small.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_115_admin.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_115_default_big.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_115_default_small.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_116_admin.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_116_default_big.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_116_default_small.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_117_admin.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_117_default_big.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_117_default_small.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_118_admin.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_118_default_big.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_118_default_small.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_119_admin.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_119_default_big.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_119_default_small.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_120_admin.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_120_default_big.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_120_default_small.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_121_admin.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_121_default_big.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_121_default_small.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_122_admin.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_122_default_big.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_122_default_small.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_123_admin.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_123_default_big.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_123_default_small.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_124_admin.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_124_default_big.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_124_default_small.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_125_admin.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_125_default_big.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_125_default_small.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_126_admin.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_126_default_big.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_126_default_small.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_127_admin.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_127_default_big.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_127_default_small.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_128_admin.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_128_default_big.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_128_default_small.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_129_admin.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_129_default_big.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_129_default_small.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_129_reference.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_130_admin.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_130_default_big.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_130_default_small.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_130_reference.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_131_admin.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_131_default_big.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_131_default_small.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_132_admin.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_132_default_big.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_132_default_moitie.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_132_default_small.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_133_admin.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_133_default_gallery.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_133_default_video_big.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_133_default_video_small.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_133_reference.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/popin/0001/01/thumb_134_popin_gallery.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_135_admin.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_135_default_gallery_popin.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_135_default_gallery_small.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_135_default_video_big.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_135_default_video_small.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_136_admin.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_136_default_gallery_popin.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_136_default_gallery_small.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_136_default_video_big.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_136_default_video_small.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_136_reference.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_137_admin.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_137_default_video_big.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_137_default_video_small.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_137_reference.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_138_admin.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_138_default_big.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_138_default_small.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_138_reference.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_139_admin.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_139_default_gallery_popin.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_139_default_gallery_small.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_139_default_video_big.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_139_default_video_small.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_139_reference.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_140_reference.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_141_reference.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_142_reference.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_143_reference.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_144_reference.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_145_reference.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_146_admin.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_146_default_big.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_146_default_gallery_popin.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_146_default_gallery_small.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_146_default_small.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_147_admin.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_147_default_big.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_147_default_gallery_popin.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_147_default_gallery_small.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_147_default_small.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_148_admin.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_148_default_big.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_148_default_gallery_popin.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_148_default_gallery_small.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_148_default_small.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_149_admin.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_149_default_big.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_149_default_gallery_popin.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_149_default_gallery_small.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_149_default_small.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_150_admin.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_150_default_big.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_150_default_gallery_popin.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_150_default_gallery_small.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_150_default_small.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_151_admin.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_151_default_big.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_151_default_gallery_popin.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_151_default_gallery_small.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_151_default_small.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_152_admin.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_152_default_big.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_152_default_gallery_popin.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_152_default_gallery_small.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_152_default_small.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_153_admin.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_153_default_big.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_153_default_gallery_popin.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_153_default_gallery_small.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_153_default_small.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_154_admin.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_154_default_big.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_154_default_gallery_popin.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_154_default_gallery_small.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_154_default_small.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_155_admin.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_155_default_big.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_155_default_gallery_popin.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_155_default_gallery_small.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_155_default_small.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_156_admin.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_156_default_big.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_156_default_gallery_popin.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_156_default_gallery_small.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_156_default_small.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_157_admin.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_157_default_big.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_157_default_gallery_popin.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_157_default_gallery_small.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_157_default_small.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_158_admin.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_158_default_big.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_158_default_gallery_popin.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_158_default_gallery_small.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_158_default_small.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_159_admin.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_159_default_big.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_159_default_gallery_popin.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_159_default_gallery_small.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_159_default_small.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_160_admin.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_160_default_big.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_160_default_gallery_popin.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_160_default_gallery_small.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_160_default_small.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_161_admin.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_161_default_big.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_161_default_gallery_popin.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_161_default_gallery_small.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_161_default_small.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_162_admin.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_162_default_big.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_162_default_gallery_popin.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_162_default_gallery_small.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_162_default_small.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_163_admin.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_163_default_big.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_163_default_gallery_popin.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_163_default_gallery_small.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_163_default_small.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_164_admin.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_164_default_big.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_164_default_gallery_popin.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_164_default_gallery_small.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_164_default_small.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_165_admin.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_165_default_big.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_165_default_gallery_popin.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_165_default_gallery_small.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_165_default_small.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_166_admin.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_166_default_big.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_166_default_gallery_popin.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_166_default_gallery_small.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_166_default_small.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_167_admin.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_167_default_big.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_167_default_gallery_popin.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_167_default_gallery_small.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_167_default_small.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_204_admin.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_204_default_big.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_204_default_gallery_popin.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_204_default_gallery_small.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_204_default_small.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_205_admin.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_205_default_big.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_205_default_gallery_popin.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_205_default_gallery_small.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_205_default_small.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_206_reference.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_209_reference.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_210_reference.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_211_reference.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_212_admin.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_212_default_big.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_212_default_gallery_popin.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_212_default_gallery_small.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_212_default_small.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_212_reference.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_213_admin.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_213_default_big.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_213_default_gallery_popin.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_213_default_gallery_small.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_213_default_small.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_213_reference.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_214_admin.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_214_default_big.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_214_default_gallery_popin.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_214_default_gallery_small.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_214_default_small.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_214_reference.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_215_admin.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_215_default_big.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_215_default_gallery_popin.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_215_default_gallery_small.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_215_default_small.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_215_reference.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_216_admin.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_216_default_big.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_216_default_gallery_popin.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_216_default_gallery_small.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_216_default_small.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_216_reference.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_222_admin.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_222_default_big.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_222_default_gallery_popin.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_222_default_gallery_small.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_222_default_small.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_222_reference.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_223_admin.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_223_default_big.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_223_default_gallery_popin.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_223_default_gallery_small.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_223_default_small.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_224_admin.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_224_default_big.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_224_default_gallery_popin.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_224_default_gallery_small.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_224_default_small.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_225_admin.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_225_default_big.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_225_default_gallery_popin.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_225_default_gallery_small.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_225_default_small.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_226_admin.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_226_default_big.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_226_default_gallery_popin.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_226_default_gallery_small.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_226_default_small.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_227_admin.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_227_default_big.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_227_default_gallery_popin.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_227_default_gallery_small.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_227_default_small.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_228_admin.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_228_default_big.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_228_default_gallery_popin.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_228_default_gallery_small.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_228_default_small.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_229_admin.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_229_default_big.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_229_default_gallery_popin.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_229_default_gallery_small.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_229_default_small.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_230_admin.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_230_default_big.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_230_default_gallery_popin.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_230_default_gallery_small.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_230_default_small.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_231_admin.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_231_default_big.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_231_default_gallery_popin.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_231_default_gallery_small.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_231_default_small.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_232_admin.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_232_default_big.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_232_default_gallery_popin.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_232_default_gallery_small.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_232_default_small.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_233_admin.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_233_default_big.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_233_default_gallery_popin.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_233_default_gallery_small.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_233_default_small.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_234_admin.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_234_default_big.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_234_default_gallery_popin.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_234_default_gallery_small.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_234_default_small.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_235_admin.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_235_default_big.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_235_default_gallery_popin.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_235_default_gallery_small.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_235_default_small.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_236_admin.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_236_default_big.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_236_default_gallery_popin.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_236_default_gallery_small.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_236_default_small.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_237_admin.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_237_default_big.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_237_default_gallery_popin.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_237_default_gallery_small.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_237_default_small.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_238_admin.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_238_default_big.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_238_default_gallery_popin.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_238_default_gallery_small.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_238_default_small.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_239_admin.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_239_default_big.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_239_default_gallery_popin.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_239_default_gallery_small.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_239_default_small.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_240_admin.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_240_default_big.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_240_default_gallery_popin.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_240_default_gallery_small.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_240_default_small.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_241_admin.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_241_default_big.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_241_default_gallery_popin.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_241_default_gallery_small.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_241_default_small.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_242_admin.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_242_default_big.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_242_default_gallery_popin.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_242_default_gallery_small.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_242_default_small.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_243_admin.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_243_default_big.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_243_default_gallery_popin.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_243_default_gallery_small.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_243_default_small.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_244_admin.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_244_default_big.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_244_default_gallery_popin.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_244_default_gallery_small.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_244_default_small.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_245_admin.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_245_default_big.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_245_default_gallery_popin.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_245_default_gallery_small.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_245_default_small.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_31_reference.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_32_admin.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_32_default_big.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_32_default_small.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_32_reference.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_33_admin.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_33_default_big.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_33_default_small.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_33_reference.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_34_admin.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_34_default_big.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_34_default_small.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_34_reference.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_39_admin.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_39_default_big.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_39_default_small.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_39_reference.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_40_admin.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_40_default_big.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_40_default_small.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_40_reference.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_41_admin.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_41_default_big_16_9.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_41_default_big_4_3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_41_default_small_16_9.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_41_default_small_4_3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_41_reference.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_42_admin.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_42_default_big_16_9.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_42_default_big_4_3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_42_default_small_16_9.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_42_default_small_4_3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_42_reference.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_43_admin.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_43_default_big_16_9.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_43_default_big_4_3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_43_default_small_16_9.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_43_default_small_4_3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_43_reference.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_44_admin.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_44_default_big_16_9.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_44_default_big_4_3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_44_default_small_16_9.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_44_default_small_4_3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_44_reference.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_45_admin.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_45_default_small.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_45_reference.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_46_admin.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_46_default_small.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_46_reference.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_47_admin.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_47_default_small.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_47_reference.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_48_admin.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_48_default_small.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_48_reference.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_49_admin.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_49_default_small.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_49_reference.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_50_admin.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_50_default_big.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_50_default_small.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_50_reference.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_51_admin.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_51_default_big.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_51_default_small.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_51_reference.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_53_admin.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_53_default_big.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_53_default_small.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_53_reference.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_54_admin.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_54_default_big.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_54_default_small.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_54_reference.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_55_admin.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_55_default_big.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_55_default_small.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_55_reference.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_56_admin.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_56_default_big.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_56_default_small.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_56_reference.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_57_admin.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_57_default_big.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_57_default_small.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_57_reference.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_58_admin.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_58_default_big.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_58_default_small.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_58_reference.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_59_admin.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_59_default_big.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_59_default_small.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_59_reference.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_60_admin.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_60_default_big.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_60_default_small.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_60_reference.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_61_admin.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_61_default_big.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_61_default_small.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_61_reference.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_62_admin.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_62_default_big.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_62_default_small.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_62_reference.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_63_admin.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_63_default_big.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_63_default_small.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_63_reference.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_64_admin.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_64_default_big.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_64_default_small.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_64_reference.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_65_admin.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_65_default_big.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_65_default_small.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_65_reference.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_66_admin.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_66_default_big.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_66_default_small.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_66_reference.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_68_admin.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_68_default_big.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_68_default_small.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_68_reference.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_69_admin.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_69_default_big.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_69_default_small.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_69_reference.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_70_admin.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_70_default_big.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_70_default_small.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_70_reference.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_71_admin.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_71_default_big.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_71_default_small.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_71_reference.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_72_admin.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_72_default_big.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_72_default_small.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_72_reference.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_73_admin.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_73_default_big.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_73_default_small.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_73_reference.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_74_admin.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_74_default_big.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_74_default_small.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_74_reference.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_75_admin.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_75_default_big.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_75_default_small.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_75_reference.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_76_admin.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_76_default_big.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_76_default_small.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_76_reference.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_77_admin.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_77_default_big.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_77_default_small.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_77_reference.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_79_admin.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_79_default_big.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_79_default_small.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_79_reference.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_80_admin.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_80_default_big.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_80_default_small.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_80_reference.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_81_admin.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_81_default_big.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_81_default_small.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_81_reference.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_82_admin.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_82_default_big.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_82_default_small.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_82_reference.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_83_admin.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_83_default_big.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_83_default_small.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_83_reference.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_84_admin.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_84_default_big.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_84_default_small.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_84_reference.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_85_admin.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_85_default_big.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_85_default_small.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_85_reference.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_86_admin.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_86_default_big.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_86_default_small.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_86_reference.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_87_admin.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_87_default_big.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_87_default_small.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_87_reference.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_90_admin.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_90_default_big.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_90_default_small.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_90_reference.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_91_admin.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_91_default_big.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_91_default_small.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_91_reference.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_92_admin.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_92_default_big.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_92_default_small.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_92_reference.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_93_admin.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_93_default_big.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_93_default_small.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_93_reference.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_94_admin.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_94_default_big.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_94_default_small.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_94_reference.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_95_admin.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_95_default_big.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_95_default_small.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_95_reference.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_98_admin.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_98_default_big.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_98_default_small.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_98_reference.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_99_admin.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_99_default_big.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_99_default_small.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_99_reference.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Imh/BaseBundle/Resources/public/images/volume.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.htaccess" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/app/.htaccess" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/.htaccess" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/.htaccess" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/.name" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/.travis.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/app/AppCache.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/app/AppKernel.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Application/Sonata/ClassificationBundle/ApplicationSonataClassificationBundle.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Application/Sonata/CommentBundle/ApplicationSonataCommentBundle.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Application/Sonata/MediaBundle/ApplicationSonataMediaBundle.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Application/Sonata/UserBundle/ApplicationSonataUserBundle.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Application/Sonata/ClassificationBundle/Resources/config/doctrine/Category.mongodb.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Application/Sonata/ClassificationBundle/Resources/config/doctrine/Category.orm.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Application/Sonata/ClassificationBundle/Document/Category.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Application/Sonata/ClassificationBundle/Entity/Category.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Application/Sonata/ClassificationBundle/Resources/config/doctrine/Collection.orm.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Application/Sonata/ClassificationBundle/Entity/Collection.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Application/Sonata/CommentBundle/Document/Comment.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Application/Sonata/CommentBundle/Entity/Comment.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Application/Sonata/CommentBundle/Form/CommentType.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Imh/BaseBundle/DependencyInjection/Configuration.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Imh/BaseBundle/Controller/ContactController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Imh/BaseBundle/Form/Type/ContactFormType.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Application/Sonata/MediaBundle/Provider/CustomYouTubeProvider.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Imh/BaseBundle/Tests/Controller/DefaultControllerTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Application/Sonata/ClassificationBundle/Resources/config/serializer/Document.Category.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Application/Sonata/CommentBundle/Resources/config/serializer/Document.Comment.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Application/Sonata/MediaBundle/Resources/config/serializer/Document.Gallery.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Application/Sonata/MediaBundle/Resources/config/serializer/Document.GalleryHasMedia.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Application/Sonata/UserBundle/Resources/config/serializer/Document.Group.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Application/Sonata/MediaBundle/Resources/config/serializer/Document.Media.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Application/Sonata/ClassificationBundle/Resources/config/serializer/Document.Tag.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Application/Sonata/CommentBundle/Resources/config/serializer/Document.Thread.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Application/Sonata/UserBundle/Resources/config/serializer/Document.User.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Application/Sonata/ClassificationBundle/Resources/config/serializer/Entity.Category.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Application/Sonata/ClassificationBundle/Resources/config/serializer/Entity.Collection.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Application/Sonata/CommentBundle/Resources/config/serializer/Entity.Comment.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Application/Sonata/MediaBundle/Resources/config/serializer/Entity.Gallery.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Application/Sonata/MediaBundle/Resources/config/serializer/Entity.GalleryHasMedia.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Application/Sonata/UserBundle/Resources/config/serializer/Entity.Group.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Application/Sonata/MediaBundle/Resources/config/serializer/Entity.Media.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Application/Sonata/ClassificationBundle/Resources/config/serializer/Entity.Tag.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Application/Sonata/CommentBundle/Resources/config/serializer/Entity.Thread.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Application/Sonata/UserBundle/Resources/config/serializer/Entity.User.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Application/Sonata/MediaBundle/Resizer/FixedDimensionsResizer.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Application/Sonata/MediaBundle/Resources/config/doctrine/Gallery.mongodb.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Application/Sonata/MediaBundle/Resources/config/doctrine/Gallery.orm.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Application/Sonata/MediaBundle/Document/Gallery.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Application/Sonata/MediaBundle/Entity/Gallery.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Application/Sonata/MediaBundle/PHPCR/Gallery.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Application/Sonata/MediaBundle/Resources/config/doctrine/Gallery.phpcr.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Application/Sonata/MediaBundle/Controller/GalleryController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Application/Sonata/MediaBundle/Resources/config/doctrine/GalleryHasMedia.orm.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Application/Sonata/MediaBundle/Entity/GalleryHasMedia.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Application/Sonata/MediaBundle/PHPCR/GalleryHasMedia.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Application/Sonata/MediaBundle/Resources/config/doctrine/GalleryHasMedia.phpcr.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Application/Sonata/MediaBundle/PHPCR/GalleryHasMediaRepository.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Application/Sonata/MediaBundle/PHPCR/GalleryRepository.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Application/Sonata/UserBundle/Resources/config/doctrine/Group.mongodb.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Application/Sonata/UserBundle/Resources/config/doctrine/Group.orm.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Application/Sonata/UserBundle/Document/Group.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Application/Sonata/UserBundle/Entity/Group.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Imh/BaseBundle/ImhBaseBundle.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Imh/BaseBundle/DependencyInjection/ImhBaseExtension.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Application/Sonata/MediaBundle/Resources/config/doctrine/Media.mongodb.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Application/Sonata/MediaBundle/Resources/config/doctrine/Media.orm.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Application/Sonata/MediaBundle/Document/Media.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Application/Sonata/MediaBundle/Entity/Media.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Application/Sonata/MediaBundle/PHPCR/Media.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Application/Sonata/MediaBundle/Resources/config/doctrine/Media.phpcr.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Application/Sonata/MediaBundle/Controller/MediaController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Application/Sonata/MediaBundle/PHPCR/MediaRepository.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Imh/BaseBundle/Menu/MenuBuilder.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Imh/BaseBundle/Controller/PageController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Imh/BaseBundle/Admin/PostAdmin.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/app/Resources/SonataAdminBundle/translations/SonataAdminBundle.fr.xliff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/app/Resources/SonataCommentBundle/translations/SonataCommentBundle.en.xliff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/app/Resources/SonataCommentBundle/translations/SonataCommentBundle.fr.xliff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/app/Resources/SonataMediaBundle/translations/SonataMediaBundle.en.xliff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/app/Resources/SonataMediaBundle/translations/SonataMediaBundle.fr.xliff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/app/SymfonyRequirements.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Application/Sonata/ClassificationBundle/Resources/config/doctrine/Tag.mongodb.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Application/Sonata/ClassificationBundle/Resources/config/doctrine/Tag.orm.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Application/Sonata/ClassificationBundle/Document/Tag.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Application/Sonata/ClassificationBundle/Entity/Tag.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Application/Sonata/CommentBundle/Document/Thread.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Application/Sonata/CommentBundle/Entity/Thread.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/UPGRADE-2.2.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/UPGRADE.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Application/Sonata/UserBundle/Resources/config/doctrine/User.mongodb.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Application/Sonata/UserBundle/Resources/config/doctrine/User.orm.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Application/Sonata/UserBundle/Document/User.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Application/Sonata/UserBundle/Entity/User.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Imh/BaseBundle/Resources/assets/js/_jquery.ajax.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_mixins.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_variables.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/js/ac640a7.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/js/ac640a7_jquery.imh.scrollmove_1.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Imh/BaseBundle/Resources/config/admin.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/app/Resources/views/ajax-layout.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/app.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/app_dev.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/app/autoload.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/assets/compiled/css/biography.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Imh/BaseBundle/Resources/views/Page/biography.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/assets/compiled/js/biography.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Imh/BaseBundle/Resources/assets/sass/biography.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/assets/compiled/css/biography_biography_1.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/assets/compiled/js/biography_jquery.imh.scrollmove_1.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/app/check.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Imh/BaseBundle/Resources/public/images/circles_black.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Imh/BaseBundle/Resources/public/images/circles_black_small.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Imh/BaseBundle/Resources/public/images/circles_white.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Application/Sonata/CommentBundle/Resources/views/Thread/comment_content.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Application/Sonata/CommentBundle/Resources/views/Thread/comment_new_content.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Application/Sonata/CommentBundle/Resources/views/Thread/comments.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Application/Sonata/CommentBundle/Resources/assets/sass/comments.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/composer.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/composer.lock" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/config.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/app/config/config.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/app/config/config_dev.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/app/config/config_prod.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/app/config/config_test.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/app/console" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/assets/compiled/css/contact.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Imh/BaseBundle/Resources/views/Page/contact.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Imh/BaseBundle/Resources/assets/sass/contact.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/assets/compiled/css/contact_contact_1.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/deployment.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Imh/BaseBundle/Resources/views/Contact/email.txt.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/app/Resources/TwigBundle/views/Exception/error.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/app/Resources/TwigBundle/views/Exception/error404.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/app/Resources/TwigBundle/views/Exception/exception_full.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Imh/BaseBundle/Resources/assets/sass/fonts.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/assets/compiled/js/fontspy.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/assets/compiled/js/fontspy_jquery.fontspy_1.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Imh/BaseBundle/Resources/views/Part/footer.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Imh/BaseBundle/Resources/assets/sass/footer.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/frameworkRootSettings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/app/Resources/views/full-layout.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/assets/lib/analytics/ga.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/assets/compiled/css/gallery.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/assets/compiled/js/gallery.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Application/Sonata/MediaBundle/Resources/assets/sass/gallery.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Application/Sonata/MediaBundle/Resources/config/routing/gallery.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/assets/compiled/css/gallery_gallery_1.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/assets/compiled/js/gallery_jquery.imh.gallery_1.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/assets/compiled/js/gallery_jquery.imh.shape_2.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Imh/BaseBundle/Resources/assets/sass/global.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/assets/compiled/css/home.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Imh/BaseBundle/Resources/assets/sass/home.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/assets/compiled/css/home_home_1.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Imh/BaseBundle/Resources/assets/js/imageFlow.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/assets/lib/isotope/imagesloaded.pkgd.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/imh-website.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Application/Sonata/MediaBundle/Resources/views/Gallery/index.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Imh/BaseBundle/Resources/views/Page/index.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Imh/BaseBundle/Resources/doc/index.rst" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/assets/lib/isotope/isotope.pkgd.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/assets/lib/jQuery/jquery.easing.1.3.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Imh/BaseBundle/Resources/assets/js/jquery.fontspy.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Imh/BaseBundle/Resources/assets/js/jquery.imh.gallery.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Imh/BaseBundle/Resources/assets/js/jquery.imh.player.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Imh/BaseBundle/Resources/assets/js/jquery.imh.scrollmove.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Imh/BaseBundle/Resources/assets/js/jquery.imh.shape.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/assets/lib/infinite-scroll/jquery.infinite-scroll.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/assets/lib/lazyload/jquery.lazyload.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/assets/lib/jQuery/jquery.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/assets/lib/jQuery/jquery.mousewheel.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Imh/BaseBundle/Resources/assets/js/jquery.nouislider.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Imh/BaseBundle/Resources/assets/sass/jquery.nouislider.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/assets/lib/owl-carousel/jquery.owl.carousel.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Imh/BaseBundle/Resources/views/Menu/knp_menu.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Imh/BaseBundle/Resources/views/Menu/lang.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Imh/BaseBundle/Resources/assets/sass/lang.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Imh/BaseBundle/Resources/views/layout.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/assets/lib/infinite-scroll/behaviors/local.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/assets/compiled/css/main.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/assets/compiled/css/main_comments_3.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/assets/compiled/css/main_fonts_1.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/assets/compiled/css/main_fonts_2.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/assets/compiled/css/main_footer_5.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/assets/compiled/css/main_footer_6.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/assets/compiled/css/main_footer_7.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/assets/compiled/css/main_global_2.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/assets/compiled/css/main_global_3.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/assets/compiled/css/main_jquery.nouislider_2.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/assets/compiled/css/main_lang_5.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/assets/compiled/css/main_lang_6.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/assets/compiled/css/main_media_queries_1.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/assets/compiled/css/main_media_queries_7.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/assets/compiled/css/main_navigation_4.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/assets/compiled/css/main_navigation_5.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/assets/compiled/css/main_sidebar_3.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/assets/compiled/css/main_sidebar_4.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/assets/compiled/css/main_top_menu_4.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/assets/compiled/css/main_video_player_1.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/assets/lib/infinite-scroll/behaviors/manual-trigger.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/assets/lib/isotope/masonry-horizontal.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Application/Sonata/MediaBundle/Resources/config/routing/media.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Imh/BaseBundle/Resources/assets/sass/media_queries.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Application/Sonata/MediaBundle/Resources/translations/messages.en.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Imh/BaseBundle/Resources/translations/messages.en.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Application/Sonata/MediaBundle/Resources/translations/messages.fr.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Imh/BaseBundle/Resources/translations/messages.fr.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Application/Sonata/MediaBundle/Resources/translations/messages.ru.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Imh/BaseBundle/Resources/translations/messages.ru.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/assets/lib/modernizr/modernizr-custom.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Imh/BaseBundle/Resources/views/Menu/navigation.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Imh/BaseBundle/Resources/assets/sass/navigation.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/assets/lib/initializr/css/normalize.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/assets/lib/owl-carousel/owl.carousel.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/assets/lib/isotope/packery.pkgd.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/app/config/parameters.yml.dist" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/app/phpunit.xml.dist" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/assets/compiled/css/repertoire.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Imh/BaseBundle/Resources/views/Page/repertoire.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Imh/BaseBundle/Resources/assets/sass/repertoire.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/assets/compiled/css/repertoire_repertoire_1.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/robots.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/app/config/routing.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Imh/BaseBundle/Resources/config/routing.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/app/config/routing_dev.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Imh/BaseBundle/Resources/assets/js/screenfull.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/assets/compiled/js/script.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/assets/compiled/js/script_jquery.imh.shape_1.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/app/config/security.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Application/Sonata/MediaBundle/Resources/config/services.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Imh/BaseBundle/Resources/config/services.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/assets/compiled/js/shape.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/assets/compiled/js/shape_jquery.imh.shape_1.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Imh/BaseBundle/Resources/views/Part/sidebar.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Imh/BaseBundle/Resources/assets/sass/sidebar.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/sitemap.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/assets/lib/sly/sly.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/assets/lib/isotope/smartresize.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Imh/BaseBundle/Resources/public/images/tail-spin.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Imh/BaseBundle/Resources/public/images/tail-spin_white.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Application/Sonata/MediaBundle/Resources/views/Media/thumbnail_list.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Imh/BaseBundle/Resources/assets/js/twitter.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/assets/compiled/css/video.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/assets/compiled/js/video.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/assets/compiled/css/video_comments_3.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/assets/compiled/js/video_imageFlow_1.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/assets/compiled/js/video_jquery.imh.player_4.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/assets/compiled/js/video_jquery.imh.player_5.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/assets/compiled/js/video_jquery.imh.scrollmove_2.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/assets/compiled/js/video_jquery.imh.scrollmove_3.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/assets/compiled/css/video_jquery.nouislider_2.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/assets/compiled/js/video_jquery.nouislider_3.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/assets/compiled/js/video_jquery.nouislider_4.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Application/Sonata/MediaBundle/Resources/assets/sass/video_player.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/assets/compiled/js/video_screenfull_2.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/assets/compiled/js/video_twitter_5.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/assets/compiled/js/video_twitter_6.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/assets/compiled/css/video_video_player_1.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Application/Sonata/CommentBundle/Resources/views/Comment/view.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Application/Sonata/MediaBundle/Resources/views/Gallery/view.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Application/Sonata/MediaBundle/Resources/views/Media/view.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Application/Sonata/MediaBundle/Resources/views/Provider/view_customYoutube.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Symfony/.gitignore" afterPath="$PROJECT_DIR$/Symfony/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="imh-website.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -1036,10 +29,10 @@
     <splitter split-orientation="horizontal" split-proportion="0.34427685">
       <split-first>
         <leaf>
-          <file leaf-file-name="config.yml" pinned="false" current="false" current-in-tab="false">
+          <file leaf-file-name="config.yml" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/Symfony/app/config/config.yml">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="135" column="16" selection-start="4416" selection-end="4416" vertical-scroll-proportion="0.0" vertical-offset="1824" max-vertical-offset="4064">
+                <state line="119" column="13" selection-start="3720" selection-end="3720" vertical-scroll-proportion="0.17897092" vertical-offset="1824" max-vertical-offset="4064">
                   <folding />
                 </state>
               </provider>
@@ -1048,19 +41,10 @@
           <file leaf-file-name="full-layout.html.twig" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/Symfony/app/Resources/views/full-layout.html.twig">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="9" column="30" selection-start="690" selection-end="690" vertical-scroll-proportion="-6.0" vertical-offset="0" max-vertical-offset="1568">
+                <state line="19" column="10" selection-start="1168" selection-end="1168" vertical-scroll-proportion="-12.666667" vertical-offset="0" max-vertical-offset="1568">
                   <folding>
                     <marker date="1451956616317" expanded="true" signature="1237:1294" placeholder="..." />
                   </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name=".gitignore" pinned="false" current="true" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/Symfony/.gitignore">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="0" column="9" selection-start="9" selection-end="9" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="430">
-                  <folding />
                 </state>
               </provider>
             </entry>
@@ -1069,9 +53,7 @@
             <entry file="file://$PROJECT_DIR$/Symfony/web/assets/lib/infinite-scroll/jquery.infinite-scroll.js">
               <provider selected="true" editor-type-id="text-editor">
                 <state line="18" column="17" selection-start="513" selection-end="513" vertical-scroll-proportion="0.0" vertical-offset="144" max-vertical-offset="13376">
-                  <folding>
-                    <element signature="n#!!doc" expanded="true" />
-                  </folding>
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -1079,10 +61,8 @@
           <file leaf-file-name="app_dev.php" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/Symfony/web/app_dev.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="14" column="3" selection-start="667" selection-end="667" vertical-scroll-proportion="-9.333333" vertical-offset="0" max-vertical-offset="592">
-                  <folding>
-                    <element signature="e#7#52#0" expanded="true" />
-                  </folding>
+                <state line="14" column="3" selection-start="667" selection-end="667" vertical-scroll-proportion="0.0" vertical-offset="224" max-vertical-offset="592">
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -1090,7 +70,7 @@
           <file leaf-file-name="ContactController.php" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/Symfony/src/Imh/BaseBundle/Controller/ContactController.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="42" column="29" selection-start="1518" selection-end="1518" vertical-scroll-proportion="-18.291666" vertical-offset="217" max-vertical-offset="896">
+                <state line="42" column="29" selection-start="1518" selection-end="1518" vertical-scroll-proportion="0.0" vertical-offset="672" max-vertical-offset="912">
                   <folding />
                 </state>
               </provider>
@@ -1112,7 +92,7 @@
           <file leaf-file-name="gallery.scss" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/Symfony/src/Application/Sonata/MediaBundle/Resources/assets/sass/gallery.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="182" column="32" selection-start="3635" selection-end="3635" vertical-scroll-proportion="-3.137255" vertical-offset="2752" max-vertical-offset="6080">
+                <state line="182" column="32" selection-start="3635" selection-end="3635" vertical-scroll-proportion="0.0" vertical-offset="2752" max-vertical-offset="6080">
                   <folding />
                 </state>
               </provider>
@@ -1121,7 +101,7 @@
           <file leaf-file-name="media_queries.scss" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/Symfony/src/Imh/BaseBundle/Resources/assets/sass/media_queries.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="86" column="42" selection-start="1844" selection-end="1844" vertical-scroll-proportion="-4.0784316" vertical-offset="1168" max-vertical-offset="8496">
+                <state line="86" column="42" selection-start="1844" selection-end="1844" vertical-scroll-proportion="0.0" vertical-offset="1168" max-vertical-offset="8496">
                   <folding />
                 </state>
               </provider>
@@ -1130,7 +110,7 @@
           <file leaf-file-name="biography.html.twig" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/Symfony/src/Imh/BaseBundle/Resources/views/Page/biography.html.twig">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="36" column="34" selection-start="1697" selection-end="1697" vertical-scroll-proportion="2.0" vertical-offset="624" max-vertical-offset="2816">
+                <state line="36" column="34" selection-start="1697" selection-end="1697" vertical-scroll-proportion="0.0" vertical-offset="576" max-vertical-offset="2816">
                   <folding />
                 </state>
               </provider>
@@ -1139,7 +119,7 @@
           <file leaf-file-name="view.html.twig" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/Symfony/src/Application/Sonata/MediaBundle/Resources/views/Gallery/view.html.twig">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="21" column="20" selection-start="683" selection-end="683" vertical-scroll-proportion="-14.0" vertical-offset="0" max-vertical-offset="1504">
+                <state line="21" column="20" selection-start="683" selection-end="683" vertical-scroll-proportion="0.0" vertical-offset="336" max-vertical-offset="1504">
                   <folding />
                 </state>
               </provider>
@@ -1148,7 +128,7 @@
           <file leaf-file-name="jquery.imh.gallery.js" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/Symfony/src/Imh/BaseBundle/Resources/assets/js/jquery.imh.gallery.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="96" column="29" selection-start="3239" selection-end="3239" vertical-scroll-proportion="0.34698796" vertical-offset="1392" max-vertical-offset="4944">
+                <state line="101" column="19" selection-start="3365" selection-end="3365" vertical-scroll-proportion="0.17897092" vertical-offset="1536" max-vertical-offset="4944">
                   <folding />
                 </state>
               </provider>
@@ -1157,7 +137,7 @@
           <file leaf-file-name="biography.scss" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/Symfony/src/Imh/BaseBundle/Resources/assets/sass/biography.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="169" column="36" selection-start="3477" selection-end="3477" vertical-scroll-proportion="31.019608" vertical-offset="4286" max-vertical-offset="4960">
+                <state line="169" column="36" selection-start="3477" selection-end="3477" vertical-scroll-proportion="0.0" vertical-offset="4286" max-vertical-offset="4960">
                   <folding />
                 </state>
               </provider>
@@ -1166,7 +146,7 @@
           <file leaf-file-name="global.scss" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/Symfony/src/Imh/BaseBundle/Resources/assets/sass/global.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="110" column="1" selection-start="3735" selection-end="3735" vertical-scroll-proportion="-9.208333" vertical-offset="1539" max-vertical-offset="2256">
+                <state line="110" column="1" selection-start="3735" selection-end="3735" vertical-scroll-proportion="0.0" vertical-offset="1760" max-vertical-offset="2256">
                   <folding />
                 </state>
               </provider>
@@ -1175,7 +155,7 @@
           <file leaf-file-name="navigation.html.twig" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/Symfony/src/Imh/BaseBundle/Resources/views/Menu/navigation.html.twig">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="2" column="23" selection-start="59" selection-end="74" vertical-scroll-proportion="-1.3333334" vertical-offset="0" max-vertical-offset="192">
+                <state line="2" column="23" selection-start="59" selection-end="74" vertical-scroll-proportion="0.0" vertical-offset="32" max-vertical-offset="192">
                   <folding />
                 </state>
               </provider>
@@ -1196,7 +176,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/Symfony/src/Imh/BaseBundle/Resources/assets/sass/sidebar.scss" />
         <option value="$PROJECT_DIR$/Symfony/src/Imh/BaseBundle/Resources/assets/sass/lang.scss" />
         <option value="$PROJECT_DIR$/Symfony/src/Application/Sonata/MediaBundle/Resources/assets/sass/video_player.scss" />
         <option value="$PROJECT_DIR$/Symfony/src/Imh/BaseBundle/Resources/views/Part/sidebar_main.html.twig" />
@@ -1217,7 +196,6 @@
         <option value="$PROJECT_DIR$/Symfony/src/Application/Sonata/MediaBundle/Provider/CustomYouTubeProvider.php" />
         <option value="$PROJECT_DIR$/Symfony/src/Imh/BaseBundle/Resources/assets/js/jquery.imh.player.js" />
         <option value="$PROJECT_DIR$/Symfony/app/config/parameters.yml" />
-        <option value="$PROJECT_DIR$/Symfony/app/config/config.yml" />
         <option value="$PROJECT_DIR$/Symfony/src/Imh/BaseBundle/Controller/ContactController.php" />
         <option value="$PROJECT_DIR$/Symfony/src/Imh/BaseBundle/Resources/assets/sass/footer.scss" />
         <option value="$PROJECT_DIR$/Symfony/src/Imh/BaseBundle/Resources/assets/sass/contact.scss" />
@@ -1247,6 +225,8 @@
         <option value="$PROJECT_DIR$/Symfony/src/Imh/BaseBundle/Resources/assets/sass/media_queries.scss" />
         <option value="$PROJECT_DIR$/Symfony/src/Imh/BaseBundle/Resources/assets/js/jquery.imh.gallery.js" />
         <option value="$PROJECT_DIR$/Symfony/.gitignore" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/Symfony/app/config/config.yml" />
       </list>
     </option>
   </component>
@@ -1283,7 +263,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -3060,6 +2039,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -3071,6 +2051,7 @@
     <property name="options.searchVisible" value="true" />
     <property name="SearchEverywhereHistory" value="" />
     <property name="FullScreen" value="false" />
+    <property name="ignore_missing_gitignore" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -3130,20 +2111,39 @@
     </task>
     <servers />
   </component>
+  <component name="TodoView" selected-index="0">
+    <todo-panel id="selected-file">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+    <todo-panel id="default-changelist">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1535" height="876" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299363" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26523778" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299363" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299363" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3299363" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20696583" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32147396" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299363" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299363" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24916276" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32356688" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Framework" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32953784" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -3152,6 +2152,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32147396" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -3195,83 +2196,56 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Symfony/src/Imh/BaseBundle/Resources/assets/sass/contact.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="134" column="10" selection-start="3313" selection-end="3313" vertical-scroll-proportion="-43.333332" vertical-offset="1104" max-vertical-offset="2784">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Symfony/web/assets/lib/modernizr/modernizr-custom.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="13" selection-start="13" selection-end="13" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="703">
-          <folding />
-        </state>
+        <state line="0" column="13" selection-start="13" selection-end="13" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="703" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Symfony/src/Imh/BaseBundle/Resources/translations/messages.ru.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="10" selection-start="3642" selection-end="3642" vertical-scroll-proportion="0.8928047" vertical-offset="96" max-vertical-offset="2048">
-          <folding />
-        </state>
+        <state line="44" column="10" selection-start="3642" selection-end="3642" vertical-scroll-proportion="0.8928047" vertical-offset="96" max-vertical-offset="2048" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Symfony/src/Imh/BaseBundle/Resources/translations/messages.fr.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="10" selection-start="4127" selection-end="4127" vertical-scroll-proportion="0.54623044" vertical-offset="288" max-vertical-offset="2016">
-          <folding />
-        </state>
+        <state line="42" column="10" selection-start="4127" selection-end="4127" vertical-scroll-proportion="0.54623044" vertical-offset="288" max-vertical-offset="2016" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Symfony/src/Imh/BaseBundle/Resources/translations/messages.en.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="10" selection-start="3554" selection-end="3554" vertical-scroll-proportion="0.45519203" vertical-offset="336" max-vertical-offset="2016">
-          <folding />
-        </state>
+        <state line="41" column="10" selection-start="3554" selection-end="3554" vertical-scroll-proportion="0.45519203" vertical-offset="336" max-vertical-offset="2016" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Symfony/src/Imh/BaseBundle/Resources/public/images/circles_black.svg">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="71" selection-start="51" selection-end="71" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="681">
-          <folding />
-        </state>
+        <state line="0" column="71" selection-start="51" selection-end="71" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="681" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Symfony/src/Imh/BaseBundle/Resources/assets/sass/footer.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="70" column="18" selection-start="1549" selection-end="1549" vertical-scroll-proportion="-12.666667" vertical-offset="816" max-vertical-offset="2992">
-          <folding />
-        </state>
+        <state line="70" column="18" selection-start="1549" selection-end="1549" vertical-scroll-proportion="-12.666667" vertical-offset="816" max-vertical-offset="2992" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Symfony/web/assets/lib/infinite-scroll/behaviors/local.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="0" selection-start="633" selection-end="633" vertical-scroll-proportion="0.34139404" vertical-offset="0" max-vertical-offset="703">
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
-        </state>
+        <state line="15" column="0" selection-start="633" selection-end="633" vertical-scroll-proportion="0.34139404" vertical-offset="0" max-vertical-offset="703" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Symfony/src/Imh/BaseBundle/Controller/ContactController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="29" selection-start="1518" selection-end="1518" vertical-scroll-proportion="-18.291666" vertical-offset="217" max-vertical-offset="896">
+        <state line="42" column="29" selection-start="1518" selection-end="1518" vertical-scroll-proportion="0.0" vertical-offset="672" max-vertical-offset="912">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Symfony/src/Imh/BaseBundle/Resources/assets/sass/navigation.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="16" selection-start="1392" selection-end="1392" vertical-scroll-proportion="0.5357686" vertical-offset="608" max-vertical-offset="1456">
-          <folding />
-        </state>
+        <state line="60" column="16" selection-start="1392" selection-end="1392" vertical-scroll-proportion="0.5357686" vertical-offset="608" max-vertical-offset="1456" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Symfony/src/Imh/BaseBundle/Resources/views/Page/repertoire.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="78" column="13" selection-start="3055" selection-end="3165" vertical-scroll-proportion="0.81430745" vertical-offset="713" max-vertical-offset="1392">
-          <folding />
-        </state>
+        <state line="78" column="13" selection-start="3055" selection-end="3165" vertical-scroll-proportion="0.81430745" vertical-offset="713" max-vertical-offset="1392" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_167_default_gallery_small.jpeg">
@@ -3286,9 +2260,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Symfony/src/Imh/BaseBundle/Resources/public/images/circles_black_small.svg">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="23" selection-start="370" selection-end="370" vertical-scroll-proportion="0.14096916" vertical-offset="0" max-vertical-offset="681">
-          <folding />
-        </state>
+        <state line="6" column="23" selection-start="370" selection-end="370" vertical-scroll-proportion="0.14096916" vertical-offset="0" max-vertical-offset="681" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Symfony/web/uploads/media/default/0001/01/thumb_234_default_small.jpeg">
@@ -3298,76 +2270,49 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Symfony/web/assets/lib/isotope/smartresize.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="17" selection-start="545" selection-end="545" vertical-scroll-proportion="0.39941263" vertical-offset="0" max-vertical-offset="681">
-          <folding />
-        </state>
+        <state line="17" column="17" selection-start="545" selection-end="545" vertical-scroll-proportion="0.39941263" vertical-offset="0" max-vertical-offset="681" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Symfony/web/assets/lib/infinite-scroll/behaviors/manual-trigger.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="0" selection-start="522" selection-end="522" vertical-scroll-proportion="0.15418503" vertical-offset="215" max-vertical-offset="1136">
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
-        </state>
+        <state line="20" column="0" selection-start="522" selection-end="522" vertical-scroll-proportion="0.15418503" vertical-offset="215" max-vertical-offset="1136" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Symfony/src/Imh/BaseBundle/Resources/assets/js/_jquery.ajax.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="84" selection-start="550" selection-end="550" vertical-scroll-proportion="-0.32892805" vertical-offset="432" max-vertical-offset="1392">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Symfony/app/config/config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="135" column="16" selection-start="4416" selection-end="4416" vertical-scroll-proportion="0.0" vertical-offset="1824" max-vertical-offset="4064">
-          <folding />
-        </state>
+        <state line="13" column="84" selection-start="550" selection-end="550" vertical-scroll-proportion="-0.32892805" vertical-offset="432" max-vertical-offset="1392" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Symfony/web/app_dev.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="3" selection-start="667" selection-end="667" vertical-scroll-proportion="-9.333333" vertical-offset="0" max-vertical-offset="592">
-          <folding>
-            <element signature="e#7#52#0" expanded="true" />
-          </folding>
+        <state line="14" column="3" selection-start="667" selection-end="667" vertical-scroll-proportion="0.0" vertical-offset="224" max-vertical-offset="592">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Symfony/web/assets/lib/isotope/masonry-horizontal.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="25" selection-start="1471" selection-end="1471" vertical-scroll-proportion="1.0197269" vertical-offset="0" max-vertical-offset="2576">
-          <folding />
-        </state>
+        <state line="46" column="25" selection-start="1471" selection-end="1471" vertical-scroll-proportion="1.0197269" vertical-offset="0" max-vertical-offset="2576" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Symfony/web/assets/lib/isotope/packery.pkgd.min.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="61" selection-start="163" selection-end="163" vertical-scroll-proportion="0.04855842" vertical-offset="0" max-vertical-offset="659">
-          <folding />
-        </state>
+        <state line="6" column="61" selection-start="163" selection-end="163" vertical-scroll-proportion="0.04855842" vertical-offset="0" max-vertical-offset="659" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Symfony/web/assets/lib/isotope/isotope.pkgd.min.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="39" selection-start="32262" selection-end="32262" vertical-scroll-proportion="0.25844347" vertical-offset="0" max-vertical-offset="681">
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
-        </state>
+        <state line="11" column="39" selection-start="32262" selection-end="32262" vertical-scroll-proportion="0.25844347" vertical-offset="0" max-vertical-offset="681" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Symfony/src/Imh/BaseBundle/Resources/public/images/circles_white.svg">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="716">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="716" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Symfony/src/Imh/BaseBundle/Resources/assets/sass/biography.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="169" column="36" selection-start="3477" selection-end="3477" vertical-scroll-proportion="31.019608" vertical-offset="4286" max-vertical-offset="4960">
+        <state line="169" column="36" selection-start="3477" selection-end="3477" vertical-scroll-proportion="0.0" vertical-offset="4286" max-vertical-offset="4960">
           <folding />
         </state>
       </provider>
@@ -3375,99 +2320,77 @@
     <entry file="file://$PROJECT_DIR$/Symfony/web/assets/lib/infinite-scroll/jquery.infinite-scroll.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="17" selection-start="513" selection-end="513" vertical-scroll-proportion="0.0" vertical-offset="144" max-vertical-offset="13376">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Symfony/src/Application/Sonata/MediaBundle/Resources/views/Gallery/index.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="703">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="703" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Symfony/src/Imh/BaseBundle/Resources/public/images/tail-spin_white.svg">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="94" selection-start="663" selection-end="663" vertical-scroll-proportion="0.2536023" vertical-offset="0" max-vertical-offset="694">
-          <folding />
-        </state>
+        <state line="11" column="94" selection-start="663" selection-end="663" vertical-scroll-proportion="0.2536023" vertical-offset="0" max-vertical-offset="694" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Symfony/src/Imh/BaseBundle/Resources/public/images/tail-spin.svg">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="33" selection-start="779" selection-end="779" vertical-scroll-proportion="0.31284916" vertical-offset="0" max-vertical-offset="716">
-          <folding />
-        </state>
+        <state line="14" column="33" selection-start="779" selection-end="779" vertical-scroll-proportion="0.31284916" vertical-offset="0" max-vertical-offset="716" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_mixins.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="1" selection-start="1176" selection-end="1176" vertical-scroll-proportion="0.4712813" vertical-offset="192" max-vertical-offset="1056">
-          <folding />
-        </state>
+        <state line="32" column="1" selection-start="1176" selection-end="1176" vertical-scroll-proportion="0.4712813" vertical-offset="192" max-vertical-offset="1056" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Symfony/src/Imh/BaseBundle/Resources/assets/sass/home.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="196" column="86" selection-start="3906" selection-end="4263" vertical-scroll-proportion="33.333332" vertical-offset="3936" max-vertical-offset="5360">
-          <folding />
-        </state>
+        <state line="196" column="86" selection-start="3906" selection-end="4263" vertical-scroll-proportion="33.333332" vertical-offset="3936" max-vertical-offset="5360" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Symfony/src/Application/Sonata/MediaBundle/Resources/views/Media/thumbnail_list.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="703">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="703" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Symfony/src/Imh/BaseBundle/Resources/views/Page/biography.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="34" selection-start="1697" selection-end="1697" vertical-scroll-proportion="2.0" vertical-offset="624" max-vertical-offset="2816">
+        <state line="36" column="34" selection-start="1697" selection-end="1697" vertical-scroll-proportion="0.0" vertical-offset="576" max-vertical-offset="2816">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Symfony/src/Application/Sonata/MediaBundle/Resources/views/Media/view.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="174" column="0" selection-start="8153" selection-end="8153" vertical-scroll-proportion="0.13991164" vertical-offset="2689" max-vertical-offset="3392">
-          <folding />
-        </state>
+        <state line="174" column="0" selection-start="8153" selection-end="8153" vertical-scroll-proportion="0.13991164" vertical-offset="2689" max-vertical-offset="3392" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Symfony/src/Imh/BaseBundle/Resources/views/Menu/knp_menu.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="14" selection-start="444" selection-end="444" vertical-scroll-proportion="0.3298969" vertical-offset="0" max-vertical-offset="1936">
-          <folding />
-        </state>
+        <state line="14" column="14" selection-start="444" selection-end="444" vertical-scroll-proportion="0.3298969" vertical-offset="0" max-vertical-offset="1936" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Symfony/src/Imh/BaseBundle/Resources/views/Menu/lang.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="0" selection-start="595" selection-end="595" vertical-scroll-proportion="0.21917808" vertical-offset="0" max-vertical-offset="657">
-          <folding />
-        </state>
+        <state line="9" column="0" selection-start="595" selection-end="595" vertical-scroll-proportion="0.21917808" vertical-offset="0" max-vertical-offset="657" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Symfony/src/Imh/BaseBundle/Resources/views/Page/contact.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="81" column="22" selection-start="2618" selection-end="2618" vertical-scroll-proportion="1.9726027" vertical-offset="0" max-vertical-offset="1616">
-          <folding />
-        </state>
+        <state line="81" column="22" selection-start="2618" selection-end="2618" vertical-scroll-proportion="1.9726027" vertical-offset="0" max-vertical-offset="1616" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Symfony/src/Imh/BaseBundle/Resources/assets/sass/global.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="110" column="1" selection-start="3735" selection-end="3735" vertical-scroll-proportion="-9.208333" vertical-offset="1539" max-vertical-offset="2256">
+        <state line="110" column="1" selection-start="3735" selection-end="3735" vertical-scroll-proportion="0.0" vertical-offset="1760" max-vertical-offset="2256">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Symfony/src/Imh/BaseBundle/Resources/views/Menu/navigation.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="23" selection-start="59" selection-end="74" vertical-scroll-proportion="-1.3333334" vertical-offset="0" max-vertical-offset="192">
+        <state line="2" column="23" selection-start="59" selection-end="74" vertical-scroll-proportion="0.0" vertical-offset="32" max-vertical-offset="192">
           <folding />
         </state>
       </provider>
@@ -3481,79 +2404,83 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Symfony/src/Imh/BaseBundle/Resources/assets/sass/media_queries.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="86" column="42" selection-start="1844" selection-end="1844" vertical-scroll-proportion="-4.0784316" vertical-offset="1168" max-vertical-offset="8496">
+        <state line="86" column="42" selection-start="1844" selection-end="1844" vertical-scroll-proportion="0.0" vertical-offset="1168" max-vertical-offset="8496">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Symfony/src/Application/Sonata/MediaBundle/Resources/views/Gallery/view.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="20" selection-start="683" selection-end="683" vertical-scroll-proportion="-14.0" vertical-offset="0" max-vertical-offset="1504">
+        <state line="21" column="20" selection-start="683" selection-end="683" vertical-scroll-proportion="0.0" vertical-offset="336" max-vertical-offset="1504">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Symfony/src/Application/Sonata/MediaBundle/Resources/assets/sass/gallery.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="182" column="32" selection-start="3635" selection-end="3635" vertical-scroll-proportion="-3.137255" vertical-offset="2752" max-vertical-offset="6080">
+        <state line="182" column="32" selection-start="3635" selection-end="3635" vertical-scroll-proportion="0.0" vertical-offset="2752" max-vertical-offset="6080">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Symfony/app/cache/.gitkeep">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="455">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Symfony/app/Resources/views/full-layout.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="30" selection-start="690" selection-end="690" vertical-scroll-proportion="-6.0" vertical-offset="0" max-vertical-offset="1568">
-          <folding>
-            <marker date="1451956616317" expanded="true" signature="1237:1294" placeholder="..." />
-          </folding>
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="455" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Symfony/web/.htaccess">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="928">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="928" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Symfony/web/robots.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="420">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="420" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Symfony/.travis.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="433">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="433" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.htaccess">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="455">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="455" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Symfony/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="5" selection-start="113" selection-end="113" vertical-scroll-proportion="0.24347825" vertical-offset="0" max-vertical-offset="460">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Symfony/src/Imh/BaseBundle/Resources/assets/js/jquery.imh.gallery.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="96" column="29" selection-start="3239" selection-end="3239" vertical-scroll-proportion="0.34698796" vertical-offset="1392" max-vertical-offset="4944">
+        <state line="101" column="19" selection-start="3365" selection-end="3365" vertical-scroll-proportion="0.17897092" vertical-offset="1536" max-vertical-offset="4944">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Symfony/.gitignore">
+    <entry file="file://$PROJECT_DIR$/Symfony/app/Resources/views/full-layout.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="9" selection-start="9" selection-end="9" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="430">
+        <state line="19" column="10" selection-start="1168" selection-end="1168" vertical-scroll-proportion="-12.666667" vertical-offset="0" max-vertical-offset="1568">
+          <folding>
+            <marker date="1451956616317" expanded="true" signature="1237:1294" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="5" selection-start="92" selection-end="92" vertical-scroll-proportion="0.14317673" vertical-offset="0" max-vertical-offset="447">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Symfony/app/config/config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="119" column="13" selection-start="3720" selection-end="3720" vertical-scroll-proportion="0.17897092" vertical-offset="1824" max-vertical-offset="4064">
           <folding />
         </state>
       </provider>
