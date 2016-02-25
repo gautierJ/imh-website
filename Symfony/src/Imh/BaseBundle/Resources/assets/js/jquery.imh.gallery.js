@@ -1,6 +1,12 @@
 $(function() {
     'use strict';
 
+    var cst = {
+        'LOADING_TIME'       : 3000,
+        'PORTRAIT_WIDTH'     : 33.33 + '%',
+        'PORTRAIT_MAX_WIDTH' : 66.66 + '%'
+    };
+
     var contentSelector   = 'content',
         gallerySelector   = 'gallery-wrapper',
         frameSelector     = 'frame',
@@ -23,7 +29,7 @@ $(function() {
         isClosed          = true,
         isVisible         = false,
         isTriggered       = false,
-        loadingTime       = 3000,
+
         delay             = (function(){
             var timer = 0;
             return function(callback, ms){
@@ -62,8 +68,8 @@ $(function() {
                     newWidth = Math.round($img.height()/imgRatio);
 
                 if(orientation) { $(this).width(newWidth); }
-                else if (!isClosed) { $trgi.css('width', '66.66%'); }
-                else { $(this).css('width', '33.33%'); }
+                else if (!isClosed) { $trgi.css('width', cst.PORTRAIT_MAX_WIDTH); }
+                else { $(this).css('width', cst.PORTRAIT_WIDTH); }
             });
             $container.isotope('layout');
         };
@@ -106,13 +112,13 @@ $(function() {
 
         window.addEventListener(orientationEvent, function() {
 
-            orientation = getOrientation(ratio);
-
             var wWidth      = $(this).width(),
                 wHeight     = $(this).height(),
-                ratio       = wWidth/wHeight,
+                ratio       = wWidth/wHeight;
 
-            _destroy = function() {
+            orientation = getOrientation(ratio);
+
+            var _destroy = function() {
                 sly.destroy();
                 $container.isotope('destroy');
             },
@@ -147,7 +153,7 @@ $(function() {
                     sly.reload();
                     setCssCursor(orientation);
                     loading(isVisible = true);
-                }, loadingTime);
+                }, cst.LOADING_TIME);
             }
             calcEltWidth();
         }, false);
