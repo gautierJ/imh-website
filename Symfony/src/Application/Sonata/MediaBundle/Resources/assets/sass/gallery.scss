@@ -7,41 +7,57 @@ body {
 
 #wrapper {
   height: 100%;
+  position: relative;
 
-  #header {
+  &:before, &:after {
+    content: '';
+    position: absolute;
     background: url("/bundles/imhbase/images/points.png") repeat scroll 2px -2px;
     height: 100px;
     width: 100%;
-    margin-bottom: 1.5%;
+  }
+
+  &:before {
+    top: 0;
+  }
+
+  &:after {
+    bottom: 3px;
   }
 
   #sidebar-main {
-    position: fixed;
+    //border-left: 1px solid $color-grey-darker;
+    position: absolute;
+    top: 0;
     right: 0;
     left: auto;
     background-color: rgb(0, 0, 0);
     background-color: rgba(0, 0, 0, .95);
-    padding: 0 70px;
+    padding: 0 100px;
+    height: 100%;
 
-    .block-triangle {
+    /*.block-triangle {
       @include opacity(.95);
-      border-bottom-color: $color-black;
+      border-bottom-color: $color-white;
 
       &+.navigation-menu {
         margin-top: 130px;
       }
-    }
+    }*/
 
     .gallery-menu li.first, .navigation-menu > span {
       color: $color-grey-medium;
     }
 
     .navigation-menu {
+      @include box-sizing(border-box);
       position: static;
       display: block;
+      height: 50%;
+      padding-top: 50%;
 
       &.gallery-menu {
-        margin-top: 40px;
+        //margin-top: 40px;
 
         > ul {
           border: none;
@@ -98,22 +114,23 @@ body {
 }
 
 #content {
-  padding: 0 1.5%;
-  width: 97%;
-  height: calc(98.5% - 100px);
-  height: -webkit-calc(98.5% - 100px);
+  @include box-sizing(border-box);
+  @include calc(height, '100% - 200px');
+  padding: 1.5%;
+  width: 100%;
   position: relative;
+  top: 100px;
 
   #gallery-wrapper {
-    @include transition(opacity, 0.3s, linear, 0.5s);
+    @include transition(opacity, .3s, linear, .5s);
+    height: 100%;
     position: relative;
-    height: 93%;
 
     #frame {
       height: 100%;
     }
 
-    #trigger {
+    /*#trigger {
       position: absolute;
       right: 18%;
       top: 0;
@@ -124,51 +141,27 @@ body {
       a {
         position: relative;
         top: 50%;
-        margin-top: -31px;
+        margin-top: -32px;
         display: block;
 
         img {
-          background: url("/bundles/imhbase/images/sprite.png") no-repeat scroll 0 -241px;
-          height: 62px;
+          background: url("/bundles/imhbase/images/sprite.png") no-repeat scroll -2px -242px;
+          height: 64px;
           width: 30px;
           display: block;
         }
         &:hover {
           img {
-            background-position: -30px -241px;
+            background-position: -33px -242px;
           }
         }
       }
+    }*/
+
+    #trigger {
+      display: none;
     }
 
-    #scrollbar {
-      position: absolute;
-      left: 0;
-      bottom: -15px;
-      width: 70%;
-      height: 5px;
-      background: $color-grey-darker;
-
-      .handle {
-        @include transition(background, 0.3s, ease-in, 0s);
-        cursor: pointer;
-        background: $color-grey-dark;
-        width: 100px; /* overriden if dynamicHandle: 1 */
-        height: 100%;
-
-        &:hover {
-          background: $color-grey-medium;
-        }
-
-        .mousearea {
-          position: absolute;
-          top: -12px;
-          left: 0;
-          height: 25px;
-          width: 100%;
-        }
-      }
-    }
     &.loading {
       @include transition(opacity, 0.2s, linear, 0s);
       @include opacity(0);
@@ -176,6 +169,36 @@ body {
       &+#spinner {
         @include transition(opacity, 0.2s, linear, 0.3s);
         @include opacity(1);
+      }
+    }
+  }
+
+  #scrollbar {
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    height: 2px;
+    width: 100%;
+    background: $color-grey-darker;
+    z-index: 1;
+
+    .handle {
+      @include transition(background, .2s, ease-in, 0s);
+      cursor: pointer;
+      background: $color-grey-dark;
+      width: 100px; /* overriden if dynamicHandle: 1 */
+      height: 100%;
+
+      &:hover {
+        background: $color-grey-light;
+      }
+
+      .mousearea {
+        position: absolute;
+        top: -31px;
+        left: 0;
+        height: 128px;
+        width: 100%;
       }
     }
   }
@@ -337,39 +360,7 @@ body {
     }
   }
   #spinner {
-    top: 47%;
-    @include transition(opacity, 0.2s, linear, 0s);
+    @include transition(opacity, .2s, linear, 0s);
     @include opacity(0);
-  }
-}
-
-#footer {
-  background: none;
-  background-color: rgb(0, 0, 0);
-  background-color: rgba(0, 0, 0, 0.95);
-  position: fixed;
-  bottom: 0;
-  display: none;
-  border-top: none;
-
-  .footer-column {
-    border-left-color: $color-grey-darker;
-
-    ul li a, ul li span {
-      color: $color-grey-dark;
-      &:hover {
-        color: $color-grey-medium;
-      }
-    }
-
-    ul li.current a, ul li.current span {
-      background-color: $color-grey-darker;
-      color: $color-grey-medium;
-      border-color: $color-grey-dark;
-    }
-  }
-
-  p {
-    color: $color-grey-dark;
   }
 }

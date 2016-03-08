@@ -59,3 +59,8 @@
 //  -moz-filter: #{"grayscale(#{$value})"};
 //  filter:#{"grayscale(#{$value})"};
 //}
+
+@mixin calc($property, $expression) {
+  #{$property}: -webkit-calc(#{$expression});
+  #{$property}: calc(#{$expression});
+}

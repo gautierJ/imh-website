@@ -1,0 +1,246 @@
+html.no-touchevents {
+  /*@media all and (orientation: landscape) {
+    #content {
+      #sonata-media-gallery-media-list {
+        height: 100%;
+        .sonata-media-gallery-media-item {
+          height: 50%;
+          .sonata-media-gallery-media-item-link {
+            .media-object {
+              height: 100%;
+              width: auto;
+            }
+          }
+          &.expanded {
+            height: 100%;
+            width: auto;
+            .sonata-media-gallery-media-item-link {
+              .media-object {
+                height: 100%;
+                max-height: 100%;
+
+              }
+            }
+          }
+        }
+      }
+    }
+  }*/ }
+  @media screen and (device-aspect-ratio: 16 / 9), screen and (device-aspect-ratio: 16 / 10) {
+    html.no-touchevents .bkg-image {
+      right: -250px; } }
+  @media all and (orientation: portrait) {
+    html.no-touchevents #home-content.makeAnimation .bkg-image-ctn {
+      width: 100%; }
+    html.no-touchevents #home-content.makeAnimation .block-myself {
+      display: none; }
+    html.no-touchevents #sidebar-main, html.no-touchevents #trigger {
+      display: none; }
+    html.no-touchevents #content #gallery-wrapper #sonata-media-gallery-media-list {
+      height: auto; }
+      html.no-touchevents #content #gallery-wrapper #sonata-media-gallery-media-list .sonata-media-gallery-media-item {
+        height: auto;
+        width: 33.33%; }
+        html.no-touchevents #content #gallery-wrapper #sonata-media-gallery-media-list .sonata-media-gallery-media-item .sonata-media-gallery-media-item-link .media-object {
+          height: auto;
+          width: 100%; }
+        html.no-touchevents #content #gallery-wrapper #sonata-media-gallery-media-list .sonata-media-gallery-media-item.expanded {
+          height: auto;
+          width: 66.66%; }
+          html.no-touchevents #content #gallery-wrapper #sonata-media-gallery-media-list .sonata-media-gallery-media-item.expanded .sonata-media-gallery-media-item-link .media-object {
+            height: auto;
+            width: 100%; }
+    html.no-touchevents #content #scrollbar {
+      display: none; } }
+
+html.touchevents {
+  /* ----------- iPad 3 and 4 ----------- */
+  /* Portrait and Landscape */
+  /* Portrait */
+  /* Landscape */
+  /* Smartphones (portrait and landscape) ----------- */
+  /* Galaxy Tab 10.1 ----------- */
+  /* Portrait and Landscape */
+  /* Portrait */
+  /* Landscape */ }
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+    html.touchevents {
+      /* Home */
+      /* Other pages */ }
+      html.touchevents .navigation-menu {
+        left: -9999px; }
+      html.touchevents .bkg-image-ctn img:first-child {
+        display: none; }
+      html.touchevents .block-language a {
+        width: 90px;
+        line-height: 40px;
+        font-size: 0.917em;
+        margin-right: 10px; }
+      html.touchevents #header .navigation {
+        background: none;
+        border: none; } }
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+    html.touchevents #home-content .block-myself h1 {
+      font-size: 2em; }
+    html.touchevents #home-content .block-myself h2 {
+      font-size: 2em; }
+    html.touchevents #home-content .block-myself h3 {
+      font-size: 1.5em; } }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    html.touchevents #home-content .block-myself .block-center {
+      margin-top: -60px; }
+    html.touchevents #home-content .block-myself h1 {
+      font-size: 2em; }
+    html.touchevents #home-content .block-myself h2 {
+      font-size: 2em; }
+    html.touchevents #home-content .block-myself h3 {
+      font-size: 1em; } }
+  @media only screen and (min-width: 800px) and (max-width: 1280px) {
+    html.touchevents #bkg-image {
+      left: 0; } }
+  @media only screen and (max-width: 800px) and (max-aspect-ratio: 13 / 9) {
+    html.touchevents #sidebar-main, html.touchevents #trigger {
+      display: none; }
+    html.touchevents #header .navigation {
+      background: none;
+      border: none;
+      height: auto; }
+      html.touchevents #header .navigation .wrapper {
+        top: 0; }
+      html.touchevents #header .navigation ul li {
+        height: 100px;
+        width: 16.74%; }
+        html.touchevents #header .navigation ul li a, html.touchevents #header .navigation ul li span {
+          height: 99px;
+          line-height: 101px;
+          padding: 0; }
+    html.touchevents #wrapper {
+      max-width: 800px; }
+    html.touchevents #content {
+      padding: 3%;
+      height: calc(100% - 100px); }
+      html.touchevents #content .main-content-wrapper {
+        max-width: none;
+        top: 0; }
+        html.touchevents #content .main-content-wrapper .middle {
+          padding-top: 10px;
+          border-top: none; }
+          html.touchevents #content .main-content-wrapper .middle.shadows:before, html.touchevents #content .main-content-wrapper .middle.shadows:after {
+            content: normal; }
+          html.touchevents #content .main-content-wrapper .middle .lang {
+            position: static;
+            text-align: right;
+            margin: 0 0 50px; }
+            html.touchevents #content .main-content-wrapper .middle .lang li {
+              display: inline-block;
+              margin-bottom: 0; }
+              html.touchevents #content .main-content-wrapper .middle .lang li.current a {
+                background-color: #222222; }
+              html.touchevents #content .main-content-wrapper .middle .lang li a {
+                height: auto;
+                width: auto;
+                line-height: normal;
+                padding: 15px;
+                border: none;
+                display: block; }
+          html.touchevents #content .main-content-wrapper .middle .prizes .slider-title {
+            line-height: 46px; }
+            html.touchevents #content .main-content-wrapper .middle .prizes .slider-title:after {
+              top: 15px; }
+          html.touchevents #content .main-content-wrapper .middle .prizes.closed .slider-title:after {
+            top: 15px; }
+          html.touchevents #content .main-content-wrapper .middle .concert-wrapper {
+            padding: 0; }
+            html.touchevents #content .main-content-wrapper .middle .concert-wrapper li img {
+              width: 52%; }
+            html.touchevents #content .main-content-wrapper .middle .concert-wrapper li .concert {
+              width: 42%; }
+          html.touchevents #content .main-content-wrapper .middle #form-contact .contact-info, html.touchevents #content .main-content-wrapper .middle #form-contact .contact-message {
+            float: none;
+            width: 100%; }
+          html.touchevents #content .main-content-wrapper .middle #form-contact .contact-info label {
+            width: 25%; }
+          html.touchevents #content .main-content-wrapper .middle #form-contact .contact-info input {
+            box-sizing: border-box;
+            width: 75%; }
+          html.touchevents #content .main-content-wrapper .middle #form-contact .contact-info > div {
+            margin-bottom: 25px; }
+          html.touchevents #content .main-content-wrapper .middle #form-contact .contact-message {
+            margin-top: 50px; }
+            html.touchevents #content .main-content-wrapper .middle #form-contact .contact-message textarea {
+              box-sizing: border-box;
+              width: 75%; }
+          html.touchevents #content .main-content-wrapper .middle #form-contact > p {
+            margin-top: 50px; }
+          html.touchevents #content .main-content-wrapper .middle #form-contact .send {
+            margin-top: 60px; }
+      html.touchevents #content #gallery-wrapper {
+        width: 100%;
+        height: 100%; }
+        html.touchevents #content #gallery-wrapper #sonata-media-gallery-media-list {
+          height: auto; }
+          html.touchevents #content #gallery-wrapper #sonata-media-gallery-media-list .sonata-media-gallery-media-item {
+            width: 33.33%;
+            height: auto; }
+            html.touchevents #content #gallery-wrapper #sonata-media-gallery-media-list .sonata-media-gallery-media-item .sonata-media-gallery-media-item-link .media-object {
+              height: auto;
+              width: 100%; }
+            html.touchevents #content #gallery-wrapper #sonata-media-gallery-media-list .sonata-media-gallery-media-item.expanded {
+              width: auto;
+              height: auto; }
+              html.touchevents #content #gallery-wrapper #sonata-media-gallery-media-list .sonata-media-gallery-media-item.expanded .sonata-media-gallery-media-item-link .media-object {
+                height: auto;
+                width: auto;
+                max-width: 100%; }
+        html.touchevents #content #gallery-wrapper #scrollbar {
+          top: 0;
+          right: -20px;
+          bottom: inherit;
+          left: inherit;
+          width: 5px;
+          height: 100%; }
+          html.touchevents #content #gallery-wrapper #scrollbar .handle {
+            width: 100%;
+            height: 100px;
+            /* overriden if dynamicHandle: 1 */ }
+            html.touchevents #content #gallery-wrapper #scrollbar .handle .mousearea {
+              position: absolute;
+              top: 0;
+              left: -12px;
+              width: 25px;
+              height: 100%; }
+    html.touchevents #footer {
+      position: absolute;
+      bottom: 0;
+      left: 0; } }
+  @media only screen and (max-width: 1280px) and (min-aspect-ratio: 13 / 9) {
+    html.touchevents #header .navigation .wrapper {
+      top: 0; }
+    html.touchevents #header .navigation ul li {
+      height: 100px;
+      width: 15%; }
+      html.touchevents #header .navigation ul li a, html.touchevents #header .navigation ul li span {
+        height: 99px;
+        line-height: 101px;
+        padding: 0; }
+    html.touchevents #content .main-content-wrapper .middle .prizes .slider-title {
+      line-height: 46px; }
+      html.touchevents #content .main-content-wrapper .middle .prizes .slider-title:after {
+        top: 15px; }
+    html.touchevents #content .main-content-wrapper .middle .prizes.closed .slider-title:after {
+      top: 15px; }
+    html.touchevents #content #gallery-wrapper #sonata-media-gallery-media-list {
+      height: 100%; }
+      html.touchevents #content #gallery-wrapper #sonata-media-gallery-media-list .sonata-media-gallery-media-item {
+        height: 50%;
+        width: auto; }
+        html.touchevents #content #gallery-wrapper #sonata-media-gallery-media-list .sonata-media-gallery-media-item .sonata-media-gallery-media-item-link .media-object {
+          height: 100%;
+          width: auto; }
+        html.touchevents #content #gallery-wrapper #sonata-media-gallery-media-list .sonata-media-gallery-media-item.expanded {
+          height: 100%;
+          width: auto; }
+          html.touchevents #content #gallery-wrapper #sonata-media-gallery-media-list .sonata-media-gallery-media-item.expanded .sonata-media-gallery-media-item-link .media-object {
+            height: 100%;
+            max-height: 100%;
+            width: auto; } }

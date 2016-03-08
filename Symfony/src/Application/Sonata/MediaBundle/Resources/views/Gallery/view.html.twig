@@ -12,6 +12,7 @@
     {% endstylesheets %}
 {% endblock %}
 
+{% block header %}{% endblock %}
 {% block navigation %}{% endblock %}
 
 {% block main %}
@@ -44,15 +45,17 @@
                 <img src="{{ asset('bundles/imhbase/images/empty.gif') }}" alt="" />
             </a>
         </div>
-        <div id="scrollbar">
-            <div class="handle">
-                <div class="mousearea"></div>
-            </div>
-        </div>
+        {% include 'ImhBaseBundle:Part:sidebar.html.twig' %}
     </div>
     <img id="spinner" src="{{ asset('bundles/imhbase/images/tail-spin_white.svg') }}" alt="loading">
+    <div id="scrollbar">
+        <div class="handle">
+            <div class="mousearea"></div>
+        </div>
+    </div>
 {% endblock %}
 
+{% block sidebar %}{% endblock %}
 {% block footer %}{% endblock %}
 
 {% block javascripts %}

@@ -13,32 +13,34 @@
 {% block body %}
     <section id="home-content">
         {% block main %}
-            <figure class="bkg-image-ctn">
-                <img class="bkg-image" src="{{ asset('bundles/imhbase/images/ionella_bw.jpg') }}" alt="Ionella Marinutsa" />
-                <img class="bkg-image" src="{{ asset('bundles/imhbase/images/ionella.jpg') }}" alt="Ionella Marinutsa" />
-            </figure><!--
-            --><div class="block-myself">
-                <div class="block-triangle"></div>
-                <div class="block-center">
-                    <img class="logo" src="{{ asset('bundles/imhbase/images/logo.png') }}" alt="Harp" />
-                    <div>
-                        <h1>Ionella&nbsp;</h1>
-                        <h2>Marinutsa</h2>
-                        <div class="wrap-loader">
-                            <div class="loader">
-                                <img class="empty" src="{{ asset('bundles/imhbase/images/empty.gif') }}" />
+            {% spaceless %}
+                <figure class="bkg-image-ctn">
+                    <img class="bkg-image" src="{{ asset('bundles/imhbase/images/ionella_bw.jpg') }}" alt="Ionella Marinutsa" />
+                    <img class="bkg-image" src="{{ asset('bundles/imhbase/images/ionella.jpg') }}" alt="Ionella Marinutsa" />
+                </figure>
+                <div class="block-myself">
+                    <div class="block-triangle"></div>
+                    <div class="block-center">
+                        <img class="logo" src="{{ asset('bundles/imhbase/images/logo.png') }}" alt="Harp" />
+                        <div>
+                            <h1>Ionella&nbsp;</h1>
+                            <h2>Marinutsa</h2>
+                            <div class="wrap-loader">
+                                <div class="loader">
+                                    <img class="empty" src="{{ asset('bundles/imhbase/images/empty.gif') }}" />
+                                </div>
                             </div>
+                            <p class="progressCounter">0 %</p>
+                            <h3>Harpist</h3>
                         </div>
-                        <p class="progressCounter">0 %</p>
-                        <h3>Harpist</h3>
+                    </div>
+                    <div class="block-language">
+                        {% for i in range(0,2) -%}
+                        <a href="{{ path('imh_base_biography', {'_locale': ('imh.base.menu_lang.'~i~'.locale')|trans}) }}">{{ ('imh.base.menu_lang.'~i~'.text')|trans }}</a>
+                        {%- endfor %}
                     </div>
                 </div>
-                <div class="block-language">
-                    {% for i in range(0,2) -%}
-                    <a href="{{ path('imh_base_biography', {'_locale': ('imh.base.menu_lang.'~i~'.locale')|trans}) }}">{{ ('imh.base.menu_lang.'~i~'.text')|trans }}</a>
-                    {%- endfor %}
-                </div>
-            </div>
+            {% endspaceless %}
         {% endblock %}
     </section>
 

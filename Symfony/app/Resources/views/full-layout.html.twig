@@ -49,11 +49,11 @@
             {% block flashes %}{% endblock %}
 
             <div id="wrapper">
-                <header id="header">
-                    {% block navigation %}
+                {% block header %}
+                    <header id="header">
                         {% include 'ImhBaseBundle:Menu:navigation.html.twig' %}
-                    {% endblock %}
-                </header>
+                    </header>
+                {% endblock %}
 
                 <section id="content">
                     {% block main %}{% endblock %}

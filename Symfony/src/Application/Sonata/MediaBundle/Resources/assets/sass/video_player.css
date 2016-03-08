@@ -1,0 +1,435 @@
+#content {
+  margin-bottom: 100px; }
+  #content .main-content-wrapper .middle {
+    padding-bottom: 62px !important; }
+
+.middle .media-content {
+  width: 640px;
+  margin: 0 auto;
+  min-height: 360px; }
+  .middle .media-content .media {
+    position: relative;
+    float: left;
+    width: 640px;
+    height: 360px; }
+    .middle .media-content .media .layer {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      text-align: center; }
+      .middle .media-content .media .layer a {
+        display: block;
+        height: 100%;
+        width: 100%;
+        cursor: default; }
+        .middle .media-content .media .layer a .play {
+          background: url("/bundles/imhbase/images/sprite.png") -1px -1px no-repeat;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          width: 78px;
+          height: 78px;
+          margin: -39px 0 0 -39px;
+          z-index: 1000; }
+          .middle .media-content .media .layer a .play:hover {
+            background-position: -78px -1px;
+            cursor: pointer; }
+    .middle .media-content .media #ytplayer {
+      display: block;
+      visibility: hidden; }
+    .middle .media-content .media .progress-bar-wrapper {
+      opacity: 0;
+      /* Good browsers */
+      -moz-opacity: 0;
+      /* Netscape */
+      -khtml-opacity: 0;
+      /* Safari 1.x */
+      filter: alpha(opacity=0);
+      /* IE 5-7 */
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+      /* IE 8 */ }
+      .middle .media-content .media .progress-bar-wrapper .progress-bar {
+        float: left;
+        height: 2px;
+        background-color: #222222;
+        margin-top: 10px; }
+        .middle .media-content .media .progress-bar-wrapper .progress-bar .advancement, .middle .media-content .media .progress-bar-wrapper .progress-bar .buffer {
+          height: 100%;
+          width: 0; }
+        .middle .media-content .media .progress-bar-wrapper .progress-bar .advancement {
+          background-color: #582411; }
+        .middle .media-content .media .progress-bar-wrapper .progress-bar .buffer {
+          background-color: #b18f5c; }
+      .middle .media-content .media .progress-bar-wrapper .time {
+        float: right;
+        font-size: 0.917em;
+        margin-top: 5px;
+        text-align: right; }
+.middle .actions {
+  float: left;
+  margin-left: 10px; }
+  .middle .actions li {
+    margin-top: 10px; }
+    .middle .actions li:first-child {
+      margin-top: 0; }
+    .middle .actions li a {
+      color: #3f3f3f;
+      border: 1px solid #3f3f3f;
+      /*background-color: rgb(250, 250, 250);
+      background-color: rgba(250, 250, 250, 0.3);*/
+      display: block;
+      width: 111px;
+      height: 111px;
+      text-align: center;
+      line-height: 180px;
+      position: relative; }
+      .middle .actions li a:hover {
+        background-color: #222222;
+        color: white;
+        border-color: #222222; }
+      .middle .actions li a img {
+        background: url("/bundles/imhbase/images/sprite.png") no-repeat;
+        display: inline-block;
+        height: 50px;
+        width: 50px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -30px;
+        margin-left: -25px; }
+    .middle .actions li.display a img {
+      background-position: 0 -192px; }
+    .middle .actions li.display a:hover img {
+      background-position: -150px -192px; }
+    .middle .actions li.like a img {
+      background-position: -50px -192px; }
+    .middle .actions li.like a:hover img {
+      background-position: -200px -192px; }
+    .middle .actions li.download a img {
+      background-position: -100px -192px; }
+    .middle .actions li.download a:hover img {
+      background-position: -250px -192px; }
+
+.player-control-bar {
+  border-top: 1px solid lightgray;
+  width: 100%;
+  height: 56px;
+  color: #898989; }
+  .player-control-bar .views, .player-control-bar .video-info, .player-control-bar .controls, .player-control-bar .share {
+    float: left;
+    height: 100%;
+    margin-right: 1px; }
+  .player-control-bar .views {
+    background-color: white;
+    background-color: rgba(255, 255, 255, 0.9);
+    width: 163px;
+    padding-left: 14px; }
+    .player-control-bar .views .nb {
+      font-family: 'open_sanscondensed_light';
+      color: #3f3f3f;
+      float: left;
+      font-size: 2.333em;
+      line-height: 56px; }
+  .player-control-bar .txt {
+    float: left;
+    font-size: 0.917em;
+    line-height: 1.1em;
+    margin: 17px 0 0 8px; }
+  .player-control-bar .video-info {
+    background-color: white;
+    background-color: rgba(255, 255, 255, 0.9);
+    width: 293px;
+    height: 47px;
+    padding: 9px 40px 0 14px; }
+    .player-control-bar .video-info .description {
+      font-family: 'open_sans_condensedbold';
+      font-size: 1em;
+      margin: 0; }
+    .player-control-bar .video-info .name {
+      font-family: 'open_sans_condensedbold';
+      font-size: 1.333em;
+      color: #3f3f3f;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      margin: 0; }
+  .player-control-bar .controls li {
+    float: left;
+    margin-left: 1px; }
+    .player-control-bar .controls li a {
+      position: relative;
+      font-size: 0.833em;
+      width: 56px;
+      height: 56px;
+      line-height: 85px;
+      background-color: white;
+      background-color: rgba(255, 255, 255, 0.6);
+      color: #898989;
+      display: block;
+      text-align: center;
+      -webkit-transition: all 0.2s ease-in 0s;
+      -moz-transition: all 0.2s ease-in 0s;
+      -o-transition: all 0.2s ease-in 0s;
+      transition: all 0.2s ease-in 0s; }
+      .player-control-bar .controls li a:hover {
+        background-color: white;
+        color: #222222; }
+    .player-control-bar .controls li.play-pause .bkg, .player-control-bar .controls li.volume .bkg, .player-control-bar .controls li.fullscreen .bkg {
+      position: absolute;
+      top: 11px;
+      left: 18px;
+      height: 25px;
+      width: 19px;
+      background: url("/bundles/imhbase/images/sprite.png") no-repeat; }
+    .player-control-bar .controls li.play-pause a .bkg {
+      background-position: -16px -102px; }
+    .player-control-bar .controls li.play-pause a:hover img {
+      background-position: -16px -77px; }
+    .player-control-bar .controls li.play-pause a.pause .bkg {
+      background-position: 3px -102px; }
+    .player-control-bar .controls li.play-pause a.pause:hover img {
+      background-position: 3px -77px; }
+    .player-control-bar .controls li.volume {
+      position: relative; }
+      .player-control-bar .controls li.volume a .bkg {
+        background-position: -60px -102px;
+        width: 25px;
+        left: 14px; }
+      .player-control-bar .controls li.volume a:hover img, .player-control-bar .controls li.volume a.hover img {
+        background-position: -60px -77px; }
+      .player-control-bar .controls li.volume a.hover {
+        background-color: white;
+        color: #222222; }
+      .player-control-bar .controls li.volume a._0 img {
+        background-position: -163px -102px;
+        width: 33px; }
+      .player-control-bar .controls li.volume a._0:hover img, .player-control-bar .controls li.volume a._0.hover img {
+        background-position: -163px -77px; }
+      .player-control-bar .controls li.volume a._25 img {
+        background-position: -60px -102px;
+        width: 26px; }
+      .player-control-bar .controls li.volume a._25:hover img, .player-control-bar .controls li.volume a._25.hover img {
+        background-position: -60px -77px; }
+      .player-control-bar .controls li.volume a._50 img {
+        background-position: -81px -102px;
+        width: 29px; }
+      .player-control-bar .controls li.volume a._50:hover img, .player-control-bar .controls li.volume a._50.hover img {
+        background-position: -81px -77px; }
+      .player-control-bar .controls li.volume a._75 img {
+        background-position: -106px -102px;
+        width: 29px; }
+      .player-control-bar .controls li.volume a._75:hover img, .player-control-bar .controls li.volume a._75.hover img {
+        background-position: -106px -77px; }
+      .player-control-bar .controls li.volume a._100 img {
+        background-position: -133px -102px;
+        width: 29px; }
+      .player-control-bar .controls li.volume a._100:hover img, .player-control-bar .controls li.volume a._100.hover img {
+        background-position: -133px -77px; }
+      .player-control-bar .controls li.volume .wrap-level {
+        position: absolute;
+        top: -116px;
+        left: 50%;
+        margin-left: -20px;
+        width: 40px;
+        height: 116px;
+        text-align: center; }
+      .player-control-bar .controls li.volume .level {
+        position: relative;
+        display: none;
+        margin-top: 10px; }
+      .player-control-bar .controls li.volume .slider {
+        position: absolute;
+        top: 15px;
+        left: 16px;
+        height: 70px; }
+        .player-control-bar .controls li.volume .slider.noUi-target {
+          border: none;
+          border-radius: inherit;
+          box-shadow: none; }
+          .player-control-bar .controls li.volume .slider.noUi-target.noUi-vertical {
+            width: 8px; }
+            .player-control-bar .controls li.volume .slider.noUi-target.noUi-vertical .noUi-handle {
+              box-shadow: none;
+              border: none;
+              -webkit-border-radius: 4px;
+              -moz-border-radius: 4px;
+              -ms-border-radius: 4px;
+              border-radius: 4px;
+              height: 8px;
+              width: 8px;
+              top: -3px;
+              left: 0;
+              cursor: pointer; }
+              .player-control-bar .controls li.volume .slider.noUi-target.noUi-vertical .noUi-handle:before, .player-control-bar .controls li.volume .slider.noUi-target.noUi-vertical .noUi-handle:after {
+                background: none; }
+          .player-control-bar .controls li.volume .slider.noUi-target.noUi-background {
+            background: none; }
+    .player-control-bar .controls li.fullscreen a .bkg {
+      background-position: -197px -102px; }
+    .player-control-bar .controls li.fullscreen a:hover img {
+      background-position: -197px -77px; }
+  .player-control-bar .controls li:first-child {
+    margin-left: 0; }
+  .player-control-bar .share {
+    background-color: white;
+    background-color: rgba(255, 255, 255, 0.9);
+    margin-right: 0;
+    padding-left: 20px;
+    line-height: 37px;
+    width: 263px; }
+    .player-control-bar .share .txt {
+      margin-left: 12px; }
+    .player-control-bar .share .twitter-share-button {
+      width: 90px !important;
+      vertical-align: bottom; }
+
+#media-gallery {
+  position: relative;
+  width: 843px;
+  height: 180px;
+  margin: 0 auto;
+  visibility: hidden; }
+  #media-gallery #imageFlow {
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto; }
+    #media-gallery #imageFlow .bank {
+      width: 100%;
+      height: 134px;
+      padding: 70px 0 0;
+      text-align: center;
+      margin: 0 auto;
+      overflow: hidden;
+      white-space: nowrap; }
+    #media-gallery #imageFlow li {
+      display: inline-block;
+      vertical-align: top;
+      text-align: left;
+      margin: 0 8px; }
+      #media-gallery #imageFlow li a {
+        position: relative;
+        display: block; }
+        #media-gallery #imageFlow li a .decoration {
+          -webkit-transition: all 0.1s ease-in 0s;
+          -moz-transition: all 0.1s ease-in 0s;
+          -o-transition: all 0.1s ease-in 0s;
+          transition: all 0.1s ease-in 0s;
+          background-color: none;
+          border-color: lightgray;
+          height: 100%;
+          width: 100%;
+          padding: 6px 6px 41px;
+          position: absolute;
+          top: -7px;
+          left: -7px;
+          z-index: -1; }
+        #media-gallery #imageFlow li a:hover .decoration {
+          background-color: white;
+          border: 1px solid #898989; }
+        #media-gallery #imageFlow li a:hover img {
+          -webkit-filter: grayscale(0);
+          -moz-filter: grayscale(0);
+          -ms-filter: grayscale(0);
+          -o-filter: grayscale(0);
+          filter: grayscale(0); }
+        #media-gallery #imageFlow li a img {
+          -webkit-filter: grayscale(100%);
+          -moz-filter: grayscale(100%);
+          -ms-filter: grayscale(100%);
+          -o-filter: grayscale(100%);
+          filter: grayscale(100%);
+          display: block; }
+      #media-gallery #imageFlow li.current .decoration {
+        background-color: white;
+        border: 1px solid #898989; }
+      #media-gallery #imageFlow li .duration {
+        position: absolute;
+        bottom: 2px;
+        right: 2px;
+        color: white;
+        background: #222222;
+        font-size: 0.917em;
+        padding: 2px 5px;
+        border: 1px solid #dddddd; }
+      #media-gallery #imageFlow li.diapo {
+        position: absolute;
+        margin: 0; }
+        #media-gallery #imageFlow li.diapo a {
+          width: inherit;
+          height: inherit; }
+    #media-gallery #imageFlow .legend {
+      position: absolute;
+      width: 100%; }
+      #media-gallery #imageFlow .legend .title {
+        display: block;
+        font-size: 0.917em;
+        color: #222222;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        margin: 7px 0 0 0;
+        line-height: 1.1em; }
+      #media-gallery #imageFlow .legend .description {
+        font-size: 0.833em;
+        color: #898989; }
+  #media-gallery .scrollbar {
+    /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+    /*background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUlIiBzdG9wLWNvbG9yPSIjODk4OTg5IiBzdG9wLW9wYWNpdHk9IjAuMSIvPgogICAgPHN0b3Agb2Zmc2V0PSI1MCUiIHN0b3AtY29sb3I9IiM4OTg5ODkiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSI5NSUiIHN0b3AtY29sb3I9IiM4OTg5ODkiIHN0b3Atb3BhY2l0eT0iMC4xIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmZmZmZmYiIHN0b3Atb3BhY2l0eT0iMCIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(137,137,137,0.1) 5%, rgba(137,137,137,1) 50%, rgba(137,137,137,0.1) 95%, rgba(255,255,255,0) 100%); */
+    /* FF3.6+ */
+                                                                                                                                                                                      /*
+background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(255,255,255,0)), color-stop(5%,rgba(137,137,137,0.1)), color-stop(50%,rgba(137,137,137,1)), color-stop(95%,rgba(137,137,137,0.1)), color-stop(100%,rgba(255,255,255,0))); */
+    /* Chrome,Safari4+ */
+                                                                                                                                                                                                                                                                              /*
+background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%,rgba(137,137,137,0.1) 5%,rgba(137,137,137,1) 50%,rgba(137,137,137,0.1) 95%,rgba(255,255,255,0) 100%); */
+    /* Chrome10+,Safari5.1+ */
+                                                                                                                                                                                                   /*
+background: -o-linear-gradient(left, rgba(255,255,255,0) 0%,rgba(137,137,137,0.1) 5%,rgba(137,137,137,1) 50%,rgba(137,137,137,0.1) 95%,rgba(255,255,255,0) 100%); */
+    /* Opera 11.10+ */
+                                                                                                                                                                                      /*
+background: -ms-linear-gradient(left, rgba(255,255,255,0) 0%,rgba(137,137,137,0.1) 5%,rgba(137,137,137,1) 50%,rgba(137,137,137,0.1) 95%,rgba(255,255,255,0) 100%); */
+    /* IE10+ */
+                                                                                                                                                                                /*
+background: linear-gradient(to right, rgba(255,255,255,0) 0%,rgba(137,137,137,0.1) 5%,rgba(137,137,137,1) 50%,rgba(137,137,137,0.1) 95%,rgba(255,255,255,0) 100%); */
+    /* W3C */
+                                                                                                                                                                              /*
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#00ffffff',GradientType=1 ); */
+    /* IE6-8 */
+                                                                                                                                          /*
+*/
+    background-color: whitesmoke;
+    position: relative;
+    height: 5px;
+    margin: 20px auto 0;
+    z-index: 1; }
+    #media-gallery .scrollbar .left, #media-gallery .scrollbar .right {
+      cursor: pointer;
+      position: absolute;
+      top: -79px;
+      padding: 5px 10px;
+      border: 1px solid #b18f5c;
+      color: #898989;
+      -webkit-transition: all 0.3s ease-in 0s;
+      -moz-transition: all 0.3s ease-in 0s;
+      -o-transition: all 0.3s ease-in 0s;
+      transition: all 0.3s ease-in 0s;
+      display: none; }
+      #media-gallery .scrollbar .left:hover, #media-gallery .scrollbar .right:hover {
+        border-color: #582411;
+        color: #582411; }
+    #media-gallery .scrollbar .left {
+      left: 25px; }
+    #media-gallery .scrollbar .right {
+      right: 25px; }
+    #media-gallery .scrollbar .bar {
+      position: absolute;
+      height: 5px;
+      width: 100px;
+      left: -100%;
+      top: 0;
+      cursor: pointer;
+      background-color: #b18f5c; }
+      #media-gallery .scrollbar .bar:hover {
+        background-color: #582411; }

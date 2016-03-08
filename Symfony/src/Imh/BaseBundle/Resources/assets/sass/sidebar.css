@@ -1,0 +1,73 @@
+#sidebar-main {
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1; }
+
+.navigation-menu {
+  position: fixed;
+  top: 270px;
+  left: 20px;
+  width: 120px;
+  display: none; }
+  .navigation-menu > span {
+    font-weight: bold;
+    border-bottom: 1px solid #3f3f3f;
+    padding-bottom: 7px;
+    color: #3f3f3f;
+    text-transform: uppercase;
+    display: block; }
+  .navigation-menu ul {
+    background: url("/bundles/imhbase/images/header-bg.png") repeat scroll 0 0;
+    border: 1px solid #898989;
+    width: 40px;
+    margin-top: 20px; }
+    .navigation-menu ul li:not(.gallery) {
+      position: relative;
+      height: 40px;
+      cursor: pointer; }
+      .navigation-menu ul li:not(.gallery).first {
+        margin-top: 17px; }
+      .navigation-menu ul li:not(.gallery).last {
+        margin-bottom: 17px; }
+      .navigation-menu ul li:not(.gallery):after {
+        border: 1px solid #898989;
+        -webkit-transition: all 0.2s ease-in 0s;
+        -moz-transition: all 0.2s ease-in 0s;
+        -o-transition: all 0.2s ease-in 0s;
+        transition: all 0.2s ease-in 0s;
+        content: " ";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin: -6px 0 0 -6px;
+        width: 8px;
+        height: 8px;
+        padding: 1px; }
+      .navigation-menu ul li:not(.gallery).current:after {
+        background-color: #3f3f3f;
+        border: 1px solid #3f3f3f;
+        margin: -6px 0 0 -6px; }
+      .navigation-menu ul li:not(.gallery).current a, .navigation-menu ul li:not(.gallery).current span {
+        background: url("/bundles/imhbase/images/header-bg.png") repeat scroll 0 0;
+        color: #222222;
+        border: 1px solid #898989;
+        border-left: none;
+        margin-left: 40px;
+        padding-right: 16px;
+        text-indent: 13px; }
+      .navigation-menu ul li:not(.gallery):hover:after {
+        border: 1px solid #3f3f3f;
+        background: #3f3f3f; }
+      .navigation-menu ul li:not(.gallery):hover a {
+        color: #222222; }
+      .navigation-menu ul li:not(.gallery) a, .navigation-menu ul li:not(.gallery) span {
+        color: black;
+        font-size: 1em;
+        display: inline-block;
+        position: relative;
+        text-indent: 53px;
+        height: 38px;
+        line-height: 40px;
+        z-index: 1; }
