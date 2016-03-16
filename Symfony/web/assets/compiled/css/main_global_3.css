@@ -1,44 +1,49 @@
-/* line 4, assetic_compassgTdQRn.scss */
+/* line 4, assetic_compassaHJGN5.scss */
 html {
   height: 100%;
 }
-/* line 7, assetic_compassgTdQRn.scss */
+/* line 7, assetic_compassaHJGN5.scss */
 html body {
   height: 100%;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 12px;
 }
 
-/* line 14, assetic_compassgTdQRn.scss */
+/* line 14, assetic_compassaHJGN5.scss */
 a {
   text-decoration: none;
   color: #000000;
 }
 
-/* line 19, assetic_compassgTdQRn.scss */
+/* line 19, assetic_compassaHJGN5.scss */
+a, div {
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+
+/* line 23, assetic_compassaHJGN5.scss */
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
-/* line 25, assetic_compassgTdQRn.scss */
+/* line 29, assetic_compassaHJGN5.scss */
 .left {
   float: left;
 }
 
-/* line 29, assetic_compassgTdQRn.scss */
+/* line 33, assetic_compassaHJGN5.scss */
 .right {
   float: right;
 }
 
-/* line 33, assetic_compassgTdQRn.scss */
+/* line 37, assetic_compassaHJGN5.scss */
 #wrapper {
   overflow: hidden;
   min-height: 100%;
 }
 
-/* line 38, assetic_compassgTdQRn.scss */
+/* line 42, assetic_compassaHJGN5.scss */
 #bkg-image {
   position: absolute;
   top: 0;
@@ -47,11 +52,11 @@ ul {
   z-index: -1;
 }
 
-/* line 46, assetic_compassgTdQRn.scss */
+/* line 50, assetic_compassaHJGN5.scss */
 #content {
   position: relative;
 }
-/* line 49, assetic_compassgTdQRn.scss */
+/* line 53, assetic_compassaHJGN5.scss */
 #content .main-content-wrapper {
   position: relative;
   top: -36px;
@@ -59,7 +64,7 @@ ul {
   max-width: 980px;
   margin: 0 auto;
 }
-/* line 56, assetic_compassgTdQRn.scss */
+/* line 60, assetic_compassaHJGN5.scss */
 #content .main-content-wrapper .middle {
   background-color: white;
   -webkit-box-sizing: border-box;
@@ -99,7 +104,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
   margin: 0 auto;
   position: relative;
 }
-/* line 78, assetic_compassgTdQRn.scss */
+/* line 82, assetic_compassaHJGN5.scss */
 #content .main-content-wrapper .middle.shadows:after, #content .main-content-wrapper .middle.shadows:before {
   content: " ";
   position: absolute;
@@ -108,19 +113,19 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
   height: 400px;
   z-index: -10;
 }
-/* line 87, assetic_compassgTdQRn.scss */
+/* line 91, assetic_compassaHJGN5.scss */
 #content .main-content-wrapper .middle.shadows:before {
   left: 11px;
   box-shadow: -10px 0 4px whitesmoke;
   transform: rotate(-1deg);
 }
-/* line 93, assetic_compassgTdQRn.scss */
+/* line 97, assetic_compassaHJGN5.scss */
 #content .main-content-wrapper .middle.shadows:after {
   right: 11px;
   box-shadow: 10px 0 4px whitesmoke;
   transform: rotate(1deg);
 }
-/* line 99, assetic_compassgTdQRn.scss */
+/* line 103, assetic_compassaHJGN5.scss */
 #content .main-content-wrapper .middle h1 {
   font-family: cinzelregular;
   font-size: 3.333em;
@@ -128,18 +133,18 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
   color: #453531;
 }
 
-/* line 109, assetic_compassgTdQRn.scss */
+/* line 113, assetic_compassaHJGN5.scss */
 .empty {
   width: 0;
   height: 0;
 }
 
-/* line 114, assetic_compassgTdQRn.scss */
+/* line 118, assetic_compassaHJGN5.scss */
 .lazy {
   display: none;
 }
 
-/* line 118, assetic_compassgTdQRn.scss */
+/* line 122, assetic_compassaHJGN5.scss */
 .block-triangle {
   opacity: 0.4;
   /* Good browsers */

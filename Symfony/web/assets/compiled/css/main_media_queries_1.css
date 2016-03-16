@@ -1,59 +1,402 @@
+/* line 3, assetic_compassmiMQJF.scss */
+html.no-touchevents {
+  /*@media all and (orientation: landscape) {
+    #content {
+      #sonata-media-gallery-media-list {
+        height: 100%;
+        .sonata-media-gallery-media-item {
+          height: 50%;
+          .sonata-media-gallery-media-item-link {
+            .media-object {
+              height: 100%;
+              width: auto;
+            }
+          }
+          &.expanded {
+            height: 100%;
+            width: auto;
+            .sonata-media-gallery-media-item-link {
+              .media-object {
+                height: 100%;
+                max-height: 100%;
+
+              }
+            }
+          }
+        }
+      }
+    }
+  }*/
+}
 @media screen and (device-aspect-ratio: 16 / 9), screen and (device-aspect-ratio: 16 / 10) {
-  /* line 3, assetic_compassfxmjM4.scss */
-  .bkg-image {
+  /* line 7, assetic_compassmiMQJF.scss */
+  html.no-touchevents .bkg-image {
     right: -250px;
   }
 }
 @media all and (orientation: portrait) {
-  /* line 11, assetic_compassfxmjM4.scss */
-  #home-content.makeAnimation .bkg-image-ctn {
+  /* line 15, assetic_compassmiMQJF.scss */
+  html.no-touchevents #home-content.makeAnimation .bkg-image-ctn {
     width: 100%;
   }
-  /* line 14, assetic_compassfxmjM4.scss */
-  #home-content.makeAnimation .block-myself {
+  /* line 18, assetic_compassmiMQJF.scss */
+  html.no-touchevents #home-content.makeAnimation .block-myself {
+    display: none;
+  }
+  /* line 24, assetic_compassmiMQJF.scss */
+  html.no-touchevents #sidebar-main, html.no-touchevents #trigger {
+    display: none;
+  }
+  /* line 28, assetic_compassmiMQJF.scss */
+  html.no-touchevents #content #gallery-wrapper #sonata-media-gallery-media-list {
+    height: auto;
+  }
+  /* line 30, assetic_compassmiMQJF.scss */
+  html.no-touchevents #content #gallery-wrapper #sonata-media-gallery-media-list .sonata-media-gallery-media-item {
+    height: auto;
+    width: 33.33%;
+  }
+  /* line 34, assetic_compassmiMQJF.scss */
+  html.no-touchevents #content #gallery-wrapper #sonata-media-gallery-media-list .sonata-media-gallery-media-item .sonata-media-gallery-media-item-link .media-object {
+    height: auto;
+    width: 100%;
+  }
+  /* line 39, assetic_compassmiMQJF.scss */
+  html.no-touchevents #content #gallery-wrapper #sonata-media-gallery-media-list .sonata-media-gallery-media-item.expanded {
+    height: auto;
+    width: 66.66%;
+  }
+  /* line 43, assetic_compassmiMQJF.scss */
+  html.no-touchevents #content #gallery-wrapper #sonata-media-gallery-media-list .sonata-media-gallery-media-item.expanded .sonata-media-gallery-media-item-link .media-object {
+    height: auto;
+    width: 100%;
+  }
+  /* line 52, assetic_compassmiMQJF.scss */
+  html.no-touchevents #content #scrollbar {
     display: none;
   }
 }
-/* ----------- iPad 3 and 4 ----------- */
-/* Portrait and Landscape */
+
+/* line 87, assetic_compassmiMQJF.scss */
+html.touchevents {
+  /* ----------- iPad 3 and 4 ----------- */
+  /* Portrait and Landscape */
+  /* Portrait */
+  /* Landscape */
+  /* Smartphones (portrait and landscape) ----------- */
+  /* Galaxy Tab 10.1 ----------- */
+  /* Portrait and Landscape */
+  /* Portrait */
+  /* Landscape */
+}
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
-  /* line 28, assetic_compassfxmjM4.scss */
-  .navigation-menu {
+  /* line 87, assetic_compassmiMQJF.scss */
+  html.touchevents {
+    /* Home */
+    /* Other pages */
+  }
+  /* line 96, assetic_compassmiMQJF.scss */
+  html.touchevents .navigation-menu {
     left: -9999px;
   }
+  /* line 101, assetic_compassmiMQJF.scss */
+  html.touchevents .bkg-image-ctn img:first-child {
+    display: none;
+  }
+  /* line 107, assetic_compassmiMQJF.scss */
+  html.touchevents .block-language a {
+    width: 90px;
+    line-height: 40px;
+    font-size: 0.917em;
+    margin-right: 10px;
+  }
+  /* line 117, assetic_compassmiMQJF.scss */
+  html.touchevents #header .navigation {
+    background: none;
+    border: none;
+  }
 }
-/* Portrait */
-/* Landscape */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
-  /* line 50, assetic_compassfxmjM4.scss */
-  #home-content .block-myself h1 {
+  /* line 140, assetic_compassmiMQJF.scss */
+  html.touchevents #home-content .block-myself h1 {
     font-size: 2em;
   }
-  /* line 53, assetic_compassfxmjM4.scss */
-  #home-content .block-myself h2 {
+  /* line 143, assetic_compassmiMQJF.scss */
+  html.touchevents #home-content .block-myself h2 {
     font-size: 2em;
   }
-  /* line 56, assetic_compassfxmjM4.scss */
-  #home-content .block-myself h3 {
+  /* line 146, assetic_compassmiMQJF.scss */
+  html.touchevents #home-content .block-myself h3 {
     font-size: 1.5em;
   }
 }
-/* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-  /* line 70, assetic_compassfxmjM4.scss */
-  #home-content .block-myself .block-center {
+  /* line 160, assetic_compassmiMQJF.scss */
+  html.touchevents #home-content .block-myself .block-center {
     margin-top: -60px;
   }
-  /* line 73, assetic_compassfxmjM4.scss */
-  #home-content .block-myself h1 {
+  /* line 163, assetic_compassmiMQJF.scss */
+  html.touchevents #home-content .block-myself h1 {
     font-size: 2em;
   }
-  /* line 76, assetic_compassfxmjM4.scss */
-  #home-content .block-myself h2 {
+  /* line 166, assetic_compassmiMQJF.scss */
+  html.touchevents #home-content .block-myself h2 {
     font-size: 2em;
   }
-  /* line 79, assetic_compassfxmjM4.scss */
-  #home-content .block-myself h3 {
+  /* line 169, assetic_compassmiMQJF.scss */
+  html.touchevents #home-content .block-myself h3 {
     font-size: 1em;
+  }
+}
+@media only screen and (min-width: 800px) and (max-width: 1280px) {
+  /* line 182, assetic_compassmiMQJF.scss */
+  html.touchevents #bkg-image {
+    left: 0;
+  }
+}
+@media only screen and (max-width: 800px) and (max-aspect-ratio: 13 / 9) {
+  /* line 191, assetic_compassmiMQJF.scss */
+  html.touchevents #sidebar-main, html.touchevents #trigger {
+    display: none;
+  }
+  /* line 194, assetic_compassmiMQJF.scss */
+  html.touchevents #header .navigation {
+    background: none;
+    border: none;
+    height: auto;
+  }
+  /* line 199, assetic_compassmiMQJF.scss */
+  html.touchevents #header .navigation .wrapper {
+    top: 0;
+  }
+  /* line 204, assetic_compassmiMQJF.scss */
+  html.touchevents #header .navigation ul li {
+    height: 100px;
+    width: 16.74%;
+  }
+  /* line 207, assetic_compassmiMQJF.scss */
+  html.touchevents #header .navigation ul li a, html.touchevents #header .navigation ul li span {
+    height: 99px;
+    line-height: 101px;
+    padding: 0;
+  }
+  /* line 217, assetic_compassmiMQJF.scss */
+  html.touchevents #wrapper {
+    max-width: 800px;
+  }
+  /* line 221, assetic_compassmiMQJF.scss */
+  html.touchevents #content {
+    padding: 3%;
+    height: calc(100% - 100px);
+  }
+  /* line 225, assetic_compassmiMQJF.scss */
+  html.touchevents #content .main-content-wrapper {
+    max-width: none;
+    top: 0;
+  }
+  /* line 228, assetic_compassmiMQJF.scss */
+  html.touchevents #content .main-content-wrapper .middle {
+    padding-top: 10px;
+    border-top: none;
+  }
+  /* line 232, assetic_compassmiMQJF.scss */
+  html.touchevents #content .main-content-wrapper .middle.shadows:before, html.touchevents #content .main-content-wrapper .middle.shadows:after {
+    content: normal;
+  }
+  /* line 236, assetic_compassmiMQJF.scss */
+  html.touchevents #content .main-content-wrapper .middle .lang {
+    position: static;
+    text-align: right;
+    margin: 0 0 50px;
+  }
+  /* line 240, assetic_compassmiMQJF.scss */
+  html.touchevents #content .main-content-wrapper .middle .lang li {
+    display: inline-block;
+    margin-bottom: 0;
+  }
+  /* line 244, assetic_compassmiMQJF.scss */
+  html.touchevents #content .main-content-wrapper .middle .lang li.current a {
+    background-color: #222222;
+  }
+  /* line 248, assetic_compassmiMQJF.scss */
+  html.touchevents #content .main-content-wrapper .middle .lang li a {
+    height: auto;
+    width: auto;
+    line-height: normal;
+    padding: 15px;
+    border: none;
+    display: block;
+  }
+  /* line 261, assetic_compassmiMQJF.scss */
+  html.touchevents #content .main-content-wrapper .middle .prizes .slider-title {
+    line-height: 46px;
+  }
+  /* line 263, assetic_compassmiMQJF.scss */
+  html.touchevents #content .main-content-wrapper .middle .prizes .slider-title:after {
+    top: 15px;
+  }
+  /* line 269, assetic_compassmiMQJF.scss */
+  html.touchevents #content .main-content-wrapper .middle .prizes.closed .slider-title:after {
+    top: 15px;
+  }
+  /* line 277, assetic_compassmiMQJF.scss */
+  html.touchevents #content .main-content-wrapper .middle .concert-wrapper {
+    padding: 0;
+  }
+  /* line 280, assetic_compassmiMQJF.scss */
+  html.touchevents #content .main-content-wrapper .middle .concert-wrapper li img {
+    width: 52%;
+  }
+  /* line 283, assetic_compassmiMQJF.scss */
+  html.touchevents #content .main-content-wrapper .middle .concert-wrapper li .concert {
+    width: 42%;
+  }
+  /* line 291, assetic_compassmiMQJF.scss */
+  html.touchevents #content .main-content-wrapper .middle #form-contact .contact-info, html.touchevents #content .main-content-wrapper .middle #form-contact .contact-message {
+    float: none;
+    width: 100%;
+  }
+  /* line 296, assetic_compassmiMQJF.scss */
+  html.touchevents #content .main-content-wrapper .middle #form-contact .contact-info label {
+    width: 25%;
+  }
+  /* line 299, assetic_compassmiMQJF.scss */
+  html.touchevents #content .main-content-wrapper .middle #form-contact .contact-info input {
+    box-sizing: border-box;
+    width: 75%;
+  }
+  /* line 303, assetic_compassmiMQJF.scss */
+  html.touchevents #content .main-content-wrapper .middle #form-contact .contact-info > div {
+    margin-bottom: 25px;
+  }
+  /* line 307, assetic_compassmiMQJF.scss */
+  html.touchevents #content .main-content-wrapper .middle #form-contact .contact-message {
+    margin-top: 50px;
+  }
+  /* line 309, assetic_compassmiMQJF.scss */
+  html.touchevents #content .main-content-wrapper .middle #form-contact .contact-message textarea {
+    box-sizing: border-box;
+    width: 75%;
+  }
+  /* line 314, assetic_compassmiMQJF.scss */
+  html.touchevents #content .main-content-wrapper .middle #form-contact > p {
+    margin-top: 50px;
+  }
+  /* line 317, assetic_compassmiMQJF.scss */
+  html.touchevents #content .main-content-wrapper .middle #form-contact .send {
+    margin-top: 60px;
+  }
+  /* line 325, assetic_compassmiMQJF.scss */
+  html.touchevents #content #gallery-wrapper {
+    width: 100%;
+    height: 100%;
+  }
+  /* line 329, assetic_compassmiMQJF.scss */
+  html.touchevents #content #gallery-wrapper #sonata-media-gallery-media-list {
+    height: auto;
+  }
+  /* line 331, assetic_compassmiMQJF.scss */
+  html.touchevents #content #gallery-wrapper #sonata-media-gallery-media-list .sonata-media-gallery-media-item {
+    width: 33.33%;
+    height: auto;
+  }
+  /* line 335, assetic_compassmiMQJF.scss */
+  html.touchevents #content #gallery-wrapper #sonata-media-gallery-media-list .sonata-media-gallery-media-item .sonata-media-gallery-media-item-link .media-object {
+    height: auto;
+    width: 100%;
+  }
+  /* line 340, assetic_compassmiMQJF.scss */
+  html.touchevents #content #gallery-wrapper #sonata-media-gallery-media-list .sonata-media-gallery-media-item.expanded {
+    width: auto;
+    height: auto;
+  }
+  /* line 344, assetic_compassmiMQJF.scss */
+  html.touchevents #content #gallery-wrapper #sonata-media-gallery-media-list .sonata-media-gallery-media-item.expanded .sonata-media-gallery-media-item-link .media-object {
+    height: auto;
+    width: auto;
+    max-width: 100%;
+  }
+  /* line 354, assetic_compassmiMQJF.scss */
+  html.touchevents #content #gallery-wrapper #scrollbar {
+    top: 0;
+    right: -20px;
+    bottom: inherit;
+    left: inherit;
+    width: 5px;
+    height: 100%;
+  }
+  /* line 362, assetic_compassmiMQJF.scss */
+  html.touchevents #content #gallery-wrapper #scrollbar .handle {
+    width: 100%;
+    height: 100px;
+    /* overriden if dynamicHandle: 1 */
+  }
+  /* line 366, assetic_compassmiMQJF.scss */
+  html.touchevents #content #gallery-wrapper #scrollbar .handle .mousearea {
+    position: absolute;
+    top: 0;
+    left: -12px;
+    width: 25px;
+    height: 100%;
+  }
+  /* line 379, assetic_compassmiMQJF.scss */
+  html.touchevents #footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+}
+@media only screen and (max-width: 1280px) and (min-aspect-ratio: 13 / 9) {
+  /* line 392, assetic_compassmiMQJF.scss */
+  html.touchevents #header .navigation .wrapper {
+    top: 0;
+  }
+  /* line 397, assetic_compassmiMQJF.scss */
+  html.touchevents #header .navigation ul li {
+    height: 100px;
+    width: 15%;
+  }
+  /* line 400, assetic_compassmiMQJF.scss */
+  html.touchevents #header .navigation ul li a, html.touchevents #header .navigation ul li span {
+    height: 99px;
+    line-height: 101px;
+    padding: 0;
+  }
+  /* line 414, assetic_compassmiMQJF.scss */
+  html.touchevents #content .main-content-wrapper .middle .prizes .slider-title {
+    line-height: 46px;
+  }
+  /* line 416, assetic_compassmiMQJF.scss */
+  html.touchevents #content .main-content-wrapper .middle .prizes .slider-title:after {
+    top: 15px;
+  }
+  /* line 422, assetic_compassmiMQJF.scss */
+  html.touchevents #content .main-content-wrapper .middle .prizes.closed .slider-title:after {
+    top: 15px;
+  }
+  /* line 431, assetic_compassmiMQJF.scss */
+  html.touchevents #content #gallery-wrapper #sonata-media-gallery-media-list {
+    height: 100%;
+  }
+  /* line 433, assetic_compassmiMQJF.scss */
+  html.touchevents #content #gallery-wrapper #sonata-media-gallery-media-list .sonata-media-gallery-media-item {
+    height: 50%;
+    width: auto;
+  }
+  /* line 437, assetic_compassmiMQJF.scss */
+  html.touchevents #content #gallery-wrapper #sonata-media-gallery-media-list .sonata-media-gallery-media-item .sonata-media-gallery-media-item-link .media-object {
+    height: 100%;
+    width: auto;
+  }
+  /* line 442, assetic_compassmiMQJF.scss */
+  html.touchevents #content #gallery-wrapper #sonata-media-gallery-media-list .sonata-media-gallery-media-item.expanded {
+    height: 100%;
+    width: auto;
+  }
+  /* line 446, assetic_compassmiMQJF.scss */
+  html.touchevents #content #gallery-wrapper #sonata-media-gallery-media-list .sonata-media-gallery-media-item.expanded .sonata-media-gallery-media-item-link .media-object {
+    height: 100%;
+    max-height: 100%;
+    width: auto;
   }
 }

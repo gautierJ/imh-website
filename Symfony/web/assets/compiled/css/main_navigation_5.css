@@ -1,11 +1,11 @@
-/* line 5, assetic_compassYpbIoU.scss */
+/* line 5, assetic_compass3VcxNM.scss */
 #header .navigation {
   background: url("/bundles/imhbase/images/header-bg.png") repeat rgba(255, 208, 247, 0.04);
   border-bottom: 1px solid lightgrey;
   border-top: 1px solid white;
   height: 126px;
 }
-/* line 11, assetic_compassYpbIoU.scss */
+/* line 11, assetic_compass3VcxNM.scss */
 #header .navigation .wrapper {
   border-top: 1px solid #222222;
   border-bottom: 1px solid #222222;
@@ -27,12 +27,12 @@
     border-color: transparent $color-white transparent transparent;
   }*/
 }
-/* line 34, assetic_compassYpbIoU.scss */
+/* line 34, assetic_compass3VcxNM.scss */
 #header .navigation ul {
   background: #222222;
   text-align: center;
 }
-/* line 38, assetic_compassYpbIoU.scss */
+/* line 38, assetic_compass3VcxNM.scss */
 #header .navigation ul li {
   display: inline-block;
   position: relative;
@@ -41,7 +41,7 @@
   height: 63px;
   z-index: 1;
 }
-/* line 46, assetic_compassYpbIoU.scss */
+/* line 46, assetic_compass3VcxNM.scss */
 #header .navigation ul li a, #header .navigation ul li span {
   color: white;
   font-family: "Georgia", Times, serif;
@@ -50,34 +50,34 @@
   padding: 0 22px;
   text-transform: uppercase;
 }
-/* line 55, assetic_compassYpbIoU.scss */
+/* line 55, assetic_compass3VcxNM.scss */
 #header .navigation ul li span {
   height: 62px;
   line-height: 64px;
 }
-/* line 60, assetic_compassYpbIoU.scss */
+/* line 60, assetic_compass3VcxNM.scss */
 #header .navigation ul li a {
   border: 1px solid rgba(0, 0, 0, 0);
-  -webkit-transition: border 0.3s ease-in 0s;
-  -moz-transition: border 0.3s ease-in 0s;
-  -o-transition: border 0.3s ease-in 0s;
-  transition: border 0.3s ease-in 0s;
+  -webkit-transition: all 0.1s ease-in 0s;
+  -moz-transition: all 0.1s ease-in 0s;
+  -o-transition: all 0.1s ease-in 0s;
+  transition: all 0.1s ease-in 0s;
   height: 62px;
   line-height: 64px;
 }
-/* line 66, assetic_compassYpbIoU.scss */
+/* line 66, assetic_compass3VcxNM.scss */
 #header .navigation ul li a:hover {
   background-color: white;
   color: #222222;
   border: 1px solid #222222;
 }
-/* line 73, assetic_compassYpbIoU.scss */
+/* line 73, assetic_compass3VcxNM.scss */
 #header .navigation ul li.current {
   background-color: white;
   border: 1px solid #222222;
   border-bottom: none;
 }
-/* line 78, assetic_compassYpbIoU.scss */
+/* line 78, assetic_compass3VcxNM.scss */
 #header .navigation ul li.current span {
   color: #222222;
   border-bottom-color: white;

@@ -22,7 +22,7 @@
                {% spaceless %}
                {% for galleryHasMedia in gallery.GalleryHasMedias %}
                    <li class="sonata-media-gallery-media-item">
-                        <a class="sonata-media-gallery-media-item-link" href="#">  {# {{ url('sonata_media_view', {'id': galleryHasMedia.media|sonata_urlsafeid }) }} #}
+                        <a href="#" class="sonata-media-gallery-media-item-link">  {# {{ url('sonata_media_view', {'id': galleryHasMedia.media|sonata_urlsafeid }) }} #}
                             {% thumbnail galleryHasMedia.media, gallery.defaultFormat with {'class': 'media-object'} %}
                             {#<div class="media-bar clearfix">
                                 {% if galleryHasMedia.media.description != "" %}<p class="media-description">{{ galleryHasMedia.media.description|raw }}</p>{% endif %}
@@ -47,7 +47,7 @@
         </div>
         {% include 'ImhBaseBundle:Part:sidebar.html.twig' %}
     </div>
-    <img id="spinner" src="{{ asset('bundles/imhbase/images/tail-spin_white.svg') }}" alt="loading">
+    <img id="spinner" src="{{ asset('bundles/imhbase/images/loader_white.svg') }}" alt="loading">
     <div id="scrollbar">
         <div class="handle">
             <div class="mousearea"></div>

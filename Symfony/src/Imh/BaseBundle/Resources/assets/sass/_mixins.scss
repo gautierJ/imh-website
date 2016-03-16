@@ -39,6 +39,14 @@
   transform: $transform-function;
 }
 
+@mixin transform-origin($value) {
+  -webkit-transform-origin: $value;
+  -khtml-transform-origin: $value;
+  -moz-transform-origin: $value;
+  -ms-transform-origin: $value;
+  transform-origin: $value;
+}
+
 @mixin saturation($grayscale) {
   -webkit-filter: grayscale($grayscale);
   -moz-filter: grayscale($grayscale);

@@ -1,3 +1,406 @@
+/* line 3, assetic_compassCMhAlR.scss */
+html.no-touchevents {
+  /*@media all and (orientation: landscape) {
+    #content {
+      #sonata-media-gallery-media-list {
+        height: 100%;
+        .sonata-media-gallery-media-item {
+          height: 50%;
+          .sonata-media-gallery-media-item-link {
+            .media-object {
+              height: 100%;
+              width: auto;
+            }
+          }
+          &.expanded {
+            height: 100%;
+            width: auto;
+            .sonata-media-gallery-media-item-link {
+              .media-object {
+                height: 100%;
+                max-height: 100%;
+
+              }
+            }
+          }
+        }
+      }
+    }
+  }*/
+}
+@media screen and (device-aspect-ratio: 16 / 9), screen and (device-aspect-ratio: 16 / 10) {
+  /* line 7, assetic_compassCMhAlR.scss */
+  html.no-touchevents .bkg-image {
+    right: -250px;
+  }
+}
+@media all and (orientation: portrait) {
+  /* line 15, assetic_compassCMhAlR.scss */
+  html.no-touchevents #home-content.makeAnimation .bkg-image-ctn {
+    width: 100%;
+  }
+  /* line 18, assetic_compassCMhAlR.scss */
+  html.no-touchevents #home-content.makeAnimation .block-myself {
+    display: none;
+  }
+  /* line 24, assetic_compassCMhAlR.scss */
+  html.no-touchevents #sidebar-main, html.no-touchevents #trigger {
+    display: none;
+  }
+  /* line 28, assetic_compassCMhAlR.scss */
+  html.no-touchevents #content #gallery-wrapper #sonata-media-gallery-media-list {
+    height: auto;
+  }
+  /* line 30, assetic_compassCMhAlR.scss */
+  html.no-touchevents #content #gallery-wrapper #sonata-media-gallery-media-list .sonata-media-gallery-media-item {
+    height: auto;
+    width: 33.33%;
+  }
+  /* line 34, assetic_compassCMhAlR.scss */
+  html.no-touchevents #content #gallery-wrapper #sonata-media-gallery-media-list .sonata-media-gallery-media-item .sonata-media-gallery-media-item-link .media-object {
+    height: auto;
+    width: 100%;
+  }
+  /* line 39, assetic_compassCMhAlR.scss */
+  html.no-touchevents #content #gallery-wrapper #sonata-media-gallery-media-list .sonata-media-gallery-media-item.expanded {
+    height: auto;
+    width: 66.66%;
+  }
+  /* line 43, assetic_compassCMhAlR.scss */
+  html.no-touchevents #content #gallery-wrapper #sonata-media-gallery-media-list .sonata-media-gallery-media-item.expanded .sonata-media-gallery-media-item-link .media-object {
+    height: auto;
+    width: 100%;
+  }
+  /* line 52, assetic_compassCMhAlR.scss */
+  html.no-touchevents #content #scrollbar {
+    display: none;
+  }
+}
+
+/* line 87, assetic_compassCMhAlR.scss */
+html.touchevents {
+  /* ----------- iPad 3 and 4 ----------- */
+  /* Portrait and Landscape */
+  /* Portrait */
+  /* Landscape */
+  /* Smartphones (portrait and landscape) ----------- */
+  /* Galaxy Tab 10.1 ----------- */
+  /* Portrait and Landscape */
+  /* Portrait */
+  /* Landscape */
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+  /* line 87, assetic_compassCMhAlR.scss */
+  html.touchevents {
+    /* Home */
+    /* Other pages */
+  }
+  /* line 96, assetic_compassCMhAlR.scss */
+  html.touchevents .navigation-menu {
+    left: -9999px;
+  }
+  /* line 101, assetic_compassCMhAlR.scss */
+  html.touchevents .bkg-image-ctn img:first-child {
+    display: none;
+  }
+  /* line 107, assetic_compassCMhAlR.scss */
+  html.touchevents .block-language a {
+    width: 90px;
+    line-height: 40px;
+    font-size: 0.917em;
+    margin-right: 10px;
+  }
+  /* line 117, assetic_compassCMhAlR.scss */
+  html.touchevents #header .navigation {
+    background: none;
+    border: none;
+  }
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+  /* line 140, assetic_compassCMhAlR.scss */
+  html.touchevents #home-content .block-myself h1 {
+    font-size: 2em;
+  }
+  /* line 143, assetic_compassCMhAlR.scss */
+  html.touchevents #home-content .block-myself h2 {
+    font-size: 2em;
+  }
+  /* line 146, assetic_compassCMhAlR.scss */
+  html.touchevents #home-content .block-myself h3 {
+    font-size: 1.5em;
+  }
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  /* line 160, assetic_compassCMhAlR.scss */
+  html.touchevents #home-content .block-myself .block-center {
+    margin-top: -60px;
+  }
+  /* line 163, assetic_compassCMhAlR.scss */
+  html.touchevents #home-content .block-myself h1 {
+    font-size: 2em;
+  }
+  /* line 166, assetic_compassCMhAlR.scss */
+  html.touchevents #home-content .block-myself h2 {
+    font-size: 2em;
+  }
+  /* line 169, assetic_compassCMhAlR.scss */
+  html.touchevents #home-content .block-myself h3 {
+    font-size: 1em;
+  }
+}
+@media only screen and (min-width: 800px) and (max-width: 1280px) {
+  /* line 182, assetic_compassCMhAlR.scss */
+  html.touchevents #bkg-image {
+    left: 0;
+  }
+}
+@media only screen and (max-width: 800px) and (max-aspect-ratio: 13 / 9) {
+  /* line 191, assetic_compassCMhAlR.scss */
+  html.touchevents #sidebar-main, html.touchevents #trigger {
+    display: none;
+  }
+  /* line 194, assetic_compassCMhAlR.scss */
+  html.touchevents #header .navigation {
+    background: none;
+    border: none;
+    height: auto;
+  }
+  /* line 199, assetic_compassCMhAlR.scss */
+  html.touchevents #header .navigation .wrapper {
+    top: 0;
+  }
+  /* line 204, assetic_compassCMhAlR.scss */
+  html.touchevents #header .navigation ul li {
+    height: 100px;
+    width: 16.74%;
+  }
+  /* line 207, assetic_compassCMhAlR.scss */
+  html.touchevents #header .navigation ul li a, html.touchevents #header .navigation ul li span {
+    height: 99px;
+    line-height: 101px;
+    padding: 0;
+  }
+  /* line 217, assetic_compassCMhAlR.scss */
+  html.touchevents #wrapper {
+    max-width: 800px;
+  }
+  /* line 221, assetic_compassCMhAlR.scss */
+  html.touchevents #content {
+    padding: 3%;
+    height: calc(100% - 100px);
+  }
+  /* line 225, assetic_compassCMhAlR.scss */
+  html.touchevents #content .main-content-wrapper {
+    max-width: none;
+    top: 0;
+  }
+  /* line 228, assetic_compassCMhAlR.scss */
+  html.touchevents #content .main-content-wrapper .middle {
+    padding-top: 10px;
+    border-top: none;
+  }
+  /* line 232, assetic_compassCMhAlR.scss */
+  html.touchevents #content .main-content-wrapper .middle.shadows:before, html.touchevents #content .main-content-wrapper .middle.shadows:after {
+    content: normal;
+  }
+  /* line 236, assetic_compassCMhAlR.scss */
+  html.touchevents #content .main-content-wrapper .middle .lang {
+    position: static;
+    text-align: right;
+    margin: 0 0 50px;
+  }
+  /* line 240, assetic_compassCMhAlR.scss */
+  html.touchevents #content .main-content-wrapper .middle .lang li {
+    display: inline-block;
+    margin-bottom: 0;
+  }
+  /* line 244, assetic_compassCMhAlR.scss */
+  html.touchevents #content .main-content-wrapper .middle .lang li.current a {
+    background-color: #222222;
+  }
+  /* line 248, assetic_compassCMhAlR.scss */
+  html.touchevents #content .main-content-wrapper .middle .lang li a {
+    height: auto;
+    width: auto;
+    line-height: normal;
+    padding: 15px;
+    border: none;
+    display: block;
+  }
+  /* line 261, assetic_compassCMhAlR.scss */
+  html.touchevents #content .main-content-wrapper .middle .prizes .slider-title {
+    line-height: 46px;
+  }
+  /* line 263, assetic_compassCMhAlR.scss */
+  html.touchevents #content .main-content-wrapper .middle .prizes .slider-title:after {
+    top: 15px;
+  }
+  /* line 269, assetic_compassCMhAlR.scss */
+  html.touchevents #content .main-content-wrapper .middle .prizes.closed .slider-title:after {
+    top: 15px;
+  }
+  /* line 277, assetic_compassCMhAlR.scss */
+  html.touchevents #content .main-content-wrapper .middle .concert-wrapper {
+    padding: 0;
+  }
+  /* line 280, assetic_compassCMhAlR.scss */
+  html.touchevents #content .main-content-wrapper .middle .concert-wrapper li img {
+    width: 52%;
+  }
+  /* line 283, assetic_compassCMhAlR.scss */
+  html.touchevents #content .main-content-wrapper .middle .concert-wrapper li .concert {
+    width: 42%;
+  }
+  /* line 291, assetic_compassCMhAlR.scss */
+  html.touchevents #content .main-content-wrapper .middle #form-contact .contact-info, html.touchevents #content .main-content-wrapper .middle #form-contact .contact-message {
+    float: none;
+    width: 100%;
+  }
+  /* line 296, assetic_compassCMhAlR.scss */
+  html.touchevents #content .main-content-wrapper .middle #form-contact .contact-info label {
+    width: 25%;
+  }
+  /* line 299, assetic_compassCMhAlR.scss */
+  html.touchevents #content .main-content-wrapper .middle #form-contact .contact-info input {
+    box-sizing: border-box;
+    width: 75%;
+  }
+  /* line 303, assetic_compassCMhAlR.scss */
+  html.touchevents #content .main-content-wrapper .middle #form-contact .contact-info > div {
+    margin-bottom: 25px;
+  }
+  /* line 307, assetic_compassCMhAlR.scss */
+  html.touchevents #content .main-content-wrapper .middle #form-contact .contact-message {
+    margin-top: 50px;
+  }
+  /* line 309, assetic_compassCMhAlR.scss */
+  html.touchevents #content .main-content-wrapper .middle #form-contact .contact-message textarea {
+    box-sizing: border-box;
+    width: 75%;
+  }
+  /* line 314, assetic_compassCMhAlR.scss */
+  html.touchevents #content .main-content-wrapper .middle #form-contact > p {
+    margin-top: 50px;
+  }
+  /* line 317, assetic_compassCMhAlR.scss */
+  html.touchevents #content .main-content-wrapper .middle #form-contact .send {
+    margin-top: 60px;
+  }
+  /* line 325, assetic_compassCMhAlR.scss */
+  html.touchevents #content #gallery-wrapper {
+    width: 100%;
+    height: 100%;
+  }
+  /* line 329, assetic_compassCMhAlR.scss */
+  html.touchevents #content #gallery-wrapper #sonata-media-gallery-media-list {
+    height: auto;
+  }
+  /* line 331, assetic_compassCMhAlR.scss */
+  html.touchevents #content #gallery-wrapper #sonata-media-gallery-media-list .sonata-media-gallery-media-item {
+    width: 33.33%;
+    height: auto;
+  }
+  /* line 335, assetic_compassCMhAlR.scss */
+  html.touchevents #content #gallery-wrapper #sonata-media-gallery-media-list .sonata-media-gallery-media-item .sonata-media-gallery-media-item-link .media-object {
+    height: auto;
+    width: 100%;
+  }
+  /* line 340, assetic_compassCMhAlR.scss */
+  html.touchevents #content #gallery-wrapper #sonata-media-gallery-media-list .sonata-media-gallery-media-item.expanded {
+    width: auto;
+    height: auto;
+  }
+  /* line 344, assetic_compassCMhAlR.scss */
+  html.touchevents #content #gallery-wrapper #sonata-media-gallery-media-list .sonata-media-gallery-media-item.expanded .sonata-media-gallery-media-item-link .media-object {
+    height: auto;
+    width: auto;
+    max-width: 100%;
+  }
+  /* line 354, assetic_compassCMhAlR.scss */
+  html.touchevents #content #gallery-wrapper #scrollbar {
+    top: 0;
+    right: -20px;
+    bottom: inherit;
+    left: inherit;
+    width: 5px;
+    height: 100%;
+  }
+  /* line 362, assetic_compassCMhAlR.scss */
+  html.touchevents #content #gallery-wrapper #scrollbar .handle {
+    width: 100%;
+    height: 100px;
+    /* overriden if dynamicHandle: 1 */
+  }
+  /* line 366, assetic_compassCMhAlR.scss */
+  html.touchevents #content #gallery-wrapper #scrollbar .handle .mousearea {
+    position: absolute;
+    top: 0;
+    left: -12px;
+    width: 25px;
+    height: 100%;
+  }
+  /* line 379, assetic_compassCMhAlR.scss */
+  html.touchevents #footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+}
+@media only screen and (max-width: 1280px) and (min-aspect-ratio: 13 / 9) {
+  /* line 392, assetic_compassCMhAlR.scss */
+  html.touchevents #header .navigation .wrapper {
+    top: 0;
+  }
+  /* line 397, assetic_compassCMhAlR.scss */
+  html.touchevents #header .navigation ul li {
+    height: 100px;
+    width: 15%;
+  }
+  /* line 400, assetic_compassCMhAlR.scss */
+  html.touchevents #header .navigation ul li a, html.touchevents #header .navigation ul li span {
+    height: 99px;
+    line-height: 101px;
+    padding: 0;
+  }
+  /* line 414, assetic_compassCMhAlR.scss */
+  html.touchevents #content .main-content-wrapper .middle .prizes .slider-title {
+    line-height: 46px;
+  }
+  /* line 416, assetic_compassCMhAlR.scss */
+  html.touchevents #content .main-content-wrapper .middle .prizes .slider-title:after {
+    top: 15px;
+  }
+  /* line 422, assetic_compassCMhAlR.scss */
+  html.touchevents #content .main-content-wrapper .middle .prizes.closed .slider-title:after {
+    top: 15px;
+  }
+  /* line 431, assetic_compassCMhAlR.scss */
+  html.touchevents #content #gallery-wrapper #sonata-media-gallery-media-list {
+    height: 100%;
+  }
+  /* line 433, assetic_compassCMhAlR.scss */
+  html.touchevents #content #gallery-wrapper #sonata-media-gallery-media-list .sonata-media-gallery-media-item {
+    height: 50%;
+    width: auto;
+  }
+  /* line 437, assetic_compassCMhAlR.scss */
+  html.touchevents #content #gallery-wrapper #sonata-media-gallery-media-list .sonata-media-gallery-media-item .sonata-media-gallery-media-item-link .media-object {
+    height: 100%;
+    width: auto;
+  }
+  /* line 442, assetic_compassCMhAlR.scss */
+  html.touchevents #content #gallery-wrapper #sonata-media-gallery-media-list .sonata-media-gallery-media-item.expanded {
+    height: 100%;
+    width: auto;
+  }
+  /* line 446, assetic_compassCMhAlR.scss */
+  html.touchevents #content #gallery-wrapper #sonata-media-gallery-media-list .sonata-media-gallery-media-item.expanded .sonata-media-gallery-media-item-link .media-object {
+    height: 100%;
+    max-height: 100%;
+    width: auto;
+  }
+}
+
 /* Generated by Font Squirrel (http://www.fontsquirrel.com) on September 9, 2014 */
 @font-face {
   font-family: 'cinzelblack';
@@ -59,52 +462,52 @@
   font-style: normal;
 }
 
-/* line 4, assetic_compasso6hO6t.scss */
+/* line 4, assetic_compassLHLRlk.scss */
 html {
   height: 100%;
 }
-/* line 7, assetic_compasso6hO6t.scss */
+/* line 7, assetic_compassLHLRlk.scss */
 html body {
   height: 100%;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 12px;
 }
 
-/* line 14, assetic_compasso6hO6t.scss */
+/* line 14, assetic_compassLHLRlk.scss */
 a {
   text-decoration: none;
   color: #000000;
 }
 
-/* line 19, assetic_compasso6hO6t.scss */
+/* line 19, assetic_compassLHLRlk.scss */
 a, div {
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
 }
 
-/* line 23, assetic_compasso6hO6t.scss */
+/* line 23, assetic_compassLHLRlk.scss */
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
-/* line 29, assetic_compasso6hO6t.scss */
+/* line 29, assetic_compassLHLRlk.scss */
 .left {
   float: left;
 }
 
-/* line 33, assetic_compasso6hO6t.scss */
+/* line 33, assetic_compassLHLRlk.scss */
 .right {
   float: right;
 }
 
-/* line 37, assetic_compasso6hO6t.scss */
+/* line 37, assetic_compassLHLRlk.scss */
 #wrapper {
   overflow: hidden;
   min-height: 100%;
 }
 
-/* line 42, assetic_compasso6hO6t.scss */
+/* line 42, assetic_compassLHLRlk.scss */
 #bkg-image {
   position: absolute;
   top: 0;
@@ -113,11 +516,11 @@ ul {
   z-index: -1;
 }
 
-/* line 50, assetic_compasso6hO6t.scss */
+/* line 50, assetic_compassLHLRlk.scss */
 #content {
   position: relative;
 }
-/* line 53, assetic_compasso6hO6t.scss */
+/* line 53, assetic_compassLHLRlk.scss */
 #content .main-content-wrapper {
   position: relative;
   top: -36px;
@@ -125,7 +528,7 @@ ul {
   max-width: 980px;
   margin: 0 auto;
 }
-/* line 60, assetic_compasso6hO6t.scss */
+/* line 60, assetic_compassLHLRlk.scss */
 #content .main-content-wrapper .middle {
   background-color: white;
   -webkit-box-sizing: border-box;
@@ -165,7 +568,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
   margin: 0 auto;
   position: relative;
 }
-/* line 82, assetic_compasso6hO6t.scss */
+/* line 82, assetic_compassLHLRlk.scss */
 #content .main-content-wrapper .middle.shadows:after, #content .main-content-wrapper .middle.shadows:before {
   content: " ";
   position: absolute;
@@ -174,19 +577,19 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
   height: 400px;
   z-index: -10;
 }
-/* line 91, assetic_compasso6hO6t.scss */
+/* line 91, assetic_compassLHLRlk.scss */
 #content .main-content-wrapper .middle.shadows:before {
   left: 11px;
   box-shadow: -10px 0 4px whitesmoke;
   transform: rotate(-1deg);
 }
-/* line 97, assetic_compasso6hO6t.scss */
+/* line 97, assetic_compassLHLRlk.scss */
 #content .main-content-wrapper .middle.shadows:after {
   right: 11px;
   box-shadow: 10px 0 4px whitesmoke;
   transform: rotate(1deg);
 }
-/* line 103, assetic_compasso6hO6t.scss */
+/* line 103, assetic_compassLHLRlk.scss */
 #content .main-content-wrapper .middle h1 {
   font-family: cinzelregular;
   font-size: 3.333em;
@@ -194,30 +597,18 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
   color: #453531;
 }
 
-/* line 113, assetic_compasso6hO6t.scss */
-#infscr-loading {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  margin: -22px 0 0 -22px;
-}
-/* line 119, assetic_compasso6hO6t.scss */
-#infscr-loading img {
-  display: block;
-}
-
-/* line 124, assetic_compasso6hO6t.scss */
+/* line 113, assetic_compassLHLRlk.scss */
 .empty {
   width: 0;
   height: 0;
 }
 
-/* line 129, assetic_compasso6hO6t.scss */
+/* line 118, assetic_compassLHLRlk.scss */
 .lazy {
   display: none;
 }
 
-/* line 133, assetic_compasso6hO6t.scss */
+/* line 122, assetic_compassLHLRlk.scss */
 .block-triangle {
   opacity: 0.4;
   /* Good browsers */
@@ -246,7 +637,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
   /* Opera/IE 8+ */
 }
 
-/* line 4, assetic_compassygKmpX.scss */
+/* line 4, assetic_compassFVk39E.scss */
 #sidebar-main {
   height: 100%;
   position: fixed;
@@ -255,7 +646,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
   z-index: 1;
 }
 
-/* line 12, assetic_compassygKmpX.scss */
+/* line 12, assetic_compassFVk39E.scss */
 .navigation-menu {
   position: fixed;
   top: 270px;
@@ -263,7 +654,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
   width: 120px;
   display: none;
 }
-/* line 19, assetic_compassygKmpX.scss */
+/* line 19, assetic_compassFVk39E.scss */
 .navigation-menu > span {
   font-weight: bold;
   border-bottom: 1px solid #3f3f3f;
@@ -272,28 +663,28 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
   text-transform: uppercase;
   display: block;
 }
-/* line 28, assetic_compassygKmpX.scss */
+/* line 28, assetic_compassFVk39E.scss */
 .navigation-menu ul {
   background: url("/bundles/imhbase/images/header-bg.png") repeat scroll 0 0;
   border: 1px solid #898989;
   width: 40px;
   margin-top: 20px;
 }
-/* line 34, assetic_compassygKmpX.scss */
+/* line 34, assetic_compassFVk39E.scss */
 .navigation-menu ul li:not(.gallery) {
   position: relative;
   height: 40px;
   cursor: pointer;
 }
-/* line 39, assetic_compassygKmpX.scss */
+/* line 39, assetic_compassFVk39E.scss */
 .navigation-menu ul li:not(.gallery).first {
   margin-top: 17px;
 }
-/* line 43, assetic_compassygKmpX.scss */
+/* line 43, assetic_compassFVk39E.scss */
 .navigation-menu ul li:not(.gallery).last {
   margin-bottom: 17px;
 }
-/* line 47, assetic_compassygKmpX.scss */
+/* line 47, assetic_compassFVk39E.scss */
 .navigation-menu ul li:not(.gallery):after {
   border: 1px solid #898989;
   -webkit-transition: all 0.2s ease-in 0s;
@@ -309,13 +700,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
   height: 8px;
   padding: 1px;
 }
-/* line 61, assetic_compassygKmpX.scss */
+/* line 61, assetic_compassFVk39E.scss */
 .navigation-menu ul li:not(.gallery).current:after {
   background-color: #3f3f3f;
   border: 1px solid #3f3f3f;
   margin: -6px 0 0 -6px;
 }
-/* line 67, assetic_compassygKmpX.scss */
+/* line 67, assetic_compassFVk39E.scss */
 .navigation-menu ul li:not(.gallery).current a, .navigation-menu ul li:not(.gallery).current span {
   background: url("/bundles/imhbase/images/header-bg.png") repeat scroll 0 0;
   color: #222222;
@@ -325,16 +716,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
   padding-right: 16px;
   text-indent: 13px;
 }
-/* line 79, assetic_compassygKmpX.scss */
+/* line 79, assetic_compassFVk39E.scss */
 .navigation-menu ul li:not(.gallery):hover:after {
   border: 1px solid #3f3f3f;
   background: #3f3f3f;
 }
-/* line 84, assetic_compassygKmpX.scss */
+/* line 84, assetic_compassFVk39E.scss */
 .navigation-menu ul li:not(.gallery):hover a {
   color: #222222;
 }
-/* line 89, assetic_compassygKmpX.scss */
+/* line 89, assetic_compassFVk39E.scss */
 .navigation-menu ul li:not(.gallery) a, .navigation-menu ul li:not(.gallery) span {
   color: black;
   font-size: 1em;
@@ -346,14 +737,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
   z-index: 1;
 }
 
-/* line 5, assetic_compassvTFzXt.scss */
+/* line 5, assetic_compassaqWlS3.scss */
 #header .navigation {
   background: url("/bundles/imhbase/images/header-bg.png") repeat rgba(255, 208, 247, 0.04);
   border-bottom: 1px solid lightgrey;
   border-top: 1px solid white;
   height: 126px;
 }
-/* line 11, assetic_compassvTFzXt.scss */
+/* line 11, assetic_compassaqWlS3.scss */
 #header .navigation .wrapper {
   border-top: 1px solid #222222;
   border-bottom: 1px solid #222222;
@@ -375,12 +766,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
     border-color: transparent $color-white transparent transparent;
   }*/
 }
-/* line 34, assetic_compassvTFzXt.scss */
+/* line 34, assetic_compassaqWlS3.scss */
 #header .navigation ul {
   background: #222222;
   text-align: center;
 }
-/* line 38, assetic_compassvTFzXt.scss */
+/* line 38, assetic_compassaqWlS3.scss */
 #header .navigation ul li {
   display: inline-block;
   position: relative;
@@ -389,7 +780,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
   height: 63px;
   z-index: 1;
 }
-/* line 46, assetic_compassvTFzXt.scss */
+/* line 46, assetic_compassaqWlS3.scss */
 #header .navigation ul li a, #header .navigation ul li span {
   color: white;
   font-family: "Georgia", Times, serif;
@@ -398,12 +789,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
   padding: 0 22px;
   text-transform: uppercase;
 }
-/* line 55, assetic_compassvTFzXt.scss */
+/* line 55, assetic_compassaqWlS3.scss */
 #header .navigation ul li span {
   height: 62px;
   line-height: 64px;
 }
-/* line 60, assetic_compassvTFzXt.scss */
+/* line 60, assetic_compassaqWlS3.scss */
 #header .navigation ul li a {
   border: 1px solid rgba(0, 0, 0, 0);
   -webkit-transition: all 0.1s ease-in 0s;
@@ -413,40 +804,40 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
   height: 62px;
   line-height: 64px;
 }
-/* line 66, assetic_compassvTFzXt.scss */
+/* line 66, assetic_compassaqWlS3.scss */
 #header .navigation ul li a:hover {
   background-color: white;
   color: #222222;
   border: 1px solid #222222;
 }
-/* line 73, assetic_compassvTFzXt.scss */
+/* line 73, assetic_compassaqWlS3.scss */
 #header .navigation ul li.current {
   background-color: white;
   border: 1px solid #222222;
   border-bottom: none;
 }
-/* line 78, assetic_compassvTFzXt.scss */
+/* line 78, assetic_compassaqWlS3.scss */
 #header .navigation ul li.current span {
   color: #222222;
   border-bottom-color: white;
 }
 
-/* line 4, assetic_compass7Iqrz3.scss */
+/* line 4, assetic_compassA6msHw.scss */
 #content {
   position: relative;
 }
-/* line 7, assetic_compass7Iqrz3.scss */
+/* line 7, assetic_compassA6msHw.scss */
 #content .lang {
   position: absolute;
   top: 26px;
   right: -73px;
 }
-/* line 12, assetic_compass7Iqrz3.scss */
+/* line 12, assetic_compassA6msHw.scss */
 #content .lang li {
   color: #898989;
   margin-bottom: 7px;
 }
-/* line 16, assetic_compass7Iqrz3.scss */
+/* line 16, assetic_compassA6msHw.scss */
 #content .lang li a {
   font-family: "Georgia", Times, serif;
   display: inline-block;
@@ -464,7 +855,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
   overflow: hidden;
   z-index: 0;
 }
-/* line 33, assetic_compass7Iqrz3.scss */
+/* line 33, assetic_compassA6msHw.scss */
 #content .lang li a:after {
   content: "";
   background-color: black;
@@ -480,27 +871,27 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
   -o-transition: top 0.3s cubic-bezier(0, 0.92, 0.08, 1) 0s;
   transition: top 0.3s cubic-bezier(0, 0.92, 0.08, 1) 0s;
 }
-/* line 46, assetic_compass7Iqrz3.scss */
+/* line 46, assetic_compassA6msHw.scss */
 #content .lang li a:hover {
   color: white;
   border: 1px solid #3f3f3f;
 }
-/* line 50, assetic_compass7Iqrz3.scss */
+/* line 50, assetic_compassA6msHw.scss */
 #content .lang li a:hover:after {
   top: 0;
 }
-/* line 56, assetic_compass7Iqrz3.scss */
+/* line 56, assetic_compassA6msHw.scss */
 #content .lang li.current a {
   color: white;
   background-color: #3f3f3f;
   border-color: #3f3f3f;
 }
-/* line 61, assetic_compass7Iqrz3.scss */
+/* line 61, assetic_compassA6msHw.scss */
 #content .lang li.current a:after {
   background-color: #3f3f3f;
 }
 
-/* line 4, assetic_compass42agxG.scss */
+/* line 4, assetic_compassS7fwp4.scss */
 #footer {
   background: url("/bundles/imhbase/images/header-bg.png") repeat scroll 0 0;
   min-height: 110px;
@@ -510,7 +901,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
   text-align: center;
   padding-bottom: 20px;
 }
-/* line 13, assetic_compass42agxG.scss */
+/* line 13, assetic_compassS7fwp4.scss */
 #footer .footer-column {
   border-left: 1px dotted #dddddd;
   display: inline-block;
@@ -520,26 +911,26 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
   vertical-align: top;
   min-height: 100px;
 }
-/* line 22, assetic_compass42agxG.scss */
+/* line 22, assetic_compassS7fwp4.scss */
 #footer .footer-column:first-child {
   border: none;
 }
-/* line 26, assetic_compass42agxG.scss */
+/* line 26, assetic_compassS7fwp4.scss */
 #footer .footer-column h3 {
   font-weight: bold;
   margin: 5px 0 15px;
   font-size: 1.083em;
 }
-/* line 32, assetic_compass42agxG.scss */
+/* line 32, assetic_compassS7fwp4.scss */
 #footer .footer-column ul {
   list-style: square inside none;
 }
-/* line 35, assetic_compass42agxG.scss */
+/* line 35, assetic_compassS7fwp4.scss */
 #footer .footer-column ul li {
   margin-bottom: 4px;
   white-space: nowrap;
 }
-/* line 39, assetic_compass42agxG.scss */
+/* line 39, assetic_compassS7fwp4.scss */
 #footer .footer-column ul li a, #footer .footer-column ul li span {
   color: #898989;
   font-size: 0.917em;
@@ -550,15 +941,15 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
   -o-transition: all 0.2s ease-in 0s;
   transition: all 0.2s ease-in 0s;
 }
-/* line 47, assetic_compass42agxG.scss */
+/* line 47, assetic_compassS7fwp4.scss */
 #footer .footer-column ul li a:hover, #footer .footer-column ul li span:hover {
   color: #3f3f3f;
 }
-/* line 53, assetic_compass42agxG.scss */
+/* line 53, assetic_compassS7fwp4.scss */
 #footer .footer-column ul li.current {
   list-style: none;
 }
-/* line 55, assetic_compass42agxG.scss */
+/* line 55, assetic_compassS7fwp4.scss */
 #footer .footer-column ul li.current a, #footer .footer-column ul li.current span {
   color: #3f3f3f;
   background: white;
@@ -566,347 +957,73 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
   border-radius: 16px;
   padding: 6px 10px;
 }
-/* line 70, assetic_compass42agxG.scss */
+/* line 70, assetic_compassS7fwp4.scss */
 #footer .footer-column.site ul {
   width: 175px;
 }
-/* line 73, assetic_compass42agxG.scss */
+/* line 73, assetic_compassS7fwp4.scss */
 #footer .footer-column.site ul li {
   float: left;
   width: 75px;
   padding-right: 10px;
 }
-/* line 78, assetic_compass42agxG.scss */
+/* line 78, assetic_compassS7fwp4.scss */
 #footer .footer-column.site ul li:nth-child(even) {
   padding-right: 0;
 }
-/* line 114, assetic_compass42agxG.scss */
+/* line 114, assetic_compassS7fwp4.scss */
 #footer .footer-column.follow .fb, #footer .footer-column.follow .tw, #footer .footer-column.follow .gp {
   display: inline-block;
   vertical-align: top;
   margin-right: 7px;
 }
-/* line 120, assetic_compass42agxG.scss */
+/* line 120, assetic_compassS7fwp4.scss */
 #footer .footer-column.follow .fb img {
   background: url("/bundles/imhbase/images/sprite.png") no-repeat scroll -8px -131px;
   height: 16px;
   width: 8px;
 }
-/* line 126, assetic_compass42agxG.scss */
+/* line 126, assetic_compassS7fwp4.scss */
 #footer .footer-column.follow .fb:hover img {
   background-position: 0 -131px;
 }
-/* line 132, assetic_compass42agxG.scss */
+/* line 132, assetic_compassS7fwp4.scss */
 #footer .footer-column.follow .tw img {
   background: url("/bundles/imhbase/images/sprite.png") no-repeat scroll -34px -131px;
   height: 16px;
   width: 18px;
 }
-/* line 138, assetic_compass42agxG.scss */
+/* line 138, assetic_compassS7fwp4.scss */
 #footer .footer-column.follow .tw:hover img {
   background-position: -16px -131px;
 }
-/* line 144, assetic_compass42agxG.scss */
+/* line 144, assetic_compassS7fwp4.scss */
 #footer .footer-column.follow .gp img {
   background: url("/bundles/imhbase/images/sprite.png") no-repeat scroll -74px -131px;
   height: 18px;
   width: 22px;
 }
-/* line 150, assetic_compass42agxG.scss */
+/* line 150, assetic_compassS7fwp4.scss */
 #footer .footer-column.follow .gp:hover img {
   background-position: -52px -131px;
 }
-/* line 159, assetic_compass42agxG.scss */
+/* line 159, assetic_compassS7fwp4.scss */
 #footer .footer-column.powered a img {
   background: url("/bundles/imhbase/images/sprite.png") no-repeat scroll -221px -131px;
   width: 63px;
   height: 61px;
   display: block;
 }
-/* line 166, assetic_compass42agxG.scss */
+/* line 166, assetic_compassS7fwp4.scss */
 #footer .footer-column.powered a:hover img {
   background-position: -158px -131px;
 }
-/* line 174, assetic_compass42agxG.scss */
+/* line 174, assetic_compassS7fwp4.scss */
 #footer p {
   font-size: 0.917em;
   margin: 20px 0 0;
 }
-/* line 178, assetic_compass42agxG.scss */
+/* line 178, assetic_compassS7fwp4.scss */
 #footer p span {
   font-size: 1.083em;
-}
-
-@media screen and (device-aspect-ratio: 16 / 9), screen and (device-aspect-ratio: 16 / 10) {
-  /* line 7, assetic_compass1c8CHm.scss */
-  html.no-touchevents .bkg-image {
-    right: -250px;
-  }
-}
-@media all and (orientation: portrait) {
-  /* line 15, assetic_compass1c8CHm.scss */
-  html.no-touchevents #home-content.makeAnimation .bkg-image-ctn {
-    width: 100%;
-  }
-  /* line 18, assetic_compass1c8CHm.scss */
-  html.no-touchevents #home-content.makeAnimation .block-myself {
-    display: none;
-  }
-}
-
-/* line 26, assetic_compass1c8CHm.scss */
-html.touchevents {
-  /* ----------- iPad 3 and 4 ----------- */
-  /* Portrait and Landscape */
-  /* Portrait */
-  /* Landscape */
-  /* Smartphones (portrait and landscape) ----------- */
-  /* Galaxy Tab 10.1 ----------- */
-  /* Portrait and Landscape */
-  /* Portrait */
-  /* Landscape */
-}
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
-  /* line 26, assetic_compass1c8CHm.scss */
-  html.touchevents {
-    /* Home */
-    /* Other pages */
-  }
-  /* line 35, assetic_compass1c8CHm.scss */
-  html.touchevents .navigation-menu {
-    left: -9999px;
-  }
-  /* line 40, assetic_compass1c8CHm.scss */
-  html.touchevents .bkg-image-ctn img:first-child {
-    display: none;
-  }
-  /* line 46, assetic_compass1c8CHm.scss */
-  html.touchevents .block-language a {
-    width: 90px;
-    line-height: 40px;
-    font-size: 0.917em;
-    margin-right: 10px;
-  }
-  /* line 56, assetic_compass1c8CHm.scss */
-  html.touchevents #header .navigation {
-    background: none;
-    border: none;
-  }
-}
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
-  /* line 79, assetic_compass1c8CHm.scss */
-  html.touchevents #home-content .block-myself h1 {
-    font-size: 2em;
-  }
-  /* line 82, assetic_compass1c8CHm.scss */
-  html.touchevents #home-content .block-myself h2 {
-    font-size: 2em;
-  }
-  /* line 85, assetic_compass1c8CHm.scss */
-  html.touchevents #home-content .block-myself h3 {
-    font-size: 1.5em;
-  }
-}
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-  /* line 99, assetic_compass1c8CHm.scss */
-  html.touchevents #home-content .block-myself .block-center {
-    margin-top: -60px;
-  }
-  /* line 102, assetic_compass1c8CHm.scss */
-  html.touchevents #home-content .block-myself h1 {
-    font-size: 2em;
-  }
-  /* line 105, assetic_compass1c8CHm.scss */
-  html.touchevents #home-content .block-myself h2 {
-    font-size: 2em;
-  }
-  /* line 108, assetic_compass1c8CHm.scss */
-  html.touchevents #home-content .block-myself h3 {
-    font-size: 1em;
-  }
-}
-@media only screen and (min-width: 800px) and (max-width: 1280px) {
-  /* line 121, assetic_compass1c8CHm.scss */
-  html.touchevents #bkg-image {
-    left: 0;
-  }
-}
-@media only screen and (max-width: 800px) and (max-aspect-ratio: 13 / 9) {
-  /* line 130, assetic_compass1c8CHm.scss */
-  html.touchevents #header .navigation {
-    background: none;
-    border: none;
-    height: auto;
-  }
-  /* line 135, assetic_compass1c8CHm.scss */
-  html.touchevents #header .navigation .wrapper {
-    top: 0;
-  }
-  /* line 140, assetic_compass1c8CHm.scss */
-  html.touchevents #header .navigation ul li {
-    height: 100px;
-    width: 16.74%;
-  }
-  /* line 143, assetic_compass1c8CHm.scss */
-  html.touchevents #header .navigation ul li a, html.touchevents #header .navigation ul li span {
-    height: 99px;
-    line-height: 101px;
-    padding: 0;
-  }
-  /* line 153, assetic_compass1c8CHm.scss */
-  html.touchevents #wrapper {
-    max-width: 800px;
-  }
-  /* line 158, assetic_compass1c8CHm.scss */
-  html.touchevents #content .main-content-wrapper {
-    max-width: none;
-    top: 0;
-  }
-  /* line 161, assetic_compass1c8CHm.scss */
-  html.touchevents #content .main-content-wrapper .middle {
-    padding-top: 10px;
-    border-top: none;
-  }
-  /* line 165, assetic_compass1c8CHm.scss */
-  html.touchevents #content .main-content-wrapper .middle.shadows:before, html.touchevents #content .main-content-wrapper .middle.shadows:after {
-    content: normal;
-  }
-  /* line 169, assetic_compass1c8CHm.scss */
-  html.touchevents #content .main-content-wrapper .middle .lang {
-    position: static;
-    text-align: right;
-    margin: 0 0 50px;
-  }
-  /* line 173, assetic_compass1c8CHm.scss */
-  html.touchevents #content .main-content-wrapper .middle .lang li {
-    display: inline-block;
-    margin-bottom: 0;
-  }
-  /* line 177, assetic_compass1c8CHm.scss */
-  html.touchevents #content .main-content-wrapper .middle .lang li.current a {
-    background-color: #222222;
-  }
-  /* line 181, assetic_compass1c8CHm.scss */
-  html.touchevents #content .main-content-wrapper .middle .lang li a {
-    height: auto;
-    width: auto;
-    line-height: normal;
-    padding: 15px;
-    border: none;
-    display: block;
-  }
-  /* line 192, assetic_compass1c8CHm.scss */
-  html.touchevents #content .main-content-wrapper .middle .prizes .slider-title {
-    line-height: 46px;
-  }
-  /* line 194, assetic_compass1c8CHm.scss */
-  html.touchevents #content .main-content-wrapper .middle .prizes .slider-title:after {
-    top: 15px;
-  }
-  /* line 200, assetic_compass1c8CHm.scss */
-  html.touchevents #content .main-content-wrapper .middle .prizes.closed .slider-title:after {
-    top: 15px;
-  }
-  /* line 206, assetic_compass1c8CHm.scss */
-  html.touchevents #content .main-content-wrapper .middle .concert-wrapper {
-    padding: 0;
-  }
-  /* line 209, assetic_compass1c8CHm.scss */
-  html.touchevents #content .main-content-wrapper .middle .concert-wrapper li img {
-    width: 52%;
-  }
-  /* line 212, assetic_compass1c8CHm.scss */
-  html.touchevents #content .main-content-wrapper .middle .concert-wrapper li .concert {
-    width: 42%;
-  }
-  /* line 218, assetic_compass1c8CHm.scss */
-  html.touchevents #content .main-content-wrapper .middle #form-contact .contact-info, html.touchevents #content .main-content-wrapper .middle #form-contact .contact-message {
-    float: none;
-    width: 100%;
-  }
-  /* line 223, assetic_compass1c8CHm.scss */
-  html.touchevents #content .main-content-wrapper .middle #form-contact .contact-info label {
-    width: 25%;
-  }
-  /* line 226, assetic_compass1c8CHm.scss */
-  html.touchevents #content .main-content-wrapper .middle #form-contact .contact-info input {
-    box-sizing: border-box;
-    width: 75%;
-  }
-  /* line 230, assetic_compass1c8CHm.scss */
-  html.touchevents #content .main-content-wrapper .middle #form-contact .contact-info > div {
-    margin-bottom: 25px;
-  }
-  /* line 234, assetic_compass1c8CHm.scss */
-  html.touchevents #content .main-content-wrapper .middle #form-contact .contact-message {
-    margin-top: 50px;
-  }
-  /* line 236, assetic_compass1c8CHm.scss */
-  html.touchevents #content .main-content-wrapper .middle #form-contact .contact-message textarea {
-    box-sizing: border-box;
-    width: 75%;
-  }
-  /* line 241, assetic_compass1c8CHm.scss */
-  html.touchevents #content .main-content-wrapper .middle #form-contact > p {
-    margin-top: 50px;
-  }
-  /* line 244, assetic_compass1c8CHm.scss */
-  html.touchevents #content .main-content-wrapper .middle #form-contact .send {
-    margin-top: 60px;
-  }
-  /* line 252, assetic_compass1c8CHm.scss */
-  html.touchevents #footer {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-  }
-}
-@media only screen and (max-width: 1280px) and (min-aspect-ratio: 13 / 9) {
-  /* line 266, assetic_compass1c8CHm.scss */
-  html.touchevents #wrapper #header .navigation .wrapper {
-    top: 0;
-  }
-  /* line 271, assetic_compass1c8CHm.scss */
-  html.touchevents #wrapper #header .navigation ul li {
-    height: 100px;
-    width: 15%;
-  }
-  /* line 274, assetic_compass1c8CHm.scss */
-  html.touchevents #wrapper #header .navigation ul li a, html.touchevents #wrapper #header .navigation ul li span {
-    height: 99px;
-    line-height: 101px;
-    padding: 0;
-  }
-  /* line 284, assetic_compass1c8CHm.scss */
-  html.touchevents #wrapper #content {
-    /*#sonata-media-gallery-media-list {
-      //height: 500px !important;
-      .sonata-media-gallery-media-item {
-        &.expanded {
-          .sonata-media-gallery-media-item-link {
-            height: auto;
-          }
-        }
-        .sonata-media-gallery-media-item-link {
-          //height: 250px;
-        }
-      }
-    }*/
-  }
-  /* line 288, assetic_compass1c8CHm.scss */
-  html.touchevents #wrapper #content .main-content-wrapper .middle .prizes .slider-title {
-    line-height: 46px;
-  }
-  /* line 290, assetic_compass1c8CHm.scss */
-  html.touchevents #wrapper #content .main-content-wrapper .middle .prizes .slider-title:after {
-    top: 15px;
-  }
-  /* line 296, assetic_compass1c8CHm.scss */
-  html.touchevents #wrapper #content .main-content-wrapper .middle .prizes.closed .slider-title:after {
-    top: 15px;
-  }
-  /* line 321, assetic_compass1c8CHm.scss */
-  html.touchevents #wrapper #sidebar-main .block-triangle + .navigation-menu {
-    margin-top: 90px;
-  }
 }

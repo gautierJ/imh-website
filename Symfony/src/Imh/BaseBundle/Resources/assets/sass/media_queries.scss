@@ -2,7 +2,8 @@
 
 html.no-touchevents {
   @media screen and (device-aspect-ratio: 16/9),
-         screen and (device-aspect-ratio: 16/10) {
+         screen and (device-aspect-ratio: 16/10),
+         screen and (device-aspect-ratio: 4/3) {
 
     .bkg-image {
       right: -250px;
@@ -181,6 +182,20 @@ html.touchevents {
 
     #bkg-image {
       left: 0;
+    }
+
+    #content {
+      #sonata-media-gallery-media-list {
+        .sonata-media-gallery-media-item {
+          .sonata-media-gallery-media-item-link {
+            &:after {
+              width: 40px;
+              height: 40px;
+              margin: -20px 0 0 -20px;
+            }
+          }
+        }
+      }
     }
   }
 

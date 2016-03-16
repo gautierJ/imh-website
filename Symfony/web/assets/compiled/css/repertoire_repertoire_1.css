@@ -1,10 +1,10 @@
-/* line 6, assetic_compassEz0LKZ.scss */
+/* line 6, assetic_compassVreLzE.scss */
 #content .main-content-wrapper .middle {
   padding: 26px 60px 45px;
   width: 100%;
   min-height: 774px;
 }
-/* line 11, assetic_compassEz0LKZ.scss */
+/* line 11, assetic_compassVreLzE.scss */
 #content .main-content-wrapper .middle .title {
   position: relative;
   text-align: center;
@@ -18,63 +18,63 @@
   text-transform: uppercase;
   border: 1px solid lightgrey;
 }
-/* line 26, assetic_compassEz0LKZ.scss */
+/* line 26, assetic_compassVreLzE.scss */
 #content .main-content-wrapper .concert-wrapper {
   font-family: "Georgia", Times, serif;
   margin-top: 60px;
   font-size: 1.167em;
   padding: 0 3%;
 }
-/* line 32, assetic_compassEz0LKZ.scss */
+/* line 32, assetic_compassVreLzE.scss */
 #content .main-content-wrapper .concert-wrapper li {
   width: 47%;
   float: left;
   margin-bottom: 60px;
   padding-right: 6%;
 }
-/* line 38, assetic_compassEz0LKZ.scss */
+/* line 38, assetic_compassVreLzE.scss */
 #content .main-content-wrapper .concert-wrapper li:nth-child(2n) {
   padding-right: 0;
 }
-/* line 42, assetic_compassEz0LKZ.scss */
+/* line 42, assetic_compassVreLzE.scss */
 #content .main-content-wrapper .concert-wrapper li img {
   display: inline-block;
   margin-right: 5%;
   width: 45%;
 }
-/* line 48, assetic_compassEz0LKZ.scss */
+/* line 48, assetic_compassVreLzE.scss */
 #content .main-content-wrapper .concert-wrapper li .concert {
   display: inline-block;
   vertical-align: top;
   width: 45%;
 }
-/* line 53, assetic_compassEz0LKZ.scss */
+/* line 53, assetic_compassVreLzE.scss */
 #content .main-content-wrapper .concert-wrapper li .concert > p {
   margin-top: 0;
 }
-/* line 56, assetic_compassEz0LKZ.scss */
+/* line 56, assetic_compassVreLzE.scss */
 #content .main-content-wrapper .concert-wrapper li .concert > p:first-child {
   font-weight: bold;
 }
-/* line 61, assetic_compassEz0LKZ.scss */
+/* line 61, assetic_compassVreLzE.scss */
 #content .main-content-wrapper .concert-wrapper li .concert p {
   margin: 2px 0;
 }
-/* line 64, assetic_compassEz0LKZ.scss */
+/* line 64, assetic_compassVreLzE.scss */
 #content .main-content-wrapper .concert-wrapper li .concert p.work {
   font-size: 0.917em;
   margin: 10px 0;
   text-transform: uppercase;
 }
-/* line 70, assetic_compassEz0LKZ.scss */
+/* line 70, assetic_compassVreLzE.scss */
 #content .main-content-wrapper .concert-wrapper li .concert p.arrangement {
   font-style: italic;
 }
-/* line 75, assetic_compassEz0LKZ.scss */
+/* line 75, assetic_compassVreLzE.scss */
 #content .main-content-wrapper .concert-wrapper li .concert .duration {
   font-style: italic;
 }
-/* line 78, assetic_compassEz0LKZ.scss */
+/* line 78, assetic_compassVreLzE.scss */
 #content .main-content-wrapper .concert-wrapper li .concert .duration p {
   font-size: 0.833em;
 }

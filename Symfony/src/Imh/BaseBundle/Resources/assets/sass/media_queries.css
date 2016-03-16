@@ -26,7 +26,7 @@ html.no-touchevents {
       }
     }
   }*/ }
-  @media screen and (device-aspect-ratio: 16 / 9), screen and (device-aspect-ratio: 16 / 10) {
+  @media screen and (device-aspect-ratio: 16 / 9), screen and (device-aspect-ratio: 16 / 10), screen and (device-aspect-ratio: 4 / 3) {
     html.no-touchevents .bkg-image {
       right: -250px; } }
   @media all and (orientation: portrait) {
@@ -97,7 +97,11 @@ html.touchevents {
       font-size: 1em; } }
   @media only screen and (min-width: 800px) and (max-width: 1280px) {
     html.touchevents #bkg-image {
-      left: 0; } }
+      left: 0; }
+    html.touchevents #content #sonata-media-gallery-media-list .sonata-media-gallery-media-item .sonata-media-gallery-media-item-link:after {
+      width: 40px;
+      height: 40px;
+      margin: -20px 0 0 -20px; } }
   @media only screen and (max-width: 800px) and (max-aspect-ratio: 13 / 9) {
     html.touchevents #sidebar-main, html.touchevents #trigger {
       display: none; }

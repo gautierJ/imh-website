@@ -7,8 +7,7 @@ $(function() {
         'PORTRAIT_MAX_WIDTH' : 66.66 + '%'
     };
 
-    var contentSelector   = 'content',
-        gallerySelector   = 'gallery-wrapper',
+    var gallerySelector   = 'gallery-wrapper',
         frameSelector     = 'frame',
         slideeSelector    = 'slidee',
         scrollbarSelector = 'scrollbar',
@@ -19,6 +18,7 @@ $(function() {
 
         containerSelector = 'sonata-media-gallery-media-list',
         itemSelector      = 'sonata-media-gallery-media-item',
+        linkSelector      = 'sonata-media-gallery-media-item-link',
         imageSelector     = 'media-object',
         expSelector       = 'expanded',
         triggerSelector   = 'trigger',
@@ -30,7 +30,7 @@ $(function() {
         isVisible         = false,
         isTriggered       = false,
 
-        delay             = (function(){
+        delay = (function(){
             var timer = 0;
             return function(callback, ms){
                 clearTimeout (timer);
@@ -61,6 +61,7 @@ $(function() {
 
         $g.removeClass('loading');
 
+        // bug fix for Chrome
         var calcEltWidth = function($trgi) {
             $i.each(function() {
                 var $img     = $(this).find('.' + imageSelector),
@@ -166,53 +167,36 @@ $(function() {
         };
 
         var onLayout = function() {
-            //console.log("Layout");
-
-            if($targetItem != null && !isTriggered) {
-                //console.log('1');
-                $targetItem.stop().animate({
-                    'opacity': 1
-                }, 500, function() {
-                    closeItem($targetItem);
-                });
-            }
-
-            /* a revoir */
-            if(!isClosed) {
-                //console.log('2');
-                $('.' + itemSelector).not('.' + expSelector).map(function() {
-                    $(this).stop().animate({
-                        'opacity': .1
-                    }, 500);
-                    //.find('.' + imageSelector).css('transform', 'none');
-                    //$(this).off('click');
-                });
-            }
-
+            if($targetItem != null && !isTriggered) closeItem($targetItem);
             sly.reload();
             setCssCursor(orientation);
         };
 
-        var closeItem = function($trgi) {
-            $trgi.find('.' + closeSelector).off().on('click', function(e) {
-                $trgi.removeClass(expSelector);
-                $('.' + itemSelector).css('opacity', 1);
-                isClosed = true;
-                calcEltWidth($trgi);
-                e.preventDefault();
-            });
+        var getInactiveItems = function() {
+            return $('.' + itemSelector).not('.' + expSelector);
         };
 
         $container.on('click', function(e) {
-            if(e.target.className == imageSelector) {
+            if(e.target.className == linkSelector) {
                 $('.' + itemSelector).removeClass(expSelector);
-                $targetItem = $(e.target).parent().parent();
-                $targetItem.css('opacity', 0).addClass(expSelector);
+                $targetItem = $(e.target).parent();
+                $targetItem.addClass(expSelector);
+                getInactiveItems().addClass('mA_1');
                 isClosed = false;
                 calcEltWidth($targetItem);
             }
             e.preventDefault();
         });
+
+        var closeItem = function($trgi) {
+            $trgi.find('.' + closeSelector).off().on('click', function(e) {
+                $trgi.removeClass(expSelector);
+                getInactiveItems().removeClass('mA_1');
+                isClosed = true;
+                calcEltWidth($trgi);
+                e.preventDefault();
+            });
+        };
 
         $('#' + triggerSelector).on('click', function(e) {
             // needs behavior : 'twitter' and manual-trigger.js
