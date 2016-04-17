@@ -1,62 +1,64 @@
-/* line 4, assetic_compassaHJGN5.scss */
+/* line 4, assetic_compassZX8Mhx.scss */
 html {
   height: 100%;
 }
-/* line 7, assetic_compassaHJGN5.scss */
+/* line 7, assetic_compassZX8Mhx.scss */
 html body {
   height: 100%;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 12px;
 }
 
-/* line 14, assetic_compassaHJGN5.scss */
+/* line 14, assetic_compassZX8Mhx.scss */
 a {
   text-decoration: none;
   color: #000000;
 }
 
-/* line 19, assetic_compassaHJGN5.scss */
+/* line 19, assetic_compassZX8Mhx.scss */
 a, div {
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
 }
 
-/* line 23, assetic_compassaHJGN5.scss */
+/* line 23, assetic_compassZX8Mhx.scss */
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
-/* line 29, assetic_compassaHJGN5.scss */
+/* line 29, assetic_compassZX8Mhx.scss */
 .left {
   float: left;
 }
 
-/* line 33, assetic_compassaHJGN5.scss */
+/* line 33, assetic_compassZX8Mhx.scss */
 .right {
   float: right;
 }
 
-/* line 37, assetic_compassaHJGN5.scss */
+/* line 37, assetic_compassZX8Mhx.scss */
 #wrapper {
   overflow: hidden;
   min-height: 100%;
 }
 
-/* line 42, assetic_compassaHJGN5.scss */
+/* line 42, assetic_compassZX8Mhx.scss */
 #bkg-image {
   position: absolute;
   top: 0;
   left: 120px;
-  width: 100%;
+  width: auto;
+  max-width: 100%;
+  height: 100%;
   z-index: -1;
 }
 
-/* line 50, assetic_compassaHJGN5.scss */
+/* line 52, assetic_compassZX8Mhx.scss */
 #content {
   position: relative;
 }
-/* line 53, assetic_compassaHJGN5.scss */
+/* line 55, assetic_compassZX8Mhx.scss */
 #content .main-content-wrapper {
   position: relative;
   top: -36px;
@@ -64,7 +66,7 @@ ul {
   max-width: 980px;
   margin: 0 auto;
 }
-/* line 60, assetic_compassaHJGN5.scss */
+/* line 62, assetic_compassZX8Mhx.scss */
 #content .main-content-wrapper .middle {
   background-color: white;
   -webkit-box-sizing: border-box;
@@ -104,7 +106,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
   margin: 0 auto;
   position: relative;
 }
-/* line 82, assetic_compassaHJGN5.scss */
+/* line 84, assetic_compassZX8Mhx.scss */
 #content .main-content-wrapper .middle.shadows:after, #content .main-content-wrapper .middle.shadows:before {
   content: " ";
   position: absolute;
@@ -113,38 +115,38 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
   height: 400px;
   z-index: -10;
 }
-/* line 91, assetic_compassaHJGN5.scss */
+/* line 93, assetic_compassZX8Mhx.scss */
 #content .main-content-wrapper .middle.shadows:before {
   left: 11px;
   box-shadow: -10px 0 4px whitesmoke;
   transform: rotate(-1deg);
 }
-/* line 97, assetic_compassaHJGN5.scss */
+/* line 99, assetic_compassZX8Mhx.scss */
 #content .main-content-wrapper .middle.shadows:after {
   right: 11px;
   box-shadow: 10px 0 4px whitesmoke;
   transform: rotate(1deg);
 }
-/* line 103, assetic_compassaHJGN5.scss */
+/* line 105, assetic_compassZX8Mhx.scss */
 #content .main-content-wrapper .middle h1 {
-  font-family: cinzelregular;
+  font-family: cinzelregular, sans-serif;
   font-size: 3.333em;
   margin: 0 0 6px;
   color: #453531;
 }
 
-/* line 113, assetic_compassaHJGN5.scss */
+/* line 115, assetic_compassZX8Mhx.scss */
 .empty {
   width: 0;
   height: 0;
 }
 
-/* line 118, assetic_compassaHJGN5.scss */
+/* line 120, assetic_compassZX8Mhx.scss */
 .lazy {
   display: none;
 }
 
-/* line 122, assetic_compassaHJGN5.scss */
+/* line 124, assetic_compassZX8Mhx.scss */
 .block-triangle {
   opacity: 0.4;
   /* Good browsers */

@@ -5,15 +5,15 @@
 {% endblock %}
 
 {% block facebookOpenGraphTags %}
-    {#<meta property="og:title" content="{{ media.name }}">#}
-    <meta property="og:site_name" content="IMH - Ionella Marinutsa / Harpist">
-    <meta property="og:url" content="http://www.youtube.com/watch?v=h8EVGzL7PSI">
-    <meta property="og:description" content="" />
-    <meta property="og:image" content="https://i.ytimg.com/vi/h8EVGzL7PSI/hqdefault.jpg">
+    <meta property="og:title" content="{{ media.name }}">
+    <meta property="og:site_name" content="Ionella Marinutsa | Harpist">
+    <meta property="og:url" content="{{ app.request.getSchemeAndHttpHost() }}{{ path(app.request.attributes.get('_route'), app.request.attributes.get('_route_params')) }}">
+    <meta property="og:description" content="{{ media.description }}" />
+    <meta property="og:image" content="https://i.ytimg.com/vi/{{ providerRef }}/hqdefault.jpg">
 
     <meta property="og:type" content="video">
-    <meta property="og:video" content="http://www.youtube.com/v/h8EVGzL7PSI?version=3&amp;autohide=1">
-    <meta property="og:video:secure_url" content="https://www.youtube.com/v/h8EVGzL7PSI?version=3&amp;autohide=1">
+    <meta property="og:video" content="https://www.youtube.com/embed/{{ providerRef }}">
+    <meta property="og:video:secure_url" content="https://www.youtube.com/embed/{{ providerRef }}">
     <meta property="og:video:width" content="640" />
     <meta property="og:video:height" content="360" />
     <meta property="og:video:type" content="application/x-shockwave-flash" />
@@ -53,6 +53,15 @@
             js.src = "//connect.facebook.net/fr_FR/sdk.js";
             fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'facebook-jssdk'));
+
+        // for custom facebook share button
+        function postToShare(href){
+            var obj = {
+                method: 'share',
+                href: href
+            };
+            FB.ui(obj, function(response){});
+        }
     </script>
 {% endblock %}
 
@@ -133,9 +142,9 @@
                 </ul>
             </nav>
             <div class="share">
-                {#<span class="txt">Partagez<br/> cette vidéo :</span>#}
-                <a class="twitter-share-button" href="https://twitter.com/share?url=https://www.youtube.com/embed/{{ providerRef }}&text={{ media.name }}"></a>
-                <span class="fb-like" data-href="https://www.youtube.com/embed/{{ providerRef }}" data-layout="button_count" data-action="like" data-show-faces="false" data-share="true"></span>
+                <span class="txt">Partager<br/> la vidéo :</span>
+                <a class="twitter popup" href="http://twitter.com/share?url=https://www.youtube.com/embed/{{ providerRef }}&text={{ media.name }}">Tweet</a>
+                <a class="fbshare" href="https://www.youtube.com/embed/{{ providerRef }}">Share</a>
             </div>
         </section>
 
@@ -188,7 +197,7 @@
         $(function () {
             'use strict';
 
-            /* Lazy Load */
+            // Lazy Load
             $('img.lazy').show().lazyload({
                 effect : 'fadeIn',
                 placeholder: '../../../bundles/imhbase/images/empty.gif'
@@ -199,6 +208,29 @@
             }
 
             //$('#' + contentSelector).contentHeightAdjust();
+
+
+            // Social buttons
+            $('.fbshare').click(function(e){
+                postToShare($(this).attr('href'));
+                e.preventDefault();
+            });
+
+            $('.popup').click(function(e) {
+                var width  = 575,
+                    height = 400,
+                    left   = ($(window).width()  - width)  / 2,
+                    top    = ($(window).height() - height) / 2,
+                    url    = this.href,
+                    opts   = 'status=1' +
+                             ',width='  + width  +
+                             ',height=' + height +
+                             ',top='    + top    +
+                             ',left='   + left;
+
+                window.open(url, 'twitter', opts);
+                e.preventDefault();
+            });
         });
     </script>
 {% endblock %}

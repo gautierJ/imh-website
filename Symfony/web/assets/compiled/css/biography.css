@@ -1,33 +1,33 @@
-/* line 6, assetic_compassY5EC9A.scss */
+/* line 6, assetic_compasstn0ksp.scss */
 #content .main-content-wrapper .middle {
-  padding: 26px 60px 45px;
+  padding: 26px 60px 62px;
   width: 100%;
 }
-/* line 11, assetic_compassY5EC9A.scss */
+/* line 12, assetic_compasstn0ksp.scss */
 #content .main-content-wrapper h1 {
   padding-bottom: 10px;
   border-bottom: 1px solid #dddddd;
 }
-/* line 16, assetic_compassY5EC9A.scss */
+/* line 17, assetic_compasstn0ksp.scss */
 #content .main-content-wrapper .biography-content {
   margin-bottom: 62px;
   position: relative;
 }
-/* line 20, assetic_compassY5EC9A.scss */
+/* line 21, assetic_compasstn0ksp.scss */
 #content .main-content-wrapper .biography-content .loader {
   position: absolute;
   top: 50%;
   margin-top: -22px;
   left: 17%;
 }
-/* line 30, assetic_compassY5EC9A.scss */
-#content .main-content-wrapper .carousel {
+/* line 29, assetic_compasstn0ksp.scss */
+#content .main-content-wrapper .owl-theme {
   width: 40%;
   margin-right: 5%;
   float: left;
 }
-/* line 36, assetic_compassY5EC9A.scss */
-#content .main-content-wrapper .carousel.ready .owl-controls {
+/* line 35, assetic_compasstn0ksp.scss */
+#content .main-content-wrapper .owl-theme.ready .owl-controls {
   opacity: 1;
   /* Good browsers */
   -moz-opacity: 1;
@@ -38,26 +38,16 @@
   /* IE 5-7 */
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
   /* IE 8 */
-  -webkit-transition: opacity 0.5s linear 0.5s;
-  -moz-transition: opacity 0.5s linear 0.5s;
-  -o-transition: opacity 0.5s linear 0.5s;
-  transition: opacity 0.5s linear 0.5s;
+  -webkit-transition: opacity 0.4s linear 0s;
+  -moz-transition: opacity 0.4s linear 0s;
+  -o-transition: opacity 0.4s linear 0s;
+  transition: opacity 0.4s linear 0s;
 }
-/* line 44, assetic_compassY5EC9A.scss */
-#content .main-content-wrapper .owl-item .lazyOwl {
-  display: block;
-  width: 100%;
-  height: auto;
+/* line 41, assetic_compasstn0ksp.scss */
+#content .main-content-wrapper .owl-theme .owl-grab {
+  background: url("/bundles/imhbase/images/loader_black.svg") no-repeat center center;
 }
-/* line 49, assetic_compassY5EC9A.scss */
-#content .main-content-wrapper .owl-item.loading {
-  background: url("/bundles/imhbase/images/tail-spin.svg") no-repeat center center;
-}
-/* line 54, assetic_compassY5EC9A.scss */
-#content .main-content-wrapper .owl-theme {
-  /* Styling Pagination */
-}
-/* line 56, assetic_compassY5EC9A.scss */
+/* line 45, assetic_compasstn0ksp.scss */
 #content .main-content-wrapper .owl-theme .owl-controls {
   opacity: 0;
   /* Good browsers */
@@ -74,12 +64,12 @@
   position: absolute;
   left: 50%;
 }
-/* line 63, assetic_compassY5EC9A.scss */
-#content .main-content-wrapper .owl-theme .owl-controls .owl-page {
+/* line 52, assetic_compasstn0ksp.scss */
+#content .main-content-wrapper .owl-theme .owl-controls .owl-dot {
   display: inline-block;
 }
-/* line 66, assetic_compassY5EC9A.scss */
-#content .main-content-wrapper .owl-theme .owl-controls .owl-page span {
+/* line 55, assetic_compasstn0ksp.scss */
+#content .main-content-wrapper .owl-theme .owl-controls .owl-dot span {
   display: block;
   width: 8px;
   height: 8px;
@@ -90,51 +80,52 @@
   -ms-border-radius: 20px;
   border-radius: 20px;
 }
-/* line 76, assetic_compassY5EC9A.scss */
-#content .main-content-wrapper .owl-theme .owl-controls .owl-page.active span {
-  background-color: #582411;
+/* line 65, assetic_compasstn0ksp.scss */
+#content .main-content-wrapper .owl-theme .owl-controls .owl-dot.active span {
+  background-color: #898989;
 }
-/* line 84, assetic_compassY5EC9A.scss */
+/* line 73, assetic_compasstn0ksp.scss */
 #content .main-content-wrapper .text, #content .main-content-wrapper .scrollbar {
   visibility: hidden;
   float: right;
 }
-/* line 89, assetic_compassY5EC9A.scss */
+/* line 78, assetic_compasstn0ksp.scss */
 #content .main-content-wrapper .text {
   overflow: hidden;
   width: 50%;
   margin-right: 4.4%;
   text-align: justify;
 }
-/* line 95, assetic_compassY5EC9A.scss */
+/* line 84, assetic_compasstn0ksp.scss */
 #content .main-content-wrapper .text p {
   font-size: 1.167em;
+  line-height: 1.4em;
   font-family: "Georgia", Times, serif;
   color: #222222;
 }
-/* line 101, assetic_compassY5EC9A.scss */
+/* line 91, assetic_compasstn0ksp.scss */
 #content .main-content-wrapper .text p:first-child {
   margin-top: 0;
 }
-/* line 104, assetic_compassY5EC9A.scss */
+/* line 94, assetic_compasstn0ksp.scss */
 #content .main-content-wrapper .text p:first-child::first-letter {
-  font-size: 68px;
-  line-height: 43px;
+  font-size: 74px;
+  line-height: 54px;
   float: left;
   margin-right: 8px;
 }
-/* line 112, assetic_compassY5EC9A.scss */
+/* line 102, assetic_compasstn0ksp.scss */
 #content .main-content-wrapper .text ul {
   color: #222222;
   font-family: "Georgia", Times, serif;
   font-size: 1.167em;
 }
-/* line 119, assetic_compassY5EC9A.scss */
+/* line 109, assetic_compasstn0ksp.scss */
 #content .main-content-wrapper .scrollbar {
   width: .6%;
   background-color: lightgrey;
 }
-/* line 123, assetic_compassY5EC9A.scss */
+/* line 113, assetic_compasstn0ksp.scss */
 #content .main-content-wrapper .scrollbar .handle {
   -webkit-transition: background 0.3s ease-in 0s;
   -moz-transition: background 0.3s ease-in 0s;
@@ -147,11 +138,11 @@
   /* overriden if dynamicHandle: 1 */
   position: relative;
 }
-/* line 131, assetic_compassY5EC9A.scss */
+/* line 121, assetic_compasstn0ksp.scss */
 #content .main-content-wrapper .scrollbar .handle:hover {
   background-color: #582411;
 }
-/* line 135, assetic_compassY5EC9A.scss */
+/* line 125, assetic_compasstn0ksp.scss */
 #content .main-content-wrapper .scrollbar .handle .mousearea {
   height: 100%;
   left: -11px;
@@ -159,7 +150,7 @@
   top: 0;
   width: 25px;
 }
-/* line 146, assetic_compassY5EC9A.scss */
+/* line 136, assetic_compasstn0ksp.scss */
 #content .main-content-wrapper .prizes .slider-title:after,
 #content .main-content-wrapper .prizes.closed .slider-title:after {
   content: "";
@@ -168,10 +159,10 @@
   width: 18px;
   display: inline-block;
   position: absolute;
-  top: 11px;
+  top: 15px;
   right: 16px;
 }
-/* line 158, assetic_compassY5EC9A.scss */
+/* line 148, assetic_compasstn0ksp.scss */
 #content .main-content-wrapper .prizes .slider-title {
   position: relative;
   text-align: center;
@@ -180,7 +171,7 @@
   font-weight: normal;
   color: white;
   background-color: #582411;
-  line-height: 40px;
+  line-height: 47px;
   margin-bottom: 20px;
   cursor: pointer;
   text-transform: uppercase;
@@ -189,7 +180,7 @@
   -o-transition: background-color 0.3s ease 0s;
   transition: background-color 0.3s ease 0s;
 }
-/* line 172, assetic_compassY5EC9A.scss */
+/* line 162, assetic_compasstn0ksp.scss */
 #content .main-content-wrapper .prizes .slider-title:before {
   position: absolute;
   left: 50%;
@@ -206,23 +197,23 @@
   -o-transition: border-color 0.3s ease 0s;
   transition: border-color 0.3s ease 0s;
 }
-/* line 186, assetic_compassY5EC9A.scss */
+/* line 176, assetic_compasstn0ksp.scss */
 #content .main-content-wrapper .prizes .slider-title:after {
   background-position: -102px -173px;
 }
-/* line 190, assetic_compassY5EC9A.scss */
+/* line 180, assetic_compasstn0ksp.scss */
 #content .main-content-wrapper .prizes .slider-title:hover {
   background-color: #453531;
 }
-/* line 193, assetic_compassY5EC9A.scss */
+/* line 183, assetic_compasstn0ksp.scss */
 #content .main-content-wrapper .prizes .slider-title:hover:before {
   border-color: #453531 transparent transparent transparent;
 }
-/* line 201, assetic_compassY5EC9A.scss */
+/* line 191, assetic_compasstn0ksp.scss */
 #content .main-content-wrapper .prizes.closed .slider-title:after {
   background-position: -102px -155px;
 }
-/* line 206, assetic_compassY5EC9A.scss */
+/* line 196, assetic_compasstn0ksp.scss */
 #content .main-content-wrapper .prizes.closed .slider-content {
   opacity: 0;
   /* Good browsers */
@@ -235,7 +226,7 @@
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   /* IE 8 */
 }
-/* line 211, assetic_compassY5EC9A.scss */
+/* line 201, assetic_compasstn0ksp.scss */
 #content .main-content-wrapper .prizes .slider-content {
   overflow-y: hidden;
   opacity: 1;
@@ -248,7 +239,7 @@
   /* IE 5-7 */
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
   /* IE 8 */
-  -webkit-transition: max-height 0.5s cubic-bezier(0, 1, 0.5, 1), opacity 0.3s ease 0s;
+  -webkit-transition: max-height .5s , opacity .3s ease 0s;
   -moz-transition: max-height 0.5s cubic-bezier(0, 1, 0.5, 1), opacity 0.3s ease 0s;
   -ms-transition: max-height 0.5s cubic-bezier(0, 1, 0.5, 1), opacity 0.3s ease 0s;
   /* IE10 is actually unprefixed */
@@ -257,7 +248,7 @@
   position: relative;
   margin-bottom: 20px;
 }
-/* line 224, assetic_compassY5EC9A.scss */
+/* line 214, assetic_compasstn0ksp.scss */
 #content .main-content-wrapper .prizes .slider-content li {
   color: #222222;
   font-family: "Georgia", Times, serif;
@@ -268,16 +259,16 @@
   position: relative;
   text-align: center;
 }
-/* line 234, assetic_compassY5EC9A.scss */
+/* line 224, assetic_compasstn0ksp.scss */
 #content .main-content-wrapper .prizes .slider-content li:first-child {
   border: none;
   margin: 0;
 }
-/* line 238, assetic_compassY5EC9A.scss */
+/* line 228, assetic_compasstn0ksp.scss */
 #content .main-content-wrapper .prizes .slider-content li:first-child:after {
   background: none;
 }
-/* line 243, assetic_compassY5EC9A.scss */
+/* line 233, assetic_compasstn0ksp.scss */
 #content .main-content-wrapper .prizes .slider-content li:after {
   background: #582411;
   top: -1px;
@@ -293,12 +284,12 @@
   width: 0;
   z-index: 1;
 }
-/* line 256, assetic_compassY5EC9A.scss */
+/* line 246, assetic_compasstn0ksp.scss */
 #content .main-content-wrapper .prizes .slider-content li:hover:after {
   left: 0;
   width: 100%;
 }
-/* line 264, assetic_compassY5EC9A.scss */
+/* line 254, assetic_compasstn0ksp.scss */
 #content .main-content-wrapper .download {
   text-align: center;
   position: relative;
@@ -306,7 +297,7 @@
   margin-top: 30px;
   height: 70px;
 }
-/* line 272, assetic_compassY5EC9A.scss */
+/* line 262, assetic_compasstn0ksp.scss */
 #content .main-content-wrapper .download .bio img {
   background: url("/bundles/imhbase/images/sprite.png") -285px -131px no-repeat;
   display: inline-block;
@@ -318,7 +309,7 @@
   margin-top: -10px;
   margin-left: -10px;
 }
-/* line 284, assetic_compassY5EC9A.scss */
+/* line 274, assetic_compasstn0ksp.scss */
 #content .main-content-wrapper .download .bio:after {
   -webkit-border-radius: 70px;
   -moz-border-radius: 70px;
@@ -337,7 +328,7 @@
   margin-left: -35px;
   z-index: -1;
 }
-/* line 297, assetic_compassY5EC9A.scss */
+/* line 287, assetic_compasstn0ksp.scss */
 #content .main-content-wrapper .download .bio:hover:after {
   background-color: #582411;
   -webkit-border-radius: 0px;

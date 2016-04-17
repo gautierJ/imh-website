@@ -11,12 +11,6 @@ html {
   }
 }
 
-img {
-  //image-rendering: auto;
-  //image-rendering: crisp-edges;
-  //image-rendering: pixelated;
-}
-
 a {
   text-decoration: none;
   color: #000000;
@@ -107,7 +101,7 @@ ul {
       }
 
       h1 {
-        font-family: cinzelregular;
+        font-family: cinzelregular, sans-serif;
         font-size: $fourtypx;
         margin: 0 0 6px;
         color: $color-greybrown-dark;

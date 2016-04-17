@@ -60,6 +60,7 @@ body {
     background: url("/bundles/imhbase/images/points.png") repeat scroll 2px -2px;
     height: 100px;
     width: 100%;
+    @include opacity(.8);
   }
 
   &:before {
@@ -224,15 +225,32 @@ body {
     bottom: -2px;
     height: 2px;
     width: 100%;
-    background: $color-grey-darker;
     z-index: 1;
 
+    &:after {
+      @include transition(width, .4s, ease, 0s);
+      content: '';
+      position: absolute;
+      height: 2px;
+      width: 0;
+      top: 0;
+      background: $color-grey-darker;
+    }
+
     .handle {
-      @include transition(background, .2s, ease-in, 0s);
+      @include opacity(0);
+      -webkit-transition: background .2s linear, opacity .2s ease .4s, width .2s ease;
+      -moz-transition: background .2s linear, opacity .2s ease .4s, width .2s ease;
+      -ms-transition: background .2s linear, opacity .2s ease .4s, width .2s ease; /* IE10 is actually unprefixed */
+      -o-transition: background .2s linear, opacity .2s ease .4s, width .2s ease;
+      transition: background .2s linear, opacity .2s ease .4s, width .2s ease;
+
       cursor: pointer;
       background: $color-grey-dark;
       width: 100px; /* overriden if dynamicHandle: 1 */
       height: 100%;
+      position: relative;
+      z-index: 1;
 
       &:hover {
         background: $color-grey-light;
@@ -243,6 +261,16 @@ body {
         top: -31px;
         left: 0;
         height: 128px;
+        width: 100%;
+      }
+    }
+
+    &.mA_2 {
+      .handle {
+        @include opacity(1);
+      }
+
+      &:after {
         width: 100%;
       }
     }
@@ -285,6 +313,7 @@ body {
 
         .media-object {
           @include transition(all, 1s, ease, 0s);
+          -webkit-backface-visibility: hidden;
           display: block;
           height: 100%;
           width: auto;
@@ -319,19 +348,39 @@ body {
           }
         }*/
 
-        &:after {
+        .plus-icon {
+          //@include border-radius(50%);
+          @include opacity(0);
+          @include animation('pop-icon-out .2s');
           cursor: pointer;
-          content: '';
           position: absolute;
           top: 50%;
           left: 50%;
-          width: 70px;
-          height: 70px;
+          width: 3px;
+          height: 3px;
           background: $color-black;
-          margin: -35px 0 0 -35px;
-          @include border-radius(50%);
-          @include opacity(0);
-          @include animation('pop-icon-out .2s');
+          //margin: -35px 0 0 -35px;
+
+          &:before, &:after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            background: $color-white;
+            @include transform(scale(1));
+          }
+
+          &:before {
+            width: 1px;
+            height: 18px;
+            @include transform(translate(0, -50%));
+          }
+
+          &:after {
+            width: 18px;
+            height: 1px;
+            @include transform(translate(-50%, 0));
+          }
         }
 
         &:hover {
@@ -343,7 +392,7 @@ body {
             @include transform(translate(0, 0%));
           }
 
-          &:after {
+          .plus-icon {
             @include animation('pop-icon-in .4s');
             @include opacity(.8);
           }
@@ -449,5 +498,6 @@ body {
     @include transition(opacity, .2s, linear, 0s);
     @include opacity(0);
     margin: -19px 0 0 -19px;
+    z-index: -1;
   }
 }

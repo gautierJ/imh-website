@@ -1,9 +1,9 @@
 #content .main-content-wrapper .middle {
-  padding: 26px 60px 45px;
+  padding: 26px 60px 62px;
   width: 100%; }
 #content .main-content-wrapper h1 {
   padding-bottom: 10px;
-  border-bottom: 1px solid #dddddd; }
+  border-bottom: 1px solid #DDDDDD; }
 #content .main-content-wrapper .biography-content {
   margin-bottom: 62px;
   position: relative; }
@@ -12,11 +12,11 @@
     top: 50%;
     margin-top: -22px;
     left: 17%; }
-#content .main-content-wrapper .carousel {
+#content .main-content-wrapper .owl-theme {
   width: 40%;
   margin-right: 5%;
   float: left; }
-  #content .main-content-wrapper .carousel.ready .owl-controls {
+  #content .main-content-wrapper .owl-theme.ready .owl-controls {
     opacity: 1;
     /* Good browsers */
     -moz-opacity: 1;
@@ -27,18 +27,12 @@
     /* IE 5-7 */
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
     /* IE 8 */
-    -webkit-transition: opacity 0.5s linear 0.5s;
-    -moz-transition: opacity 0.5s linear 0.5s;
-    -o-transition: opacity 0.5s linear 0.5s;
-    transition: opacity 0.5s linear 0.5s; }
-#content .main-content-wrapper .owl-item .lazyOwl {
-  display: block;
-  width: 100%;
-  height: auto; }
-#content .main-content-wrapper .owl-item.loading {
-  background: url("/bundles/imhbase/images/tail-spin.svg") no-repeat center center; }
-#content .main-content-wrapper .owl-theme {
-  /* Styling Pagination */ }
+    -webkit-transition: opacity 0.4s linear 0s;
+    -moz-transition: opacity 0.4s linear 0s;
+    -o-transition: opacity 0.4s linear 0s;
+    transition: opacity 0.4s linear 0s; }
+  #content .main-content-wrapper .owl-theme .owl-grab {
+    background: url("/bundles/imhbase/images/loader_black.svg") no-repeat center center; }
   #content .main-content-wrapper .owl-theme .owl-controls {
     opacity: 0;
     /* Good browsers */
@@ -54,20 +48,20 @@
     text-align: center;
     position: absolute;
     left: 50%; }
-    #content .main-content-wrapper .owl-theme .owl-controls .owl-page {
+    #content .main-content-wrapper .owl-theme .owl-controls .owl-dot {
       display: inline-block; }
-      #content .main-content-wrapper .owl-theme .owl-controls .owl-page span {
+      #content .main-content-wrapper .owl-theme .owl-controls .owl-dot span {
         display: block;
         width: 8px;
         height: 8px;
         margin: 5px;
-        background-color: lightgray;
+        background-color: #D3D3D3;
         -webkit-border-radius: 20px;
         -moz-border-radius: 20px;
         -ms-border-radius: 20px;
         border-radius: 20px; }
-      #content .main-content-wrapper .owl-theme .owl-controls .owl-page.active span {
-        background-color: #582411; }
+      #content .main-content-wrapper .owl-theme .owl-controls .owl-dot.active span {
+        background-color: #898989; }
 #content .main-content-wrapper .text, #content .main-content-wrapper .scrollbar {
   visibility: hidden;
   float: right; }
@@ -78,13 +72,14 @@
   text-align: justify; }
   #content .main-content-wrapper .text p {
     font-size: 1.167em;
+    line-height: 1.4em;
     font-family: "Georgia", Times, serif;
     color: #222222; }
   #content .main-content-wrapper .text p:first-child {
     margin-top: 0; }
     #content .main-content-wrapper .text p:first-child::first-letter {
-      font-size: 68px;
-      line-height: 43px;
+      font-size: 74px;
+      line-height: 54px;
       float: left;
       margin-right: 8px; }
   #content .main-content-wrapper .text ul {
@@ -93,14 +88,14 @@
     font-size: 1.167em; }
 #content .main-content-wrapper .scrollbar {
   width: .6%;
-  background-color: lightgray; }
+  background-color: #D3D3D3; }
   #content .main-content-wrapper .scrollbar .handle {
     -webkit-transition: background 0.3s ease-in 0s;
     -moz-transition: background 0.3s ease-in 0s;
     -o-transition: background 0.3s ease-in 0s;
     transition: background 0.3s ease-in 0s;
     cursor: pointer;
-    background-color: #b18f5c;
+    background-color: #B18F5C;
     width: 100%;
     height: 250px;
     /* overriden if dynamicHandle: 1 */
@@ -121,7 +116,7 @@
   width: 18px;
   display: inline-block;
   position: absolute;
-  top: 11px;
+  top: 15px;
   right: 16px; }
 #content .main-content-wrapper .prizes .slider-title {
   position: relative;
@@ -129,9 +124,9 @@
   font-family: "Georgia", Times, serif;
   font-size: 1.167em;
   font-weight: normal;
-  color: white;
+  color: #FFFFFF;
   background-color: #582411;
-  line-height: 40px;
+  line-height: 47px;
   margin-bottom: 20px;
   cursor: pointer;
   text-transform: uppercase;
@@ -185,7 +180,7 @@
   /* IE 5-7 */
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
   /* IE 8 */
-  -webkit-transition: max-height 0.5s cubic-bezier(0, 1, 0.5, 1), opacity 0.3s ease 0s;
+  -webkit-transition: max-height .5s , opacity .3s ease 0s;
   -moz-transition: max-height 0.5s cubic-bezier(0, 1, 0.5, 1), opacity 0.3s ease 0s;
   -ms-transition: max-height 0.5s cubic-bezier(0, 1, 0.5, 1), opacity 0.3s ease 0s;
   /* IE10 is actually unprefixed */
@@ -197,7 +192,7 @@
     color: #222222;
     font-family: "Georgia", Times, serif;
     font-size: 1.167em;
-    border-top: 1px solid #dddddd;
+    border-top: 1px solid #DDDDDD;
     padding-top: 12px;
     margin-top: 12px;
     position: relative;
@@ -267,3 +262,5 @@
     -webkit-transform: rotate(45deg);
     -o-transform: rotate(45deg);
     -ms-transform: rotate(45deg); }
+
+/*# sourceMappingURL=biography.css.map */

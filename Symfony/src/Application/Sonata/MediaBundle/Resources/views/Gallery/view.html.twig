@@ -34,6 +34,7 @@
                                         <img src="{{ asset('bundles/imhbase/images/empty.gif') }}" alt="" />
                                     </span>
                             </div>
+                            <div class="plus-icon"></div>
                         </a>
                     </li>
                 {% endfor %}
@@ -67,10 +68,9 @@
     <script src="{{ asset('/assets/lib/infinite-scroll/behaviors/manual-trigger.js') }}"></script>
 
     <script src="{{ asset('/assets/lib/isotope/imagesloaded.pkgd.min.js') }}"></script>
-    <script src="{{ asset('/assets/lib/isotope/isotope.pkgd.min.js') }}"></script>
-    <script src="{{ asset('/assets/lib/isotope/masonry-horizontal.js') }}"></script>
-    <script src="{{ asset('/assets/lib/isotope/packery.pkgd.min.js') }}"></script>
-    <script src="{{ asset('/assets/lib/isotope/smartresize.js') }}"></script>
+    {#<script src="{{ asset('/assets/lib/isotope/packery.pkgd.min.js') }}"></script>#}
+    <script src="{{ asset('/assets/lib/isotope/pkgd.js') }}"></script>
+    {#<script src="{{ asset('/assets/lib/isotope/smartresize.js') }}"></script>#}
 
     {% javascripts output='assets/compiled/js/gallery.js'
         '@ImhBaseBundle/Resources/assets/js/jquery.imh.gallery.js'

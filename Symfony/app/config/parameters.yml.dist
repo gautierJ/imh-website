@@ -15,7 +15,7 @@ parameters:
     secret:            ThisTokenIsNotSoSecretChangeIt
 
     sass.bin:          /usr/local/bin/sass
-    compass.bin:       /usr/local/bin/compass
+    compass.bin:       /usr/bin/compass
     ruby.bin:          /usr/bin/ruby
 
     contact_email: ~

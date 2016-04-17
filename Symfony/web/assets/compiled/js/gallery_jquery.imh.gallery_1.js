@@ -1,14 +1,16 @@
 $(function() {
     'use strict';
 
-    var cst = {
-        'LOADING_TIME'       : 3000,
-        'PORTRAIT_WIDTH'     : 33.33 + '%',
-        'PORTRAIT_MAX_WIDTH' : 66.66 + '%'
+    var GalleryManager = {
+        'cst' : {
+            'LOADING_TIME'       : 3000,
+            'PORTRAIT_WIDTH'     : 33.33 + '%',
+            'PORTRAIT_MAX_WIDTH' : 66.66 + '%'
+        },
+        'cssAnimations' : ['mA_1', 'mA_2']
     };
 
-    var contentSelector   = 'content',
-        gallerySelector   = 'gallery-wrapper',
+    var gallerySelector   = 'gallery-wrapper',
         frameSelector     = 'frame',
         slideeSelector    = 'slidee',
         scrollbarSelector = 'scrollbar',
@@ -19,6 +21,7 @@ $(function() {
 
         containerSelector = 'sonata-media-gallery-media-list',
         itemSelector      = 'sonata-media-gallery-media-item',
+        linkSelector      = 'sonata-media-gallery-media-item-link',
         imageSelector     = 'media-object',
         expSelector       = 'expanded',
         triggerSelector   = 'trigger',
@@ -30,7 +33,7 @@ $(function() {
         isVisible         = false,
         isTriggered       = false,
 
-        delay             = (function(){
+        delay = (function(){
             var timer = 0;
             return function(callback, ms){
                 clearTimeout (timer);
@@ -52,8 +55,8 @@ $(function() {
         else return $container.css('cursor', 'ns-resize');
     };
 
-    // layout Isotope after all images have loaded
-    $container.imagesLoaded( function() {
+    // layout Packery after all images have loaded
+    $container.imagesLoaded(function() {
         isVisible = true;
         var $g = $('#' + gallerySelector),
             $i = $('.' + itemSelector),
@@ -61,6 +64,7 @@ $(function() {
 
         $g.removeClass('loading');
 
+        // bug fix for Chrome
         var calcEltWidth = function($trgi) {
             $i.each(function() {
                 var $img     = $(this).find('.' + imageSelector),
@@ -68,26 +72,21 @@ $(function() {
                     newWidth = Math.round($img.height()/imgRatio);
 
                 if(orientation) { $(this).width(newWidth); }
-                else if (!isClosed) { $trgi.css('width', cst.PORTRAIT_MAX_WIDTH); }
-                else { $(this).css('width', cst.PORTRAIT_WIDTH); }
+                else if (!isClosed) { $trgi.css('width', GalleryManager.cst.PORTRAIT_MAX_WIDTH); }
+                else { $(this).css('width', GalleryManager.cst.PORTRAIT_WIDTH); }
             });
-            $container.isotope('layout');
+            $container.packery();
         };
 
-        var isoOptions = {
-            layoutMode: 'packery',
+        var pckryOptions = {
             itemSelector: '.' + itemSelector,
-            packery: {
-                isHorizontal: orientation
-            }
+            horizontal: orientation
         };
-        $container.isotope(isoOptions);
 
-        // access Isotope properties
-        var iso = $container.data('isotope');
+        $container.packery(pckryOptions);
 
-        // get the Isotope instance via its element
-        //var instance = Isotope.data($container);
+        // access Packery properties from jquery object
+        var pckry = $container.data('packery');
 
         var slyOptions = {
             horizontal: orientation,
@@ -103,6 +102,7 @@ $(function() {
             touchDragging: 1,
             releaseSwing: 1
         };
+        $('#' + scrollbarSelector).addClass(GalleryManager.cssAnimations[1]);
         sly = new Sly($('#' + frameSelector), slyOptions).init();
 
         // Detect whether device supports orientationchange event,
@@ -120,18 +120,17 @@ $(function() {
 
             var _destroy = function() {
                 sly.destroy();
-                $container.isotope('destroy');
+                $('#' + scrollbarSelector).removeClass(GalleryManager.cssAnimations[1]);
+                $container.packery('destroy');
             },
             _setOption = function(o) {
                 sly.options.horizontal = o;
-                iso.options.packery.isHorizontal = o;
+                pckry.options.horizontal = o;
             },
-            _reinit = function() { // reinitialize sly and isotope with new orientation option flag
+            _reinit = function() { // reinitialize sly and packery with new orientation option flag
                 sly = new Sly($('#' + frameSelector), sly.options).init();
-                $container.isotope(iso.options);
-
-                //$container.isotope('off', 'layoutComplete');
-                $container.isotope('on', 'layoutComplete', function(){ onLayout() });
+                $container.packery(pckry.options);
+                $container.on('layoutComplete', function(){ onLayout(); });
             };
 
             if(orientationEvent == 'orientationchange') {  // MOBILE - TABLET
@@ -150,15 +149,16 @@ $(function() {
                 _reinit();
 
                 delay(function(){
+                    $('#' + scrollbarSelector).addClass(GalleryManager.cssAnimations[1]);
                     sly.reload();
                     setCssCursor(orientation);
                     loading(isVisible = true);
-                }, cst.LOADING_TIME);
+                }, GalleryManager.cst.LOADING_TIME);
             }
             calcEltWidth();
         }, false);
 
-        $container.isotope('on', 'layoutComplete', function(){ onLayout() });
+        $container.on('layoutComplete', function(){ onLayout(); });
 
         var loading = function(isVisible) {
             isVisible ? $g.removeClass('loading')
@@ -166,53 +166,40 @@ $(function() {
         };
 
         var onLayout = function() {
-            //console.log("Layout");
-
-            if($targetItem != null && !isTriggered) {
-                //console.log('1');
-                $targetItem.stop().animate({
-                    'opacity': 1
-                }, 500, function() {
-                    closeItem($targetItem);
-                });
-            }
-
-            /* a revoir */
-            if(!isClosed) {
-                //console.log('2');
-                $('.' + itemSelector).not('.' + expSelector).map(function() {
-                    $(this).stop().animate({
-                        'opacity': .1
-                    }, 500);
-                    //.find('.' + imageSelector).css('transform', 'none');
-                    //$(this).off('click');
-                });
-            }
-
+            if($targetItem != null && !isTriggered) closeItem($targetItem);
             sly.reload();
             setCssCursor(orientation);
         };
 
-        var closeItem = function($trgi) {
-            $trgi.find('.' + closeSelector).off().on('click', function(e) {
-                $trgi.removeClass(expSelector);
-                $('.' + itemSelector).css('opacity', 1);
-                isClosed = true;
-                calcEltWidth($trgi);
-                e.preventDefault();
-            });
+        var getInactiveItems = function() {
+            return $('.' + itemSelector).not('.' + expSelector);
+        };
+
+        var getItemPosition = function(item) {
+
         };
 
         $container.on('click', function(e) {
-            if(e.target.className == imageSelector) {
+            if(e.target.className == linkSelector) {
                 $('.' + itemSelector).removeClass(expSelector);
-                $targetItem = $(e.target).parent().parent();
-                $targetItem.css('opacity', 0).addClass(expSelector);
+                $targetItem = $(e.target).parent();
+                $targetItem.addClass(expSelector);
+                getInactiveItems().addClass(GalleryManager.cssAnimations[0]);
                 isClosed = false;
                 calcEltWidth($targetItem);
             }
             e.preventDefault();
         });
+
+        var closeItem = function($trgi) {
+            $trgi.find('.' + closeSelector).off().on('click', function(e) {
+                $trgi.removeClass(expSelector);
+                getInactiveItems().removeClass(GalleryManager.cssAnimations[0]);
+                isClosed = true;
+                calcEltWidth($trgi);
+                e.preventDefault();
+            });
+        };
 
         $('#' + triggerSelector).on('click', function(e) {
             // needs behavior : 'twitter' and manual-trigger.js

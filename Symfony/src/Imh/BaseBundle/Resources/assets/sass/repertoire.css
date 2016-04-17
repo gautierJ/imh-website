@@ -1,19 +1,19 @@
 #content .main-content-wrapper .middle {
-  padding: 26px 60px 45px;
+  padding: 26px 60px 62px;
   width: 100%;
-  min-height: 774px; }
+  min-height: 920px; }
   #content .main-content-wrapper .middle .title {
     position: relative;
     text-align: center;
     font-family: "Georgia", Times, serif;
     font-size: 1.333em;
     font-weight: normal;
-    color: #3f3f3f;
-    background-color: #fcfcfc;
+    color: #3F3F3F;
+    background-color: #FCFCFC;
     line-height: 40px;
     margin: 0 0 20px;
     text-transform: uppercase;
-    border: 1px solid lightgray; }
+    border: 1px solid #D3D3D3; }
 #content .main-content-wrapper .concert-wrapper {
   font-family: "Georgia", Times, serif;
   margin-top: 60px;
@@ -50,3 +50,5 @@
         font-style: italic; }
         #content .main-content-wrapper .concert-wrapper li .concert .duration p {
           font-size: 0.833em; }
+
+/*# sourceMappingURL=repertoire.css.map */

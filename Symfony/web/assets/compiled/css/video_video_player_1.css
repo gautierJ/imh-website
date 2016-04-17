@@ -1,26 +1,26 @@
-/* line 4, assetic_compassoKGVcG.scss */
+/* line 4, assetic_compassoWrR6p.scss */
 #content {
-  margin-bottom: 100px;
+  padding-bottom: 100px;
 }
-/* line 7, assetic_compassoKGVcG.scss */
+/* line 7, assetic_compassoWrR6p.scss */
 #content .main-content-wrapper .middle {
   padding-bottom: 62px !important;
 }
 
-/* line 14, assetic_compassoKGVcG.scss */
+/* line 14, assetic_compassoWrR6p.scss */
 .middle .media-content {
   width: 640px;
   margin: 0 auto;
   min-height: 360px;
 }
-/* line 19, assetic_compassoKGVcG.scss */
+/* line 19, assetic_compassoWrR6p.scss */
 .middle .media-content .media {
   position: relative;
   float: left;
   width: 640px;
   height: 360px;
 }
-/* line 25, assetic_compassoKGVcG.scss */
+/* line 25, assetic_compassoWrR6p.scss */
 .middle .media-content .media .layer {
   position: absolute;
   top: 0;
@@ -29,14 +29,14 @@
   width: 100%;
   text-align: center;
 }
-/* line 33, assetic_compassoKGVcG.scss */
+/* line 33, assetic_compassoWrR6p.scss */
 .middle .media-content .media .layer a {
   display: block;
   height: 100%;
   width: 100%;
   cursor: default;
 }
-/* line 39, assetic_compassoKGVcG.scss */
+/* line 39, assetic_compassoWrR6p.scss */
 .middle .media-content .media .layer a .play {
   background: url("/bundles/imhbase/images/sprite.png") -1px -1px no-repeat;
   position: absolute;
@@ -47,17 +47,17 @@
   margin: -39px 0 0 -39px;
   z-index: 1000;
 }
-/* line 49, assetic_compassoKGVcG.scss */
+/* line 49, assetic_compassoWrR6p.scss */
 .middle .media-content .media .layer a .play:hover {
   background-position: -78px -1px;
   cursor: pointer;
 }
-/* line 57, assetic_compassoKGVcG.scss */
+/* line 57, assetic_compassoWrR6p.scss */
 .middle .media-content .media #ytplayer {
   display: block;
   visibility: hidden;
 }
-/* line 62, assetic_compassoKGVcG.scss */
+/* line 62, assetic_compassoWrR6p.scss */
 .middle .media-content .media .progress-bar-wrapper {
   opacity: 0;
   /* Good browsers */
@@ -70,47 +70,47 @@
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   /* IE 8 */
 }
-/* line 65, assetic_compassoKGVcG.scss */
+/* line 65, assetic_compassoWrR6p.scss */
 .middle .media-content .media .progress-bar-wrapper .progress-bar {
   float: left;
   height: 2px;
   background-color: #222222;
   margin-top: 10px;
 }
-/* line 71, assetic_compassoKGVcG.scss */
+/* line 71, assetic_compassoWrR6p.scss */
 .middle .media-content .media .progress-bar-wrapper .progress-bar .advancement, .middle .media-content .media .progress-bar-wrapper .progress-bar .buffer {
   height: 100%;
   width: 0;
 }
-/* line 76, assetic_compassoKGVcG.scss */
+/* line 76, assetic_compassoWrR6p.scss */
 .middle .media-content .media .progress-bar-wrapper .progress-bar .advancement {
   background-color: #582411;
 }
-/* line 80, assetic_compassoKGVcG.scss */
+/* line 80, assetic_compassoWrR6p.scss */
 .middle .media-content .media .progress-bar-wrapper .progress-bar .buffer {
   background-color: #b18f5c;
 }
-/* line 85, assetic_compassoKGVcG.scss */
+/* line 85, assetic_compassoWrR6p.scss */
 .middle .media-content .media .progress-bar-wrapper .time {
   float: right;
   font-size: 0.917em;
   margin-top: 5px;
   text-align: right;
 }
-/* line 95, assetic_compassoKGVcG.scss */
+/* line 95, assetic_compassoWrR6p.scss */
 .middle .actions {
   float: left;
   margin-left: 10px;
 }
-/* line 99, assetic_compassoKGVcG.scss */
+/* line 99, assetic_compassoWrR6p.scss */
 .middle .actions li {
   margin-top: 10px;
 }
-/* line 102, assetic_compassoKGVcG.scss */
+/* line 102, assetic_compassoWrR6p.scss */
 .middle .actions li:first-child {
   margin-top: 0;
 }
-/* line 106, assetic_compassoKGVcG.scss */
+/* line 106, assetic_compassoWrR6p.scss */
 .middle .actions li a {
   color: #3f3f3f;
   border: 1px solid #3f3f3f;
@@ -123,13 +123,13 @@
   line-height: 180px;
   position: relative;
 }
-/* line 118, assetic_compassoKGVcG.scss */
+/* line 118, assetic_compassoWrR6p.scss */
 .middle .actions li a:hover {
   background-color: #222222;
   color: white;
   border-color: #222222;
 }
-/* line 124, assetic_compassoKGVcG.scss */
+/* line 124, assetic_compassoWrR6p.scss */
 .middle .actions li a img {
   background: url("/bundles/imhbase/images/sprite.png") no-repeat;
   display: inline-block;
@@ -141,67 +141,67 @@
   margin-top: -30px;
   margin-left: -25px;
 }
-/* line 139, assetic_compassoKGVcG.scss */
+/* line 139, assetic_compassoWrR6p.scss */
 .middle .actions li.display a img {
   background-position: 0 -192px;
 }
-/* line 140, assetic_compassoKGVcG.scss */
+/* line 140, assetic_compassoWrR6p.scss */
 .middle .actions li.display a:hover img {
   background-position: -150px -192px;
 }
-/* line 146, assetic_compassoKGVcG.scss */
+/* line 146, assetic_compassoWrR6p.scss */
 .middle .actions li.like a img {
   background-position: -50px -192px;
 }
-/* line 147, assetic_compassoKGVcG.scss */
+/* line 147, assetic_compassoWrR6p.scss */
 .middle .actions li.like a:hover img {
   background-position: -200px -192px;
 }
-/* line 153, assetic_compassoKGVcG.scss */
+/* line 153, assetic_compassoWrR6p.scss */
 .middle .actions li.download a img {
   background-position: -100px -192px;
 }
-/* line 154, assetic_compassoKGVcG.scss */
+/* line 154, assetic_compassoWrR6p.scss */
 .middle .actions li.download a:hover img {
   background-position: -250px -192px;
 }
 
-/* line 161, assetic_compassoKGVcG.scss */
+/* line 161, assetic_compassoWrR6p.scss */
 .player-control-bar {
   border-top: 1px solid lightgrey;
   width: 100%;
   height: 56px;
   color: #898989;
 }
-/* line 167, assetic_compassoKGVcG.scss */
+/* line 167, assetic_compassoWrR6p.scss */
 .player-control-bar .views, .player-control-bar .video-info, .player-control-bar .controls, .player-control-bar .share {
   float: left;
   height: 100%;
   margin-right: 1px;
 }
-/* line 173, assetic_compassoKGVcG.scss */
+/* line 173, assetic_compassoWrR6p.scss */
 .player-control-bar .views {
   background-color: white;
   background-color: rgba(255, 255, 255, 0.9);
   width: 163px;
   padding-left: 14px;
 }
-/* line 179, assetic_compassoKGVcG.scss */
+/* line 179, assetic_compassoWrR6p.scss */
 .player-control-bar .views .nb {
-  font-family: 'open_sanscondensed_light';
+  font-family: 'open_sanscondensed_light', Arial, Helvetica, sans-serif;
   color: #3f3f3f;
   float: left;
   font-size: 2.333em;
   line-height: 56px;
 }
-/* line 188, assetic_compassoKGVcG.scss */
+/* line 188, assetic_compassoWrR6p.scss */
 .player-control-bar .txt {
   float: left;
   font-size: 0.917em;
   line-height: 1.1em;
   margin: 17px 0 0 8px;
 }
-/* line 195, assetic_compassoKGVcG.scss */
+/* line 195, assetic_compassoWrR6p.scss */
 .player-control-bar .video-info {
   background-color: white;
   background-color: rgba(255, 255, 255, 0.9);
@@ -209,15 +209,15 @@
   height: 47px;
   padding: 9px 40px 0 14px;
 }
-/* line 202, assetic_compassoKGVcG.scss */
+/* line 202, assetic_compassoWrR6p.scss */
 .player-control-bar .video-info .description {
-  font-family: 'open_sans_condensedbold';
+  font-family: 'open_sans_condensedbold', Arial, Helvetica, sans-serif;
   font-size: 1em;
   margin: 0;
 }
-/* line 208, assetic_compassoKGVcG.scss */
+/* line 208, assetic_compassoWrR6p.scss */
 .player-control-bar .video-info .name {
-  font-family: 'open_sans_condensedbold';
+  font-family: 'open_sans_condensedbold', Arial, Helvetica, sans-serif;
   font-size: 1.333em;
   color: #3f3f3f;
   white-space: nowrap;
@@ -225,12 +225,12 @@
   text-overflow: ellipsis;
   margin: 0;
 }
-/* line 220, assetic_compassoKGVcG.scss */
+/* line 220, assetic_compassoWrR6p.scss */
 .player-control-bar .controls li {
   float: left;
   margin-left: 1px;
 }
-/* line 224, assetic_compassoKGVcG.scss */
+/* line 224, assetic_compassoWrR6p.scss */
 .player-control-bar .controls li a {
   position: relative;
   font-size: 0.833em;
@@ -247,12 +247,12 @@
   -o-transition: all 0.2s ease-in 0s;
   transition: all 0.2s ease-in 0s;
 }
-/* line 237, assetic_compassoKGVcG.scss */
+/* line 237, assetic_compassoWrR6p.scss */
 .player-control-bar .controls li a:hover {
   background-color: white;
   color: #222222;
 }
-/* line 243, assetic_compassoKGVcG.scss */
+/* line 243, assetic_compassoWrR6p.scss */
 .player-control-bar .controls li.play-pause .bkg, .player-control-bar .controls li.volume .bkg, .player-control-bar .controls li.fullscreen .bkg {
   position: absolute;
   top: 11px;
@@ -261,87 +261,87 @@
   width: 19px;
   background: url("/bundles/imhbase/images/sprite.png") no-repeat;
 }
-/* line 254, assetic_compassoKGVcG.scss */
+/* line 254, assetic_compassoWrR6p.scss */
 .player-control-bar .controls li.play-pause a .bkg {
   background-position: -16px -102px;
 }
-/* line 257, assetic_compassoKGVcG.scss */
+/* line 257, assetic_compassoWrR6p.scss */
 .player-control-bar .controls li.play-pause a:hover img {
   background-position: -16px -77px;
 }
-/* line 260, assetic_compassoKGVcG.scss */
+/* line 260, assetic_compassoWrR6p.scss */
 .player-control-bar .controls li.play-pause a.pause .bkg {
   background-position: 3px -102px;
 }
-/* line 263, assetic_compassoKGVcG.scss */
+/* line 263, assetic_compassoWrR6p.scss */
 .player-control-bar .controls li.play-pause a.pause:hover img {
   background-position: 3px -77px;
 }
-/* line 268, assetic_compassoKGVcG.scss */
+/* line 268, assetic_compassoWrR6p.scss */
 .player-control-bar .controls li.volume {
   position: relative;
 }
-/* line 272, assetic_compassoKGVcG.scss */
+/* line 272, assetic_compassoWrR6p.scss */
 .player-control-bar .controls li.volume a .bkg {
   background-position: -60px -102px;
   width: 25px;
   left: 14px;
 }
-/* line 277, assetic_compassoKGVcG.scss */
+/* line 277, assetic_compassoWrR6p.scss */
 .player-control-bar .controls li.volume a:hover img, .player-control-bar .controls li.volume a.hover img {
   background-position: -60px -77px;
 }
-/* line 280, assetic_compassoKGVcG.scss */
+/* line 280, assetic_compassoWrR6p.scss */
 .player-control-bar .controls li.volume a.hover {
   background-color: white;
   color: #222222;
 }
-/* line 286, assetic_compassoKGVcG.scss */
+/* line 286, assetic_compassoWrR6p.scss */
 .player-control-bar .controls li.volume a._0 img {
   background-position: -163px -102px;
   width: 33px;
 }
-/* line 287, assetic_compassoKGVcG.scss */
+/* line 287, assetic_compassoWrR6p.scss */
 .player-control-bar .controls li.volume a._0:hover img, .player-control-bar .controls li.volume a._0.hover img {
   background-position: -163px -77px;
 }
-/* line 290, assetic_compassoKGVcG.scss */
+/* line 290, assetic_compassoWrR6p.scss */
 .player-control-bar .controls li.volume a._25 img {
   background-position: -60px -102px;
   width: 26px;
 }
-/* line 291, assetic_compassoKGVcG.scss */
+/* line 291, assetic_compassoWrR6p.scss */
 .player-control-bar .controls li.volume a._25:hover img, .player-control-bar .controls li.volume a._25.hover img {
   background-position: -60px -77px;
 }
-/* line 294, assetic_compassoKGVcG.scss */
+/* line 294, assetic_compassoWrR6p.scss */
 .player-control-bar .controls li.volume a._50 img {
   background-position: -81px -102px;
   width: 29px;
 }
-/* line 295, assetic_compassoKGVcG.scss */
+/* line 295, assetic_compassoWrR6p.scss */
 .player-control-bar .controls li.volume a._50:hover img, .player-control-bar .controls li.volume a._50.hover img {
   background-position: -81px -77px;
 }
-/* line 298, assetic_compassoKGVcG.scss */
+/* line 298, assetic_compassoWrR6p.scss */
 .player-control-bar .controls li.volume a._75 img {
   background-position: -106px -102px;
   width: 29px;
 }
-/* line 299, assetic_compassoKGVcG.scss */
+/* line 299, assetic_compassoWrR6p.scss */
 .player-control-bar .controls li.volume a._75:hover img, .player-control-bar .controls li.volume a._75.hover img {
   background-position: -106px -77px;
 }
-/* line 302, assetic_compassoKGVcG.scss */
+/* line 302, assetic_compassoWrR6p.scss */
 .player-control-bar .controls li.volume a._100 img {
   background-position: -133px -102px;
   width: 29px;
 }
-/* line 303, assetic_compassoKGVcG.scss */
+/* line 303, assetic_compassoWrR6p.scss */
 .player-control-bar .controls li.volume a._100:hover img, .player-control-bar .controls li.volume a._100.hover img {
   background-position: -133px -77px;
 }
-/* line 307, assetic_compassoKGVcG.scss */
+/* line 307, assetic_compassoWrR6p.scss */
 .player-control-bar .controls li.volume .wrap-level {
   position: absolute;
   top: -116px;
@@ -351,30 +351,30 @@
   height: 116px;
   text-align: center;
 }
-/* line 317, assetic_compassoKGVcG.scss */
+/* line 317, assetic_compassoWrR6p.scss */
 .player-control-bar .controls li.volume .level {
   position: relative;
   display: none;
   margin-top: 10px;
 }
-/* line 323, assetic_compassoKGVcG.scss */
+/* line 323, assetic_compassoWrR6p.scss */
 .player-control-bar .controls li.volume .slider {
   position: absolute;
   top: 15px;
   left: 16px;
   height: 70px;
 }
-/* line 329, assetic_compassoKGVcG.scss */
+/* line 329, assetic_compassoWrR6p.scss */
 .player-control-bar .controls li.volume .slider.noUi-target {
   border: none;
   border-radius: inherit;
   box-shadow: none;
 }
-/* line 334, assetic_compassoKGVcG.scss */
+/* line 334, assetic_compassoWrR6p.scss */
 .player-control-bar .controls li.volume .slider.noUi-target.noUi-vertical {
   width: 8px;
 }
-/* line 337, assetic_compassoKGVcG.scss */
+/* line 337, assetic_compassoWrR6p.scss */
 .player-control-bar .controls li.volume .slider.noUi-target.noUi-vertical .noUi-handle {
   box-shadow: none;
   border: none;
@@ -388,27 +388,27 @@
   left: 0;
   cursor: pointer;
 }
-/* line 347, assetic_compassoKGVcG.scss */
+/* line 347, assetic_compassoWrR6p.scss */
 .player-control-bar .controls li.volume .slider.noUi-target.noUi-vertical .noUi-handle:before, .player-control-bar .controls li.volume .slider.noUi-target.noUi-vertical .noUi-handle:after {
   background: none;
 }
-/* line 353, assetic_compassoKGVcG.scss */
+/* line 353, assetic_compassoWrR6p.scss */
 .player-control-bar .controls li.volume .slider.noUi-target.noUi-background {
   background: none;
 }
-/* line 362, assetic_compassoKGVcG.scss */
+/* line 362, assetic_compassoWrR6p.scss */
 .player-control-bar .controls li.fullscreen a .bkg {
   background-position: -197px -102px;
 }
-/* line 363, assetic_compassoKGVcG.scss */
+/* line 363, assetic_compassoWrR6p.scss */
 .player-control-bar .controls li.fullscreen a:hover img {
   background-position: -197px -77px;
 }
-/* line 367, assetic_compassoKGVcG.scss */
+/* line 367, assetic_compassoWrR6p.scss */
 .player-control-bar .controls li:first-child {
   margin-left: 0;
 }
-/* line 372, assetic_compassoKGVcG.scss */
+/* line 372, assetic_compassoWrR6p.scss */
 .player-control-bar .share {
   background-color: white;
   background-color: rgba(255, 255, 255, 0.9);
@@ -417,17 +417,17 @@
   line-height: 37px;
   width: 263px;
 }
-/* line 380, assetic_compassoKGVcG.scss */
+/* line 380, assetic_compassoWrR6p.scss */
 .player-control-bar .share .txt {
   margin-left: 12px;
 }
-/* line 384, assetic_compassoKGVcG.scss */
+/* line 384, assetic_compassoWrR6p.scss */
 .player-control-bar .share .twitter-share-button {
   width: 90px !important;
   vertical-align: bottom;
 }
 
-/* line 392, assetic_compassoKGVcG.scss */
+/* line 392, assetic_compassoWrR6p.scss */
 #media-gallery {
   position: relative;
   width: 843px;
@@ -435,13 +435,13 @@
   margin: 0 auto;
   visibility: hidden;
 }
-/* line 399, assetic_compassoKGVcG.scss */
+/* line 399, assetic_compassoWrR6p.scss */
 #media-gallery #imageFlow {
   position: relative;
   overflow: hidden;
   margin: 0 auto;
 }
-/* line 405, assetic_compassoKGVcG.scss */
+/* line 405, assetic_compassoWrR6p.scss */
 #media-gallery #imageFlow .bank {
   width: 100%;
   height: 134px;
@@ -451,25 +451,25 @@
   overflow: hidden;
   white-space: nowrap;
 }
-/* line 415, assetic_compassoKGVcG.scss */
+/* line 415, assetic_compassoWrR6p.scss */
 #media-gallery #imageFlow li {
   display: inline-block;
   vertical-align: top;
   text-align: left;
   margin: 0 8px;
 }
-/* line 421, assetic_compassoKGVcG.scss */
+/* line 421, assetic_compassoWrR6p.scss */
 #media-gallery #imageFlow li a {
   position: relative;
   display: block;
 }
-/* line 425, assetic_compassoKGVcG.scss */
+/* line 425, assetic_compassoWrR6p.scss */
 #media-gallery #imageFlow li a .decoration {
   -webkit-transition: all 0.1s ease-in 0s;
   -moz-transition: all 0.1s ease-in 0s;
   -o-transition: all 0.1s ease-in 0s;
   transition: all 0.1s ease-in 0s;
-  background-color: none;
+  background: none;
   border-color: lightgrey;
   height: 100%;
   width: 100%;
@@ -479,12 +479,12 @@
   left: -7px;
   z-index: -1;
 }
-/* line 439, assetic_compassoKGVcG.scss */
+/* line 439, assetic_compassoWrR6p.scss */
 #media-gallery #imageFlow li a:hover .decoration {
   background-color: white;
   border: 1px solid #898989;
 }
-/* line 444, assetic_compassoKGVcG.scss */
+/* line 444, assetic_compassoWrR6p.scss */
 #media-gallery #imageFlow li a:hover img {
   -webkit-filter: grayscale(0);
   -moz-filter: grayscale(0);
@@ -492,7 +492,7 @@
   -o-filter: grayscale(0);
   filter: grayscale(0);
 }
-/* line 449, assetic_compassoKGVcG.scss */
+/* line 449, assetic_compassoWrR6p.scss */
 #media-gallery #imageFlow li a img {
   -webkit-filter: grayscale(100%);
   -moz-filter: grayscale(100%);
@@ -501,12 +501,12 @@
   filter: grayscale(100%);
   display: block;
 }
-/* line 463, assetic_compassoKGVcG.scss */
+/* line 463, assetic_compassoWrR6p.scss */
 #media-gallery #imageFlow li.current .decoration {
   background-color: white;
   border: 1px solid #898989;
 }
-/* line 469, assetic_compassoKGVcG.scss */
+/* line 469, assetic_compassoWrR6p.scss */
 #media-gallery #imageFlow li .duration {
   position: absolute;
   bottom: 2px;
@@ -517,22 +517,22 @@
   padding: 2px 5px;
   border: 1px solid #dddddd;
 }
-/* line 480, assetic_compassoKGVcG.scss */
+/* line 480, assetic_compassoWrR6p.scss */
 #media-gallery #imageFlow li.diapo {
   position: absolute;
   margin: 0;
 }
-/* line 485, assetic_compassoKGVcG.scss */
+/* line 485, assetic_compassoWrR6p.scss */
 #media-gallery #imageFlow li.diapo a {
   width: inherit;
   height: inherit;
 }
-/* line 492, assetic_compassoKGVcG.scss */
+/* line 492, assetic_compassoWrR6p.scss */
 #media-gallery #imageFlow .legend {
   position: absolute;
   width: 100%;
 }
-/* line 496, assetic_compassoKGVcG.scss */
+/* line 496, assetic_compassoWrR6p.scss */
 #media-gallery #imageFlow .legend .title {
   display: block;
   font-size: 0.917em;
@@ -543,12 +543,12 @@
   margin: 7px 0 0 0;
   line-height: 1.1em;
 }
-/* line 507, assetic_compassoKGVcG.scss */
+/* line 507, assetic_compassoWrR6p.scss */
 #media-gallery #imageFlow .legend .description {
   font-size: 0.833em;
   color: #898989;
 }
-/* line 514, assetic_compassoKGVcG.scss */
+/* line 514, assetic_compassoWrR6p.scss */
 #media-gallery .scrollbar {
   /* IE9 SVG, needs conditional override of 'filter' to 'none' */
   /*background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUlIiBzdG9wLWNvbG9yPSIjODk4OTg5IiBzdG9wLW9wYWNpdHk9IjAuMSIvPgogICAgPHN0b3Agb2Zmc2V0PSI1MCUiIHN0b3AtY29sb3I9IiM4OTg5ODkiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSI5NSUiIHN0b3AtY29sb3I9IiM4OTg5ODkiIHN0b3Atb3BhY2l0eT0iMC4xIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmZmZmZmYiIHN0b3Atb3BhY2l0eT0iMCIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
@@ -580,7 +580,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
   margin: 20px auto 0;
   z-index: 1;
 }
-/* line 533, assetic_compassoKGVcG.scss */
+/* line 533, assetic_compassoWrR6p.scss */
 #media-gallery .scrollbar .left, #media-gallery .scrollbar .right {
   cursor: pointer;
   position: absolute;
@@ -594,20 +594,20 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
   transition: all 0.3s ease-in 0s;
   display: none;
 }
-/* line 542, assetic_compassoKGVcG.scss */
+/* line 542, assetic_compassoWrR6p.scss */
 #media-gallery .scrollbar .left:hover, #media-gallery .scrollbar .right:hover {
   border-color: #582411;
   color: #582411;
 }
-/* line 550, assetic_compassoKGVcG.scss */
+/* line 550, assetic_compassoWrR6p.scss */
 #media-gallery .scrollbar .left {
   left: 25px;
 }
-/* line 554, assetic_compassoKGVcG.scss */
+/* line 554, assetic_compassoWrR6p.scss */
 #media-gallery .scrollbar .right {
   right: 25px;
 }
-/* line 558, assetic_compassoKGVcG.scss */
+/* line 558, assetic_compassoWrR6p.scss */
 #media-gallery .scrollbar .bar {
   position: absolute;
   height: 5px;
@@ -617,7 +617,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
   cursor: pointer;
   background-color: #b18f5c;
 }
-/* line 567, assetic_compassoKGVcG.scss */
+/* line 567, assetic_compassoWrR6p.scss */
 #media-gallery .scrollbar .bar:hover {
   background-color: #582411;
 }

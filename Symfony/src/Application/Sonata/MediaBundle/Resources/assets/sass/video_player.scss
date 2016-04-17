@@ -2,7 +2,7 @@
 @import "../../../../../../Imh/BaseBundle/Resources/assets/sass/mixins";
 
 #content {
-  margin-bottom: 100px;
+  padding-bottom: 100px;
   .main-content-wrapper {
     .middle {
       padding-bottom: 62px !important;
@@ -177,7 +177,7 @@
     padding-left: 14px;
 
     .nb {
-      font-family: 'open_sanscondensed_light';
+      font-family: 'open_sanscondensed_light', Arial, Helvetica, sans-serif;
       color: $color-grey-dark;
       float: left;
       font-size: $twentyeightpx;
@@ -200,13 +200,13 @@
     padding: 9px 40px 0 14px;
 
     .description {
-      font-family: 'open_sans_condensedbold';
+      font-family: 'open_sans_condensedbold', Arial, Helvetica, sans-serif;
       font-size: $basepx;
       margin: 0;
     }
 
     .name {
-      font-family: 'open_sans_condensedbold';
+      font-family: 'open_sans_condensedbold', Arial, Helvetica, sans-serif;
       font-size: $sixteenpx;
       color: $color-grey-dark;
       white-space: nowrap;
@@ -424,7 +424,7 @@
 
         .decoration {
           @include transition(all, 0.1s, ease-in, 0s);
-          background-color: none;
+          background: none;
           border-color: $color-grey-light;
           height: 100%;
           width: 100%;

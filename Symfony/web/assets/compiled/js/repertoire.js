@@ -4,7 +4,7 @@
     $.fn.scrollMove = function (options) {
         var settings = $.extend({
             cssClasses: {
-                header: 'header'
+                header:   'header'
             },
             animOpts: {
                 maxOpacity: 'show',
@@ -16,8 +16,9 @@
             }
         }, options );
 
-        var hh = $('#' + settings.cssClasses.header).height();
+        var hh      = $('#' + settings.cssClasses.header).height();
         var context = $(this);
+
         var scrollHandler = function() {
             var scrollTop = $(window).scrollTop();
 

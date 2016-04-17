@@ -24,10 +24,11 @@
                 {% include 'ImhBaseBundle:Menu:lang.html.twig' %}
             </nav>
             <div class="biography-content clearfix">
-                <div class="carousel">
-                    <div class="item"><img class="lazyOwl" data-src="{{ asset('bundles/imhbase/images/bio_03.jpg') }}" alt="" /></div>
-                    <div class="item"><img class="lazyOwl" data-src="{{ asset('bundles/imhbase/images/bio_02.jpg') }}" alt="" /></div>
-                    <div class="item"><img class="lazyOwl" data-src="{{ asset('bundles/imhbase/images/bio_01.jpg') }}" alt="" /></div>
+                <div class="owl-carousel">
+
+                    {% for i in range(3,1) -%}
+                        <div class="item"><img class="owl-lazy" data-src="{{ asset('bundles/imhbase/images/bio_0'~i~'.jpg') }}" alt="" /></div>
+                    {%- endfor %}
                 </div>
                 <div class="scrollbar">
                     <div class="handle">
@@ -71,7 +72,7 @@
 {% block javascripts %}
     {{ parent() }}
 
-    <script src="{{ asset('/assets/lib/owl-carousel/jquery.owl.carousel.js') }}"></script>
+    <script src="{{ asset('/assets/lib/owl-carousel/owl.carousel.min.js') }}"></script>
     <script src="{{ asset('/assets/lib/sly/sly.min.js') }}"></script>
 
     {% javascripts output='assets/compiled/js/biography.js'
@@ -84,7 +85,7 @@
         $(function () {
             'use strict';
 
-            var $carousel    = $(".carousel"),
+            var $carousel    = $(".owl-carousel"),
                 $text        = $(".text"),
                 $scrollbar   = $(".scrollbar"),
                 $prizes      = $(".prizes"),
@@ -94,16 +95,8 @@
                 isVisible    = false,
                 sly;
 
-            /* Lazy Load */
-            $('img.lazy').show().lazyload({
-                effect : 'fadeIn',
-                placeholder: '../../../bundles/imhbase/images/empty.gif'
-            });
-
             if (!Modernizr.touchevents) {
                 $('.navigation-menu').scrollMove(); // Menu plugin
-            } else {
-
             }
 
             var h = $sC.height();
@@ -122,34 +115,36 @@
                 if(!isVisible) $elts.css('visibility', 'visible');
             };
 
-            $(window).on('load', function () {
-                sly = new Sly($text, {
-                    scrollBy: 200,
-                    speed: 2000,
-                    easing: 'easeOutQuad',
-                    scrollBar: $scrollbar,
-                    //dynamicHandle: 1,
-                    dragHandle: 1,
-                    clickBar: 1,
-                    mouseDragging: 1,
-                    touchDragging: 1,
-                    releaseSwing: 1
-                });
+            sly = new Sly($text, {
+                scrollBy: 200,
+                speed: 2000,
+                easing: 'easeOutQuad',
+                scrollBar: $scrollbar,
+                //dynamicHandle: 1,
+                dragHandle: 1,
+                clickBar: 1,
+                mouseDragging: 1,
+                touchDragging: 1,
+                releaseSwing: 1
+            });
 
-                $carousel.owlCarousel({
-                    slideSpeed: 300,
-                    paginationSpeed: 400,
-                    singleItem: true,
-                    lazyLoad: true,
-                    lazyFollow: false,
-                    afterLazyLoad: function(event) {
-                        recalcHeight(isVisible);
-                        $carousel.addClass(cssReady);
-                        var ctrls = $(".owl-controls");
-                        ctrls.css('marginLeft', -(ctrls.width()/2) + 'px');
-                        sly.init();
-                    }
-                });
+            $carousel.owlCarousel({
+                items: 1,
+                lazyLoad: true
+            });
+
+            $carousel.on('loaded.owl.lazy', function(event) {
+                recalcHeight(isVisible);
+                $carousel.addClass(cssReady);
+                var ctrls = $('.owl-controls');
+                ctrls.css('marginLeft', -(ctrls.width()/2) + 'px');
+                sly.init();
+            });
+
+            /* Lazy Load */
+            $('img.lazy').show().lazyload({
+                effect : 'fadeIn',
+                placeholder: '../../../bundles/imhbase/images/empty.gif'
             });
 
             var delay = (function(){
