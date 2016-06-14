@@ -27,6 +27,7 @@
 
         {% block stylesheets %}
             <link rel="stylesheet" href="{{ asset('/assets/lib/initializr/css/normalize.css') }}" type="text/css" />
+            <link rel="stylesheet" href="{{ asset('bundles/bmatznerfontawesome/css/font-awesome.min.css') }}" type="text/css" />
 
             {% stylesheets output='assets/compiled/css/main.css' filter='compass, cssrewrite'
             '@ImhBaseBundle/Resources/assets/sass/media_queries.scss'

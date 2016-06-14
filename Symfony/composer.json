@@ -37,7 +37,8 @@
         "liip/imagine-bundle": "~1.0",
         "eddiejaoude/eddie-jaoude-symfony-translation-twig-collection-bundle": "2.2.*@dev",
         "kriswallsmith/buzz": "0.13",
-        "coresphere/console-bundle": "dev-master"
+        "coresphere/console-bundle": "dev-master",
+        "bmatzner/fontawesome-bundle": "~4.4"
     },
     "scripts": {
         "post-install-cmd": [

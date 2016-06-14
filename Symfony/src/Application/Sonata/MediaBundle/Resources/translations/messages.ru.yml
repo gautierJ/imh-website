@@ -12,6 +12,8 @@ sonata:
       download:   'скачать'
       total_views: >
         Всего <br> Просмотров
+      share: >
+        доля <br> видео
       play:       'играть'
       pause:      'пауза'
       volume:     'громкость'

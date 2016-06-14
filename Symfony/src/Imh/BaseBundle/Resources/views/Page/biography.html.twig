@@ -116,8 +116,8 @@
             };
 
             sly = new Sly($text, {
-                scrollBy: 200,
-                speed: 2000,
+                scrollBy: 250,
+                speed: 1000,
                 easing: 'easeOutQuad',
                 scrollBar: $scrollbar,
                 //dynamicHandle: 1,
@@ -125,7 +125,8 @@
                 clickBar: 1,
                 mouseDragging: 1,
                 touchDragging: 1,
-                releaseSwing: 1
+                releaseSwing: 1,
+                scrollTrap: 1
             });
 
             $carousel.owlCarousel({

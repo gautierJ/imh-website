@@ -142,9 +142,13 @@
                 </ul>
             </nav>
             <div class="share">
-                <span class="txt">Partager<br/> la vidéo :</span>
-                <a class="twitter popup" href="http://twitter.com/share?url=https://www.youtube.com/embed/{{ providerRef }}&text={{ media.name }}">Tweet</a>
-                <a class="fbshare" href="https://www.youtube.com/embed/{{ providerRef }}">Share</a>
+                <span class="txt">{{ 'sonata.media.video.share'|trans|raw }}</span>
+                <a class="icon twitter popup" href="http://twitter.com/share?url=https://www.youtube.com/embed/{{ providerRef }}&text={{ media.name }}">
+                    <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
+                </a>
+                <a class="icon fbshare" href="https://www.youtube.com/embed/{{ providerRef }}">
+                    <i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
+                </a>
             </div>
         </section>
 

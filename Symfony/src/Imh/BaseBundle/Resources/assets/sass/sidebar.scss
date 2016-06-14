@@ -16,13 +16,17 @@
   width: 120px;
   display: none;
 
-  > span {
-    font-weight: bold;
+  .title {
     border-bottom: 1px solid $color-grey-dark;
     padding-bottom: 7px;
-    color: $color-grey-dark;
+    color: $color-grey-medium;
     text-transform: uppercase;
-    display: block;
+    font-weight: normal;
+
+    .fa {
+      color: $color-grey-medium;
+      margin-right: 2px;
+    }
   }
 
   ul {
@@ -96,66 +100,14 @@
         line-height: 40px;
         z-index: 1;
       }
+
+      .fa-home {
+        display: none;
+
+        & + span {
+          display: inline;
+        }
+      }
     }
   }
 }
-
-//.gallery-menu {
-//  position: relative;
-//  left: 20px;
-//  top: 20px;
-//  width: 170px;
-//
-////  &:after {
-////    background: url("/bundles/imhbase/images/sprite.png") repeat scroll -127px -131px;
-////    content: " ";
-////    position: absolute;
-////    top: -16px;
-////    right: 0;
-////    width: 31px;
-////    height: 31px;
-////  }
-//
-//  li {
-//    &.first {
-//      font-weight: bold;
-//      border-bottom: 1px dotted $color-grey-medium;
-//      padding-bottom: 7px;
-//      color: $color-grey-darker;
-//      text-transform: uppercase;
-//    }
-//
-//    &.gallery {
-//      margin-top: 20px;
-//
-//      a {
-//        background: url("/bundles/imhbase/images/header-bg.png") no-repeat scroll 0 0;
-//        display: inline-block;
-//        text-align: center;
-//        height: 40px;
-//        line-height: 40px;
-//        width: 40px;
-//        margin-right: 5px;
-//        border: 1px solid $color-grey-light;
-//        font-size: $elevenpx;
-//
-//        &.active {
-//          border: 1px solid $color-grey-dark;
-//        }
-//      }
-//    }
-//  }
-//
-//  span {
-//    ul {
-//      li {
-//        height: 80px;
-//        width: 80px;
-//
-//        a {
-//
-//        }
-//      }
-//    }
-//  }
-//}

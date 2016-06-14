@@ -1,0 +1,71 @@
+#header .navigation {
+  background: url("/bundles/imhbase/images/header-bg.png") repeat rgba(255, 208, 247, 0.04);
+  border-bottom: 1px solid #D3D3D3;
+  border-top: 1px solid #FFFFFF;
+  height: 126px; }
+  #header .navigation .wrapper {
+    border-top: 1px solid #222222;
+    border-bottom: 1px solid #222222;
+    background: #FFFFFF;
+    position: relative;
+    top: 27px;
+    margin: 0 auto;
+    max-width: 980px;
+    z-index: 2;
+    /*&:after {
+      position: absolute;
+      content: "";
+      right: 1px;
+      top: 0;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 0 20px 20px 0;
+      border-color: transparent $color-white transparent transparent;
+    }*/ }
+  #header .navigation ul {
+    background: #222222;
+    text-align: center; }
+    #header .navigation ul li {
+      display: inline-block;
+      position: relative;
+      top: -1px;
+      margin: 0 -1px -2px 0;
+      height: 63px;
+      z-index: 1; }
+      #header .navigation ul li a, #header .navigation ul li span {
+        color: #FFFFFF;
+        font-size: 1.167em;
+        display: block;
+        padding: 0 20px;
+        text-transform: uppercase; }
+      #header .navigation ul li span {
+        height: 62px;
+        line-height: 64px; }
+      #header .navigation ul li a {
+        border: 1px solid transparent;
+        -webkit-transition: all 0.1s ease-in 0s;
+        -moz-transition: all 0.1s ease-in 0s;
+        -o-transition: all 0.1s ease-in 0s;
+        transition: all 0.1s ease-in 0s;
+        height: 62px;
+        line-height: 64px; }
+        #header .navigation ul li a:hover {
+          background-color: #FFFFFF;
+          color: #222222;
+          border: 1px solid #222222; }
+      #header .navigation ul li.current {
+        background-color: #FFFFFF;
+        border: 1px solid #222222;
+        border-bottom: none; }
+        #header .navigation ul li.current span {
+          color: #222222;
+          border-bottom-color: #FFFFFF; }
+  #header .navigation .fa {
+    position: relative;
+    top: -2px;
+    vertical-align: middle; }
+    #header .navigation .fa + span {
+      display: none; }
+
+/*# sourceMappingURL=navigation.css.map */

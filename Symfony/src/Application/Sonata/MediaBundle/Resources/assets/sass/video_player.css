@@ -115,7 +115,7 @@
 .player-control-bar {
   border-top: 1px solid #D3D3D3;
   width: 100%;
-  height: 56px;
+  height: 62px;
   color: #898989; }
   .player-control-bar .views, .player-control-bar .video-info, .player-control-bar .controls, .player-control-bar .share {
     float: left;
@@ -131,18 +131,19 @@
       color: #3F3F3F;
       float: left;
       font-size: 2.333em;
-      line-height: 56px; }
+      line-height: 62px; }
   .player-control-bar .txt {
     float: left;
     font-size: 0.917em;
     line-height: 1.1em;
-    margin: 17px 0 0 8px; }
+    margin: 19px 0 0 8px; }
   .player-control-bar .video-info {
     background-color: white;
     background-color: rgba(255, 255, 255, 0.9);
     width: 293px;
-    height: 47px;
-    padding: 9px 40px 0 14px; }
+    height: 100%;
+    padding: 0 40px 0 14px;
+    line-height: 62px; }
     .player-control-bar .video-info .description {
       font-family: 'open_sans_condensedbold', Arial, Helvetica, sans-serif;
       font-size: 1em;
@@ -162,8 +163,8 @@
       position: relative;
       font-size: 0.833em;
       width: 56px;
-      height: 56px;
-      line-height: 85px;
+      height: 62px;
+      line-height: 90px;
       background-color: white;
       background-color: rgba(255, 255, 255, 0.6);
       color: #898989;
@@ -277,13 +278,9 @@
     background-color: rgba(255, 255, 255, 0.9);
     margin-right: 0;
     padding-left: 20px;
-    line-height: 37px;
     width: 263px; }
     .player-control-bar .share .txt {
       margin-left: 12px; }
-    .player-control-bar .share .twitter-share-button {
-      width: 90px !important;
-      vertical-align: bottom; }
 
 #media-gallery {
   position: relative;

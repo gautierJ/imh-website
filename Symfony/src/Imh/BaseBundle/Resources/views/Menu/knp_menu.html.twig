@@ -95,10 +95,19 @@
 {% endblock %}
 
 {% block linkElement %}{% import _self as knp_menu %}
-    <a href="{{ item.uri }}"{{ knp_menu.attributes(item.linkAttributes) }}>{{ block('label') }}</a>{% endblock %}
+    <a href="{{ item.uri }}"{{ knp_menu.attributes(item.linkAttributes) }}>
+        {% if item.attribute('data-icon') is not empty  %}
+            <i class="{{ item.attribute('data-icon') }}"></i>
+            <span>{{ block('label') }}</span>
+        {% else %}
+            {{ block('label') }}
+        {% endif %}
+    </a>
+{% endblock %}
 
 {% block spanElement %}{% import _self as knp_menu %}
-    <span{{ knp_menu.attributes(item.labelAttributes) }}>{{ block('label') }}</span>{% endblock %}
+    <span{{ knp_menu.attributes(item.labelAttributes) }}>{{ block('label') }}</span>
+{% endblock %}
 
 {% block label %}
     {% if options.allow_safe_labels and item.getExtra('safe_label', false) %}

@@ -12,6 +12,8 @@ sonata:
       download:   'Download'
       total_views: >
         Total number <br> of views
+      share: >
+        Share <br> the video :
       play:       'Play'
       pause:      'Pause'
       volume:     'Volume'

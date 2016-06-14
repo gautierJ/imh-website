@@ -45,10 +45,10 @@
 
         a, span {
           color: $color-white;
-          font-family: "Georgia", Times, serif;
-          font-size: $fifteenpx;
+          //font-family: "Georgia", Times, serif;
+          font-size: $fourteenpx;
           display: block;
-          padding: 0 22px;
+          padding: 0 20px;
           text-transform: uppercase;
         }
 
@@ -80,6 +80,16 @@
             border-bottom-color: $color-white;
           }
         }
+      }
+    }
+
+    .fa {
+      position: relative;
+      top: -2px;
+      vertical-align: middle;
+
+      & + span {
+        display: none;
       }
     }
   }

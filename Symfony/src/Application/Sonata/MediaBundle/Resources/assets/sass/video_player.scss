@@ -161,7 +161,7 @@
 .player-control-bar {
   border-top: 1px solid $color-grey-light;
   width: 100%;
-  height: 56px;
+  height: 62px;
   color: $color-grey-medium;
 
   .views, .video-info, .controls, .share {
@@ -181,7 +181,7 @@
       color: $color-grey-dark;
       float: left;
       font-size: $twentyeightpx;
-      line-height: 56px;
+      line-height: 62px;
     }
   }
 
@@ -189,15 +189,16 @@
     float: left;
     font-size: $elevenpx;
     line-height: 1.1em;
-    margin: 17px 0 0 8px;
+    margin: 19px 0 0 8px;
   }
 
   .video-info {
     background-color: rgb(255, 255, 255);
     background-color: rgba(255, 255, 255, 0.9); //rgb(251, 248, 252)
     width: 293px;
-    height: 47px;
-    padding: 9px 40px 0 14px;
+    height: 100%;
+    padding: 0 40px 0 14px;
+    line-height: 62px;
 
     .description {
       font-family: 'open_sans_condensedbold', Arial, Helvetica, sans-serif;
@@ -225,8 +226,8 @@
         position: relative;
         font-size: $tenpx;
         width: 56px;
-        height: 56px;
-        line-height: 85px;
+        height: 62px;
+        line-height: 90px;
         background-color: rgb(255, 255, 255);
         background-color: rgba(255, 255, 255, 0.6);
         color: $color-grey-medium;
@@ -374,16 +375,15 @@
     background-color: rgba(255, 255, 255, 0.9);
     margin-right: 0;
     padding-left: 20px;
-    line-height: 37px;
+    //line-height: 37px;
     width: 263px;
 
     .txt {
       margin-left: 12px;
     }
 
-    .twitter-share-button {
-      width: 90px !important;
-      vertical-align: bottom;
+    .twitter {
+
     }
   }
 }
