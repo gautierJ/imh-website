@@ -1,5 +1,5 @@
 @-webkit-keyframes pop-icon-in {
-  /* line 6, assetic_compassM2BQH5.scss */
+  /* line 8, assetic_compassmjZf6D.scss */
   0% {
     opacity: 0;
     /* Good browsers */
@@ -17,7 +17,7 @@
     transform: scale(0);
   }
 
-  /* line 11, assetic_compassM2BQH5.scss */
+  /* line 13, assetic_compassmjZf6D.scss */
   50% {
     -webkit-transform: scale(1.1);
     -moz-transform: scale(1.1);
@@ -25,7 +25,7 @@
     transform: scale(1.1);
   }
 
-  /* line 14, assetic_compassM2BQH5.scss */
+  /* line 16, assetic_compassmjZf6D.scss */
   100% {
     opacity: 0.8;
     /* Good browsers */
@@ -45,7 +45,7 @@
 }
 
 @-moz-keyframes pop-icon-in {
-  /* line 6, assetic_compassM2BQH5.scss */
+  /* line 8, assetic_compassmjZf6D.scss */
   0% {
     opacity: 0;
     /* Good browsers */
@@ -63,7 +63,7 @@
     transform: scale(0);
   }
 
-  /* line 11, assetic_compassM2BQH5.scss */
+  /* line 13, assetic_compassmjZf6D.scss */
   50% {
     -webkit-transform: scale(1.1);
     -moz-transform: scale(1.1);
@@ -71,7 +71,7 @@
     transform: scale(1.1);
   }
 
-  /* line 14, assetic_compassM2BQH5.scss */
+  /* line 16, assetic_compassmjZf6D.scss */
   100% {
     opacity: 0.8;
     /* Good browsers */
@@ -91,7 +91,7 @@
 }
 
 @-ms-keyframes pop-icon-in {
-  /* line 6, assetic_compassM2BQH5.scss */
+  /* line 8, assetic_compassmjZf6D.scss */
   0% {
     opacity: 0;
     /* Good browsers */
@@ -109,7 +109,7 @@
     transform: scale(0);
   }
 
-  /* line 11, assetic_compassM2BQH5.scss */
+  /* line 13, assetic_compassmjZf6D.scss */
   50% {
     -webkit-transform: scale(1.1);
     -moz-transform: scale(1.1);
@@ -117,7 +117,7 @@
     transform: scale(1.1);
   }
 
-  /* line 14, assetic_compassM2BQH5.scss */
+  /* line 16, assetic_compassmjZf6D.scss */
   100% {
     opacity: 0.8;
     /* Good browsers */
@@ -137,7 +137,7 @@
 }
 
 @-o-keyframes pop-icon-in {
-  /* line 6, assetic_compassM2BQH5.scss */
+  /* line 8, assetic_compassmjZf6D.scss */
   0% {
     opacity: 0;
     /* Good browsers */
@@ -155,7 +155,7 @@
     transform: scale(0);
   }
 
-  /* line 11, assetic_compassM2BQH5.scss */
+  /* line 13, assetic_compassmjZf6D.scss */
   50% {
     -webkit-transform: scale(1.1);
     -moz-transform: scale(1.1);
@@ -163,7 +163,7 @@
     transform: scale(1.1);
   }
 
-  /* line 14, assetic_compassM2BQH5.scss */
+  /* line 16, assetic_compassmjZf6D.scss */
   100% {
     opacity: 0.8;
     /* Good browsers */
@@ -183,7 +183,7 @@
 }
 
 @keyframes pop-icon-in {
-  /* line 6, assetic_compassM2BQH5.scss */
+  /* line 8, assetic_compassmjZf6D.scss */
   0% {
     opacity: 0;
     /* Good browsers */
@@ -201,7 +201,7 @@
     transform: scale(0);
   }
 
-  /* line 11, assetic_compassM2BQH5.scss */
+  /* line 13, assetic_compassmjZf6D.scss */
   50% {
     -webkit-transform: scale(1.1);
     -moz-transform: scale(1.1);
@@ -209,7 +209,7 @@
     transform: scale(1.1);
   }
 
-  /* line 14, assetic_compassM2BQH5.scss */
+  /* line 16, assetic_compassmjZf6D.scss */
   100% {
     opacity: 0.8;
     /* Good browsers */
@@ -229,7 +229,7 @@
 }
 
 @-webkit-keyframes pop-icon-out {
-  /* line 21, assetic_compassM2BQH5.scss */
+  /* line 23, assetic_compassmjZf6D.scss */
   0% {
     opacity: 0.8;
     /* Good browsers */
@@ -247,7 +247,7 @@
     transform: scale(1);
   }
 
-  /* line 25, assetic_compassM2BQH5.scss */
+  /* line 27, assetic_compassmjZf6D.scss */
   100% {
     opacity: 0;
     /* Good browsers */
@@ -267,7 +267,7 @@
 }
 
 @-moz-keyframes pop-icon-out {
-  /* line 21, assetic_compassM2BQH5.scss */
+  /* line 23, assetic_compassmjZf6D.scss */
   0% {
     opacity: 0.8;
     /* Good browsers */
@@ -285,7 +285,7 @@
     transform: scale(1);
   }
 
-  /* line 25, assetic_compassM2BQH5.scss */
+  /* line 27, assetic_compassmjZf6D.scss */
   100% {
     opacity: 0;
     /* Good browsers */
@@ -305,7 +305,7 @@
 }
 
 @-ms-keyframes pop-icon-out {
-  /* line 21, assetic_compassM2BQH5.scss */
+  /* line 23, assetic_compassmjZf6D.scss */
   0% {
     opacity: 0.8;
     /* Good browsers */
@@ -323,7 +323,7 @@
     transform: scale(1);
   }
 
-  /* line 25, assetic_compassM2BQH5.scss */
+  /* line 27, assetic_compassmjZf6D.scss */
   100% {
     opacity: 0;
     /* Good browsers */
@@ -343,7 +343,7 @@
 }
 
 @-o-keyframes pop-icon-out {
-  /* line 21, assetic_compassM2BQH5.scss */
+  /* line 23, assetic_compassmjZf6D.scss */
   0% {
     opacity: 0.8;
     /* Good browsers */
@@ -361,7 +361,7 @@
     transform: scale(1);
   }
 
-  /* line 25, assetic_compassM2BQH5.scss */
+  /* line 27, assetic_compassmjZf6D.scss */
   100% {
     opacity: 0;
     /* Good browsers */
@@ -381,7 +381,7 @@
 }
 
 @keyframes pop-icon-out {
-  /* line 21, assetic_compassM2BQH5.scss */
+  /* line 23, assetic_compassmjZf6D.scss */
   0% {
     opacity: 0.8;
     /* Good browsers */
@@ -399,7 +399,7 @@
     transform: scale(1);
   }
 
-  /* line 25, assetic_compassM2BQH5.scss */
+  /* line 27, assetic_compassmjZf6D.scss */
   100% {
     opacity: 0;
     /* Good browsers */
@@ -419,7 +419,7 @@
 }
 
 @-webkit-keyframes make-opacity-in {
-  /* line 32, assetic_compassM2BQH5.scss */
+  /* line 34, assetic_compassmjZf6D.scss */
   0% {
     opacity: 0;
     /* Good browsers */
@@ -433,7 +433,7 @@
     /* IE 8 */
   }
 
-  /* line 35, assetic_compassM2BQH5.scss */
+  /* line 37, assetic_compassmjZf6D.scss */
   100% {
     opacity: 1;
     /* Good browsers */
@@ -449,7 +449,7 @@
 }
 
 @-moz-keyframes make-opacity-in {
-  /* line 32, assetic_compassM2BQH5.scss */
+  /* line 34, assetic_compassmjZf6D.scss */
   0% {
     opacity: 0;
     /* Good browsers */
@@ -463,7 +463,7 @@
     /* IE 8 */
   }
 
-  /* line 35, assetic_compassM2BQH5.scss */
+  /* line 37, assetic_compassmjZf6D.scss */
   100% {
     opacity: 1;
     /* Good browsers */
@@ -479,7 +479,7 @@
 }
 
 @-ms-keyframes make-opacity-in {
-  /* line 32, assetic_compassM2BQH5.scss */
+  /* line 34, assetic_compassmjZf6D.scss */
   0% {
     opacity: 0;
     /* Good browsers */
@@ -493,7 +493,7 @@
     /* IE 8 */
   }
 
-  /* line 35, assetic_compassM2BQH5.scss */
+  /* line 37, assetic_compassmjZf6D.scss */
   100% {
     opacity: 1;
     /* Good browsers */
@@ -509,7 +509,7 @@
 }
 
 @-o-keyframes make-opacity-in {
-  /* line 32, assetic_compassM2BQH5.scss */
+  /* line 34, assetic_compassmjZf6D.scss */
   0% {
     opacity: 0;
     /* Good browsers */
@@ -523,7 +523,7 @@
     /* IE 8 */
   }
 
-  /* line 35, assetic_compassM2BQH5.scss */
+  /* line 37, assetic_compassmjZf6D.scss */
   100% {
     opacity: 1;
     /* Good browsers */
@@ -539,7 +539,7 @@
 }
 
 @keyframes make-opacity-in {
-  /* line 32, assetic_compassM2BQH5.scss */
+  /* line 34, assetic_compassmjZf6D.scss */
   0% {
     opacity: 0;
     /* Good browsers */
@@ -553,7 +553,7 @@
     /* IE 8 */
   }
 
-  /* line 35, assetic_compassM2BQH5.scss */
+  /* line 37, assetic_compassmjZf6D.scss */
   100% {
     opacity: 1;
     /* Good browsers */
@@ -569,7 +569,7 @@
 }
 
 @-webkit-keyframes make-opacity-out {
-  /* line 41, assetic_compassM2BQH5.scss */
+  /* line 43, assetic_compassmjZf6D.scss */
   0% {
     opacity: 1;
     /* Good browsers */
@@ -583,7 +583,7 @@
     /* IE 8 */
   }
 
-  /* line 44, assetic_compassM2BQH5.scss */
+  /* line 46, assetic_compassmjZf6D.scss */
   100% {
     opacity: 0;
     /* Good browsers */
@@ -599,7 +599,7 @@
 }
 
 @-moz-keyframes make-opacity-out {
-  /* line 41, assetic_compassM2BQH5.scss */
+  /* line 43, assetic_compassmjZf6D.scss */
   0% {
     opacity: 1;
     /* Good browsers */
@@ -613,7 +613,7 @@
     /* IE 8 */
   }
 
-  /* line 44, assetic_compassM2BQH5.scss */
+  /* line 46, assetic_compassmjZf6D.scss */
   100% {
     opacity: 0;
     /* Good browsers */
@@ -629,7 +629,7 @@
 }
 
 @-ms-keyframes make-opacity-out {
-  /* line 41, assetic_compassM2BQH5.scss */
+  /* line 43, assetic_compassmjZf6D.scss */
   0% {
     opacity: 1;
     /* Good browsers */
@@ -643,7 +643,7 @@
     /* IE 8 */
   }
 
-  /* line 44, assetic_compassM2BQH5.scss */
+  /* line 46, assetic_compassmjZf6D.scss */
   100% {
     opacity: 0;
     /* Good browsers */
@@ -659,7 +659,7 @@
 }
 
 @-o-keyframes make-opacity-out {
-  /* line 41, assetic_compassM2BQH5.scss */
+  /* line 43, assetic_compassmjZf6D.scss */
   0% {
     opacity: 1;
     /* Good browsers */
@@ -673,7 +673,7 @@
     /* IE 8 */
   }
 
-  /* line 44, assetic_compassM2BQH5.scss */
+  /* line 46, assetic_compassmjZf6D.scss */
   100% {
     opacity: 0;
     /* Good browsers */
@@ -689,7 +689,7 @@
 }
 
 @keyframes make-opacity-out {
-  /* line 41, assetic_compassM2BQH5.scss */
+  /* line 43, assetic_compassmjZf6D.scss */
   0% {
     opacity: 1;
     /* Good browsers */
@@ -703,7 +703,7 @@
     /* IE 8 */
   }
 
-  /* line 44, assetic_compassM2BQH5.scss */
+  /* line 46, assetic_compassmjZf6D.scss */
   100% {
     opacity: 0;
     /* Good browsers */
@@ -718,20 +718,21 @@
   }
 }
 
-/* line 49, assetic_compassM2BQH5.scss */
+/* line 51, assetic_compassmjZf6D.scss */
 body {
   background-color: black;
 }
 
-/* line 53, assetic_compassM2BQH5.scss */
-#wrapper {
+/* line 55, assetic_compassmjZf6D.scss */
+.container-fluid {
   height: 100%;
   position: relative;
 }
-/* line 57, assetic_compassM2BQH5.scss */
-#wrapper:before, #wrapper:after {
+/* line 59, assetic_compassmjZf6D.scss */
+.container-fluid:before, .container-fluid:after {
   content: '';
   position: absolute;
+  left: 0;
   background: url("/bundles/imhbase/images/points.png") repeat scroll 2px -2px;
   height: 100px;
   width: 100%;
@@ -746,16 +747,17 @@ body {
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
   /* IE 8 */
 }
-/* line 66, assetic_compassM2BQH5.scss */
-#wrapper:before {
+/* line 69, assetic_compassmjZf6D.scss */
+.container-fluid:before {
   top: 0;
 }
-/* line 70, assetic_compassM2BQH5.scss */
-#wrapper:after {
+/* line 73, assetic_compassmjZf6D.scss */
+.container-fluid:after {
   bottom: 3px;
 }
-/* line 74, assetic_compassM2BQH5.scss */
-#wrapper #sidebar-main {
+/* line 77, assetic_compassmjZf6D.scss */
+.container-fluid .imh__sidebar {
+  display: block;
   position: absolute;
   top: 0;
   right: 0;
@@ -773,12 +775,12 @@ body {
       }
     }*/
 }
-/* line 94, assetic_compassM2BQH5.scss */
-#wrapper #sidebar-main .gallery-menu li.first, #wrapper #sidebar-main .navigation-menu > span {
+/* line 97, assetic_compassmjZf6D.scss */
+.container-fluid .imh__sidebar .gallery-menu li.first, .container-fluid .imh__sidebar .imh__navigation-menu > span {
   color: #898989;
 }
-/* line 98, assetic_compassM2BQH5.scss */
-#wrapper #sidebar-main .navigation-menu {
+/* line 101, assetic_compassmjZf6D.scss */
+.container-fluid .imh__sidebar .imh__navigation-menu {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -787,65 +789,69 @@ body {
   height: 50%;
   padding-top: 50%;
 }
-/* line 108, assetic_compassM2BQH5.scss */
-#wrapper #sidebar-main .navigation-menu.gallery-menu > ul {
+/* line 111, assetic_compassmjZf6D.scss */
+.container-fluid .imh__sidebar .imh__navigation-menu.gallery-menu > ul {
   border: none;
   margin: 0;
 }
-/* line 114, assetic_compassM2BQH5.scss */
-#wrapper #sidebar-main .navigation-menu ul {
+/* line 117, assetic_compassmjZf6D.scss */
+.container-fluid .imh__sidebar .imh__navigation-menu ul {
   background: black;
   border: 1px solid #3f3f3f;
 }
-/* line 119, assetic_compassM2BQH5.scss */
-#wrapper #sidebar-main .navigation-menu ul li a {
+/* line 122, assetic_compassmjZf6D.scss */
+.container-fluid .imh__sidebar .imh__navigation-menu ul li a, .container-fluid .imh__sidebar .imh__navigation-menu ul li span {
   color: lightgrey;
   white-space: nowrap;
 }
-/* line 125, assetic_compassM2BQH5.scss */
-#wrapper #sidebar-main .navigation-menu ul li:hover:after {
+/* line 128, assetic_compassmjZf6D.scss */
+.container-fluid .imh__sidebar .imh__navigation-menu ul li:hover:after {
   background-color: white;
   border-color: white;
 }
-/* line 133, assetic_compassM2BQH5.scss */
-#wrapper #sidebar-main .navigation-menu ul li.current a, #wrapper #sidebar-main .navigation-menu ul li.current span {
+/* line 136, assetic_compassmjZf6D.scss */
+.container-fluid .imh__sidebar .imh__navigation-menu ul li.current a, .container-fluid .imh__sidebar .imh__navigation-menu ul li.current span {
   background: black;
   border-color: #3f3f3f;
   color: lightgrey;
 }
-/* line 139, assetic_compassM2BQH5.scss */
-#wrapper #sidebar-main .navigation-menu ul li.current:after {
+/* line 142, assetic_compassmjZf6D.scss */
+.container-fluid .imh__sidebar .imh__navigation-menu ul li.current:after {
   background-color: white;
   border-color: white;
   box-shadow: none;
 }
-/* line 146, assetic_compassM2BQH5.scss */
-#wrapper #sidebar-main .navigation-menu ul li:first-child {
+/* line 149, assetic_compassmjZf6D.scss */
+.container-fluid .imh__sidebar .imh__navigation-menu ul li:first-child {
   margin-top: 17px;
 }
-/* line 150, assetic_compassM2BQH5.scss */
-#wrapper #sidebar-main .navigation-menu ul li:last-child {
+/* line 153, assetic_compassmjZf6D.scss */
+.container-fluid .imh__sidebar .imh__navigation-menu ul li:last-child {
   margin-bottom: 17px;
 }
-/* line 154, assetic_compassM2BQH5.scss */
-#wrapper #sidebar-main .navigation-menu ul li:after {
+/* line 157, assetic_compassmjZf6D.scss */
+.container-fluid .imh__sidebar .imh__navigation-menu ul li:after {
   border-color: #222222;
 }
+/* line 162, assetic_compassmjZf6D.scss */
+.container-fluid .imh__sidebar .imh__navigation-menu .fa-home {
+  display: none;
+}
+/* line 165, assetic_compassmjZf6D.scss */
+.container-fluid .imh__sidebar .imh__navigation-menu .fa-home + span {
+  display: inline;
+}
 
-/* line 162, assetic_compassM2BQH5.scss */
-#content {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+/* line 173, assetic_compassmjZf6D.scss */
+.imh__content {
   height: -webkit-calc(100% - 200px);
   height: calc(100% - 200px);
   padding: 1.5%;
-  width: 100%;
   position: relative;
   top: 100px;
 }
-/* line 170, assetic_compassM2BQH5.scss */
-#content #gallery-wrapper {
+/* line 179, assetic_compassmjZf6D.scss */
+.imh__content #gallery-wrapper {
   -webkit-transition: opacity 0.3s linear 0.5s;
   -moz-transition: opacity 0.3s linear 0.5s;
   -o-transition: opacity 0.3s linear 0.5s;
@@ -880,16 +886,16 @@ body {
       }
     }*/
 }
-/* line 175, assetic_compassM2BQH5.scss */
-#content #gallery-wrapper #frame {
+/* line 184, assetic_compassmjZf6D.scss */
+.imh__content #gallery-wrapper #frame {
   height: 100%;
 }
-/* line 207, assetic_compassM2BQH5.scss */
-#content #gallery-wrapper #trigger {
+/* line 216, assetic_compassmjZf6D.scss */
+.imh__content #gallery-wrapper #trigger {
   display: none;
 }
-/* line 211, assetic_compassM2BQH5.scss */
-#content #gallery-wrapper.loading {
+/* line 220, assetic_compassmjZf6D.scss */
+.imh__content #gallery-wrapper.loading {
   -webkit-transition: opacity 0.2s linear 0s;
   -moz-transition: opacity 0.2s linear 0s;
   -o-transition: opacity 0.2s linear 0s;
@@ -905,8 +911,8 @@ body {
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   /* IE 8 */
 }
-/* line 215, assetic_compassM2BQH5.scss */
-#content #gallery-wrapper.loading + #spinner {
+/* line 224, assetic_compassmjZf6D.scss */
+.imh__content #gallery-wrapper.loading + #spinner {
   -webkit-transition: opacity 0.2s linear 0.3s;
   -moz-transition: opacity 0.2s linear 0.3s;
   -o-transition: opacity 0.2s linear 0.3s;
@@ -922,8 +928,8 @@ body {
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
   /* IE 8 */
 }
-/* line 222, assetic_compassM2BQH5.scss */
-#content #scrollbar {
+/* line 231, assetic_compassmjZf6D.scss */
+.imh__content #scrollbar {
   position: absolute;
   left: 0;
   bottom: -2px;
@@ -931,8 +937,8 @@ body {
   width: 100%;
   z-index: 1;
 }
-/* line 230, assetic_compassM2BQH5.scss */
-#content #scrollbar:after {
+/* line 239, assetic_compassmjZf6D.scss */
+.imh__content #scrollbar:after {
   -webkit-transition: width 0.4s ease 0s;
   -moz-transition: width 0.4s ease 0s;
   -o-transition: width 0.4s ease 0s;
@@ -944,8 +950,8 @@ body {
   top: 0;
   background: #222222;
 }
-/* line 240, assetic_compassM2BQH5.scss */
-#content #scrollbar .handle {
+/* line 249, assetic_compassmjZf6D.scss */
+.imh__content #scrollbar .handle {
   opacity: 0;
   /* Good browsers */
   -moz-opacity: 0;
@@ -970,20 +976,20 @@ body {
   position: relative;
   z-index: 1;
 }
-/* line 255, assetic_compassM2BQH5.scss */
-#content #scrollbar .handle:hover {
+/* line 264, assetic_compassmjZf6D.scss */
+.imh__content #scrollbar .handle:hover {
   background: lightgrey;
 }
-/* line 259, assetic_compassM2BQH5.scss */
-#content #scrollbar .handle .mousearea {
+/* line 268, assetic_compassmjZf6D.scss */
+.imh__content #scrollbar .handle .mousearea {
   position: absolute;
   top: -31px;
   left: 0;
   height: 128px;
   width: 100%;
 }
-/* line 269, assetic_compassM2BQH5.scss */
-#content #scrollbar.mA_2 .handle {
+/* line 278, assetic_compassmjZf6D.scss */
+.imh__content #scrollbar.mA_2 .handle {
   opacity: 1;
   /* Good browsers */
   -moz-opacity: 1;
@@ -995,24 +1001,24 @@ body {
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
   /* IE 8 */
 }
-/* line 273, assetic_compassM2BQH5.scss */
-#content #scrollbar.mA_2:after {
+/* line 282, assetic_compassmjZf6D.scss */
+.imh__content #scrollbar.mA_2:after {
   width: 100%;
 }
-/* line 279, assetic_compassM2BQH5.scss */
-#content #sonata-media-gallery-media-list {
+/* line 288, assetic_compassmjZf6D.scss */
+.imh__content #sonata-media-gallery-media-list {
   height: 100%;
 }
-/* line 282, assetic_compassM2BQH5.scss */
-#content #sonata-media-gallery-media-list .sonata-media-gallery-media-item {
+/* line 291, assetic_compassmjZf6D.scss */
+.imh__content #sonata-media-gallery-media-list .sonata-media-gallery-media-item {
   height: 50%;
   -webkit-transition: opacity 0.5s linear 0s;
   -moz-transition: opacity 0.5s linear 0s;
   -o-transition: opacity 0.5s linear 0s;
   transition: opacity 0.5s linear 0s;
 }
-/* line 286, assetic_compassM2BQH5.scss */
-#content #sonata-media-gallery-media-list .sonata-media-gallery-media-item.mA_1 {
+/* line 295, assetic_compassmjZf6D.scss */
+.imh__content #sonata-media-gallery-media-list .sonata-media-gallery-media-item.mA_1 {
   opacity: 0.1;
   /* Good browsers */
   -moz-opacity: 0.1;
@@ -1024,23 +1030,23 @@ body {
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=10)";
   /* IE 8 */
 }
-/* line 289, assetic_compassM2BQH5.scss */
-#content #sonata-media-gallery-media-list .sonata-media-gallery-media-item.mA_1 .sonata-media-gallery-media-item-link {
+/* line 298, assetic_compassmjZf6D.scss */
+.imh__content #sonata-media-gallery-media-list .sonata-media-gallery-media-item.mA_1 .sonata-media-gallery-media-item-link {
   cursor: default;
 }
-/* line 292, assetic_compassM2BQH5.scss */
-#content #sonata-media-gallery-media-list .sonata-media-gallery-media-item.mA_1 .sonata-media-gallery-media-item-link:hover .media-object {
+/* line 301, assetic_compassmjZf6D.scss */
+.imh__content #sonata-media-gallery-media-list .sonata-media-gallery-media-item.mA_1 .sonata-media-gallery-media-item-link:hover .media-object {
   -webkit-transform: scale(1);
   -moz-transform: scale(1);
   -o-transform: scale(1);
   transform: scale(1);
 }
-/* line 296, assetic_compassM2BQH5.scss */
-#content #sonata-media-gallery-media-list .sonata-media-gallery-media-item.mA_1 .sonata-media-gallery-media-item-link:after {
+/* line 305, assetic_compassmjZf6D.scss */
+.imh__content #sonata-media-gallery-media-list .sonata-media-gallery-media-item.mA_1 .sonata-media-gallery-media-item-link:after {
   display: none;
 }
-/* line 307, assetic_compassM2BQH5.scss */
-#content #sonata-media-gallery-media-list .sonata-media-gallery-media-item .sonata-media-gallery-media-item-link {
+/* line 316, assetic_compassmjZf6D.scss */
+.imh__content #sonata-media-gallery-media-list .sonata-media-gallery-media-item .sonata-media-gallery-media-item-link {
   display: block;
   overflow: hidden;
   position: relative;
@@ -1071,8 +1077,8 @@ body {
           }
         }*/
 }
-/* line 314, assetic_compassM2BQH5.scss */
-#content #sonata-media-gallery-media-list .sonata-media-gallery-media-item .sonata-media-gallery-media-item-link .media-object {
+/* line 323, assetic_compassmjZf6D.scss */
+.imh__content #sonata-media-gallery-media-list .sonata-media-gallery-media-item .sonata-media-gallery-media-item-link .media-object {
   -webkit-transition: all 1s ease 0s;
   -moz-transition: all 1s ease 0s;
   -o-transition: all 1s ease 0s;
@@ -1082,12 +1088,12 @@ body {
   height: 100%;
   width: auto;
 }
-/* line 322, assetic_compassM2BQH5.scss */
-#content #sonata-media-gallery-media-list .sonata-media-gallery-media-item .sonata-media-gallery-media-item-link .media-btns {
+/* line 331, assetic_compassmjZf6D.scss */
+.imh__content #sonata-media-gallery-media-list .sonata-media-gallery-media-item .sonata-media-gallery-media-item-link .media-btns {
   display: none;
 }
-/* line 351, assetic_compassM2BQH5.scss */
-#content #sonata-media-gallery-media-list .sonata-media-gallery-media-item .sonata-media-gallery-media-item-link .plus-icon {
+/* line 360, assetic_compassmjZf6D.scss */
+.imh__content #sonata-media-gallery-media-list .sonata-media-gallery-media-item .sonata-media-gallery-media-item-link .plus-icon {
   opacity: 0;
   /* Good browsers */
   -moz-opacity: 0;
@@ -1111,8 +1117,8 @@ body {
   height: 3px;
   background: black;
 }
-/* line 364, assetic_compassM2BQH5.scss */
-#content #sonata-media-gallery-media-list .sonata-media-gallery-media-item .sonata-media-gallery-media-item-link .plus-icon:before, #content #sonata-media-gallery-media-list .sonata-media-gallery-media-item .sonata-media-gallery-media-item-link .plus-icon:after {
+/* line 373, assetic_compassmjZf6D.scss */
+.imh__content #sonata-media-gallery-media-list .sonata-media-gallery-media-item .sonata-media-gallery-media-item-link .plus-icon:before, .imh__content #sonata-media-gallery-media-list .sonata-media-gallery-media-item .sonata-media-gallery-media-item-link .plus-icon:after {
   content: '';
   position: absolute;
   left: 50%;
@@ -1123,8 +1129,8 @@ body {
   -o-transform: scale(1);
   transform: scale(1);
 }
-/* line 373, assetic_compassM2BQH5.scss */
-#content #sonata-media-gallery-media-list .sonata-media-gallery-media-item .sonata-media-gallery-media-item-link .plus-icon:before {
+/* line 382, assetic_compassmjZf6D.scss */
+.imh__content #sonata-media-gallery-media-list .sonata-media-gallery-media-item .sonata-media-gallery-media-item-link .plus-icon:before {
   width: 1px;
   height: 18px;
   -webkit-transform: translate(0, -50%);
@@ -1132,8 +1138,8 @@ body {
   -o-transform: translate(0, -50%);
   transform: translate(0, -50%);
 }
-/* line 379, assetic_compassM2BQH5.scss */
-#content #sonata-media-gallery-media-list .sonata-media-gallery-media-item .sonata-media-gallery-media-item-link .plus-icon:after {
+/* line 388, assetic_compassmjZf6D.scss */
+.imh__content #sonata-media-gallery-media-list .sonata-media-gallery-media-item .sonata-media-gallery-media-item-link .plus-icon:after {
   width: 18px;
   height: 1px;
   -webkit-transform: translate(-50%, 0);
@@ -1141,22 +1147,22 @@ body {
   -o-transform: translate(-50%, 0);
   transform: translate(-50%, 0);
 }
-/* line 387, assetic_compassM2BQH5.scss */
-#content #sonata-media-gallery-media-list .sonata-media-gallery-media-item .sonata-media-gallery-media-item-link:hover .media-object {
+/* line 396, assetic_compassmjZf6D.scss */
+.imh__content #sonata-media-gallery-media-list .sonata-media-gallery-media-item .sonata-media-gallery-media-item-link:hover .media-object {
   -webkit-transform: scale(1.1);
   -moz-transform: scale(1.1);
   -o-transform: scale(1.1);
   transform: scale(1.1);
 }
-/* line 391, assetic_compassM2BQH5.scss */
-#content #sonata-media-gallery-media-list .sonata-media-gallery-media-item .sonata-media-gallery-media-item-link:hover .media-bar {
+/* line 400, assetic_compassmjZf6D.scss */
+.imh__content #sonata-media-gallery-media-list .sonata-media-gallery-media-item .sonata-media-gallery-media-item-link:hover .media-bar {
   -webkit-transform: translate(0, 0%);
   -moz-transform: translate(0, 0%);
   -o-transform: translate(0, 0%);
   transform: translate(0, 0%);
 }
-/* line 395, assetic_compassM2BQH5.scss */
-#content #sonata-media-gallery-media-list .sonata-media-gallery-media-item .sonata-media-gallery-media-item-link:hover .plus-icon {
+/* line 404, assetic_compassmjZf6D.scss */
+.imh__content #sonata-media-gallery-media-list .sonata-media-gallery-media-item .sonata-media-gallery-media-item-link:hover .plus-icon {
   -webkit-animation: pop-icon-in .4s;
   -moz-animation: pop-icon-in .4s;
   -ms-animation: pop-icon-in .4s;
@@ -1173,23 +1179,23 @@ body {
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
   /* IE 8 */
 }
-/* line 402, assetic_compassM2BQH5.scss */
-#content #sonata-media-gallery-media-list .sonata-media-gallery-media-item.expanded {
+/* line 411, assetic_compassmjZf6D.scss */
+.imh__content #sonata-media-gallery-media-list .sonata-media-gallery-media-item.expanded {
   height: 100%;
   width: auto;
 }
-/* line 406, assetic_compassM2BQH5.scss */
-#content #sonata-media-gallery-media-list .sonata-media-gallery-media-item.expanded .sonata-media-gallery-media-item-link {
+/* line 415, assetic_compassmjZf6D.scss */
+.imh__content #sonata-media-gallery-media-list .sonata-media-gallery-media-item.expanded .sonata-media-gallery-media-item-link {
   cursor: default;
 }
-/* line 409, assetic_compassM2BQH5.scss */
-#content #sonata-media-gallery-media-list .sonata-media-gallery-media-item.expanded .sonata-media-gallery-media-item-link .media-object {
+/* line 418, assetic_compassmjZf6D.scss */
+.imh__content #sonata-media-gallery-media-list .sonata-media-gallery-media-item.expanded .sonata-media-gallery-media-item-link .media-object {
   transition: none;
   height: 100%;
   width: auto;
 }
-/* line 415, assetic_compassM2BQH5.scss */
-#content #sonata-media-gallery-media-list .sonata-media-gallery-media-item.expanded .sonata-media-gallery-media-item-link .media-btns {
+/* line 424, assetic_compassmjZf6D.scss */
+.imh__content #sonata-media-gallery-media-list .sonata-media-gallery-media-item.expanded .sonata-media-gallery-media-item-link .media-btns {
   display: block;
   position: absolute;
   top: 0;
@@ -1211,8 +1217,8 @@ body {
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   /* IE 8 */
 }
-/* line 425, assetic_compassM2BQH5.scss */
-#content #sonata-media-gallery-media-list .sonata-media-gallery-media-item.expanded .sonata-media-gallery-media-item-link .media-btns > span {
+/* line 434, assetic_compassmjZf6D.scss */
+.imh__content #sonata-media-gallery-media-list .sonata-media-gallery-media-item.expanded .sonata-media-gallery-media-item-link .media-btns > span {
   display: inline-block;
   cursor: pointer;
   text-align: center;
@@ -1226,33 +1232,33 @@ body {
   -o-transition: background-color 0.2s ease-in 0s;
   transition: background-color 0.2s ease-in 0s;
 }
-/* line 437, assetic_compassM2BQH5.scss */
-#content #sonata-media-gallery-media-list .sonata-media-gallery-media-item.expanded .sonata-media-gallery-media-item-link .media-btns > span.zoom img {
+/* line 446, assetic_compassmjZf6D.scss */
+.imh__content #sonata-media-gallery-media-list .sonata-media-gallery-media-item.expanded .sonata-media-gallery-media-item-link .media-btns > span.zoom img {
   background: url("/bundles/imhbase/images/sprite.png") no-repeat scroll -96px -131px;
   height: 20px;
   width: 19px;
 }
-/* line 445, assetic_compassM2BQH5.scss */
-#content #sonata-media-gallery-media-list .sonata-media-gallery-media-item.expanded .sonata-media-gallery-media-item-link .media-btns > span.close img {
+/* line 454, assetic_compassmjZf6D.scss */
+.imh__content #sonata-media-gallery-media-list .sonata-media-gallery-media-item.expanded .sonata-media-gallery-media-item-link .media-btns > span.close img {
   background: url("/bundles/imhbase/images/sprite.png") no-repeat scroll -115px -131px;
   height: 12px;
   width: 12px;
 }
-/* line 454, assetic_compassM2BQH5.scss */
-#content #sonata-media-gallery-media-list .sonata-media-gallery-media-item.expanded .sonata-media-gallery-media-item-link:hover {
+/* line 463, assetic_compassmjZf6D.scss */
+.imh__content #sonata-media-gallery-media-list .sonata-media-gallery-media-item.expanded .sonata-media-gallery-media-item-link:hover {
   /*.media-bar {
     @include transform(translate(0, 0%));
   }*/
 }
-/* line 455, assetic_compassM2BQH5.scss */
-#content #sonata-media-gallery-media-list .sonata-media-gallery-media-item.expanded .sonata-media-gallery-media-item-link:hover .media-object {
+/* line 464, assetic_compassmjZf6D.scss */
+.imh__content #sonata-media-gallery-media-list .sonata-media-gallery-media-item.expanded .sonata-media-gallery-media-item-link:hover .media-object {
   -webkit-transform: none;
   -moz-transform: none;
   -o-transform: none;
   transform: none;
 }
-/* line 459, assetic_compassM2BQH5.scss */
-#content #sonata-media-gallery-media-list .sonata-media-gallery-media-item.expanded .sonata-media-gallery-media-item-link:hover .media-btns {
+/* line 468, assetic_compassmjZf6D.scss */
+.imh__content #sonata-media-gallery-media-list .sonata-media-gallery-media-item.expanded .sonata-media-gallery-media-item-link:hover .media-btns {
   opacity: 1;
   /* Good browsers */
   -moz-opacity: 1;
@@ -1264,28 +1270,28 @@ body {
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
   /* IE 8 */
 }
-/* line 468, assetic_compassM2BQH5.scss */
-#content #sonata-media-gallery-media-list .sonata-media-gallery-media-item.expanded .sonata-media-gallery-media-item-link:hover .media-btns > span:hover {
+/* line 477, assetic_compassmjZf6D.scss */
+.imh__content #sonata-media-gallery-media-list .sonata-media-gallery-media-item.expanded .sonata-media-gallery-media-item-link:hover .media-btns > span:hover {
   background-color: black;
   background-color: rgba(0, 0, 0, 0.8);
 }
-/* line 479, assetic_compassM2BQH5.scss */
-#content #sonata-media-gallery-media-list .sonata-media-gallery-media-item.expanded .sonata-media-gallery-media-item-link:after {
+/* line 488, assetic_compassmjZf6D.scss */
+.imh__content #sonata-media-gallery-media-list .sonata-media-gallery-media-item.expanded .sonata-media-gallery-media-item-link:after {
   display: none;
 }
-/* line 487, assetic_compassM2BQH5.scss */
-#content #spinner, #content #infscr-loading {
+/* line 496, assetic_compassmjZf6D.scss */
+.imh__content #spinner, .imh__content #infscr-loading {
   position: absolute;
   left: 50%;
   top: 50%;
   margin: -22px 0 0 -22px;
 }
-/* line 493, assetic_compassM2BQH5.scss */
-#content #spinner img, #content #infscr-loading img {
+/* line 502, assetic_compassmjZf6D.scss */
+.imh__content #spinner img, .imh__content #infscr-loading img {
   display: block;
 }
-/* line 497, assetic_compassM2BQH5.scss */
-#content #spinner {
+/* line 506, assetic_compassmjZf6D.scss */
+.imh__content #spinner {
   -webkit-transition: opacity 0.2s linear 0s;
   -moz-transition: opacity 0.2s linear 0s;
   -o-transition: opacity 0.2s linear 0s;

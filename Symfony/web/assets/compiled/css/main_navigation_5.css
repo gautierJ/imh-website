@@ -1,19 +1,32 @@
-/* line 5, assetic_compassMbOSgx.scss */
-#header .navigation {
+/* line 6, assetic_compassw7ssxc.scss */
+.imh__header {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+/* line 3, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_mixins.scss */
+.imh__header:before, .imh__header:after {
+  content: " ";
+  display: table;
+}
+/* line 7, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_mixins.scss */
+.imh__header:after {
+  clear: both;
+}
+
+/* line 10, assetic_compassw7ssxc.scss */
+.imh__navigation {
   background: url("/bundles/imhbase/images/header-bg.png") repeat rgba(255, 208, 247, 0.04);
   border-bottom: 1px solid lightgrey;
   border-top: 1px solid white;
   height: 126px;
 }
-/* line 11, assetic_compassMbOSgx.scss */
-#header .navigation .wrapper {
+/* line 16, assetic_compassw7ssxc.scss */
+.imh__navigation .imh__container {
   border-top: 1px solid #222222;
   border-bottom: 1px solid #222222;
   background: white;
-  position: relative;
   top: 27px;
   margin: 0 auto;
-  max-width: 980px;
   z-index: 2;
   /*&:after {
     position: absolute;
@@ -27,58 +40,67 @@
     border-color: transparent $color-white transparent transparent;
   }*/
 }
-/* line 34, assetic_compassMbOSgx.scss */
-#header .navigation ul {
+/* line 37, assetic_compassw7ssxc.scss */
+.imh__navigation ul {
   background: #222222;
   text-align: center;
 }
-/* line 38, assetic_compassMbOSgx.scss */
-#header .navigation ul li {
+/* line 42, assetic_compassw7ssxc.scss */
+.imh__navigation li {
   display: inline-block;
   position: relative;
   top: -1px;
   margin: 0 -1px -2px 0;
-  height: 63px;
+  height: 64px;
   z-index: 1;
 }
-/* line 46, assetic_compassMbOSgx.scss */
-#header .navigation ul li a, #header .navigation ul li span {
+/* line 50, assetic_compassw7ssxc.scss */
+.imh__navigation li a, .imh__navigation li span {
   color: white;
-  font-family: "Georgia", Times, serif;
-  font-size: 1.25em;
+  font-size: 1.167em;
   display: block;
-  padding: 0 22px;
+  padding: 0 20px;
   text-transform: uppercase;
 }
-/* line 55, assetic_compassMbOSgx.scss */
-#header .navigation ul li span {
+/* line 59, assetic_compassw7ssxc.scss */
+.imh__navigation li span {
   height: 62px;
   line-height: 64px;
 }
-/* line 60, assetic_compassMbOSgx.scss */
-#header .navigation ul li a {
+/* line 64, assetic_compassw7ssxc.scss */
+.imh__navigation li a {
   border: 1px solid rgba(0, 0, 0, 0);
   -webkit-transition: all 0.1s ease-in 0s;
   -moz-transition: all 0.1s ease-in 0s;
   -o-transition: all 0.1s ease-in 0s;
   transition: all 0.1s ease-in 0s;
-  height: 62px;
+  height: 64px;
   line-height: 64px;
 }
-/* line 66, assetic_compassMbOSgx.scss */
-#header .navigation ul li a:hover {
+/* line 70, assetic_compassw7ssxc.scss */
+.imh__navigation li a:hover {
   background-color: white;
   color: #222222;
   border: 1px solid #222222;
 }
-/* line 73, assetic_compassMbOSgx.scss */
-#header .navigation ul li.current {
+/* line 77, assetic_compassw7ssxc.scss */
+.imh__navigation li.current {
   background-color: white;
   border: 1px solid #222222;
   border-bottom: none;
 }
-/* line 78, assetic_compassMbOSgx.scss */
-#header .navigation ul li.current span {
+/* line 82, assetic_compassw7ssxc.scss */
+.imh__navigation li.current span {
   color: #222222;
   border-bottom-color: white;
+}
+/* line 90, assetic_compassw7ssxc.scss */
+.imh__navigation .fa {
+  position: relative;
+  top: -2px;
+  vertical-align: middle;
+}
+/* line 95, assetic_compassw7ssxc.scss */
+.imh__navigation .fa + span {
+  display: none;
 }

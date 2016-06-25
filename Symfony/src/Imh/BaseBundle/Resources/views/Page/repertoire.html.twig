@@ -6,53 +6,61 @@
     {{ parent() }}
 
     {% stylesheets output='assets/compiled/css/repertoire.css' filter='compass'
-    '@ImhBaseBundle/Resources/assets/sass/repertoire.scss'
+        '@ImhBaseBundle/Resources/assets/sass/repertoire.scss'
     %}
     <link rel="stylesheet" href="{{ asset_url }}" type="text/css"/>
     {% endstylesheets %}
 {% endblock %}
 
 {% block main %}
-    <img id="bkg-image" class="lazy" data-original="{{ asset('bundles/imhbase/images/strings.jpg') }}" />
+    <img class="imh__bkg-image lazy" data-original="{{ asset('bundles/imhbase/images/strings.jpg') }}" />
     <noscript><img src="{{ asset('bundles/imhbase/images/strings.jpg') }}" alt="Harp strings"></noscript>
 
-    <div class="main-content-wrapper">
-        <section class="middle shadows">
-            <nav class="lang">
+    <div class="container imh__container">
+        <div class="imh__container--wrapper imh__container--shadows">
+            <nav class="imh__lang">
                 {% include 'ImhBaseBundle:Menu:lang.html.twig' %}
             </nav>
-            <h2 class="title">{{ 'imh.base.repertoire.concert.title'|trans }}</h2>
-            <ul class="concert-wrapper clearfix">
-                {% for i in range(0,3) -%}
-                    <li>
-                        <img src="{{ asset('bundles/imhbase/images/'~('imh.base.repertoire.concert.'~i~'.name')|trans~'.jpg') }}" alt="{{ ('imh.base.repertoire.concert.'~i~'.composer')|trans }}"><!--
-                        --><div class="concert">
-                            <p>{{ ('imh.base.repertoire.concert.'~i~'.composer')|trans }}</p>
-                            <p>{{ ('imh.base.repertoire.concert.'~i~'.life')|trans }}</p>
-                            <p class="work">{{ ('imh.base.repertoire.concert.'~i~'.work')|trans }}</p>
-                            <p class="arrangement">{{ ('imh.base.repertoire.concert.'~i~'.arrangement')|trans }}</p>
-                            <div class="duration">
-                                {{ ('imh.base.repertoire.concert.duration')|trans }}{{ ('imh.base.repertoire.concert.'~i~'.duration')|trans }}
+            <section class="imh__repertoire">
+                <h2 class="imh__container-title">{{ 'imh.base.repertoire.concert.title'|trans }}</h2>
+                <div class="imh__repertoire-wrapper clearfix">
+                    {% for i in range(0,3) -%}
+                        <div class="col-sm-24 col-md-12 helper-no-padding">
+                            {% spaceless %}
+                            <div class="col-sm-9 col-md-11 imh__repertoire-col">
+                                <img class="img-responsive imh__repertoire-image" src="{{ asset('bundles/imhbase/images/'~('imh.base.repertoire.concert.'~i~'.name')|trans~'.jpg') }}" alt="{{ ('imh.base.repertoire.concert.'~i~'.composer')|trans }}">
                             </div>
+                            <div class="col-sm-15 col-md-13 imh__repertoire-col">
+                                <div class="imh__repertoire-description{% if loop.last %} imh__repertoire-description--last{% endif %}">
+                                    <p>{{ ('imh.base.repertoire.concert.'~i~'.composer')|trans }}</p>
+                                    <p>{{ ('imh.base.repertoire.concert.'~i~'.life')|trans }}</p>
+                                    <p class="work">{{ ('imh.base.repertoire.concert.'~i~'.work')|trans }}</p>
+                                    <p class="arrangement">{{ ('imh.base.repertoire.concert.'~i~'.arrangement')|trans }}</p>
+                                    <div class="imh__repertoire-duration">
+                                        {{ ('imh.base.repertoire.concert.duration')|trans }}{{ ('imh.base.repertoire.concert.'~i~'.duration')|trans }}
+                                    </div>
+                                </div>
+                            </div>
+                            {% endspaceless %}
                         </div>
-                    </li>
-                {%- endfor %}
-            </ul>
-            {#<h2 class="title">{{ 'imh.base.repertoire.recital.title'|trans }}</h2>#}
-        </section>
+                    {%- endfor %}
+                </div>
+                {#<h2 class="title">{{ 'imh.base.repertoire.recital.title'|trans }}</h2>#}
+            </section>
+        </div>
     </div>
 {% endblock %}
 
 {% block sidebar %}
-    <aside id="sidebar-main">
+    {% embed "ImhBaseBundle:Part:sidebar.html.twig" %}
         {% block menu_navigation %}
-            <div class="navigation-menu">
+            <div class="imh__navigation-menu">
                 {{ knp_menu_render('main', {'currentAsLink':false}) }}
             </div>
         {% endblock %}
 
-        {% block menu_gallery %}{% endblock %}
-    </aside>
+        {% block menu_gallery '' %}
+    {% endembed %}
 {% endblock %}
 
 {% block javascripts %}

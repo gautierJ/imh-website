@@ -1,113 +1,90 @@
-/* line 4, assetic_compassZX8Mhx.scss */
-html {
+/* line 6, assetic_compassddnOuK.scss */
+* {
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 11, assetic_compassddnOuK.scss */
+html, body {
   height: 100%;
 }
-/* line 7, assetic_compassZX8Mhx.scss */
-html body {
-  height: 100%;
-  font-family: Arial, Helvetica, sans-serif;
+
+/* line 15, assetic_compassddnOuK.scss */
+body {
+  font-family: toma_sansregular, Arial, Helvetica, sans-serif;
   font-size: 12px;
 }
 
-/* line 14, assetic_compassZX8Mhx.scss */
+/* line 20, assetic_compassddnOuK.scss */
 a {
   text-decoration: none;
   color: #000000;
 }
 
-/* line 19, assetic_compassZX8Mhx.scss */
-a, div {
-  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+/* line 25, assetic_compassddnOuK.scss */
+a.icon {
+  display: inline-block;
 }
 
-/* line 23, assetic_compassZX8Mhx.scss */
-ul {
+/* line 29, assetic_compassddnOuK.scss */
+ul, ol {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
-/* line 29, assetic_compassZX8Mhx.scss */
-.left {
-  float: left;
-}
-
-/* line 33, assetic_compassZX8Mhx.scss */
-.right {
-  float: right;
-}
-
-/* line 37, assetic_compassZX8Mhx.scss */
-#wrapper {
-  overflow: hidden;
-  min-height: 100%;
-}
-
-/* line 42, assetic_compassZX8Mhx.scss */
+/* line 35, assetic_compassddnOuK.scss */
 #bkg-image {
   position: absolute;
   top: 0;
   left: 120px;
-  width: auto;
-  max-width: 100%;
-  height: 100%;
+  width: 100%;
   z-index: -1;
 }
 
-/* line 52, assetic_compassZX8Mhx.scss */
-#content {
+/* line 43, assetic_compassddnOuK.scss */
+.imh__container-fluid {
+  overflow: hidden;
+}
+
+/* line 47, assetic_compassddnOuK.scss */
+.imh__content {
+  margin-left: -15px;
+  margin-right: -15px;
   position: relative;
 }
-/* line 55, assetic_compassZX8Mhx.scss */
-#content .main-content-wrapper {
+/* line 3, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_mixins.scss */
+.imh__content:before, .imh__content:after {
+  content: " ";
+  display: table;
+}
+/* line 7, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_mixins.scss */
+.imh__content:after {
+  clear: both;
+}
+
+/* line 52, assetic_compassddnOuK.scss */
+.imh__container {
   position: relative;
-  top: -36px;
+  top: -34px;
   z-index: 1;
   max-width: 980px;
-  margin: 0 auto;
+  padding: 0;
 }
-/* line 62, assetic_compassZX8Mhx.scss */
-#content .main-content-wrapper .middle {
+
+/* line 60, assetic_compassddnOuK.scss */
+.imh__container--wrapper {
   background-color: white;
-  -webkit-box-sizing: border-box;
-  /* Safari 3.0 - 5.0, Chrome 1 - 9, Android 2.1 - 3.x */
-  -moz-box-sizing: border-box;
-  /* Firefox 1 - 28 */
-  box-sizing: border-box;
-  /* Safari 5.1+, Chrome 10+, Firefox 29+, Opera 7+, IE 8+, Android 4.0+, iOS any */
-  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
-                                                               /*
-background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIwLjciLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
-background: -moz-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(255,255,255,0.7) 50%, rgba(255,255,255,1) 100%); */
-  /* FF3.6+ */
-                                                                                                                                   /*
-background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(255,255,255,1)), color-stop(50%,rgba(255,255,255,0.7)), color-stop(100%,rgba(255,255,255,1))); */
-  /* Chrome,Safari4+ */
-                                                                                                                                                                                                   /*
-background: -webkit-linear-gradient(left, rgba(255,255,255,1) 0%,rgba(255,255,255,0.7) 50%,rgba(255,255,255,1) 100%); */
-  /* Chrome10+,Safari5.1+ */
-                                                                                                                                                  /*
-background: -o-linear-gradient(left, rgba(255,255,255,1) 0%,rgba(255,255,255,0.7) 50%,rgba(255,255,255,1) 100%); */
-  /* Opera 11.10+ */
-                                                                                                                                     /*
-background: -ms-linear-gradient(left, rgba(255,255,255,1) 0%,rgba(255,255,255,0.7) 50%,rgba(255,255,255,1) 100%); */
-  /* IE10+ */
-                                                                                                                               /*
-background: linear-gradient(to right, rgba(255,255,255,1) 0%,rgba(255,255,255,0.7) 50%,rgba(255,255,255,1) 100%); */
-  /* W3C */
-                                                                                                                             /*
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=1 ); */
-  /* IE6-8 */
-                                                                                                                                        /*
-*/
-  border-top: 36px solid white;
+  border-top: 34px solid white;
   padding: 26px 0 45px;
   width: 100%;
   margin: 0 auto;
   position: relative;
 }
-/* line 84, assetic_compassZX8Mhx.scss */
-#content .main-content-wrapper .middle.shadows:after, #content .main-content-wrapper .middle.shadows:before {
+/* line 69, assetic_compassddnOuK.scss */
+.imh__container--wrapper.imh__container--shadows::after, .imh__container--wrapper.imh__container--shadows::before {
   content: " ";
   position: absolute;
   top: -97px;
@@ -115,38 +92,38 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
   height: 400px;
   z-index: -10;
 }
-/* line 93, assetic_compassZX8Mhx.scss */
-#content .main-content-wrapper .middle.shadows:before {
+/* line 78, assetic_compassddnOuK.scss */
+.imh__container--wrapper.imh__container--shadows::before {
   left: 11px;
   box-shadow: -10px 0 4px whitesmoke;
   transform: rotate(-1deg);
 }
-/* line 99, assetic_compassZX8Mhx.scss */
-#content .main-content-wrapper .middle.shadows:after {
+/* line 84, assetic_compassddnOuK.scss */
+.imh__container--wrapper.imh__container--shadows::after {
   right: 11px;
   box-shadow: 10px 0 4px whitesmoke;
   transform: rotate(1deg);
 }
-/* line 105, assetic_compassZX8Mhx.scss */
-#content .main-content-wrapper .middle h1 {
+/* line 90, assetic_compassddnOuK.scss */
+.imh__container--wrapper h1 {
   font-family: cinzelregular, sans-serif;
   font-size: 3.333em;
   margin: 0 0 6px;
   color: #453531;
 }
 
-/* line 115, assetic_compassZX8Mhx.scss */
+/* line 98, assetic_compassddnOuK.scss */
 .empty {
   width: 0;
   height: 0;
 }
 
-/* line 120, assetic_compassZX8Mhx.scss */
+/* line 103, assetic_compassddnOuK.scss */
 .lazy {
   display: none;
 }
 
-/* line 124, assetic_compassZX8Mhx.scss */
+/* line 107, assetic_compassddnOuK.scss */
 .block-triangle {
   opacity: 0.4;
   /* Good browsers */
@@ -167,10 +144,4 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
   border-left-color: rgba(0, 0, 0, 0);
   -moz-transform: scale(0.9999);
   /* Antialiasing - trick for firefox */
-  -webkit-box-sizing: border-box;
-  /* Safari/Chrome, other WebKit */
-  -moz-box-sizing: border-box;
-  /* Firefox, other Gecko */
-  box-sizing: border-box;
-  /* Opera/IE 8+ */
 }

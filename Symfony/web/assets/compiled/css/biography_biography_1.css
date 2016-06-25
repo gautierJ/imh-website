@@ -1,33 +1,2482 @@
-/* line 6, assetic_compasstdD5Yv.scss */
-#content .main-content-wrapper .middle {
-  padding: 26px 60px 62px;
+/*!
+ * Bootstrap v3.3.6 (http://getbootstrap.com)
+ * Copyright 2011-2015 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+/* line 10, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/_grid.scss */
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+/* line 15, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_clearfix.scss */
+.container:before, .container:after {
+  content: " ";
+  display: table;
+}
+/* line 19, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_clearfix.scss */
+.container:after {
+  clear: both;
+}
+@media (min-width: 768px) {
+  /* line 10, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/_grid.scss */
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  /* line 10, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/_grid.scss */
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 10, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/_grid.scss */
+  .container {
+    width: 1170px;
+  }
+}
+
+/* line 30, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/_grid.scss */
+.container-fluid {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+/* line 15, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_clearfix.scss */
+.container-fluid:before, .container-fluid:after {
+  content: " ";
+  display: table;
+}
+/* line 19, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_clearfix.scss */
+.container-fluid:after {
+  clear: both;
+}
+
+/* line 39, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/_grid.scss */
+.row {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+/* line 15, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_clearfix.scss */
+.row:before, .row:after {
+  content: " ";
+  display: table;
+}
+/* line 19, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_clearfix.scss */
+.row:after {
+  clear: both;
+}
+
+/* line 11, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12, .col-xs-13, .col-sm-13, .col-md-13, .col-lg-13, .col-xs-14, .col-sm-14, .col-md-14, .col-lg-14, .col-xs-15, .col-sm-15, .col-md-15, .col-lg-15, .col-xs-16, .col-sm-16, .col-md-16, .col-lg-16, .col-xs-17, .col-sm-17, .col-md-17, .col-lg-17, .col-xs-18, .col-sm-18, .col-md-18, .col-lg-18, .col-xs-19, .col-sm-19, .col-md-19, .col-lg-19, .col-xs-20, .col-sm-20, .col-md-20, .col-lg-20, .col-xs-21, .col-sm-21, .col-md-21, .col-lg-21, .col-xs-22, .col-sm-22, .col-md-22, .col-lg-22, .col-xs-23, .col-sm-23, .col-md-23, .col-lg-23, .col-xs-24, .col-sm-24, .col-md-24, .col-lg-24 {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* line 27, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-13, .col-xs-14, .col-xs-15, .col-xs-16, .col-xs-17, .col-xs-18, .col-xs-19, .col-xs-20, .col-xs-21, .col-xs-22, .col-xs-23, .col-xs-24 {
+  float: left;
+}
+
+/* line 35, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+.col-xs-1 {
+  width: 4.16667%;
+}
+
+/* line 35, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+.col-xs-2 {
+  width: 8.33333%;
+}
+
+/* line 35, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+.col-xs-3 {
+  width: 12.5%;
+}
+
+/* line 35, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+.col-xs-4 {
+  width: 16.66667%;
+}
+
+/* line 35, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+.col-xs-5 {
+  width: 20.83333%;
+}
+
+/* line 35, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+.col-xs-6 {
+  width: 25%;
+}
+
+/* line 35, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+.col-xs-7 {
+  width: 29.16667%;
+}
+
+/* line 35, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+.col-xs-8 {
+  width: 33.33333%;
+}
+
+/* line 35, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+.col-xs-9 {
+  width: 37.5%;
+}
+
+/* line 35, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+.col-xs-10 {
+  width: 41.66667%;
+}
+
+/* line 35, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+.col-xs-11 {
+  width: 45.83333%;
+}
+
+/* line 35, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+.col-xs-12 {
+  width: 50%;
+}
+
+/* line 35, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+.col-xs-13 {
+  width: 54.16667%;
+}
+
+/* line 35, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+.col-xs-14 {
+  width: 58.33333%;
+}
+
+/* line 35, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+.col-xs-15 {
+  width: 62.5%;
+}
+
+/* line 35, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+.col-xs-16 {
+  width: 66.66667%;
+}
+
+/* line 35, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+.col-xs-17 {
+  width: 70.83333%;
+}
+
+/* line 35, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+.col-xs-18 {
+  width: 75%;
+}
+
+/* line 35, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+.col-xs-19 {
+  width: 79.16667%;
+}
+
+/* line 35, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+.col-xs-20 {
+  width: 83.33333%;
+}
+
+/* line 35, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+.col-xs-21 {
+  width: 87.5%;
+}
+
+/* line 35, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+.col-xs-22 {
+  width: 91.66667%;
+}
+
+/* line 35, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+.col-xs-23 {
+  width: 95.83333%;
+}
+
+/* line 35, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+.col-xs-24 {
   width: 100%;
 }
-/* line 12, assetic_compasstdD5Yv.scss */
-#content .main-content-wrapper h1 {
-  padding-bottom: 10px;
-  border-bottom: 1px solid #dddddd;
+
+/* line 55, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+.col-xs-pull-0 {
+  right: auto;
 }
-/* line 17, assetic_compasstdD5Yv.scss */
-#content .main-content-wrapper .biography-content {
+
+/* line 50, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+.col-xs-pull-1 {
+  right: 4.16667%;
+}
+
+/* line 50, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+.col-xs-pull-2 {
+  right: 8.33333%;
+}
+
+/* line 50, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+.col-xs-pull-3 {
+  right: 12.5%;
+}
+
+/* line 50, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+.col-xs-pull-4 {
+  right: 16.66667%;
+}
+
+/* line 50, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+.col-xs-pull-5 {
+  right: 20.83333%;
+}
+
+/* line 50, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+.col-xs-pull-6 {
+  right: 25%;
+}
+
+/* line 50, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+.col-xs-pull-7 {
+  right: 29.16667%;
+}
+
+/* line 50, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+.col-xs-pull-8 {
+  right: 33.33333%;
+}
+
+/* line 50, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+.col-xs-pull-9 {
+  right: 37.5%;
+}
+
+/* line 50, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+.col-xs-pull-10 {
+  right: 41.66667%;
+}
+
+/* line 50, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+.col-xs-pull-11 {
+  right: 45.83333%;
+}
+
+/* line 50, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+.col-xs-pull-12 {
+  right: 50%;
+}
+
+/* line 50, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+.col-xs-pull-13 {
+  right: 54.16667%;
+}
+
+/* line 50, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+.col-xs-pull-14 {
+  right: 58.33333%;
+}
+
+/* line 50, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+.col-xs-pull-15 {
+  right: 62.5%;
+}
+
+/* line 50, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+.col-xs-pull-16 {
+  right: 66.66667%;
+}
+
+/* line 50, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+.col-xs-pull-17 {
+  right: 70.83333%;
+}
+
+/* line 50, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+.col-xs-pull-18 {
+  right: 75%;
+}
+
+/* line 50, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+.col-xs-pull-19 {
+  right: 79.16667%;
+}
+
+/* line 50, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+.col-xs-pull-20 {
+  right: 83.33333%;
+}
+
+/* line 50, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+.col-xs-pull-21 {
+  right: 87.5%;
+}
+
+/* line 50, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+.col-xs-pull-22 {
+  right: 91.66667%;
+}
+
+/* line 50, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+.col-xs-pull-23 {
+  right: 95.83333%;
+}
+
+/* line 50, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+.col-xs-pull-24 {
+  right: 100%;
+}
+
+/* line 45, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+.col-xs-push-0 {
+  left: auto;
+}
+
+/* line 40, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+.col-xs-push-1 {
+  left: 4.16667%;
+}
+
+/* line 40, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+.col-xs-push-2 {
+  left: 8.33333%;
+}
+
+/* line 40, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+.col-xs-push-3 {
+  left: 12.5%;
+}
+
+/* line 40, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+.col-xs-push-4 {
+  left: 16.66667%;
+}
+
+/* line 40, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+.col-xs-push-5 {
+  left: 20.83333%;
+}
+
+/* line 40, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+.col-xs-push-6 {
+  left: 25%;
+}
+
+/* line 40, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+.col-xs-push-7 {
+  left: 29.16667%;
+}
+
+/* line 40, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+.col-xs-push-8 {
+  left: 33.33333%;
+}
+
+/* line 40, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+.col-xs-push-9 {
+  left: 37.5%;
+}
+
+/* line 40, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+.col-xs-push-10 {
+  left: 41.66667%;
+}
+
+/* line 40, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+.col-xs-push-11 {
+  left: 45.83333%;
+}
+
+/* line 40, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+.col-xs-push-12 {
+  left: 50%;
+}
+
+/* line 40, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+.col-xs-push-13 {
+  left: 54.16667%;
+}
+
+/* line 40, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+.col-xs-push-14 {
+  left: 58.33333%;
+}
+
+/* line 40, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+.col-xs-push-15 {
+  left: 62.5%;
+}
+
+/* line 40, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+.col-xs-push-16 {
+  left: 66.66667%;
+}
+
+/* line 40, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+.col-xs-push-17 {
+  left: 70.83333%;
+}
+
+/* line 40, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+.col-xs-push-18 {
+  left: 75%;
+}
+
+/* line 40, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+.col-xs-push-19 {
+  left: 79.16667%;
+}
+
+/* line 40, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+.col-xs-push-20 {
+  left: 83.33333%;
+}
+
+/* line 40, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+.col-xs-push-21 {
+  left: 87.5%;
+}
+
+/* line 40, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+.col-xs-push-22 {
+  left: 91.66667%;
+}
+
+/* line 40, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+.col-xs-push-23 {
+  left: 95.83333%;
+}
+
+/* line 40, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+.col-xs-push-24 {
+  left: 100%;
+}
+
+/* line 60, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+.col-xs-offset-0 {
+  margin-left: 0%;
+}
+
+/* line 60, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+.col-xs-offset-1 {
+  margin-left: 4.16667%;
+}
+
+/* line 60, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+.col-xs-offset-2 {
+  margin-left: 8.33333%;
+}
+
+/* line 60, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+.col-xs-offset-3 {
+  margin-left: 12.5%;
+}
+
+/* line 60, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+.col-xs-offset-4 {
+  margin-left: 16.66667%;
+}
+
+/* line 60, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+.col-xs-offset-5 {
+  margin-left: 20.83333%;
+}
+
+/* line 60, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+.col-xs-offset-6 {
+  margin-left: 25%;
+}
+
+/* line 60, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+.col-xs-offset-7 {
+  margin-left: 29.16667%;
+}
+
+/* line 60, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+.col-xs-offset-8 {
+  margin-left: 33.33333%;
+}
+
+/* line 60, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+.col-xs-offset-9 {
+  margin-left: 37.5%;
+}
+
+/* line 60, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+.col-xs-offset-10 {
+  margin-left: 41.66667%;
+}
+
+/* line 60, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+.col-xs-offset-11 {
+  margin-left: 45.83333%;
+}
+
+/* line 60, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+.col-xs-offset-12 {
+  margin-left: 50%;
+}
+
+/* line 60, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+.col-xs-offset-13 {
+  margin-left: 54.16667%;
+}
+
+/* line 60, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+.col-xs-offset-14 {
+  margin-left: 58.33333%;
+}
+
+/* line 60, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+.col-xs-offset-15 {
+  margin-left: 62.5%;
+}
+
+/* line 60, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+.col-xs-offset-16 {
+  margin-left: 66.66667%;
+}
+
+/* line 60, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+.col-xs-offset-17 {
+  margin-left: 70.83333%;
+}
+
+/* line 60, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+.col-xs-offset-18 {
+  margin-left: 75%;
+}
+
+/* line 60, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+.col-xs-offset-19 {
+  margin-left: 79.16667%;
+}
+
+/* line 60, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+.col-xs-offset-20 {
+  margin-left: 83.33333%;
+}
+
+/* line 60, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+.col-xs-offset-21 {
+  margin-left: 87.5%;
+}
+
+/* line 60, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+.col-xs-offset-22 {
+  margin-left: 91.66667%;
+}
+
+/* line 60, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+.col-xs-offset-23 {
+  margin-left: 95.83333%;
+}
+
+/* line 60, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+.col-xs-offset-24 {
+  margin-left: 100%;
+}
+
+@media (min-width: 768px) {
+  /* line 27, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-13, .col-sm-14, .col-sm-15, .col-sm-16, .col-sm-17, .col-sm-18, .col-sm-19, .col-sm-20, .col-sm-21, .col-sm-22, .col-sm-23, .col-sm-24 {
+    float: left;
+  }
+
+  /* line 35, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-1 {
+    width: 4.16667%;
+  }
+
+  /* line 35, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-2 {
+    width: 8.33333%;
+  }
+
+  /* line 35, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-3 {
+    width: 12.5%;
+  }
+
+  /* line 35, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-4 {
+    width: 16.66667%;
+  }
+
+  /* line 35, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-5 {
+    width: 20.83333%;
+  }
+
+  /* line 35, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-6 {
+    width: 25%;
+  }
+
+  /* line 35, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-7 {
+    width: 29.16667%;
+  }
+
+  /* line 35, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-8 {
+    width: 33.33333%;
+  }
+
+  /* line 35, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-9 {
+    width: 37.5%;
+  }
+
+  /* line 35, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-10 {
+    width: 41.66667%;
+  }
+
+  /* line 35, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-11 {
+    width: 45.83333%;
+  }
+
+  /* line 35, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-12 {
+    width: 50%;
+  }
+
+  /* line 35, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-13 {
+    width: 54.16667%;
+  }
+
+  /* line 35, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-14 {
+    width: 58.33333%;
+  }
+
+  /* line 35, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-15 {
+    width: 62.5%;
+  }
+
+  /* line 35, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-16 {
+    width: 66.66667%;
+  }
+
+  /* line 35, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-17 {
+    width: 70.83333%;
+  }
+
+  /* line 35, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-18 {
+    width: 75%;
+  }
+
+  /* line 35, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-19 {
+    width: 79.16667%;
+  }
+
+  /* line 35, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-20 {
+    width: 83.33333%;
+  }
+
+  /* line 35, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-21 {
+    width: 87.5%;
+  }
+
+  /* line 35, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-22 {
+    width: 91.66667%;
+  }
+
+  /* line 35, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-23 {
+    width: 95.83333%;
+  }
+
+  /* line 35, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-24 {
+    width: 100%;
+  }
+
+  /* line 55, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-pull-0 {
+    right: auto;
+  }
+
+  /* line 50, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-pull-1 {
+    right: 4.16667%;
+  }
+
+  /* line 50, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-pull-2 {
+    right: 8.33333%;
+  }
+
+  /* line 50, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-pull-3 {
+    right: 12.5%;
+  }
+
+  /* line 50, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-pull-4 {
+    right: 16.66667%;
+  }
+
+  /* line 50, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-pull-5 {
+    right: 20.83333%;
+  }
+
+  /* line 50, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-pull-6 {
+    right: 25%;
+  }
+
+  /* line 50, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-pull-7 {
+    right: 29.16667%;
+  }
+
+  /* line 50, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-pull-8 {
+    right: 33.33333%;
+  }
+
+  /* line 50, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-pull-9 {
+    right: 37.5%;
+  }
+
+  /* line 50, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-pull-10 {
+    right: 41.66667%;
+  }
+
+  /* line 50, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-pull-11 {
+    right: 45.83333%;
+  }
+
+  /* line 50, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-pull-12 {
+    right: 50%;
+  }
+
+  /* line 50, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-pull-13 {
+    right: 54.16667%;
+  }
+
+  /* line 50, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-pull-14 {
+    right: 58.33333%;
+  }
+
+  /* line 50, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-pull-15 {
+    right: 62.5%;
+  }
+
+  /* line 50, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-pull-16 {
+    right: 66.66667%;
+  }
+
+  /* line 50, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-pull-17 {
+    right: 70.83333%;
+  }
+
+  /* line 50, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-pull-18 {
+    right: 75%;
+  }
+
+  /* line 50, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-pull-19 {
+    right: 79.16667%;
+  }
+
+  /* line 50, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-pull-20 {
+    right: 83.33333%;
+  }
+
+  /* line 50, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-pull-21 {
+    right: 87.5%;
+  }
+
+  /* line 50, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-pull-22 {
+    right: 91.66667%;
+  }
+
+  /* line 50, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-pull-23 {
+    right: 95.83333%;
+  }
+
+  /* line 50, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-pull-24 {
+    right: 100%;
+  }
+
+  /* line 45, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-push-0 {
+    left: auto;
+  }
+
+  /* line 40, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-push-1 {
+    left: 4.16667%;
+  }
+
+  /* line 40, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-push-2 {
+    left: 8.33333%;
+  }
+
+  /* line 40, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-push-3 {
+    left: 12.5%;
+  }
+
+  /* line 40, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-push-4 {
+    left: 16.66667%;
+  }
+
+  /* line 40, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-push-5 {
+    left: 20.83333%;
+  }
+
+  /* line 40, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-push-6 {
+    left: 25%;
+  }
+
+  /* line 40, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-push-7 {
+    left: 29.16667%;
+  }
+
+  /* line 40, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-push-8 {
+    left: 33.33333%;
+  }
+
+  /* line 40, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-push-9 {
+    left: 37.5%;
+  }
+
+  /* line 40, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-push-10 {
+    left: 41.66667%;
+  }
+
+  /* line 40, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-push-11 {
+    left: 45.83333%;
+  }
+
+  /* line 40, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-push-12 {
+    left: 50%;
+  }
+
+  /* line 40, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-push-13 {
+    left: 54.16667%;
+  }
+
+  /* line 40, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-push-14 {
+    left: 58.33333%;
+  }
+
+  /* line 40, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-push-15 {
+    left: 62.5%;
+  }
+
+  /* line 40, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-push-16 {
+    left: 66.66667%;
+  }
+
+  /* line 40, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-push-17 {
+    left: 70.83333%;
+  }
+
+  /* line 40, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-push-18 {
+    left: 75%;
+  }
+
+  /* line 40, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-push-19 {
+    left: 79.16667%;
+  }
+
+  /* line 40, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-push-20 {
+    left: 83.33333%;
+  }
+
+  /* line 40, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-push-21 {
+    left: 87.5%;
+  }
+
+  /* line 40, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-push-22 {
+    left: 91.66667%;
+  }
+
+  /* line 40, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-push-23 {
+    left: 95.83333%;
+  }
+
+  /* line 40, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-push-24 {
+    left: 100%;
+  }
+
+  /* line 60, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-offset-0 {
+    margin-left: 0%;
+  }
+
+  /* line 60, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-offset-1 {
+    margin-left: 4.16667%;
+  }
+
+  /* line 60, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-offset-2 {
+    margin-left: 8.33333%;
+  }
+
+  /* line 60, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-offset-3 {
+    margin-left: 12.5%;
+  }
+
+  /* line 60, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-offset-4 {
+    margin-left: 16.66667%;
+  }
+
+  /* line 60, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-offset-5 {
+    margin-left: 20.83333%;
+  }
+
+  /* line 60, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-offset-6 {
+    margin-left: 25%;
+  }
+
+  /* line 60, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-offset-7 {
+    margin-left: 29.16667%;
+  }
+
+  /* line 60, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-offset-8 {
+    margin-left: 33.33333%;
+  }
+
+  /* line 60, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-offset-9 {
+    margin-left: 37.5%;
+  }
+
+  /* line 60, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-offset-10 {
+    margin-left: 41.66667%;
+  }
+
+  /* line 60, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-offset-11 {
+    margin-left: 45.83333%;
+  }
+
+  /* line 60, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-offset-12 {
+    margin-left: 50%;
+  }
+
+  /* line 60, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-offset-13 {
+    margin-left: 54.16667%;
+  }
+
+  /* line 60, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-offset-14 {
+    margin-left: 58.33333%;
+  }
+
+  /* line 60, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-offset-15 {
+    margin-left: 62.5%;
+  }
+
+  /* line 60, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-offset-16 {
+    margin-left: 66.66667%;
+  }
+
+  /* line 60, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-offset-17 {
+    margin-left: 70.83333%;
+  }
+
+  /* line 60, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-offset-18 {
+    margin-left: 75%;
+  }
+
+  /* line 60, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-offset-19 {
+    margin-left: 79.16667%;
+  }
+
+  /* line 60, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-offset-20 {
+    margin-left: 83.33333%;
+  }
+
+  /* line 60, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-offset-21 {
+    margin-left: 87.5%;
+  }
+
+  /* line 60, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-offset-22 {
+    margin-left: 91.66667%;
+  }
+
+  /* line 60, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-offset-23 {
+    margin-left: 95.83333%;
+  }
+
+  /* line 60, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-offset-24 {
+    margin-left: 100%;
+  }
+}
+@media (min-width: 992px) {
+  /* line 27, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md-13, .col-md-14, .col-md-15, .col-md-16, .col-md-17, .col-md-18, .col-md-19, .col-md-20, .col-md-21, .col-md-22, .col-md-23, .col-md-24 {
+    float: left;
+  }
+
+  /* line 35, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-md-1 {
+    width: 4.16667%;
+  }
+
+  /* line 35, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-md-2 {
+    width: 8.33333%;
+  }
+
+  /* line 35, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-md-3 {
+    width: 12.5%;
+  }
+
+  /* line 35, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-md-4 {
+    width: 16.66667%;
+  }
+
+  /* line 35, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-md-5 {
+    width: 20.83333%;
+  }
+
+  /* line 35, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-md-6 {
+    width: 25%;
+  }
+
+  /* line 35, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-md-7 {
+    width: 29.16667%;
+  }
+
+  /* line 35, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-md-8 {
+    width: 33.33333%;
+  }
+
+  /* line 35, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-md-9 {
+    width: 37.5%;
+  }
+
+  /* line 35, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-md-10 {
+    width: 41.66667%;
+  }
+
+  /* line 35, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-md-11 {
+    width: 45.83333%;
+  }
+
+  /* line 35, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-md-12 {
+    width: 50%;
+  }
+
+  /* line 35, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-md-13 {
+    width: 54.16667%;
+  }
+
+  /* line 35, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-md-14 {
+    width: 58.33333%;
+  }
+
+  /* line 35, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-md-15 {
+    width: 62.5%;
+  }
+
+  /* line 35, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-md-16 {
+    width: 66.66667%;
+  }
+
+  /* line 35, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-md-17 {
+    width: 70.83333%;
+  }
+
+  /* line 35, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-md-18 {
+    width: 75%;
+  }
+
+  /* line 35, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-md-19 {
+    width: 79.16667%;
+  }
+
+  /* line 35, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-md-20 {
+    width: 83.33333%;
+  }
+
+  /* line 35, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-md-21 {
+    width: 87.5%;
+  }
+
+  /* line 35, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-md-22 {
+    width: 91.66667%;
+  }
+
+  /* line 35, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-md-23 {
+    width: 95.83333%;
+  }
+
+  /* line 35, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-md-24 {
+    width: 100%;
+  }
+
+  /* line 55, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-md-pull-0 {
+    right: auto;
+  }
+
+  /* line 50, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-md-pull-1 {
+    right: 4.16667%;
+  }
+
+  /* line 50, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-md-pull-2 {
+    right: 8.33333%;
+  }
+
+  /* line 50, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-md-pull-3 {
+    right: 12.5%;
+  }
+
+  /* line 50, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-md-pull-4 {
+    right: 16.66667%;
+  }
+
+  /* line 50, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-md-pull-5 {
+    right: 20.83333%;
+  }
+
+  /* line 50, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-md-pull-6 {
+    right: 25%;
+  }
+
+  /* line 50, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-md-pull-7 {
+    right: 29.16667%;
+  }
+
+  /* line 50, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-md-pull-8 {
+    right: 33.33333%;
+  }
+
+  /* line 50, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-md-pull-9 {
+    right: 37.5%;
+  }
+
+  /* line 50, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-md-pull-10 {
+    right: 41.66667%;
+  }
+
+  /* line 50, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-md-pull-11 {
+    right: 45.83333%;
+  }
+
+  /* line 50, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-md-pull-12 {
+    right: 50%;
+  }
+
+  /* line 50, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-md-pull-13 {
+    right: 54.16667%;
+  }
+
+  /* line 50, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-md-pull-14 {
+    right: 58.33333%;
+  }
+
+  /* line 50, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-md-pull-15 {
+    right: 62.5%;
+  }
+
+  /* line 50, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-md-pull-16 {
+    right: 66.66667%;
+  }
+
+  /* line 50, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-md-pull-17 {
+    right: 70.83333%;
+  }
+
+  /* line 50, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-md-pull-18 {
+    right: 75%;
+  }
+
+  /* line 50, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-md-pull-19 {
+    right: 79.16667%;
+  }
+
+  /* line 50, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-md-pull-20 {
+    right: 83.33333%;
+  }
+
+  /* line 50, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-md-pull-21 {
+    right: 87.5%;
+  }
+
+  /* line 50, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-md-pull-22 {
+    right: 91.66667%;
+  }
+
+  /* line 50, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-md-pull-23 {
+    right: 95.83333%;
+  }
+
+  /* line 50, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-md-pull-24 {
+    right: 100%;
+  }
+
+  /* line 45, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-md-push-0 {
+    left: auto;
+  }
+
+  /* line 40, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-md-push-1 {
+    left: 4.16667%;
+  }
+
+  /* line 40, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-md-push-2 {
+    left: 8.33333%;
+  }
+
+  /* line 40, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-md-push-3 {
+    left: 12.5%;
+  }
+
+  /* line 40, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-md-push-4 {
+    left: 16.66667%;
+  }
+
+  /* line 40, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-md-push-5 {
+    left: 20.83333%;
+  }
+
+  /* line 40, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-md-push-6 {
+    left: 25%;
+  }
+
+  /* line 40, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-md-push-7 {
+    left: 29.16667%;
+  }
+
+  /* line 40, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-md-push-8 {
+    left: 33.33333%;
+  }
+
+  /* line 40, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-md-push-9 {
+    left: 37.5%;
+  }
+
+  /* line 40, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-md-push-10 {
+    left: 41.66667%;
+  }
+
+  /* line 40, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-md-push-11 {
+    left: 45.83333%;
+  }
+
+  /* line 40, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-md-push-12 {
+    left: 50%;
+  }
+
+  /* line 40, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-md-push-13 {
+    left: 54.16667%;
+  }
+
+  /* line 40, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-md-push-14 {
+    left: 58.33333%;
+  }
+
+  /* line 40, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-md-push-15 {
+    left: 62.5%;
+  }
+
+  /* line 40, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-md-push-16 {
+    left: 66.66667%;
+  }
+
+  /* line 40, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-md-push-17 {
+    left: 70.83333%;
+  }
+
+  /* line 40, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-md-push-18 {
+    left: 75%;
+  }
+
+  /* line 40, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-md-push-19 {
+    left: 79.16667%;
+  }
+
+  /* line 40, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-md-push-20 {
+    left: 83.33333%;
+  }
+
+  /* line 40, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-md-push-21 {
+    left: 87.5%;
+  }
+
+  /* line 40, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-md-push-22 {
+    left: 91.66667%;
+  }
+
+  /* line 40, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-md-push-23 {
+    left: 95.83333%;
+  }
+
+  /* line 40, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-md-push-24 {
+    left: 100%;
+  }
+
+  /* line 60, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-md-offset-0 {
+    margin-left: 0%;
+  }
+
+  /* line 60, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-md-offset-1 {
+    margin-left: 4.16667%;
+  }
+
+  /* line 60, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-md-offset-2 {
+    margin-left: 8.33333%;
+  }
+
+  /* line 60, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-md-offset-3 {
+    margin-left: 12.5%;
+  }
+
+  /* line 60, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-md-offset-4 {
+    margin-left: 16.66667%;
+  }
+
+  /* line 60, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-md-offset-5 {
+    margin-left: 20.83333%;
+  }
+
+  /* line 60, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-md-offset-6 {
+    margin-left: 25%;
+  }
+
+  /* line 60, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-md-offset-7 {
+    margin-left: 29.16667%;
+  }
+
+  /* line 60, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-md-offset-8 {
+    margin-left: 33.33333%;
+  }
+
+  /* line 60, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-md-offset-9 {
+    margin-left: 37.5%;
+  }
+
+  /* line 60, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-md-offset-10 {
+    margin-left: 41.66667%;
+  }
+
+  /* line 60, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-md-offset-11 {
+    margin-left: 45.83333%;
+  }
+
+  /* line 60, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-md-offset-12 {
+    margin-left: 50%;
+  }
+
+  /* line 60, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-md-offset-13 {
+    margin-left: 54.16667%;
+  }
+
+  /* line 60, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-md-offset-14 {
+    margin-left: 58.33333%;
+  }
+
+  /* line 60, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-md-offset-15 {
+    margin-left: 62.5%;
+  }
+
+  /* line 60, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-md-offset-16 {
+    margin-left: 66.66667%;
+  }
+
+  /* line 60, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-md-offset-17 {
+    margin-left: 70.83333%;
+  }
+
+  /* line 60, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-md-offset-18 {
+    margin-left: 75%;
+  }
+
+  /* line 60, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-md-offset-19 {
+    margin-left: 79.16667%;
+  }
+
+  /* line 60, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-md-offset-20 {
+    margin-left: 83.33333%;
+  }
+
+  /* line 60, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-md-offset-21 {
+    margin-left: 87.5%;
+  }
+
+  /* line 60, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-md-offset-22 {
+    margin-left: 91.66667%;
+  }
+
+  /* line 60, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-md-offset-23 {
+    margin-left: 95.83333%;
+  }
+
+  /* line 60, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-md-offset-24 {
+    margin-left: 100%;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 27, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-13, .col-lg-14, .col-lg-15, .col-lg-16, .col-lg-17, .col-lg-18, .col-lg-19, .col-lg-20, .col-lg-21, .col-lg-22, .col-lg-23, .col-lg-24 {
+    float: left;
+  }
+
+  /* line 35, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-1 {
+    width: 4.16667%;
+  }
+
+  /* line 35, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-2 {
+    width: 8.33333%;
+  }
+
+  /* line 35, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-3 {
+    width: 12.5%;
+  }
+
+  /* line 35, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-4 {
+    width: 16.66667%;
+  }
+
+  /* line 35, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-5 {
+    width: 20.83333%;
+  }
+
+  /* line 35, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-6 {
+    width: 25%;
+  }
+
+  /* line 35, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-7 {
+    width: 29.16667%;
+  }
+
+  /* line 35, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-8 {
+    width: 33.33333%;
+  }
+
+  /* line 35, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-9 {
+    width: 37.5%;
+  }
+
+  /* line 35, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-10 {
+    width: 41.66667%;
+  }
+
+  /* line 35, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-11 {
+    width: 45.83333%;
+  }
+
+  /* line 35, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-12 {
+    width: 50%;
+  }
+
+  /* line 35, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-13 {
+    width: 54.16667%;
+  }
+
+  /* line 35, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-14 {
+    width: 58.33333%;
+  }
+
+  /* line 35, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-15 {
+    width: 62.5%;
+  }
+
+  /* line 35, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-16 {
+    width: 66.66667%;
+  }
+
+  /* line 35, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-17 {
+    width: 70.83333%;
+  }
+
+  /* line 35, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-18 {
+    width: 75%;
+  }
+
+  /* line 35, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-19 {
+    width: 79.16667%;
+  }
+
+  /* line 35, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-20 {
+    width: 83.33333%;
+  }
+
+  /* line 35, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-21 {
+    width: 87.5%;
+  }
+
+  /* line 35, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-22 {
+    width: 91.66667%;
+  }
+
+  /* line 35, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-23 {
+    width: 95.83333%;
+  }
+
+  /* line 35, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-24 {
+    width: 100%;
+  }
+
+  /* line 55, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-pull-0 {
+    right: auto;
+  }
+
+  /* line 50, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-pull-1 {
+    right: 4.16667%;
+  }
+
+  /* line 50, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-pull-2 {
+    right: 8.33333%;
+  }
+
+  /* line 50, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-pull-3 {
+    right: 12.5%;
+  }
+
+  /* line 50, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-pull-4 {
+    right: 16.66667%;
+  }
+
+  /* line 50, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-pull-5 {
+    right: 20.83333%;
+  }
+
+  /* line 50, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-pull-6 {
+    right: 25%;
+  }
+
+  /* line 50, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-pull-7 {
+    right: 29.16667%;
+  }
+
+  /* line 50, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-pull-8 {
+    right: 33.33333%;
+  }
+
+  /* line 50, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-pull-9 {
+    right: 37.5%;
+  }
+
+  /* line 50, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-pull-10 {
+    right: 41.66667%;
+  }
+
+  /* line 50, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-pull-11 {
+    right: 45.83333%;
+  }
+
+  /* line 50, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-pull-12 {
+    right: 50%;
+  }
+
+  /* line 50, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-pull-13 {
+    right: 54.16667%;
+  }
+
+  /* line 50, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-pull-14 {
+    right: 58.33333%;
+  }
+
+  /* line 50, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-pull-15 {
+    right: 62.5%;
+  }
+
+  /* line 50, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-pull-16 {
+    right: 66.66667%;
+  }
+
+  /* line 50, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-pull-17 {
+    right: 70.83333%;
+  }
+
+  /* line 50, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-pull-18 {
+    right: 75%;
+  }
+
+  /* line 50, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-pull-19 {
+    right: 79.16667%;
+  }
+
+  /* line 50, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-pull-20 {
+    right: 83.33333%;
+  }
+
+  /* line 50, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-pull-21 {
+    right: 87.5%;
+  }
+
+  /* line 50, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-pull-22 {
+    right: 91.66667%;
+  }
+
+  /* line 50, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-pull-23 {
+    right: 95.83333%;
+  }
+
+  /* line 50, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-pull-24 {
+    right: 100%;
+  }
+
+  /* line 45, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-push-0 {
+    left: auto;
+  }
+
+  /* line 40, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-push-1 {
+    left: 4.16667%;
+  }
+
+  /* line 40, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-push-2 {
+    left: 8.33333%;
+  }
+
+  /* line 40, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-push-3 {
+    left: 12.5%;
+  }
+
+  /* line 40, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-push-4 {
+    left: 16.66667%;
+  }
+
+  /* line 40, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-push-5 {
+    left: 20.83333%;
+  }
+
+  /* line 40, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-push-6 {
+    left: 25%;
+  }
+
+  /* line 40, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-push-7 {
+    left: 29.16667%;
+  }
+
+  /* line 40, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-push-8 {
+    left: 33.33333%;
+  }
+
+  /* line 40, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-push-9 {
+    left: 37.5%;
+  }
+
+  /* line 40, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-push-10 {
+    left: 41.66667%;
+  }
+
+  /* line 40, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-push-11 {
+    left: 45.83333%;
+  }
+
+  /* line 40, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-push-12 {
+    left: 50%;
+  }
+
+  /* line 40, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-push-13 {
+    left: 54.16667%;
+  }
+
+  /* line 40, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-push-14 {
+    left: 58.33333%;
+  }
+
+  /* line 40, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-push-15 {
+    left: 62.5%;
+  }
+
+  /* line 40, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-push-16 {
+    left: 66.66667%;
+  }
+
+  /* line 40, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-push-17 {
+    left: 70.83333%;
+  }
+
+  /* line 40, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-push-18 {
+    left: 75%;
+  }
+
+  /* line 40, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-push-19 {
+    left: 79.16667%;
+  }
+
+  /* line 40, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-push-20 {
+    left: 83.33333%;
+  }
+
+  /* line 40, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-push-21 {
+    left: 87.5%;
+  }
+
+  /* line 40, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-push-22 {
+    left: 91.66667%;
+  }
+
+  /* line 40, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-push-23 {
+    left: 95.83333%;
+  }
+
+  /* line 40, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-push-24 {
+    left: 100%;
+  }
+
+  /* line 60, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-offset-0 {
+    margin-left: 0%;
+  }
+
+  /* line 60, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-offset-1 {
+    margin-left: 4.16667%;
+  }
+
+  /* line 60, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-offset-2 {
+    margin-left: 8.33333%;
+  }
+
+  /* line 60, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-offset-3 {
+    margin-left: 12.5%;
+  }
+
+  /* line 60, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-offset-4 {
+    margin-left: 16.66667%;
+  }
+
+  /* line 60, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-offset-5 {
+    margin-left: 20.83333%;
+  }
+
+  /* line 60, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-offset-6 {
+    margin-left: 25%;
+  }
+
+  /* line 60, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-offset-7 {
+    margin-left: 29.16667%;
+  }
+
+  /* line 60, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-offset-8 {
+    margin-left: 33.33333%;
+  }
+
+  /* line 60, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-offset-9 {
+    margin-left: 37.5%;
+  }
+
+  /* line 60, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-offset-10 {
+    margin-left: 41.66667%;
+  }
+
+  /* line 60, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-offset-11 {
+    margin-left: 45.83333%;
+  }
+
+  /* line 60, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-offset-12 {
+    margin-left: 50%;
+  }
+
+  /* line 60, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-offset-13 {
+    margin-left: 54.16667%;
+  }
+
+  /* line 60, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-offset-14 {
+    margin-left: 58.33333%;
+  }
+
+  /* line 60, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-offset-15 {
+    margin-left: 62.5%;
+  }
+
+  /* line 60, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-offset-16 {
+    margin-left: 66.66667%;
+  }
+
+  /* line 60, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-offset-17 {
+    margin-left: 70.83333%;
+  }
+
+  /* line 60, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-offset-18 {
+    margin-left: 75%;
+  }
+
+  /* line 60, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-offset-19 {
+    margin-left: 79.16667%;
+  }
+
+  /* line 60, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-offset-20 {
+    margin-left: 83.33333%;
+  }
+
+  /* line 60, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-offset-21 {
+    margin-left: 87.5%;
+  }
+
+  /* line 60, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-offset-22 {
+    margin-left: 91.66667%;
+  }
+
+  /* line 60, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-offset-23 {
+    margin-left: 95.83333%;
+  }
+
+  /* line 60, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-offset-24 {
+    margin-left: 100%;
+  }
+}
+/* line 15, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_clearfix.scss */
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: table;
+}
+/* line 19, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_clearfix.scss */
+.clearfix:after {
+  clear: both;
+}
+
+/* line 12, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/_utilities.scss */
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 15, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/_utilities.scss */
+.pull-right {
+  float: right !important;
+}
+
+/* line 18, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/_utilities.scss */
+.pull-left {
+  float: left !important;
+}
+
+/* line 27, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/_utilities.scss */
+.hide {
+  display: none !important;
+}
+
+/* line 30, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/_utilities.scss */
+.show {
+  display: block !important;
+}
+
+/* line 33, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/_utilities.scss */
+.invisible {
+  visibility: hidden;
+}
+
+/* line 36, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/_utilities.scss */
+.text-hide {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+
+/* line 45, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/_utilities.scss */
+.hidden {
+  display: none !important;
+}
+
+/* line 53, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/_utilities.scss */
+.affix {
+  position: fixed;
+}
+
+@at-root {
+  @-ms-viewport {
+    width: device-width;
+}
+}
+
+/* line 18, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_responsive-visibility.scss */
+.visible-xs {
+  display: none !important;
+}
+
+/* line 18, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_responsive-visibility.scss */
+.visible-sm {
+  display: none !important;
+}
+
+/* line 18, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_responsive-visibility.scss */
+.visible-md {
+  display: none !important;
+}
+
+/* line 18, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_responsive-visibility.scss */
+.visible-lg {
+  display: none !important;
+}
+
+/* line 47, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/_responsive-utilities.scss */
+.visible-xs-block,
+.visible-xs-inline,
+.visible-xs-inline-block,
+.visible-sm-block,
+.visible-sm-inline,
+.visible-sm-inline-block,
+.visible-md-block,
+.visible-md-inline,
+.visible-md-inline-block,
+.visible-lg-block,
+.visible-lg-inline,
+.visible-lg-inline-block {
+  display: none !important;
+}
+
+@media (max-width: 767px) {
+  /* line 7, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_responsive-visibility.scss */
+  .visible-xs {
+    display: block !important;
+  }
+
+  /* line 10, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_responsive-visibility.scss */
+  table.visible-xs {
+    display: table !important;
+  }
+
+  /* line 11, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_responsive-visibility.scss */
+  tr.visible-xs {
+    display: table-row !important;
+  }
+
+  /* line 13, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_responsive-visibility.scss */
+  th.visible-xs,
+  td.visible-xs {
+    display: table-cell !important;
+  }
+}
+@media (max-width: 767px) {
+  /* line 54, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/_responsive-utilities.scss */
+  .visible-xs-block {
+    display: block !important;
+  }
+}
+
+@media (max-width: 767px) {
+  /* line 59, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/_responsive-utilities.scss */
+  .visible-xs-inline {
+    display: inline !important;
+  }
+}
+
+@media (max-width: 767px) {
+  /* line 64, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/_responsive-utilities.scss */
+  .visible-xs-inline-block {
+    display: inline-block !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  /* line 7, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_responsive-visibility.scss */
+  .visible-sm {
+    display: block !important;
+  }
+
+  /* line 10, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_responsive-visibility.scss */
+  table.visible-sm {
+    display: table !important;
+  }
+
+  /* line 11, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_responsive-visibility.scss */
+  tr.visible-sm {
+    display: table-row !important;
+  }
+
+  /* line 13, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_responsive-visibility.scss */
+  th.visible-sm,
+  td.visible-sm {
+    display: table-cell !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  /* line 73, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/_responsive-utilities.scss */
+  .visible-sm-block {
+    display: block !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  /* line 78, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/_responsive-utilities.scss */
+  .visible-sm-inline {
+    display: inline !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  /* line 83, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/_responsive-utilities.scss */
+  .visible-sm-inline-block {
+    display: inline-block !important;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* line 7, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_responsive-visibility.scss */
+  .visible-md {
+    display: block !important;
+  }
+
+  /* line 10, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_responsive-visibility.scss */
+  table.visible-md {
+    display: table !important;
+  }
+
+  /* line 11, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_responsive-visibility.scss */
+  tr.visible-md {
+    display: table-row !important;
+  }
+
+  /* line 13, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_responsive-visibility.scss */
+  th.visible-md,
+  td.visible-md {
+    display: table-cell !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* line 92, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/_responsive-utilities.scss */
+  .visible-md-block {
+    display: block !important;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* line 97, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/_responsive-utilities.scss */
+  .visible-md-inline {
+    display: inline !important;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* line 102, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/_responsive-utilities.scss */
+  .visible-md-inline-block {
+    display: inline-block !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  /* line 7, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_responsive-visibility.scss */
+  .visible-lg {
+    display: block !important;
+  }
+
+  /* line 10, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_responsive-visibility.scss */
+  table.visible-lg {
+    display: table !important;
+  }
+
+  /* line 11, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_responsive-visibility.scss */
+  tr.visible-lg {
+    display: table-row !important;
+  }
+
+  /* line 13, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_responsive-visibility.scss */
+  th.visible-lg,
+  td.visible-lg {
+    display: table-cell !important;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 111, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/_responsive-utilities.scss */
+  .visible-lg-block {
+    display: block !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  /* line 116, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/_responsive-utilities.scss */
+  .visible-lg-inline {
+    display: inline !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  /* line 121, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/_responsive-utilities.scss */
+  .visible-lg-inline-block {
+    display: inline-block !important;
+  }
+}
+
+@media (max-width: 767px) {
+  /* line 18, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_responsive-visibility.scss */
+  .hidden-xs {
+    display: none !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  /* line 18, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_responsive-visibility.scss */
+  .hidden-sm {
+    display: none !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* line 18, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_responsive-visibility.scss */
+  .hidden-md {
+    display: none !important;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 18, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_responsive-visibility.scss */
+  .hidden-lg {
+    display: none !important;
+  }
+}
+/* line 18, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_responsive-visibility.scss */
+.visible-print {
+  display: none !important;
+}
+
+@media print {
+  /* line 7, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_responsive-visibility.scss */
+  .visible-print {
+    display: block !important;
+  }
+
+  /* line 10, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_responsive-visibility.scss */
+  table.visible-print {
+    display: table !important;
+  }
+
+  /* line 11, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_responsive-visibility.scss */
+  tr.visible-print {
+    display: table-row !important;
+  }
+
+  /* line 13, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_responsive-visibility.scss */
+  th.visible-print,
+  td.visible-print {
+    display: table-cell !important;
+  }
+}
+/* line 155, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/_responsive-utilities.scss */
+.visible-print-block {
+  display: none !important;
+}
+@media print {
+  /* line 155, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/_responsive-utilities.scss */
+  .visible-print-block {
+    display: block !important;
+  }
+}
+
+/* line 162, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/_responsive-utilities.scss */
+.visible-print-inline {
+  display: none !important;
+}
+@media print {
+  /* line 162, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/_responsive-utilities.scss */
+  .visible-print-inline {
+    display: inline !important;
+  }
+}
+
+/* line 169, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/_responsive-utilities.scss */
+.visible-print-inline-block {
+  display: none !important;
+}
+@media print {
+  /* line 169, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/_responsive-utilities.scss */
+  .visible-print-inline-block {
+    display: inline-block !important;
+  }
+}
+
+@media print {
+  /* line 18, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bootstrap/mixins/_responsive-visibility.scss */
+  .hidden-print {
+    display: none !important;
+  }
+}
+/* line 6, assetic_compasseQ3Oum.scss */
+.imh__container--wrapper {
+  padding: 26px 60px 62px;
+}
+
+/* line 10, assetic_compasseQ3Oum.scss */
+.imh__biography {
+  margin-left: -15px;
+  margin-right: -15px;
   margin-bottom: 62px;
   position: relative;
 }
-/* line 21, assetic_compasstdD5Yv.scss */
-#content .main-content-wrapper .biography-content .loader {
+/* line 3, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_mixins.scss */
+.imh__biography:before, .imh__biography:after {
+  content: " ";
+  display: table;
+}
+/* line 7, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_mixins.scss */
+.imh__biography:after {
+  clear: both;
+}
+/* line 15, assetic_compasseQ3Oum.scss */
+.imh__biography .loader {
   position: absolute;
   top: 50%;
   margin-top: -22px;
   left: 17%;
 }
-/* line 29, assetic_compasstdD5Yv.scss */
-#content .main-content-wrapper .owl-theme {
-  width: 40%;
-  margin-right: 5%;
-  float: left;
-}
-/* line 35, assetic_compasstdD5Yv.scss */
-#content .main-content-wrapper .owl-theme.ready .owl-controls {
+
+/* line 25, assetic_compasseQ3Oum.scss */
+.owl-theme.ready .owl-controls {
   opacity: 1;
   /* Good browsers */
   -moz-opacity: 1;
@@ -43,12 +2492,12 @@
   -o-transition: opacity 0.4s linear 0s;
   transition: opacity 0.4s linear 0s;
 }
-/* line 41, assetic_compasstdD5Yv.scss */
-#content .main-content-wrapper .owl-theme .owl-grab {
+/* line 31, assetic_compasseQ3Oum.scss */
+.owl-theme .owl-grab {
   background: url("/bundles/imhbase/images/loader_black.svg") no-repeat center center;
 }
-/* line 45, assetic_compasstdD5Yv.scss */
-#content .main-content-wrapper .owl-theme .owl-controls {
+/* line 35, assetic_compasseQ3Oum.scss */
+.owl-theme .owl-controls {
   opacity: 0;
   /* Good browsers */
   -moz-opacity: 0;
@@ -64,12 +2513,12 @@
   position: absolute;
   left: 50%;
 }
-/* line 52, assetic_compasstdD5Yv.scss */
-#content .main-content-wrapper .owl-theme .owl-controls .owl-dot {
+/* line 42, assetic_compasseQ3Oum.scss */
+.owl-theme .owl-controls .owl-dot {
   display: inline-block;
 }
-/* line 55, assetic_compasstdD5Yv.scss */
-#content .main-content-wrapper .owl-theme .owl-controls .owl-dot span {
+/* line 45, assetic_compasseQ3Oum.scss */
+.owl-theme .owl-controls .owl-dot span {
   display: block;
   width: 8px;
   height: 8px;
@@ -80,79 +2529,82 @@
   -ms-border-radius: 20px;
   border-radius: 20px;
 }
-/* line 65, assetic_compasstdD5Yv.scss */
-#content .main-content-wrapper .owl-theme .owl-controls .owl-dot.active span {
+/* line 55, assetic_compasseQ3Oum.scss */
+.owl-theme .owl-controls .owl-dot.active span {
   background-color: #898989;
 }
-/* line 73, assetic_compasstdD5Yv.scss */
-#content .main-content-wrapper .text, #content .main-content-wrapper .scrollbar {
+
+/* line 64, assetic_compasseQ3Oum.scss */
+.imh__biography-text,
+.imh__biography-scrollbar {
   visibility: hidden;
   float: right;
 }
-/* line 78, assetic_compasstdD5Yv.scss */
-#content .main-content-wrapper .text {
+
+/* line 69, assetic_compasseQ3Oum.scss */
+.imh__biography-text {
   overflow: hidden;
-  width: 50%;
-  margin-right: 4.4%;
+  width: calc(100% - 5px);
   text-align: justify;
+  padding: 0 40px 0 10px;
 }
-/* line 84, assetic_compasstdD5Yv.scss */
-#content .main-content-wrapper .text p {
+/* line 75, assetic_compasseQ3Oum.scss */
+.imh__biography-text p {
   font-size: 1.167em;
   line-height: 1.4em;
-  font-family: "Georgia", Times, serif;
   color: #222222;
 }
-/* line 91, assetic_compasstdD5Yv.scss */
-#content .main-content-wrapper .text p:first-child {
+/* line 81, assetic_compasseQ3Oum.scss */
+.imh__biography-text p:first-child {
   margin-top: 0;
 }
-/* line 94, assetic_compasstdD5Yv.scss */
-#content .main-content-wrapper .text p:first-child::first-letter {
-  font-size: 74px;
+/* line 84, assetic_compasseQ3Oum.scss */
+.imh__biography-text p:first-child::first-letter {
+  font-size: 66px;
   line-height: 54px;
   float: left;
-  margin-right: 8px;
+  margin: 0 5px 0 -5px;
 }
-/* line 102, assetic_compasstdD5Yv.scss */
-#content .main-content-wrapper .text ul {
+/* line 92, assetic_compasseQ3Oum.scss */
+.imh__biography-text ul {
   color: #222222;
-  font-family: "Georgia", Times, serif;
   font-size: 1.167em;
 }
-/* line 109, assetic_compasstdD5Yv.scss */
-#content .main-content-wrapper .scrollbar {
-  width: .6%;
+
+/* line 98, assetic_compasseQ3Oum.scss */
+.imh__biography-scrollbar {
+  width: 5px;
   background-color: lightgrey;
 }
-/* line 113, assetic_compasstdD5Yv.scss */
-#content .main-content-wrapper .scrollbar .handle {
+/* line 102, assetic_compasseQ3Oum.scss */
+.imh__biography-scrollbar .handle {
   -webkit-transition: background 0.3s ease-in 0s;
   -moz-transition: background 0.3s ease-in 0s;
   -o-transition: background 0.3s ease-in 0s;
   transition: background 0.3s ease-in 0s;
   cursor: pointer;
-  background-color: #b18f5c;
+  background-color: #898989;
   width: 100%;
   height: 250px;
   /* overriden if dynamicHandle: 1 */
   position: relative;
 }
-/* line 121, assetic_compasstdD5Yv.scss */
-#content .main-content-wrapper .scrollbar .handle:hover {
+/* line 110, assetic_compasseQ3Oum.scss */
+.imh__biography-scrollbar .handle:hover {
   background-color: #582411;
 }
-/* line 125, assetic_compasstdD5Yv.scss */
-#content .main-content-wrapper .scrollbar .handle .mousearea {
+/* line 115, assetic_compasseQ3Oum.scss */
+.imh__biography-scrollbar .mousearea {
   height: 100%;
   left: -11px;
   position: absolute;
   top: 0;
   width: 25px;
 }
-/* line 136, assetic_compasstdD5Yv.scss */
-#content .main-content-wrapper .prizes .slider-title:after,
-#content .main-content-wrapper .prizes.closed .slider-title:after {
+
+/* line 125, assetic_compasseQ3Oum.scss */
+.imh__prizes-slider-title::after,
+.imh__prizes.closed .slider-title::after {
   content: "";
   background: url("/bundles/imhbase/images/sprite.png");
   height: 18px;
@@ -162,17 +2614,50 @@
   top: 15px;
   right: 16px;
 }
-/* line 148, assetic_compasstdD5Yv.scss */
-#content .main-content-wrapper .prizes .slider-title {
+
+/* line 136, assetic_compasseQ3Oum.scss */
+.imh__prizes {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+/* line 3, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_mixins.scss */
+.imh__prizes:before, .imh__prizes:after {
+  content: " ";
+  display: table;
+}
+/* line 7, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_mixins.scss */
+.imh__prizes:after {
+  clear: both;
+}
+/* line 141, assetic_compasseQ3Oum.scss */
+.imh__prizes.closed .imh__prizes-slider-title:after {
+  background-position: -102px -155px;
+}
+/* line 146, assetic_compasseQ3Oum.scss */
+.imh__prizes.closed .imh__prizes-slider-content {
+  opacity: 0;
+  /* Good browsers */
+  -moz-opacity: 0;
+  /* Netscape */
+  -khtml-opacity: 0;
+  /* Safari 1.x */
+  filter: alpha(opacity=0);
+  /* IE 5-7 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  /* IE 8 */
+}
+
+/* line 152, assetic_compasseQ3Oum.scss */
+.imh__prizes-slider-title {
+  font-family: "ralewaysemibold", Arial, Helvetica, sans-serif;
   position: relative;
   text-align: center;
-  font-family: "Georgia", Times, serif;
-  font-size: 1.167em;
+  font-size: 1.083em;
   font-weight: normal;
   color: white;
   background-color: #582411;
   line-height: 47px;
-  margin-bottom: 20px;
+  margin: 0 0 20px;
   cursor: pointer;
   text-transform: uppercase;
   -webkit-transition: background-color 0.3s ease 0s;
@@ -180,8 +2665,8 @@
   -o-transition: background-color 0.3s ease 0s;
   transition: background-color 0.3s ease 0s;
 }
-/* line 162, assetic_compasstdD5Yv.scss */
-#content .main-content-wrapper .prizes .slider-title:before {
+/* line 166, assetic_compasseQ3Oum.scss */
+.imh__prizes-slider-title:before {
   position: absolute;
   left: 50%;
   margin-left: -5px;
@@ -197,37 +2682,21 @@
   -o-transition: border-color 0.3s ease 0s;
   transition: border-color 0.3s ease 0s;
 }
-/* line 176, assetic_compasstdD5Yv.scss */
-#content .main-content-wrapper .prizes .slider-title:after {
+/* line 180, assetic_compasseQ3Oum.scss */
+.imh__prizes-slider-title:after {
   background-position: -102px -173px;
 }
-/* line 180, assetic_compasstdD5Yv.scss */
-#content .main-content-wrapper .prizes .slider-title:hover {
+/* line 184, assetic_compasseQ3Oum.scss */
+.imh__prizes-slider-title:hover {
   background-color: #453531;
 }
-/* line 183, assetic_compasstdD5Yv.scss */
-#content .main-content-wrapper .prizes .slider-title:hover:before {
+/* line 187, assetic_compasseQ3Oum.scss */
+.imh__prizes-slider-title:hover:before {
   border-color: #453531 transparent transparent transparent;
 }
-/* line 191, assetic_compasstdD5Yv.scss */
-#content .main-content-wrapper .prizes.closed .slider-title:after {
-  background-position: -102px -155px;
-}
-/* line 196, assetic_compasstdD5Yv.scss */
-#content .main-content-wrapper .prizes.closed .slider-content {
-  opacity: 0;
-  /* Good browsers */
-  -moz-opacity: 0;
-  /* Netscape */
-  -khtml-opacity: 0;
-  /* Safari 1.x */
-  filter: alpha(opacity=0);
-  /* IE 5-7 */
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-  /* IE 8 */
-}
-/* line 201, assetic_compasstdD5Yv.scss */
-#content .main-content-wrapper .prizes .slider-content {
+
+/* line 193, assetic_compasseQ3Oum.scss */
+.imh__prizes-slider-content {
   overflow-y: hidden;
   opacity: 1;
   /* Good browsers */
@@ -241,35 +2710,32 @@
   /* IE 8 */
   -webkit-transition: max-height .5s , opacity .3s ease 0s;
   -moz-transition: max-height 0.5s cubic-bezier(0, 1, 0.5, 1), opacity 0.3s ease 0s;
-  -ms-transition: max-height 0.5s cubic-bezier(0, 1, 0.5, 1), opacity 0.3s ease 0s;
-  /* IE10 is actually unprefixed */
   -o-transition: max-height 0.5s cubic-bezier(0, 1, 0.5, 1), opacity 0.3s ease 0s;
   transition: max-height 0.5s cubic-bezier(0, 1, 0.5, 1), opacity 0.3s ease 0s;
   position: relative;
-  margin-bottom: 20px;
+  margin-bottom: 34px;
 }
-/* line 214, assetic_compasstdD5Yv.scss */
-#content .main-content-wrapper .prizes .slider-content li {
+/* line 205, assetic_compasseQ3Oum.scss */
+.imh__prizes-slider-content li {
   color: #222222;
-  font-family: "Georgia", Times, serif;
-  font-size: 1.167em;
+  font-size: 1.083em;
   border-top: 1px solid #dddddd;
-  padding-top: 12px;
-  margin-top: 12px;
+  padding-top: 14px;
+  margin-top: 15px;
   position: relative;
   text-align: center;
 }
-/* line 224, assetic_compasstdD5Yv.scss */
-#content .main-content-wrapper .prizes .slider-content li:first-child {
+/* line 214, assetic_compasseQ3Oum.scss */
+.imh__prizes-slider-content li:first-child {
   border: none;
   margin: 0;
 }
-/* line 228, assetic_compasstdD5Yv.scss */
-#content .main-content-wrapper .prizes .slider-content li:first-child:after {
+/* line 218, assetic_compasseQ3Oum.scss */
+.imh__prizes-slider-content li:first-child:after {
   background: none;
 }
-/* line 233, assetic_compasstdD5Yv.scss */
-#content .main-content-wrapper .prizes .slider-content li:after {
+/* line 223, assetic_compasseQ3Oum.scss */
+.imh__prizes-slider-content li:after {
   background: #582411;
   top: -1px;
   content: "";
@@ -284,21 +2750,41 @@
   width: 0;
   z-index: 1;
 }
-/* line 246, assetic_compasstdD5Yv.scss */
-#content .main-content-wrapper .prizes .slider-content li:hover:after {
+/* line 236, assetic_compasseQ3Oum.scss */
+.imh__prizes-slider-content li:hover:after {
   left: 0;
   width: 100%;
 }
-/* line 254, assetic_compasstdD5Yv.scss */
-#content .main-content-wrapper .download {
-  text-align: center;
-  position: relative;
-  z-index: 0;
-  margin-top: 30px;
-  height: 70px;
+
+/* line 243, assetic_compasseQ3Oum.scss */
+.imh__download {
+  margin-left: -15px;
+  margin-right: -15px;
 }
-/* line 262, assetic_compasstdD5Yv.scss */
-#content .main-content-wrapper .download .bio img {
+/* line 3, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_mixins.scss */
+.imh__download:before, .imh__download:after {
+  content: " ";
+  display: table;
+}
+/* line 7, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_mixins.scss */
+.imh__download:after {
+  clear: both;
+}
+
+/* line 247, assetic_compasseQ3Oum.scss */
+.imh__download-button {
+  position: relative;
+  height: 70px;
+  margin: 0 auto;
+}
+
+/* line 253, assetic_compasseQ3Oum.scss */
+.imh__download-link {
+  display: inline-block;
+  height: 100%;
+}
+/* line 257, assetic_compasseQ3Oum.scss */
+.imh__download-link img {
   background: url("/bundles/imhbase/images/sprite.png") -285px -131px no-repeat;
   display: inline-block;
   height: 20px;
@@ -308,9 +2794,10 @@
   left: 50%;
   margin-top: -10px;
   margin-left: -10px;
+  z-index: 1;
 }
-/* line 274, assetic_compasstdD5Yv.scss */
-#content .main-content-wrapper .download .bio:after {
+/* line 270, assetic_compasseQ3Oum.scss */
+.imh__download-link:after {
   -webkit-border-radius: 70px;
   -moz-border-radius: 70px;
   -ms-border-radius: 70px;
@@ -326,10 +2813,9 @@
   content: "";
   left: 50%;
   margin-left: -35px;
-  z-index: -1;
 }
-/* line 287, assetic_compasstdD5Yv.scss */
-#content .main-content-wrapper .download .bio:hover:after {
+/* line 282, assetic_compasseQ3Oum.scss */
+.imh__download-link:hover:after {
   background-color: #582411;
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
@@ -339,4 +2825,100 @@
   -webkit-transform: rotate(45deg);
   -o-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
+}
+
+@media (max-width: 767px) {
+  /* line 293, assetic_compasseQ3Oum.scss */
+  .imh__header {
+    margin-bottom: 0;
+  }
+
+  /* line 297, assetic_compasseQ3Oum.scss */
+  .imh__navigation {
+    border: none;
+    background: none;
+    height: auto;
+  }
+
+  /* line 303, assetic_compasseQ3Oum.scss */
+  .imh__container {
+    top: 0;
+  }
+
+  /* line 307, assetic_compasseQ3Oum.scss */
+  .imh__container--wrapper {
+    padding: 0;
+    border-top-width: 15px;
+  }
+
+  /* line 313, assetic_compasseQ3Oum.scss */
+  .imh__container--shadows::after,
+  .imh__container--shadows::before {
+    display: none;
+  }
+
+  /* line 317, assetic_compasseQ3Oum.scss */
+  .imh__biography {
+    margin-bottom: 34px;
+  }
+
+  /* line 321, assetic_compasseQ3Oum.scss */
+  .imh__biography-text {
+    width: calc(100% - 1px);
+    padding: 0 15px 0 0;
+  }
+  /* line 325, assetic_compasseQ3Oum.scss */
+  .imh__biography-text p {
+    font-size: 1.083em;
+  }
+  /* line 328, assetic_compasseQ3Oum.scss */
+  .imh__biography-text p:first-child::first-letter {
+    font-size: 59px;
+  }
+
+  /* line 334, assetic_compasseQ3Oum.scss */
+  .imh__biography-scrollbar {
+    width: 1px;
+  }
+  /* line 337, assetic_compasseQ3Oum.scss */
+  .imh__biography-scrollbar .mousearea {
+    width: 1px;
+    left: 0;
+  }
+
+  /* line 343, assetic_compasseQ3Oum.scss */
+  .owl-carousel {
+    max-width: 344px;
+    margin: 0 auto 50px;
+  }
+
+  /* line 348, assetic_compasseQ3Oum.scss */
+  .imh__prizes-slider-title {
+    font-size: 1em;
+  }
+  /* line 350, assetic_compasseQ3Oum.scss */
+  .imh__prizes-slider-title::after {
+    display: none;
+  }
+
+  /* line 353, assetic_compasseQ3Oum.scss */
+  .imh__prizes-slider-content {
+    margin-bottom: 0;
+  }
+  /* line 355, assetic_compasseQ3Oum.scss */
+  .imh__prizes-slider-content li {
+    text-align: left;
+  }
+
+  /* line 359, assetic_compasseQ3Oum.scss */
+  .imh__prizes,
+  .imh__download {
+    margin-bottom: 34px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  /* line 365, assetic_compasseQ3Oum.scss */
+  .imh__prizes-slider-content li {
+    font-size: 1em;
+  }
 }

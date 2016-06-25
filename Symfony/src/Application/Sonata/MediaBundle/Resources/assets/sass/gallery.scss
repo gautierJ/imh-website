@@ -1,3 +1,5 @@
+@import "../../../../../../../web/assets/lib/bootstrap/variables";
+@import "../../../../../../../web/assets/lib/bootstrap/mixins";
 @import "../../../../../../Imh/BaseBundle/Resources/assets/sass/variables";
 @import "../../../../../../Imh/BaseBundle/Resources/assets/sass/mixins";
 @import "../../../../../../Imh/BaseBundle/Resources/assets/sass/keyframes";
@@ -50,13 +52,14 @@ body {
   background-color: $color-black;
 }
 
-#wrapper {
+.container-fluid {
   height: 100%;
   position: relative;
 
   &:before, &:after {
     content: '';
     position: absolute;
+    left: 0;
     background: url("/bundles/imhbase/images/points.png") repeat scroll 2px -2px;
     height: 100px;
     width: 100%;
@@ -71,8 +74,8 @@ body {
     bottom: 3px;
   }
 
-  #sidebar-main {
-    //border-left: 1px solid $color-grey-darker;
+  .imh__sidebar {
+    display: block;
     position: absolute;
     top: 0;
     right: 0;
@@ -91,11 +94,11 @@ body {
       }
     }*/
 
-    .gallery-menu li.first, .navigation-menu > span {
+    .gallery-menu li.first, .imh__navigation-menu > span {
       color: $color-grey-medium;
     }
 
-    .navigation-menu {
+    .imh__navigation-menu {
       @include box-sizing(border-box);
       position: static;
       display: block;
@@ -167,11 +170,9 @@ body {
   }
 }
 
-#content {
-  @include box-sizing(border-box);
+.imh__content {
   @include calc(height, '100% - 200px');
   padding: 1.5%;
-  width: 100%;
   position: relative;
   top: 100px;
 

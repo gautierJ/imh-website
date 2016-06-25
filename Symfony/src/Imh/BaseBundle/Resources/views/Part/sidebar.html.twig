@@ -1,8 +1,8 @@
-<aside id="sidebar-main">
+<aside class="imh__sidebar" data-sidebar>
     {#<div class="block-triangle"></div>#}
     {% block menu_navigation %}
-        <div class="navigation-menu">
-            <h4 class="title">
+        <div class="imh__navigation-menu">
+            <h4 class="imh__navigation-menu-title">
                 <i class="fa fa-dot-circle-o" aria-hidden="true"></i>
                 {{ 'sonata.media.gallery.menu.title_1'|trans }}
             </h4>
@@ -11,8 +11,8 @@
     {% endblock %}
 
     {% block menu_gallery %}
-        <div class="navigation-menu gallery-menu">
-            <h4 class="title">
+        <div class="imh__navigation-menu imh__gallery-menu">
+            <h4 class="imh__navigation-menu-title">
                 <i class="fa fa-dot-circle-o" aria-hidden="true"></i>
                 {{ 'sonata.media.gallery.menu.title_2'|trans }}
             </h4>

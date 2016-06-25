@@ -14,11 +14,13 @@
     -moz-transform: scale(0);
     -o-transform: scale(0);
     transform: scale(0); }
+
   50% {
     -webkit-transform: scale(1.1);
     -moz-transform: scale(1.1);
     -o-transform: scale(1.1);
     transform: scale(1.1); }
+
   100% {
     opacity: 0.8;
     /* Good browsers */
@@ -34,6 +36,7 @@
     -moz-transform: scale(1);
     -o-transform: scale(1);
     transform: scale(1); } }
+
 @-moz-keyframes pop-icon-in {
   0% {
     opacity: 0;
@@ -50,11 +53,13 @@
     -moz-transform: scale(0);
     -o-transform: scale(0);
     transform: scale(0); }
+
   50% {
     -webkit-transform: scale(1.1);
     -moz-transform: scale(1.1);
     -o-transform: scale(1.1);
     transform: scale(1.1); }
+
   100% {
     opacity: 0.8;
     /* Good browsers */
@@ -70,6 +75,7 @@
     -moz-transform: scale(1);
     -o-transform: scale(1);
     transform: scale(1); } }
+
 @-ms-keyframes pop-icon-in {
   0% {
     opacity: 0;
@@ -86,11 +92,13 @@
     -moz-transform: scale(0);
     -o-transform: scale(0);
     transform: scale(0); }
+
   50% {
     -webkit-transform: scale(1.1);
     -moz-transform: scale(1.1);
     -o-transform: scale(1.1);
     transform: scale(1.1); }
+
   100% {
     opacity: 0.8;
     /* Good browsers */
@@ -106,6 +114,7 @@
     -moz-transform: scale(1);
     -o-transform: scale(1);
     transform: scale(1); } }
+
 @-o-keyframes pop-icon-in {
   0% {
     opacity: 0;
@@ -122,11 +131,13 @@
     -moz-transform: scale(0);
     -o-transform: scale(0);
     transform: scale(0); }
+
   50% {
     -webkit-transform: scale(1.1);
     -moz-transform: scale(1.1);
     -o-transform: scale(1.1);
     transform: scale(1.1); }
+
   100% {
     opacity: 0.8;
     /* Good browsers */
@@ -142,6 +153,7 @@
     -moz-transform: scale(1);
     -o-transform: scale(1);
     transform: scale(1); } }
+
 @keyframes pop-icon-in {
   0% {
     opacity: 0;
@@ -158,11 +170,13 @@
     -moz-transform: scale(0);
     -o-transform: scale(0);
     transform: scale(0); }
+
   50% {
     -webkit-transform: scale(1.1);
     -moz-transform: scale(1.1);
     -o-transform: scale(1.1);
     transform: scale(1.1); }
+
   100% {
     opacity: 0.8;
     /* Good browsers */
@@ -178,6 +192,7 @@
     -moz-transform: scale(1);
     -o-transform: scale(1);
     transform: scale(1); } }
+
 @-webkit-keyframes pop-icon-out {
   0% {
     opacity: 0.8;
@@ -194,6 +209,7 @@
     -moz-transform: scale(1);
     -o-transform: scale(1);
     transform: scale(1); }
+
   100% {
     opacity: 0;
     /* Good browsers */
@@ -209,6 +225,7 @@
     -moz-transform: scale(0);
     -o-transform: scale(0);
     transform: scale(0); } }
+
 @-moz-keyframes pop-icon-out {
   0% {
     opacity: 0.8;
@@ -225,6 +242,7 @@
     -moz-transform: scale(1);
     -o-transform: scale(1);
     transform: scale(1); }
+
   100% {
     opacity: 0;
     /* Good browsers */
@@ -240,6 +258,7 @@
     -moz-transform: scale(0);
     -o-transform: scale(0);
     transform: scale(0); } }
+
 @-ms-keyframes pop-icon-out {
   0% {
     opacity: 0.8;
@@ -256,6 +275,7 @@
     -moz-transform: scale(1);
     -o-transform: scale(1);
     transform: scale(1); }
+
   100% {
     opacity: 0;
     /* Good browsers */
@@ -271,6 +291,7 @@
     -moz-transform: scale(0);
     -o-transform: scale(0);
     transform: scale(0); } }
+
 @-o-keyframes pop-icon-out {
   0% {
     opacity: 0.8;
@@ -287,6 +308,7 @@
     -moz-transform: scale(1);
     -o-transform: scale(1);
     transform: scale(1); }
+
   100% {
     opacity: 0;
     /* Good browsers */
@@ -302,6 +324,7 @@
     -moz-transform: scale(0);
     -o-transform: scale(0);
     transform: scale(0); } }
+
 @keyframes pop-icon-out {
   0% {
     opacity: 0.8;
@@ -318,6 +341,7 @@
     -moz-transform: scale(1);
     -o-transform: scale(1);
     transform: scale(1); }
+
   100% {
     opacity: 0;
     /* Good browsers */
@@ -333,6 +357,7 @@
     -moz-transform: scale(0);
     -o-transform: scale(0);
     transform: scale(0); } }
+
 @-webkit-keyframes make-opacity-in {
   0% {
     opacity: 0;
@@ -345,6 +370,7 @@
     /* IE 5-7 */
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
     /* IE 8 */ }
+
   100% {
     opacity: 1;
     /* Good browsers */
@@ -356,6 +382,7 @@
     /* IE 5-7 */
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
     /* IE 8 */ } }
+
 @-moz-keyframes make-opacity-in {
   0% {
     opacity: 0;
@@ -368,6 +395,7 @@
     /* IE 5-7 */
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
     /* IE 8 */ }
+
   100% {
     opacity: 1;
     /* Good browsers */
@@ -379,6 +407,7 @@
     /* IE 5-7 */
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
     /* IE 8 */ } }
+
 @-ms-keyframes make-opacity-in {
   0% {
     opacity: 0;
@@ -391,6 +420,7 @@
     /* IE 5-7 */
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
     /* IE 8 */ }
+
   100% {
     opacity: 1;
     /* Good browsers */
@@ -402,6 +432,7 @@
     /* IE 5-7 */
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
     /* IE 8 */ } }
+
 @-o-keyframes make-opacity-in {
   0% {
     opacity: 0;
@@ -414,6 +445,7 @@
     /* IE 5-7 */
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
     /* IE 8 */ }
+
   100% {
     opacity: 1;
     /* Good browsers */
@@ -425,6 +457,7 @@
     /* IE 5-7 */
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
     /* IE 8 */ } }
+
 @keyframes make-opacity-in {
   0% {
     opacity: 0;
@@ -437,6 +470,7 @@
     /* IE 5-7 */
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
     /* IE 8 */ }
+
   100% {
     opacity: 1;
     /* Good browsers */
@@ -448,6 +482,7 @@
     /* IE 5-7 */
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
     /* IE 8 */ } }
+
 @-webkit-keyframes make-opacity-out {
   0% {
     opacity: 1;
@@ -460,6 +495,7 @@
     /* IE 5-7 */
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
     /* IE 8 */ }
+
   100% {
     opacity: 0;
     /* Good browsers */
@@ -471,6 +507,7 @@
     /* IE 5-7 */
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
     /* IE 8 */ } }
+
 @-moz-keyframes make-opacity-out {
   0% {
     opacity: 1;
@@ -483,6 +520,7 @@
     /* IE 5-7 */
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
     /* IE 8 */ }
+
   100% {
     opacity: 0;
     /* Good browsers */
@@ -494,6 +532,7 @@
     /* IE 5-7 */
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
     /* IE 8 */ } }
+
 @-ms-keyframes make-opacity-out {
   0% {
     opacity: 1;
@@ -506,6 +545,7 @@
     /* IE 5-7 */
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
     /* IE 8 */ }
+
   100% {
     opacity: 0;
     /* Good browsers */
@@ -517,6 +557,7 @@
     /* IE 5-7 */
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
     /* IE 8 */ } }
+
 @-o-keyframes make-opacity-out {
   0% {
     opacity: 1;
@@ -529,6 +570,7 @@
     /* IE 5-7 */
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
     /* IE 8 */ }
+
   100% {
     opacity: 0;
     /* Good browsers */
@@ -540,6 +582,7 @@
     /* IE 5-7 */
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
     /* IE 8 */ } }
+
 @keyframes make-opacity-out {
   0% {
     opacity: 1;
@@ -552,6 +595,7 @@
     /* IE 5-7 */
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
     /* IE 8 */ }
+
   100% {
     opacity: 0;
     /* Good browsers */
@@ -563,15 +607,17 @@
     /* IE 5-7 */
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
     /* IE 8 */ } }
-body {
-  background-color: #000000; }
 
-#wrapper {
+body {
+  background-color: black; }
+
+.container-fluid {
   height: 100%;
   position: relative; }
-  #wrapper:before, #wrapper:after {
+  .container-fluid:before, .container-fluid:after {
     content: '';
     position: absolute;
+    left: 0;
     background: url("/bundles/imhbase/images/points.png") repeat scroll 2px -2px;
     height: 100px;
     width: 100%;
@@ -585,11 +631,12 @@ body {
     /* IE 5-7 */
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
     /* IE 8 */ }
-  #wrapper:before {
+  .container-fluid:before {
     top: 0; }
-  #wrapper:after {
+  .container-fluid:after {
     bottom: 3px; }
-  #wrapper #sidebar-main {
+  .container-fluid .imh__sidebar {
+    display: block;
     position: absolute;
     top: 0;
     right: 0;
@@ -606,9 +653,9 @@ body {
         margin-top: 130px;
       }
     }*/ }
-    #wrapper #sidebar-main .gallery-menu li.first, #wrapper #sidebar-main .navigation-menu > span {
+    .container-fluid .imh__sidebar .gallery-menu li.first, .container-fluid .imh__sidebar .imh__navigation-menu > span {
       color: #898989; }
-    #wrapper #sidebar-main .navigation-menu {
+    .container-fluid .imh__sidebar .imh__navigation-menu {
       -webkit-box-sizing: border-box;
       -moz-box-sizing: border-box;
       box-sizing: border-box;
@@ -616,48 +663,44 @@ body {
       display: block;
       height: 50%;
       padding-top: 50%; }
-      #wrapper #sidebar-main .navigation-menu.gallery-menu > ul {
+      .container-fluid .imh__sidebar .imh__navigation-menu.gallery-menu > ul {
         border: none;
         margin: 0; }
-      #wrapper #sidebar-main .navigation-menu ul {
-        background: #000000;
-        border: 1px solid #3F3F3F; }
-        #wrapper #sidebar-main .navigation-menu ul li a, #wrapper #sidebar-main .navigation-menu ul li span {
-          color: #D3D3D3;
+      .container-fluid .imh__sidebar .imh__navigation-menu ul {
+        background: black;
+        border: 1px solid #3f3f3f; }
+        .container-fluid .imh__sidebar .imh__navigation-menu ul li a, .container-fluid .imh__sidebar .imh__navigation-menu ul li span {
+          color: lightgrey;
           white-space: nowrap; }
-        #wrapper #sidebar-main .navigation-menu ul li:hover:after {
-          background-color: #FFFFFF;
-          border-color: #FFFFFF; }
-        #wrapper #sidebar-main .navigation-menu ul li.current a, #wrapper #sidebar-main .navigation-menu ul li.current span {
-          background: #000000;
-          border-color: #3F3F3F;
-          color: #D3D3D3; }
-        #wrapper #sidebar-main .navigation-menu ul li.current:after {
-          background-color: #FFFFFF;
-          border-color: #FFFFFF;
+        .container-fluid .imh__sidebar .imh__navigation-menu ul li:hover:after {
+          background-color: white;
+          border-color: white; }
+        .container-fluid .imh__sidebar .imh__navigation-menu ul li.current a, .container-fluid .imh__sidebar .imh__navigation-menu ul li.current span {
+          background: black;
+          border-color: #3f3f3f;
+          color: lightgrey; }
+        .container-fluid .imh__sidebar .imh__navigation-menu ul li.current:after {
+          background-color: white;
+          border-color: white;
           box-shadow: none; }
-        #wrapper #sidebar-main .navigation-menu ul li:first-child {
+        .container-fluid .imh__sidebar .imh__navigation-menu ul li:first-child {
           margin-top: 17px; }
-        #wrapper #sidebar-main .navigation-menu ul li:last-child {
+        .container-fluid .imh__sidebar .imh__navigation-menu ul li:last-child {
           margin-bottom: 17px; }
-        #wrapper #sidebar-main .navigation-menu ul li:after {
+        .container-fluid .imh__sidebar .imh__navigation-menu ul li:after {
           border-color: #222222; }
-      #wrapper #sidebar-main .navigation-menu .fa-home {
+      .container-fluid .imh__sidebar .imh__navigation-menu .fa-home {
         display: none; }
-        #wrapper #sidebar-main .navigation-menu .fa-home + span {
+        .container-fluid .imh__sidebar .imh__navigation-menu .fa-home + span {
           display: inline; }
 
-#content {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+.imh__content {
   height: -webkit-calc(100% - 200px);
   height: calc(100% - 200px);
   padding: 1.5%;
-  width: 100%;
   position: relative;
   top: 100px; }
-  #content #gallery-wrapper {
+  .imh__content #gallery-wrapper {
     -webkit-transition: opacity 0.3s linear 0.5s;
     -moz-transition: opacity 0.3s linear 0.5s;
     -o-transition: opacity 0.3s linear 0.5s;
@@ -691,11 +734,11 @@ body {
         }
       }
     }*/ }
-    #content #gallery-wrapper #frame {
+    .imh__content #gallery-wrapper #frame {
       height: 100%; }
-    #content #gallery-wrapper #trigger {
+    .imh__content #gallery-wrapper #trigger {
       display: none; }
-    #content #gallery-wrapper.loading {
+    .imh__content #gallery-wrapper.loading {
       -webkit-transition: opacity 0.2s linear 0s;
       -moz-transition: opacity 0.2s linear 0s;
       -o-transition: opacity 0.2s linear 0s;
@@ -710,7 +753,7 @@ body {
       /* IE 5-7 */
       -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
       /* IE 8 */ }
-      #content #gallery-wrapper.loading + #spinner {
+      .imh__content #gallery-wrapper.loading + #spinner {
         -webkit-transition: opacity 0.2s linear 0.3s;
         -moz-transition: opacity 0.2s linear 0.3s;
         -o-transition: opacity 0.2s linear 0.3s;
@@ -725,14 +768,14 @@ body {
         /* IE 5-7 */
         -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
         /* IE 8 */ }
-  #content #scrollbar {
+  .imh__content #scrollbar {
     position: absolute;
     left: 0;
     bottom: -2px;
     height: 2px;
     width: 100%;
     z-index: 1; }
-    #content #scrollbar:after {
+    .imh__content #scrollbar:after {
       -webkit-transition: width 0.4s ease 0s;
       -moz-transition: width 0.4s ease 0s;
       -o-transition: width 0.4s ease 0s;
@@ -743,7 +786,7 @@ body {
       width: 0;
       top: 0;
       background: #222222; }
-    #content #scrollbar .handle {
+    .imh__content #scrollbar .handle {
       opacity: 0;
       /* Good browsers */
       -moz-opacity: 0;
@@ -761,21 +804,21 @@ body {
       -o-transition: background .2s linear, opacity .2s ease .4s, width .2s ease;
       transition: background .2s linear, opacity .2s ease .4s, width .2s ease;
       cursor: pointer;
-      background: #3F3F3F;
+      background: #3f3f3f;
       width: 100px;
       /* overriden if dynamicHandle: 1 */
       height: 100%;
       position: relative;
       z-index: 1; }
-      #content #scrollbar .handle:hover {
-        background: #D3D3D3; }
-      #content #scrollbar .handle .mousearea {
+      .imh__content #scrollbar .handle:hover {
+        background: lightgrey; }
+      .imh__content #scrollbar .handle .mousearea {
         position: absolute;
         top: -31px;
         left: 0;
         height: 128px;
         width: 100%; }
-    #content #scrollbar.mA_2 .handle {
+    .imh__content #scrollbar.mA_2 .handle {
       opacity: 1;
       /* Good browsers */
       -moz-opacity: 1;
@@ -786,17 +829,17 @@ body {
       /* IE 5-7 */
       -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
       /* IE 8 */ }
-    #content #scrollbar.mA_2:after {
+    .imh__content #scrollbar.mA_2:after {
       width: 100%; }
-  #content #sonata-media-gallery-media-list {
+  .imh__content #sonata-media-gallery-media-list {
     height: 100%; }
-    #content #sonata-media-gallery-media-list .sonata-media-gallery-media-item {
+    .imh__content #sonata-media-gallery-media-list .sonata-media-gallery-media-item {
       height: 50%;
       -webkit-transition: opacity 0.5s linear 0s;
       -moz-transition: opacity 0.5s linear 0s;
       -o-transition: opacity 0.5s linear 0s;
       transition: opacity 0.5s linear 0s; }
-      #content #sonata-media-gallery-media-list .sonata-media-gallery-media-item.mA_1 {
+      .imh__content #sonata-media-gallery-media-list .sonata-media-gallery-media-item.mA_1 {
         opacity: 0.1;
         /* Good browsers */
         -moz-opacity: 0.1;
@@ -807,16 +850,16 @@ body {
         /* IE 5-7 */
         -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=10)";
         /* IE 8 */ }
-        #content #sonata-media-gallery-media-list .sonata-media-gallery-media-item.mA_1 .sonata-media-gallery-media-item-link {
+        .imh__content #sonata-media-gallery-media-list .sonata-media-gallery-media-item.mA_1 .sonata-media-gallery-media-item-link {
           cursor: default; }
-          #content #sonata-media-gallery-media-list .sonata-media-gallery-media-item.mA_1 .sonata-media-gallery-media-item-link:hover .media-object {
+          .imh__content #sonata-media-gallery-media-list .sonata-media-gallery-media-item.mA_1 .sonata-media-gallery-media-item-link:hover .media-object {
             -webkit-transform: scale(1);
             -moz-transform: scale(1);
             -o-transform: scale(1);
             transform: scale(1); }
-          #content #sonata-media-gallery-media-list .sonata-media-gallery-media-item.mA_1 .sonata-media-gallery-media-item-link:after {
+          .imh__content #sonata-media-gallery-media-list .sonata-media-gallery-media-item.mA_1 .sonata-media-gallery-media-item-link:after {
             display: none; }
-      #content #sonata-media-gallery-media-list .sonata-media-gallery-media-item .sonata-media-gallery-media-item-link {
+      .imh__content #sonata-media-gallery-media-list .sonata-media-gallery-media-item .sonata-media-gallery-media-item-link {
         display: block;
         overflow: hidden;
         position: relative;
@@ -846,7 +889,7 @@ body {
             font-weight: bold;
           }
         }*/ }
-        #content #sonata-media-gallery-media-list .sonata-media-gallery-media-item .sonata-media-gallery-media-item-link .media-object {
+        .imh__content #sonata-media-gallery-media-list .sonata-media-gallery-media-item .sonata-media-gallery-media-item-link .media-object {
           -webkit-transition: all 1s ease 0s;
           -moz-transition: all 1s ease 0s;
           -o-transition: all 1s ease 0s;
@@ -855,9 +898,9 @@ body {
           display: block;
           height: 100%;
           width: auto; }
-        #content #sonata-media-gallery-media-list .sonata-media-gallery-media-item .sonata-media-gallery-media-item-link .media-btns {
+        .imh__content #sonata-media-gallery-media-list .sonata-media-gallery-media-item .sonata-media-gallery-media-item-link .media-btns {
           display: none; }
-        #content #sonata-media-gallery-media-list .sonata-media-gallery-media-item .sonata-media-gallery-media-item-link .plus-icon {
+        .imh__content #sonata-media-gallery-media-list .sonata-media-gallery-media-item .sonata-media-gallery-media-item-link .plus-icon {
           opacity: 0;
           /* Good browsers */
           -moz-opacity: 0;
@@ -879,42 +922,42 @@ body {
           left: 50%;
           width: 3px;
           height: 3px;
-          background: #000000; }
-          #content #sonata-media-gallery-media-list .sonata-media-gallery-media-item .sonata-media-gallery-media-item-link .plus-icon:before, #content #sonata-media-gallery-media-list .sonata-media-gallery-media-item .sonata-media-gallery-media-item-link .plus-icon:after {
+          background: black; }
+          .imh__content #sonata-media-gallery-media-list .sonata-media-gallery-media-item .sonata-media-gallery-media-item-link .plus-icon:before, .imh__content #sonata-media-gallery-media-list .sonata-media-gallery-media-item .sonata-media-gallery-media-item-link .plus-icon:after {
             content: '';
             position: absolute;
             left: 50%;
             top: 50%;
-            background: #FFFFFF;
+            background: white;
             -webkit-transform: scale(1);
             -moz-transform: scale(1);
             -o-transform: scale(1);
             transform: scale(1); }
-          #content #sonata-media-gallery-media-list .sonata-media-gallery-media-item .sonata-media-gallery-media-item-link .plus-icon:before {
+          .imh__content #sonata-media-gallery-media-list .sonata-media-gallery-media-item .sonata-media-gallery-media-item-link .plus-icon:before {
             width: 1px;
             height: 18px;
             -webkit-transform: translate(0, -50%);
             -moz-transform: translate(0, -50%);
             -o-transform: translate(0, -50%);
             transform: translate(0, -50%); }
-          #content #sonata-media-gallery-media-list .sonata-media-gallery-media-item .sonata-media-gallery-media-item-link .plus-icon:after {
+          .imh__content #sonata-media-gallery-media-list .sonata-media-gallery-media-item .sonata-media-gallery-media-item-link .plus-icon:after {
             width: 18px;
             height: 1px;
             -webkit-transform: translate(-50%, 0);
             -moz-transform: translate(-50%, 0);
             -o-transform: translate(-50%, 0);
             transform: translate(-50%, 0); }
-        #content #sonata-media-gallery-media-list .sonata-media-gallery-media-item .sonata-media-gallery-media-item-link:hover .media-object {
+        .imh__content #sonata-media-gallery-media-list .sonata-media-gallery-media-item .sonata-media-gallery-media-item-link:hover .media-object {
           -webkit-transform: scale(1.1);
           -moz-transform: scale(1.1);
           -o-transform: scale(1.1);
           transform: scale(1.1); }
-        #content #sonata-media-gallery-media-list .sonata-media-gallery-media-item .sonata-media-gallery-media-item-link:hover .media-bar {
+        .imh__content #sonata-media-gallery-media-list .sonata-media-gallery-media-item .sonata-media-gallery-media-item-link:hover .media-bar {
           -webkit-transform: translate(0, 0%);
           -moz-transform: translate(0, 0%);
           -o-transform: translate(0, 0%);
           transform: translate(0, 0%); }
-        #content #sonata-media-gallery-media-list .sonata-media-gallery-media-item .sonata-media-gallery-media-item-link:hover .plus-icon {
+        .imh__content #sonata-media-gallery-media-list .sonata-media-gallery-media-item .sonata-media-gallery-media-item-link:hover .plus-icon {
           -webkit-animation: pop-icon-in .4s;
           -moz-animation: pop-icon-in .4s;
           -ms-animation: pop-icon-in .4s;
@@ -930,16 +973,16 @@ body {
           /* IE 5-7 */
           -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
           /* IE 8 */ }
-      #content #sonata-media-gallery-media-list .sonata-media-gallery-media-item.expanded {
+      .imh__content #sonata-media-gallery-media-list .sonata-media-gallery-media-item.expanded {
         height: 100%;
         width: auto; }
-        #content #sonata-media-gallery-media-list .sonata-media-gallery-media-item.expanded .sonata-media-gallery-media-item-link {
+        .imh__content #sonata-media-gallery-media-list .sonata-media-gallery-media-item.expanded .sonata-media-gallery-media-item-link {
           cursor: default; }
-          #content #sonata-media-gallery-media-list .sonata-media-gallery-media-item.expanded .sonata-media-gallery-media-item-link .media-object {
+          .imh__content #sonata-media-gallery-media-list .sonata-media-gallery-media-item.expanded .sonata-media-gallery-media-item-link .media-object {
             transition: none;
             height: 100%;
             width: auto; }
-          #content #sonata-media-gallery-media-list .sonata-media-gallery-media-item.expanded .sonata-media-gallery-media-item-link .media-btns {
+          .imh__content #sonata-media-gallery-media-list .sonata-media-gallery-media-item.expanded .sonata-media-gallery-media-item-link .media-btns {
             display: block;
             position: absolute;
             top: 0;
@@ -960,7 +1003,7 @@ body {
             /* IE 5-7 */
             -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
             /* IE 8 */ }
-            #content #sonata-media-gallery-media-list .sonata-media-gallery-media-item.expanded .sonata-media-gallery-media-item-link .media-btns > span {
+            .imh__content #sonata-media-gallery-media-list .sonata-media-gallery-media-item.expanded .sonata-media-gallery-media-item-link .media-btns > span {
               display: inline-block;
               cursor: pointer;
               text-align: center;
@@ -973,24 +1016,24 @@ body {
               -moz-transition: background-color 0.2s ease-in 0s;
               -o-transition: background-color 0.2s ease-in 0s;
               transition: background-color 0.2s ease-in 0s; }
-              #content #sonata-media-gallery-media-list .sonata-media-gallery-media-item.expanded .sonata-media-gallery-media-item-link .media-btns > span.zoom img {
+              .imh__content #sonata-media-gallery-media-list .sonata-media-gallery-media-item.expanded .sonata-media-gallery-media-item-link .media-btns > span.zoom img {
                 background: url("/bundles/imhbase/images/sprite.png") no-repeat scroll -96px -131px;
                 height: 20px;
                 width: 19px; }
-              #content #sonata-media-gallery-media-list .sonata-media-gallery-media-item.expanded .sonata-media-gallery-media-item-link .media-btns > span.close img {
+              .imh__content #sonata-media-gallery-media-list .sonata-media-gallery-media-item.expanded .sonata-media-gallery-media-item-link .media-btns > span.close img {
                 background: url("/bundles/imhbase/images/sprite.png") no-repeat scroll -115px -131px;
                 height: 12px;
                 width: 12px; }
-          #content #sonata-media-gallery-media-list .sonata-media-gallery-media-item.expanded .sonata-media-gallery-media-item-link:hover {
+          .imh__content #sonata-media-gallery-media-list .sonata-media-gallery-media-item.expanded .sonata-media-gallery-media-item-link:hover {
             /*.media-bar {
               @include transform(translate(0, 0%));
             }*/ }
-            #content #sonata-media-gallery-media-list .sonata-media-gallery-media-item.expanded .sonata-media-gallery-media-item-link:hover .media-object {
+            .imh__content #sonata-media-gallery-media-list .sonata-media-gallery-media-item.expanded .sonata-media-gallery-media-item-link:hover .media-object {
               -webkit-transform: none;
               -moz-transform: none;
               -o-transform: none;
               transform: none; }
-            #content #sonata-media-gallery-media-list .sonata-media-gallery-media-item.expanded .sonata-media-gallery-media-item-link:hover .media-btns {
+            .imh__content #sonata-media-gallery-media-list .sonata-media-gallery-media-item.expanded .sonata-media-gallery-media-item-link:hover .media-btns {
               opacity: 1;
               /* Good browsers */
               -moz-opacity: 1;
@@ -1001,19 +1044,19 @@ body {
               /* IE 5-7 */
               -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
               /* IE 8 */ }
-              #content #sonata-media-gallery-media-list .sonata-media-gallery-media-item.expanded .sonata-media-gallery-media-item-link:hover .media-btns > span:hover {
+              .imh__content #sonata-media-gallery-media-list .sonata-media-gallery-media-item.expanded .sonata-media-gallery-media-item-link:hover .media-btns > span:hover {
                 background-color: black;
                 background-color: rgba(0, 0, 0, 0.8); }
-          #content #sonata-media-gallery-media-list .sonata-media-gallery-media-item.expanded .sonata-media-gallery-media-item-link:after {
+          .imh__content #sonata-media-gallery-media-list .sonata-media-gallery-media-item.expanded .sonata-media-gallery-media-item-link:after {
             display: none; }
-  #content #spinner, #content #infscr-loading {
+  .imh__content #spinner, .imh__content #infscr-loading {
     position: absolute;
     left: 50%;
     top: 50%;
     margin: -22px 0 0 -22px; }
-    #content #spinner img, #content #infscr-loading img {
+    .imh__content #spinner img, .imh__content #infscr-loading img {
       display: block; }
-  #content #spinner {
+  .imh__content #spinner {
     -webkit-transition: opacity 0.2s linear 0s;
     -moz-transition: opacity 0.2s linear 0s;
     -o-transition: opacity 0.2s linear 0s;
@@ -1030,5 +1073,3 @@ body {
     /* IE 8 */
     margin: -19px 0 0 -19px;
     z-index: -1; }
-
-/*# sourceMappingURL=gallery.css.map */

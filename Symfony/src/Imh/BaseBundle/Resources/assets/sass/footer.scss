@@ -1,94 +1,99 @@
+@import "../../../../../../web/assets/lib/bootstrap/bootstrap";
 @import "variables";
 @import "mixins";
 
-#footer {
+.imh__footer {
+  @include make-row();
   background: url("/bundles/imhbase/images/header-bg.png") repeat scroll 0 0;
   min-height: 110px;
-  width: 100%;
   border-top: 1px solid $color-grey-light;
   color: $color-grey-medium;
   text-align: center;
-  padding-bottom: 20px;
+  padding-top: 20px;
 
-  .footer-column {
-    border-left: 1px dotted $color-grey-lighter;
-    display: inline-block;
-    padding: 0 2% 0 20px;
-    margin-top: 25px;
-    text-align: left;
-    vertical-align: top;
-    min-height: 100px;
+  .imh__container {
+    padding: 0;
+    top: 0;
+  }
+}
 
-    &:first-child {
-      border: none;
-    }
+.imh__footer-column {
+  border-right: 1px dotted $color-grey-lighter;
+  text-align: left;
+  vertical-align: top;
+  min-height: 118px;
 
-    h3 {
-      font-weight: bold;
-      margin: 5px 0 15px;
-      font-size: $thirteenpx;
-    }
+  h3 {
+    font-family: 'ralewaysemibold', $font-fallback;
+    font-weight: normal;
+    margin: 5px 0 15px;
+    font-size: $thirteenpx;
+  }
 
-    ul {
-      list-style: square inside none;
+  ul {
+    list-style: square inside none;
+  }
 
-      li {
-        margin-bottom: 4px;
-        white-space: nowrap;
+  li {
+    white-space: nowrap;
+    margin-bottom: -4px;
 
-        a, span {
-          color: $color-grey-medium;
-          font-size: $elevenpx;
-          font-family: Helvetica, Arial, sans-serif;
-          display: inline-block;
-          //height: 13px;
-          @include transition(all, 0.2s, ease-in, 0s);
+    a, span {
+      color: $color-grey-medium;
+      display: inline-block;
+      //height: 13px;
+      @include transition(all, 0.2s, ease-in, 0s);
 
-          &:hover {
-            color: $color-grey-dark;
-            //border-bottom: 1px dotted $color-grey-dark;
-          }
-        }
-
-        &.current {
-          list-style: none;
-          a, span {
-            color: $color-grey-dark;
-            background: $color-white;
-            border: 1px solid $color-grey-light;
-            border-radius: 16px;
-            //line-height: 13px;
-            padding: 6px 10px;
-          }
-        }
-
-        .fa-home {
-          display: none;
-        }
+      &:hover {
+        color: $color-grey-dark;
+        //border-bottom: 1px dotted $color-grey-dark;
       }
     }
 
-    &.site {
-      //padding-right: 30px;
+    a {
+      border: 1px solid transparent;
+      padding: 6px 0;
+    }
 
-      ul {
-        width: 175px;
-
-        li {
-          float: left;
-          width: 75px;
-          padding-right: 10px;
-
-          &:nth-child(even) {
-            padding-right: 0;
-          }
-
-          &.current {
-            //float: none;
-          }
-        }
+    &.current {
+      list-style: none;
+      a, span {
+        color: $color-grey-dark;
+        background: $color-white;
+        border: 1px solid $color-grey-light;
+        border-radius: 16px;
+        //line-height: 13px;
+        padding: 6px 14px;
       }
     }
+
+    .fa-home {
+      display: none;
+    }
+  }
+}
+
+.imh__footer-column--site {
+  //padding-right: 30px;
+
+  ul {
+    width: 175px;
+  }
+
+  li {
+    float: left;
+    //width: 87px;
+    padding-right: 10px;
+
+    &:nth-child(even) {
+      padding-right: 0;
+    }
+
+    &.current {
+      //float: none;
+    }
+  }
+}
 
 //    &.school {
 //      a {
@@ -114,73 +119,104 @@
 //      }
 //    }
 
-    &.follow {
-      .fb, .tw, .gp {
-        display: inline-block;
-        vertical-align: top;
-        margin-right: 7px;
-      }
-      .fb {
-        img {
-          background: url("/bundles/imhbase/images/sprite.png") no-repeat scroll -8px -131px;
-          height: 16px;
-          width: 8px;
-        }
-        &:hover {
-          img {
-            background-position: 0 -131px;
-          }
-        }
-      }
-      .tw {
-        img {
-          background: url("/bundles/imhbase/images/sprite.png") no-repeat scroll -34px -131px;
-          height: 16px;
-          width: 18px;
-        }
-        &:hover {
-          img {
-            background-position: -16px -131px;
-          }
-        }
-      }
-      .gp {
-        img {
-          background: url("/bundles/imhbase/images/sprite.png") no-repeat scroll -74px -131px;
-          height: 18px;
-          width: 22px;
-        }
-        &:hover {
-          img {
-            background-position: -52px -131px;
-          }
-        }
-      }
+.imh__footer-column--follow {
+  .fb, .tw, .gp {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 7px;
+  }
+  .fb {
+    img {
+      background: url("/bundles/imhbase/images/sprite.png") no-repeat scroll -8px -131px;
+      height: 16px;
+      width: 8px;
     }
-
-    &.powered {
-      a {
-        img {
-          background: url("/bundles/imhbase/images/sprite.png") no-repeat scroll -221px -131px;
-          width: 63px;
-          height: 61px;
-          display: block;
-        }
-        &:hover {
-          img {
-            background-position: -158px -131px;
-          }
-        }
+    &:hover {
+      img {
+        background-position: 0 -131px;
       }
     }
   }
-
-  p {
-    font-size: $elevenpx;
-    margin: 20px 0 0;
-
-    span {
-      font-size: $thirteenpx;
+  .tw {
+    img {
+      background: url("/bundles/imhbase/images/sprite.png") no-repeat scroll -34px -131px;
+      height: 16px;
+      width: 18px;
+    }
+    &:hover {
+      img {
+        background-position: -16px -131px;
+      }
+    }
+  }
+  .gp {
+    img {
+      background: url("/bundles/imhbase/images/sprite.png") no-repeat scroll -74px -131px;
+      height: 18px;
+      width: 22px;
+    }
+    &:hover {
+      img {
+        background-position: -52px -131px;
+      }
     }
   }
 }
+
+.imh__footer-column--powered {
+  border: none;
+
+  a {
+    display: block;
+    &:hover {
+      img {
+        background-position: -158px -131px;
+      }
+    }
+  }
+
+  img {
+    background: url("/bundles/imhbase/images/sprite.png") no-repeat scroll -221px -131px;
+    width: 63px;
+    height: 61px;
+  }
+}
+
+.imh__footer-rights {
+  font-size: $elevenpx;
+  margin-bottom: 15px;
+
+  span {
+    font-size: $fourteenpx;
+  }
+}
+
+// Media queries
+// ==================================================
+
+@media (max-width: $screen-xs-max) {
+  .imh__footer {
+    .imh__container {
+      padding: 0;
+    }
+  }
+
+  .imh__footer-column {
+    margin-top: 10px;
+    min-height: inherit;
+  }
+
+  .imh__footer-column--follow,
+  .imh__footer-column--powered {
+    text-align: center;
+  }
+}
+
+@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+  .imh__footer-column--follow {
+    border: none;
+  }
+}
+
+@media (min-width: $screen-md-min) and (max-width: $screen-md-max) {  }
+@media (min-width: $screen-lg-min) {  }

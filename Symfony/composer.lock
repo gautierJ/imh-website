@@ -5,6 +5,7 @@
         "This file is @generated automatically"
     ],
     "hash": "fb257b4f5c53d09649dbf059e1c02ee5",
+    "content-hash": "101c119f9a5cf7e9812e401671d07584",
     "packages": [
         {
             "name": "bmatzner/fontawesome-bundle",
@@ -1639,7 +1640,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/KnpLabs/KnpMenuBundle/zipball/5e7c44cb084b5c4f842f94ab443fb5dbb3f7a44c",
+                "url": "https://api.github.com/repos/KnpLabs/KnpMenuBundle/zipball/fc737a34ede1a0f8f9d1625fbbaa6c0474db19e1",
                 "reference": "7c0d579ca58f1c7cb3747a84b681fe273f00ffec",
                 "shasum": ""
             },

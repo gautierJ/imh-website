@@ -1,96 +1,114 @@
+@import "../../../../../../web/assets/lib/bower_components/css-hamburgers/_sass/hamburgers/hamburgers";
+@import "../../../../../../web/assets/lib/bootstrap/variables";
+@import "../../../../../../web/assets/lib/bootstrap/mixins";
+
 @import "variables";
 @import "mixins";
 
-#header {
-  .navigation {
-    background: url("/bundles/imhbase/images/header-bg.png") repeat rgba(255, 208, 247, 0.04);
-    border-bottom: 1px solid $color-grey-light;
-    border-top: 1px solid $color-white;
-    height: 126px;
+// Override default hamburger styles
+//============================================
+$hamburger-layer-color: $color-white;
 
-    .wrapper {
-      border-top: 1px solid $color-grey-darker;
-      border-bottom: 1px solid $color-grey-darker;
-      background: $color-white;
-      position:relative;
-      top: 27px;
-      margin: 0 auto;
-      max-width: 980px;
-      z-index: 2;
 
-      /*&:after {
-        position: absolute;
-        content: "";
-        right: 1px;
-        top: 0;
-        width: 0;
-        height: 0;
-        border-style: solid;
-        border-width: 0 20px 20px 0;
-        border-color: transparent $color-white transparent transparent;
-      }*/
+
+
+.imh__header {
+  @include make-row();
+}
+
+.imh__navigation {
+  background: url("/bundles/imhbase/images/header-bg.png") repeat rgba(255, 208, 247, 0.04);
+  border-bottom: 1px solid $color-grey-light;
+  border-top: 1px solid $color-white;
+  height: 126px;
+
+  .imh__container {
+    top: 27px;
+    margin: 0 auto;
+    z-index: 2;
+  }
+
+  ul {
+    border-top: 1px solid $color-grey-darker;
+    border-bottom: 1px solid $color-grey-darker;
+    background: $color-grey-darker;
+    text-align: center;
+  }
+
+  li {
+    display: inline-block;
+    position: relative;
+    top: -1px;
+    margin: 0 -1px -2px 0;
+    height: 64px;
+    z-index: 1;
+
+    a, span {
+      font-family: 'ralewaysemibold', $font-fallback;
+      color: $color-white;
+      font-size: $fourteenpx;
+      display: block;
+      padding: 0 20px;
+      text-transform: uppercase;
     }
 
-    ul {
-      background: $color-grey-darker;
-      text-align: center;
+    span {
+      height: 62px;
+      line-height: 64px;
+    }
 
-      li {
-        display: inline-block;
-        position: relative;
-        top: -1px;
-        margin: 0 -1px -2px 0;
-        height: 63px;
-        z-index: 1;
+    a {
+      border: 1px solid rgba(0, 0, 0, 0);
+      @include transition(all, 0.1s, ease-in, 0s);
+      height: 64px;
+      line-height: 64px;
 
-        a, span {
-          color: $color-white;
-          //font-family: "Georgia", Times, serif;
-          font-size: $fourteenpx;
-          display: block;
-          padding: 0 20px;
-          text-transform: uppercase;
-        }
-
-        span {
-          height: 62px;
-          line-height: 64px;
-        }
-
-        a {
-          border: 1px solid rgba(0, 0, 0, 0);
-          @include transition(all, 0.1s, ease-in, 0s);
-          height: 62px;
-          line-height: 64px;
-
-          &:hover {
-            background-color: $color-white;
-            color: $color-grey-darker;
-            border: 1px solid $color-grey-darker;
-          }
-        }
-
-        &.current {
-          background-color: $color-white;
-          border: 1px solid $color-grey-darker;
-          border-bottom: none;
-
-          span {
-            color: $color-grey-darker;
-            border-bottom-color: $color-white;
-          }
-        }
+      &:hover {
+        background-color: $color-white;
+        color: $color-grey-darker;
+        border: 1px solid $color-grey-darker;
       }
     }
 
-    .fa {
-      position: relative;
-      top: -2px;
-      vertical-align: middle;
+    &.current {
+      background-color: $color-white;
+      border: 1px solid $color-grey-darker;
+      border-bottom: none;
 
-      & + span {
-        display: none;
+      span {
+        color: $color-grey-darker;
+        border-bottom-color: $color-white;
       }
     }
   }
+
+  .fa {
+    position: relative;
+    top: -2px;
+    vertical-align: middle;
+
+    & + span {
+      display: none;
+    }
+  }
 }
+
+.hamburger { display: none; }
+
+// Media queries
+// ==================================================
+
+@media (max-width: $screen-xs-max) {
+  .imh__navigation {
+    .imh__container {
+      top: 0;
+      padding: 0;
+    }
+  }
+
+  .hamburger { display: inline-block; }
+}
+
+@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {  }
+@media (min-width: $screen-md-min) and (max-width: $screen-md-max) {  }
+@media (min-width: $screen-lg-min) {  }

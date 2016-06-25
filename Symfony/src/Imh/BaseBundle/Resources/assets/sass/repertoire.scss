@@ -1,87 +1,128 @@
+@import "../../../../../../web/assets/lib/bootstrap/bootstrap";
 @import "variables";
 @import "mixins";
 
-#content {
-  .main-content-wrapper {
-    .middle {
-      padding: 26px 60px 62px;
-      width: 100%;
-      min-height: 920px;
+.imh__container--wrapper {
+  padding: 26px 60px 62px;
+}
 
-      .title {
-        position: relative;
-        text-align: center;
-        font-family: "Georgia", Times, serif;
-        font-size: $sixteenpx;
-        font-weight: normal;
-        color: $color-grey-dark;
-        background-color: $color-grey-extremlight;
-        line-height: 40px;
-        margin: 0 0 20px;
-        text-transform: uppercase;
-        border: 1px solid $color-grey-light;
-      }
+.imh__repertoire {
+  @include make-row();
+}
+
+.imh__container-title {
+  font-family: 'ralewaymedium', $font-fallback;
+  position: relative;
+  text-align: center;
+  font-size: $fourteenpx;
+  font-weight: normal;
+  color: $color-grey-dark;
+  background-color: $color-grey-extremlight;
+  line-height: 40px;
+  margin: 0 0 20px;
+  text-transform: uppercase;
+  border: 1px solid $color-grey-light;
+}
+
+.imh__repertoire-wrapper {
+  margin-top: 60px;
+  font-size: $fourteenpx;
+
+  > div {
+    min-height: 240px;
+
+    /*&:nth-child(2n) {
+      padding-right: 0;
+    }*/
+  }
+}
+
+.imh__repertoire-image {
+  @include img-responsive();
+  @include box-shadow(0, 0, 9px, 1px, $color-grey-light);
+  border-radius: 50%;
+  border: 6px solid $color-white;
+}
+
+.imh__repertoire-description {
+
+  > p {
+    margin-top: 0;
+
+    &:first-child {
+      font-weight: bold;
+    }
+  }
+
+  p {
+    margin: 2px 0;
+
+    &.work {
+      font-size: $elevenpx;
+      margin: 10px 0;
+      text-transform: uppercase;
     }
 
-    .concert-wrapper {
-      font-family: "Georgia", Times, serif;
-      margin-top: 60px;
-      font-size: $fourteenpx;
-      padding: 0 3%;
-
-      li {
-        width: 47%;
-        float: left;
-        margin-bottom: 60px;
-        padding-right: 6%;
-
-        &:nth-child(2n) {
-          padding-right: 0;
-        }
-
-        img {
-          display: inline-block;
-          margin-right: 5%;
-          width: 45%;
-        }
-
-        .concert {
-          display: inline-block;
-          vertical-align: top;
-          width: 45%;
-
-          > p {
-            margin-top: 0;
-
-            &:first-child {
-              font-weight: bold;
-            }
-          }
-
-          p {
-            margin: 2px 0;
-
-            &.work {
-              font-size: $elevenpx;
-              margin: 10px 0;
-              text-transform: uppercase;
-            }
-
-            &.arrangement {
-              font-style: italic;
-            }
-          }
-
-          .duration {
-            font-style: italic;
-
-            p {
-              font-size: $tenpx;
-            }
-          }
-        }
-      }
+    &.arrangement {
+      font-style: italic;
     }
   }
 }
+
+.imh__repertoire-duration {
+  font-style: italic;
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+// Media queries
+// ==================================================
+
+@media (max-width: $screen-xs-max) {
+  .imh__container {
+    text-align: center;
+  }
+
+  .imh__container--wrapper {
+    padding: 0;
+    border-top-width: 15px;
+  }
+
+  .imh__container--shadows::after,
+  .imh__container--shadows::before {
+    display: none;
+  }
+
+  .imh__repertoire-col {
+    padding: 0;
+  }
+
+  .imh__repertoire-image {
+    display: inline-block;
+  }
+
+  .imh__repertoire-description {
+    padding: 20px 0 30px;
+    margin-bottom: 40px;
+    border-bottom: 1px dotted $color-grey-light;
+  }
+
+  .imh__repertoire-description--last {
+    border-bottom: 0;
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+  .imh__repertoire-col {
+    float: none;
+    display: table-cell;
+    vertical-align: middle;
+  }
+}
+
+@media (min-width: $screen-md-min) and (max-width: $screen-md-max) {  }
+@media (min-width: $screen-lg-min) {  }
+
+
 

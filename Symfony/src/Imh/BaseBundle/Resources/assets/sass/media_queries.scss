@@ -22,7 +22,7 @@ html.no-touchevents {
       }
     }
 
-    #sidebar-main, #trigger { display: none; }
+    .imh__sidebar, #trigger { display: none; }
 
     #content {
       #gallery-wrapper {
@@ -203,7 +203,7 @@ html.touchevents {
   @media only screen and (max-width: 800px)
                      and (max-aspect-ratio: 13/9) { //bugfix aspect ratio android = orientation: portrait
 
-    #sidebar-main, #trigger { display: none; }
+    .imh__sidebar, #trigger { display: none; }
 
     #header {
       .navigation {

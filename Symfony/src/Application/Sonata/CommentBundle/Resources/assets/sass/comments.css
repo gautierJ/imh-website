@@ -59,7 +59,7 @@
     margin: 0 auto; }
     #comment .box .fos_comment_comment_form_holder {
       background-color: white;
-      border: 1px solid lightgray;
+      border: 1px solid lightgrey;
       padding: 23px; }
       #comment .box .fos_comment_comment_form_holder #fos_comment_comment_body {
         border: 1px solid #898989; }
@@ -71,7 +71,7 @@
         font-size: 0.917em;
         color: #898989;
         padding: 5px 15px;
-        border: 1px solid lightgray;
+        border: 1px solid lightgrey;
         display: inline-block;
         -webkit-transition: all 0.2s ease 0s;
         -moz-transition: all 0.2s ease 0s;

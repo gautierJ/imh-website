@@ -1,162 +1,161 @@
+@import "../../../../../../../web/assets/lib/bootstrap/bootstrap";
 @import "../../../../../../Imh/BaseBundle/Resources/assets/sass/variables";
 @import "../../../../../../Imh/BaseBundle/Resources/assets/sass/mixins";
 
-#content {
+.imh__container {
   padding-bottom: 100px;
-  .main-content-wrapper {
-    .middle {
-      padding-bottom: 62px !important;
-    }
-  }
 }
 
-.middle {
-  .media-content {
-    width: 640px; //width: 763px;
-    margin: 0 auto;
-    min-height: 360px;
+.imh__container--wrapper {
+  padding-bottom: 62px;
+}
 
-    .media {
-      position: relative;
-      float: left;
-      width: 640px;
-      height: 360px;
+.media-content {
+  width: 640px; //width: 763px;
+  margin: 0 auto;
+  min-height: 360px;
 
-      .layer {
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 100%;
-        text-align: center;
-
-        a {
-          display: block;
-          height: 100%;
-          width: 100%;
-          cursor: default;
-
-          .play {
-            background: url("/bundles/imhbase/images/sprite.png") -1px -1px no-repeat;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            width: 78px;
-            height: 78px;
-            margin: -39px 0 0 -39px;
-            z-index: 1000;
-
-            &:hover {
-              background-position: -78px -1px;
-              cursor: pointer;
-            }
-          }
-        }
-      }
-
-      #ytplayer {
-        display: block;
-        visibility: hidden;
-      }
-
-      .progress-bar-wrapper {
-        @include opacity(0);
-
-        .progress-bar {
-          float: left;
-          height: 2px;
-          background-color: $color-grey-darker;
-          margin-top: 10px;
-
-          .advancement, .buffer {
-            height: 100%;
-            width: 0;
-          }
-
-          .advancement {
-            background-color: $color-brown-dark;
-          }
-
-          .buffer {
-            background-color: $color-brown-light;
-          }
-        }
-
-        .time {
-          float: right;
-          font-size: $elevenpx;
-          margin-top: 5px;
-          text-align: right;
-        }
-      }
-    }
-  }
-
-  .actions {
+  .media {
+    position: relative;
     float: left;
-    margin-left: 10px;
+    width: 640px;
+    height: 360px;
 
-    li {
-      margin-top: 10px;
-
-      &:first-child {
-        margin-top: 0;
-      }
+    .layer {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      text-align: center;
 
       a {
-        color: $color-grey-dark;
-        border: 1px solid $color-grey-dark;
-        /*background-color: rgb(250, 250, 250);
-        background-color: rgba(250, 250, 250, 0.3);*/
         display: block;
-        width: 111px;
-        height: 111px;
-        text-align: center;
-        line-height: 180px;
-        position: relative;
+        height: 100%;
+        width: 100%;
+        cursor: default;
 
-        &:hover {
-          background-color: $color-grey-darker;
-          color: $color-white;
-          border-color: $color-grey-darker;
-        }
-
-        img {
-          background: url("/bundles/imhbase/images/sprite.png") no-repeat;
-          display: inline-block;
-          height: 50px;
-          width: 50px;
+        .play {
+          background: url("/bundles/imhbase/images/sprite.png") -1px -1px no-repeat;
           position: absolute;
           top: 50%;
           left: 50%;
-          margin-top: -30px;
-          margin-left: -25px;
+          width: 78px;
+          height: 78px;
+          margin: -39px 0 0 -39px;
+          z-index: 1000;
+
+          &:hover {
+            background-position: -78px -1px;
+            cursor: pointer;
+          }
         }
       }
+    }
 
-      &.display {
-        a {
-          img { background-position: 0 -192px; }
-          &:hover img { background-position: -150px -192px; }
-        }
+    #ytplayer {
+      display: block;
+      visibility: hidden;
+    }
+
+    .progress-bar-wrapper {
+      @include opacity(0);
+    }
+
+    .progress-bar {
+      float: left;
+      height: 2px;
+      background-color: $color-grey-darker;
+      margin-top: 10px;
+
+      .advancement, .buffer {
+        height: 100%;
+        width: 0;
       }
 
-      &.like {
-        a {
-          img { background-position: -50px -192px; }
-          &:hover img { background-position: -200px -192px; }
-        }
+      .advancement {
+        background-color: $color-brown-dark;
       }
 
-      &.download {
-        a {
-          img { background-position: -100px -192px; }
-          &:hover img { background-position: -250px -192px; }
-        }
+      .buffer {
+        background-color: $color-brown-light;
+      }
+    }
+
+    .time {
+      float: right;
+      font-size: $ninepx;
+      margin-top: 3px;
+      text-align: right;
+    }
+  }
+}
+
+.actions {
+  float: left;
+  margin-left: 10px;
+
+  li {
+    margin-top: 10px;
+
+    &:first-child {
+      margin-top: 0;
+    }
+
+    a {
+      color: $color-grey-dark;
+      border: 1px solid $color-grey-dark;
+      /*background-color: rgb(250, 250, 250);
+      background-color: rgba(250, 250, 250, 0.3);*/
+      display: block;
+      width: 111px;
+      height: 111px;
+      text-align: center;
+      line-height: 180px;
+      position: relative;
+
+      &:hover {
+        background-color: $color-grey-darker;
+        color: $color-white;
+        border-color: $color-grey-darker;
+      }
+
+      img {
+        background: url("/bundles/imhbase/images/sprite.png") no-repeat;
+        display: inline-block;
+        height: 50px;
+        width: 50px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -30px;
+        margin-left: -25px;
+      }
+    }
+
+    &.display {
+      a {
+        img { background-position: 0 -192px; }
+        &:hover img { background-position: -150px -192px; }
+      }
+    }
+
+    &.like {
+      a {
+        img { background-position: -50px -192px; }
+        &:hover img { background-position: -200px -192px; }
+      }
+    }
+
+    &.download {
+      a {
+        img { background-position: -100px -192px; }
+        &:hover img { background-position: -250px -192px; }
       }
     }
   }
 }
+
 
 .player-control-bar {
   border-top: 1px solid $color-grey-light;

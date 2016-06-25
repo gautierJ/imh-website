@@ -1,0 +1,282 @@
+/*!
+ * Hamburgers
+ * @description Tasty CSS-animated hamburgers
+ * @author Jonathan Suh @jonsuh
+ * @site https://jonsuh.com/hamburgers
+ * @link https://github.com/jonsuh/hamburgers
+ */
+/* line 3, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bower_components/css-hamburgers/_sass/hamburgers/_base.scss */
+.hamburger {
+  padding: 15px 15px;
+  display: inline-block;
+  cursor: pointer;
+  transition-property: opacity, filter;
+  transition-duration: 0.15s;
+  transition-timing-function: linear;
+  font: inherit;
+  color: inherit;
+  text-transform: none;
+  background-color: transparent;
+  border: 0;
+  margin: 0;
+  overflow: visible;
+}
+/* line 21, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bower_components/css-hamburgers/_sass/hamburgers/_base.scss */
+.hamburger:hover {
+  opacity: 0.7;
+}
+
+/* line 31, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bower_components/css-hamburgers/_sass/hamburgers/_base.scss */
+.hamburger-box {
+  width: 40px;
+  height: 24px;
+  display: inline-block;
+  position: relative;
+}
+
+/* line 38, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bower_components/css-hamburgers/_sass/hamburgers/_base.scss */
+.hamburger-inner {
+  display: block;
+  top: 50%;
+  margin-top: -2px;
+}
+/* line 45, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bower_components/css-hamburgers/_sass/hamburgers/_base.scss */
+.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+  width: 40px;
+  height: 4px;
+  background-color: black;
+  border-radius: 4px;
+  position: absolute;
+  transition-property: transform;
+  transition-duration: 0.15s;
+  transition-timing-function: ease;
+}
+/* line 57, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bower_components/css-hamburgers/_sass/hamburgers/_base.scss */
+.hamburger-inner::before, .hamburger-inner::after {
+  content: "";
+  display: block;
+}
+/* line 62, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bower_components/css-hamburgers/_sass/hamburgers/_base.scss */
+.hamburger-inner::before {
+  top: -10px;
+}
+/* line 66, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bower_components/css-hamburgers/_sass/hamburgers/_base.scss */
+.hamburger-inner::after {
+  bottom: -10px;
+}
+
+/*@import "../../../../Resources/assets/sass/types/3dx";
+@import "../../../../Resources/assets/sass/types/3dx-r";
+@import "../../../../Resources/assets/sass/types/3dy";
+@import "../../../../Resources/assets/sass/types/3dy-r";
+@import "../../../../Resources/assets/sass/types/arrow";
+@import "../../../../Resources/assets/sass/types/arrow-r";
+@import "../../../../Resources/assets/sass/types/arrowalt";
+@import "../../../../Resources/assets/sass/types/arrowalt-r";
+@import "../../../../Resources/assets/sass/types/boring";*/
+/*
+ * Collapse
+ */
+/* line 6, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bower_components/css-hamburgers/_sass/hamburgers/types/_collapse.scss */
+.hamburger--collapse .hamburger-inner {
+  top: auto;
+  bottom: 0;
+  transition-duration: 0.15s;
+  transition-delay: 0.15s;
+  transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+/* line 13, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bower_components/css-hamburgers/_sass/hamburgers/types/_collapse.scss */
+.hamburger--collapse .hamburger-inner::after {
+  top: -20px;
+  transition: top 0.3s 0.3s cubic-bezier(0.33333, 0.66667, 0.66667, 1), opacity 0.1s linear;
+}
+/* line 19, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bower_components/css-hamburgers/_sass/hamburgers/types/_collapse.scss */
+.hamburger--collapse .hamburger-inner::before {
+  transition: top 0.12s 0.3s cubic-bezier(0.33333, 0.66667, 0.66667, 1), transform 0.15s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+/* line 26, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bower_components/css-hamburgers/_sass/hamburgers/types/_collapse.scss */
+.hamburger--collapse.is-active .hamburger-inner {
+  transform: translate3d(0, -10px, 0) rotate(-45deg);
+  transition-delay: 0.32s;
+  transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+/* line 31, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bower_components/css-hamburgers/_sass/hamburgers/types/_collapse.scss */
+.hamburger--collapse.is-active .hamburger-inner::after {
+  top: 0;
+  opacity: 0;
+  transition: top 0.3s cubic-bezier(0.33333, 0, 0.66667, 0.33333), opacity 0.1s 0.27s linear;
+}
+/* line 38, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bower_components/css-hamburgers/_sass/hamburgers/types/_collapse.scss */
+.hamburger--collapse.is-active .hamburger-inner::before {
+  top: 0;
+  transform: rotate(-90deg);
+  transition: top 0.12s 0.18s cubic-bezier(0.33333, 0, 0.66667, 0.33333), transform 0.15s 0.42s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+/*
+ * Collapse Reverse
+ */
+/* line 6, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bower_components/css-hamburgers/_sass/hamburgers/types/_collapse-r.scss */
+.hamburger--collapse-r .hamburger-inner {
+  top: auto;
+  bottom: 0;
+  transition-duration: 0.15s;
+  transition-delay: 0.15s;
+  transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+/* line 13, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bower_components/css-hamburgers/_sass/hamburgers/types/_collapse-r.scss */
+.hamburger--collapse-r .hamburger-inner::after {
+  top: -20px;
+  transition: top 0.3s 0.3s cubic-bezier(0.33333, 0.66667, 0.66667, 1), opacity 0.1s linear;
+}
+/* line 19, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bower_components/css-hamburgers/_sass/hamburgers/types/_collapse-r.scss */
+.hamburger--collapse-r .hamburger-inner::before {
+  transition: top 0.12s 0.3s cubic-bezier(0.33333, 0.66667, 0.66667, 1), transform 0.15s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+/* line 26, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bower_components/css-hamburgers/_sass/hamburgers/types/_collapse-r.scss */
+.hamburger--collapse-r.is-active .hamburger-inner {
+  transform: translate3d(0, -10px, 0) rotate(45deg);
+  transition-delay: 0.32s;
+  transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+/* line 31, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bower_components/css-hamburgers/_sass/hamburgers/types/_collapse-r.scss */
+.hamburger--collapse-r.is-active .hamburger-inner::after {
+  top: 0;
+  opacity: 0;
+  transition: top 0.3s cubic-bezier(0.33333, 0, 0.66667, 0.33333), opacity 0.1s 0.27s linear;
+}
+/* line 38, ../home/gautier/Projects/imh-website/Symfony/web/assets/lib/bower_components/css-hamburgers/_sass/hamburgers/types/_collapse-r.scss */
+.hamburger--collapse-r.is-active .hamburger-inner::before {
+  top: 0;
+  transform: rotate(90deg);
+  transition: top 0.12s 0.18s cubic-bezier(0.33333, 0, 0.66667, 0.33333), transform 0.15s 0.42s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+/*@import "../../../../Resources/assets/sass/types/elastic";
+@import "../../../../Resources/assets/sass/types/elastic-r";
+@import "../../../../Resources/assets/sass/types/emphatic";
+@import "../../../../Resources/assets/sass/types/emphatic-r";
+@import "../../../../Resources/assets/sass/types/slider";
+@import "../../../../Resources/assets/sass/types/slider-r";
+@import "../../../../Resources/assets/sass/types/spring";
+@import "../../../../Resources/assets/sass/types/spring-r";
+@import "../../../../Resources/assets/sass/types/stand";
+@import "../../../../Resources/assets/sass/types/stand-r";
+@import "../../../../Resources/assets/sass/types/spin";
+@import "../../../../Resources/assets/sass/types/spin-r";
+@import "../../../../Resources/assets/sass/types/squeeze";
+@import "../../../../Resources/assets/sass/types/vortex";
+@import "../../../../Resources/assets/sass/types/vortex-r";*/
+/* line 15, assetic_compassAYGmtK.scss */
+.imh__header {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+/* line 3, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_mixins.scss */
+.imh__header:before, .imh__header:after {
+  content: " ";
+  display: table;
+}
+/* line 7, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_mixins.scss */
+.imh__header:after {
+  clear: both;
+}
+
+/* line 19, assetic_compassAYGmtK.scss */
+.imh__navigation {
+  background: url("/bundles/imhbase/images/header-bg.png") repeat rgba(255, 208, 247, 0.04);
+  border-bottom: 1px solid lightgrey;
+  border-top: 1px solid white;
+  height: 126px;
+}
+/* line 25, assetic_compassAYGmtK.scss */
+.imh__navigation .imh__container {
+  top: 27px;
+  margin: 0 auto;
+  z-index: 2;
+}
+/* line 31, assetic_compassAYGmtK.scss */
+.imh__navigation ul {
+  border-top: 1px solid #222222;
+  border-bottom: 1px solid #222222;
+  background: #222222;
+  text-align: center;
+}
+/* line 38, assetic_compassAYGmtK.scss */
+.imh__navigation li {
+  display: inline-block;
+  position: relative;
+  top: -1px;
+  margin: 0 -1px -2px 0;
+  height: 64px;
+  z-index: 1;
+}
+/* line 46, assetic_compassAYGmtK.scss */
+.imh__navigation li a, .imh__navigation li span {
+  font-family: "ralewaysemibold", Arial, Helvetica, sans-serif;
+  color: white;
+  font-size: 1.167em;
+  display: block;
+  padding: 0 20px;
+  text-transform: uppercase;
+}
+/* line 55, assetic_compassAYGmtK.scss */
+.imh__navigation li span {
+  height: 62px;
+  line-height: 64px;
+}
+/* line 60, assetic_compassAYGmtK.scss */
+.imh__navigation li a {
+  border: 1px solid rgba(0, 0, 0, 0);
+  -webkit-transition: all 0.1s ease-in 0s;
+  -moz-transition: all 0.1s ease-in 0s;
+  -o-transition: all 0.1s ease-in 0s;
+  transition: all 0.1s ease-in 0s;
+  height: 64px;
+  line-height: 64px;
+}
+/* line 66, assetic_compassAYGmtK.scss */
+.imh__navigation li a:hover {
+  background-color: white;
+  color: #222222;
+  border: 1px solid #222222;
+}
+/* line 73, assetic_compassAYGmtK.scss */
+.imh__navigation li.current {
+  background-color: white;
+  border: 1px solid #222222;
+  border-bottom: none;
+}
+/* line 78, assetic_compassAYGmtK.scss */
+.imh__navigation li.current span {
+  color: #222222;
+  border-bottom-color: white;
+}
+/* line 85, assetic_compassAYGmtK.scss */
+.imh__navigation .fa {
+  position: relative;
+  top: -2px;
+  vertical-align: middle;
+}
+/* line 90, assetic_compassAYGmtK.scss */
+.imh__navigation .fa + span {
+  display: none;
+}
+
+/* line 96, assetic_compassAYGmtK.scss */
+.hamburger {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  /* line 103, assetic_compassAYGmtK.scss */
+  .imh__navigation .imh__container {
+    top: 0;
+    padding: 0;
+  }
+
+  /* line 109, assetic_compassAYGmtK.scss */
+  .hamburger {
+    display: inline-block;
+  }
+}

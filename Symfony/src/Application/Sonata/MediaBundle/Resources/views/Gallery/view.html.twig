@@ -12,8 +12,7 @@
     {% endstylesheets %}
 {% endblock %}
 
-{% block header %}{% endblock %}
-{% block navigation %}{% endblock %}
+{% block header '' %}
 
 {% block main %}
     <div id="gallery-wrapper" class="loading">
@@ -56,8 +55,8 @@
     </div>
 {% endblock %}
 
-{% block sidebar %}{% endblock %}
-{% block footer %}{% endblock %}
+{% block sidebar '' %}
+{% block footer '' %}
 
 {% block javascripts %}
     {{ parent() }}

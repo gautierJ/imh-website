@@ -30,64 +30,59 @@
             <link rel="stylesheet" href="{{ asset('bundles/bmatznerfontawesome/css/font-awesome.min.css') }}" type="text/css" />
 
             {% stylesheets output='assets/compiled/css/main.css' filter='compass, cssrewrite'
-            '@ImhBaseBundle/Resources/assets/sass/media_queries.scss'
-            '@ImhBaseBundle/Resources/assets/sass/fonts.scss'
-            '@ImhBaseBundle/Resources/assets/sass/global.scss'
-            '@ImhBaseBundle/Resources/assets/sass/sidebar.scss'
-            '@ImhBaseBundle/Resources/assets/sass/navigation.scss'
-            '@ImhBaseBundle/Resources/assets/sass/lang.scss'
-            '@ImhBaseBundle/Resources/assets/sass/footer.scss'
+                '@ImhBaseBundle/Resources/assets/sass/fonts.scss'
+                '@ImhBaseBundle/Resources/assets/sass/global.scss'
+                '@ImhBaseBundle/Resources/assets/sass/sidebar.scss'
+                '@ImhBaseBundle/Resources/assets/sass/navigation.scss'
+                '@ImhBaseBundle/Resources/assets/sass/lang.scss'
+                '@ImhBaseBundle/Resources/assets/sass/footer.scss'
             %}
             <link rel="stylesheet" href="{{ asset_url }}" type="text/css"/>
             {% endstylesheets %}
         {% endblock %}
     </head>
 
-    {% block body %}
-        <body>
-            {% block facebookSDK %}{% endblock %}
+    <body>
+        {% block facebookSDK '' %}
+        {% block flashes '' %}
 
-            {% block flashes %}{% endblock %}
-
-            <div id="wrapper">
-                {% block header %}
-                    <header id="header">
-                        {% include 'ImhBaseBundle:Menu:navigation.html.twig' %}
-                    </header>
-                {% endblock %}
-
-                <section id="content">
-                    {% block main %}{% endblock %}
-                </section>
-
-                {% block sidebar %}
-                    {% include 'ImhBaseBundle:Part:sidebar.html.twig' %}
-                {% endblock %}
-
-                {% block footer %}
-                    {% include 'ImhBaseBundle:Part:footer.html.twig' %}
-                {% endblock %}
-            </div>
-
-            {% block javascripts %}
-                <script src="{{ asset('/assets/lib/analytics/ga.js') }}"></script>
-                <script src="{{ asset('/assets/lib/jQuery/jquery.min.js') }}"></script>
-                <script src="{{ asset('/assets/lib/jQuery/jquery.easing.1.3.js') }}"></script>
-                <script src="{{ asset('/assets/lib/lazyload/jquery.lazyload.min.js') }}"></script>
-                <script src="{{ asset('/assets/lib/modernizr/modernizr-custom.js') }}"></script>
-
-                {#FOSJsRoutingBundle#}
-                <script src="{{ asset('bundles/fosjsrouting/js/router.js') }}"></script>
-                <script src="{{ path('fos_js_routing_js', {"callback": "fos.Router.setData"}) }}"></script>
-
-                {% javascripts output='assets/compiled/js/fontspy.js'
-                '@ImhBaseBundle/Resources/assets/js/jquery.fontspy.js'
-                %}
-
-                {#'@ImhBaseBundle/Resources/assets/js/_jquery.ajax.js'#}
-                <script type="text/javascript" src="{{ asset_url }}"></script>
-                {% endjavascripts %}
+        <div class="container-fluid imh__container-fluid">
+            {% block header %}
+                <header class="imh__header" role="navigation">
+                    {% include 'ImhBaseBundle:Menu:navigation.html.twig' %}
+                </header>
             {% endblock %}
-        </body>
-    {% endblock %}
+
+            <section class="imh__content" role="main">
+                {% block main '' %}
+            </section>
+
+            {% block sidebar %}
+                {% include 'ImhBaseBundle:Part:sidebar.html.twig' %}
+            {% endblock %}
+
+            {% block footer %}
+                {% include 'ImhBaseBundle:Part:footer.html.twig' %}
+            {% endblock %}
+        </div>
+
+        {% block javascripts %}
+            {% javascripts output='assets/compiled/js/main.js'
+                'assets/lib/analytics/ga.js'
+                'assets/lib/jQuery/jquery.min.js'
+                'assets/lib/jQuery/jquery.easing.1.3.js'
+                'assets/lib/lazyload/jquery.lazyload.min.js'
+                'assets/lib/modernizr/modernizr-custom.js'
+                '@ImhBaseBundle/Resources/assets/js/jquery.fontspy.js'
+            %}
+
+            {#FOSJsRoutingBundle#}
+            <script src="{{ asset('bundles/fosjsrouting/js/router.js') }}"></script>
+            <script src="{{ path('fos_js_routing_js', {"callback": "fos.Router.setData"}) }}"></script>
+
+            {#'@ImhBaseBundle/Resources/assets/js/_jquery.ajax.js'#}
+            <script type="text/javascript" src="{{ asset_url }}"></script>
+            {% endjavascripts %}
+        {% endblock %}
+    </body>
 </html>

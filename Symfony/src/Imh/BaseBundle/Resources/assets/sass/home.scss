@@ -1,27 +1,31 @@
 @import "variables";
 @import "mixins";
 
-#home-content {
+// Font Spy
+// ==================================================
+
+.hideMe {
+  visibility: hidden !important;
+}
+
+.fontFail {
+  visibility: visible !important;
+  /* fall back font */
+  /* necessary styling so fallback font doesn't break your layout */
+}
+
+.georgia {
+  color: $color-black !important;
+  font-family: "Georgia", Times, serif !important;
+}
+
+// End Font Spy
+// ==================================================
+
+.imh__content--home {
   height: 100%;
   width: 100%;
   overflow: hidden;
-
-  /*********** Font Spy ***********/
-  .hideMe {
-    visibility: hidden !important;
-  }
-
-  .fontFail {
-    visibility: visible !important;
-    /* fall back font */
-    /* necessary styling so fallback font doesn't break your layout */
-  }
-
-  .georgia {
-    color: #000000 !important;
-    font-family: "Georgia", Times, serif !important;
-  }
-  /********* End Font Spy *********/
 
   .bkg-image-ctn {
     display: inline-block;
@@ -38,7 +42,6 @@
       /*height: 100%;*/
       width: auto;
       z-index: 0;
-
       @include opacity(0);
 
       &:first-child {
@@ -78,7 +81,7 @@
     }
 
     h1, h2, h3 {
-      font-family: cinzelregular;
+      font-family: cinzelregular, $font-fallback;
       text-transform: uppercase;
       line-height: 1.1em;
       color: $color-black;
@@ -185,7 +188,6 @@
         -webkit-transition: none !important;
         -moz-transition: none !important;
         -o-transition: none !important;
-        -ms-transition: none !important;
         transition: none !important;
       }
     }
@@ -295,7 +297,7 @@
       }
 
       .wrap-loader {
-        background-color: none;
+        background: none;
         position: relative;
         margin: 15px 0 24px;
 

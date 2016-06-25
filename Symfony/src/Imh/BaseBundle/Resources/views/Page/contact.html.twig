@@ -27,44 +27,52 @@
 {% endblock %}
 
 {% block main %}
-    <div class="main-content-wrapper">
-        <section class="middle shadows">
-            <nav class="lang">
+    <div class="container imh__container">
+        <section class="imh__container--wrapper imh__container--shadows">
+            <nav class="imh__lang">
                 {% include 'ImhBaseBundle:Menu:lang.html.twig' %}
             </nav>
 
             <p>{{ 'imh.base.contact.answer'|trans }}</p>
 
-            {{ form_start(form, {'attr': {'id': 'form-contact'}}) }}
+            {{ form_start(form, {'attr': {'class': 'imh__contact-form'}}) }}
                 {{ form_errors(form) }}
 
-                <div class="clearfix">
-                    <div class="contact-info">
+                <div class="row imh__contact">
+                    <div class="col-xs-24 col-sm-12 imh__contact-info">
                         {{ form_row(form.lastName) }}
                         {{ form_row(form.firstName) }}
                         {{ form_row(form.email) }}
                         {{ form_row(form.subject) }}
                     </div>
-                    <div class="contact-message ">
+                    <div class="col-xs-24 col-sm-12 imh__contact-message ">
                         {{ form_label(form.message) }}{{ form_errors(form.message) }}{{ form_widget(form.message) }}
                     </div>
                 </div>
-                <p>* {{ 'imh.base.contact.mandatory'|trans }}</p>
-                <div class="send">
-                    {{ form_row(form.send) }}
+                <div class="row">
+                    <div class="col-xs-24">
+                        <p class="imh__contact-mandatory">* {{ 'imh.base.contact.mandatory'|trans }}</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-24">
+                        <div class="imh__contact-message-send">
+                            {{ form_row(form.send) }}
+                        </div>
+                    </div>
                 </div>
             {{ form_end(form) }}
         </section>
     </div>
 {% endblock %}
 
-{% block sidebar %}{% endblock %}
+{% block sidebar '' %}
 
 {% block javascripts %}
     {{ parent() }}
 
     {% javascripts output='assets/compiled/js/contact.js'
-    '@ImhBaseBundle/Resources/assets/js/jquery.imh.scrollmove.js'
+        '@ImhBaseBundle/Resources/assets/js/jquery.imh.scrollmove.js'
     %}
     <script type="text/javascript" src="{{ asset_url }}"></script>
     {% endjavascripts %}

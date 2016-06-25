@@ -1,71 +1,205 @@
-#header .navigation {
+/*!
+ * Hamburgers
+ * @description Tasty CSS-animated hamburgers
+ * @author Jonathan Suh @jonsuh
+ * @site https://jonsuh.com/hamburgers
+ * @link https://github.com/jonsuh/hamburgers
+ */
+.hamburger {
+  padding: 15px 15px;
+  display: inline-block;
+  cursor: pointer;
+  transition-property: opacity, filter;
+  transition-duration: 0.15s;
+  transition-timing-function: linear;
+  font: inherit;
+  color: inherit;
+  text-transform: none;
+  background-color: transparent;
+  border: 0;
+  margin: 0;
+  overflow: visible; }
+  .hamburger:hover {
+    opacity: 0.7; }
+
+.hamburger-box {
+  width: 40px;
+  height: 24px;
+  display: inline-block;
+  position: relative; }
+
+.hamburger-inner {
+  display: block;
+  top: 50%;
+  margin-top: -2px; }
+  .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+    width: 40px;
+    height: 4px;
+    background-color: black;
+    border-radius: 4px;
+    position: absolute;
+    transition-property: transform;
+    transition-duration: 0.15s;
+    transition-timing-function: ease; }
+  .hamburger-inner::before, .hamburger-inner::after {
+    content: "";
+    display: block; }
+  .hamburger-inner::before {
+    top: -10px; }
+  .hamburger-inner::after {
+    bottom: -10px; }
+
+/*@import "types/3dx";
+@import "types/3dx-r";
+@import "types/3dy";
+@import "types/3dy-r";
+@import "types/arrow";
+@import "types/arrow-r";
+@import "types/arrowalt";
+@import "types/arrowalt-r";
+@import "types/boring";*/
+/*
+ * Collapse
+ */
+.hamburger--collapse .hamburger-inner {
+  top: auto;
+  bottom: 0;
+  transition-duration: 0.15s;
+  transition-delay: 0.15s;
+  transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19); }
+  .hamburger--collapse .hamburger-inner::after {
+    top: -20px;
+    transition: top 0.3s 0.3s cubic-bezier(0.33333, 0.66667, 0.66667, 1), opacity 0.1s linear; }
+  .hamburger--collapse .hamburger-inner::before {
+    transition: top 0.12s 0.3s cubic-bezier(0.33333, 0.66667, 0.66667, 1), transform 0.15s cubic-bezier(0.55, 0.055, 0.675, 0.19); }
+.hamburger--collapse.is-active .hamburger-inner {
+  transform: translate3d(0, -10px, 0) rotate(-45deg);
+  transition-delay: 0.32s;
+  transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }
+  .hamburger--collapse.is-active .hamburger-inner::after {
+    top: 0;
+    opacity: 0;
+    transition: top 0.3s cubic-bezier(0.33333, 0, 0.66667, 0.33333), opacity 0.1s 0.27s linear; }
+  .hamburger--collapse.is-active .hamburger-inner::before {
+    top: 0;
+    transform: rotate(-90deg);
+    transition: top 0.12s 0.18s cubic-bezier(0.33333, 0, 0.66667, 0.33333), transform 0.15s 0.42s cubic-bezier(0.215, 0.61, 0.355, 1); }
+
+/*
+ * Collapse Reverse
+ */
+.hamburger--collapse-r .hamburger-inner {
+  top: auto;
+  bottom: 0;
+  transition-duration: 0.15s;
+  transition-delay: 0.15s;
+  transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19); }
+  .hamburger--collapse-r .hamburger-inner::after {
+    top: -20px;
+    transition: top 0.3s 0.3s cubic-bezier(0.33333, 0.66667, 0.66667, 1), opacity 0.1s linear; }
+  .hamburger--collapse-r .hamburger-inner::before {
+    transition: top 0.12s 0.3s cubic-bezier(0.33333, 0.66667, 0.66667, 1), transform 0.15s cubic-bezier(0.55, 0.055, 0.675, 0.19); }
+.hamburger--collapse-r.is-active .hamburger-inner {
+  transform: translate3d(0, -10px, 0) rotate(45deg);
+  transition-delay: 0.32s;
+  transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }
+  .hamburger--collapse-r.is-active .hamburger-inner::after {
+    top: 0;
+    opacity: 0;
+    transition: top 0.3s cubic-bezier(0.33333, 0, 0.66667, 0.33333), opacity 0.1s 0.27s linear; }
+  .hamburger--collapse-r.is-active .hamburger-inner::before {
+    top: 0;
+    transform: rotate(90deg);
+    transition: top 0.12s 0.18s cubic-bezier(0.33333, 0, 0.66667, 0.33333), transform 0.15s 0.42s cubic-bezier(0.215, 0.61, 0.355, 1); }
+
+/*@import "types/elastic";
+@import "types/elastic-r";
+@import "types/emphatic";
+@import "types/emphatic-r";
+@import "types/slider";
+@import "types/slider-r";
+@import "types/spring";
+@import "types/spring-r";
+@import "types/stand";
+@import "types/stand-r";
+@import "types/spin";
+@import "types/spin-r";
+@import "types/squeeze";
+@import "types/vortex";
+@import "types/vortex-r";*/
+.imh__header {
+  margin-left: -15px;
+  margin-right: -15px; }
+  .imh__header:before, .imh__header:after {
+    content: " ";
+    display: table; }
+  .imh__header:after {
+    clear: both; }
+
+.imh__navigation {
   background: url("/bundles/imhbase/images/header-bg.png") repeat rgba(255, 208, 247, 0.04);
-  border-bottom: 1px solid #D3D3D3;
-  border-top: 1px solid #FFFFFF;
+  border-bottom: 1px solid lightgrey;
+  border-top: 1px solid white;
   height: 126px; }
-  #header .navigation .wrapper {
-    border-top: 1px solid #222222;
-    border-bottom: 1px solid #222222;
-    background: #FFFFFF;
-    position: relative;
+  .imh__navigation .imh__container {
     top: 27px;
     margin: 0 auto;
-    max-width: 980px;
-    z-index: 2;
-    /*&:after {
-      position: absolute;
-      content: "";
-      right: 1px;
-      top: 0;
-      width: 0;
-      height: 0;
-      border-style: solid;
-      border-width: 0 20px 20px 0;
-      border-color: transparent $color-white transparent transparent;
-    }*/ }
-  #header .navigation ul {
+    z-index: 2; }
+  .imh__navigation ul {
+    border-top: 1px solid #222222;
+    border-bottom: 1px solid #222222;
     background: #222222;
     text-align: center; }
-    #header .navigation ul li {
-      display: inline-block;
-      position: relative;
-      top: -1px;
-      margin: 0 -1px -2px 0;
-      height: 63px;
-      z-index: 1; }
-      #header .navigation ul li a, #header .navigation ul li span {
-        color: #FFFFFF;
-        font-size: 1.167em;
-        display: block;
-        padding: 0 20px;
-        text-transform: uppercase; }
-      #header .navigation ul li span {
-        height: 62px;
-        line-height: 64px; }
-      #header .navigation ul li a {
-        border: 1px solid transparent;
-        -webkit-transition: all 0.1s ease-in 0s;
-        -moz-transition: all 0.1s ease-in 0s;
-        -o-transition: all 0.1s ease-in 0s;
-        transition: all 0.1s ease-in 0s;
-        height: 62px;
-        line-height: 64px; }
-        #header .navigation ul li a:hover {
-          background-color: #FFFFFF;
-          color: #222222;
-          border: 1px solid #222222; }
-      #header .navigation ul li.current {
-        background-color: #FFFFFF;
-        border: 1px solid #222222;
-        border-bottom: none; }
-        #header .navigation ul li.current span {
-          color: #222222;
-          border-bottom-color: #FFFFFF; }
-  #header .navigation .fa {
+  .imh__navigation li {
+    display: inline-block;
+    position: relative;
+    top: -1px;
+    margin: 0 -1px -2px 0;
+    height: 64px;
+    z-index: 1; }
+    .imh__navigation li a, .imh__navigation li span {
+      font-family: "ralewaysemibold", Arial, Helvetica, sans-serif;
+      color: white;
+      font-size: 1.167em;
+      display: block;
+      padding: 0 20px;
+      text-transform: uppercase; }
+    .imh__navigation li span {
+      height: 62px;
+      line-height: 64px; }
+    .imh__navigation li a {
+      border: 1px solid rgba(0, 0, 0, 0);
+      -webkit-transition: all 0.1s ease-in 0s;
+      -moz-transition: all 0.1s ease-in 0s;
+      -o-transition: all 0.1s ease-in 0s;
+      transition: all 0.1s ease-in 0s;
+      height: 64px;
+      line-height: 64px; }
+      .imh__navigation li a:hover {
+        background-color: white;
+        color: #222222;
+        border: 1px solid #222222; }
+    .imh__navigation li.current {
+      background-color: white;
+      border: 1px solid #222222;
+      border-bottom: none; }
+      .imh__navigation li.current span {
+        color: #222222;
+        border-bottom-color: white; }
+  .imh__navigation .fa {
     position: relative;
     top: -2px;
     vertical-align: middle; }
-    #header .navigation .fa + span {
+    .imh__navigation .fa + span {
       display: none; }
 
-/*# sourceMappingURL=navigation.css.map */
+.hamburger {
+  display: none; }
+
+@media (max-width: 767px) {
+  .imh__navigation .imh__container {
+    top: 0;
+    padding: 0; }
+
+  .hamburger {
+    display: inline-block; } }

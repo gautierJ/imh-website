@@ -27,9 +27,9 @@
     {{ parent() }}
 
     {% stylesheets output='assets/compiled/css/video.css' filter='compass'
-    '@ApplicationSonataMediaBundle/Resources/assets/sass/video_player.scss'
-    '@ImhBaseBundle/Resources/assets/sass/jquery.nouislider.scss'
-    '@ApplicationSonataCommentBundle/Resources/assets/sass/comments.scss'
+        '@ApplicationSonataMediaBundle/Resources/assets/sass/video_player.scss'
+        '@ImhBaseBundle/Resources/assets/sass/jquery.nouislider.scss'
+        '@ApplicationSonataCommentBundle/Resources/assets/sass/comments.scss'
     %}
     <link rel="stylesheet" href="{{ asset_url }}" type="text/css"/>
     {% endstylesheets %}
@@ -66,14 +66,14 @@
 {% endblock %}
 
 {% block main %}
-    <img id="bkg-image" class="lazy" data-original="{{ asset('bundles/imhbase/images/notes.jpg') }}" />
+    <img class="imh__bkg-image lazy" data-original="{{ asset('bundles/imhbase/images/notes.jpg') }}" />
     <noscript><img src="{{ asset('bundles/imhbase/images/notes.jpg') }}" alt="Score"></noscript>
 
-    <div class="main-content-wrapper">
-        <section class="middle shadows gradient">
+    <div class="container imh__container">
+        <section class="imh__container--wrapper imh__container--shadows imh__container--gradient">
             <a class="bio" href="{{ path('sonata_media_download', {'id': media|sonata_urlsafeid }) }}"><img class="empty" src="{{ asset('bundles/imhbase/images/empty.gif') }}" alt="" />download media</a>
 
-            <nav class="lang">
+            <nav class="imh__lang">
                 {% include 'ImhBaseBundle:Menu:lang.html.twig' %}
             </nav>
 
@@ -170,15 +170,15 @@
 {% endblock %}
 
 {% block sidebar %}
-    <aside id="sidebar-main">
+    {% embed "ImhBaseBundle:Part:sidebar.html.twig" %}
         {% block menu_navigation %}
             <div class="navigation-menu">
                 {{ knp_menu_render('main', {'currentAsLink':false}) }}
             </div>
         {% endblock %}
 
-        {% block menu_gallery %}{% endblock %}
-    </aside>
+        {% block menu_gallery '' %}
+    {% endembed %}
 {% endblock %}
 
 {% block javascripts %}
@@ -187,12 +187,12 @@
     {#<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5435ad1b0682d3b2" async="async"></script>#}
 
     {% javascripts output='assets/compiled/js/video.js'
-    '@ImhBaseBundle/Resources/assets/js/imageFlow.js'
-    '@ImhBaseBundle/Resources/assets/js/screenfull.js'
-    '@ImhBaseBundle/Resources/assets/js/jquery.imh.scrollmove.js'
-    '@ImhBaseBundle/Resources/assets/js/jquery.nouislider.js'
-    '@ImhBaseBundle/Resources/assets/js/jquery.imh.player.js'
-    '@ImhBaseBundle/Resources/assets/js/twitter.js'
+        '@ImhBaseBundle/Resources/assets/js/imageFlow.js'
+        '@ImhBaseBundle/Resources/assets/js/screenfull.js'
+        '@ImhBaseBundle/Resources/assets/js/jquery.imh.scrollmove.js'
+        '@ImhBaseBundle/Resources/assets/js/jquery.nouislider.js'
+        '@ImhBaseBundle/Resources/assets/js/jquery.imh.player.js'
+        '@ImhBaseBundle/Resources/assets/js/twitter.js'
     %}
     <script type="text/javascript" src="{{ asset_url }}"></script>
     {% endjavascripts %}

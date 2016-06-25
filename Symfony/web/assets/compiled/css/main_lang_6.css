@@ -1,38 +1,42 @@
-/* line 4, assetic_compass5KL48A.scss */
-#content {
-  position: relative;
-}
-/* line 7, assetic_compass5KL48A.scss */
-#content .lang {
+/* line 4, assetic_compassHPhF9w.scss */
+.imh__lang {
   position: absolute;
   top: 26px;
   right: -73px;
 }
-/* line 12, assetic_compass5KL48A.scss */
-#content .lang li {
+/* line 9, assetic_compassHPhF9w.scss */
+.imh__lang li {
   color: #898989;
-  margin-bottom: 7px;
+  margin-bottom: 3px;
 }
-/* line 16, assetic_compass5KL48A.scss */
-#content .lang li a {
-  font-family: "Georgia", Times, serif;
+/* line 13, assetic_compassHPhF9w.scss */
+.imh__lang li.current a {
+  color: white;
+  background-color: #3f3f3f;
+  border-color: #3f3f3f;
+}
+/* line 18, assetic_compassHPhF9w.scss */
+.imh__lang li.current a:after {
+  background-color: #3f3f3f;
+}
+/* line 24, assetic_compassHPhF9w.scss */
+.imh__lang a {
   display: inline-block;
-  height: 35px;
-  width: 35px;
-  line-height: 35px;
-  padding: 2px;
+  height: 40px;
+  width: 40px;
+  line-height: 38px;
   color: #3f3f3f;
   background-color: #fcfcfc;
   border: 1px solid #898989;
   text-align: center;
-  font-size: 1.083em;
+  font-size: 0.917em;
   text-transform: uppercase;
   position: relative;
   overflow: hidden;
   z-index: 0;
 }
-/* line 33, assetic_compass5KL48A.scss */
-#content .lang li a:after {
+/* line 39, assetic_compassHPhF9w.scss */
+.imh__lang a:after {
   content: "";
   background-color: black;
   background-color: rgba(0, 0, 0, 0.8);
@@ -47,22 +51,12 @@
   -o-transition: top 0.3s cubic-bezier(0, 0.92, 0.08, 1) 0s;
   transition: top 0.3s cubic-bezier(0, 0.92, 0.08, 1) 0s;
 }
-/* line 46, assetic_compass5KL48A.scss */
-#content .lang li a:hover {
+/* line 52, assetic_compassHPhF9w.scss */
+.imh__lang a:hover {
   color: white;
   border: 1px solid #3f3f3f;
 }
-/* line 50, assetic_compass5KL48A.scss */
-#content .lang li a:hover:after {
+/* line 56, assetic_compassHPhF9w.scss */
+.imh__lang a:hover:after {
   top: 0;
-}
-/* line 56, assetic_compass5KL48A.scss */
-#content .lang li.current a {
-  color: white;
-  background-color: #3f3f3f;
-  border-color: #3f3f3f;
-}
-/* line 61, assetic_compass5KL48A.scss */
-#content .lang li.current a:after {
-  background-color: #3f3f3f;
 }

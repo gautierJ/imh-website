@@ -622,9 +622,9 @@ imf.create("media-gallery", 0.725, 0.466, 1, 20, 2, false);
 
     $.fn.contentHeightAdjust = function () {
         var cssClasses = {
-                header: '#header',
-                content: '#content',
-                footer : '#footer'
+                header: 'header',
+                content: '.imh__content',
+                footer : 'footer'
             },
         hh = $(cssClasses.header).outerHeight(),
         ch = $(cssClasses.content).outerHeight(),

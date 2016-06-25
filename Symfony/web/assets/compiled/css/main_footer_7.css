@@ -1,15 +1,25 @@
-/* line 4, assetic_compassMzZhBH.scss */
-#footer {
+/* line 6, assetic_compassPjrNLT.scss */
+.imh__footer {
+  margin-left: -15px;
+  margin-right: -15px;
   background: url("/bundles/imhbase/images/header-bg.png") repeat scroll 0 0;
   min-height: 110px;
-  width: 100%;
   border-top: 1px solid lightgrey;
   color: #898989;
   text-align: center;
   padding-bottom: 20px;
 }
-/* line 13, assetic_compassMzZhBH.scss */
-#footer .footer-column {
+/* line 3, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_mixins.scss */
+.imh__footer:before, .imh__footer:after {
+  content: " ";
+  display: table;
+}
+/* line 7, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_mixins.scss */
+.imh__footer:after {
+  clear: both;
+}
+/* line 15, assetic_compassPjrNLT.scss */
+.imh__footer .footer-column {
   border-left: 1px dotted #dddddd;
   display: inline-block;
   padding: 0 2% 0 20px;
@@ -18,119 +28,123 @@
   vertical-align: top;
   min-height: 100px;
 }
-/* line 22, assetic_compassMzZhBH.scss */
-#footer .footer-column:first-child {
+/* line 24, assetic_compassPjrNLT.scss */
+.imh__footer .footer-column:first-child {
   border: none;
 }
-/* line 26, assetic_compassMzZhBH.scss */
-#footer .footer-column h3 {
-  font-weight: bold;
+/* line 28, assetic_compassPjrNLT.scss */
+.imh__footer .footer-column h3 {
+  font-weight: normal;
   margin: 5px 0 15px;
   font-size: 1.083em;
 }
-/* line 32, assetic_compassMzZhBH.scss */
-#footer .footer-column ul {
+/* line 34, assetic_compassPjrNLT.scss */
+.imh__footer .footer-column ul {
   list-style: square inside none;
 }
-/* line 35, assetic_compassMzZhBH.scss */
-#footer .footer-column ul li {
+/* line 38, assetic_compassPjrNLT.scss */
+.imh__footer .footer-column li {
   margin-bottom: 4px;
   white-space: nowrap;
 }
-/* line 39, assetic_compassMzZhBH.scss */
-#footer .footer-column ul li a, #footer .footer-column ul li span {
+/* line 42, assetic_compassPjrNLT.scss */
+.imh__footer .footer-column li a, .imh__footer .footer-column li span {
   color: #898989;
   font-size: 0.917em;
-  font-family: Helvetica, Arial, sans-serif;
   display: inline-block;
   -webkit-transition: all 0.2s ease-in 0s;
   -moz-transition: all 0.2s ease-in 0s;
   -o-transition: all 0.2s ease-in 0s;
   transition: all 0.2s ease-in 0s;
 }
-/* line 47, assetic_compassMzZhBH.scss */
-#footer .footer-column ul li a:hover, #footer .footer-column ul li span:hover {
+/* line 49, assetic_compassPjrNLT.scss */
+.imh__footer .footer-column li a:hover, .imh__footer .footer-column li span:hover {
   color: #3f3f3f;
+  border-bottom: 1px dotted #3f3f3f;
 }
-/* line 53, assetic_compassMzZhBH.scss */
-#footer .footer-column ul li.current {
+/* line 55, assetic_compassPjrNLT.scss */
+.imh__footer .footer-column li.current {
   list-style: none;
 }
-/* line 55, assetic_compassMzZhBH.scss */
-#footer .footer-column ul li.current a, #footer .footer-column ul li.current span {
+/* line 57, assetic_compassPjrNLT.scss */
+.imh__footer .footer-column li.current a, .imh__footer .footer-column li.current span {
   color: #3f3f3f;
   background: white;
   border: 1px solid lightgrey;
   border-radius: 16px;
   padding: 6px 10px;
 }
-/* line 70, assetic_compassMzZhBH.scss */
-#footer .footer-column.site ul {
+/* line 67, assetic_compassPjrNLT.scss */
+.imh__footer .footer-column li .fa-home {
+  display: none;
+}
+/* line 75, assetic_compassPjrNLT.scss */
+.imh__footer .footer-column.site ul {
   width: 175px;
 }
-/* line 73, assetic_compassMzZhBH.scss */
-#footer .footer-column.site ul li {
+/* line 78, assetic_compassPjrNLT.scss */
+.imh__footer .footer-column.site ul li {
   float: left;
-  width: 75px;
+  width: 83px;
   padding-right: 10px;
 }
-/* line 78, assetic_compassMzZhBH.scss */
-#footer .footer-column.site ul li:nth-child(even) {
+/* line 83, assetic_compassPjrNLT.scss */
+.imh__footer .footer-column.site ul li:nth-child(even) {
   padding-right: 0;
 }
-/* line 114, assetic_compassMzZhBH.scss */
-#footer .footer-column.follow .fb, #footer .footer-column.follow .tw, #footer .footer-column.follow .gp {
+/* line 119, assetic_compassPjrNLT.scss */
+.imh__footer .footer-column.follow .fb, .imh__footer .footer-column.follow .tw, .imh__footer .footer-column.follow .gp {
   display: inline-block;
   vertical-align: top;
   margin-right: 7px;
 }
-/* line 120, assetic_compassMzZhBH.scss */
-#footer .footer-column.follow .fb img {
+/* line 125, assetic_compassPjrNLT.scss */
+.imh__footer .footer-column.follow .fb img {
   background: url("/bundles/imhbase/images/sprite.png") no-repeat scroll -8px -131px;
   height: 16px;
   width: 8px;
 }
-/* line 126, assetic_compassMzZhBH.scss */
-#footer .footer-column.follow .fb:hover img {
+/* line 131, assetic_compassPjrNLT.scss */
+.imh__footer .footer-column.follow .fb:hover img {
   background-position: 0 -131px;
 }
-/* line 132, assetic_compassMzZhBH.scss */
-#footer .footer-column.follow .tw img {
+/* line 137, assetic_compassPjrNLT.scss */
+.imh__footer .footer-column.follow .tw img {
   background: url("/bundles/imhbase/images/sprite.png") no-repeat scroll -34px -131px;
   height: 16px;
   width: 18px;
 }
-/* line 138, assetic_compassMzZhBH.scss */
-#footer .footer-column.follow .tw:hover img {
+/* line 143, assetic_compassPjrNLT.scss */
+.imh__footer .footer-column.follow .tw:hover img {
   background-position: -16px -131px;
 }
-/* line 144, assetic_compassMzZhBH.scss */
-#footer .footer-column.follow .gp img {
+/* line 149, assetic_compassPjrNLT.scss */
+.imh__footer .footer-column.follow .gp img {
   background: url("/bundles/imhbase/images/sprite.png") no-repeat scroll -74px -131px;
   height: 18px;
   width: 22px;
 }
-/* line 150, assetic_compassMzZhBH.scss */
-#footer .footer-column.follow .gp:hover img {
+/* line 155, assetic_compassPjrNLT.scss */
+.imh__footer .footer-column.follow .gp:hover img {
   background-position: -52px -131px;
 }
-/* line 159, assetic_compassMzZhBH.scss */
-#footer .footer-column.powered a img {
+/* line 164, assetic_compassPjrNLT.scss */
+.imh__footer .footer-column.powered a img {
   background: url("/bundles/imhbase/images/sprite.png") no-repeat scroll -221px -131px;
   width: 63px;
   height: 61px;
   display: block;
 }
-/* line 166, assetic_compassMzZhBH.scss */
-#footer .footer-column.powered a:hover img {
+/* line 171, assetic_compassPjrNLT.scss */
+.imh__footer .footer-column.powered a:hover img {
   background-position: -158px -131px;
 }
-/* line 174, assetic_compassMzZhBH.scss */
-#footer p {
+/* line 179, assetic_compassPjrNLT.scss */
+.imh__footer p {
   font-size: 0.917em;
   margin: 20px 0 0;
 }
-/* line 178, assetic_compassMzZhBH.scss */
-#footer p span {
-  font-size: 1.083em;
+/* line 183, assetic_compassPjrNLT.scss */
+.imh__footer p span {
+  font-size: 1.167em;
 }

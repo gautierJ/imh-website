@@ -7,76 +7,89 @@
 
     <link rel="stylesheet" href="{{ asset('/assets/lib/owl-carousel/owl.carousel.css') }}" type="text/css" />
 
-    {% stylesheets output='assets/compiled/css/biography.css' filter='compass'
-    '@ImhBaseBundle/Resources/assets/sass/biography.scss'
+    {% stylesheets output='assets/compiled/css/biography.css' filter='compass, cssrewrite'
+        '@ImhBaseBundle/Resources/assets/sass/biography.scss'
     %}
     <link rel="stylesheet" href="{{ asset_url }}" type="text/css"/>
     {% endstylesheets %}
 {% endblock %}
 
 {% block main %}
-    <img id="bkg-image" class="lazy" data-original="{{ asset('bundles/imhbase/images/strings.jpg') }}" />
+    <img class="imh__bkg-image lazy" data-original="{{ asset('bundles/imhbase/images/strings.jpg') }}" />
     <noscript><img src="{{ asset('bundles/imhbase/images/strings.jpg') }}" alt="Harp strings"></noscript>
 
-    <div class="main-content-wrapper">
-        <section class="middle shadows">
-            <nav class="lang">
+    <div class="container imh__container">
+        <div class="imh__container--wrapper imh__container--shadows">
+            <nav class="imh__lang">
                 {% include 'ImhBaseBundle:Menu:lang.html.twig' %}
             </nav>
-            <div class="biography-content clearfix">
-                <div class="owl-carousel">
-
-                    {% for i in range(3,1) -%}
-                        <div class="item"><img class="owl-lazy" data-src="{{ asset('bundles/imhbase/images/bio_0'~i~'.jpg') }}" alt="" /></div>
-                    {%- endfor %}
-                </div>
-                <div class="scrollbar">
-                    <div class="handle">
-                        <div class="mousearea"></div>
+            <section class="imh__biography">
+                {% spaceless %}
+                <div class="col-xs-24 col-sm-10 col-md-10">
+                    <div class="owl-carousel" data-carousel>
+                        {% for i in range(3,1) -%}
+                            <div class="item"><img class="owl-lazy" data-src="{{ asset('bundles/imhbase/images/bio_0'~i~'.jpg') }}" alt="" /></div>
+                        {%- endfor %}
                     </div>
                 </div>
-                <div class="text">
-                    <div class="frame">
-                        <div class="slidee">
-                            {{ 'imh.base.biography.main_text'|trans|raw }}
+                <div class="col-xs-24 col-sm-14 col-md-14">
+                    <div class="imh__biography-scrollbar" data-scrollbar>
+                        <div class="handle">
+                            <div class="mousearea"></div>
+                        </div>
+                    </div>
+                    <div class="imh__biography-text" data-text>
+                        <div class="frame">
+                            <div class="slidee">
+                                {{ 'imh.base.biography.main_text'|trans|raw }}
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="prizes closed">
-                <h2 class="slider-title">{{ 'imh.base.biography.prizes.title'|trans }}</h2>
-                <ul class="slider-content">
-                    {{ 'imh.base.biography.prizes.list'|trans|raw }}
-                </ul>
-            </div>
-            <div class="download">
-                {#<a class="bio" href="{{ path('sonata_media_download', {'id': media|sonata_urlsafeid }) }}"><img class="empty" src="{{ asset('bundles/imhbase/images/empty.gif') }}" alt="" /></a>#}
-                <a href="" class="bio" title="{{ 'imh.base.biography.download'|trans }}"><img class="empty" src="{{ asset('bundles/imhbase/images/empty.gif') }}" alt="" /></a>
-            </div>
-        </section>
+                {% endspaceless %}
+            </section>
+            <section class="imh__prizes closed" data-prizes>
+                <div class="col-xs-24">
+                    <h2 class="imh__prizes-slider-title" data-prizes-title>{{ 'imh.base.biography.prizes.title'|trans }}</h2>
+                    <ul class="imh__prizes-slider-content" data-prizes-content>
+                        {{ 'imh.base.biography.prizes.list'|trans|raw }}
+                    </ul>
+                </div>
+            </section>
+            <section class="imh__download">
+                <div class="col-xs-24">
+                    <h2 class="imh__prizes-slider-title visible-xs">{{ 'imh.base.biography.download'|trans }}</h2>
+                </div>
+                <div class="col-xs-24">
+                    <div class="imh__download-button">
+                        {#<a class="bio" href="{{ path('sonata_media_download', {'id': media|sonata_urlsafeid }) }}"><img class="empty" src="{{ asset('bundles/imhbase/images/empty.gif') }}" alt="" /></a>#}
+                        <a href="" class="imh__download-link" title="{{ 'imh.base.biography.download'|trans }}"><img class="empty" src="{{ asset('bundles/imhbase/images/empty.gif') }}" alt="" /></a>
+                    </div>
+                </div>
+            </section>
+        </div>
     </div>
 {% endblock %}
 
 {% block sidebar %}
-    <aside id="sidebar-main">
+    {% embed "ImhBaseBundle:Part:sidebar.html.twig" %}
         {% block menu_navigation %}
-            <div class="navigation-menu">
+            <div class="imh__navigation-menu">
                 {{ knp_menu_render('main', {'currentAsLink':false}) }}
             </div>
         {% endblock %}
 
-        {% block menu_gallery %}{% endblock %}
-    </aside>
+        {% block menu_gallery '' %}
+    {% endembed %}
 {% endblock %}
 
 {% block javascripts %}
     {{ parent() }}
 
-    <script src="{{ asset('/assets/lib/owl-carousel/owl.carousel.min.js') }}"></script>
-    <script src="{{ asset('/assets/lib/sly/sly.min.js') }}"></script>
-
     {% javascripts output='assets/compiled/js/biography.js'
-    '@ImhBaseBundle/Resources/assets/js/jquery.imh.scrollmove.js'
+        'assets/lib/owl-carousel/owl.carousel.min.js'
+        'assets/lib/sly/sly.min.js'
+        '@ImhBaseBundle/Resources/assets/js/jquery.imh.scrollmove.js'
     %}
     <script type="text/javascript" src="{{ asset_url }}"></script>
     {% endjavascripts %}
@@ -85,32 +98,37 @@
         $(function () {
             'use strict';
 
-            var $carousel    = $(".owl-carousel"),
-                $text        = $(".text"),
-                $scrollbar   = $(".scrollbar"),
-                $prizes      = $(".prizes"),
-                $sT          = $(".slider-title"),
-                $sC          = $(".slider-content"),
+            var $carousel    = $('[data-carousel]'),
+                $text        = $('[data-text]'),
+                $scrollbar   = $('[data-scrollbar]'),
+                $prizes      = $('[data-prizes]'),
+                $sT          = $('[data-prizes-title]'),
+                $sC          = $('[data-prizes-content]'),
+                h            = $sC.height(),
                 cssReady     = 'ready',
+                cssHidden    = 'hidden',
+                cssClosed    = 'closed',
                 isVisible    = false,
                 sly;
 
-            if (!Modernizr.touchevents) {
-                $('.navigation-menu').scrollMove(); // Menu plugin
-            }
-
-            var h = $sC.height();
             $sC.css('max-height', 0);
 
             $sT.on('click', function (e) {
-                $prizes.toggleClass('closed');
-                $prizes.hasClass('closed') ? $sC.css('max-height', 0) : $sC.css('max-height', h);
+                $prizes.toggleClass(cssClosed);
+                $prizes.hasClass(cssClosed) ? $sC.css('max-height', 0) : $sC.css('max-height', h);
                 e.preventDefault();
             });
 
+            if (!Modernizr.touchevents) {
+                $('[data-sidebar]').scrollMove(); // Menu plugin
+            } else {
+                $('[data-sidebar]').addClass(cssHidden);
+                $sT.removeClass(cssClosed).trigger('click'); // Open prizes menu on mobile / tablet
+            }
+
             var recalcHeight = function(isVisible) {
                 var $item = $('.item'),
-                    $elts = $('.loading, .text, .scrollbar');
+                    $elts = $('.loading, .imh__biography-text, .imh__biography-scrollbar');
                 $elts.height($item.height());
                 if(!isVisible) $elts.css('visibility', 'visible');
             };

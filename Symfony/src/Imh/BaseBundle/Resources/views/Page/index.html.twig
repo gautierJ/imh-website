@@ -4,62 +4,66 @@
     {{ parent() }}
 
     {% stylesheets output='assets/compiled/css/home.css' filter='compass, cssrewrite'
-    '@ImhBaseBundle/Resources/assets/sass/home.scss'
+        '@ImhBaseBundle/Resources/assets/sass/home.scss'
     %}
     <link rel="stylesheet" href="{{ asset_url }}" type="text/css"/>
     {% endstylesheets %}
 {% endblock %}
 
-{% block body %}
-    <section id="home-content">
-        {% block main %}
-            {% spaceless %}
-                <figure class="bkg-image-ctn">
-                    <img class="bkg-image" src="{{ asset('bundles/imhbase/images/ionella_bw.jpg') }}" alt="Ionella Marinutsa" />
-                    <img class="bkg-image" src="{{ asset('bundles/imhbase/images/ionella.jpg') }}" alt="Ionella Marinutsa" />
-                </figure>
-                <div class="block-myself">
-                    <div class="block-triangle"></div>
-                    <div class="block-center">
-                        <img class="logo" src="{{ asset('bundles/imhbase/images/logo.png') }}" alt="Harp" />
-                        <div>
-                            <h1>Ionella&nbsp;</h1>
-                            <h2>Marinutsa</h2>
-                            <div class="wrap-loader">
-                                <div class="loader">
-                                    <img class="empty" src="{{ asset('bundles/imhbase/images/empty.gif') }}" />
-                                </div>
+{% block header '' %}
+
+{% block main %}
+    <div class="imh__content--home" data-content-home>
+        {% spaceless %}
+            <figure class="bkg-image-ctn">
+                <img class="bkg-image" src="{{ asset('bundles/imhbase/images/ionella_bw.jpg') }}" alt="Ionella Marinutsa" />
+                <img class="bkg-image" src="{{ asset('bundles/imhbase/images/ionella.jpg') }}" alt="Ionella Marinutsa" />
+            </figure>
+            <div class="block-myself">
+                <div class="block-triangle"></div>
+                <div class="block-center">
+                    <img class="logo" src="{{ asset('bundles/imhbase/images/logo.png') }}" alt="Harp" />
+                    <div>
+                        <h1>Ionella&nbsp;</h1>
+                        <h2>Marinutsa</h2>
+                        <div class="wrap-loader">
+                            <div class="loader">
+                                <img class="empty" src="{{ asset('bundles/imhbase/images/empty.gif') }}" />
                             </div>
-                            <p class="progressCounter">0 %</p>
-                            <h3>Harpist</h3>
                         </div>
-                    </div>
-                    <div class="block-language">
-                        {% for i in range(0,2) -%}
-                        <a href="{{ path('imh_base_biography', {'_locale': ('imh.base.menu_lang.'~i~'.locale')|trans}) }}">{{ ('imh.base.menu_lang.'~i~'.text')|trans }}</a>
-                        {%- endfor %}
+                        <p class="progressCounter">0 %</p>
+                        <h3>Harpist</h3>
                     </div>
                 </div>
-            {% endspaceless %}
-        {% endblock %}
-    </section>
+                <div class="block-language">
+                    {% for i in range(0,2) -%}
+                    <a href="{{ path('imh_base_biography', {'_locale': ('imh.base.menu_lang.'~i~'.locale')|trans}) }}">{{ ('imh.base.menu_lang.'~i~'.text')|trans }}</a>
+                    {%- endfor %}
+                </div>
+            </div>
+        {% endspaceless %}
+    </div>
+{% endblock %}
 
-    {% block javascripts %}
-        {{ parent() }}
+{% block sidebar '' %}
+{% block footer '' %}
 
-        {% javascripts output='assets/compiled/js/shape.js'
-            '@ImhBaseBundle/Resources/assets/js/jquery.imh.shape.js'
-        %}
-        <script type="text/javascript" src="{{ asset_url }}"></script>
-        {% endjavascripts %}
+{% block javascripts %}
+    {{ parent() }}
 
-        <script type="text/javascript">
+    {% javascripts output='assets/compiled/js/shape.js'
+    '@ImhBaseBundle/Resources/assets/js/jquery.imh.shape.js'
+    %}
+    <script type="text/javascript" src="{{ asset_url }}"></script>
+    {% endjavascripts %}
 
-            $(function () {
-                'use strict';
+    <script type="text/javascript">
 
-                var assetUrl     = '{{ asset('bundles/imhbase/images/ionella_bw.jpg') }}',
-                    context      = $('#home-content'),
+        $(function () {
+            'use strict';
+
+            var assetUrl     = '{{ asset('bundles/imhbase/images/ionella_bw.jpg') }}',
+                    context      = $('[data-content-home]'),
                     lang         = $('.block-language'),
                     langLinks    = lang.children('a'),
                     loader       = $('.loader'),
@@ -78,93 +82,92 @@
                     imageRatio   = imageH / imageW;
 
 
-                function adjustBkgImg(i, ic, icw, g, ir, wh) {
-                    i.width(icw + g);
-                    ic.height((icw + g) * ir);
-                    if(ic.height() < wh) {
-                        ic.height(wh);
-                        i.css('width', 'auto');
-                    }
+            function adjustBkgImg(i, ic, icw, g, ir, wh) {
+                i.width(icw + g);
+                ic.height((icw + g) * ir);
+                if(ic.height() < wh) {
+                    ic.height(wh);
+                    i.css('width', 'auto');
                 }
+            }
 
-                function addEvent(evnt, elem, func) {
-                    if (elem.addEventListener)  // W3C DOM
-                        elem.addEventListener(evnt, func, false);
-                    else if (elem.attachEvent) { // IE DOM
-                        elem.attachEvent("on" + evnt, func);
-                    }
-                    else { // No much to do
-                        elem[evnt] = func;
-                    }
+            function addEvent(evnt, elem, func) {
+                if (elem.addEventListener)  // W3C DOM
+                    elem.addEventListener(evnt, func, false);
+                else if (elem.attachEvent) { // IE DOM
+                    elem.attachEvent("on" + evnt, func);
                 }
+                else { // No much to do
+                    elem[evnt] = func;
+                }
+            }
 
-                $.ajax({
-                    type: 'GET',
-                    url: assetUrl,
-                    cache: false,
-                    xhr: function () {
-                        var xhr = new window.XMLHttpRequest();
-                        //Download progress
-                        addEvent("progress", xhr, function (evt) {
-                            if (evt.lengthComputable) {
-                                var percentComplete = Math.round((evt.loaded / evt.total) * 100);
-                                counter.empty().html(percentComplete + ' %');
-                                loader.width(percentComplete + '%');
-                            }
-                        }, false);
-                        return xhr;
-                    },
-                    success: function (data) {
-                        if(fontLoaded) {
-                            context.addClass('mA_1');
+            $.ajax({
+                type: 'GET',
+                url: assetUrl,
+                cache: false,
+                xhr: function () {
+                    var xhr = new window.XMLHttpRequest();
+                    //Download progress
+                    addEvent("progress", xhr, function (evt) {
+                        if (evt.lengthComputable) {
+                            var percentComplete = Math.round((evt.loaded / evt.total) * 100);
+                            counter.empty().html(percentComplete + ' %');
+                            loader.width(percentComplete + '%');
                         }
-                    },
-                    error: function (jqXHR, textStatus, errorThrown) {
-                        console.log('Error : ' + errorThrown);
+                    }, false);
+                    return xhr;
+                },
+                success: function (data) {
+                    if(fontLoaded) {
+                        context.addClass('mA_1');
                     }
-                });
-
-                grTitles.fontSpy({
-                    onLoad: 'hideMe',
-                    onFail: 'fontFail georgia',
-                    callback: function() { fontLoaded = true; }
-                });
-
-                image.on('transitionend webkitTransitionEnd oTransitionEnd MSTransitionEnd', function() {
-                    context.addClass('mA_2');
-                });
-
-                $(window).on('load', function () {
-                    var firstImg = imageCtn.find('img:first');
-                    langLinks.hover(function() {
-                        image.addClass('notransition');
-                        firstImg.stop().animate({opacity:0}, 1500);
-                    }, function() {
-                        firstImg.stop().animate({opacity:1}, 3000);
-                    });
-                });
-
-                var delay = (function(){
-                    var timer = 0;
-                    return function(callback, ms){
-                        clearTimeout (timer);
-                        timer = setTimeout(callback, ms);
-                    };
-                })();
-
-                $(window).on('resize', function () {
-                    delay(function(){
-                        imageCtnW = imageCtn.width();
-                        triangle.shape(this);
-                        adjustBkgImg(image, imageCtn, imageCtnW, gap, imageRatio, windowH);
-                    }, 500);
-                });
-
-                triangle.shape(window);
-                adjustBkgImg(image, imageCtn, imageCtnW, gap, imageRatio, windowH);
+                },
+                error: function (jqXHR, textStatus, errorThrown) {
+                    console.log('Error : ' + errorThrown);
+                }
             });
 
-        </script>
-    {% endblock %}
+            grTitles.fontSpy({
+                onLoad: 'hideMe',
+                onFail: 'fontFail georgia',
+                callback: function() { fontLoaded = true; }
+            });
+
+            image.on('transitionend webkitTransitionEnd oTransitionEnd MSTransitionEnd', function() {
+                context.addClass('mA_2');
+            });
+
+            $(window).on('load', function () {
+                var firstImg = imageCtn.find('img:first');
+                langLinks.hover(function() {
+                    image.addClass('notransition');
+                    firstImg.stop().animate({opacity:0}, 1500);
+                }, function() {
+                    firstImg.stop().animate({opacity:1}, 3000);
+                });
+            });
+
+            var delay = (function(){
+                var timer = 0;
+                return function(callback, ms){
+                    clearTimeout (timer);
+                    timer = setTimeout(callback, ms);
+                };
+            })();
+
+            $(window).on('resize', function () {
+                delay(function(){
+                    imageCtnW = imageCtn.width();
+                    triangle.shape(this);
+                    adjustBkgImg(image, imageCtn, imageCtnW, gap, imageRatio, windowH);
+                }, 500);
+            });
+
+            triangle.shape(window);
+            adjustBkgImg(image, imageCtn, imageCtnW, gap, imageRatio, windowH);
+        });
+
+    </script>
 {% endblock %}
 

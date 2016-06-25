@@ -40,8 +40,8 @@ assetic:
     ruby: %ruby.bin%
     filters:
         cssrewrite: ~
-#        sass:
-#            bin: %sass.bin%
+        sass:
+            bin: %sass.bin%
         compass:
             bin: %compass.bin%
             cache_location: %kernel.cache_dir%
