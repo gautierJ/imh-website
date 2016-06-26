@@ -1,7 +1,18 @@
-<nav class="imh__navigation">
+<nav id="navigation" class="imh__navigation" data-navigation>
     <div class="container imh__container">
         {% spaceless %}
             {{ knp_menu_render('main', {'currentAsLink':false, 'allow_safe_labels': true} ) }}
         {% endspaceless %}
     </div>
 </nav>
+<div class="hamburger-wrapper">
+    <button class="globe" type="button" aria-label="Languages" aria-controls="navigation" data-globe>
+        <i class="fa fa-3x fa-inverse fa-globe" aria-hidden="true"></i>
+    </button>
+    <button class="hamburger hamburger--collapse" type="button" aria-label="Menu" aria-controls="navigation" data-hamburger>
+        <span class="hamburger-label text-uppercase">Menu</span>
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+</div>

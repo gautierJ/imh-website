@@ -1,9 +1,9 @@
-@import "../../../../../../web/assets/lib/bootstrap/bootstrap";
+@import "../../../../../../web/assets/vendor/bootstrap-sass/assets/stylesheets/bootstrap";
 @import "variables";
 @import "mixins";
 
 * {
-  -webkit-tap-highlight-color:  rgba(255, 255, 255, 0); // Disable blue highlight when Touch/Press
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0); // Disable blue highlight when Touch/Press
   @include box-sizing(border-box);
 }
 
@@ -18,7 +18,7 @@ body {
 
 a {
   text-decoration: none;
-  color: #000000;
+  color: $color-black;
 }
 
 a.icon {
@@ -31,6 +31,10 @@ ul, ol {
   padding: 0;
 }
 
+button:focus {
+  outline: none;
+}
+
 // Helpers
 //============================================
 .helper-no-padding { padding: 0 !important; }
@@ -38,6 +42,32 @@ ul, ol {
 .helper-no-padding-left { padding-left: 0 !important; }
 .helper-no-padding-right { padding-right: 0 !important; }
 
+// IMH
+//============================================
+
+// Headings
+.imh__title { font-weight: normal; }
+.imh__title-h1 {}
+.imh__title-h2 {
+  font-family: 'ralewaymedium', $font-fallback;
+  font-size: $fourteenpx;
+  color: $color-grey-dark;
+  line-height: 40px;
+  margin-bottom: 20px;
+}
+
+.imh__title-h2--border {
+  border: 1px solid $color-grey-light;
+  background-color: $color-grey-extremlight;
+}
+
+> p {
+
+  margin: 0;
+  padding-bottom: 15px;
+  border-bottom: 1px solid $color-grey-medium;
+
+}
 
 .imh__bkg-image {
   position: absolute;
@@ -93,13 +123,6 @@ ul, ol {
     box-shadow: 10px 0 4px $color-grey-ultralight;
     transform: rotate(1deg);
   }
-
-  h1 {
-    font-family: cinzelregular, sans-serif;
-    font-size: $fourtypx;
-    margin: 0 0 6px;
-    color: $color-greybrown-dark;
-  }
 }
 
 .empty {
@@ -124,7 +147,12 @@ ul, ol {
 }
 
 @media (max-width: $screen-xs-max) {
+  .imh__content { padding-top: 65px; }
 
+  .imh__container--shadows::after,
+  .imh__container--shadows::before {
+    display: none;
+  }
 }
 
 @media (max-width: $screen-md-max) {

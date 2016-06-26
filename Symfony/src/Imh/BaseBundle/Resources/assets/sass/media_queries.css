@@ -128,7 +128,33 @@ html.touchevents {
         top: 0; }
         html.touchevents #content .main-content-wrapper .middle {
           padding-top: 10px;
-          border-top: none; }
+          border-top: none;
+          /*.prizes {
+            .slider-title {
+              line-height: 46px;
+              &:after {
+                top: 15px;
+              }
+            }
+            &.closed {
+              .slider-title {
+                &:after {
+                  top: 15px;
+                }
+              }
+            }
+          }*/
+          /*.concert-wrapper {
+            padding: 0;
+            li {
+              img {
+                width: 52%;
+              }
+              .concert {
+                width: 42%;
+              }
+            }
+          }*/ }
           html.touchevents #content .main-content-wrapper .middle.shadows:before, html.touchevents #content .main-content-wrapper .middle.shadows:after {
             content: normal; }
           html.touchevents #content .main-content-wrapper .middle .lang {
@@ -147,18 +173,6 @@ html.touchevents {
                 padding: 15px;
                 border: none;
                 display: block; }
-          html.touchevents #content .main-content-wrapper .middle .prizes .slider-title {
-            line-height: 46px; }
-            html.touchevents #content .main-content-wrapper .middle .prizes .slider-title:after {
-              top: 15px; }
-          html.touchevents #content .main-content-wrapper .middle .prizes.closed .slider-title:after {
-            top: 15px; }
-          html.touchevents #content .main-content-wrapper .middle .concert-wrapper {
-            padding: 0; }
-            html.touchevents #content .main-content-wrapper .middle .concert-wrapper li img {
-              width: 52%; }
-            html.touchevents #content .main-content-wrapper .middle .concert-wrapper li .concert {
-              width: 42%; }
           html.touchevents #content .main-content-wrapper .middle #form-contact .contact-info, html.touchevents #content .main-content-wrapper .middle #form-contact .contact-message {
             float: none;
             width: 100%; }

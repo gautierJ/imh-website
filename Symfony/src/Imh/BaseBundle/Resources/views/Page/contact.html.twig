@@ -33,7 +33,7 @@
                 {% include 'ImhBaseBundle:Menu:lang.html.twig' %}
             </nav>
 
-            <p>{{ 'imh.base.contact.answer'|trans }}</p>
+            <h2 class="imh__title imh__title-h2 text-uppercase">{{ 'imh.base.contact.answer'|trans }}</h2>
 
             {{ form_start(form, {'attr': {'class': 'imh__contact-form'}}) }}
                 {{ form_errors(form) }}
@@ -45,7 +45,7 @@
                         {{ form_row(form.email) }}
                         {{ form_row(form.subject) }}
                     </div>
-                    <div class="col-xs-24 col-sm-12 imh__contact-message ">
+                    <div class="col-xs-24 col-sm-12 imh__contact-message">
                         {{ form_label(form.message) }}{{ form_errors(form.message) }}{{ form_widget(form.message) }}
                     </div>
                 </div>

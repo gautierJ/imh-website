@@ -1,4 +1,4 @@
-$(function() {
+;(function($) {
     'use strict';
 
     var GalleryManager = {
@@ -294,4 +294,4 @@ $(function() {
             setCssCursor();
         });
     });
-});
+}(jQuery));

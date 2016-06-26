@@ -26,10 +26,8 @@
         <![endif]-->
 
         {% block stylesheets %}
-            <link rel="stylesheet" href="{{ asset('/assets/lib/initializr/css/normalize.css') }}" type="text/css" />
-            <link rel="stylesheet" href="{{ asset('bundles/bmatznerfontawesome/css/font-awesome.min.css') }}" type="text/css" />
-
             {% stylesheets output='assets/compiled/css/main.css' filter='compass, cssrewrite'
+                'assets/vendor/components-font-awesome/scss/font-awesome.scss'
                 '@ImhBaseBundle/Resources/assets/sass/fonts.scss'
                 '@ImhBaseBundle/Resources/assets/sass/global.scss'
                 '@ImhBaseBundle/Resources/assets/sass/sidebar.scss'
@@ -74,6 +72,7 @@
                 'assets/lib/lazyload/jquery.lazyload.min.js'
                 'assets/lib/modernizr/modernizr-custom.js'
                 '@ImhBaseBundle/Resources/assets/js/jquery.fontspy.js'
+                '@ImhBaseBundle/Resources/assets/js/jquery.imh.menumobile.js'
             %}
 
             {#FOSJsRoutingBundle#}
@@ -81,8 +80,15 @@
             <script src="{{ path('fos_js_routing_js', {"callback": "fos.Router.setData"}) }}"></script>
 
             {#'@ImhBaseBundle/Resources/assets/js/_jquery.ajax.js'#}
-            <script type="text/javascript" src="{{ asset_url }}"></script>
+            <script src="{{ asset_url }}"></script>
             {% endjavascripts %}
+
+            <script>
+                $(function () {
+                    'use strict';
+                    Modernizr.touchevents ? $('[data-hamburger]').menumobile() : null;
+                });
+            </script>
         {% endblock %}
     </body>
 </html>

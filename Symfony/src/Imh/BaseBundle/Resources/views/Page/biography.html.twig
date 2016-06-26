@@ -26,7 +26,7 @@
             <section class="imh__biography">
                 {% spaceless %}
                 <div class="col-xs-24 col-sm-10 col-md-10">
-                    <div class="owl-carousel" data-carousel>
+                    <div class="imh__carousel owl-carousel" data-carousel>
                         {% for i in range(3,1) -%}
                             <div class="item"><img class="owl-lazy" data-src="{{ asset('bundles/imhbase/images/bio_0'~i~'.jpg') }}" alt="" /></div>
                         {%- endfor %}
@@ -91,10 +91,10 @@
         'assets/lib/sly/sly.min.js'
         '@ImhBaseBundle/Resources/assets/js/jquery.imh.scrollmove.js'
     %}
-    <script type="text/javascript" src="{{ asset_url }}"></script>
+    <script src="{{ asset_url }}"></script>
     {% endjavascripts %}
 
-    <script type="text/javascript">
+    <script>
         $(function () {
             'use strict';
 

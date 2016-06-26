@@ -1,5 +1,5 @@
-@import "../../../../../../../web/assets/lib/bootstrap/variables";
-@import "../../../../../../../web/assets/lib/bootstrap/mixins";
+$grid-columns: 24;
+@import "../../../../../../../web/assets/vendor/bootstrap-sass/assets/stylesheets/bootstrap";
 @import "../../../../../../Imh/BaseBundle/Resources/assets/sass/variables";
 @import "../../../../../../Imh/BaseBundle/Resources/assets/sass/mixins";
 @import "../../../../../../Imh/BaseBundle/Resources/assets/sass/keyframes";
@@ -175,338 +175,339 @@ body {
   padding: 1.5%;
   position: relative;
   top: 100px;
+}
 
-  #gallery-wrapper {
-    @include transition(opacity, .3s, linear, .5s);
+#gallery-wrapper {
+  @include transition(opacity, .3s, linear, .5s);
+  height: 100%;
+  position: relative;
+
+  #frame {
+    height: 100%;
+  }
+
+  /*#trigger {
+    position: absolute;
+    right: 18%;
+    top: 0;
+    width: 30px;
+    height: 100%;
+    z-index: 9999;
+
+    a {
+      position: relative;
+      top: 50%;
+      margin-top: -32px;
+      display: block;
+
+      img {
+        background: url("/bundles/imhbase/images/sprite.png") no-repeat scroll -2px -242px;
+        height: 64px;
+        width: 30px;
+        display: block;
+      }
+      &:hover {
+        img {
+          background-position: -33px -242px;
+        }
+      }
+    }
+  }*/
+
+  #trigger {
+    display: none;
+  }
+
+  &.loading {
+    @include transition(opacity, .2s, linear, 0s);
+    @include opacity(0);
+
+    &+#spinner {
+      @include transition(opacity, .2s, linear, .3s);
+      @include opacity(1);
+    }
+  }
+}
+
+#scrollbar {
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  height: 2px;
+  width: 100%;
+  z-index: 1;
+
+  &:after {
+    @include transition(width, .4s, ease, 0s);
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 0;
+    top: 0;
+    background: $color-grey-darker;
+  }
+
+  .handle {
+    @include opacity(0);
+    -webkit-transition: background .2s linear, opacity .2s ease .4s, width .2s ease;
+    -moz-transition: background .2s linear, opacity .2s ease .4s, width .2s ease;
+    -ms-transition: background .2s linear, opacity .2s ease .4s, width .2s ease; /* IE10 is actually unprefixed */
+    -o-transition: background .2s linear, opacity .2s ease .4s, width .2s ease;
+    transition: background .2s linear, opacity .2s ease .4s, width .2s ease;
+
+    cursor: pointer;
+    background: $color-grey-dark;
+    width: 100px; /* overriden if dynamicHandle: 1 */
     height: 100%;
     position: relative;
-
-    #frame {
-      height: 100%;
-    }
-
-    /*#trigger {
-      position: absolute;
-      right: 18%;
-      top: 0;
-      width: 30px;
-      height: 100%;
-      z-index: 9999;
-
-      a {
-        position: relative;
-        top: 50%;
-        margin-top: -32px;
-        display: block;
-
-        img {
-          background: url("/bundles/imhbase/images/sprite.png") no-repeat scroll -2px -242px;
-          height: 64px;
-          width: 30px;
-          display: block;
-        }
-        &:hover {
-          img {
-            background-position: -33px -242px;
-          }
-        }
-      }
-    }*/
-
-    #trigger {
-      display: none;
-    }
-
-    &.loading {
-      @include transition(opacity, .2s, linear, 0s);
-      @include opacity(0);
-
-      &+#spinner {
-        @include transition(opacity, .2s, linear, .3s);
-        @include opacity(1);
-      }
-    }
-  }
-
-  #scrollbar {
-    position: absolute;
-    left: 0;
-    bottom: -2px;
-    height: 2px;
-    width: 100%;
     z-index: 1;
 
-    &:after {
-      @include transition(width, .4s, ease, 0s);
-      content: '';
+    &:hover {
+      background: $color-grey-light;
+    }
+
+    .mousearea {
       position: absolute;
-      height: 2px;
-      width: 0;
-      top: 0;
-      background: $color-grey-darker;
-    }
-
-    .handle {
-      @include opacity(0);
-      -webkit-transition: background .2s linear, opacity .2s ease .4s, width .2s ease;
-      -moz-transition: background .2s linear, opacity .2s ease .4s, width .2s ease;
-      -ms-transition: background .2s linear, opacity .2s ease .4s, width .2s ease; /* IE10 is actually unprefixed */
-      -o-transition: background .2s linear, opacity .2s ease .4s, width .2s ease;
-      transition: background .2s linear, opacity .2s ease .4s, width .2s ease;
-
-      cursor: pointer;
-      background: $color-grey-dark;
-      width: 100px; /* overriden if dynamicHandle: 1 */
-      height: 100%;
-      position: relative;
-      z-index: 1;
-
-      &:hover {
-        background: $color-grey-light;
-      }
-
-      .mousearea {
-        position: absolute;
-        top: -31px;
-        left: 0;
-        height: 128px;
-        width: 100%;
-      }
-    }
-
-    &.mA_2 {
-      .handle {
-        @include opacity(1);
-      }
-
-      &:after {
-        width: 100%;
-      }
+      top: -31px;
+      left: 0;
+      height: 128px;
+      width: 100%;
     }
   }
 
-  #sonata-media-gallery-media-list { // isotope container
-    height: 100%; // height is mandatory (either px or %)
+  &.mA_2 {
+    .handle {
+      @include opacity(1);
+    }
 
-    .sonata-media-gallery-media-item {
-      height: 50%;
-      @include transition(opacity, .5s, linear, 0s);
+    &:after {
+      width: 100%;
+    }
+  }
+}
 
-      &.mA_1 {
-        @include opacity(.1);
+#sonata-media-gallery-media-list { // isotope container
+  height: 100%; // height is mandatory (either px or %)
 
-        .sonata-media-gallery-media-item-link {
-          cursor: default;
-          &:hover {
-            .media-object {
-              @include transform(scale(1));
-            }
+  .sonata-media-gallery-media-item {
+    height: 50%;
+    @include transition(opacity, .5s, linear, 0s);
+
+    &.mA_1 {
+      @include opacity(.1);
+
+      .sonata-media-gallery-media-item-link {
+        cursor: default;
+        &:hover {
+          .media-object {
+            @include transform(scale(1));
           }
-          &:after {
-            display: none;
-          }
+        }
+        &:after {
+          display: none;
+        }
+      }
+    }
+
+      //      &.newElts {
+      //        @include opacity(1);
+      //        @include transition(opacity, 2s, linear, 0s);
+      //      }
+
+    .sonata-media-gallery-media-item-link {
+      display: block;
+      overflow: hidden;
+      position: relative;
+      height: 100%;
+      cursor: default;
+
+      .media-object {
+        @include transition(all, 1s, ease, 0s);
+        -webkit-backface-visibility: hidden;
+        display: block;
+        height: 100%;
+        width: auto;
+      }
+
+      .media-btns {
+        display: none;
+      }
+
+      /*.media-bar {
+        background-color: rgb(0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.8);
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 70px;
+
+        @include transform(translate(0, 100%));
+        -webkit-transition:-webkit-transform .3s cubic-bezier(0,.92,.08,1) .2s;
+        -moz-transition:   -moz-transform .3s cubic-bezier(0,.92,.08,1) .2s;
+        -ms-transition:    -ms-transform .3s cubic-bezier(0,.92,.08,1) .2s;
+        transition:        transform .3s cubic-bezier(0,.92,.08,1) .2s;
+
+        .media-description {
+          float: left;
+          color: $color-white;
+          margin: 0 0 0 10px;
+          height: 37px;
+          line-height: 37px;
+          font-weight: bold;
+        }
+      }*/
+
+      .plus-icon {
+        //@include border-radius(50%);
+        @include opacity(0);
+        @include animation('pop-icon-out .2s');
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 3px;
+        height: 3px;
+        background: $color-black;
+        //margin: -35px 0 0 -35px;
+
+        &:before, &:after {
+          content: '';
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          background: $color-white;
+          @include transform(scale(1));
+        }
+
+        &:before {
+          width: 1px;
+          height: 18px;
+          @include transform(translate(0, -50%));
+        }
+
+        &:after {
+          width: 18px;
+          height: 1px;
+          @include transform(translate(-50%, 0));
         }
       }
 
-        //      &.newElts {
-        //        @include opacity(1);
-        //        @include transition(opacity, 2s, linear, 0s);
-        //      }
+      &:hover {
+        .media-object {
+          @include transform(scale(1.1));
+        }
+
+        .media-bar {
+          @include transform(translate(0, 0%));
+        }
+
+        .plus-icon {
+          @include animation('pop-icon-in .4s');
+          @include opacity(.8);
+        }
+      }
+    }
+
+    &.expanded {
+      height: 100%;
+      width: auto;
 
       .sonata-media-gallery-media-item-link {
-        display: block;
-        overflow: hidden;
-        position: relative;
-        height: 100%;
         cursor: default;
 
         .media-object {
-          @include transition(all, 1s, ease, 0s);
-          -webkit-backface-visibility: hidden;
-          display: block;
+          transition: none;
           height: 100%;
           width: auto;
         }
 
         .media-btns {
-          display: none;
-        }
-
-        /*.media-bar {
+          display: block;
+          position: absolute;
+          top: 0;
+          right: 0;
           background-color: rgb(0, 0, 0);
-          background-color: rgba(0, 0, 0, 0.8);
-          position: absolute;
-          left: 0;
-          bottom: 0;
-          width: 100%;
-          height: 70px;
-
-          @include transform(translate(0, 100%));
-          -webkit-transition:-webkit-transform .3s cubic-bezier(0,.92,.08,1) .2s;
-          -moz-transition:   -moz-transform .3s cubic-bezier(0,.92,.08,1) .2s;
-          -ms-transition:    -ms-transform .3s cubic-bezier(0,.92,.08,1) .2s;
-          transition:        transform .3s cubic-bezier(0,.92,.08,1) .2s;
-
-          .media-description {
-            float: left;
-            color: $color-white;
-            margin: 0 0 0 10px;
-            height: 37px;
-            line-height: 37px;
-            font-weight: bold;
-          }
-        }*/
-
-        .plus-icon {
-          //@include border-radius(50%);
+          background-color: rgba(0, 0, 0, 0.5);
+          @include transition(opacity, 0.2s, linear, 0s);
           @include opacity(0);
-          @include animation('pop-icon-out .2s');
-          cursor: pointer;
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          width: 3px;
-          height: 3px;
-          background: $color-black;
-          //margin: -35px 0 0 -35px;
 
-          &:before, &:after {
-            content: '';
-            position: absolute;
-            left: 50%;
-            top: 50%;
-            background: $color-white;
-            @include transform(scale(1));
-          }
+          > span {
+            display: inline-block;
+            cursor: pointer;
+            text-align: center;
+            height: 20px;
+            line-height: 23px;
+            width: 20px;
+            vertical-align: middle;
+            padding: 8px;
+            @include transition(background-color, 0.2s, ease-in, 0s);
 
-          &:before {
-            width: 1px;
-            height: 18px;
-            @include transform(translate(0, -50%));
-          }
+            &.zoom {
+              img {
+                background: url("/bundles/imhbase/images/sprite.png") no-repeat scroll -96px -131px;
+                height: 20px;
+                width: 19px;
+              }
+            }
 
-          &:after {
-            width: 18px;
-            height: 1px;
-            @include transform(translate(-50%, 0));
+            &.close {
+              img {
+                background: url("/bundles/imhbase/images/sprite.png") no-repeat scroll -115px -131px;
+                height: 12px;
+                width: 12px;
+              }
+            }
           }
         }
 
         &:hover {
           .media-object {
-            @include transform(scale(1.1));
-          }
-
-          .media-bar {
-            @include transform(translate(0, 0%));
-          }
-
-          .plus-icon {
-            @include animation('pop-icon-in .4s');
-            @include opacity(.8);
-          }
-        }
-      }
-
-      &.expanded {
-        height: 100%;
-        width: auto;
-
-        .sonata-media-gallery-media-item-link {
-          cursor: default;
-
-          .media-object {
-            transition: none;
-            height: 100%;
-            width: auto;
+            @include transform(none);
           }
 
           .media-btns {
-            display: block;
-            position: absolute;
-            top: 0;
-            right: 0;
-            background-color: rgb(0, 0, 0);
-            background-color: rgba(0, 0, 0, 0.5);
-            @include transition(opacity, 0.2s, linear, 0s);
-            @include opacity(0);
+            @include opacity(1);
 
             > span {
-              display: inline-block;
-              cursor: pointer;
-              text-align: center;
-              height: 20px;
-              line-height: 23px;
-              width: 20px;
-              vertical-align: middle;
-              padding: 8px;
-              @include transition(background-color, 0.2s, ease-in, 0s);
+              //              border-width: 1px;
+              //              border-style: solid;
+              //              border-color: rgb(0, 0, 0);
+              //              border-color: rgba(0, 0, 0, 0.8);
 
-              &.zoom {
-                img {
-                  background: url("/bundles/imhbase/images/sprite.png") no-repeat scroll -96px -131px;
-                  height: 20px;
-                  width: 19px;
-                }
-              }
-
-              &.close {
-                img {
-                  background: url("/bundles/imhbase/images/sprite.png") no-repeat scroll -115px -131px;
-                  height: 12px;
-                  width: 12px;
-                }
+              &:hover {
+                background-color: rgb(0, 0, 0);
+                background-color: rgba(0, 0, 0, 0.8);
               }
             }
           }
+          /*.media-bar {
+            @include transform(translate(0, 0%));
+          }*/
+        }
 
-          &:hover {
-            .media-object {
-              @include transform(none);
-            }
-
-            .media-btns {
-              @include opacity(1);
-
-              > span {
-                //              border-width: 1px;
-                //              border-style: solid;
-                //              border-color: rgb(0, 0, 0);
-                //              border-color: rgba(0, 0, 0, 0.8);
-
-                &:hover {
-                  background-color: rgb(0, 0, 0);
-                  background-color: rgba(0, 0, 0, 0.8);
-                }
-              }
-            }
-            /*.media-bar {
-              @include transform(translate(0, 0%));
-            }*/
-          }
-
-          &:after {
-             display: none;
-          }
+        &:after {
+           display: none;
         }
       }
     }
   }
+}
 
-  #spinner, #infscr-loading {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    margin: -22px 0 0 -22px;
+#spinner, #infscr-loading {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: -22px 0 0 -22px;
 
-    img {
-      display: block;
-    }
+  img {
+    display: block;
   }
-  #spinner {
-    @include transition(opacity, .2s, linear, 0s);
-    @include opacity(0);
-    margin: -19px 0 0 -19px;
-    z-index: -1;
-  }
+}
+
+#spinner {
+  @include transition(opacity, .2s, linear, 0s);
+  @include opacity(0);
+  margin: -19px 0 0 -19px;
+  z-index: -1;
 }

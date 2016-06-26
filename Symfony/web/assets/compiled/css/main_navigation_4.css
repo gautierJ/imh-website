@@ -44,7 +44,7 @@
 .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
   width: 40px;
   height: 4px;
-  background-color: black;
+  background-color: white;
   border-radius: 4px;
   position: absolute;
   transition-property: transform;
@@ -65,15 +65,6 @@
   bottom: -10px;
 }
 
-/*@import "../../../../Resources/assets/sass/types/3dx";
-@import "../../../../Resources/assets/sass/types/3dx-r";
-@import "../../../../Resources/assets/sass/types/3dy";
-@import "../../../../Resources/assets/sass/types/3dy-r";
-@import "../../../../Resources/assets/sass/types/arrow";
-@import "../../../../Resources/assets/sass/types/arrow-r";
-@import "../../../../Resources/assets/sass/types/arrowalt";
-@import "../../../../Resources/assets/sass/types/arrowalt-r";
-@import "../../../../Resources/assets/sass/types/boring";*/
 /*
  * Collapse
  */
@@ -152,22 +143,7 @@
   transition: top 0.12s 0.18s cubic-bezier(0.33333, 0, 0.66667, 0.33333), transform 0.15s 0.42s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
-/*@import "../../../../Resources/assets/sass/types/elastic";
-@import "../../../../Resources/assets/sass/types/elastic-r";
-@import "../../../../Resources/assets/sass/types/emphatic";
-@import "../../../../Resources/assets/sass/types/emphatic-r";
-@import "../../../../Resources/assets/sass/types/slider";
-@import "../../../../Resources/assets/sass/types/slider-r";
-@import "../../../../Resources/assets/sass/types/spring";
-@import "../../../../Resources/assets/sass/types/spring-r";
-@import "../../../../Resources/assets/sass/types/stand";
-@import "../../../../Resources/assets/sass/types/stand-r";
-@import "../../../../Resources/assets/sass/types/spin";
-@import "../../../../Resources/assets/sass/types/spin-r";
-@import "../../../../Resources/assets/sass/types/squeeze";
-@import "../../../../Resources/assets/sass/types/vortex";
-@import "../../../../Resources/assets/sass/types/vortex-r";*/
-/* line 15, assetic_compassAYGmtK.scss */
+/* line 12, assetic_compassoh4PQD.scss */
 .imh__header {
   margin-left: -15px;
   margin-right: -15px;
@@ -182,27 +158,27 @@
   clear: both;
 }
 
-/* line 19, assetic_compassAYGmtK.scss */
+/* line 16, assetic_compassoh4PQD.scss */
 .imh__navigation {
   background: url("/bundles/imhbase/images/header-bg.png") repeat rgba(255, 208, 247, 0.04);
   border-bottom: 1px solid lightgrey;
   border-top: 1px solid white;
   height: 126px;
 }
-/* line 25, assetic_compassAYGmtK.scss */
+/* line 22, assetic_compassoh4PQD.scss */
 .imh__navigation .imh__container {
   top: 27px;
   margin: 0 auto;
   z-index: 2;
 }
-/* line 31, assetic_compassAYGmtK.scss */
+/* line 28, assetic_compassoh4PQD.scss */
 .imh__navigation ul {
   border-top: 1px solid #222222;
   border-bottom: 1px solid #222222;
   background: #222222;
   text-align: center;
 }
-/* line 38, assetic_compassAYGmtK.scss */
+/* line 35, assetic_compassoh4PQD.scss */
 .imh__navigation li {
   display: inline-block;
   position: relative;
@@ -211,7 +187,7 @@
   height: 64px;
   z-index: 1;
 }
-/* line 46, assetic_compassAYGmtK.scss */
+/* line 43, assetic_compassoh4PQD.scss */
 .imh__navigation li a, .imh__navigation li span {
   font-family: "ralewaysemibold", Arial, Helvetica, sans-serif;
   color: white;
@@ -220,12 +196,12 @@
   padding: 0 20px;
   text-transform: uppercase;
 }
-/* line 55, assetic_compassAYGmtK.scss */
+/* line 52, assetic_compassoh4PQD.scss */
 .imh__navigation li span {
   height: 62px;
   line-height: 64px;
 }
-/* line 60, assetic_compassAYGmtK.scss */
+/* line 57, assetic_compassoh4PQD.scss */
 .imh__navigation li a {
   border: 1px solid rgba(0, 0, 0, 0);
   -webkit-transition: all 0.1s ease-in 0s;
@@ -235,48 +211,167 @@
   height: 64px;
   line-height: 64px;
 }
-/* line 66, assetic_compassAYGmtK.scss */
+/* line 63, assetic_compassoh4PQD.scss */
 .imh__navigation li a:hover {
   background-color: white;
   color: #222222;
   border: 1px solid #222222;
 }
-/* line 73, assetic_compassAYGmtK.scss */
+/* line 70, assetic_compassoh4PQD.scss */
 .imh__navigation li.current {
   background-color: white;
   border: 1px solid #222222;
   border-bottom: none;
 }
-/* line 78, assetic_compassAYGmtK.scss */
+/* line 75, assetic_compassoh4PQD.scss */
 .imh__navigation li.current span {
   color: #222222;
   border-bottom-color: white;
 }
-/* line 85, assetic_compassAYGmtK.scss */
+/* line 82, assetic_compassoh4PQD.scss */
 .imh__navigation .fa {
   position: relative;
   top: -2px;
   vertical-align: middle;
 }
-/* line 90, assetic_compassAYGmtK.scss */
+/* line 87, assetic_compassoh4PQD.scss */
 .imh__navigation .fa + span {
   display: none;
 }
 
-/* line 96, assetic_compassAYGmtK.scss */
+/* line 93, assetic_compassoh4PQD.scss */
 .hamburger {
   display: none;
 }
 
 @media (max-width: 767px) {
-  /* line 103, assetic_compassAYGmtK.scss */
-  .imh__navigation .imh__container {
+  /* line 98, assetic_compassoh4PQD.scss */
+  .imh__navigation {
+    background: rgba(0, 0, 0, 0.85) !important;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100% !important;
+    width: 100%;
+    margin-top: 64px;
+    z-index: 0;
+    opacity: 0;
+    /* Good browsers */
+    -moz-opacity: 0;
+    /* Netscape */
+    -khtml-opacity: 0;
+    /* Safari 1.x */
+    filter: alpha(opacity=0);
+    /* IE 5-7 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    /* IE 8 */
+  }
+  /* line 109, assetic_compassoh4PQD.scss */
+  .imh__navigation.is-visible {
+    opacity: 1;
+    /* Good browsers */
+    -moz-opacity: 1;
+    /* Netscape */
+    -khtml-opacity: 1;
+    /* Safari 1.x */
+    filter: alpha(opacity=100);
+    /* IE 5-7 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    /* IE 8 */
+    z-index: 2;
+  }
+  /* line 112, assetic_compassoh4PQD.scss */
+  .imh__navigation.is-visible + .hamburger-wrapper {
+    border-bottom: 1px solid #3f3f3f;
+  }
+  /* line 115, assetic_compassoh4PQD.scss */
+  .imh__navigation ul {
+    background: none;
+    border: none;
+  }
+  /* line 120, assetic_compassoh4PQD.scss */
+  .imh__navigation li {
+    display: block;
+    top: 0;
+    position: static;
+    height: inherit;
+    z-index: inherit;
+    margin: 0 0 7px;
+  }
+  /* line 128, assetic_compassoh4PQD.scss */
+  .imh__navigation li.current {
+    border: none;
+    background: none;
+  }
+  /* line 131, assetic_compassoh4PQD.scss */
+  .imh__navigation li.current span {
+    color: white;
+    border: 1px solid #898989;
+  }
+  /* line 137, assetic_compassoh4PQD.scss */
+  .imh__navigation li a {
+    -webkit-transition: none 0 0 0;
+    -moz-transition: none 0 0 0;
+    -o-transition: none 0 0 0;
+    transition: none 0 0 0;
+  }
+  /* line 138, assetic_compassoh4PQD.scss */
+  .imh__navigation li a, .imh__navigation li span {
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;
+    max-width: 150px;
+    width: 100%;
+  }
+
+  /* line 148, assetic_compassoh4PQD.scss */
+  .imh__container {
     top: 0;
     padding: 0;
   }
 
-  /* line 109, assetic_compassAYGmtK.scss */
+  /* line 153, assetic_compassoh4PQD.scss */
+  .hamburger-wrapper {
+    background: rgba(0, 0, 0, 0.93);
+    position: fixed;
+    width: 100%;
+    height: 65px;
+    border-bottom: 1px solid white;
+    z-index: 3;
+  }
+
+  /* line 162, assetic_compassoh4PQD.scss */
   .hamburger {
+    position: fixed;
+    right: 0;
+    top: 0;
     display: inline-block;
+    padding: 20px;
+  }
+
+  /* line 170, assetic_compassoh4PQD.scss */
+  .hamburger-label {
+    font-family: "ralewaysemibold", Arial, Helvetica, sans-serif;
+    display: inline-block;
+    vertical-align: middle;
+    color: white;
+    margin-right: 7px;
+  }
+
+  /* line 178, assetic_compassoh4PQD.scss */
+  .hamburger-box {
+    width: 35px;
+    vertical-align: middle;
+  }
+
+  /* line 185, assetic_compassoh4PQD.scss */
+  .hamburger-inner,
+  .hamburger-inner::before,
+  .hamburger-inner::after {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    border-radius: 0;
+    width: 35px;
   }
 }

@@ -1,4 +1,4 @@
-$(function() {
+;(function($) {
     'use strict';
 
     var GalleryManager = {
@@ -294,15 +294,15 @@ $(function() {
             setCssCursor();
         });
     });
-});
+}(jQuery));
 ;(function($) {
     'use strict';
 
     $.fn.shape = function (w) {
-        var ctx          = $(this),
-            ratio        = .2,
-            wh           = $(w).height(),
-            tw           = Math.round(wh * ratio);
+        var ctx    = $(this),
+            ratio  = .2,
+            wh     = $(w).height(),
+            tw     = Math.round(wh * ratio);
 
         ctx.css({
             'border-bottom-width': wh + 'px',

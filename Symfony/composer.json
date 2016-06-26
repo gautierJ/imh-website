@@ -24,12 +24,9 @@
         "sonata-project/admin-bundle": "~2.3",
         "sonata-project/media-bundle": "~2.3",
         "sonata-project/comment-bundle": "2.2.*@dev",
-        "sonata-project/intl-bundle": "~2.2",
         "sonata-project/classification-bundle": "~2.2",
-        "sonata-project/doctrine-orm-admin-bundle": "~2.3",
         "sonata-project/easy-extends-bundle": "2.1.7",
-        "sonata-project/user-bundle": "2.3.*@dev",
-        "sonata-project/datagrid-bundle": "~2.2@dev",
+        "sonata-project/user-bundle": "2.2.5",
 
         "friendsofsymfony/comment-bundle": "~2.0",
         "friendsofsymfony/jsrouting-bundle": "~1.5",
@@ -37,8 +34,7 @@
         "liip/imagine-bundle": "~1.0",
         "eddiejaoude/eddie-jaoude-symfony-translation-twig-collection-bundle": "2.2.*@dev",
         "kriswallsmith/buzz": "0.13",
-        "coresphere/console-bundle": "dev-master",
-        "bmatzner/fontawesome-bundle": "~4.4"
+        "coresphere/console-bundle": "0.1.0"
     },
     "scripts": {
         "post-install-cmd": [
