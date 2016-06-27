@@ -102,9 +102,9 @@ $hamburger-layer-color: $color-white;
     height: 100% !important;
     width: 100%;
     margin-top: 64px;
-    z-index: 2;
+    z-index: 0;
     @include opacity(0);
-    @include transition(opacity, .6s, ease-in, 0s);
+    @include transition(opacity, .5s, ease-in, 0s);
 
     &.is-visible {
       @include opacity(1);
@@ -134,7 +134,6 @@ $hamburger-layer-color: $color-white;
         }
       }
 
-      a { @include transition(none, 0, 0, 0); }
       a, span {
         display: inline-block;
         height: 50px;
@@ -194,6 +193,12 @@ $hamburger-layer-color: $color-white;
   .hamburger-inner::after {
     @include border-radius(0);
     width: 35px;
+  }
+}
+
+@media (max-width: $screen-sm-max) {
+  .imh__navigation {
+      li a { transition: none; }
   }
 }
 

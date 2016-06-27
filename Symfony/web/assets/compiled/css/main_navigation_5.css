@@ -2343,7 +2343,7 @@ address {
   transition: top 0.12s 0.18s cubic-bezier(0.33333, 0, 0.66667, 0.33333), transform 0.15s 0.42s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
-/* line 11, assetic_compassLQXiDx.scss */
+/* line 11, assetic_compassirgt5W.scss */
 .imh__header {
   margin-left: -15px;
   margin-right: -15px;
@@ -2358,27 +2358,27 @@ address {
   clear: both;
 }
 
-/* line 15, assetic_compassLQXiDx.scss */
+/* line 15, assetic_compassirgt5W.scss */
 .imh__navigation {
   background: url("/bundles/imhbase/images/header-bg.png") repeat rgba(255, 208, 247, 0.04);
   border-bottom: 1px solid lightgrey;
   border-top: 1px solid white;
   height: 126px;
 }
-/* line 21, assetic_compassLQXiDx.scss */
+/* line 21, assetic_compassirgt5W.scss */
 .imh__navigation .imh__container {
   top: 27px;
   margin: 0 auto;
   z-index: 2;
 }
-/* line 27, assetic_compassLQXiDx.scss */
+/* line 27, assetic_compassirgt5W.scss */
 .imh__navigation ul {
   border-top: 1px solid #222222;
   border-bottom: 1px solid #222222;
   background: #222222;
   text-align: center;
 }
-/* line 34, assetic_compassLQXiDx.scss */
+/* line 34, assetic_compassirgt5W.scss */
 .imh__navigation li {
   display: inline-block;
   position: relative;
@@ -2387,7 +2387,7 @@ address {
   height: 64px;
   z-index: 1;
 }
-/* line 42, assetic_compassLQXiDx.scss */
+/* line 42, assetic_compassirgt5W.scss */
 .imh__navigation li a, .imh__navigation li span {
   font-family: "ralewaysemibold", Arial, Helvetica, sans-serif;
   color: white;
@@ -2396,12 +2396,12 @@ address {
   padding: 0 20px;
   text-transform: uppercase;
 }
-/* line 51, assetic_compassLQXiDx.scss */
+/* line 51, assetic_compassirgt5W.scss */
 .imh__navigation li span {
   height: 62px;
   line-height: 64px;
 }
-/* line 56, assetic_compassLQXiDx.scss */
+/* line 56, assetic_compassirgt5W.scss */
 .imh__navigation li a {
   border: 1px solid rgba(0, 0, 0, 0);
   -webkit-transition: all 0.1s ease-in 0s;
@@ -2411,41 +2411,41 @@ address {
   height: 64px;
   line-height: 64px;
 }
-/* line 62, assetic_compassLQXiDx.scss */
+/* line 62, assetic_compassirgt5W.scss */
 .imh__navigation li a:hover {
   background-color: white;
   color: #222222;
   border: 1px solid #222222;
 }
-/* line 69, assetic_compassLQXiDx.scss */
+/* line 69, assetic_compassirgt5W.scss */
 .imh__navigation li.current {
   background-color: white;
   border: 1px solid #222222;
   border-bottom: none;
 }
-/* line 74, assetic_compassLQXiDx.scss */
+/* line 74, assetic_compassirgt5W.scss */
 .imh__navigation li.current span {
   color: #222222;
   border-bottom-color: white;
 }
-/* line 81, assetic_compassLQXiDx.scss */
+/* line 81, assetic_compassirgt5W.scss */
 .imh__navigation .fa {
   position: relative;
   top: -2px;
   vertical-align: middle;
 }
-/* line 86, assetic_compassLQXiDx.scss */
+/* line 86, assetic_compassirgt5W.scss */
 .imh__navigation .fa + span {
   display: none;
 }
 
-/* line 92, assetic_compassLQXiDx.scss */
-.hamburger {
+/* line 92, assetic_compassirgt5W.scss */
+.globe, .hamburger {
   display: none;
 }
 
 @media (max-width: 767px) {
-  /* line 97, assetic_compassLQXiDx.scss */
+  /* line 97, assetic_compassirgt5W.scss */
   .imh__navigation {
     background: rgba(0, 0, 0, 0.85) !important;
     position: fixed;
@@ -2465,8 +2465,12 @@ address {
     /* IE 5-7 */
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
     /* IE 8 */
+    -webkit-transition: opacity 0.5s ease-in 0s;
+    -moz-transition: opacity 0.5s ease-in 0s;
+    -o-transition: opacity 0.5s ease-in 0s;
+    transition: opacity 0.5s ease-in 0s;
   }
-  /* line 108, assetic_compassLQXiDx.scss */
+  /* line 109, assetic_compassirgt5W.scss */
   .imh__navigation.is-visible {
     opacity: 1;
     /* Good browsers */
@@ -2478,18 +2482,18 @@ address {
     /* IE 5-7 */
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
     /* IE 8 */
-    z-index: 2;
+    z-index: 3;
   }
-  /* line 111, assetic_compassLQXiDx.scss */
+  /* line 112, assetic_compassirgt5W.scss */
   .imh__navigation.is-visible + .hamburger-wrapper {
     border-bottom: 1px solid #3f3f3f;
   }
-  /* line 114, assetic_compassLQXiDx.scss */
+  /* line 115, assetic_compassirgt5W.scss */
   .imh__navigation ul {
     background: none;
     border: none;
   }
-  /* line 119, assetic_compassLQXiDx.scss */
+  /* line 120, assetic_compassirgt5W.scss */
   .imh__navigation li {
     display: block;
     top: 0;
@@ -2498,24 +2502,17 @@ address {
     z-index: inherit;
     margin: 0 0 7px;
   }
-  /* line 127, assetic_compassLQXiDx.scss */
+  /* line 128, assetic_compassirgt5W.scss */
   .imh__navigation li.current {
     border: none;
     background: none;
   }
-  /* line 130, assetic_compassLQXiDx.scss */
+  /* line 131, assetic_compassirgt5W.scss */
   .imh__navigation li.current span {
     color: white;
     border: 1px solid #898989;
   }
-  /* line 136, assetic_compassLQXiDx.scss */
-  .imh__navigation li a {
-    -webkit-transition: none 0 0 0;
-    -moz-transition: none 0 0 0;
-    -o-transition: none 0 0 0;
-    transition: none 0 0 0;
-  }
-  /* line 137, assetic_compassLQXiDx.scss */
+  /* line 137, assetic_compassirgt5W.scss */
   .imh__navigation li a, .imh__navigation li span {
     display: inline-block;
     height: 50px;
@@ -2524,13 +2521,21 @@ address {
     width: 100%;
   }
 
-  /* line 147, assetic_compassLQXiDx.scss */
+  /* line 147, assetic_compassirgt5W.scss */
   .imh__container {
     top: 0;
     padding: 0;
   }
 
-  /* line 152, assetic_compassLQXiDx.scss */
+  /* line 152, assetic_compassirgt5W.scss */
+  .globe {
+    padding: 14px 15px;
+    display: inline-block;
+    border: none;
+    background: none;
+  }
+
+  /* line 159, assetic_compassirgt5W.scss */
   .hamburger-wrapper {
     background: rgba(0, 0, 0, 0.93);
     position: fixed;
@@ -2540,31 +2545,44 @@ address {
     z-index: 3;
   }
 
-  /* line 161, assetic_compassLQXiDx.scss */
+  /* line 168, assetic_compassirgt5W.scss */
   .hamburger {
     position: fixed;
     right: 0;
     top: 0;
     display: inline-block;
-    padding: 20px;
+    padding: 20px 15px;
+  }
+  /* line 175, assetic_compassirgt5W.scss */
+  .hamburger:hover {
+    opacity: 1;
+    /* Good browsers */
+    -moz-opacity: 1;
+    /* Netscape */
+    -khtml-opacity: 1;
+    /* Safari 1.x */
+    filter: alpha(opacity=100);
+    /* IE 5-7 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    /* IE 8 */
   }
 
-  /* line 169, assetic_compassLQXiDx.scss */
+  /* line 178, assetic_compassirgt5W.scss */
   .hamburger-label {
     font-family: "ralewaysemibold", Arial, Helvetica, sans-serif;
     display: inline-block;
     vertical-align: middle;
     color: white;
-    margin-right: 7px;
+    margin: 1px 7px 0 0;
   }
 
-  /* line 177, assetic_compassLQXiDx.scss */
+  /* line 186, assetic_compassirgt5W.scss */
   .hamburger-box {
     width: 35px;
     vertical-align: middle;
   }
 
-  /* line 184, assetic_compassLQXiDx.scss */
+  /* line 193, assetic_compassirgt5W.scss */
   .hamburger-inner,
   .hamburger-inner::before,
   .hamburger-inner::after {
@@ -2573,5 +2591,11 @@ address {
     -ms-border-radius: 0;
     border-radius: 0;
     width: 35px;
+  }
+}
+@media (max-width: 991px) {
+  /* line 201, assetic_compassirgt5W.scss */
+  .imh__navigation li a {
+    transition: none;
   }
 }

@@ -69,7 +69,7 @@ $grid-columns: 24;
 
 .imh__contact-form {
   background: url("/bundles/imhbase/images/stripes.png");
-  padding: 80px 40px 40px;
+  padding: 80px 20px 40px;
 
   label {
     color: $color-grey-dark;
@@ -133,7 +133,6 @@ $grid-columns: 24;
 
 .imh__contact-message-send {
   font-size: $thirteenpx;
-  text-align: right;
   margin-top: 30px;
   color: $color-grey-dark;
 
@@ -156,12 +155,43 @@ $grid-columns: 24;
 // ==================================================
 @media (max-width: $screen-xs-max) {
   .imh__container--wrapper {
-    padding: 0;
-    border-top-width: 15px;
+    padding: 15px 0;
+    border-top-width: 0;
   }
 
   .imh__contact-form {
     padding: 0;
+  }
+
+  .imh__contact-info > div {
+    margin-bottom: 5px;
+  }
+
+  .imh__contact-form input,
+  .imh__contact-form textarea {
+    padding: 2px 7px;
+  }
+
+  .imh__contact-message {
+    textarea {
+      height: 80px;
+    }
+    label {
+      margin-top: 3px;
+    }
+  }
+
+  .imh__contact-mandatory {
+    font-size: $basepx;
+  }
+
+  .imh__contact-message-send {
+    margin-top: 10px;
+    font-size: $basepx;
+
+    button {
+      padding: 8px 12px;
+    }
   }
 }
 

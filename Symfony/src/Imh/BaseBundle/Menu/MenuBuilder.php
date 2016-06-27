@@ -62,10 +62,14 @@ class MenuBuilder extends ContainerAware
         $statement->execute();
         $results = $statement->fetchAll();
 
-        $menu->addChild('imh.base.menu.gallery', array(
-            'route' => 'sonata_media_gallery_view',
-            'routeParameters' => array('id' => $results[0]['id']) // Shows first gallery
-        ))->setExtra('translation_domain', 'messages');
+        $errors = array_filter($results);
+
+        if(!empty($errors)) { // if there is a gallery we show the menu
+            $menu->addChild('imh.base.menu.gallery', array(
+                'route' => 'sonata_media_gallery_view',
+                'routeParameters' => array('id' => $results[0]['id']) // Shows first gallery
+            ))->setExtra('translation_domain', 'messages');
+        }
 
         $request_id = $request->attributes->get('id');
         $routeName = $request->get('_route');

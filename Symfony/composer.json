@@ -19,22 +19,23 @@
         "sensio/framework-extra-bundle": "2.3.*",
         "sensio/generator-bundle": "2.3.*",
         "incenteev/composer-parameter-handler": "~2.0",
-        "knplabs/knp-menu-bundle": "2.0.*@dev",
+        "knplabs/knp-menu-bundle": "^2.1.1",
 
-        "sonata-project/admin-bundle": "~2.3",
-        "sonata-project/media-bundle": "~2.3",
-        "sonata-project/comment-bundle": "2.2.*@dev",
-        "sonata-project/classification-bundle": "~2.2",
-        "sonata-project/easy-extends-bundle": "2.1.7",
-        "sonata-project/user-bundle": "2.2.5",
+        "sonata-project/admin-bundle": "3.0.0",
+        "sonata-project/media-bundle": "^3.0",
+        "sonata-project/comment-bundle": "^3.0",
+        "sonata-project/easy-extends-bundle": "2.1.9",
+        "sonata-project/user-bundle": "3.0.0",
+        "twig/twig": "^1.23",
 
         "friendsofsymfony/comment-bundle": "~2.0",
         "friendsofsymfony/jsrouting-bundle": "~1.5",
 
         "liip/imagine-bundle": "~1.0",
         "eddiejaoude/eddie-jaoude-symfony-translation-twig-collection-bundle": "2.2.*@dev",
-        "kriswallsmith/buzz": "0.13",
-        "coresphere/console-bundle": "0.1.0"
+        "kriswallsmith/buzz": "^0.15",
+        "coresphere/console-bundle": "0.1.0",
+        "sonata-project/classification-bundle": "^3.0"
     },
     "scripts": {
         "post-install-cmd": [

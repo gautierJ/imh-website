@@ -1,6 +1,7 @@
 imh:
   base:
     menu:
+      label:          'Menu'
       home:           'Accueil'
       biography:      'Biographie'
       repertoire:     'Répertoire'

@@ -22,15 +22,17 @@
                 {% include 'ImhBaseBundle:Menu:lang.html.twig' %}
             </nav>
             <section class="imh__repertoire">
-                <h2 class="imh__title imh__title-h2 imh__title-h2--border text-center text-uppercase">{{ 'imh.base.repertoire.concert.title'|trans }}</h2>
-                <div class="imh__repertoire-wrapper clearfix">
+                <div class="col-xs-24">
+                    <h2 class="imh__title imh__title-h2 imh__title-h2--border text-center text-uppercase">{{ 'imh.base.repertoire.concert.title'|trans }}</h2>
+                </div>
+                <div class="imh__repertoire-wrapper">
                     {% for i in range(0,3) -%}
-                        <div class="col-sm-24 col-md-12 helper-no-padding">
+                        <div class="col-xs-24 col-sm-24 col-md-12">
                             {% spaceless %}
-                            <div class="col-sm-9 col-md-11 imh__repertoire-col">
+                            <div class="col-xs-24 col-sm-9 col-md-11 imh__repertoire-col">
                                 <img class="img-responsive imh__repertoire-image" src="{{ asset('bundles/imhbase/images/'~('imh.base.repertoire.concert.'~i~'.name')|trans~'.jpg') }}" alt="{{ ('imh.base.repertoire.concert.'~i~'.composer')|trans }}">
                             </div>
-                            <div class="col-sm-15 col-md-13 imh__repertoire-col">
+                            <div class="col-xs-24 col-sm-15 col-md-13 imh__repertoire-col">
                                 <div class="imh__repertoire-description{% if loop.last %} imh__repertoire-description--last{% endif %}">
                                     <p>{{ ('imh.base.repertoire.concert.'~i~'.composer')|trans }}</p>
                                     <p>{{ ('imh.base.repertoire.concert.'~i~'.life')|trans }}</p>

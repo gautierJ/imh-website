@@ -1970,11 +1970,14 @@ address {
 .imh__repertoire-wrapper {
   margin-top: 60px;
   font-size: 1.167em; }
+  .imh__repertoire-wrapper:before, .imh__repertoire-wrapper:after {
+    content: " ";
+    display: table; }
+  .imh__repertoire-wrapper:after {
+    clear: both; }
   .imh__repertoire-wrapper > div {
     min-height: 240px;
-    /*&:nth-child(2n) {
-      padding-right: 0;
-    }*/ }
+    padding: 0; }
 
 .imh__repertoire-image {
   display: block;
@@ -2001,7 +2004,6 @@ address {
 
 .imh__repertoire-duration {
   font-style: italic;
-  font-size: 12px;
   margin-top: 10px; }
 
 @media (max-width: 767px) {
@@ -2009,23 +2011,29 @@ address {
     text-align: center; }
 
   .imh__container--wrapper {
-    padding: 0;
-    border-top-width: 15px; }
+    padding: 15px 0;
+    border-top-width: 0; }
 
-  .imh__container--shadows::after,
-  .imh__container--shadows::before {
-    display: none; }
+  .imh__repertoire-wrapper {
+    margin-top: 30px; }
+
+  .imh__repertoire-wrapper > div {
+    padding-left: 15px;
+    padding-right: 15px;
+    min-height: inherit; }
 
   .imh__repertoire-col {
     padding: 0; }
 
   .imh__repertoire-image {
-    display: inline-block; }
+    display: inline-block;
+    width: 150px; }
 
   .imh__repertoire-description {
-    padding: 20px 0 30px;
-    margin-bottom: 40px;
-    border-bottom: 1px dotted lightgrey; }
+    padding: 20px 0;
+    margin-bottom: 30px;
+    border-bottom: 1px dotted lightgrey;
+    font-size: 0.917em; }
 
   .imh__repertoire-description--last {
     border-bottom: 0;

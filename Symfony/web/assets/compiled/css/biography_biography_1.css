@@ -3158,12 +3158,12 @@ address {
     display: none !important;
   }
 }
-/* line 7, assetic_compassdE78dx.scss */
+/* line 7, assetic_compasspg2i4z.scss */
 .imh__container--wrapper {
   padding: 26px 60px 62px;
 }
 
-/* line 11, assetic_compassdE78dx.scss */
+/* line 11, assetic_compasspg2i4z.scss */
 .imh__biography {
   margin-left: -15px;
   margin-right: -15px;
@@ -3179,7 +3179,7 @@ address {
 .imh__biography:after {
   clear: both;
 }
-/* line 16, assetic_compassdE78dx.scss */
+/* line 16, assetic_compasspg2i4z.scss */
 .imh__biography .loader {
   position: absolute;
   top: 50%;
@@ -3187,8 +3187,8 @@ address {
   left: 17%;
 }
 
-/* line 26, assetic_compassdE78dx.scss */
-.owl-theme.ready .owl-controls {
+/* line 26, assetic_compasspg2i4z.scss */
+.imh__carousel.ready .owl-controls {
   opacity: 1;
   /* Good browsers */
   -moz-opacity: 1;
@@ -3204,12 +3204,12 @@ address {
   -o-transition: opacity 0.4s linear 0s;
   transition: opacity 0.4s linear 0s;
 }
-/* line 32, assetic_compassdE78dx.scss */
-.owl-theme .owl-grab {
+/* line 32, assetic_compasspg2i4z.scss */
+.imh__carousel .owl-grab {
   background: url("/bundles/imhbase/images/loader_black.svg") no-repeat center center;
 }
-/* line 36, assetic_compassdE78dx.scss */
-.owl-theme .owl-controls {
+/* line 36, assetic_compasspg2i4z.scss */
+.imh__carousel .owl-controls {
   opacity: 0;
   /* Good browsers */
   -moz-opacity: 0;
@@ -3225,12 +3225,12 @@ address {
   position: absolute;
   left: 50%;
 }
-/* line 43, assetic_compassdE78dx.scss */
-.owl-theme .owl-controls .owl-dot {
+/* line 43, assetic_compasspg2i4z.scss */
+.imh__carousel .owl-controls .owl-dot {
   display: inline-block;
 }
-/* line 46, assetic_compassdE78dx.scss */
-.owl-theme .owl-controls .owl-dot span {
+/* line 46, assetic_compasspg2i4z.scss */
+.imh__carousel .owl-controls .owl-dot span {
   display: block;
   width: 8px;
   height: 8px;
@@ -3241,54 +3241,54 @@ address {
   -ms-border-radius: 20px;
   border-radius: 20px;
 }
-/* line 56, assetic_compassdE78dx.scss */
-.owl-theme .owl-controls .owl-dot.active span {
+/* line 56, assetic_compasspg2i4z.scss */
+.imh__carousel .owl-controls .owl-dot.active span {
   background-color: #898989;
 }
 
-/* line 65, assetic_compassdE78dx.scss */
+/* line 65, assetic_compasspg2i4z.scss */
 .imh__biography-text,
 .imh__biography-scrollbar {
   visibility: hidden;
   float: right;
 }
 
-/* line 70, assetic_compassdE78dx.scss */
+/* line 70, assetic_compasspg2i4z.scss */
 .imh__biography-text {
   overflow: hidden;
   width: calc(100% - 5px);
   text-align: justify;
   padding: 0 40px 0 10px;
 }
-/* line 76, assetic_compassdE78dx.scss */
+/* line 76, assetic_compasspg2i4z.scss */
 .imh__biography-text p {
   font-size: 1.167em;
   line-height: 1.4em;
   color: #222222;
 }
-/* line 82, assetic_compassdE78dx.scss */
+/* line 82, assetic_compasspg2i4z.scss */
 .imh__biography-text p:first-child {
   margin-top: 0;
 }
-/* line 85, assetic_compassdE78dx.scss */
+/* line 85, assetic_compasspg2i4z.scss */
 .imh__biography-text p:first-child::first-letter {
   font-size: 66px;
   line-height: 54px;
   float: left;
   margin: 0 5px 0 -5px;
 }
-/* line 93, assetic_compassdE78dx.scss */
+/* line 93, assetic_compasspg2i4z.scss */
 .imh__biography-text ul {
   color: #222222;
   font-size: 1.167em;
 }
 
-/* line 99, assetic_compassdE78dx.scss */
+/* line 99, assetic_compasspg2i4z.scss */
 .imh__biography-scrollbar {
   width: 5px;
   background-color: lightgrey;
 }
-/* line 103, assetic_compassdE78dx.scss */
+/* line 103, assetic_compasspg2i4z.scss */
 .imh__biography-scrollbar .handle {
   -webkit-transition: background 0.3s ease-in 0s;
   -moz-transition: background 0.3s ease-in 0s;
@@ -3301,11 +3301,11 @@ address {
   /* overriden if dynamicHandle: 1 */
   position: relative;
 }
-/* line 111, assetic_compassdE78dx.scss */
+/* line 111, assetic_compasspg2i4z.scss */
 .imh__biography-scrollbar .handle:hover {
   background-color: #582411;
 }
-/* line 116, assetic_compassdE78dx.scss */
+/* line 116, assetic_compasspg2i4z.scss */
 .imh__biography-scrollbar .mousearea {
   height: 100%;
   left: -11px;
@@ -3314,7 +3314,7 @@ address {
   width: 25px;
 }
 
-/* line 126, assetic_compassdE78dx.scss */
+/* line 126, assetic_compasspg2i4z.scss */
 .imh__prizes-slider-title::after,
 .imh__prizes.closed .slider-title::after {
   content: "";
@@ -3327,7 +3327,7 @@ address {
   right: 16px;
 }
 
-/* line 137, assetic_compassdE78dx.scss */
+/* line 137, assetic_compasspg2i4z.scss */
 .imh__prizes {
   margin-left: -15px;
   margin-right: -15px;
@@ -3341,11 +3341,11 @@ address {
 .imh__prizes:after {
   clear: both;
 }
-/* line 142, assetic_compassdE78dx.scss */
+/* line 142, assetic_compasspg2i4z.scss */
 .imh__prizes.closed .imh__prizes-slider-title:after {
   background-position: -102px -155px;
 }
-/* line 147, assetic_compassdE78dx.scss */
+/* line 147, assetic_compasspg2i4z.scss */
 .imh__prizes.closed .imh__prizes-slider-content {
   opacity: 0;
   /* Good browsers */
@@ -3359,7 +3359,7 @@ address {
   /* IE 8 */
 }
 
-/* line 153, assetic_compassdE78dx.scss */
+/* line 153, assetic_compasspg2i4z.scss */
 .imh__prizes-slider-title {
   font-family: "ralewaysemibold", Arial, Helvetica, sans-serif;
   position: relative;
@@ -3377,7 +3377,7 @@ address {
   -o-transition: background-color 0.3s ease 0s;
   transition: background-color 0.3s ease 0s;
 }
-/* line 167, assetic_compassdE78dx.scss */
+/* line 167, assetic_compasspg2i4z.scss */
 .imh__prizes-slider-title:before {
   position: absolute;
   left: 50%;
@@ -3394,20 +3394,20 @@ address {
   -o-transition: border-color 0.3s ease 0s;
   transition: border-color 0.3s ease 0s;
 }
-/* line 181, assetic_compassdE78dx.scss */
+/* line 181, assetic_compasspg2i4z.scss */
 .imh__prizes-slider-title:after {
   background-position: -102px -173px;
 }
-/* line 185, assetic_compassdE78dx.scss */
+/* line 185, assetic_compasspg2i4z.scss */
 .imh__prizes-slider-title:hover {
   background-color: #453531;
 }
-/* line 188, assetic_compassdE78dx.scss */
+/* line 188, assetic_compasspg2i4z.scss */
 .imh__prizes-slider-title:hover:before {
   border-color: #453531 transparent transparent transparent;
 }
 
-/* line 194, assetic_compassdE78dx.scss */
+/* line 194, assetic_compasspg2i4z.scss */
 .imh__prizes-slider-content {
   overflow-y: hidden;
   opacity: 1;
@@ -3427,7 +3427,7 @@ address {
   position: relative;
   margin-bottom: 34px;
 }
-/* line 206, assetic_compassdE78dx.scss */
+/* line 206, assetic_compasspg2i4z.scss */
 .imh__prizes-slider-content li {
   color: #222222;
   font-size: 1.083em;
@@ -3437,16 +3437,16 @@ address {
   position: relative;
   text-align: center;
 }
-/* line 215, assetic_compassdE78dx.scss */
+/* line 215, assetic_compasspg2i4z.scss */
 .imh__prizes-slider-content li:first-child {
   border: none;
   margin: 0;
 }
-/* line 219, assetic_compassdE78dx.scss */
+/* line 219, assetic_compasspg2i4z.scss */
 .imh__prizes-slider-content li:first-child:after {
   background: none;
 }
-/* line 224, assetic_compassdE78dx.scss */
+/* line 224, assetic_compasspg2i4z.scss */
 .imh__prizes-slider-content li:after {
   background: #582411;
   top: -1px;
@@ -3462,13 +3462,13 @@ address {
   width: 0;
   z-index: 1;
 }
-/* line 237, assetic_compassdE78dx.scss */
+/* line 237, assetic_compasspg2i4z.scss */
 .imh__prizes-slider-content li:hover:after {
   left: 0;
   width: 100%;
 }
 
-/* line 244, assetic_compassdE78dx.scss */
+/* line 244, assetic_compasspg2i4z.scss */
 .imh__download {
   margin-left: -15px;
   margin-right: -15px;
@@ -3483,19 +3483,19 @@ address {
   clear: both;
 }
 
-/* line 248, assetic_compassdE78dx.scss */
+/* line 248, assetic_compasspg2i4z.scss */
 .imh__download-button {
   position: relative;
   height: 70px;
   margin: 0 auto;
 }
 
-/* line 254, assetic_compassdE78dx.scss */
+/* line 254, assetic_compasspg2i4z.scss */
 .imh__download-link {
   display: inline-block;
   height: 100%;
 }
-/* line 258, assetic_compassdE78dx.scss */
+/* line 258, assetic_compasspg2i4z.scss */
 .imh__download-link img {
   background: url("/bundles/imhbase/images/sprite.png") -285px -131px no-repeat;
   display: inline-block;
@@ -3508,7 +3508,7 @@ address {
   margin-left: -10px;
   z-index: 1;
 }
-/* line 271, assetic_compassdE78dx.scss */
+/* line 271, assetic_compasspg2i4z.scss */
 .imh__download-link:after {
   -webkit-border-radius: 70px;
   -moz-border-radius: 70px;
@@ -3526,7 +3526,7 @@ address {
   left: 50%;
   margin-left: -35px;
 }
-/* line 283, assetic_compassdE78dx.scss */
+/* line 283, assetic_compasspg2i4z.scss */
 .imh__download-link:hover:after {
   background-color: #582411;
   -webkit-border-radius: 0px;
@@ -3540,91 +3540,85 @@ address {
 }
 
 @media (max-width: 767px) {
-  /* line 294, assetic_compassdE78dx.scss */
+  /* line 294, assetic_compasspg2i4z.scss */
   .imh__header {
     margin-bottom: 0;
   }
 
-  /* line 298, assetic_compassdE78dx.scss */
+  /* line 298, assetic_compasspg2i4z.scss */
   .imh__navigation {
     border: none;
     background: none;
     height: auto;
   }
 
-  /* line 304, assetic_compassdE78dx.scss */
+  /* line 304, assetic_compasspg2i4z.scss */
   .imh__container--wrapper {
-    padding: 0;
-    border-top-width: 15px;
+    padding: 15px 0;
+    border-top-width: 0;
   }
 
-  /* line 310, assetic_compassdE78dx.scss */
-  .imh__container--shadows::after,
-  .imh__container--shadows::before {
-    display: none;
-  }
-
-  /* line 314, assetic_compassdE78dx.scss */
+  /* line 309, assetic_compasspg2i4z.scss */
   .imh__biography {
     margin-bottom: 34px;
   }
 
-  /* line 318, assetic_compassdE78dx.scss */
+  /* line 313, assetic_compasspg2i4z.scss */
   .imh__biography-text {
     width: calc(100% - 1px);
     padding: 0 15px 0 0;
   }
-  /* line 322, assetic_compassdE78dx.scss */
+  /* line 317, assetic_compasspg2i4z.scss */
   .imh__biography-text p {
     font-size: 1.083em;
   }
-  /* line 325, assetic_compassdE78dx.scss */
+  /* line 320, assetic_compasspg2i4z.scss */
   .imh__biography-text p:first-child::first-letter {
     font-size: 59px;
   }
 
-  /* line 331, assetic_compassdE78dx.scss */
+  /* line 326, assetic_compasspg2i4z.scss */
   .imh__biography-scrollbar {
     width: 1px;
   }
-  /* line 334, assetic_compassdE78dx.scss */
+  /* line 329, assetic_compasspg2i4z.scss */
   .imh__biography-scrollbar .mousearea {
     width: 1px;
     left: 0;
   }
 
-  /* line 340, assetic_compassdE78dx.scss */
+  /* line 335, assetic_compasspg2i4z.scss */
   .owl-carousel {
     max-width: 344px;
     margin: 0 auto 50px;
   }
 
-  /* line 345, assetic_compassdE78dx.scss */
+  /* line 340, assetic_compasspg2i4z.scss */
   .imh__prizes-slider-title {
     font-size: 1em;
   }
-  /* line 347, assetic_compassdE78dx.scss */
+  /* line 342, assetic_compasspg2i4z.scss */
   .imh__prizes-slider-title::after {
     display: none;
   }
 
-  /* line 350, assetic_compassdE78dx.scss */
+  /* line 345, assetic_compasspg2i4z.scss */
   .imh__prizes-slider-content {
     margin-bottom: 0;
   }
-  /* line 352, assetic_compassdE78dx.scss */
+  /* line 347, assetic_compasspg2i4z.scss */
   .imh__prizes-slider-content li {
     text-align: left;
   }
 
-  /* line 356, assetic_compassdE78dx.scss */
+  /* line 351, assetic_compasspg2i4z.scss */
   .imh__prizes,
   .imh__download {
     margin-bottom: 34px;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
-  /* line 362, assetic_compassdE78dx.scss */
+  /* line 357, assetic_compasspg2i4z.scss */
   .imh__prizes-slider-content li {
     font-size: 1em;
   }

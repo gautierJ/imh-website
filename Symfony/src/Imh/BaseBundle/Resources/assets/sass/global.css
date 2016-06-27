@@ -1407,18 +1407,6 @@ ul, ol {
 button:focus {
   outline: none; }
 
-.helper-no-padding {
-  padding: 0 !important; }
-
-.helper-no-margin {
-  margin: 0 !important; }
-
-.helper-no-padding-left {
-  padding-left: 0 !important; }
-
-.helper-no-padding-right {
-  padding-right: 0 !important; }
-
 .imh__title {
   font-weight: normal; }
 
@@ -1427,7 +1415,7 @@ button:focus {
   font-size: 1.167em;
   color: #3f3f3f;
   line-height: 40px;
-  margin-bottom: 20px; }
+  margin: 0 0 20px; }
 
 .imh__title-h2--border {
   border: 1px solid lightgrey;
@@ -1517,6 +1505,17 @@ button:focus {
   /* Antialiasing - trick for firefox */ }
 
 @media (max-width: 767px) {
+  .imh__title-h2 {
+    font-size: 1em;
+    line-height: 25px; }
+
+  .imh__container--wrapper {
+    border-top-width: 0;
+    padding: 0; }
+
+  .imh__title-h2--border {
+    line-height: 40px; }
+
   .imh__content {
     padding-top: 65px; }
 

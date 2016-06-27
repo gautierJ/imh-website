@@ -2198,7 +2198,7 @@ address {
     display: none !important;
   }
 }
-/* line 5, assetic_compassQiJw8M.scss */
+/* line 5, assetic_compassqeI8v2.scss */
 .imh__footer {
   margin-left: -15px;
   margin-right: -15px;
@@ -2218,36 +2218,36 @@ address {
 .imh__footer:after {
   clear: both;
 }
-/* line 14, assetic_compassQiJw8M.scss */
+/* line 14, assetic_compassqeI8v2.scss */
 .imh__footer .imh__container {
   padding: 0;
   top: 0;
 }
 
-/* line 20, assetic_compassQiJw8M.scss */
+/* line 20, assetic_compassqeI8v2.scss */
 .imh__footer-column {
   border-right: 1px dotted #dddddd;
   text-align: left;
   vertical-align: top;
   min-height: 118px;
 }
-/* line 26, assetic_compassQiJw8M.scss */
+/* line 26, assetic_compassqeI8v2.scss */
 .imh__footer-column h3 {
   font-family: "ralewaysemibold", Arial, Helvetica, sans-serif;
   font-weight: normal;
   margin: 5px 0 15px;
   font-size: 1.083em;
 }
-/* line 33, assetic_compassQiJw8M.scss */
+/* line 33, assetic_compassqeI8v2.scss */
 .imh__footer-column ul {
   list-style: square inside none;
 }
-/* line 37, assetic_compassQiJw8M.scss */
+/* line 37, assetic_compassqeI8v2.scss */
 .imh__footer-column li {
   white-space: nowrap;
   margin-bottom: -4px;
 }
-/* line 41, assetic_compassQiJw8M.scss */
+/* line 41, assetic_compassqeI8v2.scss */
 .imh__footer-column li a, .imh__footer-column li span {
   color: #898989;
   display: inline-block;
@@ -2256,20 +2256,20 @@ address {
   -o-transition: all 0.2s ease-in 0s;
   transition: all 0.2s ease-in 0s;
 }
-/* line 47, assetic_compassQiJw8M.scss */
+/* line 47, assetic_compassqeI8v2.scss */
 .imh__footer-column li a:hover, .imh__footer-column li span:hover {
   color: #3f3f3f;
 }
-/* line 53, assetic_compassQiJw8M.scss */
+/* line 53, assetic_compassqeI8v2.scss */
 .imh__footer-column li a {
   border: 1px solid transparent;
   padding: 6px 0;
 }
-/* line 58, assetic_compassQiJw8M.scss */
+/* line 58, assetic_compassqeI8v2.scss */
 .imh__footer-column li.current {
   list-style: none;
 }
-/* line 60, assetic_compassQiJw8M.scss */
+/* line 60, assetic_compassqeI8v2.scss */
 .imh__footer-column li.current a, .imh__footer-column li.current span {
   color: #3f3f3f;
   background: white;
@@ -2277,111 +2277,112 @@ address {
   border-radius: 16px;
   padding: 6px 14px;
 }
-/* line 70, assetic_compassQiJw8M.scss */
+/* line 70, assetic_compassqeI8v2.scss */
 .imh__footer-column li .fa-home {
   display: none;
 }
 
-/* line 79, assetic_compassQiJw8M.scss */
+/* line 79, assetic_compassqeI8v2.scss */
 .imh__footer-column--site ul {
   width: 175px;
 }
-/* line 83, assetic_compassQiJw8M.scss */
+/* line 83, assetic_compassqeI8v2.scss */
 .imh__footer-column--site li {
   float: left;
   padding-right: 10px;
 }
-/* line 88, assetic_compassQiJw8M.scss */
+/* line 88, assetic_compassqeI8v2.scss */
 .imh__footer-column--site li:nth-child(even) {
   padding-right: 0;
 }
 
-/* line 123, assetic_compassQiJw8M.scss */
+/* line 123, assetic_compassqeI8v2.scss */
 .imh__footer-column--follow .fb, .imh__footer-column--follow .tw, .imh__footer-column--follow .gp {
   display: inline-block;
   vertical-align: top;
   margin-right: 7px;
 }
-/* line 129, assetic_compassQiJw8M.scss */
+/* line 129, assetic_compassqeI8v2.scss */
 .imh__footer-column--follow .fb img {
   background: url("/bundles/imhbase/images/sprite.png") no-repeat scroll -8px -131px;
   height: 16px;
   width: 8px;
 }
-/* line 135, assetic_compassQiJw8M.scss */
+/* line 135, assetic_compassqeI8v2.scss */
 .imh__footer-column--follow .fb:hover img {
   background-position: 0 -131px;
 }
-/* line 141, assetic_compassQiJw8M.scss */
+/* line 141, assetic_compassqeI8v2.scss */
 .imh__footer-column--follow .tw img {
   background: url("/bundles/imhbase/images/sprite.png") no-repeat scroll -34px -131px;
   height: 16px;
   width: 18px;
 }
-/* line 147, assetic_compassQiJw8M.scss */
+/* line 147, assetic_compassqeI8v2.scss */
 .imh__footer-column--follow .tw:hover img {
   background-position: -16px -131px;
 }
-/* line 153, assetic_compassQiJw8M.scss */
+/* line 153, assetic_compassqeI8v2.scss */
 .imh__footer-column--follow .gp img {
   background: url("/bundles/imhbase/images/sprite.png") no-repeat scroll -74px -131px;
   height: 18px;
   width: 22px;
 }
-/* line 159, assetic_compassQiJw8M.scss */
+/* line 159, assetic_compassqeI8v2.scss */
 .imh__footer-column--follow .gp:hover img {
   background-position: -52px -131px;
 }
 
-/* line 166, assetic_compassQiJw8M.scss */
+/* line 166, assetic_compassqeI8v2.scss */
 .imh__footer-column--powered {
   border: none;
 }
-/* line 169, assetic_compassQiJw8M.scss */
+/* line 169, assetic_compassqeI8v2.scss */
 .imh__footer-column--powered a {
   display: block;
 }
-/* line 172, assetic_compassQiJw8M.scss */
+/* line 172, assetic_compassqeI8v2.scss */
 .imh__footer-column--powered a:hover img {
   background-position: -158px -131px;
 }
-/* line 178, assetic_compassQiJw8M.scss */
+/* line 178, assetic_compassqeI8v2.scss */
 .imh__footer-column--powered img {
   background: url("/bundles/imhbase/images/sprite.png") no-repeat scroll -221px -131px;
   width: 63px;
   height: 61px;
 }
 
-/* line 185, assetic_compassQiJw8M.scss */
+/* line 185, assetic_compassqeI8v2.scss */
 .imh__footer-rights {
   font-size: 0.917em;
   margin-bottom: 15px;
 }
-/* line 189, assetic_compassQiJw8M.scss */
+/* line 189, assetic_compassqeI8v2.scss */
 .imh__footer-rights span {
   font-size: 1.167em;
 }
 
 @media (max-width: 767px) {
-  /* line 199, assetic_compassQiJw8M.scss */
+  /* line 199, assetic_compassqeI8v2.scss */
   .imh__footer .imh__container {
     padding: 0;
   }
 
-  /* line 204, assetic_compassQiJw8M.scss */
+  /* line 204, assetic_compassqeI8v2.scss */
   .imh__footer-column {
     margin-top: 10px;
     min-height: inherit;
+    border-right: none;
   }
 
-  /* line 210, assetic_compassQiJw8M.scss */
+  /* line 211, assetic_compassqeI8v2.scss */
   .imh__footer-column--follow,
   .imh__footer-column--powered {
     text-align: center;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
-  /* line 216, assetic_compassQiJw8M.scss */
+  /* line 217, assetic_compassqeI8v2.scss */
   .imh__footer-column--follow {
     border: none;
   }

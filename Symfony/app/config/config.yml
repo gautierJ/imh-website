@@ -69,7 +69,7 @@ doctrine:
         entity_managers:
             default:
                 auto_mapping: true
-#                mappings:
+                mappings:
 #                    ApplicationSonataMediaBundle: ~
 #                    SonataMediaBundle: ~
 #                    ApplicationSonataClassificationBundle: ~
@@ -136,6 +136,22 @@ sonata_media:
                 gallery_small: { height: 600, quality: 100 }
                 gallery_popin: { width: 800, quality: 100 }
 
+        sonata_collection:
+            providers:
+              - sonata.media.provider.image
+
+            formats:
+                preview: { width: 100, quality: 100}
+                wide:    { width: 820, quality: 100}
+
+        sonata_category:
+            providers:
+              - sonata.media.provider.image
+
+            formats:
+                preview: { width: 100, quality: 100}
+                wide:    { width: 820, quality: 100}
+
     cdn:
         server:
             path: /uploads/media # http://media.sonata-project.org/
@@ -198,6 +214,8 @@ sonata_classification:
         tag:          Application\Sonata\ClassificationBundle\Entity\Tag
         category:     Application\Sonata\ClassificationBundle\Entity\Category
         collection:   Application\Sonata\ClassificationBundle\Entity\Collection
+        #media:        Application\Sonata\MediaBundle\Entity\Collection
+        context:      Application\Sonata\ClassificationBundle\Entity\Context
 
     admin:
         tag:
@@ -206,10 +224,14 @@ sonata_classification:
             translation:  SonataClassificationBundle
         category:
             class:        Sonata\ClassificationBundle\Admin\CategoryAdmin
-            controller:   SonataAdminBundle:CRUD
+            controller:   SonataClassificationBundle:CategoryAdmin
             translation:  SonataClassificationBundle
         collection:
             class:        Sonata\ClassificationBundle\Admin\CollectionAdmin
+            controller:   SonataAdminBundle:CRUD
+            translation:  SonataClassificationBundle
+        context:
+            class:        Sonata\ClassificationBundle\Admin\ContextAdmin
             controller:   SonataAdminBundle:CRUD
             translation:  SonataClassificationBundle
 

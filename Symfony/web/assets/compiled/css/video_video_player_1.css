@@ -3158,30 +3158,30 @@ address {
     display: none !important;
   }
 }
-/* line 6, assetic_compassLXMLs7.scss */
+/* line 6, assetic_compasszfjnNQ.scss */
 .imh__container {
   padding-bottom: 100px;
 }
 
-/* line 10, assetic_compassLXMLs7.scss */
+/* line 10, assetic_compasszfjnNQ.scss */
 .imh__container--wrapper {
   padding-bottom: 62px;
 }
 
-/* line 14, assetic_compassLXMLs7.scss */
+/* line 14, assetic_compasszfjnNQ.scss */
 .media-content {
   width: 640px;
   margin: 0 auto;
   min-height: 360px;
 }
-/* line 19, assetic_compassLXMLs7.scss */
+/* line 19, assetic_compasszfjnNQ.scss */
 .media-content .media {
   position: relative;
   float: left;
   width: 640px;
   height: 360px;
 }
-/* line 25, assetic_compassLXMLs7.scss */
+/* line 25, assetic_compasszfjnNQ.scss */
 .media-content .media .layer {
   position: absolute;
   top: 0;
@@ -3190,14 +3190,14 @@ address {
   width: 100%;
   text-align: center;
 }
-/* line 33, assetic_compassLXMLs7.scss */
+/* line 33, assetic_compasszfjnNQ.scss */
 .media-content .media .layer a {
   display: block;
   height: 100%;
   width: 100%;
   cursor: default;
 }
-/* line 39, assetic_compassLXMLs7.scss */
+/* line 39, assetic_compasszfjnNQ.scss */
 .media-content .media .layer a .play {
   background: url("/bundles/imhbase/images/sprite.png") -1px -1px no-repeat;
   position: absolute;
@@ -3208,17 +3208,17 @@ address {
   margin: -39px 0 0 -39px;
   z-index: 1000;
 }
-/* line 49, assetic_compassLXMLs7.scss */
+/* line 49, assetic_compasszfjnNQ.scss */
 .media-content .media .layer a .play:hover {
   background-position: -78px -1px;
   cursor: pointer;
 }
-/* line 57, assetic_compassLXMLs7.scss */
+/* line 57, assetic_compasszfjnNQ.scss */
 .media-content .media #ytplayer {
   display: block;
   visibility: hidden;
 }
-/* line 62, assetic_compassLXMLs7.scss */
+/* line 62, assetic_compasszfjnNQ.scss */
 .media-content .media .progress-bar-wrapper {
   opacity: 0;
   /* Good browsers */
@@ -3231,27 +3231,27 @@ address {
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   /* IE 8 */
 }
-/* line 66, assetic_compassLXMLs7.scss */
+/* line 66, assetic_compasszfjnNQ.scss */
 .media-content .media .progress-bar {
   float: left;
   height: 2px;
   background-color: #222222;
   margin-top: 10px;
 }
-/* line 72, assetic_compassLXMLs7.scss */
+/* line 72, assetic_compasszfjnNQ.scss */
 .media-content .media .progress-bar .advancement, .media-content .media .progress-bar .buffer {
   height: 100%;
   width: 0;
 }
-/* line 77, assetic_compassLXMLs7.scss */
+/* line 77, assetic_compasszfjnNQ.scss */
 .media-content .media .progress-bar .advancement {
   background-color: #582411;
 }
-/* line 81, assetic_compassLXMLs7.scss */
+/* line 81, assetic_compasszfjnNQ.scss */
 .media-content .media .progress-bar .buffer {
   background-color: #b18f5c;
 }
-/* line 86, assetic_compassLXMLs7.scss */
+/* line 86, assetic_compasszfjnNQ.scss */
 .media-content .media .time {
   float: right;
   font-size: 0.75em;
@@ -3259,20 +3259,20 @@ address {
   text-align: right;
 }
 
-/* line 95, assetic_compassLXMLs7.scss */
+/* line 95, assetic_compasszfjnNQ.scss */
 .actions {
   float: left;
   margin-left: 10px;
 }
-/* line 99, assetic_compassLXMLs7.scss */
+/* line 99, assetic_compasszfjnNQ.scss */
 .actions li {
   margin-top: 10px;
 }
-/* line 102, assetic_compassLXMLs7.scss */
+/* line 102, assetic_compasszfjnNQ.scss */
 .actions li:first-child {
   margin-top: 0;
 }
-/* line 106, assetic_compassLXMLs7.scss */
+/* line 106, assetic_compasszfjnNQ.scss */
 .actions li a {
   color: #3f3f3f;
   border: 1px solid #3f3f3f;
@@ -3285,13 +3285,13 @@ address {
   line-height: 180px;
   position: relative;
 }
-/* line 118, assetic_compassLXMLs7.scss */
+/* line 118, assetic_compasszfjnNQ.scss */
 .actions li a:hover {
   background-color: #222222;
   color: white;
   border-color: #222222;
 }
-/* line 124, assetic_compassLXMLs7.scss */
+/* line 124, assetic_compasszfjnNQ.scss */
 .actions li a img {
   background: url("/bundles/imhbase/images/sprite.png") no-repeat;
   display: inline-block;
@@ -3303,52 +3303,52 @@ address {
   margin-top: -30px;
   margin-left: -25px;
 }
-/* line 139, assetic_compassLXMLs7.scss */
+/* line 139, assetic_compasszfjnNQ.scss */
 .actions li.display a img {
   background-position: 0 -192px;
 }
-/* line 140, assetic_compassLXMLs7.scss */
+/* line 140, assetic_compasszfjnNQ.scss */
 .actions li.display a:hover img {
   background-position: -150px -192px;
 }
-/* line 146, assetic_compassLXMLs7.scss */
+/* line 146, assetic_compasszfjnNQ.scss */
 .actions li.like a img {
   background-position: -50px -192px;
 }
-/* line 147, assetic_compassLXMLs7.scss */
+/* line 147, assetic_compasszfjnNQ.scss */
 .actions li.like a:hover img {
   background-position: -200px -192px;
 }
-/* line 153, assetic_compassLXMLs7.scss */
+/* line 153, assetic_compasszfjnNQ.scss */
 .actions li.download a img {
   background-position: -100px -192px;
 }
-/* line 154, assetic_compassLXMLs7.scss */
+/* line 154, assetic_compasszfjnNQ.scss */
 .actions li.download a:hover img {
   background-position: -250px -192px;
 }
 
-/* line 161, assetic_compassLXMLs7.scss */
+/* line 161, assetic_compasszfjnNQ.scss */
 .player-control-bar {
   border-top: 1px solid lightgrey;
   width: 100%;
   height: 62px;
   color: #898989;
 }
-/* line 167, assetic_compassLXMLs7.scss */
+/* line 167, assetic_compasszfjnNQ.scss */
 .player-control-bar .views, .player-control-bar .video-info, .player-control-bar .controls, .player-control-bar .share {
   float: left;
   height: 100%;
   margin-right: 1px;
 }
-/* line 173, assetic_compassLXMLs7.scss */
+/* line 173, assetic_compasszfjnNQ.scss */
 .player-control-bar .views {
   background-color: white;
   background-color: rgba(255, 255, 255, 0.9);
   width: 163px;
   padding-left: 14px;
 }
-/* line 179, assetic_compassLXMLs7.scss */
+/* line 179, assetic_compasszfjnNQ.scss */
 .player-control-bar .views .nb {
   font-family: 'open_sanscondensed_light', Arial, Helvetica, sans-serif;
   color: #3f3f3f;
@@ -3356,14 +3356,14 @@ address {
   font-size: 2.333em;
   line-height: 62px;
 }
-/* line 188, assetic_compassLXMLs7.scss */
+/* line 188, assetic_compasszfjnNQ.scss */
 .player-control-bar .txt {
   float: left;
   font-size: 0.917em;
   line-height: 1.1em;
   margin: 19px 0 0 8px;
 }
-/* line 195, assetic_compassLXMLs7.scss */
+/* line 195, assetic_compasszfjnNQ.scss */
 .player-control-bar .video-info {
   background-color: white;
   background-color: rgba(255, 255, 255, 0.9);
@@ -3372,13 +3372,13 @@ address {
   padding: 0 40px 0 14px;
   line-height: 62px;
 }
-/* line 203, assetic_compassLXMLs7.scss */
+/* line 203, assetic_compasszfjnNQ.scss */
 .player-control-bar .video-info .description {
   font-family: 'open_sans_condensedbold', Arial, Helvetica, sans-serif;
   font-size: 1em;
   margin: 0;
 }
-/* line 209, assetic_compassLXMLs7.scss */
+/* line 209, assetic_compasszfjnNQ.scss */
 .player-control-bar .video-info .name {
   font-family: 'open_sans_condensedbold', Arial, Helvetica, sans-serif;
   font-size: 1.333em;
@@ -3388,12 +3388,12 @@ address {
   text-overflow: ellipsis;
   margin: 0;
 }
-/* line 221, assetic_compassLXMLs7.scss */
+/* line 221, assetic_compasszfjnNQ.scss */
 .player-control-bar .controls li {
   float: left;
   margin-left: 1px;
 }
-/* line 225, assetic_compassLXMLs7.scss */
+/* line 225, assetic_compasszfjnNQ.scss */
 .player-control-bar .controls li a {
   position: relative;
   font-size: 0.833em;
@@ -3410,12 +3410,12 @@ address {
   -o-transition: all 0.2s ease-in 0s;
   transition: all 0.2s ease-in 0s;
 }
-/* line 238, assetic_compassLXMLs7.scss */
+/* line 238, assetic_compasszfjnNQ.scss */
 .player-control-bar .controls li a:hover {
   background-color: white;
   color: #222222;
 }
-/* line 244, assetic_compassLXMLs7.scss */
+/* line 244, assetic_compasszfjnNQ.scss */
 .player-control-bar .controls li.play-pause .bkg, .player-control-bar .controls li.volume .bkg, .player-control-bar .controls li.fullscreen .bkg {
   position: absolute;
   top: 11px;
@@ -3424,87 +3424,87 @@ address {
   width: 19px;
   background: url("/bundles/imhbase/images/sprite.png") no-repeat;
 }
-/* line 255, assetic_compassLXMLs7.scss */
+/* line 255, assetic_compasszfjnNQ.scss */
 .player-control-bar .controls li.play-pause a .bkg {
   background-position: -16px -102px;
 }
-/* line 258, assetic_compassLXMLs7.scss */
+/* line 258, assetic_compasszfjnNQ.scss */
 .player-control-bar .controls li.play-pause a:hover img {
   background-position: -16px -77px;
 }
-/* line 261, assetic_compassLXMLs7.scss */
+/* line 261, assetic_compasszfjnNQ.scss */
 .player-control-bar .controls li.play-pause a.pause .bkg {
   background-position: 3px -102px;
 }
-/* line 264, assetic_compassLXMLs7.scss */
+/* line 264, assetic_compasszfjnNQ.scss */
 .player-control-bar .controls li.play-pause a.pause:hover img {
   background-position: 3px -77px;
 }
-/* line 269, assetic_compassLXMLs7.scss */
+/* line 269, assetic_compasszfjnNQ.scss */
 .player-control-bar .controls li.volume {
   position: relative;
 }
-/* line 273, assetic_compassLXMLs7.scss */
+/* line 273, assetic_compasszfjnNQ.scss */
 .player-control-bar .controls li.volume a .bkg {
   background-position: -60px -102px;
   width: 25px;
   left: 14px;
 }
-/* line 278, assetic_compassLXMLs7.scss */
+/* line 278, assetic_compasszfjnNQ.scss */
 .player-control-bar .controls li.volume a:hover img, .player-control-bar .controls li.volume a.hover img {
   background-position: -60px -77px;
 }
-/* line 281, assetic_compassLXMLs7.scss */
+/* line 281, assetic_compasszfjnNQ.scss */
 .player-control-bar .controls li.volume a.hover {
   background-color: white;
   color: #222222;
 }
-/* line 287, assetic_compassLXMLs7.scss */
+/* line 287, assetic_compasszfjnNQ.scss */
 .player-control-bar .controls li.volume a._0 img {
   background-position: -163px -102px;
   width: 33px;
 }
-/* line 288, assetic_compassLXMLs7.scss */
+/* line 288, assetic_compasszfjnNQ.scss */
 .player-control-bar .controls li.volume a._0:hover img, .player-control-bar .controls li.volume a._0.hover img {
   background-position: -163px -77px;
 }
-/* line 291, assetic_compassLXMLs7.scss */
+/* line 291, assetic_compasszfjnNQ.scss */
 .player-control-bar .controls li.volume a._25 img {
   background-position: -60px -102px;
   width: 26px;
 }
-/* line 292, assetic_compassLXMLs7.scss */
+/* line 292, assetic_compasszfjnNQ.scss */
 .player-control-bar .controls li.volume a._25:hover img, .player-control-bar .controls li.volume a._25.hover img {
   background-position: -60px -77px;
 }
-/* line 295, assetic_compassLXMLs7.scss */
+/* line 295, assetic_compasszfjnNQ.scss */
 .player-control-bar .controls li.volume a._50 img {
   background-position: -81px -102px;
   width: 29px;
 }
-/* line 296, assetic_compassLXMLs7.scss */
+/* line 296, assetic_compasszfjnNQ.scss */
 .player-control-bar .controls li.volume a._50:hover img, .player-control-bar .controls li.volume a._50.hover img {
   background-position: -81px -77px;
 }
-/* line 299, assetic_compassLXMLs7.scss */
+/* line 299, assetic_compasszfjnNQ.scss */
 .player-control-bar .controls li.volume a._75 img {
   background-position: -106px -102px;
   width: 29px;
 }
-/* line 300, assetic_compassLXMLs7.scss */
+/* line 300, assetic_compasszfjnNQ.scss */
 .player-control-bar .controls li.volume a._75:hover img, .player-control-bar .controls li.volume a._75.hover img {
   background-position: -106px -77px;
 }
-/* line 303, assetic_compassLXMLs7.scss */
+/* line 303, assetic_compasszfjnNQ.scss */
 .player-control-bar .controls li.volume a._100 img {
   background-position: -133px -102px;
   width: 29px;
 }
-/* line 304, assetic_compassLXMLs7.scss */
+/* line 304, assetic_compasszfjnNQ.scss */
 .player-control-bar .controls li.volume a._100:hover img, .player-control-bar .controls li.volume a._100.hover img {
   background-position: -133px -77px;
 }
-/* line 308, assetic_compassLXMLs7.scss */
+/* line 308, assetic_compasszfjnNQ.scss */
 .player-control-bar .controls li.volume .wrap-level {
   position: absolute;
   top: -116px;
@@ -3514,30 +3514,30 @@ address {
   height: 116px;
   text-align: center;
 }
-/* line 318, assetic_compassLXMLs7.scss */
+/* line 318, assetic_compasszfjnNQ.scss */
 .player-control-bar .controls li.volume .level {
   position: relative;
   display: none;
   margin-top: 10px;
 }
-/* line 324, assetic_compassLXMLs7.scss */
+/* line 324, assetic_compasszfjnNQ.scss */
 .player-control-bar .controls li.volume .slider {
   position: absolute;
   top: 15px;
   left: 16px;
   height: 70px;
 }
-/* line 330, assetic_compassLXMLs7.scss */
+/* line 330, assetic_compasszfjnNQ.scss */
 .player-control-bar .controls li.volume .slider.noUi-target {
   border: none;
   border-radius: inherit;
   box-shadow: none;
 }
-/* line 335, assetic_compassLXMLs7.scss */
+/* line 335, assetic_compasszfjnNQ.scss */
 .player-control-bar .controls li.volume .slider.noUi-target.noUi-vertical {
   width: 8px;
 }
-/* line 338, assetic_compassLXMLs7.scss */
+/* line 338, assetic_compasszfjnNQ.scss */
 .player-control-bar .controls li.volume .slider.noUi-target.noUi-vertical .noUi-handle {
   box-shadow: none;
   border: none;
@@ -3551,27 +3551,27 @@ address {
   left: 0;
   cursor: pointer;
 }
-/* line 348, assetic_compassLXMLs7.scss */
+/* line 348, assetic_compasszfjnNQ.scss */
 .player-control-bar .controls li.volume .slider.noUi-target.noUi-vertical .noUi-handle:before, .player-control-bar .controls li.volume .slider.noUi-target.noUi-vertical .noUi-handle:after {
   background: none;
 }
-/* line 354, assetic_compassLXMLs7.scss */
+/* line 354, assetic_compasszfjnNQ.scss */
 .player-control-bar .controls li.volume .slider.noUi-target.noUi-background {
   background: none;
 }
-/* line 363, assetic_compassLXMLs7.scss */
+/* line 363, assetic_compasszfjnNQ.scss */
 .player-control-bar .controls li.fullscreen a .bkg {
   background-position: -197px -102px;
 }
-/* line 364, assetic_compassLXMLs7.scss */
+/* line 364, assetic_compasszfjnNQ.scss */
 .player-control-bar .controls li.fullscreen a:hover img {
   background-position: -197px -77px;
 }
-/* line 368, assetic_compassLXMLs7.scss */
+/* line 368, assetic_compasszfjnNQ.scss */
 .player-control-bar .controls li:first-child {
   margin-left: 0;
 }
-/* line 373, assetic_compassLXMLs7.scss */
+/* line 373, assetic_compasszfjnNQ.scss */
 .player-control-bar .share {
   background-color: white;
   background-color: rgba(255, 255, 255, 0.9);
@@ -3579,12 +3579,12 @@ address {
   padding-left: 20px;
   width: 263px;
 }
-/* line 381, assetic_compassLXMLs7.scss */
+/* line 381, assetic_compasszfjnNQ.scss */
 .player-control-bar .share .txt {
   margin-left: 12px;
 }
 
-/* line 392, assetic_compassLXMLs7.scss */
+/* line 392, assetic_compasszfjnNQ.scss */
 #media-gallery {
   position: relative;
   width: 843px;
@@ -3592,13 +3592,13 @@ address {
   margin: 0 auto;
   visibility: hidden;
 }
-/* line 399, assetic_compassLXMLs7.scss */
+/* line 399, assetic_compasszfjnNQ.scss */
 #media-gallery #imageFlow {
   position: relative;
   overflow: hidden;
   margin: 0 auto;
 }
-/* line 405, assetic_compassLXMLs7.scss */
+/* line 405, assetic_compasszfjnNQ.scss */
 #media-gallery #imageFlow .bank {
   width: 100%;
   height: 134px;
@@ -3608,19 +3608,19 @@ address {
   overflow: hidden;
   white-space: nowrap;
 }
-/* line 415, assetic_compassLXMLs7.scss */
+/* line 415, assetic_compasszfjnNQ.scss */
 #media-gallery #imageFlow li {
   display: inline-block;
   vertical-align: top;
   text-align: left;
   margin: 0 8px;
 }
-/* line 421, assetic_compassLXMLs7.scss */
+/* line 421, assetic_compasszfjnNQ.scss */
 #media-gallery #imageFlow li a {
   position: relative;
   display: block;
 }
-/* line 425, assetic_compassLXMLs7.scss */
+/* line 425, assetic_compasszfjnNQ.scss */
 #media-gallery #imageFlow li a .decoration {
   -webkit-transition: all 0.1s ease-in 0s;
   -moz-transition: all 0.1s ease-in 0s;
@@ -3636,12 +3636,12 @@ address {
   left: -7px;
   z-index: -1;
 }
-/* line 439, assetic_compassLXMLs7.scss */
+/* line 439, assetic_compasszfjnNQ.scss */
 #media-gallery #imageFlow li a:hover .decoration {
   background-color: white;
   border: 1px solid #898989;
 }
-/* line 444, assetic_compassLXMLs7.scss */
+/* line 444, assetic_compasszfjnNQ.scss */
 #media-gallery #imageFlow li a:hover img {
   -webkit-filter: grayscale(0);
   -moz-filter: grayscale(0);
@@ -3649,7 +3649,7 @@ address {
   -o-filter: grayscale(0);
   filter: grayscale(0);
 }
-/* line 449, assetic_compassLXMLs7.scss */
+/* line 449, assetic_compasszfjnNQ.scss */
 #media-gallery #imageFlow li a img {
   -webkit-filter: grayscale(100%);
   -moz-filter: grayscale(100%);
@@ -3658,12 +3658,12 @@ address {
   filter: grayscale(100%);
   display: block;
 }
-/* line 463, assetic_compassLXMLs7.scss */
+/* line 463, assetic_compasszfjnNQ.scss */
 #media-gallery #imageFlow li.current .decoration {
   background-color: white;
   border: 1px solid #898989;
 }
-/* line 469, assetic_compassLXMLs7.scss */
+/* line 469, assetic_compasszfjnNQ.scss */
 #media-gallery #imageFlow li .duration {
   position: absolute;
   bottom: 2px;
@@ -3674,22 +3674,22 @@ address {
   padding: 2px 5px;
   border: 1px solid #dddddd;
 }
-/* line 480, assetic_compassLXMLs7.scss */
+/* line 480, assetic_compasszfjnNQ.scss */
 #media-gallery #imageFlow li.diapo {
   position: absolute;
   margin: 0;
 }
-/* line 485, assetic_compassLXMLs7.scss */
+/* line 485, assetic_compasszfjnNQ.scss */
 #media-gallery #imageFlow li.diapo a {
   width: inherit;
   height: inherit;
 }
-/* line 492, assetic_compassLXMLs7.scss */
+/* line 492, assetic_compasszfjnNQ.scss */
 #media-gallery #imageFlow .legend {
   position: absolute;
   width: 100%;
 }
-/* line 496, assetic_compassLXMLs7.scss */
+/* line 496, assetic_compasszfjnNQ.scss */
 #media-gallery #imageFlow .legend .title {
   display: block;
   font-size: 0.917em;
@@ -3700,12 +3700,12 @@ address {
   margin: 7px 0 0 0;
   line-height: 1.1em;
 }
-/* line 507, assetic_compassLXMLs7.scss */
+/* line 507, assetic_compasszfjnNQ.scss */
 #media-gallery #imageFlow .legend .description {
   font-size: 0.833em;
   color: #898989;
 }
-/* line 514, assetic_compassLXMLs7.scss */
+/* line 514, assetic_compasszfjnNQ.scss */
 #media-gallery .scrollbar {
   /* IE9 SVG, needs conditional override of 'filter' to 'none' */
   /*background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUlIiBzdG9wLWNvbG9yPSIjODk4OTg5IiBzdG9wLW9wYWNpdHk9IjAuMSIvPgogICAgPHN0b3Agb2Zmc2V0PSI1MCUiIHN0b3AtY29sb3I9IiM4OTg5ODkiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSI5NSUiIHN0b3AtY29sb3I9IiM4OTg5ODkiIHN0b3Atb3BhY2l0eT0iMC4xIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmZmZmZmYiIHN0b3Atb3BhY2l0eT0iMCIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
@@ -3737,7 +3737,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
   margin: 20px auto 0;
   z-index: 1;
 }
-/* line 533, assetic_compassLXMLs7.scss */
+/* line 533, assetic_compasszfjnNQ.scss */
 #media-gallery .scrollbar .left, #media-gallery .scrollbar .right {
   cursor: pointer;
   position: absolute;
@@ -3751,20 +3751,20 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
   transition: all 0.3s ease-in 0s;
   display: none;
 }
-/* line 542, assetic_compassLXMLs7.scss */
+/* line 542, assetic_compasszfjnNQ.scss */
 #media-gallery .scrollbar .left:hover, #media-gallery .scrollbar .right:hover {
   border-color: #582411;
   color: #582411;
 }
-/* line 550, assetic_compassLXMLs7.scss */
+/* line 550, assetic_compasszfjnNQ.scss */
 #media-gallery .scrollbar .left {
   left: 25px;
 }
-/* line 554, assetic_compassLXMLs7.scss */
+/* line 554, assetic_compasszfjnNQ.scss */
 #media-gallery .scrollbar .right {
   right: 25px;
 }
-/* line 558, assetic_compassLXMLs7.scss */
+/* line 558, assetic_compasszfjnNQ.scss */
 #media-gallery .scrollbar .bar {
   position: absolute;
   height: 5px;
@@ -3774,7 +3774,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
   cursor: pointer;
   background-color: #b18f5c;
 }
-/* line 567, assetic_compassLXMLs7.scss */
+/* line 567, assetic_compasszfjnNQ.scss */
 #media-gallery .scrollbar .bar:hover {
   background-color: #582411;
 }

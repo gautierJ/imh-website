@@ -1,6 +1,7 @@
 imh:
   base:
     menu:
+      label:          'меню'
       home:           'Главная'
       biography:      'Биография'
       repertoire:     'Репертуар'
@@ -93,11 +94,11 @@ imh:
     contact:
       page_title:     'Контакты | Ионелла Маринуца'
       answer:         'Напишите Ваше сообщение !'
-      lastname:       'Ваша фамилия*'
-      firstname:      'Ваши имя*'
-      email:          'Ваш email*'
-      subject:        'Тема письма*'
-      message:        'Текст сообщения*'
+      lastname:       'Ваша фамилия* :'
+      firstname:      'Ваши имя* :'
+      email:          'Ваш email* :'
+      subject:        'Тема письма* :'
+      message:        'Текст сообщения* :'
       send:           'Отправить'
       mandatory:      'Поля обязательные для заполнения'
 

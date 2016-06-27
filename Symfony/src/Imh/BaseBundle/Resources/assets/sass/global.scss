@@ -35,13 +35,6 @@ button:focus {
   outline: none;
 }
 
-// Helpers
-//============================================
-.helper-no-padding { padding: 0 !important; }
-.helper-no-margin { margin: 0 !important; }
-.helper-no-padding-left { padding-left: 0 !important; }
-.helper-no-padding-right { padding-right: 0 !important; }
-
 // IMH
 //============================================
 
@@ -53,7 +46,7 @@ button:focus {
   font-size: $fourteenpx;
   color: $color-grey-dark;
   line-height: 40px;
-  margin-bottom: 20px;
+  margin: 0 0 20px;
 }
 
 .imh__title-h2--border {
@@ -147,6 +140,20 @@ button:focus {
 }
 
 @media (max-width: $screen-xs-max) {
+  .imh__title-h2 {
+    font-size: $basepx;
+    line-height: 25px;
+  }
+
+  .imh__container--wrapper {
+    border-top-width: 0;
+    padding: 0;
+  }
+
+  .imh__title-h2--border {
+    line-height: 40px;
+  }
+
   .imh__content { padding-top: 65px; }
 
   .imh__container--shadows::after,

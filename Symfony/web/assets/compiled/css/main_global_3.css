@@ -2198,7 +2198,7 @@ address {
     display: none !important;
   }
 }
-/* line 5, assetic_compasslE7NyK.scss */
+/* line 5, assetic_compassXk8C3j.scss */
 * {
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
   -webkit-box-sizing: border-box;
@@ -2206,61 +2206,68 @@ address {
   box-sizing: border-box;
 }
 
-/* line 10, assetic_compasslE7NyK.scss */
+/* line 10, assetic_compassXk8C3j.scss */
 html, body {
   height: 100%;
 }
 
-/* line 14, assetic_compasslE7NyK.scss */
+/* line 14, assetic_compassXk8C3j.scss */
 body {
   font-family: "toma_sansregular", Arial, Helvetica, sans-serif;
   font-size: 12px;
 }
 
-/* line 19, assetic_compasslE7NyK.scss */
+/* line 19, assetic_compassXk8C3j.scss */
 a {
   text-decoration: none;
   color: black;
 }
 
-/* line 24, assetic_compasslE7NyK.scss */
+/* line 24, assetic_compassXk8C3j.scss */
 a.icon {
   display: inline-block;
 }
 
-/* line 28, assetic_compasslE7NyK.scss */
+/* line 28, assetic_compassXk8C3j.scss */
 ul, ol {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
-/* line 34, assetic_compasslE7NyK.scss */
+/* line 34, assetic_compassXk8C3j.scss */
 button:focus {
   outline: none;
 }
 
-/* line 40, assetic_compasslE7NyK.scss */
-.helper-no-padding {
-  padding: 0 !important;
+/* line 42, assetic_compassXk8C3j.scss */
+.imh__title {
+  font-weight: normal;
 }
 
-/* line 41, assetic_compasslE7NyK.scss */
-.helper-no-margin {
-  margin: 0 !important;
+/* line 44, assetic_compassXk8C3j.scss */
+.imh__title-h2 {
+  font-family: "ralewaymedium", Arial, Helvetica, sans-serif;
+  font-size: 1.167em;
+  color: #3f3f3f;
+  line-height: 40px;
+  margin: 0 0 20px;
 }
 
-/* line 42, assetic_compasslE7NyK.scss */
-.helper-no-padding-left {
-  padding-left: 0 !important;
+/* line 52, assetic_compassXk8C3j.scss */
+.imh__title-h2--border {
+  border: 1px solid lightgrey;
+  background-color: #fcfcfc;
 }
 
-/* line 43, assetic_compasslE7NyK.scss */
-.helper-no-padding-right {
-  padding-right: 0 !important;
+/* line 57, assetic_compassXk8C3j.scss */
+> p {
+  margin: 0;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #898989;
 }
 
-/* line 47, assetic_compasslE7NyK.scss */
+/* line 65, assetic_compassXk8C3j.scss */
 .imh__bkg-image {
   position: absolute;
   top: 0;
@@ -2269,12 +2276,12 @@ button:focus {
   z-index: -1;
 }
 
-/* line 55, assetic_compasslE7NyK.scss */
+/* line 73, assetic_compassXk8C3j.scss */
 .imh__container-fluid {
   overflow: hidden;
 }
 
-/* line 59, assetic_compasslE7NyK.scss */
+/* line 77, assetic_compassXk8C3j.scss */
 .imh__content {
   margin-left: -15px;
   margin-right: -15px;
@@ -2290,7 +2297,7 @@ button:focus {
   clear: both;
 }
 
-/* line 64, assetic_compasslE7NyK.scss */
+/* line 82, assetic_compassXk8C3j.scss */
 .imh__container {
   position: relative;
   top: -34px;
@@ -2299,7 +2306,7 @@ button:focus {
   padding: 0;
 }
 
-/* line 72, assetic_compasslE7NyK.scss */
+/* line 90, assetic_compassXk8C3j.scss */
 .imh__container--wrapper {
   background-color: white;
   border-top: 34px solid white;
@@ -2308,7 +2315,7 @@ button:focus {
   margin: 0 auto;
   position: relative;
 }
-/* line 81, assetic_compasslE7NyK.scss */
+/* line 99, assetic_compassXk8C3j.scss */
 .imh__container--wrapper.imh__container--shadows::after, .imh__container--wrapper.imh__container--shadows::before {
   content: " ";
   position: absolute;
@@ -2317,31 +2324,31 @@ button:focus {
   height: 400px;
   z-index: -10;
 }
-/* line 90, assetic_compasslE7NyK.scss */
+/* line 108, assetic_compassXk8C3j.scss */
 .imh__container--wrapper.imh__container--shadows::before {
   left: 11px;
   box-shadow: -10px 0 4px whitesmoke;
   transform: rotate(-1deg);
 }
-/* line 96, assetic_compasslE7NyK.scss */
+/* line 114, assetic_compassXk8C3j.scss */
 .imh__container--wrapper.imh__container--shadows::after {
   right: 11px;
   box-shadow: 10px 0 4px whitesmoke;
   transform: rotate(1deg);
 }
 
-/* line 103, assetic_compasslE7NyK.scss */
+/* line 121, assetic_compassXk8C3j.scss */
 .empty {
   width: 0;
   height: 0;
 }
 
-/* line 108, assetic_compasslE7NyK.scss */
+/* line 126, assetic_compassXk8C3j.scss */
 .lazy {
   display: none;
 }
 
-/* line 112, assetic_compasslE7NyK.scss */
+/* line 130, assetic_compassXk8C3j.scss */
 .block-triangle {
   opacity: 0.4;
   /* Good browsers */
@@ -2365,19 +2372,42 @@ button:focus {
 }
 
 @media (max-width: 767px) {
-  /* line 125, assetic_compasslE7NyK.scss */
+  /* line 143, assetic_compassXk8C3j.scss */
+  .imh__title-h2 {
+    font-size: 1em;
+    line-height: 25px;
+  }
+
+  /* line 148, assetic_compassXk8C3j.scss */
+  .imh__container--wrapper {
+    border-top-width: 0;
+    padding: 0;
+  }
+
+  /* line 153, assetic_compassXk8C3j.scss */
+  .imh__title-h2--border {
+    line-height: 40px;
+  }
+
+  /* line 157, assetic_compassXk8C3j.scss */
   .imh__content {
     padding-top: 65px;
   }
+
+  /* line 160, assetic_compassXk8C3j.scss */
+  .imh__container--shadows::after,
+  .imh__container--shadows::before {
+    display: none;
+  }
 }
 @media (max-width: 1199px) {
-  /* line 129, assetic_compasslE7NyK.scss */
+  /* line 166, assetic_compassXk8C3j.scss */
   .imh__bkg-image {
     display: none !important;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
-  /* line 133, assetic_compasslE7NyK.scss */
+  /* line 170, assetic_compassXk8C3j.scss */
   .imh__bkg-image {
     left: 0;
   }

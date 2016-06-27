@@ -12,15 +12,13 @@ $grid-columns: 24;
 }
 
 .imh__repertoire-wrapper {
+  @include clearfix();
   margin-top: 60px;
   font-size: $fourteenpx;
 
   > div {
     min-height: 240px;
-
-    /*&:nth-child(2n) {
-      padding-right: 0;
-    }*/
+    padding: 0;
   }
 }
 
@@ -58,7 +56,6 @@ $grid-columns: 24;
 
 .imh__repertoire-duration {
   font-style: italic;
-  font-size: 12px;
   margin-top: 10px;
 }
 
@@ -70,13 +67,18 @@ $grid-columns: 24;
   }
 
   .imh__container--wrapper {
-    padding: 0;
-    border-top-width: 15px;
+    padding: 15px 0;
+    border-top-width: 0;
   }
 
-  .imh__container--shadows::after,
-  .imh__container--shadows::before {
-    display: none;
+  .imh__repertoire-wrapper {
+    margin-top: 30px;
+  }
+
+  .imh__repertoire-wrapper > div {
+    padding-left: 15px;
+    padding-right: 15px;
+    min-height: inherit;
   }
 
   .imh__repertoire-col {
@@ -85,12 +87,14 @@ $grid-columns: 24;
 
   .imh__repertoire-image {
     display: inline-block;
+    width: 150px;
   }
 
   .imh__repertoire-description {
-    padding: 20px 0 30px;
-    margin-bottom: 40px;
+    padding: 20px 0;
+    margin-bottom: 30px;
     border-bottom: 1px dotted $color-grey-light;
+    font-size: $elevenpx;
   }
 
   .imh__repertoire-description--last {
