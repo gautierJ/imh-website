@@ -9,7 +9,7 @@
         <meta http-equiv="content-language" content="fr,en,ru">
         <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
 
-        {% block facebookOpenGraphTags %}{% endblock %}
+        {% block facebookOpenGraphTags '' %}
 
         <link rel="icon" type="image/x-icon" href="{{ asset('/favicon.ico') }}" />
 
@@ -25,19 +25,7 @@
         </style>
         <![endif]-->
 
-        {% block stylesheets %}
-            {% stylesheets output='assets/compiled/css/main.css' filter='compass, cssrewrite'
-                'assets/vendor/components-font-awesome/scss/font-awesome.scss'
-                '@ImhBaseBundle/Resources/assets/sass/fonts.scss'
-                '@ImhBaseBundle/Resources/assets/sass/global.scss'
-                '@ImhBaseBundle/Resources/assets/sass/sidebar.scss'
-                '@ImhBaseBundle/Resources/assets/sass/navigation.scss'
-                '@ImhBaseBundle/Resources/assets/sass/lang.scss'
-                '@ImhBaseBundle/Resources/assets/sass/footer.scss'
-            %}
-            <link rel="stylesheet" href="{{ asset_url }}" type="text/css"/>
-            {% endstylesheets %}
-        {% endblock %}
+        {% block stylesheets '' %}
     </head>
 
     <body>

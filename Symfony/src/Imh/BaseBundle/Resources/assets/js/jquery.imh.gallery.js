@@ -19,6 +19,7 @@
         wHeight           = $(window).height(),
         ratio             = wWidth/wHeight,
 
+
         containerSelector = 'sonata-media-gallery-media-list',
         itemSelector      = 'sonata-media-gallery-media-item',
         linkSelector      = 'sonata-media-gallery-media-item-link',
@@ -175,14 +176,14 @@
             return $('.' + itemSelector).not('.' + expSelector);
         };
 
-        var getItemPosition = function(item) {
+        /*var getItemPosition = function(item) {
 
-        };
+        };*/
 
         $container.on('click', function(e) {
-            if(e.target.className == linkSelector) {
+            if(e.target.className == 'plus-icon') {
                 $('.' + itemSelector).removeClass(expSelector);
-                $targetItem = $(e.target).parent();
+                $targetItem = $(e.target).parent().parent();
                 $targetItem.addClass(expSelector);
                 getInactiveItems().addClass(GalleryManager.cssAnimations[0]);
                 isClosed = false;

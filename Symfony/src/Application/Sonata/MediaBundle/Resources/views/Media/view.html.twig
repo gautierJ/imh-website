@@ -26,7 +26,7 @@
 {% block stylesheets %}
     {{ parent() }}
 
-    {% stylesheets output='assets/compiled/css/video.css' filter='compass'
+    {% stylesheets output='assets/compiled/css/video.css' filter='compass, cssrewrite'
         '@ApplicationSonataMediaBundle/Resources/assets/sass/video_player.scss'
         '@ImhBaseBundle/Resources/assets/sass/jquery.nouislider.scss'
         '@ApplicationSonataCommentBundle/Resources/assets/sass/comments.scss'

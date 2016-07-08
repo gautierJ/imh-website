@@ -3,41 +3,71 @@
 {% block title %}{{ 'sonata.media.gallery.page_title'|trans }}{% endblock %}
 
 {% block stylesheets %}
-    {{ parent() }}
-
-    {% stylesheets output='assets/compiled/css/gallery.css' filter='compass'
-    '@ApplicationSonataMediaBundle/Resources/assets/sass/gallery.scss'
+    {% stylesheets output='assets/compiled/css/gallery.css' filter='compass, cssrewrite'
+        '@ApplicationSonataMediaBundle/Resources/assets/sass/gallery.scss'
     %}
     <link rel="stylesheet" href="{{ asset_url }}" type="text/css"/>
     {% endstylesheets %}
 {% endblock %}
 
-{% block header '' %}
+{% block facebookSDK %}
+    <div id="fb-root"></div>
+    <script type="text/javascript">
+        window.fbAsyncInit = function() {
+            FB.init({
+                appId   : '761674913903863',
+                xfbml   : true,
+                version : 'v2.2'
+            });
+        };
+
+        (function(d, s, id){
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) {return;}
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/fr_FR/sdk.js";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+
+        // for custom facebook share button
+        function postToShare(href){
+            var obj = {
+                method: 'share',
+                href: href
+            };
+            FB.ui(obj, function(response){});
+        }
+    </script>
+{% endblock %}
+
+{% block header %}
+    {% if isTouchDevice %}{{ parent() }}{% endif %}
+{% endblock %}
 
 {% block main %}
     <div id="gallery-wrapper" class="loading">
         <div id="frame">
             <ul id="sonata-media-gallery-media-list" class="clearfix slidee">
                {% spaceless %}
-               {% for galleryHasMedia in gallery.GalleryHasMedias %}
-                   <li class="sonata-media-gallery-media-item">
-                        <a href="#" class="sonata-media-gallery-media-item-link">  {# {{ url('sonata_media_view', {'id': galleryHasMedia.media|sonata_urlsafeid }) }} #}
-                            {% thumbnail galleryHasMedia.media, gallery.defaultFormat with {'class': 'media-object'} %}
-                            {#<div class="media-bar clearfix">
-                                {% if galleryHasMedia.media.description != "" %}<p class="media-description">{{ galleryHasMedia.media.description|raw }}</p>{% endif %}
-                            </div>#}
-                            <div class="media-btns">
-                                {#<span class="zoom">
-                                    <img src="{{ asset('bundles/imhbase/images/empty.gif') }}" alt="" />
-                                </span>#}<span class="close">
+                   {% for galleryHasMedia in gallery.GalleryHasMedias %}
+                       <li class="sonata-media-gallery-media-item">
+                            <a href="#" class="sonata-media-gallery-media-item-link">  {# {{ url('sonata_media_view', {'id': galleryHasMedia.media|sonata_urlsafeid }) }} #}
+                                {% thumbnail galleryHasMedia.media, gallery.defaultFormat with {'class': 'media-object'} %}
+                                {#<div class="media-bar clearfix">
+                                    {% if galleryHasMedia.media.description != "" %}<p class="media-description">{{ galleryHasMedia.media.description|raw }}</p>{% endif %}
+                                </div>#}
+                                <div class="media-btns">
+                                    {#<span class="zoom">
                                         <img src="{{ asset('bundles/imhbase/images/empty.gif') }}" alt="" />
-                                    </span>
-                            </div>
-                            <div class="plus-icon"></div>
-                        </a>
-                    </li>
-                {% endfor %}
-                {% endspaceless %}
+                                    </span>#}<span class="close">
+                                            <img src="{{ asset('bundles/imhbase/images/empty.gif') }}" alt="" />
+                                        </span>
+                                </div>
+                                <div class="plus-icon"></div>
+                            </a>
+                        </li>
+                   {% endfor %}
+               {% endspaceless %}
             </ul>
         </div>
         <div id="trigger">
@@ -45,12 +75,36 @@
                 <img src="{{ asset('bundles/imhbase/images/empty.gif') }}" alt="" />
             </a>
         </div>
-        {% include 'ImhBaseBundle:Part:sidebar.html.twig' %}
+        {% if not isTouchDevice %}
+            {% embed "ImhBaseBundle:Part:sidebar.html.twig" %}
+                {% block menu_social %}
+                    <div class="imh__navigation-menu-social">
+                        <span class="fa-stack fa-2x">
+                            <a class="icon fbshare" href="{{ url('sonata_media_gallery_view', {'id': app.request.get('id')} ) }}">
+                                <i class="fa fa-circle fa-inverse fa-stack-2x"></i>
+                                <i class="fa fa-facebook fa-lg fa-stack-1x" aria-hidden="true"></i>
+                            </a>
+                        </span>
+                        <span class="fa-stack fa-2x">
+                            <a class="icon twitter popup" href="http://twitter.com/share?url={{ url('sonata_media_gallery_view', {'id': app.request.get('id')} ) }}">
+                                <i class="fa fa-circle fa-inverse fa-stack-2x"></i>
+                                <i class="fa fa-twitter fa-lg fa-stack-1x" aria-hidden="true"></i>
+                            </a>
+                        </span>
+                    </div>
+                {% endblock %}
+            {% endembed %}
+        {% endif %}
     </div>
     <img id="spinner" src="{{ asset('bundles/imhbase/images/loader_white.svg') }}" alt="loading">
-    <div id="scrollbar">
-        <div class="handle">
-            <div class="mousearea"></div>
+
+    <div class="row">
+        <div class="col-md-24">
+        <div id="scrollbar">
+            <div class="handle">
+                <div class="mousearea"></div>
+            </div>
+        </div>
         </div>
     </div>
 {% endblock %}
@@ -61,17 +115,15 @@
 {% block javascripts %}
     {{ parent() }}
 
-    <script src="{{ asset('/assets/lib/sly/sly.min.js') }}"></script>
-    <script src="{{ asset('/assets/lib/infinite-scroll/jquery.infinite-scroll.js') }}"></script>
     {#<script src="{{ asset('/assets/lib/infinite-scroll/behaviors/local.js') }}"></script>#}
-    <script src="{{ asset('/assets/lib/infinite-scroll/behaviors/manual-trigger.js') }}"></script>
-
-    <script src="{{ asset('/assets/lib/isotope/imagesloaded.pkgd.min.js') }}"></script>
-    {#<script src="{{ asset('/assets/lib/isotope/packery.pkgd.min.js') }}"></script>#}
-    <script src="{{ asset('/assets/lib/isotope/pkgd.js') }}"></script>
+    {#<script src="{{ asset('/assets/lib/infinite-scroll/behaviors/manual-trigger.js') }}"></script>#}
     {#<script src="{{ asset('/assets/lib/isotope/smartresize.js') }}"></script>#}
 
     {% javascripts output='assets/compiled/js/gallery.js'
+        'assets/lib/sly/sly.min.js'
+        'assets/lib/infinite-scroll/jquery.infinite-scroll.js'
+        'assets/lib/isotope/imagesloaded.pkgd.min.js'
+        'assets/lib/isotope/pkgd.js'
         '@ImhBaseBundle/Resources/assets/js/jquery.imh.gallery.js'
         '@ImhBaseBundle/Resources/assets/js/jquery.imh.shape.js'
     %}
@@ -85,6 +137,28 @@
             var triangle = $('.block-triangle');
             triangle.shape(window);
             $(window).on('resize', function () { triangle.shape(this); });
+
+            // Social buttons
+            $('.fbshare').click(function(e){
+                postToShare($(this).attr('href'));
+                e.preventDefault();
+            });
+
+            $('.popup').click(function(e) {
+                var width  = 575,
+                        height = 400,
+                        left   = ($(window).width()  - width)  / 2,
+                        top    = ($(window).height() - height) / 2,
+                        url    = this.href,
+                        opts   = 'status=1' +
+                                ',width='  + width  +
+                                ',height=' + height +
+                                ',top='    + top    +
+                                ',left='   + left;
+
+                window.open(url, 'twitter', opts);
+                e.preventDefault();
+            });
         });
     </script>
 {% endblock %}

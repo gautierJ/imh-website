@@ -37,6 +37,7 @@ class AppKernel extends Kernel
             new FOS\UserBundle\FOSUserBundle(),
             new Sonata\UserBundle\SonataUserBundle('FOSUserBundle'),
             new EddieJaoude\Bundle\SymfonyTranslationTwigCollectionBundle\EddieJaoudeSymfonyTranslationTwigCollectionBundle(),
+            new SunCat\MobileDetectBundle\MobileDetectBundle(),
 
             // IMH specific
             new Imh\BaseBundle\ImhBaseBundle(),

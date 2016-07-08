@@ -3,10 +3,8 @@
 {% block title %}{{ 'imh.base.repertoire.page_title'|trans }}{% endblock%}
 
 {% block stylesheets %}
-    {{ parent() }}
-
-    {% stylesheets output='assets/compiled/css/repertoire.css' filter='compass'
-        '@ImhBaseBundle/Resources/assets/sass/repertoire.scss'
+    {% stylesheets output='assets/compiled/css/repertoire.css' filter='compass, cssrewrite'
+        '@ImhBaseBundle/Resources/assets/sass/page/repertoire.scss'
     %}
     <link rel="stylesheet" href="{{ asset_url }}" type="text/css"/>
     {% endstylesheets %}
@@ -54,15 +52,17 @@
 {% endblock %}
 
 {% block sidebar %}
-    {% embed "ImhBaseBundle:Part:sidebar.html.twig" %}
-        {% block menu_navigation %}
-            <div class="imh__navigation-menu">
-                {{ knp_menu_render('main', {'currentAsLink':false}) }}
-            </div>
-        {% endblock %}
+    {% if not isTouchDevice %}
+        {% embed "ImhBaseBundle:Part:sidebar.html.twig" %}
+            {% block menu_navigation %}
+                <div class="imh__navigation-menu">
+                    {{ knp_menu_render('main', {'currentAsLink':false}) }}
+                </div>
+            {% endblock %}
 
-        {% block menu_gallery '' %}
-    {% endembed %}
+            {% block menu_gallery '' %}
+        {% endembed %}
+    {% endif %}
 {% endblock %}
 
 {% block javascripts %}
@@ -85,7 +85,7 @@
             });
 
             if (!Modernizr.touchevents) {
-                $('.navigation-menu').scrollMove(); // Menu plugin
+                $('[data-sidebar]').scrollMove(); // Menu plugin
             }
         });
     </script>

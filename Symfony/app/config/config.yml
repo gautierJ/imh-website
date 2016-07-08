@@ -45,6 +45,10 @@ assetic:
         compass:
             bin: %compass.bin%
             cache_location: %kernel.cache_dir%
+            #load_paths:
+                #- "%kernel.root_dir%/../assets/vendor/bootstrap-sass/assets/stylesheets/bootstrap"
+                #- "%kernel.root_dir%/../src"
+
 #        yui_css:
 #            jar: "%kernel.root_dir%/Resources/java/yuicompressor.jar"
 #        yui_js:
@@ -88,7 +92,7 @@ swiftmailer:
 
 # Sonata Admin Configuration
 sonata_admin:
-    title:      IMH Admin
+    title:      Ionella Marinutsa Admin
 #    title_logo: bundles/acmedemo/img/fancy_acme_logo.png
 
     templates:
@@ -269,3 +273,34 @@ liip_imagine:
 knp_menu:
     twig:
         template: ImhBaseBundle:Menu:knp_menu.html.twig
+
+mobile_detect:
+    redirect:
+        full:
+            is_enabled: false           # default false
+            host: http://site.com       # with scheme (http|https), default null, url validate
+            status_code: 301            # default 302
+            action: redirect            # redirect, no_redirect, redirect_without_path
+        mobile:
+            is_enabled: false           # default false
+            host: http://m.site.com     # with scheme (http|https), default null, url validate
+            status_code: 301            # default 302
+            action: redirect            # redirect, no_redirect, redirect_without_path
+        tablet:
+            is_enabled: false           # default false
+            host: http://t.site.com     # with scheme (http|https), default null, url validate
+            status_code: 301            # default 302
+            action: redirect            # redirect, no_redirect, redirect_without_path
+        detect_tablet_as_mobile: true   # default false
+    switch_device_view:
+        save_referer_path: true         # default true
+                                        # true  redirectUrl = http://site.com/current/path?currentQuery=string
+                                        # false redirectUrl = http://site.com
+    service:
+        mobile_detector: mobile_detect.mobile_detector.default
+
+    cookie_key: "device_view"                     # default
+    switch_param: "device_view"                   # default
+    device_view_class: "SunCat\MobileDetectBundle\Helper\DeviceView"
+    request_listener_class: "SunCat\MobileDetectBundle\EventListener\RequestListener"
+    extension_class: "SunCat\MobileDetectBundle\Twig\Extension\MobileDetectExtension"

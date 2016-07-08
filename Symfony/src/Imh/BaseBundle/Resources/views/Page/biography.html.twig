@@ -3,12 +3,10 @@
 {% block title %}{{ 'imh.base.biography.page_title'|trans }}{% endblock%}
 
 {% block stylesheets %}
-    {{ parent() }}
-
     <link rel="stylesheet" href="{{ asset('/assets/lib/owl-carousel/owl.carousel.css') }}" type="text/css" />
 
     {% stylesheets output='assets/compiled/css/biography.css' filter='compass, cssrewrite'
-        '@ImhBaseBundle/Resources/assets/sass/biography.scss'
+        '@ImhBaseBundle/Resources/assets/sass/page/biography.scss'
     %}
     <link rel="stylesheet" href="{{ asset_url }}" type="text/css"/>
     {% endstylesheets %}
@@ -72,15 +70,17 @@
 {% endblock %}
 
 {% block sidebar %}
-    {% embed "ImhBaseBundle:Part:sidebar.html.twig" %}
-        {% block menu_navigation %}
-            <div class="imh__navigation-menu">
-                {{ knp_menu_render('main', {'currentAsLink':false}) }}
-            </div>
-        {% endblock %}
+    {% if not isTouchDevice %}
+        {% embed "ImhBaseBundle:Part:sidebar.html.twig" %}
+            {% block menu_navigation %}
+                <div class="imh__navigation-menu">
+                    {{ knp_menu_render('main', {'currentAsLink':false}) }}
+                </div>
+            {% endblock %}
 
-        {% block menu_gallery '' %}
-    {% endembed %}
+            {% block menu_gallery '' %}
+        {% endembed %}
+    {% endif %}
 {% endblock %}
 
 {% block javascripts %}
@@ -106,7 +106,6 @@
                 $sC          = $('[data-prizes-content]'),
                 h            = $sC.height(),
                 cssReady     = 'ready',
-                cssHidden    = 'hidden',
                 cssClosed    = 'closed',
                 isVisible    = false,
                 sly;
@@ -122,7 +121,6 @@
             if (!Modernizr.touchevents) {
                 $('[data-sidebar]').scrollMove(); // Menu plugin
             } else {
-                $('[data-sidebar]').addClass(cssHidden);
                 $sT.removeClass(cssClosed).trigger('click'); // Open prizes menu on mobile / tablet
             }
 

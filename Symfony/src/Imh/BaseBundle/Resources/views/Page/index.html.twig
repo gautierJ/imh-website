@@ -1,10 +1,8 @@
 {% extends 'ImhBaseBundle::layout.html.twig' %}
 
 {% block stylesheets %}
-    {{ parent() }}
-
     {% stylesheets output='assets/compiled/css/home.css' filter='compass, cssrewrite'
-        '@ImhBaseBundle/Resources/assets/sass/home.scss'
+        '@ImhBaseBundle/Resources/assets/sass/page/home.scss'
     %}
     <link rel="stylesheet" href="{{ asset_url }}" type="text/css"/>
     {% endstylesheets %}
@@ -63,23 +61,23 @@
             'use strict';
 
             var assetUrl     = '{{ asset('bundles/imhbase/images/ionella_bw.jpg') }}',
-                    context      = $('[data-content-home]'),
-                    lang         = $('.block-language'),
-                    langLinks    = lang.children('a'),
-                    loader       = $('.loader'),
-                    counter      = $('.progressCounter'),
-                    triangle     = $('.block-triangle'),
-                    titles       = ['.block-myself h1', '.block-myself h2', '.block-myself h3'],
-                    grTitles     = $(titles.join(', ')),
-                    fontLoaded   = false,
-                    windowH      = $(window).height(),
-                    imageCtn     = $('.bkg-image-ctn'),
-                    imageCtnW    = imageCtn.width(),
-                    image        = imageCtn.find('.bkg-image'),
-                    imageH       = image.height(),
-                    imageW       = image.width(),
-                    gap          = (image.width() + image.offset().left) - imageCtn.width(),
-                    imageRatio   = imageH / imageW;
+                context      = $('[data-content-home]'),
+                lang         = $('.block-language'),
+                langLinks    = lang.children('a'),
+                loader       = $('.loader'),
+                counter      = $('.progressCounter'),
+                triangle     = $('.block-triangle'),
+                titles       = ['.block-myself h1', '.block-myself h2', '.block-myself h3'],
+                grTitles     = $(titles.join(', ')),
+                fontLoaded   = false,
+                windowH      = $(window).height(),
+                imageCtn     = $('.bkg-image-ctn'),
+                imageCtnW    = imageCtn.width(),
+                image        = imageCtn.find('.bkg-image'),
+                imageH       = image.height(),
+                imageW       = image.width(),
+                gap          = (image.width() + image.offset().left) - imageCtn.width(),
+                imageRatio   = imageH / imageW;
 
 
             function adjustBkgImg(i, ic, icw, g, ir, wh) {

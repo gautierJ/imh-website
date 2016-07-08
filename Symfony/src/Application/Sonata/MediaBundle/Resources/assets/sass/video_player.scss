@@ -1,7 +1,5 @@
-$grid-columns: 24;
-@import "../../../../../../../web/assets/vendor/bootstrap-sass/assets/stylesheets/bootstrap";
-@import "../../../../../../Imh/BaseBundle/Resources/assets/sass/variables";
-@import "../../../../../../Imh/BaseBundle/Resources/assets/sass/mixins";
+$fa-font-path: "../../../assets/vendor/components-font-awesome/fonts";
+@import "../../../../../../Imh/BaseBundle/Resources/assets/sass/main";
 
 .imh__container {
   padding-bottom: 100px;

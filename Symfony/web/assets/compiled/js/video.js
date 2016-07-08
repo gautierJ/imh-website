@@ -2089,6 +2089,7 @@ var YT_ready = function() {
         }
     });
     var status;
+    var timer;
     var slider;
     var playerTotalTime;
 

@@ -23,10 +23,10 @@
 
         "sonata-project/admin-bundle": "3.0.0",
         "sonata-project/media-bundle": "^3.0",
+        "sonata-project/classification-bundle": "^3.0",
         "sonata-project/comment-bundle": "^3.0",
         "sonata-project/easy-extends-bundle": "2.1.9",
         "sonata-project/user-bundle": "3.0.0",
-        "twig/twig": "^1.23",
 
         "friendsofsymfony/comment-bundle": "~2.0",
         "friendsofsymfony/jsrouting-bundle": "~1.5",
@@ -35,7 +35,8 @@
         "eddiejaoude/eddie-jaoude-symfony-translation-twig-collection-bundle": "2.2.*@dev",
         "kriswallsmith/buzz": "^0.15",
         "coresphere/console-bundle": "0.1.0",
-        "sonata-project/classification-bundle": "^3.0"
+        "suncat/mobile-detect-bundle": "0.10.3"
+
     },
     "scripts": {
         "post-install-cmd": [

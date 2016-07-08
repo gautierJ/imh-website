@@ -1,0 +1,138 @@
+.imh__sidebar {
+  position: fixed;
+  z-index: 1;
+  top: 270px;
+  left: 20px;
+  width: 120px;
+  display: none;
+}
+
+.imh__navigation-menu {
+  position: fixed;
+  height: auto;
+
+  ul {
+    background: url("/bundles/imhbase/images/header-bg.png") repeat scroll 0 0;
+    border: 1px solid $color-grey-medium;
+    width: 40px;
+    margin-top: 20px;
+  }
+
+  li:not(.gallery) {
+    position: relative;
+    height: 40px;
+    cursor: pointer;
+
+    &.first {
+      margin-top: 17px;
+    }
+
+    &.last {
+      margin-bottom: 17px;
+    }
+
+    &::after {
+      border: 1px solid $color-grey-medium;
+      @include transition(all, 0.2s, ease-in, 0s);
+      content: " ";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin: -6px 0 0 -6px;
+      width: 8px;
+      height: 8px;
+      padding: 1px;
+    }
+
+    &.current {
+      &::after {
+        background-color: $color-grey-dark;
+        border: 1px solid $color-grey-dark;
+        margin: -6px 0 0 -6px;
+      }
+
+      a, span {
+        background: url("/bundles/imhbase/images/header-bg.png") repeat scroll 0 0;
+        color: $color-grey-darker;
+        border: 1px solid $color-grey-medium;
+        border-left: none;
+        margin-left: 38px;
+        padding-right: 16px;
+        text-indent: 13px;
+      }
+    }
+
+    &:hover {
+      &::after {
+        border: 1px solid $color-grey-dark;
+        background: $color-grey-dark;
+      }
+
+      a {
+        color: $color-grey-darker;
+      }
+    }
+
+    a, span {
+      font-family: 'ralewaymedium', $font-fallback;
+      color: $color-grey-dark;
+      font-size: $basepx;
+      display: inline-block;
+      position: relative;
+      text-indent: 53px;
+      height: 40px;
+      line-height: 40px;
+      z-index: 1;
+    }
+
+    .fa-home {
+      display: none;
+
+      & + span {
+        display: inline;
+      }
+    }
+  }
+}
+
+.imh__navigation-menu-social {
+  border-top: 1px solid $color-grey-dark;
+  padding-top: 20px;
+  text-align: center;
+  margin-top: 60px;
+
+  .icon {
+    display: block;
+    width: 100%;
+    height: 100%;
+
+    &:hover {
+      .fa-inverse {
+        color: $color-white;
+        @include opacity(1);
+      }
+    }
+  }
+
+  .fa-inverse {
+    color: $color-grey-medium;
+    @include opacity(.4);
+    @include transition(opacity .3s linear 0s);
+  }
+}
+
+.imh__navigation-menu-title {
+  font-family: 'ralewaysemibold', $font-fallback;
+  border-bottom: 1px solid $color-grey-dark;
+  padding-bottom: 7px;
+  color: $color-white;
+  font-weight: normal;
+  font-size: $basepx;
+
+  .fa {
+    color: $color-white;
+    margin-right: 2px;
+    display: inline-block;
+    vertical-align: text-top;
+  }
+}
