@@ -3164,7 +3164,7 @@ address {
   -o-transition: $property $duration $timing-function $delay;
   transition: $property $duration $timing-function $delay;
 }*/
-/* line 6, assetic_compassN7wrZe.scss */
+/* line 6, assetic_compassXF0a3w.scss */
 .top-page {
   text-align: center;
   height: 30px;
@@ -3172,7 +3172,7 @@ address {
   position: relative;
   margin-top: 120px;
 }
-/* line 13, assetic_compassN7wrZe.scss */
+/* line 13, assetic_compassXF0a3w.scss */
 .top-page:after {
   background: #b18f5c;
   bottom: -1px;
@@ -3186,24 +3186,24 @@ address {
   transition: all, 0.3s, ease, 0s;
   width: 0;
 }
-/* line 25, assetic_compassN7wrZe.scss */
+/* line 25, assetic_compassXF0a3w.scss */
 .top-page:hover:after {
   left: 0;
   width: 100%;
 }
-/* line 30, assetic_compassN7wrZe.scss */
+/* line 30, assetic_compassXF0a3w.scss */
 .top-page a {
   position: relative;
   display: block;
   height: 37px;
 }
-/* line 35, assetic_compassN7wrZe.scss */
+/* line 35, assetic_compassXF0a3w.scss */
 .top-page a .arrow, .top-page a .circle {
   background: url("/bundles/imhbase/images/sprite.png") no-repeat;
   position: absolute;
   left: 50%;
 }
-/* line 41, assetic_compassN7wrZe.scss */
+/* line 41, assetic_compassXF0a3w.scss */
 .top-page a .arrow {
   background-position: -246px -106px;
   height: 14px;
@@ -3213,7 +3213,7 @@ address {
   margin-top: 8px;
   opacity: 0.3;
 }
-/* line 51, assetic_compassN7wrZe.scss */
+/* line 51, assetic_compassXF0a3w.scss */
 .top-page a .circle {
   background-position: -280px -81px;
   height: 7px;
@@ -3222,44 +3222,44 @@ address {
   margin-left: -3px;
   z-index: 1;
 }
-/* line 61, assetic_compassN7wrZe.scss */
+/* line 61, assetic_compassXF0a3w.scss */
 .top-page a:hover .arrow {
   background-position: -246px -81px;
   opacity: 1;
 }
-/* line 66, assetic_compassN7wrZe.scss */
+/* line 66, assetic_compassXF0a3w.scss */
 .top-page a:hover .circle {
   background-position: -280px -92px;
 }
 
-/* line 73, assetic_compassN7wrZe.scss */
+/* line 73, assetic_compassXF0a3w.scss */
 #comment {
   background: url("/bundles/imhbase/images/stripes.png") repeat;
   min-height: 300px;
   border-top: 1px solid whitesmoke;
   padding: 30px 0 100px;
 }
-/* line 80, assetic_compassN7wrZe.scss */
+/* line 80, assetic_compassXF0a3w.scss */
 #comment .box {
   width: 843px;
   margin: 0 auto;
 }
-/* line 84, assetic_compassN7wrZe.scss */
+/* line 84, assetic_compassXF0a3w.scss */
 #comment .box .fos_comment_comment_form_holder {
   background-color: white;
   border: 1px solid lightgrey;
   padding: 23px;
 }
-/* line 89, assetic_compassN7wrZe.scss */
+/* line 89, assetic_compassXF0a3w.scss */
 #comment .box .fos_comment_comment_form_holder #fos_comment_comment_body {
   border: 1px solid #898989;
 }
-/* line 100, assetic_compassN7wrZe.scss */
+/* line 100, assetic_compassXF0a3w.scss */
 #comment .box footer {
   text-align: center;
   width: 100%;
 }
-/* line 104, assetic_compassN7wrZe.scss */
+/* line 104, assetic_compassXF0a3w.scss */
 #comment .box footer a {
   background-color: white;
   font-size: 0.917em;
@@ -3271,13 +3271,13 @@ address {
   -o-transition: all, 0.2s, ease, 0s;
   transition: all, 0.2s, ease, 0s;
 }
-/* line 113, assetic_compassN7wrZe.scss */
+/* line 113, assetic_compassXF0a3w.scss */
 #comment .box footer a:hover {
   border: 1px solid #898989;
   color: #3f3f3f;
 }
 
-/* line 128, assetic_compassN7wrZe.scss */
+/* line 128, assetic_compassXF0a3w.scss */
 .fos_comment_thread_show {
   margin-top: 2em;
   padding: 1em 20px;
@@ -3292,7 +3292,7 @@ address {
   -moz-border-radius: 5px;
 }
 
-/* line 142, assetic_compassN7wrZe.scss */
+/* line 142, assetic_compassXF0a3w.scss */
 .fos_comment_thread_show h3 {
   font-size: 1.3em;
   font-weight: bold;
@@ -3300,12 +3300,12 @@ address {
   color: #a0a0a0;
 }
 
-/* line 149, assetic_compassN7wrZe.scss */
+/* line 149, assetic_compassXF0a3w.scss */
 .fos_comment_comment_show {
   color: #555;
 }
 
-/* line 153, assetic_compassN7wrZe.scss */
+/* line 153, assetic_compassXF0a3w.scss */
 .fos_comment_comment_metas {
   margin: 1.5em 0 0.5em 0;
   padding: 1em 20px;
@@ -3316,22 +3316,22 @@ address {
   -moz-border-radius: 5px;
 }
 
-/* line 163, assetic_compassN7wrZe.scss */
+/* line 163, assetic_compassXF0a3w.scss */
 .fos_comment_comment_body {
   line-height: 1.5em;
 }
 
-/* line 167, assetic_compassN7wrZe.scss */
+/* line 167, assetic_compassXF0a3w.scss */
 .fos_comment_comments .fos_comment_comments {
   margin-left: 2em;
 }
 
-/* line 171, assetic_compassN7wrZe.scss */
+/* line 171, assetic_compassXF0a3w.scss */
 .fos_comment_comment_reply {
   text-align: right;
 }
 
-/* line 175, assetic_compassN7wrZe.scss */
+/* line 175, assetic_compassXF0a3w.scss */
 .fos_comment_comment_reply.replying {
   text-align: left;
   margin-top: 1em;
@@ -3342,78 +3342,78 @@ address {
   -moz-border-radius: 5px;
 }
 
-/* line 185, assetic_compassN7wrZe.scss */
+/* line 185, assetic_compassXF0a3w.scss */
 .fos_comment_comment_reply_show_form {
   padding: 2px 5px;
   font-size: 0.8em;
 }
 
-/* line 190, assetic_compassN7wrZe.scss */
+/* line 190, assetic_compassXF0a3w.scss */
 .fos_comment_comment_reply.fos_comment_replying button.fos_comment_comment_reply_show_form {
   display: none;
 }
 
-/* line 194, assetic_compassN7wrZe.scss */
+/* line 194, assetic_compassXF0a3w.scss */
 .fos_comment_thread_comments {
   margin-bottom: 1.5em;
 }
 
-/* line 198, assetic_compassN7wrZe.scss */
+/* line 198, assetic_compassXF0a3w.scss */
 .fos_comment_reply_prototype {
   display: none;
 }
 
-/* line 202, assetic_compassN7wrZe.scss */
+/* line 202, assetic_compassXF0a3w.scss */
 .fos_comment_thread_show > form.fos_comment_comment_form {
   margin-bottom: 1em;
 }
 
-/* line 206, assetic_compassN7wrZe.scss */
+/* line 206, assetic_compassXF0a3w.scss */
 form.fos_comment_comment_form.processing {
   opacity: 0.5;
 }
 
-/* line 210, assetic_compassN7wrZe.scss */
+/* line 210, assetic_compassXF0a3w.scss */
 form.fos_comment_comment_form label.author_name {
   margin-top: 3px;
   float: left;
 }
 
-/* line 215, assetic_compassN7wrZe.scss */
+/* line 215, assetic_compassXF0a3w.scss */
 form.fos_comment_comment_form label.author_name input {
   padding: 2px 5px;
 }
 
-/* line 219, assetic_compassN7wrZe.scss */
+/* line 219, assetic_compassXF0a3w.scss */
 form.fos_comment_comment_form textarea {
   width: 98%;
   height: 6em;
   padding: 1%;
 }
 
-/* line 224, assetic_compassN7wrZe.scss */
+/* line 224, assetic_compassXF0a3w.scss */
 form.fos_comment_comment_form.error textarea {
   border-color: red;
 }
 
-/* line 228, assetic_compassN7wrZe.scss */
+/* line 228, assetic_compassXF0a3w.scss */
 .fos_comment_form_errors {
   color: #ff0000;
 }
 
-/* line 232, assetic_compassN7wrZe.scss */
+/* line 232, assetic_compassXF0a3w.scss */
 .fos_comment_submit {
   text-align: right;
 }
 
-/* line 236, assetic_compassN7wrZe.scss */
+/* line 236, assetic_compassXF0a3w.scss */
 .fos_comment_submit input {
   font-size: 1.2em;
   padding: 3px 12px;
   margin-top: 3px;
 }
 
-/* line 242, assetic_compassN7wrZe.scss */
+/* line 242, assetic_compassXF0a3w.scss */
 a.fos_comment_thread_feed {
   width: 16px;
   height: 16px;
@@ -3421,12 +3421,12 @@ a.fos_comment_thread_feed {
   float: right;
 }
 
-/* line 249, assetic_compassN7wrZe.scss */
+/* line 249, assetic_compassXF0a3w.scss */
 .fos_comment_comment_voting {
   float: right;
 }
 
-/* line 253, assetic_compassN7wrZe.scss */
+/* line 253, assetic_compassXF0a3w.scss */
 .fos_comment_comment_score {
   display: inline-block;
 }

@@ -7147,19 +7147,20 @@ button:focus {
 }
 
 /* line 124, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_sidebar.scss */
-.imh__navigation-menu-subtitle {
+.imh__navigation-menu-title {
   font-family: "ralewaysemibold", Arial, Helvetica, sans-serif;
   border-bottom: 1px solid #3f3f3f;
   padding-bottom: 7px;
-  color: #898989;
-  text-transform: uppercase;
+  color: white;
   font-weight: normal;
   font-size: 1em;
 }
-/* line 133, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_sidebar.scss */
-.imh__navigation-menu-subtitle .fa {
-  color: #898989;
+/* line 132, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_sidebar.scss */
+.imh__navigation-menu-title .fa {
+  color: white;
   margin-right: 2px;
+  display: inline-block;
+  vertical-align: text-top;
 }
 
 /*!
@@ -7813,30 +7814,30 @@ button:focus {
     border: none;
   }
 }
-/* line 4, assetic_compassWMIL5s.scss */
+/* line 4, assetic_compassAoFIby.scss */
 .imh__container {
   padding-bottom: 100px;
 }
 
-/* line 8, assetic_compassWMIL5s.scss */
+/* line 8, assetic_compassAoFIby.scss */
 .imh__container--wrapper {
   padding-bottom: 62px;
 }
 
-/* line 12, assetic_compassWMIL5s.scss */
+/* line 12, assetic_compassAoFIby.scss */
 .media-content {
   width: 640px;
   margin: 0 auto;
   min-height: 360px;
 }
-/* line 17, assetic_compassWMIL5s.scss */
+/* line 17, assetic_compassAoFIby.scss */
 .media-content .media {
   position: relative;
   float: left;
   width: 640px;
   height: 360px;
 }
-/* line 23, assetic_compassWMIL5s.scss */
+/* line 23, assetic_compassAoFIby.scss */
 .media-content .media .layer {
   position: absolute;
   top: 0;
@@ -7845,14 +7846,14 @@ button:focus {
   width: 100%;
   text-align: center;
 }
-/* line 31, assetic_compassWMIL5s.scss */
+/* line 31, assetic_compassAoFIby.scss */
 .media-content .media .layer a {
   display: block;
   height: 100%;
   width: 100%;
   cursor: default;
 }
-/* line 37, assetic_compassWMIL5s.scss */
+/* line 37, assetic_compassAoFIby.scss */
 .media-content .media .layer a .play {
   background: url("/bundles/imhbase/images/sprite.png") -1px -1px no-repeat;
   position: absolute;
@@ -7863,17 +7864,17 @@ button:focus {
   margin: -39px 0 0 -39px;
   z-index: 1000;
 }
-/* line 47, assetic_compassWMIL5s.scss */
+/* line 47, assetic_compassAoFIby.scss */
 .media-content .media .layer a .play:hover {
   background-position: -78px -1px;
   cursor: pointer;
 }
-/* line 55, assetic_compassWMIL5s.scss */
+/* line 55, assetic_compassAoFIby.scss */
 .media-content .media #ytplayer {
   display: block;
   visibility: hidden;
 }
-/* line 60, assetic_compassWMIL5s.scss */
+/* line 60, assetic_compassAoFIby.scss */
 .media-content .media .progress-bar-wrapper {
   opacity: 0;
   /* Good browsers */
@@ -7886,27 +7887,27 @@ button:focus {
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   /* IE 8 */
 }
-/* line 64, assetic_compassWMIL5s.scss */
+/* line 64, assetic_compassAoFIby.scss */
 .media-content .media .progress-bar {
   float: left;
   height: 2px;
   background-color: #222222;
   margin-top: 10px;
 }
-/* line 70, assetic_compassWMIL5s.scss */
+/* line 70, assetic_compassAoFIby.scss */
 .media-content .media .progress-bar .advancement, .media-content .media .progress-bar .buffer {
   height: 100%;
   width: 0;
 }
-/* line 75, assetic_compassWMIL5s.scss */
+/* line 75, assetic_compassAoFIby.scss */
 .media-content .media .progress-bar .advancement {
   background-color: #582411;
 }
-/* line 79, assetic_compassWMIL5s.scss */
+/* line 79, assetic_compassAoFIby.scss */
 .media-content .media .progress-bar .buffer {
   background-color: #b18f5c;
 }
-/* line 84, assetic_compassWMIL5s.scss */
+/* line 84, assetic_compassAoFIby.scss */
 .media-content .media .time {
   float: right;
   font-size: 0.75em;
@@ -7914,20 +7915,20 @@ button:focus {
   text-align: right;
 }
 
-/* line 93, assetic_compassWMIL5s.scss */
+/* line 93, assetic_compassAoFIby.scss */
 .actions {
   float: left;
   margin-left: 10px;
 }
-/* line 97, assetic_compassWMIL5s.scss */
+/* line 97, assetic_compassAoFIby.scss */
 .actions li {
   margin-top: 10px;
 }
-/* line 100, assetic_compassWMIL5s.scss */
+/* line 100, assetic_compassAoFIby.scss */
 .actions li:first-child {
   margin-top: 0;
 }
-/* line 104, assetic_compassWMIL5s.scss */
+/* line 104, assetic_compassAoFIby.scss */
 .actions li a {
   color: #3f3f3f;
   border: 1px solid #3f3f3f;
@@ -7940,13 +7941,13 @@ button:focus {
   line-height: 180px;
   position: relative;
 }
-/* line 116, assetic_compassWMIL5s.scss */
+/* line 116, assetic_compassAoFIby.scss */
 .actions li a:hover {
   background-color: #222222;
   color: white;
   border-color: #222222;
 }
-/* line 122, assetic_compassWMIL5s.scss */
+/* line 122, assetic_compassAoFIby.scss */
 .actions li a img {
   background: url("/bundles/imhbase/images/sprite.png") no-repeat;
   display: inline-block;
@@ -7958,52 +7959,52 @@ button:focus {
   margin-top: -30px;
   margin-left: -25px;
 }
-/* line 137, assetic_compassWMIL5s.scss */
+/* line 137, assetic_compassAoFIby.scss */
 .actions li.display a img {
   background-position: 0 -192px;
 }
-/* line 138, assetic_compassWMIL5s.scss */
+/* line 138, assetic_compassAoFIby.scss */
 .actions li.display a:hover img {
   background-position: -150px -192px;
 }
-/* line 144, assetic_compassWMIL5s.scss */
+/* line 144, assetic_compassAoFIby.scss */
 .actions li.like a img {
   background-position: -50px -192px;
 }
-/* line 145, assetic_compassWMIL5s.scss */
+/* line 145, assetic_compassAoFIby.scss */
 .actions li.like a:hover img {
   background-position: -200px -192px;
 }
-/* line 151, assetic_compassWMIL5s.scss */
+/* line 151, assetic_compassAoFIby.scss */
 .actions li.download a img {
   background-position: -100px -192px;
 }
-/* line 152, assetic_compassWMIL5s.scss */
+/* line 152, assetic_compassAoFIby.scss */
 .actions li.download a:hover img {
   background-position: -250px -192px;
 }
 
-/* line 159, assetic_compassWMIL5s.scss */
+/* line 159, assetic_compassAoFIby.scss */
 .player-control-bar {
   border-top: 1px solid lightgrey;
   width: 100%;
   height: 62px;
   color: #898989;
 }
-/* line 165, assetic_compassWMIL5s.scss */
+/* line 165, assetic_compassAoFIby.scss */
 .player-control-bar .views, .player-control-bar .video-info, .player-control-bar .controls, .player-control-bar .share {
   float: left;
   height: 100%;
   margin-right: 1px;
 }
-/* line 171, assetic_compassWMIL5s.scss */
+/* line 171, assetic_compassAoFIby.scss */
 .player-control-bar .views {
   background-color: white;
   background-color: rgba(255, 255, 255, 0.9);
   width: 163px;
   padding-left: 14px;
 }
-/* line 177, assetic_compassWMIL5s.scss */
+/* line 177, assetic_compassAoFIby.scss */
 .player-control-bar .views .nb {
   font-family: 'open_sanscondensed_light', Arial, Helvetica, sans-serif;
   color: #3f3f3f;
@@ -8011,14 +8012,14 @@ button:focus {
   font-size: 2.333em;
   line-height: 62px;
 }
-/* line 186, assetic_compassWMIL5s.scss */
+/* line 186, assetic_compassAoFIby.scss */
 .player-control-bar .txt {
   float: left;
   font-size: 0.917em;
   line-height: 1.1em;
   margin: 19px 0 0 8px;
 }
-/* line 193, assetic_compassWMIL5s.scss */
+/* line 193, assetic_compassAoFIby.scss */
 .player-control-bar .video-info {
   background-color: white;
   background-color: rgba(255, 255, 255, 0.9);
@@ -8027,13 +8028,13 @@ button:focus {
   padding: 0 40px 0 14px;
   line-height: 62px;
 }
-/* line 201, assetic_compassWMIL5s.scss */
+/* line 201, assetic_compassAoFIby.scss */
 .player-control-bar .video-info .description {
   font-family: 'open_sans_condensedbold', Arial, Helvetica, sans-serif;
   font-size: 1em;
   margin: 0;
 }
-/* line 207, assetic_compassWMIL5s.scss */
+/* line 207, assetic_compassAoFIby.scss */
 .player-control-bar .video-info .name {
   font-family: 'open_sans_condensedbold', Arial, Helvetica, sans-serif;
   font-size: 1.333em;
@@ -8043,12 +8044,12 @@ button:focus {
   text-overflow: ellipsis;
   margin: 0;
 }
-/* line 219, assetic_compassWMIL5s.scss */
+/* line 219, assetic_compassAoFIby.scss */
 .player-control-bar .controls li {
   float: left;
   margin-left: 1px;
 }
-/* line 223, assetic_compassWMIL5s.scss */
+/* line 223, assetic_compassAoFIby.scss */
 .player-control-bar .controls li a {
   position: relative;
   font-size: 0.833em;
@@ -8064,12 +8065,12 @@ button:focus {
   -o-transition: all, 0.2s, ease-in, 0s;
   transition: all, 0.2s, ease-in, 0s;
 }
-/* line 236, assetic_compassWMIL5s.scss */
+/* line 236, assetic_compassAoFIby.scss */
 .player-control-bar .controls li a:hover {
   background-color: white;
   color: #222222;
 }
-/* line 242, assetic_compassWMIL5s.scss */
+/* line 242, assetic_compassAoFIby.scss */
 .player-control-bar .controls li.play-pause .bkg, .player-control-bar .controls li.volume .bkg, .player-control-bar .controls li.fullscreen .bkg {
   position: absolute;
   top: 11px;
@@ -8078,87 +8079,87 @@ button:focus {
   width: 19px;
   background: url("/bundles/imhbase/images/sprite.png") no-repeat;
 }
-/* line 253, assetic_compassWMIL5s.scss */
+/* line 253, assetic_compassAoFIby.scss */
 .player-control-bar .controls li.play-pause a .bkg {
   background-position: -16px -102px;
 }
-/* line 256, assetic_compassWMIL5s.scss */
+/* line 256, assetic_compassAoFIby.scss */
 .player-control-bar .controls li.play-pause a:hover img {
   background-position: -16px -77px;
 }
-/* line 259, assetic_compassWMIL5s.scss */
+/* line 259, assetic_compassAoFIby.scss */
 .player-control-bar .controls li.play-pause a.pause .bkg {
   background-position: 3px -102px;
 }
-/* line 262, assetic_compassWMIL5s.scss */
+/* line 262, assetic_compassAoFIby.scss */
 .player-control-bar .controls li.play-pause a.pause:hover img {
   background-position: 3px -77px;
 }
-/* line 267, assetic_compassWMIL5s.scss */
+/* line 267, assetic_compassAoFIby.scss */
 .player-control-bar .controls li.volume {
   position: relative;
 }
-/* line 271, assetic_compassWMIL5s.scss */
+/* line 271, assetic_compassAoFIby.scss */
 .player-control-bar .controls li.volume a .bkg {
   background-position: -60px -102px;
   width: 25px;
   left: 14px;
 }
-/* line 276, assetic_compassWMIL5s.scss */
+/* line 276, assetic_compassAoFIby.scss */
 .player-control-bar .controls li.volume a:hover img, .player-control-bar .controls li.volume a.hover img {
   background-position: -60px -77px;
 }
-/* line 279, assetic_compassWMIL5s.scss */
+/* line 279, assetic_compassAoFIby.scss */
 .player-control-bar .controls li.volume a.hover {
   background-color: white;
   color: #222222;
 }
-/* line 285, assetic_compassWMIL5s.scss */
+/* line 285, assetic_compassAoFIby.scss */
 .player-control-bar .controls li.volume a._0 img {
   background-position: -163px -102px;
   width: 33px;
 }
-/* line 286, assetic_compassWMIL5s.scss */
+/* line 286, assetic_compassAoFIby.scss */
 .player-control-bar .controls li.volume a._0:hover img, .player-control-bar .controls li.volume a._0.hover img {
   background-position: -163px -77px;
 }
-/* line 289, assetic_compassWMIL5s.scss */
+/* line 289, assetic_compassAoFIby.scss */
 .player-control-bar .controls li.volume a._25 img {
   background-position: -60px -102px;
   width: 26px;
 }
-/* line 290, assetic_compassWMIL5s.scss */
+/* line 290, assetic_compassAoFIby.scss */
 .player-control-bar .controls li.volume a._25:hover img, .player-control-bar .controls li.volume a._25.hover img {
   background-position: -60px -77px;
 }
-/* line 293, assetic_compassWMIL5s.scss */
+/* line 293, assetic_compassAoFIby.scss */
 .player-control-bar .controls li.volume a._50 img {
   background-position: -81px -102px;
   width: 29px;
 }
-/* line 294, assetic_compassWMIL5s.scss */
+/* line 294, assetic_compassAoFIby.scss */
 .player-control-bar .controls li.volume a._50:hover img, .player-control-bar .controls li.volume a._50.hover img {
   background-position: -81px -77px;
 }
-/* line 297, assetic_compassWMIL5s.scss */
+/* line 297, assetic_compassAoFIby.scss */
 .player-control-bar .controls li.volume a._75 img {
   background-position: -106px -102px;
   width: 29px;
 }
-/* line 298, assetic_compassWMIL5s.scss */
+/* line 298, assetic_compassAoFIby.scss */
 .player-control-bar .controls li.volume a._75:hover img, .player-control-bar .controls li.volume a._75.hover img {
   background-position: -106px -77px;
 }
-/* line 301, assetic_compassWMIL5s.scss */
+/* line 301, assetic_compassAoFIby.scss */
 .player-control-bar .controls li.volume a._100 img {
   background-position: -133px -102px;
   width: 29px;
 }
-/* line 302, assetic_compassWMIL5s.scss */
+/* line 302, assetic_compassAoFIby.scss */
 .player-control-bar .controls li.volume a._100:hover img, .player-control-bar .controls li.volume a._100.hover img {
   background-position: -133px -77px;
 }
-/* line 306, assetic_compassWMIL5s.scss */
+/* line 306, assetic_compassAoFIby.scss */
 .player-control-bar .controls li.volume .wrap-level {
   position: absolute;
   top: -116px;
@@ -8168,30 +8169,30 @@ button:focus {
   height: 116px;
   text-align: center;
 }
-/* line 316, assetic_compassWMIL5s.scss */
+/* line 316, assetic_compassAoFIby.scss */
 .player-control-bar .controls li.volume .level {
   position: relative;
   display: none;
   margin-top: 10px;
 }
-/* line 322, assetic_compassWMIL5s.scss */
+/* line 322, assetic_compassAoFIby.scss */
 .player-control-bar .controls li.volume .slider {
   position: absolute;
   top: 15px;
   left: 16px;
   height: 70px;
 }
-/* line 328, assetic_compassWMIL5s.scss */
+/* line 328, assetic_compassAoFIby.scss */
 .player-control-bar .controls li.volume .slider.noUi-target {
   border: none;
   border-radius: inherit;
   box-shadow: none;
 }
-/* line 333, assetic_compassWMIL5s.scss */
+/* line 333, assetic_compassAoFIby.scss */
 .player-control-bar .controls li.volume .slider.noUi-target.noUi-vertical {
   width: 8px;
 }
-/* line 336, assetic_compassWMIL5s.scss */
+/* line 336, assetic_compassAoFIby.scss */
 .player-control-bar .controls li.volume .slider.noUi-target.noUi-vertical .noUi-handle {
   box-shadow: none;
   border: none;
@@ -8205,27 +8206,27 @@ button:focus {
   left: 0;
   cursor: pointer;
 }
-/* line 346, assetic_compassWMIL5s.scss */
+/* line 346, assetic_compassAoFIby.scss */
 .player-control-bar .controls li.volume .slider.noUi-target.noUi-vertical .noUi-handle:before, .player-control-bar .controls li.volume .slider.noUi-target.noUi-vertical .noUi-handle:after {
   background: none;
 }
-/* line 352, assetic_compassWMIL5s.scss */
+/* line 352, assetic_compassAoFIby.scss */
 .player-control-bar .controls li.volume .slider.noUi-target.noUi-background {
   background: none;
 }
-/* line 361, assetic_compassWMIL5s.scss */
+/* line 361, assetic_compassAoFIby.scss */
 .player-control-bar .controls li.fullscreen a .bkg {
   background-position: -197px -102px;
 }
-/* line 362, assetic_compassWMIL5s.scss */
+/* line 362, assetic_compassAoFIby.scss */
 .player-control-bar .controls li.fullscreen a:hover img {
   background-position: -197px -77px;
 }
-/* line 366, assetic_compassWMIL5s.scss */
+/* line 366, assetic_compassAoFIby.scss */
 .player-control-bar .controls li:first-child {
   margin-left: 0;
 }
-/* line 371, assetic_compassWMIL5s.scss */
+/* line 371, assetic_compassAoFIby.scss */
 .player-control-bar .share {
   background-color: white;
   background-color: rgba(255, 255, 255, 0.9);
@@ -8233,12 +8234,12 @@ button:focus {
   padding-left: 20px;
   width: 263px;
 }
-/* line 379, assetic_compassWMIL5s.scss */
+/* line 379, assetic_compassAoFIby.scss */
 .player-control-bar .share .txt {
   margin-left: 12px;
 }
 
-/* line 390, assetic_compassWMIL5s.scss */
+/* line 390, assetic_compassAoFIby.scss */
 #media-gallery {
   position: relative;
   width: 843px;
@@ -8246,13 +8247,13 @@ button:focus {
   margin: 0 auto;
   visibility: hidden;
 }
-/* line 397, assetic_compassWMIL5s.scss */
+/* line 397, assetic_compassAoFIby.scss */
 #media-gallery #imageFlow {
   position: relative;
   overflow: hidden;
   margin: 0 auto;
 }
-/* line 403, assetic_compassWMIL5s.scss */
+/* line 403, assetic_compassAoFIby.scss */
 #media-gallery #imageFlow .bank {
   width: 100%;
   height: 134px;
@@ -8262,19 +8263,19 @@ button:focus {
   overflow: hidden;
   white-space: nowrap;
 }
-/* line 413, assetic_compassWMIL5s.scss */
+/* line 413, assetic_compassAoFIby.scss */
 #media-gallery #imageFlow li {
   display: inline-block;
   vertical-align: top;
   text-align: left;
   margin: 0 8px;
 }
-/* line 419, assetic_compassWMIL5s.scss */
+/* line 419, assetic_compassAoFIby.scss */
 #media-gallery #imageFlow li a {
   position: relative;
   display: block;
 }
-/* line 423, assetic_compassWMIL5s.scss */
+/* line 423, assetic_compassAoFIby.scss */
 #media-gallery #imageFlow li a .decoration {
   -webkit-transition: all, 0.1s, ease-in, 0s;
   -o-transition: all, 0.1s, ease-in, 0s;
@@ -8289,12 +8290,12 @@ button:focus {
   left: -7px;
   z-index: -1;
 }
-/* line 437, assetic_compassWMIL5s.scss */
+/* line 437, assetic_compassAoFIby.scss */
 #media-gallery #imageFlow li a:hover .decoration {
   background-color: white;
   border: 1px solid #898989;
 }
-/* line 442, assetic_compassWMIL5s.scss */
+/* line 442, assetic_compassAoFIby.scss */
 #media-gallery #imageFlow li a:hover img {
   -webkit-filter: grayscale(0);
   -moz-filter: grayscale(0);
@@ -8302,7 +8303,7 @@ button:focus {
   -o-filter: grayscale(0);
   filter: grayscale(0);
 }
-/* line 447, assetic_compassWMIL5s.scss */
+/* line 447, assetic_compassAoFIby.scss */
 #media-gallery #imageFlow li a img {
   -webkit-filter: grayscale(100%);
   -moz-filter: grayscale(100%);
@@ -8311,12 +8312,12 @@ button:focus {
   filter: grayscale(100%);
   display: block;
 }
-/* line 461, assetic_compassWMIL5s.scss */
+/* line 461, assetic_compassAoFIby.scss */
 #media-gallery #imageFlow li.current .decoration {
   background-color: white;
   border: 1px solid #898989;
 }
-/* line 467, assetic_compassWMIL5s.scss */
+/* line 467, assetic_compassAoFIby.scss */
 #media-gallery #imageFlow li .duration {
   position: absolute;
   bottom: 2px;
@@ -8327,22 +8328,22 @@ button:focus {
   padding: 2px 5px;
   border: 1px solid #dddddd;
 }
-/* line 478, assetic_compassWMIL5s.scss */
+/* line 478, assetic_compassAoFIby.scss */
 #media-gallery #imageFlow li.diapo {
   position: absolute;
   margin: 0;
 }
-/* line 483, assetic_compassWMIL5s.scss */
+/* line 483, assetic_compassAoFIby.scss */
 #media-gallery #imageFlow li.diapo a {
   width: inherit;
   height: inherit;
 }
-/* line 490, assetic_compassWMIL5s.scss */
+/* line 490, assetic_compassAoFIby.scss */
 #media-gallery #imageFlow .legend {
   position: absolute;
   width: 100%;
 }
-/* line 494, assetic_compassWMIL5s.scss */
+/* line 494, assetic_compassAoFIby.scss */
 #media-gallery #imageFlow .legend .title {
   display: block;
   font-size: 0.917em;
@@ -8353,12 +8354,12 @@ button:focus {
   margin: 7px 0 0 0;
   line-height: 1.1em;
 }
-/* line 505, assetic_compassWMIL5s.scss */
+/* line 505, assetic_compassAoFIby.scss */
 #media-gallery #imageFlow .legend .description {
   font-size: 0.833em;
   color: #898989;
 }
-/* line 512, assetic_compassWMIL5s.scss */
+/* line 512, assetic_compassAoFIby.scss */
 #media-gallery .scrollbar {
   /* IE9 SVG, needs conditional override of 'filter' to 'none' */
   /*background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUlIiBzdG9wLWNvbG9yPSIjODk4OTg5IiBzdG9wLW9wYWNpdHk9IjAuMSIvPgogICAgPHN0b3Agb2Zmc2V0PSI1MCUiIHN0b3AtY29sb3I9IiM4OTg5ODkiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSI5NSUiIHN0b3AtY29sb3I9IiM4OTg5ODkiIHN0b3Atb3BhY2l0eT0iMC4xIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmZmZmZmYiIHN0b3Atb3BhY2l0eT0iMCIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
@@ -8390,7 +8391,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
   margin: 20px auto 0;
   z-index: 1;
 }
-/* line 531, assetic_compassWMIL5s.scss */
+/* line 531, assetic_compassAoFIby.scss */
 #media-gallery .scrollbar .left, #media-gallery .scrollbar .right {
   cursor: pointer;
   position: absolute;
@@ -8403,20 +8404,20 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
   transition: all, 0.3s, ease-in, 0s;
   display: none;
 }
-/* line 540, assetic_compassWMIL5s.scss */
+/* line 540, assetic_compassAoFIby.scss */
 #media-gallery .scrollbar .left:hover, #media-gallery .scrollbar .right:hover {
   border-color: #582411;
   color: #582411;
 }
-/* line 548, assetic_compassWMIL5s.scss */
+/* line 548, assetic_compassAoFIby.scss */
 #media-gallery .scrollbar .left {
   left: 25px;
 }
-/* line 552, assetic_compassWMIL5s.scss */
+/* line 552, assetic_compassAoFIby.scss */
 #media-gallery .scrollbar .right {
   right: 25px;
 }
-/* line 556, assetic_compassWMIL5s.scss */
+/* line 556, assetic_compassAoFIby.scss */
 #media-gallery .scrollbar .bar {
   position: absolute;
   height: 5px;
@@ -8426,7 +8427,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
   cursor: pointer;
   background-color: #b18f5c;
 }
-/* line 565, assetic_compassWMIL5s.scss */
+/* line 565, assetic_compassAoFIby.scss */
 #media-gallery .scrollbar .bar:hover {
   background-color: #582411;
 }

@@ -10,25 +10,24 @@
         'cssAnimations' : ['mA_1', 'mA_2']
     };
 
-    var gallerySelector   = 'gallery-wrapper',
+    var gallerySelector   = 'imh__gallery-wrapper',
         frameSelector     = 'frame',
         slideeSelector    = 'slidee',
-        scrollbarSelector = 'scrollbar',
+        scrollbarSelector = 'imh__scrollbar',
         sly,
         wWidth            = $(window).width(),
         wHeight           = $(window).height(),
         ratio             = wWidth/wHeight,
-
 
         containerSelector = 'sonata-media-gallery-media-list',
         itemSelector      = 'sonata-media-gallery-media-item',
         linkSelector      = 'sonata-media-gallery-media-item-link',
         imageSelector     = 'media-object',
         expSelector       = 'expanded',
-        triggerSelector   = 'trigger',
+        triggerSelector   = 'imh__trigger',
         zoomSelector      = 'zoom',
         closeSelector     = 'close',
-        $container        = $('#' + containerSelector),
+        $container        = $('.' + containerSelector),
         $targetItem       = null,
         isClosed          = true,
         isVisible         = false,
@@ -48,7 +47,7 @@
 
     var setCssCursor = function(o) {
         var $slidee = $('.' + slideeSelector),
-            $frame  = $('#' + frameSelector);
+            $frame  = $('.' + frameSelector);
         if ($slidee.width() < $frame.width() || $slidee.height() < $frame.height()) {
             return false;
         }
@@ -59,7 +58,7 @@
     // layout Packery after all images have loaded
     $container.imagesLoaded(function() {
         isVisible = true;
-        var $g = $('#' + gallerySelector),
+        var $g = $('.' + gallerySelector),
             $i = $('.' + itemSelector),
             orientation = getOrientation(ratio);
 
@@ -95,7 +94,7 @@
             speed: 2000,
             syncSpeed: 1,
             easing: 'easeOutQuad',
-            scrollBar: '#' + scrollbarSelector,
+            scrollBar: '.' + scrollbarSelector,
             dynamicHandle: 1,
             dragHandle: 1,
             clickBar: 1,
@@ -103,8 +102,8 @@
             touchDragging: 1,
             releaseSwing: 1
         };
-        $('#' + scrollbarSelector).addClass(GalleryManager.cssAnimations[1]);
-        sly = new Sly($('#' + frameSelector), slyOptions).init();
+        $('.' + scrollbarSelector).addClass(GalleryManager.cssAnimations[1]);
+        sly = new Sly($('.' + frameSelector), slyOptions).init();
 
         // Detect whether device supports orientationchange event,
         // otherwise fall back to the resize event.
@@ -121,7 +120,7 @@
 
             var _destroy = function() {
                 sly.destroy();
-                $('#' + scrollbarSelector).removeClass(GalleryManager.cssAnimations[1]);
+                $('.' + scrollbarSelector).removeClass(GalleryManager.cssAnimations[1]);
                 $container.packery('destroy');
             },
             _setOption = function(o) {
@@ -129,7 +128,7 @@
                 pckry.options.horizontal = o;
             },
             _reinit = function() { // reinitialize sly and packery with new orientation option flag
-                sly = new Sly($('#' + frameSelector), sly.options).init();
+                sly = new Sly($('.' + frameSelector), sly.options).init();
                 $container.packery(pckry.options);
                 $container.on('layoutComplete', function(){ onLayout(); });
             };
@@ -150,7 +149,7 @@
                 _reinit();
 
                 delay(function(){
-                    $('#' + scrollbarSelector).addClass(GalleryManager.cssAnimations[1]);
+                    $('.' + scrollbarSelector).addClass(GalleryManager.cssAnimations[1]);
                     sly.reload();
                     setCssCursor(orientation);
                     loading(isVisible = true);
@@ -202,7 +201,7 @@
             });
         };
 
-        $('#' + triggerSelector).on('click', function(e) {
+        $('.' + triggerSelector).on('click', function(e) {
             // needs behavior : 'twitter' and manual-trigger.js
             isTriggered = true;
             $('.' + itemSelector).removeClass(expSelector);
@@ -222,7 +221,7 @@
         itemSelector : '.' + itemSelector, // selector for all items you'll retrieve
         debug: true,
         loading: {
-            selector: '#' + gallerySelector,
+            selector: '.' + gallerySelector,
             img: '/bundles/imhbase/images/circles_white.svg',
             msgText: '',
             finishedMsg: "<em>No more items !</em>",

@@ -5,6 +5,7 @@ sonata:
       menu:
         title_1:  'Menu'
         title_2:  'Gallery'
+        title_3:  'Share'
     video:
       page_title: 'Videos | Ionella Marinutsa'
       display:    'Display'

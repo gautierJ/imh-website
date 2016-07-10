@@ -152,7 +152,7 @@
             </div>
         </section>
 
-        <nav id="media-gallery">
+        <nav id="imh__media-gallery">
             <div id="imageFlow">
                 <ul class="bank">
                     {% include 'ApplicationSonataMediaBundle:Media:thumbnail_list.html.twig' %}
@@ -170,15 +170,17 @@
 {% endblock %}
 
 {% block sidebar %}
-    {% embed "ImhBaseBundle:Part:sidebar.html.twig" %}
-        {% block menu_navigation %}
-            <div class="navigation-menu">
-                {{ knp_menu_render('main', {'currentAsLink':false}) }}
-            </div>
-        {% endblock %}
+    {% if not isTouchDevice %}
+        {% embed "ImhBaseBundle:Part:sidebar.html.twig" %}
+            {% block menu_navigation %}
+                <div class="imh__navigation-menu">
+                    {{ knp_menu_render('main', {'currentAsLink':false}) }}
+                </div>
+            {% endblock %}
 
-        {% block menu_gallery '' %}
-    {% endembed %}
+            {% block menu_gallery '' %}
+        {% endembed %}
+    {% endif %}
 {% endblock %}
 
 {% block javascripts %}

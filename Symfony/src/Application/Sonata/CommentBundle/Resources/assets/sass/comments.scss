@@ -1,7 +1,5 @@
-$grid-columns: 24;
-@import "../../../../../../../web/assets/vendor/bootstrap-sass/assets/stylesheets/bootstrap";
+@import "../../../../../../../web/assets/vendor/bootstrap-sass/assets/stylesheets/bootstrap/mixins";
 @import "../../../../../../Imh/BaseBundle/Resources/assets/sass/variables";
-@import "../../../../../../Imh/BaseBundle/Resources/assets/sass/mixins";
 
 .top-page {
   text-align: center;
@@ -18,7 +16,7 @@ $grid-columns: 24;
     height: 1px;
     left: 50%;
     position: absolute;
-    @include transition(all, 0.3s, ease, 0s);
+    @include transition(all 0.3s ease 0s);
     width: 0;
   }
 
@@ -108,7 +106,7 @@ $grid-columns: 24;
         padding: 5px 15px;
         border: 1px solid $color-grey-light;
         display: inline-block;
-        @include transition(all, 0.2s, ease, 0s);
+        @include transition(all 0.2s ease 0s);
 
         &:hover {
           border: 1px solid $color-grey-medium;

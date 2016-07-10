@@ -5,6 +5,7 @@ sonata:
       menu:
         title_1:  'меню'
         title_2:  'галерея'
+        title_3:  'доля'
     video:
       page_title: 'видео | Ионелла Маринуца'
       display:    'Просмотр'

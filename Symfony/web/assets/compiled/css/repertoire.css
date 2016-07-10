@@ -7147,19 +7147,20 @@ button:focus {
 }
 
 /* line 124, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_sidebar.scss */
-.imh__navigation-menu-subtitle {
+.imh__navigation-menu-title {
   font-family: "ralewaysemibold", Arial, Helvetica, sans-serif;
   border-bottom: 1px solid #3f3f3f;
   padding-bottom: 7px;
-  color: #898989;
-  text-transform: uppercase;
+  color: white;
   font-weight: normal;
   font-size: 1em;
 }
-/* line 133, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_sidebar.scss */
-.imh__navigation-menu-subtitle .fa {
-  color: #898989;
+/* line 132, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_sidebar.scss */
+.imh__navigation-menu-title .fa {
+  color: white;
   margin-right: 2px;
+  display: inline-block;
+  vertical-align: text-top;
 }
 
 /*!
@@ -7813,12 +7814,12 @@ button:focus {
     border: none;
   }
 }
-/* line 4, assetic_compassimSCNn.scss */
+/* line 4, assetic_compassvSCk3p.scss */
 .imh__container--wrapper {
   padding: 26px 60px 62px;
 }
 
-/* line 8, assetic_compassimSCNn.scss */
+/* line 8, assetic_compassvSCk3p.scss */
 .imh__repertoire {
   margin-left: -15px;
   margin-right: -15px;
@@ -7833,7 +7834,7 @@ button:focus {
   clear: both;
 }
 
-/* line 12, assetic_compassimSCNn.scss */
+/* line 12, assetic_compassvSCk3p.scss */
 .imh__repertoire-wrapper {
   margin-top: 60px;
   font-size: 1.167em;
@@ -7847,13 +7848,13 @@ button:focus {
 .imh__repertoire-wrapper:after {
   clear: both;
 }
-/* line 17, assetic_compassimSCNn.scss */
+/* line 17, assetic_compassvSCk3p.scss */
 .imh__repertoire-wrapper > div {
   min-height: 240px;
   padding: 0;
 }
 
-/* line 23, assetic_compassimSCNn.scss */
+/* line 23, assetic_compassvSCk3p.scss */
 .imh__repertoire-image {
   display: block;
   max-width: 100%;
@@ -7865,70 +7866,70 @@ button:focus {
   border: 6px solid white;
 }
 
-/* line 32, assetic_compassimSCNn.scss */
+/* line 32, assetic_compassvSCk3p.scss */
 .imh__repertoire-description > p {
   margin-top: 0;
 }
-/* line 35, assetic_compassimSCNn.scss */
+/* line 35, assetic_compassvSCk3p.scss */
 .imh__repertoire-description > p:first-child {
   font-weight: bold;
 }
-/* line 40, assetic_compassimSCNn.scss */
+/* line 40, assetic_compassvSCk3p.scss */
 .imh__repertoire-description p {
   margin: 2px 0;
 }
-/* line 43, assetic_compassimSCNn.scss */
+/* line 43, assetic_compassvSCk3p.scss */
 .imh__repertoire-description p.work {
   font-size: 0.917em;
   margin: 10px 0;
   text-transform: uppercase;
 }
-/* line 49, assetic_compassimSCNn.scss */
+/* line 49, assetic_compassvSCk3p.scss */
 .imh__repertoire-description p.arrangement {
   font-style: italic;
 }
 
-/* line 55, assetic_compassimSCNn.scss */
+/* line 55, assetic_compassvSCk3p.scss */
 .imh__repertoire-duration {
   font-style: italic;
   margin-top: 10px;
 }
 
 @media (max-width: 767px) {
-  /* line 63, assetic_compassimSCNn.scss */
+  /* line 63, assetic_compassvSCk3p.scss */
   .imh__container {
     text-align: center;
   }
 
-  /* line 67, assetic_compassimSCNn.scss */
+  /* line 67, assetic_compassvSCk3p.scss */
   .imh__container--wrapper {
     padding: 15px 0;
   }
 
-  /* line 71, assetic_compassimSCNn.scss */
+  /* line 71, assetic_compassvSCk3p.scss */
   .imh__repertoire-wrapper {
     margin-top: 30px;
   }
 
-  /* line 75, assetic_compassimSCNn.scss */
+  /* line 75, assetic_compassvSCk3p.scss */
   .imh__repertoire-wrapper > div {
     padding-left: 15px;
     padding-right: 15px;
     min-height: inherit;
   }
 
-  /* line 81, assetic_compassimSCNn.scss */
+  /* line 81, assetic_compassvSCk3p.scss */
   .imh__repertoire-col {
     padding: 0;
   }
 
-  /* line 85, assetic_compassimSCNn.scss */
+  /* line 85, assetic_compassvSCk3p.scss */
   .imh__repertoire-image {
     display: inline-block;
     width: 150px;
   }
 
-  /* line 90, assetic_compassimSCNn.scss */
+  /* line 90, assetic_compassvSCk3p.scss */
   .imh__repertoire-description {
     padding: 20px 0;
     margin-bottom: 30px;
@@ -7936,14 +7937,14 @@ button:focus {
     font-size: 0.917em;
   }
 
-  /* line 97, assetic_compassimSCNn.scss */
+  /* line 97, assetic_compassvSCk3p.scss */
   .imh__repertoire-description--last {
     border-bottom: 0;
     margin-bottom: 0;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
-  /* line 104, assetic_compassimSCNn.scss */
+  /* line 104, assetic_compassvSCk3p.scss */
   .imh__repertoire-col {
     float: none;
     display: table-cell;

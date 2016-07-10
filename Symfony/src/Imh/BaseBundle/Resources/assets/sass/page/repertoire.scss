@@ -11,7 +11,7 @@ $fa-font-path: "../../../../assets/vendor/components-font-awesome/fonts";
 
 .imh__repertoire-wrapper {
   @include clearfix();
-  margin-top: 60px;
+  margin-top: 110px;
   font-size: $fourteenpx;
 
   > div {
@@ -27,16 +27,11 @@ $fa-font-path: "../../../../assets/vendor/components-font-awesome/fonts";
   border: 6px solid $color-white;
 }
 
+.imh__title-h3 {
+
+}
+
 .imh__repertoire-description {
-
-  > p {
-    margin-top: 0;
-
-    &:first-child {
-      font-weight: bold;
-    }
-  }
-
   p {
     margin: 2px 0;
 
@@ -70,12 +65,15 @@ $fa-font-path: "../../../../assets/vendor/components-font-awesome/fonts";
 
   .imh__repertoire-wrapper {
     margin-top: 30px;
-  }
 
-  .imh__repertoire-wrapper > div {
-    padding-left: 15px;
-    padding-right: 15px;
-    min-height: inherit;
+    > div {
+      padding: 20px 15px 0 15px;
+      min-height: inherit;
+    }
+
+    > div:nth-child(odd) {
+      background-color: $color-grey-ultralight;
+    }
   }
 
   .imh__repertoire-col {
@@ -89,8 +87,6 @@ $fa-font-path: "../../../../assets/vendor/components-font-awesome/fonts";
 
   .imh__repertoire-description {
     padding: 20px 0;
-    margin-bottom: 30px;
-    border-bottom: 1px dotted $color-grey-light;
     font-size: $elevenpx;
   }
 

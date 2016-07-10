@@ -421,4 +421,4 @@ var imf = function () {
  * @param {boolean}      reflexion
  *
  */
-imf.create("media-gallery", 0.725, 0.466, 1, 20, 2, false);
+imf.create("imh__media-gallery", 0.725, 0.466, 1, 20, 2, false);

@@ -11,6 +11,14 @@ use Symfony\Component\Security\Core\Exception\AccessDeniedException;
 
 class MediaController extends BaseMediaController
 {
+    public function detectDevice()
+    {
+        $mobileDetector = $this->get('mobile_detect.mobile_detector');
+        $touchDevice = $mobileDetector->isMobile() || $mobileDetector->isTablet();
+
+        return $touchDevice;
+    }
+
     /**
      * @throws NotFoundHttpException
      *
@@ -85,12 +93,13 @@ class MediaController extends BaseMediaController
         }
 
         return $this->render('SonataMediaBundle:Media:view.html.twig', array(
-            'media'       => $media,
-            'options'     => $options,
-            'count'       => $count,
-            'providerRef' => $providerRef,
-            'formats'     => $this->get('sonata.media.pool')->getFormatNamesByContext($media->getContext()),
-            'format'      => $format
+            'media'         => $media,
+            'options'       => $options,
+            'count'         => $count,
+            'providerRef'   => $providerRef,
+            'formats'       => $this->get('sonata.media.pool')->getFormatNamesByContext($media->getContext()),
+            'format'        => $format,
+            'isTouchDevice' => $this->detectDevice()
         ));
     }
 

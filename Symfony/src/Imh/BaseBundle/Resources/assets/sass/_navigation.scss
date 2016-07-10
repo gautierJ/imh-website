@@ -3,7 +3,6 @@
 $hamburger-layer-color: $color-white;
 @import "../../../../../../web/assets/vendor/css-hamburgers/_sass/hamburgers/hamburgers";
 
-
 .imh__header {
   @include make-row();
 }
@@ -90,6 +89,10 @@ $hamburger-layer-color: $color-white;
 // Media queries
 // ==================================================
 @media (max-width: $screen-xs-max) {
+
+}
+
+@media (max-width: $screen-sm-max) {
   .imh__navigation {
     background: rgb(0, 0, 0) !important;
     background: rgba(0, 0, 0, .9) !important;
@@ -194,9 +197,7 @@ $hamburger-layer-color: $color-white;
     @include border-radius(0);
     width: 35px;
   }
-}
 
-@media (max-width: $screen-sm-max) {
   .imh__navigation {
       li a { transition: none; }
   }

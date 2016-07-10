@@ -106,7 +106,7 @@ $fa-font-path: "../../../../assets/vendor/components-font-awesome/fonts";
       height: 1px;
 
       .loader {
-        @include transition(width, 1s, cubic-bezier(0,.92,.08,1), 0s);
+        @include transition(width 1s cubic-bezier(0,.92,.08,1) 0s);
 
         background-color: $color-brown-light;
         display: block;
@@ -151,7 +151,7 @@ $fa-font-path: "../../../../assets/vendor/components-font-awesome/fonts";
           margin-left: 0;
         }
 
-        &:after {
+        &::after {
           content: "";
           background-color: rgb(0, 0, 0);
           background-color: rgba(0, 0, 0, .8);
@@ -161,14 +161,14 @@ $fa-font-path: "../../../../assets/vendor/components-font-awesome/fonts";
           top: 100%;
           left: 0;
           z-index: -1;
-          @include transition(top, .3s, cubic-bezier(0,.92,.08,1), 0s);
+          @include transition(top .3s cubic-bezier(0,.92,.08,1) 0s);
         }
 
         &:hover {
           border: 1px solid #271913;
           color: $color-white;
 
-          &:after {
+          &::after {
             top: 0;
           }
         }
@@ -179,7 +179,7 @@ $fa-font-path: "../../../../assets/vendor/components-font-awesome/fonts";
   &.mA_1 {
 
     .bkg-image {
-      @include transition(opacity, 1s, linear, 3s);
+      @include transition(opacity 1s linear 3s);
       @include opacity(1);
 
       &.notransition {
@@ -219,7 +219,7 @@ $fa-font-path: "../../../../assets/vendor/components-font-awesome/fonts";
     }
 
     .block-center {
-      @include transition(opacity, 1s, linear, 1s);
+      @include transition(opacity 1s linear 1s);
       @include opacity(0);
 
       h1, h2, h3 {
@@ -234,7 +234,7 @@ $fa-font-path: "../../../../assets/vendor/components-font-awesome/fonts";
       }
 
       .progressCounter {
-        @include transition(opacity, 1s, linear, 0s);
+        @include transition(opacity 1s linear 0s);
         @include opacity(0);
       }
     }
@@ -278,7 +278,7 @@ $fa-font-path: "../../../../assets/vendor/components-font-awesome/fonts";
     }
 
     .block-center {
-      @include transition(opacity, 1s, linear, .5s);
+      @include transition(opacity 1s linear .5s);
       @include opacity(1);
       margin-top: 100px;
       width: auto;

@@ -45,9 +45,9 @@
 {% endblock %}
 
 {% block main %}
-    <div id="gallery-wrapper" class="loading">
-        <div id="frame">
-            <ul id="sonata-media-gallery-media-list" class="clearfix slidee">
+    <div class="imh__gallery-wrapper loading">
+        <div class="frame">
+            <ul class="sonata-media-gallery-media-list clearfix slidee">
                {% spaceless %}
                    {% for galleryHasMedia in gallery.GalleryHasMedias %}
                        <li class="sonata-media-gallery-media-item">
@@ -70,15 +70,24 @@
                {% endspaceless %}
             </ul>
         </div>
-        <div id="trigger">
+        <div class="imh__trigger">
             <a href="#" title="More pictures : {{ gallery.name }}">
                 <img src="{{ asset('bundles/imhbase/images/empty.gif') }}" alt="" />
             </a>
         </div>
         {% if not isTouchDevice %}
             {% embed "ImhBaseBundle:Part:sidebar.html.twig" %}
+                {% block menu_display %}
+                    <a class="imh__navigation-menu-display" href="#" title="">
+                        <i class="fa fa-angle-right fa-3x"></i>
+                    </a>
+                {% endblock %}
                 {% block menu_social %}
                     <div class="imh__navigation-menu-social">
+                        <h3 class="imh__navigation-menu-title text-uppercase">
+                            <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                            {{ 'sonata.media.gallery.menu.title_3'|trans }}
+                        </h3>
                         <span class="fa-stack fa-2x">
                             <a class="icon fbshare" href="{{ url('sonata_media_gallery_view', {'id': app.request.get('id')} ) }}">
                                 <i class="fa fa-circle fa-inverse fa-stack-2x"></i>
@@ -96,11 +105,11 @@
             {% endembed %}
         {% endif %}
     </div>
-    <img id="spinner" src="{{ asset('bundles/imhbase/images/loader_white.svg') }}" alt="loading">
+    <img class="imh__spinner" src="{{ asset('bundles/imhbase/images/loader_white.svg') }}" alt="loading">
 
     <div class="row">
         <div class="col-md-24">
-        <div id="scrollbar">
+        <div class="imh__scrollbar">
             <div class="handle">
                 <div class="mousearea"></div>
             </div>
@@ -133,10 +142,6 @@
     <script type="text/javascript">
         $(function () {
             'use strict';
-
-            var triangle = $('.block-triangle');
-            triangle.shape(window);
-            $(window).on('resize', function () { triangle.shape(this); });
 
             // Social buttons
             $('.fbshare').click(function(e){

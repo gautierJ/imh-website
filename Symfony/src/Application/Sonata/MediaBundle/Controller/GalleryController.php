@@ -7,6 +7,14 @@ use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 
 class GalleryController extends Controller
 {
+    public function detectDevice()
+    {
+        $mobileDetector = $this->get('mobile_detect.mobile_detector');
+        $touchDevice = $mobileDetector->isMobile() || $mobileDetector->isTablet();
+
+        return $touchDevice;
+    }
+
     /**
      * @return \Symfony\Bundle\FrameworkBundle\Controller\Response
      */
@@ -38,12 +46,9 @@ class GalleryController extends Controller
             throw new NotFoundHttpException('unable to find the gallery with the id');
         }
 
-        $mobileDetector = $this->get('mobile_detect.mobile_detector');
-        $touchDevice = $mobileDetector->isMobile() || $mobileDetector->isTablet();
-
         return $this->render('ApplicationSonataMediaBundle:Gallery:view.html.twig', array(
             'gallery'       => $gallery,
-            'isTouchDevice' => $touchDevice
+            'isTouchDevice' => $this->detectDevice()
         ));
     }
 }

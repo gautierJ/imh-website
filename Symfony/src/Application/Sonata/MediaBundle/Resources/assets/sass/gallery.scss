@@ -9,6 +9,7 @@ $fa-font-path: "../../../assets/vendor/components-font-awesome/fonts";
   }
   50% {
     @include transform(scale(1.1));
+    zoom: 100%; // to prevent text zooming by default
   }
   100% {
     @include opacity(.8);
@@ -61,6 +62,7 @@ body {
     height: 100px;
     width: 100%;
     @include opacity(.8);
+    z-index: 1;
   }
 
   &::before {
@@ -80,6 +82,8 @@ body {
 
 .imh__sidebar {
   @include box-sizing(content-box);
+  @include box-shadow(-3px, 0, 40px, -2px, $color-black);
+  @include transition(all 1s cubic-bezier(0,.92,.08,1) 0s);
   display: block;
   position: absolute;
   top: 0;
@@ -88,16 +92,8 @@ body {
   background-color: rgb(0, 0, 0);
   background-color: rgba(0, 0, 0, .95);
   height: 100%;
-  padding: 0 100px 0 120px;
-
-  /*.block-triangle {
-    @include opacity(.95);
-    border-bottom-color: $color-white;
-
-    &+.navigation-menu {
-      margin-top: 130px;
-    }
-  }*/
+  padding: 0 80px 0 120px;
+  z-index: 0;
 
   &::after {
     content: '';
@@ -106,12 +102,61 @@ body {
     width: 1px;
     height: 100%;
   }
+
+  &.is-hidden {
+    padding: 0;
+    right: -94px;
+    background: none;
+    box-shadow: none;
+
+    .imh__sidebar-verticalcenter {
+      @include opacity(0);
+      @include animation('make-opacity-out .1s');
+      visibility: hidden;
+    }
+
+    .imh__navigation-menu-display {
+      background-color: $color-black;
+
+      .fa {
+        left: -5px;
+        @include transform(rotate(180deg));
+      }
+    }
+  }
 }
 
 .imh__sidebar-verticalcenter {
   @include calc(width, '100% - 1px');
+  @include opacity(1);
+  @include animation('make-opacity-in .5s forwards');
+  visibility: visible;
   vertical-align: middle;
   display: inline-block;
+}
+
+.imh__navigation-menu-display {
+  @include translate(0, -50%);
+  @include transition(all .3s ease 0s);
+  position: absolute;
+  top: 50%;
+  left: 0;
+  background-color: rgb(255, 255, 255);
+  background-color: rgba(255, 255, 255, .1);
+  padding: 27px 12px;
+
+  .fa {
+    @include transform-origin(50% 53%);
+    position: relative;
+    top: -2px;
+    left: 2px;
+    color: $color-white;
+  }
+
+  &:hover {
+    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, .2);
+  }
 }
 
 .imh__gallery-menu li.first,
@@ -128,13 +173,15 @@ body {
     border: 1px solid $color-grey-dark;
 
     li:not(.gallery) {
-
       a, span {
         color: $color-grey-light;
         white-space: nowrap;
       }
 
       &:hover {
+        a, span {
+          color: $color-white;
+        }
         &::after {
           background-color: $color-white;
           border-color: $color-white;
@@ -167,7 +214,7 @@ body {
 }
 
 .imh__gallery-menu {
-  padding-top: 50px;
+  margin-top: 50px;
 
   > ul {
     border: none;
@@ -187,7 +234,34 @@ body {
   }
 }
 
-#gallery-wrapper {
+.imh__navigation-menu-social {
+  margin-top: 50px;
+
+  .imh__navigation-menu-title {
+    margin-bottom: 15px;
+  }
+
+  .icon {
+    display: block;
+    width: 100%;
+    height: 100%;
+
+    &:hover {
+      .fa-inverse {
+        color: $color-white;
+        @include opacity(1);
+      }
+    }
+  }
+
+  .fa-inverse {
+    color: $color-grey-medium;
+    @include opacity(.4);
+    @include transition(opacity .3s linear 0s);
+  }
+}
+
+.imh__gallery-wrapper {
   @include transition(opacity .3s linear .5s);
   height: 100%;
   position: relative;
@@ -197,18 +271,18 @@ body {
     @include transition(opacity .2s linear 0s);
     @include opacity(0);
 
-    &+#spinner {
+    & + .imh__spinner {
       @include transition(opacity .2s linear .3s);
       @include opacity(1);
     }
   }
 }
 
-#frame {
+.frame {
   height: 100%;
 }
 
-/*#trigger {
+/*.imh__trigger {
   position: absolute;
   right: 18%;
   top: 0;
@@ -236,17 +310,17 @@ body {
   }
 }*/
 
-#trigger {
+.imh__trigger {
   display: none;
 }
 
-#scrollbar {
+.imh__scrollbar {
   position: absolute;
   left: 0;
   bottom: -1px;
   height: 2px;
   width: 100%;
-  z-index: 1;
+  z-index: 2;
 
   &::after {
     @include transition(width .4s ease 0s);
@@ -297,7 +371,7 @@ body {
   }
 }
 
-#sonata-media-gallery-media-list { // isotope container
+.sonata-media-gallery-media-list { // isotope container
   height: 100%; // height is mandatory (either px or %)
 }
 
@@ -321,65 +395,17 @@ body {
     }
   }
 
-  //      &.newElts {
-  //        @include opacity(1);
-  //        @include transition(opacity, 2s, linear, 0s);
-  //      }
+  /*&.newElts {
+    @include opacity(1);
+    @include transition(opacity, 2s, linear, 0s);
+  }*/
 
-  &.expanded {
+  &.is-expanded {
     height: 100%;
     width: auto;
 
     .sonata-media-gallery-media-item-link {
       cursor: default;
-
-      .media-object {
-        transition: none;
-        height: 100%;
-        width: auto;
-      }
-
-      .media-btns {
-        display: block;
-        position: absolute;
-        top: 0;
-        right: 0;
-        background-color: rgb(0, 0, 0);
-        background-color: rgba(0, 0, 0, 0.5);
-        @include transition(opacity .2s linear 0s);
-        @include opacity(0);
-
-        > span {
-          display: inline-block;
-          cursor: pointer;
-          text-align: center;
-          height: 20px;
-          line-height: 23px;
-          width: 20px;
-          vertical-align: middle;
-          padding: 8px;
-          box-sizing: content-box;
-          @include transition(background-color .2s ease-in 0s);
-
-          &.zoom {
-            img {
-              background: url("/bundles/imhbase/images/sprite.png") no-repeat scroll -96px -131px;
-              height: 20px;
-              width: 19px;
-            }
-          }
-
-          &.close {
-            img {
-              background: url("/bundles/imhbase/images/sprite.png") no-repeat scroll -115px -131px;
-              height: 12px;
-              width: 12px;
-            }
-          }
-        }
-      }
-
-      .plus-icon { display: none; }
 
       &:hover {
         .media-object {
@@ -390,10 +416,10 @@ body {
           @include opacity(1);
 
           > span {
-            //              border-width: 1px;
-            //              border-style: solid;
-            //              border-color: rgb(0, 0, 0);
-            //              border-color: rgba(0, 0, 0, 0.8);
+              /*border-width: 1px;
+              border-style: solid;
+              border-color: rgb(0, 0, 0);
+              border-color: rgba(0, 0, 0, 0.8);*/
 
             &:hover {
               background-color: rgb(0, 0, 0);
@@ -410,6 +436,54 @@ body {
         display: none;
       }
     }
+
+    .media-object {
+      transition: none;
+      height: 100%;
+      width: auto;
+    }
+
+    .media-btns {
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      background-color: rgb(0, 0, 0);
+      background-color: rgba(0, 0, 0, 0.5);
+      @include transition(opacity .2s linear 0s);
+      @include opacity(0);
+
+      > span {
+        display: inline-block;
+        cursor: pointer;
+        text-align: center;
+        height: 20px;
+        line-height: 23px;
+        width: 20px;
+        vertical-align: middle;
+        padding: 8px;
+        box-sizing: content-box;
+        @include transition(background-color .2s ease-in 0s);
+
+        &.zoom {
+          img {
+            background: url("/bundles/imhbase/images/sprite.png") no-repeat scroll -96px -131px;
+            height: 20px;
+            width: 19px;
+          }
+        }
+
+        &.close {
+          img {
+            background: url("/bundles/imhbase/images/sprite.png") no-repeat scroll -115px -131px;
+            height: 12px;
+            width: 12px;
+          }
+        }
+      }
+    }
+
+    .plus-icon { display: none; }
   }
 }
 
@@ -508,7 +582,7 @@ body {
   }
 }
 
-#spinner, #infscr-loading {
+.imh__spinner, #infscr-loading {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -519,7 +593,7 @@ body {
   }
 }
 
-#spinner {
+.imh__spinner {
   @include transition(opacity .2s linear 0s);
   @include opacity(0);
   margin: -19px 0 0 -19px;
@@ -529,18 +603,58 @@ body {
 // Media queries
 // ==================================================
 @media (max-width: $screen-xs-max) {
-  .imh__container-fluid {
-    &:before, &:after { display: none; }
-  }
-
   .imh__content {
     @include calc(height, '100% - 95px');
     top: 80px;
     padding-top: 0;
   }
 
-  #gallery-wrapper {
+  .imh__gallery-wrapper {
     padding: 0;
+  }
+}
+
+@media (min-width: $screen-sm-min) and (max-width: $screen-md-max) {
+  .imh__gallery-wrapper {
+    padding: 15px 0;
+  }
+}
+
+
+
+.touchevents {
+  .plus-icon, .imh__scrollbar {
+    display: none;
+  }
+
+  @media (min-width: $screen-md-min) {
+    .imh__navigation {
+      background: none;
+      border: none;
+      height: 91px;
+
+      ul {
+        border-top: none;
+      }
+
+      li.current {
+        background-color: $color-grey-dark;
+        border: none;
+        span {
+          color: $color-white;
+        }
+      }
+    }
+    .imh__content {
+      top: 0;
+      @include calc(height, '100% - 91px');
+    }
+  }
+}
+
+@media (max-width: $screen-md-max) {
+  .imh__container-fluid {
+    &::before, &::after { display: none; }
   }
 }
 
@@ -550,21 +664,23 @@ body {
 
 
 
-html.no-touchevents {
+/*.no-touchevents {
   @media all and (orientation: portrait) {
 
-    #trigger { display: none; }
+    .imh__trigger { display: none; }
 
-    #sonata-media-gallery-media-list {
+    .sonata-media-gallery-media-list {
       height: auto;
     }
 
     .sonata-media-gallery-media-item {
       height: auto;
       width: 33.33%;
-      &.expanded {
+
+      &.is-expanded {
         height: auto;
         width: 66.66%;
+
         .media-object {
           height: auto;
           width: 100%;
@@ -577,71 +693,32 @@ html.no-touchevents {
       width: 100%;
     }
 
-    #scrollbar {
+    .imh__scrollbar {
       display: none;
     }
   }
-}
+}*/
 
-html.touchevents {
+.touchevents {
   /* Galaxy Tab 10.1 ----------- */
-
-  /* Portrait and Landscape */
-  @media only screen and (min-width: 800px) and (max-width: 1280px) {
-    .sonata-media-gallery-media-item-link {
-      &:after {
-        width: 40px;
-        height: 40px;
-        margin: -20px 0 0 -20px;
-      }
-    }
-  }
 
   /* Portrait */
   @media only screen and (max-width: 800px) and (max-aspect-ratio: 13/9) { //bugfix aspect ratio android = orientation: portrait
 
-    #trigger {
+    .imh__trigger {
       display: none;
-    }
-
-    #header {
-      .navigation {
-        background: none;
-        border: none;
-        height: auto;
-
-        .wrapper {
-          top: 0;
-        }
-
-        ul {
-          li {
-            height: 100px;
-            width: 16.74%;
-            a, span {
-              height: 99px;
-              line-height: 101px;
-              padding: 0;
-            }
-          }
-        }
-      }
-    }
-
-    #wrapper {
-      max-width: 800px;
     }
 
     /*.imh__content {
       height: calc(100% - 200px);
     }*/
 
-    #gallery-wrapper {
+    .imh__gallery-wrapper {
       width: 100%;
       height: 100%;
     }
 
-    #sonata-media-gallery-media-list {
+    .sonata-media-gallery-media-list {
       height: auto;
     }
 
@@ -649,7 +726,7 @@ html.touchevents {
       width: 33.33%;
       height: auto;
 
-      &.expanded {
+      &.is-expanded {
         width: auto;
         height: auto;
 
@@ -666,7 +743,7 @@ html.touchevents {
       width: 100%;
     }
 
-    #scrollbar {
+    .imh__scrollbar {
       top: 0;
       right: -20px;
       bottom: inherit;
@@ -687,18 +764,12 @@ html.touchevents {
         }
       }
     }
-
-    #footer {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-    }
   }
 
   /* Landscape */
   @media only screen and (max-width: 1280px) and (min-aspect-ratio: 13/9) { //bugfix aspect ratio android = orientation: landscape
 
-    /*#sonata-media-gallery-media-list {
+    /*.sonata-media-gallery-media-list {
       height: 100%;
     }
 
@@ -706,7 +777,7 @@ html.touchevents {
       height: 50%;
       width: auto;
 
-      &.expanded {
+      &.is-expanded {
         height: 100%;
         width: auto;
 

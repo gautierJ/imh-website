@@ -7147,19 +7147,20 @@ button:focus {
 }
 
 /* line 124, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_sidebar.scss */
-.imh__navigation-menu-subtitle {
+.imh__navigation-menu-title {
   font-family: "ralewaysemibold", Arial, Helvetica, sans-serif;
   border-bottom: 1px solid #3f3f3f;
   padding-bottom: 7px;
-  color: #898989;
-  text-transform: uppercase;
+  color: white;
   font-weight: normal;
   font-size: 1em;
 }
-/* line 133, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_sidebar.scss */
-.imh__navigation-menu-subtitle .fa {
-  color: #898989;
+/* line 132, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_sidebar.scss */
+.imh__navigation-menu-title .fa {
+  color: white;
   margin-right: 2px;
+  display: inline-block;
+  vertical-align: text-top;
 }
 
 /*!
@@ -7813,7 +7814,7 @@ button:focus {
     border: none;
   }
 }
-/* line 4, assetic_compassavGZXn.scss */
+/* line 4, assetic_compasszC3LEL.scss */
 .flashbag-message {
   display: none;
   background-color: black;
@@ -7826,7 +7827,7 @@ button:focus {
   z-index: 100000;
 }
 
-/* line 16, assetic_compassavGZXn.scss */
+/* line 16, assetic_compasszC3LEL.scss */
 .flashbag-message-content {
   -webkit-transform: translate(-50%, -50%);
   -moz-transform: translate(-50%, -50%);
@@ -7847,7 +7848,7 @@ button:focus {
   top: 50%;
   left: 50%;
 }
-/* line 28, assetic_compassavGZXn.scss */
+/* line 28, assetic_compasszC3LEL.scss */
 .flashbag-message-content .top {
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
@@ -7855,26 +7856,26 @@ button:focus {
   background-color: #dddddd;
   padding: 18px 20px;
 }
-/* line 35, assetic_compassavGZXn.scss */
+/* line 35, assetic_compasszC3LEL.scss */
 .flashbag-message-content .top > p {
   margin: 0;
   font-size: 1.167em;
   text-transform: uppercase;
 }
-/* line 41, assetic_compassavGZXn.scss */
+/* line 41, assetic_compasszC3LEL.scss */
 .flashbag-message-content .top .close {
   position: absolute;
   top: 20px;
   right: 20px;
 }
-/* line 48, assetic_compassavGZXn.scss */
+/* line 48, assetic_compasszC3LEL.scss */
 .flashbag-message-content .msg {
   margin: 23px 0;
   padding: 0 20px;
   font-size: 1.167em;
 }
 
-/* line 55, assetic_compassavGZXn.scss */
+/* line 55, assetic_compasszC3LEL.scss */
 .imh__container--wrapper {
   background-color: white;
   padding: 30px 60px 0;
@@ -7897,12 +7898,12 @@ button:focus {
   clear: both;
 }
 
-/* line 68, assetic_compassavGZXn.scss */
+/* line 68, assetic_compasszC3LEL.scss */
 .imh__contact-form {
   background: url("/bundles/imhbase/images/stripes.png");
   padding: 80px 20px 40px;
 }
-/* line 72, assetic_compassavGZXn.scss */
+/* line 72, assetic_compasszC3LEL.scss */
 .imh__contact-form label {
   color: #3f3f3f;
   font-size: 1.167em;
@@ -7910,7 +7911,7 @@ button:focus {
   width: 40%;
   vertical-align: middle;
 }
-/* line 80, assetic_compassavGZXn.scss */
+/* line 80, assetic_compasszC3LEL.scss */
 .imh__contact-form input, .imh__contact-form textarea {
   font-size: 1.167em;
   background-color: #fcfcfc;
@@ -7922,16 +7923,16 @@ button:focus {
   -o-transition: border .2s ease-in, box-shadow .2s ease-in;
   transition: border .2s ease-in, box-shadow .2s ease-in;
 }
-/* line 92, assetic_compassavGZXn.scss */
+/* line 92, assetic_compasszC3LEL.scss */
 .imh__contact-form input {
   vertical-align: middle;
   width: 60%;
 }
-/* line 97, assetic_compassavGZXn.scss */
+/* line 97, assetic_compasszC3LEL.scss */
 .imh__contact-form textarea {
   resize: vertical;
 }
-/* line 101, assetic_compassavGZXn.scss */
+/* line 101, assetic_compasszC3LEL.scss */
 .imh__contact-form input:focus, .imh__contact-form textarea:focus {
   border: 1px solid #222222;
   -webkit-box-shadow: 0 0 1px 0 lightgrey;
@@ -7940,36 +7941,36 @@ button:focus {
   outline: none;
 }
 
-/* line 108, assetic_compassavGZXn.scss */
+/* line 108, assetic_compasszC3LEL.scss */
 .imh__contact-mandatory {
   color: #3f3f3f;
   font-size: 1.167em;
   margin-top: 20px;
 }
 
-/* line 115, assetic_compassavGZXn.scss */
+/* line 115, assetic_compasszC3LEL.scss */
 .imh__contact-info > div {
   margin-bottom: 15px;
 }
 
-/* line 121, assetic_compassavGZXn.scss */
+/* line 121, assetic_compasszC3LEL.scss */
 .imh__contact-message label {
   margin-top: 7px;
 }
-/* line 125, assetic_compassavGZXn.scss */
+/* line 125, assetic_compasszC3LEL.scss */
 .imh__contact-message textarea {
   vertical-align: top;
   width: 60%;
   height: 157px;
 }
 
-/* line 132, assetic_compassavGZXn.scss */
+/* line 132, assetic_compasszC3LEL.scss */
 .imh__contact-message-send {
   font-size: 1.083em;
   margin-top: 30px;
   color: #3f3f3f;
 }
-/* line 137, assetic_compassavGZXn.scss */
+/* line 137, assetic_compasszC3LEL.scss */
 .imh__contact-message-send button {
   text-transform: uppercase;
   background-color: white;
@@ -7979,7 +7980,7 @@ button:focus {
   -o-transition: all, 0.2s, ease-in, 0s;
   transition: all, 0.2s, ease-in, 0s;
 }
-/* line 144, assetic_compassavGZXn.scss */
+/* line 144, assetic_compasszC3LEL.scss */
 .imh__contact-message-send button:hover {
   background-color: #582411;
   border: 1px solid #582411;
@@ -7987,48 +7988,48 @@ button:focus {
 }
 
 @media (max-width: 767px) {
-  /* line 155, assetic_compassavGZXn.scss */
+  /* line 155, assetic_compasszC3LEL.scss */
   .imh__container--wrapper {
     padding: 15px 0;
     border-top-width: 0;
   }
 
-  /* line 160, assetic_compassavGZXn.scss */
+  /* line 160, assetic_compasszC3LEL.scss */
   .imh__contact-form {
     padding: 0;
   }
 
-  /* line 164, assetic_compassavGZXn.scss */
+  /* line 164, assetic_compasszC3LEL.scss */
   .imh__contact-info > div {
     margin-bottom: 5px;
   }
 
-  /* line 169, assetic_compassavGZXn.scss */
+  /* line 169, assetic_compasszC3LEL.scss */
   .imh__contact-form input,
   .imh__contact-form textarea {
     padding: 2px 7px;
   }
 
-  /* line 174, assetic_compassavGZXn.scss */
+  /* line 174, assetic_compasszC3LEL.scss */
   .imh__contact-message textarea {
     height: 80px;
   }
-  /* line 177, assetic_compassavGZXn.scss */
+  /* line 177, assetic_compasszC3LEL.scss */
   .imh__contact-message label {
     margin-top: 3px;
   }
 
-  /* line 182, assetic_compassavGZXn.scss */
+  /* line 182, assetic_compasszC3LEL.scss */
   .imh__contact-mandatory {
     font-size: 1em;
   }
 
-  /* line 186, assetic_compassavGZXn.scss */
+  /* line 186, assetic_compasszC3LEL.scss */
   .imh__contact-message-send {
     margin-top: 10px;
     font-size: 1em;
   }
-  /* line 190, assetic_compassavGZXn.scss */
+  /* line 190, assetic_compasszC3LEL.scss */
   .imh__contact-message-send button {
     padding: 8px 12px;
   }

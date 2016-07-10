@@ -7147,19 +7147,20 @@ button:focus {
 }
 
 /* line 124, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_sidebar.scss */
-.imh__navigation-menu-subtitle {
+.imh__navigation-menu-title {
   font-family: "ralewaysemibold", Arial, Helvetica, sans-serif;
   border-bottom: 1px solid #3f3f3f;
   padding-bottom: 7px;
-  color: #898989;
-  text-transform: uppercase;
+  color: white;
   font-weight: normal;
   font-size: 1em;
 }
-/* line 133, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_sidebar.scss */
-.imh__navigation-menu-subtitle .fa {
-  color: #898989;
+/* line 132, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_sidebar.scss */
+.imh__navigation-menu-title .fa {
+  color: white;
   margin-right: 2px;
+  display: inline-block;
+  vertical-align: text-top;
 }
 
 /*!
@@ -7814,7 +7815,7 @@ button:focus {
   }
 }
 @-webkit-keyframes pop-icon-in {
-  /* line 5, assetic_compassnbazLN.scss */
+  /* line 5, assetic_compassPKkDEw.scss */
   0% {
     opacity: 0;
     /* Good browsers */
@@ -7832,15 +7833,16 @@ button:focus {
     transform: scale(0);
   }
 
-  /* line 10, assetic_compassnbazLN.scss */
+  /* line 10, assetic_compassPKkDEw.scss */
   50% {
     -webkit-transform: scale(1.1);
     -moz-transform: scale(1.1);
     -o-transform: scale(1.1);
     transform: scale(1.1);
+    zoom: 100%;
   }
 
-  /* line 13, assetic_compassnbazLN.scss */
+  /* line 14, assetic_compassPKkDEw.scss */
   100% {
     opacity: 0.8;
     /* Good browsers */
@@ -7860,7 +7862,7 @@ button:focus {
 }
 
 @-moz-keyframes pop-icon-in {
-  /* line 5, assetic_compassnbazLN.scss */
+  /* line 5, assetic_compassPKkDEw.scss */
   0% {
     opacity: 0;
     /* Good browsers */
@@ -7878,15 +7880,16 @@ button:focus {
     transform: scale(0);
   }
 
-  /* line 10, assetic_compassnbazLN.scss */
+  /* line 10, assetic_compassPKkDEw.scss */
   50% {
     -webkit-transform: scale(1.1);
     -moz-transform: scale(1.1);
     -o-transform: scale(1.1);
     transform: scale(1.1);
+    zoom: 100%;
   }
 
-  /* line 13, assetic_compassnbazLN.scss */
+  /* line 14, assetic_compassPKkDEw.scss */
   100% {
     opacity: 0.8;
     /* Good browsers */
@@ -7906,7 +7909,7 @@ button:focus {
 }
 
 @-ms-keyframes pop-icon-in {
-  /* line 5, assetic_compassnbazLN.scss */
+  /* line 5, assetic_compassPKkDEw.scss */
   0% {
     opacity: 0;
     /* Good browsers */
@@ -7924,15 +7927,16 @@ button:focus {
     transform: scale(0);
   }
 
-  /* line 10, assetic_compassnbazLN.scss */
+  /* line 10, assetic_compassPKkDEw.scss */
   50% {
     -webkit-transform: scale(1.1);
     -moz-transform: scale(1.1);
     -o-transform: scale(1.1);
     transform: scale(1.1);
+    zoom: 100%;
   }
 
-  /* line 13, assetic_compassnbazLN.scss */
+  /* line 14, assetic_compassPKkDEw.scss */
   100% {
     opacity: 0.8;
     /* Good browsers */
@@ -7952,7 +7956,7 @@ button:focus {
 }
 
 @-o-keyframes pop-icon-in {
-  /* line 5, assetic_compassnbazLN.scss */
+  /* line 5, assetic_compassPKkDEw.scss */
   0% {
     opacity: 0;
     /* Good browsers */
@@ -7970,15 +7974,16 @@ button:focus {
     transform: scale(0);
   }
 
-  /* line 10, assetic_compassnbazLN.scss */
+  /* line 10, assetic_compassPKkDEw.scss */
   50% {
     -webkit-transform: scale(1.1);
     -moz-transform: scale(1.1);
     -o-transform: scale(1.1);
     transform: scale(1.1);
+    zoom: 100%;
   }
 
-  /* line 13, assetic_compassnbazLN.scss */
+  /* line 14, assetic_compassPKkDEw.scss */
   100% {
     opacity: 0.8;
     /* Good browsers */
@@ -7998,7 +8003,7 @@ button:focus {
 }
 
 @keyframes pop-icon-in {
-  /* line 5, assetic_compassnbazLN.scss */
+  /* line 5, assetic_compassPKkDEw.scss */
   0% {
     opacity: 0;
     /* Good browsers */
@@ -8016,15 +8021,16 @@ button:focus {
     transform: scale(0);
   }
 
-  /* line 10, assetic_compassnbazLN.scss */
+  /* line 10, assetic_compassPKkDEw.scss */
   50% {
     -webkit-transform: scale(1.1);
     -moz-transform: scale(1.1);
     -o-transform: scale(1.1);
     transform: scale(1.1);
+    zoom: 100%;
   }
 
-  /* line 13, assetic_compassnbazLN.scss */
+  /* line 14, assetic_compassPKkDEw.scss */
   100% {
     opacity: 0.8;
     /* Good browsers */
@@ -8044,7 +8050,7 @@ button:focus {
 }
 
 @-webkit-keyframes pop-icon-out {
-  /* line 20, assetic_compassnbazLN.scss */
+  /* line 21, assetic_compassPKkDEw.scss */
   0% {
     opacity: 0.8;
     /* Good browsers */
@@ -8062,7 +8068,7 @@ button:focus {
     transform: scale(1);
   }
 
-  /* line 24, assetic_compassnbazLN.scss */
+  /* line 25, assetic_compassPKkDEw.scss */
   100% {
     opacity: 0;
     /* Good browsers */
@@ -8082,7 +8088,7 @@ button:focus {
 }
 
 @-moz-keyframes pop-icon-out {
-  /* line 20, assetic_compassnbazLN.scss */
+  /* line 21, assetic_compassPKkDEw.scss */
   0% {
     opacity: 0.8;
     /* Good browsers */
@@ -8100,7 +8106,7 @@ button:focus {
     transform: scale(1);
   }
 
-  /* line 24, assetic_compassnbazLN.scss */
+  /* line 25, assetic_compassPKkDEw.scss */
   100% {
     opacity: 0;
     /* Good browsers */
@@ -8120,7 +8126,7 @@ button:focus {
 }
 
 @-ms-keyframes pop-icon-out {
-  /* line 20, assetic_compassnbazLN.scss */
+  /* line 21, assetic_compassPKkDEw.scss */
   0% {
     opacity: 0.8;
     /* Good browsers */
@@ -8138,7 +8144,7 @@ button:focus {
     transform: scale(1);
   }
 
-  /* line 24, assetic_compassnbazLN.scss */
+  /* line 25, assetic_compassPKkDEw.scss */
   100% {
     opacity: 0;
     /* Good browsers */
@@ -8158,7 +8164,7 @@ button:focus {
 }
 
 @-o-keyframes pop-icon-out {
-  /* line 20, assetic_compassnbazLN.scss */
+  /* line 21, assetic_compassPKkDEw.scss */
   0% {
     opacity: 0.8;
     /* Good browsers */
@@ -8176,7 +8182,7 @@ button:focus {
     transform: scale(1);
   }
 
-  /* line 24, assetic_compassnbazLN.scss */
+  /* line 25, assetic_compassPKkDEw.scss */
   100% {
     opacity: 0;
     /* Good browsers */
@@ -8196,7 +8202,7 @@ button:focus {
 }
 
 @keyframes pop-icon-out {
-  /* line 20, assetic_compassnbazLN.scss */
+  /* line 21, assetic_compassPKkDEw.scss */
   0% {
     opacity: 0.8;
     /* Good browsers */
@@ -8214,7 +8220,7 @@ button:focus {
     transform: scale(1);
   }
 
-  /* line 24, assetic_compassnbazLN.scss */
+  /* line 25, assetic_compassPKkDEw.scss */
   100% {
     opacity: 0;
     /* Good browsers */
@@ -8234,7 +8240,7 @@ button:focus {
 }
 
 @-webkit-keyframes make-opacity-in {
-  /* line 31, assetic_compassnbazLN.scss */
+  /* line 32, assetic_compassPKkDEw.scss */
   0% {
     opacity: 0;
     /* Good browsers */
@@ -8248,7 +8254,7 @@ button:focus {
     /* IE 8 */
   }
 
-  /* line 34, assetic_compassnbazLN.scss */
+  /* line 35, assetic_compassPKkDEw.scss */
   100% {
     opacity: 1;
     /* Good browsers */
@@ -8264,7 +8270,7 @@ button:focus {
 }
 
 @-moz-keyframes make-opacity-in {
-  /* line 31, assetic_compassnbazLN.scss */
+  /* line 32, assetic_compassPKkDEw.scss */
   0% {
     opacity: 0;
     /* Good browsers */
@@ -8278,7 +8284,7 @@ button:focus {
     /* IE 8 */
   }
 
-  /* line 34, assetic_compassnbazLN.scss */
+  /* line 35, assetic_compassPKkDEw.scss */
   100% {
     opacity: 1;
     /* Good browsers */
@@ -8294,7 +8300,7 @@ button:focus {
 }
 
 @-ms-keyframes make-opacity-in {
-  /* line 31, assetic_compassnbazLN.scss */
+  /* line 32, assetic_compassPKkDEw.scss */
   0% {
     opacity: 0;
     /* Good browsers */
@@ -8308,7 +8314,7 @@ button:focus {
     /* IE 8 */
   }
 
-  /* line 34, assetic_compassnbazLN.scss */
+  /* line 35, assetic_compassPKkDEw.scss */
   100% {
     opacity: 1;
     /* Good browsers */
@@ -8324,7 +8330,7 @@ button:focus {
 }
 
 @-o-keyframes make-opacity-in {
-  /* line 31, assetic_compassnbazLN.scss */
+  /* line 32, assetic_compassPKkDEw.scss */
   0% {
     opacity: 0;
     /* Good browsers */
@@ -8338,7 +8344,7 @@ button:focus {
     /* IE 8 */
   }
 
-  /* line 34, assetic_compassnbazLN.scss */
+  /* line 35, assetic_compassPKkDEw.scss */
   100% {
     opacity: 1;
     /* Good browsers */
@@ -8354,7 +8360,7 @@ button:focus {
 }
 
 @keyframes make-opacity-in {
-  /* line 31, assetic_compassnbazLN.scss */
+  /* line 32, assetic_compassPKkDEw.scss */
   0% {
     opacity: 0;
     /* Good browsers */
@@ -8368,7 +8374,7 @@ button:focus {
     /* IE 8 */
   }
 
-  /* line 34, assetic_compassnbazLN.scss */
+  /* line 35, assetic_compassPKkDEw.scss */
   100% {
     opacity: 1;
     /* Good browsers */
@@ -8384,7 +8390,7 @@ button:focus {
 }
 
 @-webkit-keyframes make-opacity-out {
-  /* line 40, assetic_compassnbazLN.scss */
+  /* line 41, assetic_compassPKkDEw.scss */
   0% {
     opacity: 1;
     /* Good browsers */
@@ -8398,7 +8404,7 @@ button:focus {
     /* IE 8 */
   }
 
-  /* line 43, assetic_compassnbazLN.scss */
+  /* line 44, assetic_compassPKkDEw.scss */
   100% {
     opacity: 0;
     /* Good browsers */
@@ -8414,7 +8420,7 @@ button:focus {
 }
 
 @-moz-keyframes make-opacity-out {
-  /* line 40, assetic_compassnbazLN.scss */
+  /* line 41, assetic_compassPKkDEw.scss */
   0% {
     opacity: 1;
     /* Good browsers */
@@ -8428,7 +8434,7 @@ button:focus {
     /* IE 8 */
   }
 
-  /* line 43, assetic_compassnbazLN.scss */
+  /* line 44, assetic_compassPKkDEw.scss */
   100% {
     opacity: 0;
     /* Good browsers */
@@ -8444,7 +8450,7 @@ button:focus {
 }
 
 @-ms-keyframes make-opacity-out {
-  /* line 40, assetic_compassnbazLN.scss */
+  /* line 41, assetic_compassPKkDEw.scss */
   0% {
     opacity: 1;
     /* Good browsers */
@@ -8458,7 +8464,7 @@ button:focus {
     /* IE 8 */
   }
 
-  /* line 43, assetic_compassnbazLN.scss */
+  /* line 44, assetic_compassPKkDEw.scss */
   100% {
     opacity: 0;
     /* Good browsers */
@@ -8474,7 +8480,7 @@ button:focus {
 }
 
 @-o-keyframes make-opacity-out {
-  /* line 40, assetic_compassnbazLN.scss */
+  /* line 41, assetic_compassPKkDEw.scss */
   0% {
     opacity: 1;
     /* Good browsers */
@@ -8488,7 +8494,7 @@ button:focus {
     /* IE 8 */
   }
 
-  /* line 43, assetic_compassnbazLN.scss */
+  /* line 44, assetic_compassPKkDEw.scss */
   100% {
     opacity: 0;
     /* Good browsers */
@@ -8504,7 +8510,7 @@ button:focus {
 }
 
 @keyframes make-opacity-out {
-  /* line 40, assetic_compassnbazLN.scss */
+  /* line 41, assetic_compassPKkDEw.scss */
   0% {
     opacity: 1;
     /* Good browsers */
@@ -8518,7 +8524,7 @@ button:focus {
     /* IE 8 */
   }
 
-  /* line 43, assetic_compassnbazLN.scss */
+  /* line 44, assetic_compassPKkDEw.scss */
   100% {
     opacity: 0;
     /* Good browsers */
@@ -8533,17 +8539,17 @@ button:focus {
   }
 }
 
-/* line 48, assetic_compassnbazLN.scss */
+/* line 49, assetic_compassPKkDEw.scss */
 body {
   background-color: black;
 }
 
-/* line 52, assetic_compassnbazLN.scss */
+/* line 53, assetic_compassPKkDEw.scss */
 .imh__container-fluid {
   height: 100%;
   position: relative;
 }
-/* line 56, assetic_compassnbazLN.scss */
+/* line 57, assetic_compassPKkDEw.scss */
 .imh__container-fluid::before, .imh__container-fluid::after {
   content: '';
   position: absolute;
@@ -8562,16 +8568,16 @@ body {
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
   /* IE 8 */
 }
-/* line 66, assetic_compassnbazLN.scss */
+/* line 67, assetic_compassPKkDEw.scss */
 .imh__container-fluid::before {
   top: 0;
 }
-/* line 70, assetic_compassnbazLN.scss */
+/* line 71, assetic_compassPKkDEw.scss */
 .imh__container-fluid::after {
   bottom: 3px;
 }
 
-/* line 75, assetic_compassnbazLN.scss */
+/* line 76, assetic_compassPKkDEw.scss */
 .imh__content {
   height: -webkit-calc(100% - 200px);
   height: calc(100% - 200px);
@@ -8579,7 +8585,7 @@ body {
   top: 100px;
 }
 
-/* line 81, assetic_compassnbazLN.scss */
+/* line 82, assetic_compassPKkDEw.scss */
 .imh__sidebar {
   -webkit-box-sizing: content-box;
   -moz-box-sizing: content-box;
@@ -8592,7 +8598,7 @@ body {
   background-color: black;
   background-color: rgba(0, 0, 0, 0.95);
   height: 100%;
-  padding: 0 100px;
+  padding: 0 100px 0 120px;
   /*.block-triangle {
     @include opacity(.95);
     border-bottom-color: $color-white;
@@ -8602,7 +8608,7 @@ body {
     }
   }*/
 }
-/* line 102, assetic_compassnbazLN.scss */
+/* line 103, assetic_compassPKkDEw.scss */
 .imh__sidebar::after {
   content: '';
   display: inline-block;
@@ -8611,7 +8617,7 @@ body {
   height: 100%;
 }
 
-/* line 111, assetic_compassnbazLN.scss */
+/* line 112, assetic_compassPKkDEw.scss */
 .imh__sidebar-verticalcenter {
   width: -webkit-calc(100% - 1px);
   width: calc(100% - 1px);
@@ -8619,77 +8625,77 @@ body {
   display: inline-block;
 }
 
-/* line 118, assetic_compassnbazLN.scss */
+/* line 119, assetic_compassPKkDEw.scss */
 .imh__gallery-menu li.first,
 .imh__navigation-menu > span {
   color: #898989;
 }
 
-/* line 122, assetic_compassnbazLN.scss */
+/* line 123, assetic_compassPKkDEw.scss */
 .imh__navigation-menu {
   position: static;
   display: block;
 }
-/* line 126, assetic_compassnbazLN.scss */
+/* line 127, assetic_compassPKkDEw.scss */
 .imh__navigation-menu ul {
   background: black;
   border: 1px solid #3f3f3f;
 }
-/* line 132, assetic_compassnbazLN.scss */
+/* line 133, assetic_compassPKkDEw.scss */
 .imh__navigation-menu ul li:not(.gallery) a, .imh__navigation-menu ul li:not(.gallery) span {
   color: lightgrey;
   white-space: nowrap;
 }
-/* line 138, assetic_compassnbazLN.scss */
+/* line 139, assetic_compassPKkDEw.scss */
 .imh__navigation-menu ul li:not(.gallery):hover::after {
   background-color: white;
   border-color: white;
 }
-/* line 145, assetic_compassnbazLN.scss */
+/* line 146, assetic_compassPKkDEw.scss */
 .imh__navigation-menu ul li:not(.gallery).current a, .imh__navigation-menu ul li:not(.gallery).current span {
   background: black;
   border-color: #3f3f3f;
   color: lightgrey;
 }
-/* line 151, assetic_compassnbazLN.scss */
+/* line 152, assetic_compassPKkDEw.scss */
 .imh__navigation-menu ul li:not(.gallery).current::after {
   background-color: white;
   border-color: white;
   box-shadow: none;
 }
-/* line 160, assetic_compassnbazLN.scss */
+/* line 161, assetic_compassPKkDEw.scss */
 .imh__navigation-menu .fa-home {
   display: none;
 }
-/* line 163, assetic_compassnbazLN.scss */
+/* line 164, assetic_compassPKkDEw.scss */
 .imh__navigation-menu .fa-home + span {
   display: inline;
 }
 
-/* line 169, assetic_compassnbazLN.scss */
+/* line 170, assetic_compassPKkDEw.scss */
 .imh__gallery-menu {
   padding-top: 50px;
 }
-/* line 172, assetic_compassnbazLN.scss */
+/* line 173, assetic_compassPKkDEw.scss */
 .imh__gallery-menu > ul {
   border: none;
   margin: 0;
 }
-/* line 177, assetic_compassnbazLN.scss */
+/* line 178, assetic_compassPKkDEw.scss */
 .imh__gallery-menu li:first-child {
   margin-top: 17px;
 }
-/* line 181, assetic_compassnbazLN.scss */
+/* line 182, assetic_compassPKkDEw.scss */
 .imh__gallery-menu li:last-child {
   margin-bottom: 17px;
 }
-/* line 185, assetic_compassnbazLN.scss */
+/* line 186, assetic_compassPKkDEw.scss */
 .imh__gallery-menu li::after {
   border-color: #222222;
 }
 
-/* line 190, assetic_compassnbazLN.scss */
-#gallery-wrapper {
+/* line 191, assetic_compassPKkDEw.scss */
+.imh__gallery-wrapper {
   -webkit-transition: opacity 0.3s linear 0.5s;
   -o-transition: opacity 0.3s linear 0.5s;
   transition: opacity 0.3s linear 0.5s;
@@ -8697,8 +8703,8 @@ body {
   position: relative;
   padding: 25px 10px;
 }
-/* line 196, assetic_compassnbazLN.scss */
-#gallery-wrapper.loading {
+/* line 197, assetic_compassPKkDEw.scss */
+.imh__gallery-wrapper.loading {
   -webkit-transition: opacity 0.2s linear 0s;
   -o-transition: opacity 0.2s linear 0s;
   transition: opacity 0.2s linear 0s;
@@ -8713,8 +8719,8 @@ body {
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   /* IE 8 */
 }
-/* line 200, assetic_compassnbazLN.scss */
-#gallery-wrapper.loading + #spinner {
+/* line 201, assetic_compassPKkDEw.scss */
+.imh__gallery-wrapper.loading + #spinner {
   -webkit-transition: opacity 0.2s linear 0.3s;
   -o-transition: opacity 0.2s linear 0.3s;
   transition: opacity 0.2s linear 0.3s;
@@ -8730,12 +8736,12 @@ body {
   /* IE 8 */
 }
 
-/* line 207, assetic_compassnbazLN.scss */
-#frame {
+/* line 208, assetic_compassPKkDEw.scss */
+.frame {
   height: 100%;
 }
 
-/*#trigger {
+/*.imh__trigger {
   position: absolute;
   right: 18%;
   top: 0;
@@ -8762,13 +8768,13 @@ body {
     }
   }
 }*/
-/* line 239, assetic_compassnbazLN.scss */
-#trigger {
+/* line 240, assetic_compassPKkDEw.scss */
+.imh__trigger {
   display: none;
 }
 
-/* line 243, assetic_compassnbazLN.scss */
-#scrollbar {
+/* line 244, assetic_compassPKkDEw.scss */
+.imh__scrollbar {
   position: absolute;
   left: 0;
   bottom: -1px;
@@ -8776,8 +8782,8 @@ body {
   width: 100%;
   z-index: 1;
 }
-/* line 251, assetic_compassnbazLN.scss */
-#scrollbar::after {
+/* line 252, assetic_compassPKkDEw.scss */
+.imh__scrollbar::after {
   -webkit-transition: width 0.4s ease 0s;
   -o-transition: width 0.4s ease 0s;
   transition: width 0.4s ease 0s;
@@ -8788,8 +8794,8 @@ body {
   top: 0;
   background: #222222;
 }
-/* line 261, assetic_compassnbazLN.scss */
-#scrollbar .handle {
+/* line 262, assetic_compassPKkDEw.scss */
+.imh__scrollbar .handle {
   opacity: 0;
   /* Good browsers */
   -moz-opacity: 0;
@@ -8814,20 +8820,20 @@ body {
   position: relative;
   z-index: 1;
 }
-/* line 276, assetic_compassnbazLN.scss */
-#scrollbar .handle:hover {
+/* line 277, assetic_compassPKkDEw.scss */
+.imh__scrollbar .handle:hover {
   background: lightgrey;
 }
-/* line 280, assetic_compassnbazLN.scss */
-#scrollbar .handle .mousearea {
+/* line 281, assetic_compassPKkDEw.scss */
+.imh__scrollbar .handle .mousearea {
   position: absolute;
   top: -31px;
   left: 0;
   height: 128px;
   width: 100%;
 }
-/* line 290, assetic_compassnbazLN.scss */
-#scrollbar.mA_2 .handle {
+/* line 291, assetic_compassPKkDEw.scss */
+.imh__scrollbar.mA_2 .handle {
   opacity: 1;
   /* Good browsers */
   -moz-opacity: 1;
@@ -8839,24 +8845,24 @@ body {
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
   /* IE 8 */
 }
-/* line 294, assetic_compassnbazLN.scss */
-#scrollbar.mA_2:after {
+/* line 295, assetic_compassPKkDEw.scss */
+.imh__scrollbar.mA_2:after {
   width: 100%;
 }
 
-/* line 300, assetic_compassnbazLN.scss */
-#sonata-media-gallery-media-list {
+/* line 301, assetic_compassPKkDEw.scss */
+.sonata-media-gallery-media-list {
   height: 100%;
 }
 
-/* line 304, assetic_compassnbazLN.scss */
+/* line 305, assetic_compassPKkDEw.scss */
 .sonata-media-gallery-media-item {
   height: 50%;
   -webkit-transition: opacity 0.5s linear 0s;
   -o-transition: opacity 0.5s linear 0s;
   transition: opacity 0.5s linear 0s;
 }
-/* line 308, assetic_compassnbazLN.scss */
+/* line 309, assetic_compassPKkDEw.scss */
 .sonata-media-gallery-media-item.mA_1 {
   opacity: 0.1;
   /* Good browsers */
@@ -8869,37 +8875,37 @@ body {
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=10)";
   /* IE 8 */
 }
-/* line 311, assetic_compassnbazLN.scss */
+/* line 312, assetic_compassPKkDEw.scss */
 .sonata-media-gallery-media-item.mA_1 .sonata-media-gallery-media-item-link {
   cursor: default;
 }
-/* line 314, assetic_compassnbazLN.scss */
+/* line 315, assetic_compassPKkDEw.scss */
 .sonata-media-gallery-media-item.mA_1 .sonata-media-gallery-media-item-link:hover .media-object {
   -webkit-transform: scale(1);
   -moz-transform: scale(1);
   -o-transform: scale(1);
   transform: scale(1);
 }
-/* line 318, assetic_compassnbazLN.scss */
+/* line 319, assetic_compassPKkDEw.scss */
 .sonata-media-gallery-media-item.mA_1 .sonata-media-gallery-media-item-link:after {
   display: none;
 }
-/* line 329, assetic_compassnbazLN.scss */
+/* line 330, assetic_compassPKkDEw.scss */
 .sonata-media-gallery-media-item.expanded {
   height: 100%;
   width: auto;
 }
-/* line 333, assetic_compassnbazLN.scss */
+/* line 334, assetic_compassPKkDEw.scss */
 .sonata-media-gallery-media-item.expanded .sonata-media-gallery-media-item-link {
   cursor: default;
 }
-/* line 336, assetic_compassnbazLN.scss */
+/* line 337, assetic_compassPKkDEw.scss */
 .sonata-media-gallery-media-item.expanded .sonata-media-gallery-media-item-link .media-object {
   transition: none;
   height: 100%;
   width: auto;
 }
-/* line 342, assetic_compassnbazLN.scss */
+/* line 343, assetic_compassPKkDEw.scss */
 .sonata-media-gallery-media-item.expanded .sonata-media-gallery-media-item-link .media-btns {
   display: block;
   position: absolute;
@@ -8921,7 +8927,7 @@ body {
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   /* IE 8 */
 }
-/* line 352, assetic_compassnbazLN.scss */
+/* line 353, assetic_compassPKkDEw.scss */
 .sonata-media-gallery-media-item.expanded .sonata-media-gallery-media-item-link .media-btns > span {
   display: inline-block;
   cursor: pointer;
@@ -8936,36 +8942,36 @@ body {
   -o-transition: background-color 0.2s ease-in 0s;
   transition: background-color 0.2s ease-in 0s;
 }
-/* line 365, assetic_compassnbazLN.scss */
+/* line 366, assetic_compassPKkDEw.scss */
 .sonata-media-gallery-media-item.expanded .sonata-media-gallery-media-item-link .media-btns > span.zoom img {
   background: url("/bundles/imhbase/images/sprite.png") no-repeat scroll -96px -131px;
   height: 20px;
   width: 19px;
 }
-/* line 373, assetic_compassnbazLN.scss */
+/* line 374, assetic_compassPKkDEw.scss */
 .sonata-media-gallery-media-item.expanded .sonata-media-gallery-media-item-link .media-btns > span.close img {
   background: url("/bundles/imhbase/images/sprite.png") no-repeat scroll -115px -131px;
   height: 12px;
   width: 12px;
 }
-/* line 382, assetic_compassnbazLN.scss */
+/* line 383, assetic_compassPKkDEw.scss */
 .sonata-media-gallery-media-item.expanded .sonata-media-gallery-media-item-link .plus-icon {
   display: none;
 }
-/* line 384, assetic_compassnbazLN.scss */
+/* line 385, assetic_compassPKkDEw.scss */
 .sonata-media-gallery-media-item.expanded .sonata-media-gallery-media-item-link:hover {
   /*.media-bar {
     @include transform(translate(0, 0%));
   }*/
 }
-/* line 385, assetic_compassnbazLN.scss */
+/* line 386, assetic_compassPKkDEw.scss */
 .sonata-media-gallery-media-item.expanded .sonata-media-gallery-media-item-link:hover .media-object {
   -webkit-transform: none;
   -moz-transform: none;
   -o-transform: none;
   transform: none;
 }
-/* line 389, assetic_compassnbazLN.scss */
+/* line 390, assetic_compassPKkDEw.scss */
 .sonata-media-gallery-media-item.expanded .sonata-media-gallery-media-item-link:hover .media-btns {
   opacity: 1;
   /* Good browsers */
@@ -8978,17 +8984,17 @@ body {
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
   /* IE 8 */
 }
-/* line 398, assetic_compassnbazLN.scss */
+/* line 399, assetic_compassPKkDEw.scss */
 .sonata-media-gallery-media-item.expanded .sonata-media-gallery-media-item-link:hover .media-btns > span:hover {
   background-color: black;
   background-color: rgba(0, 0, 0, 0.8);
 }
-/* line 409, assetic_compassnbazLN.scss */
+/* line 410, assetic_compassPKkDEw.scss */
 .sonata-media-gallery-media-item.expanded .sonata-media-gallery-media-item-link:after {
   display: none;
 }
 
-/* line 416, assetic_compassnbazLN.scss */
+/* line 417, assetic_compassPKkDEw.scss */
 .sonata-media-gallery-media-item-link {
   display: block;
   overflow: hidden;
@@ -9020,21 +9026,21 @@ body {
     }
   }*/
 }
-/* line 449, assetic_compassnbazLN.scss */
+/* line 450, assetic_compassPKkDEw.scss */
 .sonata-media-gallery-media-item-link:hover .media-object {
   -webkit-transform: scale(1.1);
   -moz-transform: scale(1.1);
   -o-transform: scale(1.1);
   transform: scale(1.1);
 }
-/* line 453, assetic_compassnbazLN.scss */
+/* line 454, assetic_compassPKkDEw.scss */
 .sonata-media-gallery-media-item-link:hover .media-bar {
   -webkit-transform: translate(0, 0%);
   -moz-transform: translate(0, 0%);
   -o-transform: translate(0, 0%);
   transform: translate(0, 0%);
 }
-/* line 457, assetic_compassnbazLN.scss */
+/* line 458, assetic_compassPKkDEw.scss */
 .sonata-media-gallery-media-item-link:hover .plus-icon {
   -webkit-animation: pop-icon-in .4s;
   -moz-animation: pop-icon-in .4s;
@@ -9053,7 +9059,7 @@ body {
   /* IE 8 */
 }
 
-/* line 464, assetic_compassnbazLN.scss */
+/* line 465, assetic_compassPKkDEw.scss */
 .media-object {
   -webkit-transition: all 1s ease 0s;
   -o-transition: all 1s ease 0s;
@@ -9064,12 +9070,12 @@ body {
   width: auto;
 }
 
-/* line 472, assetic_compassnbazLN.scss */
+/* line 473, assetic_compassPKkDEw.scss */
 .media-btns {
   display: none;
 }
 
-/* line 476, assetic_compassnbazLN.scss */
+/* line 477, assetic_compassPKkDEw.scss */
 .plus-icon {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -9099,7 +9105,7 @@ body {
   background: black;
   margin: -35px 0 0 -35px;
 }
-/* line 489, assetic_compassnbazLN.scss */
+/* line 490, assetic_compassPKkDEw.scss */
 .plus-icon::before, .plus-icon::after {
   content: '';
   position: absolute;
@@ -9111,7 +9117,7 @@ body {
   -o-transform: scale(1);
   transform: scale(1);
 }
-/* line 498, assetic_compassnbazLN.scss */
+/* line 499, assetic_compassPKkDEw.scss */
 .plus-icon::before {
   width: 1px;
   height: 18px;
@@ -9120,7 +9126,7 @@ body {
   -o-transform: translate(0, -50%);
   transform: translate(0, -50%);
 }
-/* line 504, assetic_compassnbazLN.scss */
+/* line 505, assetic_compassPKkDEw.scss */
 .plus-icon::after {
   width: 18px;
   height: 1px;
@@ -9130,19 +9136,19 @@ body {
   transform: translate(-50%, 0);
 }
 
-/* line 511, assetic_compassnbazLN.scss */
+/* line 512, assetic_compassPKkDEw.scss */
 #spinner, #infscr-loading {
   position: absolute;
   left: 50%;
   top: 50%;
   margin: -22px 0 0 -22px;
 }
-/* line 517, assetic_compassnbazLN.scss */
+/* line 518, assetic_compassPKkDEw.scss */
 #spinner img, #infscr-loading img {
   display: block;
 }
 
-/* line 522, assetic_compassnbazLN.scss */
+/* line 523, assetic_compassPKkDEw.scss */
 #spinner {
   -webkit-transition: opacity 0.2s linear 0s;
   -o-transition: opacity 0.2s linear 0s;
@@ -9162,12 +9168,12 @@ body {
 }
 
 @media (max-width: 767px) {
-  /* line 533, assetic_compassnbazLN.scss */
+  /* line 534, assetic_compassPKkDEw.scss */
   .imh__container-fluid:before, .imh__container-fluid:after {
     display: none;
   }
 
-  /* line 536, assetic_compassnbazLN.scss */
+  /* line 537, assetic_compassPKkDEw.scss */
   .imh__content {
     height: -webkit-calc(100% - 95px);
     height: calc(100% - 95px);
@@ -9175,47 +9181,47 @@ body {
     padding-top: 0;
   }
 
-  /* line 542, assetic_compassnbazLN.scss */
-  #gallery-wrapper {
+  /* line 543, assetic_compassPKkDEw.scss */
+  .imh__gallery-wrapper {
     padding: 0;
   }
 }
 @media all and (orientation: portrait) {
-  /* line 556, assetic_compassnbazLN.scss */
-  html.no-touchevents #trigger {
+  /* line 557, assetic_compassPKkDEw.scss */
+  html.no-touchevents .imh__trigger {
     display: none;
   }
-  /* line 558, assetic_compassnbazLN.scss */
-  html.no-touchevents #sonata-media-gallery-media-list {
+  /* line 559, assetic_compassPKkDEw.scss */
+  html.no-touchevents .sonata-media-gallery-media-list {
     height: auto;
   }
-  /* line 562, assetic_compassnbazLN.scss */
+  /* line 563, assetic_compassPKkDEw.scss */
   html.no-touchevents .sonata-media-gallery-media-item {
     height: auto;
     width: 33.33%;
   }
-  /* line 565, assetic_compassnbazLN.scss */
+  /* line 566, assetic_compassPKkDEw.scss */
   html.no-touchevents .sonata-media-gallery-media-item.expanded {
     height: auto;
     width: 66.66%;
   }
-  /* line 568, assetic_compassnbazLN.scss */
+  /* line 569, assetic_compassPKkDEw.scss */
   html.no-touchevents .sonata-media-gallery-media-item.expanded .media-object {
     height: auto;
     width: 100%;
   }
-  /* line 575, assetic_compassnbazLN.scss */
+  /* line 576, assetic_compassPKkDEw.scss */
   html.no-touchevents .media-object {
     height: auto;
     width: 100%;
   }
-  /* line 580, assetic_compassnbazLN.scss */
-  html.no-touchevents #scrollbar {
+  /* line 581, assetic_compassPKkDEw.scss */
+  html.no-touchevents .imh__scrollbar {
     display: none;
   }
 }
 
-/* line 586, assetic_compassnbazLN.scss */
+/* line 587, assetic_compassPKkDEw.scss */
 html.touchevents {
   /* Galaxy Tab 10.1 ----------- */
   /* Portrait and Landscape */
@@ -9223,7 +9229,7 @@ html.touchevents {
   /* Landscape */
 }
 @media only screen and (min-width: 800px) and (max-width: 1280px) {
-  /* line 592, assetic_compassnbazLN.scss */
+  /* line 593, assetic_compassPKkDEw.scss */
   html.touchevents .sonata-media-gallery-media-item-link:after {
     width: 40px;
     height: 40px;
@@ -9231,73 +9237,73 @@ html.touchevents {
   }
 }
 @media only screen and (max-width: 800px) and (max-aspect-ratio: 13 / 9) {
-  /* line 586, assetic_compassnbazLN.scss */
+  /* line 587, assetic_compassPKkDEw.scss */
   html.touchevents {
     /*.imh__content {
       height: calc(100% - 200px);
     }*/
   }
-  /* line 603, assetic_compassnbazLN.scss */
-  html.touchevents #trigger {
+  /* line 604, assetic_compassPKkDEw.scss */
+  html.touchevents .imh__trigger {
     display: none;
   }
-  /* line 608, assetic_compassnbazLN.scss */
+  /* line 609, assetic_compassPKkDEw.scss */
   html.touchevents #header .navigation {
     background: none;
     border: none;
     height: auto;
   }
-  /* line 613, assetic_compassnbazLN.scss */
+  /* line 614, assetic_compassPKkDEw.scss */
   html.touchevents #header .navigation .wrapper {
     top: 0;
   }
-  /* line 618, assetic_compassnbazLN.scss */
+  /* line 619, assetic_compassPKkDEw.scss */
   html.touchevents #header .navigation ul li {
     height: 100px;
     width: 16.74%;
   }
-  /* line 621, assetic_compassnbazLN.scss */
+  /* line 622, assetic_compassPKkDEw.scss */
   html.touchevents #header .navigation ul li a, html.touchevents #header .navigation ul li span {
     height: 99px;
     line-height: 101px;
     padding: 0;
   }
-  /* line 631, assetic_compassnbazLN.scss */
+  /* line 632, assetic_compassPKkDEw.scss */
   html.touchevents #wrapper {
     max-width: 800px;
   }
-  /* line 639, assetic_compassnbazLN.scss */
-  html.touchevents #gallery-wrapper {
+  /* line 640, assetic_compassPKkDEw.scss */
+  html.touchevents .imh__gallery-wrapper {
     width: 100%;
     height: 100%;
   }
-  /* line 644, assetic_compassnbazLN.scss */
-  html.touchevents #sonata-media-gallery-media-list {
+  /* line 645, assetic_compassPKkDEw.scss */
+  html.touchevents .sonata-media-gallery-media-list {
     height: auto;
   }
-  /* line 648, assetic_compassnbazLN.scss */
+  /* line 649, assetic_compassPKkDEw.scss */
   html.touchevents .sonata-media-gallery-media-item {
     width: 33.33%;
     height: auto;
   }
-  /* line 652, assetic_compassnbazLN.scss */
+  /* line 653, assetic_compassPKkDEw.scss */
   html.touchevents .sonata-media-gallery-media-item.expanded {
     width: auto;
     height: auto;
   }
-  /* line 656, assetic_compassnbazLN.scss */
+  /* line 657, assetic_compassPKkDEw.scss */
   html.touchevents .sonata-media-gallery-media-item.expanded .media-object {
     height: auto;
     width: auto;
     max-width: 100%;
   }
-  /* line 664, assetic_compassnbazLN.scss */
+  /* line 665, assetic_compassPKkDEw.scss */
   html.touchevents .media-object {
     height: auto;
     width: 100%;
   }
-  /* line 669, assetic_compassnbazLN.scss */
-  html.touchevents #scrollbar {
+  /* line 670, assetic_compassPKkDEw.scss */
+  html.touchevents .imh__scrollbar {
     top: 0;
     right: -20px;
     bottom: inherit;
@@ -9305,21 +9311,21 @@ html.touchevents {
     width: 5px;
     height: 100%;
   }
-  /* line 677, assetic_compassnbazLN.scss */
-  html.touchevents #scrollbar .handle {
+  /* line 678, assetic_compassPKkDEw.scss */
+  html.touchevents .imh__scrollbar .handle {
     width: 100%;
     height: 100px;
     /* overriden if dynamicHandle: 1 */
   }
-  /* line 681, assetic_compassnbazLN.scss */
-  html.touchevents #scrollbar .handle .mousearea {
+  /* line 682, assetic_compassPKkDEw.scss */
+  html.touchevents .imh__scrollbar .handle .mousearea {
     position: absolute;
     top: 0;
     left: -12px;
     width: 25px;
     height: 100%;
   }
-  /* line 691, assetic_compassnbazLN.scss */
+  /* line 692, assetic_compassPKkDEw.scss */
   html.touchevents #footer {
     position: absolute;
     bottom: 0;
@@ -9327,7 +9333,7 @@ html.touchevents {
   }
 }
 @media only screen and (max-width: 1280px) and (min-aspect-ratio: 13 / 9) {
-  /* line 586, assetic_compassnbazLN.scss */
+  /* line 587, assetic_compassPKkDEw.scss */
   html.touchevents {
     /*#sonata-media-gallery-media-list {
       height: 100%;

@@ -57,7 +57,7 @@ imh:
     repertoire:
       page_title:     'Repertoire | Ionella Marinutsa'
       concert:
-        title:        'Concerts (with harp and orchestra)'
+        title:        'Concerts - with harp and orchestra'
         duration:     'Duration : '
         0:
           composer:   'Georg Friedrich HAENDEL'
