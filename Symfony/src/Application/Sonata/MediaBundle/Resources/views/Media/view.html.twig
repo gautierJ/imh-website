@@ -27,7 +27,7 @@
     {{ parent() }}
 
     {% stylesheets output='assets/compiled/css/video.css' filter='compass, cssrewrite'
-        '@ApplicationSonataMediaBundle/Resources/assets/sass/video_player.scss'
+        '@ApplicationSonataMediaBundle/Resources/assets/sass/video.scss'
         '@ImhBaseBundle/Resources/assets/sass/jquery.nouislider.scss'
         '@ApplicationSonataCommentBundle/Resources/assets/sass/comments.scss'
     %}
@@ -71,13 +71,16 @@
 
     <div class="container imh__container">
         <section class="imh__container--wrapper imh__container--shadows imh__container--gradient">
-            <a class="bio" href="{{ path('sonata_media_download', {'id': media|sonata_urlsafeid }) }}"><img class="empty" src="{{ asset('bundles/imhbase/images/empty.gif') }}" alt="" />download media</a>
+            {#<a class="bio" href="{{ path('sonata_media_download', {'id': media|sonata_urlsafeid }) }}">
+                <img class="empty" src="{{ asset('bundles/imhbase/images/empty.gif') }}" alt="" />
+                download media
+            </a>#}
 
             <nav class="imh__lang">
                 {% include 'ImhBaseBundle:Menu:lang.html.twig' %}
             </nav>
-
-            <div class="media-content clearfix">
+            
+            <div class="media-content">
                 <div class="media">
                     {% media media, 'big' %}
                     <div class="layer">
@@ -86,16 +89,16 @@
                             <img class="media-image" src="{% path media, 'big' %}" />
                         </a>
                     </div>
-                    <div class="progress-bar-wrapper clearfix">
-                        <div class="progress-bar">
-                            <div class="buffer">
-                                <div class="advancement"></div>
-                            </div>
+                </div>
+                <div class="imh__progress-bar-wrapper" data-progress-bar-wrapper>
+                    <div class="imh__progress-bar" data-progress-bar>
+                        <div class="imh__progress-bar-buffer" data-buffer>
+                            <div class="imh__progress-bar-advancement" data-advancement></div>
                         </div>
-                        <span class="time">
-                            <span class="current">00:00 /</span>&nbsp;<span class="total">00:00</span>
-                        </span>
                     </div>
+                        <span class="imh__progress-bar-time" data-time-control>
+                            <span data-current>00:00 /</span>&nbsp;<span data-total>00:00</span>
+                        </span>
                 </div>
                 {#<aside class="actions">
                     <ul>
@@ -105,19 +108,17 @@
                     </ul>
                 </aside>#}
             </div>
+
         </section>
 
-        <section class="player-control-bar clearfix">
-            <div class="views">
-                <span class="nb">{{ count }}</span>
-                <span class="txt">{{ 'sonata.media.video.total_views'|trans|raw }}</span>
+        <section class="imh__player-bar">
+            {% spaceless %}
+            <div class="col-xs-8 col-sm-5 col-md-5 imh__player-bar-views">
+                <span class="imh__player-bar-views-nb">{{ count }}</span>
+                <span class="imh__player-bar-text imh__player-bar-text--indent">{% if not isTouchDevice %}{{ 'sonata.media.video.total_views'|trans|raw }}{% else %}Vues{% endif %}</span>
             </div>
-            <div class="video-info">
-                {% if media.description != "" %}<h3 class="description">{{ media.description }}</h3>{% endif %}
-                <h2 class="name">{{ media.name }}</h2>
-            </div>
-            <nav class="controls">
-                <ul class="clearfix">
+            <nav class="col-xs-8 col-sm-6 col-md-5 imh__player-bar-controls">
+                <ul>
                     <li class="play-pause">
                         <a href="#" title=""><img class="bkg empty" src="{{ asset('bundles/imhbase/images/empty.gif') }}" alt="" />Play</a>
                     </li>
@@ -133,7 +134,7 @@
                             {{ 'sonata.media.video.volume'|trans }}
                         </a>
                     </li>
-                    <li class="fullscreen">
+                    <li class="hidden-xs fullscreen">
                         <a href="#" title="Fullscreen">
                             <img class="bkg empty" src="{{ asset('bundles/imhbase/images/empty.gif') }}" alt="" />
                             {{ 'sonata.media.video.fullscreen'|trans }}
@@ -141,15 +142,26 @@
                     </li>
                 </ul>
             </nav>
-            <div class="share">
-                <span class="txt">{{ 'sonata.media.video.share'|trans|raw }}</span>
-                <a class="icon twitter popup" href="http://twitter.com/share?url=https://www.youtube.com/embed/{{ providerRef }}&text={{ media.name }}">
-                    <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
-                </a>
-                <a class="icon fbshare" href="https://www.youtube.com/embed/{{ providerRef }}">
-                    <i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
-                </a>
+            <div class="col-xs-8 col-sm-5 col-sm-push-9 col-md-5 imh__player-bar-share">
+                <span class="hidden-xs imh__player-bar-text">{{ 'sonata.media.video.share'|trans|raw }}</span>
+                <span class="fa-stack fa-2x">
+                    <a class="icon fbshare" href="https://www.youtube.com/embed/{{ providerRef }}">
+                        <i class="fa fa-circle fa-inverse fa-stack-2x"></i>
+                        <i class="fa fa-facebook fa-stack-1x" aria-hidden="true"></i>
+                    </a>
+                </span>
+                <span class="fa-stack fa-2x">
+                    <a class="icon twitter popup" href="http://twitter.com/share?url=https://www.youtube.com/embed/{{ providerRef }}&text={{ media.name }}">
+                        <i class="fa fa-circle fa-inverse fa-stack-2x"></i>
+                        <i class="fa fa-twitter fa-stack-1x" aria-hidden="true"></i>
+                    </a>
+                </span>
             </div>
+            <div class="col-xs-24 col-sm-8 col-sm-pull-5 col-md-9 imh__player-bar-info">
+                {% if media.description != "" %}<h3 class="imh__player-bar-info-description">{{ media.description }}</h3>{% endif %}
+                <p class="imh__player-bar-info-name">{{ media.name }}</p>
+            </div>
+            {% endspaceless %}
         </section>
 
         <nav id="imh__media-gallery">
@@ -206,7 +218,7 @@
             // Lazy Load
             $('img.lazy').show().lazyload({
                 effect : 'fadeIn',
-                placeholder: '../../../bundles/imhbase/images/empty.gif'
+                placeholder: '../../../../bundles/imhbase/images/empty.gif'
             });
 
             if (!Modernizr.touchevents) {

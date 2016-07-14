@@ -92,7 +92,7 @@ swiftmailer:
 
 # Sonata Admin Configuration
 sonata_admin:
-    title:      Ionella Marinutsa Admin
+    title:      IMH Admin
 #    title_logo: bundles/acmedemo/img/fancy_acme_logo.png
 
     templates:
@@ -136,7 +136,7 @@ sonata_media:
 
             formats:
                 small:         { width: 150, height: 84, constraint: false, quality: 100 } # 16/9
-                big:           { width: 640, height: 360, constraint: false, quality: 100 } # 16/9
+                big:           { width: 640, height: 360, quality: 100 } # 16/9
                 gallery_small: { height: 600, quality: 100 }
                 gallery_popin: { width: 800, quality: 100 }
 

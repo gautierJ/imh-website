@@ -96,16 +96,12 @@ body {
   z-index: 0;
 
   &::after {
-    content: '';
-    display: inline-block;
-    vertical-align: middle;
-    width: 1px;
-    height: 100%;
+    @extend %pseudo-vertical-align;
   }
 
   &.is-hidden {
     padding: 0;
-    right: -94px;
+    right: -95px;
     background: none;
     box-shadow: none;
 
@@ -117,6 +113,7 @@ body {
 
     .imh__navigation-menu-display {
       background-color: $color-black;
+      left: -12px;
 
       .fa {
         left: -5px;
@@ -265,7 +262,7 @@ body {
   @include transition(opacity .3s linear .5s);
   height: 100%;
   position: relative;
-  padding: 25px 10px;
+  padding: 25px;
 
   &.loading {
     @include transition(opacity .2s linear 0s);

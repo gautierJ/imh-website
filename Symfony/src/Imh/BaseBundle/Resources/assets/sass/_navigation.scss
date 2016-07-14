@@ -20,6 +20,7 @@ $hamburger-layer-color: $color-white;
   }
 
   ul {
+    @include make-row();
     border-top: 1px solid $color-grey-darker;
     border-bottom: 1px solid $color-grey-darker;
     background: $color-grey-darker;
@@ -136,6 +137,8 @@ $hamburger-layer-color: $color-white;
         }
       }
 
+      a { transition: none; }
+
       a, span {
         display: inline-block;
         height: 50px;
@@ -148,7 +151,6 @@ $hamburger-layer-color: $color-white;
 
   .imh__container {
     top: 0;
-    padding: 0;
   }
 
   .globe {
@@ -196,10 +198,6 @@ $hamburger-layer-color: $color-white;
   .hamburger-inner::after {
     @include border-radius(0);
     width: 35px;
-  }
-
-  .imh__navigation {
-      li a { transition: none; }
   }
 }
 

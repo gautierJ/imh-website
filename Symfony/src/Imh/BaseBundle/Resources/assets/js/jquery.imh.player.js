@@ -9,9 +9,12 @@ var YT_ready = function() {
     var cssVolumeLevel     = 'level';
     var cssVolumeSlider    = 'slider';
     var cssLayer           = 'layer';
-    var cssProgBarWrap     = 'progress-bar-wrapper';
-    var cssAdvancementBar  = 'advancement';
-    var cssBufferBar       = 'buffer';
+    var cssPlayerReady     = 'is-ready';
+    var progressBarWrap    = $('[data-progress-bar-wrapper]');
+    var progressBar        = $('[data-progress-bar]');
+    var advancementBar     = $('[data-advancement]');
+    var bufferBar          = $('[data-buffer]');
+    var time               = $('[data-time-control]');
     var playBtn            = $('.' + cssLayer).find('.play');
     var playPauseBtn       = $('.play-pause a');
     var volumeCtn          = $('.' + cssVolumeCtn);
@@ -20,9 +23,6 @@ var YT_ready = function() {
     var volumeLevel        = volumeLevelWrap.find('.' + cssVolumeLevel);
     var fsButton           = $('.fullscreen a');
     var video              = $('#ytplayer')[0];
-    var progressBar        = $('.progress-bar');
-    var time               = $('.time');
-
     var player = new YT.Player('ytplayer', {
         events: {
             'onReady'       : onPlayerReady,
@@ -39,12 +39,11 @@ var YT_ready = function() {
         status = player.getPlayerState();
         playerTotalTime = player.getDuration();
 
-        time.find('.total').text(formatDuration(playerTotalTime));
+        $('[data-total]').text(formatDuration(playerTotalTime));
         time.width((Math.round(time.width()) + 10 + 'px'));
 
-        progressBar.width($('.' + cssMedia).width() - time.width());
-
-        $('.' + cssProgBarWrap).animate({opacity: 1}, 500);
+        progressBarWrap.addClass(cssPlayerReady);
+        progressBar.width($('.' + cssMedia).width() - 30 - time.width());
 
         playBtn.parent().on('click', function(e) {
             e.preventDefault();
@@ -140,10 +139,10 @@ var YT_ready = function() {
                     playerTimeDifference = (playerCurrentTime / playerTotalTime) * 100,
                     playerLoaded = player.getVideoLoadedFraction() * 100;
 
-                time.find('.current').empty().text(formatDuration(playerCurrentTime) + " /");
-                progress(playerTimeDifference, progressBar, cssAdvancementBar);
-                progress(playerLoaded, progressBar, cssBufferBar);
-                progressBar.width($('.' + cssMedia).width() - time.outerWidth(true));
+                $('[data-current]').empty().text(formatDuration(playerCurrentTime) + " /");
+                progress(playerTimeDifference, progressBar, advancementBar);
+                progress(playerLoaded, progressBar, bufferBar);
+                progressBar.width($('.' + cssMedia).width() - 30 - time.outerWidth(true));
             }, 500);
         } else { clearTimeout(timer); }
 
@@ -207,7 +206,7 @@ var YT_ready = function() {
 
     function progress(percent, $container, $bar) {
         var progressBarWidth = Math.round(percent * $container.width() / 100);
-        $container.find('.' + $bar).animate({ width: progressBarWidth });
+        $bar.stop().animate({ width: progressBarWidth });
     }
 
     function formatDuration(duration){

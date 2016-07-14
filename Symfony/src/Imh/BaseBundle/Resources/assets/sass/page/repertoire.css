@@ -4313,16 +4313,20 @@ button:focus {
 .imh__container {
   position: relative;
   top: -34px;
-  z-index: 1;
-  padding: 0; }
+  z-index: 1; }
 
 .imh__container--wrapper {
+  margin-left: -15px;
+  margin-right: -15px;
   background-color: white;
   border-top: 34px solid white;
   padding: 26px 0 45px;
-  width: 100%;
-  margin: 0 auto;
   position: relative; }
+  .imh__container--wrapper:before, .imh__container--wrapper:after {
+    content: " ";
+    display: table; }
+  .imh__container--wrapper:after {
+    clear: both; }
   .imh__container--wrapper.imh__container--shadows::after, .imh__container--wrapper.imh__container--shadows::before {
     content: " ";
     position: absolute;
@@ -4369,7 +4373,7 @@ button:focus {
 
 @media (max-width: 767px) {
   .imh__title-h2 {
-    font-size: 1.5em;
+    font-size: 1.25em;
     margin-bottom: 15px; }
 
   .imh__title-h2--border {
@@ -4387,8 +4391,11 @@ button:focus {
   .imh__content {
     padding-top: 65px;
     margin-left: 0;
-    margin-right: 0; }
-
+    margin-right: 0; } }
+@media (min-width: 768px) and (max-width: 991px) {
+  .imh__bkg-image {
+    left: 0; } }
+@media (max-width: 991px) {
   .imh__container--shadows::after,
   .imh__container--shadows::before {
     display: none; } }
@@ -4398,9 +4405,6 @@ button:focus {
 @media (max-width: 1199px) {
   .imh__bkg-image {
     display: none !important; } }
-@media (min-width: 768px) and (max-width: 991px) {
-  .imh__bkg-image {
-    left: 0; } }
 .imh__sidebar {
   position: fixed;
   z-index: 1;
@@ -4607,10 +4611,17 @@ button:focus {
     margin: 0 auto;
     z-index: 2; }
   .imh__navigation ul {
+    margin-left: -15px;
+    margin-right: -15px;
     border-top: 1px solid #222222;
     border-bottom: 1px solid #222222;
     background: #222222;
     text-align: center; }
+    .imh__navigation ul:before, .imh__navigation ul:after {
+      content: " ";
+      display: table; }
+    .imh__navigation ul:after {
+      clear: both; }
   .imh__navigation li {
     display: inline-block;
     position: relative;
@@ -4711,6 +4722,8 @@ button:focus {
         .imh__navigation li.current span {
           color: white;
           border: 1px solid #898989; }
+      .imh__navigation li a {
+        transition: none; }
       .imh__navigation li a, .imh__navigation li span {
         display: inline-block;
         height: 50px;
@@ -4719,8 +4732,7 @@ button:focus {
         width: 100%; }
 
   .imh__container {
-    top: 0;
-    padding: 0; }
+    top: 0; }
 
   .globe {
     padding: 14px 15px;
@@ -4773,10 +4785,7 @@ button:focus {
     -moz-border-radius: 0;
     -ms-border-radius: 0;
     border-radius: 0;
-    width: 35px; }
-
-  .imh__navigation li a {
-    transition: none; } }
+    width: 35px; } }
 .imh__lang {
   position: absolute;
   top: 26px;

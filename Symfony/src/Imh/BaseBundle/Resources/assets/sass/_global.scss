@@ -83,15 +83,13 @@ button:focus {
   position: relative;
   top: -34px;
   z-index: 1;
-  padding: 0;
 }
 
 .imh__container--wrapper {
+  @include make-row();
   background-color: $color-white;
   border-top: 34px solid $color-white;
   padding: 26px 0 45px;
-  width: 100%;
-  margin: 0 auto;
   position: relative;
 
   &.imh__container--shadows::after,
@@ -138,9 +136,20 @@ button:focus {
   -moz-transform: scale(.9999); /* Antialiasing - trick for firefox */
 }
 
+%pseudo-vertical-align {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  width: 1px;
+  height: 100%;
+}
+
+// Media queries
+// ==================================================
+
 @media (max-width: $screen-xs-max) {
   .imh__title-h2 {
-    font-size: $eighteenpx;
+    font-size: $fifteenpx;
     margin-bottom: 15px;
   }
 
@@ -154,8 +163,6 @@ button:focus {
     margin-bottom: 2px;
   }
 
-
-
   .imh__container--wrapper {
     border-top-width: 0;
     padding: 0;
@@ -166,7 +173,13 @@ button:focus {
     margin-left: 0;
     margin-right: 0;
   }
+}
 
+@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+  .imh__bkg-image { left: 0; }
+}
+
+@media (max-width: $screen-sm-max) {
   .imh__container--shadows::after,
   .imh__container--shadows::before {
     display: none;
@@ -181,8 +194,4 @@ button:focus {
 
 @media (max-width: $screen-md-max) {
   .imh__bkg-image { display: none !important; }
-}
-
-@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
-  .imh__bkg-image { left: 0; }
 }

@@ -5,7 +5,7 @@
         'cst' : {
             'LOADING_TIME'       : 3000,
             'PORTRAIT_WIDTH'     : 33.33 + '%',
-            'PORTRAIT_MAX_WIDTH' : 66.66 + '%'
+            'PORTRAIT_MAX_WIDTH' : 100 + '%'
         },
         'cssAnimations' : ['mA_1', 'mA_2']
     };
@@ -14,6 +14,7 @@
         frameSelector     = 'frame',
         slideeSelector    = 'slidee',
         scrollbarSelector = 'imh__scrollbar',
+        navDispSelector   = 'imh__navigation-menu-display',
         sly,
         wWidth            = $(window).width(),
         wHeight           = $(window).height(),
@@ -23,7 +24,8 @@
         itemSelector      = 'sonata-media-gallery-media-item',
         linkSelector      = 'sonata-media-gallery-media-item-link',
         imageSelector     = 'media-object',
-        expSelector       = 'expanded',
+        expSelector       = 'is-expanded',
+        hiddenSelector    = 'is-hidden',
         triggerSelector   = 'imh__trigger',
         zoomSelector      = 'zoom',
         closeSelector     = 'close',
@@ -208,6 +210,11 @@
 
             isClosed = true;
             $container.isotope().infinitescroll('retrieve');
+            e.preventDefault();
+        });
+
+        $('.' + navDispSelector).on('click', function(e) {
+            $(this).parent().toggleClass(hiddenSelector);
             e.preventDefault();
         });
     });
