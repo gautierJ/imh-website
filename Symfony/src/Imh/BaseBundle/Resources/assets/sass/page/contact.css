@@ -4263,8 +4263,11 @@ ul, ol {
   margin: 0;
   padding: 0; }
 
-button:focus {
-  outline: none; }
+button {
+  border: none;
+  background: none; }
+  button:focus {
+    outline: none; }
 
 .imh__title {
   font-weight: normal; }
@@ -4389,7 +4392,7 @@ button:focus {
     padding: 0; }
 
   .imh__content {
-    padding-top: 65px;
+    padding-top: 60px;
     margin-left: 0;
     margin-right: 0; } }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -4610,59 +4613,60 @@ button:focus {
     top: 27px;
     margin: 0 auto;
     z-index: 2; }
-  .imh__navigation ul {
-    margin-left: -15px;
-    margin-right: -15px;
-    border-top: 1px solid #222222;
-    border-bottom: 1px solid #222222;
-    background: #222222;
-    text-align: center; }
-    .imh__navigation ul:before, .imh__navigation ul:after {
-      content: " ";
-      display: table; }
-    .imh__navigation ul:after {
-      clear: both; }
-  .imh__navigation li {
-    display: inline-block;
-    position: relative;
-    top: -1px;
-    margin: 0 -1px -2px 0;
-    height: 64px;
-    z-index: 1; }
-    .imh__navigation li a, .imh__navigation li span {
-      font-family: "ralewaysemibold", Arial, Helvetica, sans-serif;
-      color: white;
-      font-size: 1.167em;
-      display: block;
-      padding: 0 20px;
-      text-transform: uppercase; }
-    .imh__navigation li span {
-      height: 62px;
-      line-height: 64px; }
-    .imh__navigation li a {
-      border: 1px solid rgba(0, 0, 0, 0);
-      -webkit-transition: all, 0.1s, ease-in, 0s;
-      -o-transition: all, 0.1s, ease-in, 0s;
-      transition: all, 0.1s, ease-in, 0s;
-      height: 64px;
-      line-height: 64px; }
-      .imh__navigation li a:hover {
-        background-color: white;
-        color: #222222;
-        border: 1px solid #222222; }
-    .imh__navigation li.current {
-      background-color: white;
-      border: 1px solid #222222;
-      border-bottom: none; }
-      .imh__navigation li.current span {
-        color: #222222;
-        border-bottom-color: white; }
   .imh__navigation .fa {
     position: relative;
     top: -2px;
     vertical-align: middle; }
     .imh__navigation .fa + span {
       display: none; }
+
+.imh__navigation-main {
+  margin-left: -15px;
+  margin-right: -15px;
+  border-top: 1px solid #222222;
+  border-bottom: 1px solid #222222;
+  background: #222222;
+  text-align: center; }
+  .imh__navigation-main:before, .imh__navigation-main:after {
+    content: " ";
+    display: table; }
+  .imh__navigation-main:after {
+    clear: both; }
+  .imh__navigation-main li {
+    display: inline-block;
+    position: relative;
+    top: -1px;
+    margin: 0 -1px -2px 0;
+    height: 64px;
+    z-index: 1; }
+    .imh__navigation-main li a, .imh__navigation-main li span {
+      font-family: "ralewaysemibold", Arial, Helvetica, sans-serif;
+      color: white;
+      font-size: 1.167em;
+      display: block;
+      padding: 0 20px;
+      text-transform: uppercase; }
+    .imh__navigation-main li span {
+      height: 62px;
+      line-height: 64px; }
+    .imh__navigation-main li a {
+      border: 1px solid rgba(0, 0, 0, 0);
+      -webkit-transition: all, 0.1s, ease-in, 0s;
+      -o-transition: all, 0.1s, ease-in, 0s;
+      transition: all, 0.1s, ease-in, 0s;
+      height: 64px;
+      line-height: 64px; }
+      .imh__navigation-main li a:hover {
+        background-color: white;
+        color: #222222;
+        border: 1px solid #222222; }
+    .imh__navigation-main li.current {
+      background-color: white;
+      border: 1px solid #222222;
+      border-bottom: none; }
+      .imh__navigation-main li.current span {
+        color: #222222;
+        border-bottom-color: white; }
 
 .globe, .hamburger {
   display: none; }
@@ -4676,7 +4680,7 @@ button:focus {
     left: 0;
     height: 100% !important;
     width: 100%;
-    margin-top: 64px;
+    margin-top: 59px;
     z-index: 2;
     visibility: hidden;
     opacity: 0;
@@ -4706,25 +4710,28 @@ button:focus {
       visibility: visible;
       z-index: 3;
       /*& + .hamburger-wrapper { border-bottom: 1px solid $color-grey-dark; }*/ }
-    .imh__navigation ul {
-      background: none;
-      border: none; }
-    .imh__navigation li {
+
+  .imh__navigation-main {
+    background: none;
+    border: none; }
+    .imh__navigation-main li {
       display: block;
       top: 0;
       position: static;
       height: inherit;
       z-index: inherit;
       margin: 0 0 7px; }
-      .imh__navigation li.current {
+      .imh__navigation-main li.current {
         border: none;
         background: none; }
-        .imh__navigation li.current span {
+        .imh__navigation-main li.current span {
           color: white;
           border: 1px solid #898989; }
-      .imh__navigation li a {
+      .imh__navigation-main li a {
         transition: none; }
-      .imh__navigation li a, .imh__navigation li span {
+        .imh__navigation-main li a:hover {
+          border: none; }
+      .imh__navigation-main li a, .imh__navigation-main li span {
         display: inline-block;
         height: 50px;
         line-height: 50px;
@@ -4735,7 +4742,7 @@ button:focus {
     top: 0; }
 
   .globe {
-    padding: 14px 15px;
+    padding: 12px 15px;
     display: inline-block;
     border: none;
     background: none; }
@@ -4745,7 +4752,7 @@ button:focus {
     background: rgba(0, 0, 0, 0.8);
     position: fixed;
     width: 100%;
-    height: 65px;
+    height: 60px;
     border-bottom: 1px solid #3f3f3f;
     z-index: 3; }
 
@@ -4754,7 +4761,7 @@ button:focus {
     right: 0;
     top: 0;
     display: inline-block;
-    padding: 20px 15px; }
+    padding: 18px 15px; }
     .hamburger:hover {
       opacity: 1;
       /* Good browsers */
@@ -4786,20 +4793,20 @@ button:focus {
     -ms-border-radius: 0;
     border-radius: 0;
     width: 35px; } }
-.imh__lang {
+.imh__navigation-lang {
   position: absolute;
-  top: 26px;
+  top: 122px;
   right: -73px; }
-  .imh__lang li {
+  .imh__navigation-lang li {
     color: #898989;
     margin-bottom: 3px; }
-    .imh__lang li.current a {
+    .imh__navigation-lang li.current a {
       color: white;
       background-color: #3f3f3f;
       border-color: #3f3f3f; }
-      .imh__lang li.current a:after {
+      .imh__navigation-lang li.current a:after {
         background-color: #3f3f3f; }
-  .imh__lang a {
+  .imh__navigation-lang a {
     font-family: "ralewaysemibold", Arial, Helvetica, sans-serif;
     display: inline-block;
     height: 40px;
@@ -4814,7 +4821,7 @@ button:focus {
     position: relative;
     overflow: hidden;
     z-index: 0; }
-    .imh__lang a:after {
+    .imh__navigation-lang a:after {
       content: "";
       background-color: black;
       background-color: rgba(0, 0, 0, 0.8);
@@ -4827,12 +4834,41 @@ button:focus {
       -webkit-transition: top, 0.3s, cubic-bezier(0, 0.92, 0.08, 1), 0s;
       -o-transition: top, 0.3s, cubic-bezier(0, 0.92, 0.08, 1), 0s;
       transition: top, 0.3s, cubic-bezier(0, 0.92, 0.08, 1), 0s; }
-    .imh__lang a:hover {
+    .imh__navigation-lang a:hover {
       color: white;
       border: 1px solid #3f3f3f; }
-      .imh__lang a:hover:after {
+      .imh__navigation-lang a:hover:after {
         top: 0; }
 
+@media (max-width: 991px) {
+  .imh__navigation-lang {
+    position: static;
+    top: inherit;
+    right: inherit;
+    text-align: center; }
+    .imh__navigation-lang li {
+      margin: 0 0 7px; }
+      .imh__navigation-lang li.current a {
+        background: none;
+        border: 1px solid #898989; }
+      .imh__navigation-lang li a {
+        background: none;
+        border: 1px solid rgba(0, 0, 0, 0);
+        color: white;
+        display: inline-block;
+        height: 50px;
+        line-height: 50px;
+        max-width: 150px;
+        width: 100%;
+        font-size: 1.167em;
+        overflow: inherit;
+        padding: 0 20px; }
+        .imh__navigation-lang li a::after {
+          content: normal; }
+        .imh__navigation-lang li a:hover {
+          background-color: white;
+          color: #222222;
+          border: none; } }
 .imh__footer {
   margin-left: -15px;
   margin-right: -15px;
@@ -4840,7 +4876,6 @@ button:focus {
   min-height: 110px;
   border-top: 1px solid lightgrey;
   color: #898989;
-  text-align: center;
   padding-top: 20px; }
   .imh__footer:before, .imh__footer:after {
     content: " ";
@@ -4888,6 +4923,9 @@ button:focus {
     .imh__footer-column li .fa-home {
       display: none; }
 
+.imh__footer-wrap {
+  padding: 7px 0; }
+
 .imh__footer-column--site ul {
   width: 175px; }
 .imh__footer-column--site li {
@@ -4931,6 +4969,7 @@ button:focus {
     height: 61px; }
 
 .imh__footer-rights {
+  display: block;
   font-size: 0.917em;
   margin-bottom: 15px; }
   .imh__footer-rights span {

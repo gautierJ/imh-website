@@ -27,10 +27,6 @@
 {% block main %}
     <div class="container imh__container">
         <section class="imh__container--wrapper imh__container--shadows">
-            <nav class="imh__lang">
-                {% include 'ImhBaseBundle:Menu:lang.html.twig' %}
-            </nav>
-
             <h2 class="imh__title imh__title-h2 text-uppercase">{{ 'imh.base.contact.answer'|trans }}</h2>
 
             {{ form_start(form, {'attr': {'class': 'imh__contact-form'}}) }}

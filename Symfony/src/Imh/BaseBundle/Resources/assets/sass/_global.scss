@@ -28,8 +28,13 @@ ul, ol {
   padding: 0;
 }
 
-button:focus {
-  outline: none;
+button {
+  border: none;
+  background: none;
+
+  &:focus {
+    outline: none;
+  }
 }
 
 // IMH
@@ -169,7 +174,7 @@ button:focus {
   }
 
   .imh__content {
-    padding-top: 65px;
+    padding-top: 60px;
     margin-left: 0;
     margin-right: 0;
   }

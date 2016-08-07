@@ -86,7 +86,7 @@ class MediaController extends BaseMediaController
             $options[$key]['duration'] = $this->convertISO8601Duration($options[$key]['jsonData']['duration']);
 
             if($value->getId() === $id) {
-                $options[$key]['current'] = 'current ';
+                $options[$key]['current'] = 'active';
                 $count = $options[$key]['jsonData']['viewCount'];
                 $providerRef = $providerReference;
             }

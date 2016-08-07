@@ -75,17 +75,13 @@
                 <img class="empty" src="{{ asset('bundles/imhbase/images/empty.gif') }}" alt="" />
                 download media
             </a>#}
-
-            <nav class="imh__lang">
-                {% include 'ImhBaseBundle:Menu:lang.html.twig' %}
-            </nav>
             
             <div class="media-content">
                 <div class="media">
                     {% media media, 'big' %}
                     <div class="layer">
                         <a href="#" title="{{ media.name }}">
-                            <img class="play empty" src="{{ asset('bundles/imhbase/images/empty.gif') }}" alt="" />
+                            <button class="imh__media-button-play" data-play></button>
                             <img class="media-image" src="{% path media, 'big' %}" />
                         </a>
                     </div>
@@ -146,13 +142,13 @@
                 <span class="hidden-xs imh__player-bar-text">{{ 'sonata.media.video.share'|trans|raw }}</span>
                 <span class="fa-stack fa-2x">
                     <a class="icon fbshare" href="https://www.youtube.com/embed/{{ providerRef }}">
-                        <i class="fa fa-circle fa-inverse fa-stack-2x"></i>
+                        <i class="fa fa-circle fa-inverse fa-stack-2x hidden-xs"></i>
                         <i class="fa fa-facebook fa-stack-1x" aria-hidden="true"></i>
                     </a>
                 </span>
                 <span class="fa-stack fa-2x">
                     <a class="icon twitter popup" href="http://twitter.com/share?url=https://www.youtube.com/embed/{{ providerRef }}&text={{ media.name }}">
-                        <i class="fa fa-circle fa-inverse fa-stack-2x"></i>
+                        <i class="fa fa-circle fa-inverse fa-stack-2x hidden-xs"></i>
                         <i class="fa fa-twitter fa-stack-1x" aria-hidden="true"></i>
                     </a>
                 </span>
@@ -164,18 +160,27 @@
             {% endspaceless %}
         </section>
 
-        <nav id="imh__media-gallery">
-            <div id="imageFlow">
-                <ul class="bank">
+        <div class="imh__media-gallery">
+            <button class="imh__media-gallery-button imh__media-gallery-button--prev" data-prev>
+                <i class="fa fa-angle-left"></i>
+            </button>
+            <button class="imh__media-gallery-button imh__media-gallery-button--next" data-next>
+                <i class="fa fa-angle-right"></i>
+            </button>
+
+            {% spaceless %}
+            <div class="imh__media-gallery-frame frame" data-frame>
+                <ul class="imh__media-gallery-list slidee">
                     {% include 'ApplicationSonataMediaBundle:Media:thumbnail_list.html.twig' %}
                 </ul>
             </div>
-            <div class="scrollbar">
-                <a href="#" class="left" title="Previous">Prev.</a>
-                <a href="#" class="right" title="Next">Next</a>
-                <div class="bar">&nbsp;</div>
+            {% endspaceless %}
+            <div class="imh__scrollbar" data-scrollbar>
+                <div class="handle">
+                    <div class="mousearea"></div>
+                </div>
             </div>
-        </nav>
+        </div>
     </div>
 
     {#{% include 'ApplicationSonataCommentBundle:Comment:view.html.twig' %}#}
@@ -198,10 +203,8 @@
 {% block javascripts %}
     {{ parent() }}
 
-    {#<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5435ad1b0682d3b2" async="async"></script>#}
-
     {% javascripts output='assets/compiled/js/video.js'
-        '@ImhBaseBundle/Resources/assets/js/imageFlow.js'
+        'assets/lib/sly/sly.js'
         '@ImhBaseBundle/Resources/assets/js/screenfull.js'
         '@ImhBaseBundle/Resources/assets/js/jquery.imh.scrollmove.js'
         '@ImhBaseBundle/Resources/assets/js/jquery.nouislider.js'
@@ -215,6 +218,12 @@
         $(function () {
             'use strict';
 
+            var $frame     = $('[data-frame]'),
+                $scrollbar = $('[data-scrollbar]'),
+                $prev      = $('[data-prev]'),
+                $next      = $('[data-next]'),
+                activePos  = $frame.find('li[data-active]').index();
+
             // Lazy Load
             $('img.lazy').show().lazyload({
                 effect : 'fadeIn',
@@ -227,9 +236,34 @@
 
             //$('#' + contentSelector).contentHeightAdjust();
 
+            // Sly
+            var sly = new Sly($frame, {
+                horizontal: 1,
+                itemNav: 'forceCentered',
+                activateMiddle: 1,
+                smart: 1,
+                scrollSource: $(".slidee"),
+                //activateOn: 'click',
+                mouseDragging: 1,
+                touchDragging: 1,
+                releaseSwing: 1,
+                startAt: activePos,
+                scrollBar: $scrollbar,
+                scrollBy: 1,
+                speed: 1000,
+                moveBy: 50,
+                elasticBounds: 1,
+                dragHandle: 1,
+                //dynamicHandle: 1,
+                clickBar: 1,
+
+                // Buttons
+                prev: $prev,
+                next: $next
+            }).init();
 
             // Social buttons
-            $('.fbshare').click(function(e){
+            $('.fbshare').click(function(e) {
                 postToShare($(this).attr('href'));
                 e.preventDefault();
             });
@@ -248,6 +282,20 @@
 
                 window.open(url, 'twitter', opts);
                 e.preventDefault();
+            });
+
+            var delay = (function(){
+                var timer = 0;
+                return function(callback, ms){
+                    clearTimeout (timer);
+                    timer = setTimeout(callback, ms);
+                };
+            })();
+
+            $(window).on('resize', function () {
+                delay(function(){
+                    sly.reload();
+                }, 500);
             });
         });
     </script>

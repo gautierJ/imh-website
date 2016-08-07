@@ -1,7 +1,12 @@
-<nav class="imh__navigation" data-navigation>
+<nav class="imh__navigation" data-layer>
     <div class="container imh__container">
         {% spaceless %}
-            {{ knp_menu_render('main', {'currentAsLink':false, 'allow_safe_labels': true} ) }}
+            <nav class="imh__navigation-main" data-main>
+                {{ knp_menu_render('main', {'currentAsLink':false, 'allow_safe_labels': true} ) }}
+            </nav>
+            <nav class="imh__navigation-lang" data-lang>
+                {% include 'ImhBaseBundle:Menu:lang.html.twig' %}
+            </nav>
         {% endspaceless %}
     </div>
 </nav>

@@ -1,6 +1,6 @@
-.imh__lang {
+.imh__navigation-lang {
   position: absolute;
-  top: 26px;
+  top: 122px;
   right: -73px;
 
   li {
@@ -53,6 +53,53 @@
 
       &:after {
         top: 0;
+      }
+    }
+  }
+}
+
+// Media queries
+// ==================================================
+
+@media (max-width: $screen-sm-max) {
+  .imh__navigation-lang {
+    position: static;
+    top: inherit;
+    right: inherit;
+    text-align: center;
+
+    li {
+      margin: 0 0 7px;
+
+      &.current {
+        a {
+          background: none;
+          border: 1px solid $color-grey-medium;
+        }
+      }
+
+      a {
+        background: none;
+        border: 1px solid rgba(0, 0, 0, 0);
+        color: white;
+        display: inline-block;
+        height: 50px;
+        line-height: 50px;
+        max-width: 150px;
+        width: 100%;
+        font-size: $fourteenpx;
+        overflow: inherit;
+        padding: 0 20px;
+
+        &::after {
+          content: normal;
+        }
+
+        &:hover {
+          background-color: white;
+          color: $color-grey-darker;
+          border: none;
+        }
       }
     }
   }

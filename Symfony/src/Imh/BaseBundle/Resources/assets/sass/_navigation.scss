@@ -19,13 +19,23 @@ $hamburger-layer-color: $color-white;
     z-index: 2;
   }
 
-  ul {
-    @include make-row();
-    border-top: 1px solid $color-grey-darker;
-    border-bottom: 1px solid $color-grey-darker;
-    background: $color-grey-darker;
-    text-align: center;
+  .fa {
+    position: relative;
+    top: -2px;
+    vertical-align: middle;
+
+    & + span {
+      display: none;
+    }
   }
+}
+
+.imh__navigation-main {
+  @include make-row();
+  border-top: 1px solid $color-grey-darker;
+  border-bottom: 1px solid $color-grey-darker;
+  background: $color-grey-darker;
+  text-align: center;
 
   li {
     display: inline-block;
@@ -73,25 +83,12 @@ $hamburger-layer-color: $color-white;
       }
     }
   }
-
-  .fa {
-    position: relative;
-    top: -2px;
-    vertical-align: middle;
-
-    & + span {
-      display: none;
-    }
-  }
 }
 
 .globe, .hamburger { display: none; }
 
 // Media queries
 // ==================================================
-@media (max-width: $screen-xs-max) {
-
-}
 
 @media (max-width: $screen-sm-max) {
   .imh__navigation {
@@ -102,7 +99,7 @@ $hamburger-layer-color: $color-white;
     left: 0;
     height: 100% !important;
     width: 100%;
-    margin-top: 64px;
+    margin-top: 59px;
     z-index: 2;
     visibility: hidden;
     @include opacity(0);
@@ -114,11 +111,11 @@ $hamburger-layer-color: $color-white;
       z-index: 3;
       /*& + .hamburger-wrapper { border-bottom: 1px solid $color-grey-dark; }*/
     }
+  }
 
-    ul {
-      background: none;
-      border: none;
-    }
+  .imh__navigation-main {
+    background: none;
+    border: none;
 
     li {
       display: block;
@@ -137,7 +134,10 @@ $hamburger-layer-color: $color-white;
         }
       }
 
-      a { transition: none; }
+      a {
+        transition: none;
+        &:hover { border: none; }
+      }
 
       a, span {
         display: inline-block;
@@ -154,7 +154,7 @@ $hamburger-layer-color: $color-white;
   }
 
   .globe {
-    padding: 14px 15px;
+    padding: 12px 15px;
     display: inline-block;
     border: none;
     background: none;
@@ -165,7 +165,7 @@ $hamburger-layer-color: $color-white;
     background: rgba(0, 0, 0, .8);
     position: fixed;
     width: 100%;
-    height: 65px;
+    height: 60px;
     border-bottom: 1px solid $color-grey-dark;
     z-index: 3;
   }
@@ -175,7 +175,7 @@ $hamburger-layer-color: $color-white;
     right: 0;
     top: 0;
     display: inline-block;
-    padding: 20px 15px;
+    padding: 18px 15px;
 
     &:hover { @include opacity(1); }
   }

@@ -601,8 +601,8 @@ body {
 // ==================================================
 @media (max-width: $screen-xs-max) {
   .imh__content {
-    @include calc(height, '100% - 95px');
-    top: 80px;
+    @include calc(height, '100% - 90px');
+    top: 75px;
     padding-top: 0;
   }
 

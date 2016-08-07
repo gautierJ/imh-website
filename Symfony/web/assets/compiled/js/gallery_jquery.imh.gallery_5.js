@@ -92,7 +92,7 @@
 
         var slyOptions = {
             horizontal: orientation,
-            scrollBy: 200,
+            scrollBy: 150,
             speed: 2000,
             syncSpeed: 1,
             easing: 'easeOutQuad',

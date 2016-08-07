@@ -15,7 +15,7 @@ var YT_ready = function() {
     var advancementBar     = $('[data-advancement]');
     var bufferBar          = $('[data-buffer]');
     var time               = $('[data-time-control]');
-    var playBtn            = $('.' + cssLayer).find('.play');
+    var playBtn            = $('[data-play]');
     var playPauseBtn       = $('.play-pause a');
     var volumeCtn          = $('.' + cssVolumeCtn);
     var volumeBtn          = volumeCtn.find('a');
@@ -43,7 +43,7 @@ var YT_ready = function() {
         time.width((Math.round(time.width()) + 10 + 'px'));
 
         progressBarWrap.addClass(cssPlayerReady);
-        progressBar.width($('.' + cssMedia).width() - 30 - time.width());
+        progressBar.width((progressBar.parent().width()) - time.width());
 
         playBtn.parent().on('click', function(e) {
             e.preventDefault();
