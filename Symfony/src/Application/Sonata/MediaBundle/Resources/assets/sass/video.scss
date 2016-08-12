@@ -284,13 +284,23 @@ $fa-font-path: "../../../assets/vendor/components-font-awesome/fonts";
   border-right: none;
 
   .icon { display: inline; }
+  .fa-circle {
+    color: $color-grey-ultralight;
+    position: relative;
+    &::after {
+      content: '';
+      position: absolute;
+      top: 3px;
+      left: 3px;
+      height: 84%;
+      width: 84%;
+      border: 1px solid $color-grey-light;
+      @include border-radius(50%);
+    }
+  }
 
   &::after {
     @extend %pseudo-vertical-align;
-  }
-
-  .twitter {
-
   }
 }
 
@@ -671,7 +681,6 @@ $fa-font-path: "../../../assets/vendor/components-font-awesome/fonts";
     border-right: none;
     margin-top: 1px;
     padding: 10px 0;
-    display: table;
   }
 
   .imh__player-bar-share {

@@ -34,6 +34,9 @@ var YT_ready = function() {
     var slider;
     var playerTotalTime;
 
+    var svgCollapse = document.getElementById('svg_audio-collapse');
+    var svgPlay = document.getElementById('svg_audio-play');
+
     function onPlayerReady(event) {
 
         status = player.getPlayerState();
@@ -181,18 +184,35 @@ var YT_ready = function() {
             changeText(cssClassReplay);
             playPauseBtn.removeClass(cssClassPause.toLowerCase())
                         .attr('title', cssClassReplay);
+
+            if (Modernizr.touchevents) {
+                svgPlay.style.display = 'none';
+                svgCollapse.style.display = 'inline';
+                collapseAudioBar(true);
+            }
         }
         if (status == 1) {
             player.pauseVideo();
             changeText(cssClassPlay);
             playPauseBtn.removeClass(cssClassPause.toLowerCase())
                         .attr('title', cssClassPlay);
+
+            if (Modernizr.touchevents) {
+                svgPlay.style.display = 'none';
+                svgCollapse.style.display = 'inline';
+                collapseAudioBar(true);
+            }
         }
         if (status == -1 || status == 2 || status == 5) {
             player.playVideo();
             changeText(cssClassPause);
             playPauseBtn.addClass(cssClassPause.toLowerCase())
                         .attr('title', cssClassPause);
+
+            if (Modernizr.touchevents) {
+                svgCollapse.style.display = 'none';
+                svgPlay.style.display = 'inline';
+            }
         }
     }
 

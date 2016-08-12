@@ -9,10 +9,13 @@ var YT_ready = function() {
     var cssVolumeLevel     = 'level';
     var cssVolumeSlider    = 'slider';
     var cssLayer           = 'layer';
-    var cssProgBarWrap     = 'progress-bar-wrapper';
-    var cssAdvancementBar  = 'advancement';
-    var cssBufferBar       = 'buffer';
-    var playBtn            = $('.' + cssLayer).find('.play');
+    var cssPlayerReady     = 'is-ready';
+    var progressBarWrap    = $('[data-progress-bar-wrapper]');
+    var progressBar        = $('[data-progress-bar]');
+    var advancementBar     = $('[data-advancement]');
+    var bufferBar          = $('[data-buffer]');
+    var time               = $('[data-time-control]');
+    var playBtn            = $('[data-play]');
     var playPauseBtn       = $('.play-pause a');
     var volumeCtn          = $('.' + cssVolumeCtn);
     var volumeBtn          = volumeCtn.find('a');
@@ -20,9 +23,6 @@ var YT_ready = function() {
     var volumeLevel        = volumeLevelWrap.find('.' + cssVolumeLevel);
     var fsButton           = $('.fullscreen a');
     var video              = $('#ytplayer')[0];
-    var progressBar        = $('.progress-bar');
-    var time               = $('.time');
-
     var player = new YT.Player('ytplayer', {
         events: {
             'onReady'       : onPlayerReady,
@@ -34,17 +34,19 @@ var YT_ready = function() {
     var slider;
     var playerTotalTime;
 
+    var svgCollapse = document.getElementById('svg_audio-collapse');
+    var svgPlay = document.getElementById('svg_audio-play');
+
     function onPlayerReady(event) {
 
         status = player.getPlayerState();
         playerTotalTime = player.getDuration();
 
-        time.find('.total').text(formatDuration(playerTotalTime));
+        $('[data-total]').text(formatDuration(playerTotalTime));
         time.width((Math.round(time.width()) + 10 + 'px'));
 
-        progressBar.width($('.' + cssMedia).width() - time.width());
-
-        $('.' + cssProgBarWrap).animate({opacity: 1}, 500);
+        progressBarWrap.addClass(cssPlayerReady);
+        progressBar.width((progressBar.parent().width()) - time.width());
 
         playBtn.parent().on('click', function(e) {
             e.preventDefault();
@@ -140,10 +142,10 @@ var YT_ready = function() {
                     playerTimeDifference = (playerCurrentTime / playerTotalTime) * 100,
                     playerLoaded = player.getVideoLoadedFraction() * 100;
 
-                time.find('.current').empty().text(formatDuration(playerCurrentTime) + " /");
-                progress(playerTimeDifference, progressBar, cssAdvancementBar);
-                progress(playerLoaded, progressBar, cssBufferBar);
-                progressBar.width($('.' + cssMedia).width() - time.outerWidth(true));
+                $('[data-current]').empty().text(formatDuration(playerCurrentTime) + " /");
+                progress(playerTimeDifference, progressBar, advancementBar);
+                progress(playerLoaded, progressBar, bufferBar);
+                progressBar.width($('.' + cssMedia).width() - 30 - time.outerWidth(true));
             }, 500);
         } else { clearTimeout(timer); }
 
@@ -182,18 +184,35 @@ var YT_ready = function() {
             changeText(cssClassReplay);
             playPauseBtn.removeClass(cssClassPause.toLowerCase())
                         .attr('title', cssClassReplay);
+
+            if (Modernizr.touchevents) {
+                svgPlay.style.display = 'none';
+                svgCollapse.style.display = 'inline';
+                collapseAudioBar(true);
+            }
         }
         if (status == 1) {
             player.pauseVideo();
             changeText(cssClassPlay);
             playPauseBtn.removeClass(cssClassPause.toLowerCase())
                         .attr('title', cssClassPlay);
+
+            if (Modernizr.touchevents) {
+                svgPlay.style.display = 'none';
+                svgCollapse.style.display = 'inline';
+                collapseAudioBar(true);
+            }
         }
         if (status == -1 || status == 2 || status == 5) {
             player.playVideo();
             changeText(cssClassPause);
             playPauseBtn.addClass(cssClassPause.toLowerCase())
                         .attr('title', cssClassPause);
+
+            if (Modernizr.touchevents) {
+                svgCollapse.style.display = 'none';
+                svgPlay.style.display = 'inline';
+            }
         }
     }
 
@@ -207,7 +226,7 @@ var YT_ready = function() {
 
     function progress(percent, $container, $bar) {
         var progressBarWidth = Math.round(percent * $container.width() / 100);
-        $container.find('.' + $bar).animate({ width: progressBarWidth });
+        $bar.stop().animate({ width: progressBarWidth });
     }
 
     function formatDuration(duration){

@@ -4668,7 +4668,7 @@ button {
         color: #222222;
         border-bottom-color: white; }
 
-.globe, .hamburger {
+.globe, .audio, .hamburger {
   display: none; }
 
 @media (max-width: 991px) {
@@ -4744,8 +4744,16 @@ button {
   .globe {
     padding: 12px 15px;
     display: inline-block;
+    vertical-align: middle;
     border: none;
     background: none; }
+
+  .audio {
+    display: inline-block;
+    vertical-align: middle; }
+
+  .audio--play {
+    display: none; }
 
   .hamburger-wrapper {
     background: black;

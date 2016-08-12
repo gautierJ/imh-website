@@ -116,7 +116,10 @@
             <nav class="col-xs-8 col-sm-6 col-md-5 imh__player-bar-controls">
                 <ul>
                     <li class="play-pause">
-                        <a href="#" title=""><img class="bkg empty" src="{{ asset('bundles/imhbase/images/empty.gif') }}" alt="" />Play</a>
+                        <a href="#" title="">
+                            <img class="bkg empty" src="{{ asset('bundles/imhbase/images/empty.gif') }}" alt="" />
+                            Play
+                        </a>
                     </li>
                     <li class="volume">
                         <div class="wrap-level">
@@ -205,6 +208,7 @@
 
     {% javascripts output='assets/compiled/js/video.js'
         'assets/lib/sly/sly.js'
+        '@ImhBaseBundle/Resources/assets/js/svg/audio.js'
         '@ImhBaseBundle/Resources/assets/js/screenfull.js'
         '@ImhBaseBundle/Resources/assets/js/jquery.imh.scrollmove.js'
         '@ImhBaseBundle/Resources/assets/js/jquery.nouislider.js'

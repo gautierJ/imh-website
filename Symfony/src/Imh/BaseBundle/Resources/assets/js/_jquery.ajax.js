@@ -2,11 +2,11 @@
     'use strict';
 
     var wrapperSelector = 'wrapper',
-        navSelector = 'home',
+        navSelector     = 'home',
         loadingSelector = 'loading',
-        homeCssPath = '/bundles/imhbase/css/home.css',
-        loadingImg = '<img class=' + loadingSelector + ' src="/bundles/imhbase/images/circles_black.svg" />',
-        homePagePath = Routing.generate('imh_base_homepage');
+        homeCssPath     = '/bundles/imhbase/css/home.css',
+        loadingImg      = '<img class=' + loadingSelector + ' src="/bundles/imhbase/images/circles_black.svg" />',
+        homePagePath    = Routing.generate('imh_base_homepage');
 
     $('.' + navSelector).on('click', 'a', function (e) {
         //e.preventDefault();

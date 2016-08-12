@@ -85,7 +85,7 @@ $hamburger-layer-color: $color-white;
   }
 }
 
-.globe, .hamburger { display: none; }
+.globe, .audio, .hamburger { display: none; }
 
 // Media queries
 // ==================================================
@@ -156,8 +156,18 @@ $hamburger-layer-color: $color-white;
   .globe {
     padding: 12px 15px;
     display: inline-block;
+    vertical-align: middle;
     border: none;
     background: none;
+  }
+
+  .audio {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .audio--play {
+    display: none;
   }
 
   .hamburger-wrapper {

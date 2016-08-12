@@ -51,8 +51,8 @@
                {% spaceless %}
                    {% for galleryHasMedia in gallery.GalleryHasMedias %}
                        <li class="sonata-media-gallery-media-item">
-                            <a href="#" class="sonata-media-gallery-media-item-link">  {# {{ url('sonata_media_view', {'id': galleryHasMedia.media|sonata_urlsafeid }) }} #}
-                                {% thumbnail galleryHasMedia.media, gallery.defaultFormat with {'class': 'media-object'} %}
+                            <a href="#" class="sonata-media-gallery-media-item-link" data-item-link>  {# {{ url('sonata_media_view', {'id': galleryHasMedia.media|sonata_urlsafeid }) }} #}
+                                {% thumbnail galleryHasMedia.media, gallery.defaultFormat with {'class': 'media-object', 'data-image': 'media'} %}
                                 {#<div class="media-bar clearfix">
                                     {% if galleryHasMedia.media.description != "" %}<p class="media-description">{{ galleryHasMedia.media.description|raw }}</p>{% endif %}
                                 </div>#}
@@ -63,7 +63,7 @@
                                             <img src="{{ asset('bundles/imhbase/images/empty.gif') }}" alt="" />
                                         </span>
                                 </div>
-                                <div class="plus-icon"></div>
+                                <div class="plus-icon" data-icon="plus"></div>
                             </a>
                         </li>
                    {% endfor %}

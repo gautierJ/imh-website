@@ -182,13 +182,18 @@
         };*/
 
         $container.on('click', function(e) {
-            if(e.target.className == 'plus-icon') {
+            var target = e.target;
+            function open() {
                 $('.' + itemSelector).removeClass(expSelector);
-                $targetItem = $(e.target).parent().parent();
+                $targetItem = $(target).parent().parent();
                 $targetItem.addClass(expSelector);
                 getInactiveItems().addClass(GalleryManager.cssAnimations[0]);
                 isClosed = false;
                 calcEltWidth($targetItem);
+            }
+            if($(target).data('icon') == 'plus') open();
+            if(Modernizr.touchevents) {
+                if($(target).data('image') == 'media') open();
             }
             e.preventDefault();
         });
