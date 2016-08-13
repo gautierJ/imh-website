@@ -1,9 +1,21 @@
-/web/bundles/
-/app/bootstrap.php.cache
+# Cache and logs (Symfony2)
 /app/cache/*
-/app/config/parameters.yml
 /app/logs/*
-/build/
+
+# Assets and user uploads
+/web/bundles/
+/web/uploads/
+
+# Managed by Composer
+/app/bootstrap.php.cache
 /vendor/
 /bin/
+
+# Parameters
+/app/config/parameters.yml
+
+# Build data
+/build/
+
+# Composer PHAR
 /composer.phar
