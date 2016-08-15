@@ -36,12 +36,10 @@
     a, span {
       color: $color-grey-medium;
       display: inline-block;
-      //height: 13px;
       @include transition(all, 0.2s, ease-in, 0s);
 
       &:hover {
         color: $color-grey-dark;
-        //border-bottom: 1px dotted $color-grey-dark;
       }
     }
 
@@ -57,7 +55,6 @@
         background: $color-white;
         border: 1px solid $color-grey-light;
         border-radius: 16px;
-        //line-height: 13px;
         padding: 6px 14px;
       }
     }
@@ -73,7 +70,6 @@
 }
 
 .imh__footer-column--site {
-  //padding-right: 30px;
 
   ul {
     width: 175px;
@@ -81,7 +77,6 @@
 
   li {
     float: left;
-    //width: 87px;
     padding-right: 10px;
 
     &:nth-child(even) {
@@ -119,45 +114,15 @@
 //    }
 
 .imh__footer-column--follow {
-  .fb, .tw, .gp {
+  .social {
     display: inline-block;
     vertical-align: top;
     margin-right: 7px;
-  }
-  .fb {
-    img {
-      background: url("/bundles/imhbase/images/sprite.png") no-repeat scroll -8px -131px;
-      height: 16px;
-      width: 8px;
-    }
+    font-size: 20px;
+    color: $color-grey-dark;
+
     &:hover {
-      img {
-        background-position: 0 -131px;
-      }
-    }
-  }
-  .tw {
-    img {
-      background: url("/bundles/imhbase/images/sprite.png") no-repeat scroll -34px -131px;
-      height: 16px;
-      width: 18px;
-    }
-    &:hover {
-      img {
-        background-position: -16px -131px;
-      }
-    }
-  }
-  .gp {
-    img {
-      background: url("/bundles/imhbase/images/sprite.png") no-repeat scroll -74px -131px;
-      height: 18px;
-      width: 22px;
-    }
-    &:hover {
-      img {
-        background-position: -52px -131px;
-      }
+      color: black;
     }
   }
 }

@@ -397,6 +397,39 @@ body {
     @include transition(opacity, 2s, linear, 0s);
   }*/
 
+  .media-btn-group {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.5);
+    @include transition(opacity .2s linear 0s);
+    @include opacity(0);
+  }
+
+  .media-btn {
+    display: table;
+    float: left;
+    cursor: pointer;
+    @include transition(background-color .2s ease-in 0s);
+
+    .fa {
+      color: white;
+      display: table-cell;
+      vertical-align: middle;
+      padding: 12px;
+    }
+  }
+
+  .media-btn--zoom {
+    .fa { font-size: 14px; }
+  }
+
+  .media-btn--close {
+    .fa { font-size: 14px; }
+  }
+
   &.is-expanded {
     height: 100%;
     width: auto;
@@ -409,21 +442,17 @@ body {
           @include transform(none);
         }
 
-        .media-btns {
+        .media-btn-group {
           @include opacity(1);
+        }
 
-          > span {
-              /*border-width: 1px;
-              border-style: solid;
-              border-color: rgb(0, 0, 0);
-              border-color: rgba(0, 0, 0, 0.8);*/
-
-            &:hover {
-              background-color: rgb(0, 0, 0);
-              background-color: rgba(0, 0, 0, 0.8);
-            }
+        .media-btn {
+          &:hover {
+            background-color: rgb(0, 0, 0);
+            background-color: rgba(0, 0, 0, .8);
           }
         }
+
         /*.media-bar {
           @include transform(translate(0, 0%));
         }*/
@@ -438,46 +467,6 @@ body {
       transition: none;
       height: 100%;
       width: auto;
-    }
-
-    .media-btns {
-      display: block;
-      position: absolute;
-      top: 0;
-      right: 0;
-      background-color: rgb(0, 0, 0);
-      background-color: rgba(0, 0, 0, 0.5);
-      @include transition(opacity .2s linear 0s);
-      @include opacity(0);
-
-      > span {
-        display: inline-block;
-        cursor: pointer;
-        text-align: center;
-        height: 20px;
-        line-height: 23px;
-        width: 20px;
-        vertical-align: middle;
-        padding: 8px;
-        box-sizing: content-box;
-        @include transition(background-color .2s ease-in 0s);
-
-        &.zoom {
-          img {
-            background: url("/bundles/imhbase/images/sprite.png") no-repeat scroll -96px -131px;
-            height: 20px;
-            width: 19px;
-          }
-        }
-
-        &.close {
-          img {
-            background: url("/bundles/imhbase/images/sprite.png") no-repeat scroll -115px -131px;
-            height: 12px;
-            width: 12px;
-          }
-        }
-      }
     }
 
     .plus-icon { display: none; }

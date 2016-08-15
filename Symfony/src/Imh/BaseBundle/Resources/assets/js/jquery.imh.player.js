@@ -16,7 +16,8 @@ var YT_ready = function() {
     var bufferBar          = $('[data-buffer]');
     var time               = $('[data-time-control]');
     var playBtn            = $('[data-play]');
-    var playPauseBtn       = $('.play-pause a');
+    var playPauseBtn       = $('[data-play-pause]');
+    var playPausePicto     = $('[data-play-pause-picto]');
     var volumeCtn          = $('.' + cssVolumeCtn);
     var volumeBtn          = volumeCtn.find('a');
     var volumeLevelWrap    = $('.' + cssVolumeLevelWrap);
@@ -61,7 +62,7 @@ var YT_ready = function() {
             e.preventDefault();
         });
 
-        playPauseBtn.off().on('click', function(e) {
+        playPauseBtn.on('click', function(e) {
             playBtn.click();
             //playPause(status);
             e.preventDefault();
@@ -152,7 +153,7 @@ var YT_ready = function() {
         if (status == 2) playPause(1);
         if (status == 0) playPause(0);
 
-        playPauseBtn.off().on('click', function(e) {
+        playPauseBtn.on('click', function(e) {
             if (status == 0) player.playVideo(); // Replay
             playPause(status);
             e.preventDefault();
@@ -182,8 +183,9 @@ var YT_ready = function() {
         };
         if (status == 0) {
             changeText(cssClassReplay);
-            playPauseBtn.removeClass(cssClassPause.toLowerCase())
-                        .attr('title', cssClassReplay);
+            playPausePicto.removeClass('fa-pause')
+                          .addClass('fa-play')
+                          .attr('title', cssClassPlay);
 
             if (Modernizr.touchevents) {
                 svgPlay.style.display = 'none';
@@ -194,8 +196,9 @@ var YT_ready = function() {
         if (status == 1) {
             player.pauseVideo();
             changeText(cssClassPlay);
-            playPauseBtn.removeClass(cssClassPause.toLowerCase())
-                        .attr('title', cssClassPlay);
+            playPausePicto.removeClass('fa-pause')
+                          .addClass('fa-play')
+                          .attr('title', cssClassPlay);
 
             if (Modernizr.touchevents) {
                 svgPlay.style.display = 'none';
@@ -206,7 +209,8 @@ var YT_ready = function() {
         if (status == -1 || status == 2 || status == 5) {
             player.playVideo();
             changeText(cssClassPause);
-            playPauseBtn.addClass(cssClassPause.toLowerCase())
+            playPausePicto.removeClass('fa-play')
+                        .addClass('fa-pause')
                         .attr('title', cssClassPause);
 
             if (Modernizr.touchevents) {

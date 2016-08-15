@@ -27,8 +27,8 @@
         expSelector       = 'is-expanded',
         hiddenSelector    = 'is-hidden',
         triggerSelector   = 'imh__trigger',
-        zoomSelector      = 'zoom',
-        closeSelector     = 'close',
+        $zoom             = $('[data-zoom]'),
+        $close            = $('[data-close]'),
         $container        = $('.' + containerSelector),
         $targetItem       = null,
         isClosed          = true,
@@ -199,7 +199,7 @@
         });
 
         var closeItem = function($trgi) {
-            $trgi.find('.' + closeSelector).off().on('click', function(e) {
+            $close.off().on('click', function(e) {
                 $trgi.removeClass(expSelector);
                 getInactiveItems().removeClass(GalleryManager.cssAnimations[0]);
                 isClosed = true;

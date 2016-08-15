@@ -49,6 +49,11 @@ button {
   color: $color-grey-dark;
   line-height: 40px;
   margin: 0 0 20px;
+
+  small {
+    font-size: 13px;
+    color: $color-grey-dark;
+  }
 }
 
 .imh__title-h2--border {
