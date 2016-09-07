@@ -41,7 +41,7 @@
         window.fbAsyncInit = function() {
             FB.init({
                 appId   : '761674913903863',
-                xfbml   : true,
+                xfbml   : false,
                 version : 'v2.2'
             });
         };
@@ -58,6 +58,7 @@
         function postToShare(href){
             var obj = {
                 method: 'share',
+                mobile_iframe: true,
                 href: href
             };
             FB.ui(obj, function(response){});
@@ -112,33 +113,33 @@
         <section class="imh__player-bar">
             {% spaceless %}
             <div class="col-xs-8 col-sm-5 col-md-5 imh__player-bar-views">
-                <span class="imh__player-bar-views-nb">{{ count }}</span>
-                <span class="imh__player-bar-text imh__player-bar-text--indent">{% if not isTouchDevice %}{{ 'sonata.media.video.total_views'|trans|raw }}{% else %}Vues{% endif %}</span>
+                <span class="imh__player-bar-views-nb">{{ options.count }}</span>
+                <span class="imh__player-bar-text imh__player-bar-text--indent">{% if not isTouchDevice %}{{ 'sonata.media.video.total_views'|trans|raw }}{% else %}{{ 'sonata.media.video.views'|trans }}{% endif %}</span>
             </div>
             <nav class="col-xs-8 col-sm-6 col-md-5 imh__player-bar-controls">
                 <ul>
                     <li class="play-pause">
-                        <a href="#" title="" data-play-pause>
+                        <a href="#" title="" data-play-pause-btn>
                             <i class="fa fa-play" aria-hidden="true" data-play-pause-picto></i>
                             Play
                         </a>
                     </li>
                     <li class="volume">
                         <div class="wrap-level">
-                            <div class="level">
-                                <img src="{{ asset('bundles/imhbase/images/volume.png') }}" width="20" height="106" alt="Volume level" />
-                                <div class="slider"></div>
+                            <div class="level" data-volume-level>
+                                <div class="level__bkg"></div>
+                                <div class="slider" data-volume-slider></div>
                             </div>
                         </div>
-                        <a href="#" title="Volume">
+                        <a href="#" title="Volume" data-volume-btn>
                             <i class="fa fa-volume-down" aria-hidden="true" data-volume-picto></i>
-                            {{ 'sonata.media.video.volume'|trans }}
+                            Vol.
                         </a>
                     </li>
                     <li class="hidden-xs fullscreen">
-                        <a href="#" title="Fullscreen">
+                        <a href="#" title="Fullscreen" data-fullscreen-btn>
                             <i class="fa fa-expand" aria-hidden="true"></i>
-                            {{ 'sonata.media.video.fullscreen'|trans }}
+                            Fullscreen
                         </a>
                     </li>
                 </ul>
@@ -165,26 +166,11 @@
             {% endspaceless %}
         </section>
 
-        <div class="imh__media-gallery">
-            <button class="imh__media-gallery-button imh__media-gallery-button--prev" data-prev>
-                <i class="fa fa-angle-left"></i>
-            </button>
-            <button class="imh__media-gallery-button imh__media-gallery-button--next" data-next>
-                <i class="fa fa-angle-right"></i>
-            </button>
-
-            {% spaceless %}
-            <div class="imh__media-gallery-frame frame" data-frame>
-                <ul class="imh__media-gallery-list slidee">
-                    {% include 'ApplicationSonataMediaBundle:Media:thumbnail_list.html.twig' %}
-                </ul>
+        <div class="imh__media-gallery-wrapper">
+            <div class="imh__media-gallery" data-media-gallery>
+                <!-- ajax content -->
             </div>
-            {% endspaceless %}
-            <div class="imh__scrollbar" data-scrollbar>
-                <div class="handle">
-                    <div class="mousearea"></div>
-                </div>
-            </div>
+            <i class="loader loader--black" aria-hidden="true" data-loader></i>
         </div>
     </div>
 
@@ -220,17 +206,14 @@
     <script type="text/javascript" src="{{ asset_url }}"></script>
     {% endjavascripts %}
 
-    <script type="text/javascript">
+    <script>
         $(function () {
             'use strict';
 
-            var $frame     = $('[data-frame]'),
-                $scrollbar = $('[data-scrollbar]'),
-                $prev      = $('[data-prev]'),
-                $next      = $('[data-next]'),
-                $fb        = $('[data-fb-share]'),
-                $tw        = $('[data-tw]'),
-                activePos  = $frame.find('li[data-active]').index();
+            var $mediaGallery = $('[data-media-gallery]'),
+                $loader       = $('[data-loader]'),
+                $fb           = $('[data-fb-share]'),
+                $tw           = $('[data-tw]');
 
             // Lazy Load
             $('img.lazy').show().lazyload({
@@ -244,66 +227,100 @@
 
             //$('#' + contentSelector).contentHeightAdjust();
 
-            // Sly
-            var sly = new Sly($frame, {
-                horizontal: 1,
-                itemNav: 'forceCentered',
-                activateMiddle: 1,
-                smart: 1,
-                scrollSource: $(".slidee"),
-                //activateOn: 'click',
-                mouseDragging: 1,
-                touchDragging: 1,
-                releaseSwing: 1,
-                startAt: activePos,
-                scrollBar: $scrollbar,
-                scrollBy: 1,
-                speed: 1000,
-                moveBy: 50,
-                elasticBounds: 1,
-                dragHandle: 1,
-                //dynamicHandle: 1,
-                clickBar: 1,
+            $.ajax({
+                type: 'GET',
+                dataType: 'html',
+                url: Routing.generate('sonata_media_view_all', {
+                    _locale: '{{ app.request.locale }}',
+                    id: {{ app.request.get('id') }}
+                }),
+                success: function (data) {
+                    var i = 0;
+                    $(data).find('[data-img]').on('load', function() {
+                        i++;
+                        if (i == $(this).length) {
+                            $loader.fadeOut(500, function() {
+                                $mediaGallery.append(data).addClass('is-loaded');
+                                loadSly();
+                            });
+                        }
+                    });
+                },
+                error: function (jqXHR, textStatus, errorThrown) {
+                    alert('Error : ' + errorThrown);
+                }
+            });
 
-                // Buttons
-                prev: $prev,
-                next: $next
-            }).init();
+            function loadSly() {
+
+                var $frame     = $('[data-frame]'),
+                    $scrollbar = $('[data-scrollbar]'),
+                    $prev      = $('[data-prev]'),
+                    $next      = $('[data-next]'),
+                    activePos  = $frame.find('li[data-active]').index(),
+
+                    delay = (function () {
+                        var timer = 0;
+                        return function (callback, ms) {
+                            clearTimeout(timer);
+                            timer = setTimeout(callback, ms);
+                        };
+                    })(),
+
+                    sly = new Sly($frame, {
+                        horizontal: 1,
+                        itemNav: 'forceCentered',
+                        activateMiddle: 1,
+                        smart: 1,
+                        scrollSource: $(".slidee"),
+                        //activateOn: 'click',
+                        mouseDragging: 1,
+                        touchDragging: 1,
+                        releaseSwing: 1,
+                        startAt: activePos,
+                        scrollBar: $scrollbar,
+                        scrollBy: 1,
+                        speed: 1000,
+                        moveBy: 50,
+                        elasticBounds: 1,
+                        dragHandle: 1,
+                        //dynamicHandle: 1,
+                        clickBar: 1,
+
+                        // Buttons
+                        prev: $prev,
+                        next: $next
+                    }).init();
+
+                $(window).on('resize', function () {
+                    delay(function () {
+                        sly.reload();
+                    }, 500);
+                });
+            }
 
             // Social buttons
             $fb.on('click', function(e) {
-                postToShare($(this).attr('href'));
+                var href = $(this).attr('href');
+                postToShare(href);
                 e.preventDefault();
             });
 
             $tw.on('click', function(e) {
+                e.preventDefault();
+
                 var width  = 575,
-                    height = 400,
-                    left   = ($(window).width()  - width)  / 2,
-                    top    = ($(window).height() - height) / 2,
-                    url    = this.href,
-                    opts   = 'status=1' +
-                             ',width='  + width  +
-                             ',height=' + height +
-                             ',top='    + top    +
-                             ',left='   + left;
+                        height = 400,
+                        left   = ($(window).width()  - width)  / 2,
+                        top    = ($(window).height() - height) / 2,
+                        url    = this.href,
+                        opts   = 'status=1' +
+                                ',width='  + width  +
+                                ',height=' + height +
+                                ',top='    + top    +
+                                ',left='   + left;
 
                 window.open(url, 'twitter', opts);
-                e.preventDefault();
-            });
-
-            var delay = (function(){
-                var timer = 0;
-                return function(callback, ms){
-                    clearTimeout (timer);
-                    timer = setTimeout(callback, ms);
-                };
-            })();
-
-            $(window).on('resize', function () {
-                delay(function(){
-                    sly.reload();
-                }, 500);
             });
         });
     </script>

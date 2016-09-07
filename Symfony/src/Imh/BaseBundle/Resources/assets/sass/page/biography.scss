@@ -153,8 +153,8 @@ $fa-font-path: "../../../../assets/vendor/components-font-awesome/fonts";
   text-align: center;
   font-size: $thirteenpx;
   font-weight: normal;
-  color: $color-white;
-  background-color: $color-brown-dark;
+  color: white;
+  background-color: $color-greybrown-dark;
   line-height: 47px;
   margin: 0 0 20px;
   cursor: pointer;
@@ -171,7 +171,7 @@ $fa-font-path: "../../../../assets/vendor/components-font-awesome/fonts";
     height: 0;
     border-style: solid;
     border-width: 6px 5px 0;
-    border-color: $color-brown-dark transparent transparent transparent;
+    border-color: $color-greybrown-dark transparent transparent transparent;
     @include transition(border-color .3s ease 0s);
   }
 
@@ -180,10 +180,10 @@ $fa-font-path: "../../../../assets/vendor/components-font-awesome/fonts";
   }
 
   &:hover {
-    background-color: $color-greybrown-dark;
+    background-color: $color-brown-dark;
 
     &:before {
-      border-color: $color-greybrown-dark transparent transparent transparent;
+      border-color: $color-brown-dark transparent transparent transparent;
     }
   }
 }

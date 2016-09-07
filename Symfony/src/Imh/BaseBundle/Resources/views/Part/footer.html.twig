@@ -1,19 +1,19 @@
 <footer class="imh__footer">
     <div class="container imh__container">
-        <div class="col-xs-16 col-sm-7 col-md-6">
-            <div class="imh__footer-column imh__footer-column--site">
+        <div class="col-xs-16 col-sm-7 col-md-5 hidden-xs imh__footer-column">
+            <div class="imh__footer-column--site">
                 <h3>{{ 'imh.base.footer.site'|trans }}</h3>
                 {{ knp_menu_render('main', {'currentAsLink':false, 'allow_safe_labels': true}) }}
             </div>
         </div>
-        <div class="col-xs-8 col-sm-4 col-md-3">
-            <div class="imh__footer-column imh__footer-column--language">
+        <div class="col-xs-8 col-sm-4 col-md-3 hidden-xs imh__footer-column">
+            <div class="imh__footer-column--language">
                 <h3>{{ 'imh.base.footer.language'|trans }}</h3>
                 {% include 'ImhBaseBundle:Menu:lang.html.twig' %}
             </div>
         </div>
-        <div class="col-xs-24 col-sm-9 col-md-8">
-            <div class="imh__footer-column school">
+        <div class="col-xs-24 col-sm-9 col-md-8 hidden-xs imh__footer-column imh__footer-column--extraspace">
+            <div class="imh__footer-column--school">
                 <h3>{{ 'imh.base.footer.schools.title'|trans }}</h3>
                 <ul>
                     <li>
@@ -25,8 +25,8 @@
                 </ul>
             </div>
         </div>
-        <div class="col-xs-12 col-sm-4 col-md-4">
-            <div class="imh__footer-column imh__footer-column--follow">
+        <div class="col-xs-12 col-sm-4 col-md-4 imh__footer-column">
+            <div class="imh__footer-column--follow">
                 <h3>{{ 'imh.base.footer.follow.title'|trans }}</h3>
                 <div class="imh__footer-wrap">
                     <a href="" class="social" title="{{ 'imh.base.footer.follow.fb'|trans }}" target="_blank">
@@ -41,18 +41,18 @@
                 </div>
             </div>
         </div>
-        <div class="col-xs-12 col-md-3 hidden-sm">
-            <div class="imh__footer-column imh__footer-column--powered">
+        <div class="col-xs-12 col-md-4 hidden-sm imh__footer-column imh__footer-column--last">
+            <div class="imh__footer-column--powered">
                 <h3>{{ 'imh.base.footer.engine.title'|trans }}</h3>
                 <div class="imh__footer-wrap">
                     <a href="http://symfony.com/" title="{{ 'imh.base.footer.engine.framework'|trans }}" target="_blank">
-                        <img src="{{ asset('bundles/imhbase/images/empty.gif') }}" alt="" />
+                        <svg class="icon icon--symfony"><use xlink:href="#svg-symfony"></use></svg>
                     </a>
                 </div>
             </div>
         </div>
         <div class="col-xs-24">
-            <small class="imh__footer-rights text-center"><span>&copy;</span> {{"now"|date('Y')}}. {{ 'imh.base.footer.copyright'|trans }}</small>
+            <small class="imh__footer-rights text-center"><span>&copy;</span> {{"now"|date('Y')}}. {{ 'imh.base.footer.copyright'|trans|raw }}</small>
         </div>
     </div>
 </footer>

@@ -7,7 +7,6 @@ var YT_ready = function() {
     var cssVolumeCtn       = 'volume';
     var cssVolumeLevelWrap = 'wrap-level';
     var cssVolumeLevel     = 'level';
-    var cssVolumeSlider    = 'slider';
     var cssLayer           = 'layer';
     var cssPlayerReady     = 'is-ready';
     var progressBarWrap    = $('[data-progress-bar-wrapper]');
@@ -16,13 +15,14 @@ var YT_ready = function() {
     var bufferBar          = $('[data-buffer]');
     var time               = $('[data-time-control]');
     var playBtn            = $('[data-play]');
-    var playPauseBtn       = $('[data-play-pause]');
+    var playPauseBtn       = $('[data-play-pause-btn]');
     var playPausePicto     = $('[data-play-pause-picto]');
-    var volumeCtn          = $('.' + cssVolumeCtn);
-    var volumeBtn          = volumeCtn.find('a');
+    var volumeBtn          = $('[data-volume-btn]');
+    var volumeSlider       = $('[data-volume-slider]');
+    var volumePicto        = $('[data-volume-picto]');
     var volumeLevelWrap    = $('.' + cssVolumeLevelWrap);
-    var volumeLevel        = volumeLevelWrap.find('.' + cssVolumeLevel);
-    var fsButton           = $('.fullscreen a');
+    var volumeLevel        = $('[data-volume-level]');
+    var fullscreenBtn      = $('[data-fullscreen-btn]');
     var video              = $('#ytplayer')[0];
     var player = new YT.Player('ytplayer', {
         events: {
@@ -44,7 +44,7 @@ var YT_ready = function() {
         playerTotalTime = player.getDuration();
 
         $('[data-total]').text(formatDuration(playerTotalTime));
-        time.width((Math.round(time.width()) + 10 + 'px'));
+        time.width((Math.round(time.width()) + 15 + 'px'));
 
         progressBarWrap.addClass(cssPlayerReady);
         progressBar.width((progressBar.parent().width()) - time.width());
@@ -74,10 +74,10 @@ var YT_ready = function() {
             'minRange' : 0,
             'maxRange' : 100
         };
-        slider = volumeLevel.find('.' + cssVolumeSlider);
-        slider.noUiSlider({
+
+        volumeSlider.noUiSlider({
             start: [ opts.start ],
-            orientation: "vertical",
+            orientation: 'vertical',
             behaviour: 'drag',
             step: opts.step,
             range: {
@@ -89,20 +89,15 @@ var YT_ready = function() {
             player.setVolume(value);
 
             switch(Math.round(value)) {
-                case opts.minRange: setImage(opts.minRange, true); break;
-                case opts.maxRange/4: setImage(opts.maxRange/4, true); break;
-                case (opts.maxRange/4)*2: setImage((opts.maxRange/4)*2, true); break;
-                case (opts.maxRange/4)*3: setImage((opts.maxRange/4)*3, true); break;
-                case opts.maxRange: setImage(opts.maxRange, true); break;
+                case opts.minRange: setImage('fa fa-volume-off'); break;
+                case (opts.maxRange/4)*2: setImage('fa fa-volume-down'); break;
+                case opts.maxRange: setImage('fa fa-volume-up'); break;
             }
         });
 
-        var setImage = function(range, hovered) {
-            volumeBtn.removeClass().addClass('_' + range + (hovered == true ? ' hover' : ''));
+        var setImage = function(imageClass) {
+            volumePicto.removeClass().addClass(imageClass);
         };
-
-        // set css image for the first call
-        setImage(opts.start, false);
 
         volumeBtn.hover(
             function() {
@@ -122,7 +117,7 @@ var YT_ready = function() {
             }
         ).click(function(e) { e.preventDefault(); });
 
-        fsButton.on('click', function(e) {
+        fullscreenBtn.on('click', function(e) {
             if (screenfull.enabled) {
                 if (status != -1 && status != 5) {
                     screenfull.request(video);
@@ -146,7 +141,7 @@ var YT_ready = function() {
                 $('[data-current]').empty().text(formatDuration(playerCurrentTime) + " /");
                 progress(playerTimeDifference, progressBar, advancementBar);
                 progress(playerLoaded, progressBar, bufferBar);
-                progressBar.width($('.' + cssMedia).width() - 30 - time.outerWidth(true));
+                progressBar.width((progressBar.parent().width()) - time.width());
             }, 500);
         } else { clearTimeout(timer); }
 

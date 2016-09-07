@@ -24,7 +24,7 @@ $fa-font-path: "../../../../assets/vendor/components-font-awesome/fonts";
   @include img-responsive();
   @include box-shadow(0, 0, 9px, 1px, $color-grey-light);
   border-radius: 50%;
-  border: 6px solid $color-white;
+  border: 6px solid white;
 }
 
 .imh__repertoire-description {

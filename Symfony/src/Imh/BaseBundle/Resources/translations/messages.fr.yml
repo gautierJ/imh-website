@@ -120,4 +120,5 @@ imh:
       engine:
         title:        'Propulsé par'
         framework:    'Symfony Framework'
-      copyright:      'Ionella Marinutsa. Tous droits réservés.'
+      copyright: >
+        Ionella Marinutsa.<br> Tous droits réservés.

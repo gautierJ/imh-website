@@ -15,7 +15,7 @@ $fa-font-path: "../../../../assets/vendor/components-font-awesome/fonts";
 }
 
 .georgia {
-  color: $color-black !important;
+  color: black !important;
   font-family: "Georgia", Times, serif !important;
 }
 
@@ -51,7 +51,7 @@ $fa-font-path: "../../../../assets/vendor/components-font-awesome/fonts";
   }
 
   .block-myself {
-    background-color: $color-white;
+    background-color: white;
     position: fixed;
     display: inline-block;
     right: 0;
@@ -83,7 +83,7 @@ $fa-font-path: "../../../../assets/vendor/components-font-awesome/fonts";
     h1, h2, h3 {
       text-transform: uppercase;
       line-height: 1.1em;
-      color: $color-black;
+      color: black;
       font-weight: normal;
       margin: 0;
       @include opacity(0);
@@ -105,7 +105,7 @@ $fa-font-path: "../../../../assets/vendor/components-font-awesome/fonts";
       background-color: $color-grey-light;
       height: 1px;
 
-      .loader {
+      .loader-progress-bar {
         @include transition(width 1s cubic-bezier(0,.92,.08,1) 0s);
 
         background-color: $color-brown-light;
@@ -166,7 +166,7 @@ $fa-font-path: "../../../../assets/vendor/components-font-awesome/fonts";
 
         &:hover {
           border: 1px solid #271913;
-          color: $color-white;
+          color: white;
 
           &::after {
             top: 0;
@@ -207,7 +207,7 @@ $fa-font-path: "../../../../assets/vendor/components-font-awesome/fonts";
         left: -179px;
         width: 6px;
         height: 2000px;
-        box-shadow: -2px 0 3px $color-black;
+        box-shadow: -2px 0 3px black;
         -webkit-transform: rotate(11.3deg) translate3d( 0, 0, 0);
         -moz-transform: rotate(11.3deg) translate3d( 0, 0, 0);
         -o-transform: rotate(11.3deg) translate3d( 0, 0, 0);
@@ -230,7 +230,7 @@ $fa-font-path: "../../../../assets/vendor/components-font-awesome/fonts";
 
         top: 0;
         @include opacity(1);*/
-        /*color: $color-white;*/
+        /*color: white;*/
       }
 
       .progressCounter {
@@ -299,7 +299,7 @@ $fa-font-path: "../../../../assets/vendor/components-font-awesome/fonts";
         position: relative;
         margin: 15px 0 24px;
 
-        .loader {
+        .loader-progress-bar {
           background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwJSIgc3RvcC1jb2xvcj0iI2UyZTJlMiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjkwJSIgc3RvcC1jb2xvcj0iI2UyZTJlMiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmZmZmZmYiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
           background: -moz-linear-gradient(left,  #ffffff 0%, #e2e2e2 10%, #000000 50%, #e2e2e2 90%, #ffffff 100%);
           background: -webkit-gradient(linear, left top, right top, color-stop(0%,#ffffff), color-stop(10%,#e2e2e2), color-stop(50%,#000000), color-stop(90%,#e2e2e2), color-stop(100%,#ffffff));
@@ -316,7 +316,7 @@ $fa-font-path: "../../../../assets/vendor/components-font-awesome/fonts";
             left: 50%;
             margin-left: -3px;
             top: -2px;
-            background-color: $color-black;
+            background-color: black;
             @include border-radius(10px);
           }
         }

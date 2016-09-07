@@ -9,19 +9,8 @@ use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 use Symfony\Component\Security\Core\Exception\AccessDeniedException;
 
-class MediaController extends BaseMediaController
+class MediaAllController extends BaseMediaController
 {
-    /**
-     * @return boolean $touchDevice
-     */
-    public function detectDevice()
-    {
-        $mobileDetector = $this->get('mobile_detect.mobile_detector');
-        $touchDevice = $mobileDetector->isMobile() || $mobileDetector->isTablet();
-
-        return $touchDevice;
-    }
-
     /**
      * @throws NotFoundHttpException
      *
@@ -43,27 +32,47 @@ class MediaController extends BaseMediaController
             throw new AccessDeniedException();
         }
 
-        //$provider = $this->container->get($media->getProviderName());
-        $providerRef = $media->getProviderReference();
+        $mediaAll = $this->getAll();
 
-        /*$request = $this->container->get('request');
-        $currentRoute = $request->get('_route');
-        $currentUrl = $this->get('router')->generate($currentRoute, array(), true);*/
+        if (!$mediaAll) {
+            throw new NotFoundHttpException('Unable to retrieve the gallery of medias');
+        }
 
+        $provider = $this->container->get($media->getProviderName());
+
+        $thumbnailFormat = 'default_small';
+        $format_definition = $provider->getFormat($thumbnailFormat);
         $options = array();
-        $options['id'] = $media->getId();
-        $options['title'] = $media->getName();
-        $options['jsonData'] = $this->getApiJsonInformations($providerRef);
-        $options['duration'] = $this->convertISO8601Duration($options['jsonData']['duration']);
-        $options['count'] = $options['jsonData']['viewCount'];
 
-        return $this->render('SonataMediaBundle:Media:view.html.twig', array(
-            'media'         => $media,
+        foreach($mediaAll as $key => $value)
+        {
+            $options[$key]['id'] = $value->getId();
+            $options[$key]['title'] = $value->getName();
+            $options[$key]['width'] = '';
+            $options[$key]['height'] = '';
+
+            if ($format_definition['width']) {
+                $options[$key]['width'] = $format_definition['width'];
+            }
+            if ($format_definition['height']) {
+                $options[$key]['height'] = $format_definition['height'];
+            }
+
+            $options[$key]['src'] = $provider->generatePublicUrl($value, $thumbnailFormat);
+
+            $providerReference = $value->getProviderReference();
+            $options[$key]['jsonData'] = $this->getApiJsonInformations($providerReference);
+            $options[$key]['duration'] = $this->convertISO8601Duration($options[$key]['jsonData']['duration']);
+
+            if($value->getId() === $id) {
+                $options[$key]['current'] = 'active';
+            }
+        }
+
+        return $this->render('SonataMediaBundle:Media:media_gallery.html.twig', array(
             'options'       => $options,
-            'providerRef'   => $providerRef,
             'formats'       => $this->get('sonata.media.pool')->getFormatNamesByContext($media->getContext()),
-            'format'        => $format,
-            'isTouchDevice' => $this->detectDevice()
+            'format'        => $format
         ));
     }
 
@@ -132,5 +141,18 @@ class MediaController extends BaseMediaController
             'id'           => $id,
             'providerName' => 'sonata.media.provider.custom'
         ));
+    }
+
+    /**
+     * Retrieve all medias with custom youtube provider
+     *
+     * @return MediaInterface
+     */
+    public function getAll()
+    {
+        return $this->get('sonata.media.manager.media')->findBy(
+            array('providerName' => 'sonata.media.provider.custom'),
+            array('createdAt' => 'DESC')
+        );
     }
 }

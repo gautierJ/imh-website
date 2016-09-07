@@ -18,7 +18,9 @@ class PageController extends Controller
     public function indexAction(Request $request)
     {
         //if($request->isXmlHttpRequest()) {
-            return $this->render('ImhBaseBundle:Page:index.html.twig');
+            return $this->render('ImhBaseBundle:Page:index.html.twig', array(
+                'isTouchDevice' => $this->detectDevice()
+            ));
         //}
     }
 

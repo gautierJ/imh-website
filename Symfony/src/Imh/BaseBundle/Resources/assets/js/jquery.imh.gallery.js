@@ -64,7 +64,7 @@
             $i = $('.' + itemSelector),
             orientation = getOrientation(ratio);
 
-        $g.removeClass('loading');
+        $g.addClass('is-loaded');
 
         // bug fix for Chrome
         var calcEltWidth = function($trgi) {
@@ -163,8 +163,8 @@
         $container.on('layoutComplete', function(){ onLayout(); });
 
         var loading = function(isVisible) {
-            isVisible ? $g.removeClass('loading')
-                      : $g.addClass('loading');
+            isVisible ? $g.addClass('is-loaded')
+                      : $g.removeClass('is-loaded');
         };
 
         var onLayout = function() {

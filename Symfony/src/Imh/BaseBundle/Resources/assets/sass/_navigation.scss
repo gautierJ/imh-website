@@ -1,6 +1,6 @@
 // Override default hamburger styles
 //============================================
-$hamburger-layer-color: $color-white;
+$hamburger-layer-color: white;
 @import "../../../../../../web/assets/vendor/css-hamburgers/_sass/hamburgers/hamburgers";
 
 .imh__header {
@@ -10,7 +10,7 @@ $hamburger-layer-color: $color-white;
 .imh__navigation {
   background: url("/bundles/imhbase/images/header-bg.png") repeat rgba(255, 208, 247, 0.04);
   border-bottom: 1px solid $color-grey-light;
-  border-top: 1px solid $color-white;
+  border-top: 1px solid white;
   height: 126px;
 
   .imh__container {
@@ -47,7 +47,7 @@ $hamburger-layer-color: $color-white;
 
     a, span {
       font-family: 'ralewaysemibold', $font-fallback;
-      color: $color-white;
+      color: white;
       font-size: $fourteenpx;
       display: block;
       padding: 0 20px;
@@ -66,20 +66,20 @@ $hamburger-layer-color: $color-white;
       line-height: 64px;
 
       &:hover {
-        background-color: $color-white;
+        background-color: white;
         color: $color-grey-darker;
         border: 1px solid $color-grey-darker;
       }
     }
 
     &.current {
-      background-color: $color-white;
+      background-color: white;
       border: 1px solid $color-grey-darker;
       border-bottom: none;
 
       span {
         color: $color-grey-darker;
-        border-bottom-color: $color-white;
+        border-bottom-color: white;
       }
     }
   }
@@ -140,7 +140,7 @@ $hamburger-layer-color: $color-white;
         border: none;
         background: none;
         span {
-          color: $color-white;
+          color: white;
           border: 1px solid $color-grey-medium;
         }
       }
@@ -201,7 +201,7 @@ $hamburger-layer-color: $color-white;
     font-family: "ralewaysemibold", Arial, Helvetica, sans-serif;
     display: inline-block;
     vertical-align: middle;
-    color: $color-white;
+    color: white;
     margin: 1px 7px 0 0;
   }
 

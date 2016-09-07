@@ -17,7 +17,7 @@ $fa-font-path: "../../../../assets/vendor/components-font-awesome/fonts";
   @include transform(translate(-50%, -50%));
   @include border-radius(4px);
   @include box-shadow(0, 0, 15px, 3px, $color-grey-dark);
-  background-color: $color-white;
+  background-color: white;
   position: absolute;
   min-height: 200px;
   width: 80%;
@@ -53,7 +53,7 @@ $fa-font-path: "../../../../assets/vendor/components-font-awesome/fonts";
 }
 
 .imh__container--wrapper {
-  background-color: $color-white;
+  background-color: white;
   padding: 30px 60px 0;
   width: 100%;
   -webkit-box-sizing: border-box; /* Safari 3.0 - 5.0, Chrome 1 - 9, Android 2.1 - 3.x */
@@ -136,7 +136,7 @@ $fa-font-path: "../../../../assets/vendor/components-font-awesome/fonts";
 
   button {
     text-transform: uppercase;
-    background-color: $color-white;
+    background-color: white;
     border: 1px solid $color-grey-medium;
     padding: 10px 22px;
     @include transition(all, .2s, ease-in, 0s);
@@ -144,7 +144,7 @@ $fa-font-path: "../../../../assets/vendor/components-font-awesome/fonts";
     &:hover {
       background-color: $color-brown-dark;
       border: 1px solid $color-brown-dark;
-      color: $color-white;
+      color: white;
     }
   }
 }

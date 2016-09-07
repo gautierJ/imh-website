@@ -25,7 +25,7 @@
                         <h1>Ionella&nbsp;</h1>
                         <h2>Marinutsa</h2>
                         <div class="wrap-loader">
-                            <div class="loader">
+                            <div class="loader-progress-bar" data-loading-bar>
                                 <img class="empty" src="{{ asset('bundles/imhbase/images/empty.gif') }}" />
                             </div>
                         </div>
@@ -64,7 +64,7 @@
                 context      = $('[data-content-home]'),
                 lang         = $('.block-language'),
                 langLinks    = lang.children('a'),
-                loader       = $('.loader'),
+                loader       = $('[data-loading-bar]'),
                 counter      = $('.progressCounter'),
                 triangle     = $('.block-triangle'),
                 titles       = ['.block-myself h1', '.block-myself h2', '.block-myself h3'],

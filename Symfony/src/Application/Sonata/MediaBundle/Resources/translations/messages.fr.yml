@@ -15,10 +15,6 @@ sonata:
         Nombre total <br> de vues
       share: >
         Partager <br> la vidéo :
-      play:       'Play'
-      pause:      'Pause'
-      volume:     'Volume'
-      fullscreen: 'Plein écran'
-      views:      'vues'
+      views:      'Vues'
 
 

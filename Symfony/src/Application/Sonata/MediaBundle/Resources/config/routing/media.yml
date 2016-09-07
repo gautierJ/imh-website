@@ -4,6 +4,14 @@ sonata_media_view:
     requirements:
         id:  \d+
 
+sonata_media_view_all:
+    path:     /view/{id}/{format}/all
+    defaults: { _controller: ApplicationSonataMediaBundle:MediaAll:view, id: 1, format: reference }
+    requirements:
+        id:  \d+
+    options:
+        expose: true
+
 sonata_media_download:
     path:     /download/{id}/{format}
     defaults: { _controller: SonataMediaBundle:Media:download, format: reference }

@@ -45,7 +45,7 @@
 {% endblock %}
 
 {% block main %}
-    <div class="imh__gallery-wrapper loading">
+    <div class="imh__gallery-wrapper">
         <div class="frame">
             <ul class="sonata-media-gallery-media-list clearfix slidee">
                {% spaceless %}
@@ -108,7 +108,7 @@
             {% endembed %}
         {% endif %}
     </div>
-    <img class="imh__spinner" src="{{ asset('bundles/imhbase/images/loader_white.svg') }}" alt="loading">
+    <i class="loader loader--white" aria-hidden="true"></i>
 
     <div class="row">
         <div class="col-md-24">

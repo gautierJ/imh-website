@@ -6418,8 +6418,8 @@
         expSelector       = 'is-expanded',
         hiddenSelector    = 'is-hidden',
         triggerSelector   = 'imh__trigger',
-        zoomSelector      = 'zoom',
-        closeSelector     = 'close',
+        $zoom             = $('[data-zoom]'),
+        $close            = $('[data-close]'),
         $container        = $('.' + containerSelector),
         $targetItem       = null,
         isClosed          = true,
@@ -6455,7 +6455,7 @@
             $i = $('.' + itemSelector),
             orientation = getOrientation(ratio);
 
-        $g.removeClass('loading');
+        $g.addClass('is-loaded');
 
         // bug fix for Chrome
         var calcEltWidth = function($trgi) {
@@ -6554,8 +6554,8 @@
         $container.on('layoutComplete', function(){ onLayout(); });
 
         var loading = function(isVisible) {
-            isVisible ? $g.removeClass('loading')
-                      : $g.addClass('loading');
+            isVisible ? $g.addClass('is-loaded')
+                      : $g.removeClass('is-loaded');
         };
 
         var onLayout = function() {
@@ -6590,7 +6590,7 @@
         });
 
         var closeItem = function($trgi) {
-            $trgi.find('.' + closeSelector).off().on('click', function(e) {
+            $close.off().on('click', function(e) {
                 $trgi.removeClass(expSelector);
                 getInactiveItems().removeClass(GalleryManager.cssAnimations[0]);
                 isClosed = true;

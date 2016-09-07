@@ -6801,60 +6801,99 @@ address {
   font-style: normal;
 }
 
-/* line 1, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_global.scss */
+@-webkit-keyframes make-rotation {
+  /* line 2, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_global.scss */
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  /* line 5, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_global.scss */
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes make-rotation {
+  /* line 11, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_global.scss */
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  /* line 14, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_global.scss */
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+/* line 20, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_global.scss */
 * {
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 
-/* line 6, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_global.scss */
+/* line 26, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_global.scss */
 html, body {
   height: 100%;
 }
 
-/* line 10, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_global.scss */
+/* line 30, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_global.scss */
 body {
   font-family: "toma_sansregular", Arial, Helvetica, sans-serif;
   font-size: 12px;
 }
 
-/* line 15, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_global.scss */
+/* line 35, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_global.scss */
 a {
   text-decoration: none;
   color: black;
   outline: none;
 }
 
-/* line 21, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_global.scss */
+/* line 41, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_global.scss */
 a.icon {
   display: inline-block;
 }
 
-/* line 25, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_global.scss */
+/* line 45, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_global.scss */
 ul, ol {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
-/* line 31, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_global.scss */
+/* line 51, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_global.scss */
 button {
   border: none;
   background: none;
 }
-/* line 35, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_global.scss */
+/* line 55, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_global.scss */
 button:focus {
   outline: none;
 }
 
-/* line 44, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_global.scss */
+/* line 64, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_global.scss */
 .imh__title {
   font-weight: normal;
 }
 
-/* line 46, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_global.scss */
+/* line 66, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_global.scss */
 .imh__title-h2 {
   font-family: "ralewaymedium", Arial, Helvetica, sans-serif;
   font-size: 1.167em;
@@ -6862,28 +6901,33 @@ button:focus {
   line-height: 40px;
   margin: 0 0 20px;
 }
+/* line 73, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_global.scss */
+.imh__title-h2 small {
+  font-size: 13px;
+  color: #3f3f3f;
+}
 
-/* line 54, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_global.scss */
+/* line 79, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_global.scss */
 .imh__title-h2--border {
   border: 1px solid lightgrey;
   background-color: #fcfcfc;
 }
 
-/* line 58, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_global.scss */
+/* line 83, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_global.scss */
 .imh__title-h3 {
   font-family: "ralewaymedium", Arial, Helvetica, sans-serif;
   font-size: 1.083em;
   margin-top: 10px;
 }
 
-/* line 64, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_global.scss */
+/* line 89, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_global.scss */
 > p {
   margin: 0;
   padding-bottom: 15px;
   border-bottom: 1px solid #898989;
 }
 
-/* line 70, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_global.scss */
+/* line 95, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_global.scss */
 .imh__bkg-image {
   position: absolute;
   top: 0;
@@ -6892,12 +6936,12 @@ button:focus {
   z-index: -1;
 }
 
-/* line 78, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_global.scss */
+/* line 103, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_global.scss */
 .imh__container-fluid {
   overflow: hidden;
 }
 
-/* line 82, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_global.scss */
+/* line 107, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_global.scss */
 .imh__content {
   position: relative;
   margin-left: -15px;
@@ -6913,14 +6957,14 @@ button:focus {
   clear: both;
 }
 
-/* line 87, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_global.scss */
+/* line 112, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_global.scss */
 .imh__container {
   position: relative;
   top: -34px;
   z-index: 1;
 }
 
-/* line 93, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_global.scss */
+/* line 118, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_global.scss */
 .imh__container--wrapper {
   margin-left: -15px;
   margin-right: -15px;
@@ -6938,7 +6982,7 @@ button:focus {
 .imh__container--wrapper:after {
   clear: both;
 }
-/* line 101, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_global.scss */
+/* line 126, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_global.scss */
 .imh__container--wrapper.imh__container--shadows::after, .imh__container--wrapper.imh__container--shadows::before {
   content: " ";
   position: absolute;
@@ -6947,31 +6991,31 @@ button:focus {
   height: 400px;
   z-index: -10;
 }
-/* line 110, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_global.scss */
+/* line 135, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_global.scss */
 .imh__container--wrapper.imh__container--shadows::before {
   left: 11px;
   box-shadow: -10px 0 4px whitesmoke;
   transform: rotate(-1deg);
 }
-/* line 116, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_global.scss */
+/* line 141, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_global.scss */
 .imh__container--wrapper.imh__container--shadows::after {
   right: 11px;
   box-shadow: 10px 0 4px whitesmoke;
   transform: rotate(1deg);
 }
 
-/* line 123, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_global.scss */
+/* line 148, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_global.scss */
 .empty {
   width: 0;
   height: 0;
 }
 
-/* line 128, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_global.scss */
+/* line 153, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_global.scss */
 .lazy {
   display: none;
 }
 
-/* line 132, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_global.scss */
+/* line 157, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_global.scss */
 .block-triangle {
   opacity: 0.4;
   /* Good browsers */
@@ -6994,7 +7038,7 @@ button:focus {
   /* Antialiasing - trick for firefox */
 }
 
-/* line 144, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_global.scss */
+/* line 169, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_global.scss */
 .imh__sidebar::after {
   content: '';
   display: inline-block;
@@ -7003,32 +7047,154 @@ button:focus {
   height: 100%;
 }
 
+/* line 178, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_global.scss */
+.imh__orientation-change {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.95);
+  z-index: 99999;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all 1.2s cubic-bezier(0.19, 1, 0.22, 1) 0s;
+  -o-transition: all 1.2s cubic-bezier(0.19, 1, 0.22, 1) 0s;
+  transition: all 1.2s cubic-bezier(0.19, 1, 0.22, 1) 0s;
+}
+/* line 190, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_global.scss */
+.imh__orientation-change .rotate-device, .imh__orientation-change .rotate-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+/* line 197, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_global.scss */
+.imh__orientation-change .rotate-device {
+  width: 50px;
+}
+/* line 201, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_global.scss */
+.imh__orientation-change .rotate-icon {
+  width: 20px;
+}
+/* line 205, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_global.scss */
+.imh__orientation-change .device-icon {
+  width: 100%;
+}
+
+/* line 212, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_global.scss */
+.svg {
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+
+/* line 218, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_global.scss */
+.icon {
+  display: inline-block;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+/* line 226, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_global.scss */
+.icon--rotate,
+.icon--device {
+  width: 100%;
+}
+
+/* line 232, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_global.scss */
+.loader {
+  border-width: 2px;
+  border-style: solid;
+  -webkit-animation: make-rotation 0.7s infinite linear;
+  -moz-animation: make-rotation 0.7s infinite linear;
+  -ms-animation: make-rotation 0.7s infinite linear;
+  -o-animation: make-rotation 0.7s infinite linear;
+  animation: make-rotation 0.7s infinite linear;
+}
+/* line 237, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_global.scss */
+.loader.loader--white {
+  border-color: rgba(255, 255, 255, 0.1);
+  border-left-color: white;
+}
+/* line 242, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_global.scss */
+.loader.loader--black {
+  border-color: rgba(0, 0, 0, 0.1);
+  border-left-color: black;
+}
+
+/* line 248, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_global.scss */
+.loader,
+.loader:after {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 38px;
+  width: 38px;
+  margin: -19px 0 0 -19px;
+}
+
+@media screen and (orientation: portrait) {
+  /* line 262, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_global.scss */
+  .imh__orientation-change {
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transform: scale(2, 2);
+    -moz-transform: scale(2, 2);
+    -o-transform: scale(2, 2);
+    transform: scale(2, 2);
+  }
+}
+@media screen and (orientation: landscape) and (max-width: 767px) {
+  /* line 270, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_global.scss */
+  html, body {
+    overflow: hidden;
+  }
+
+  /* line 274, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_global.scss */
+  .imh__orientation-change {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transform: scale(1, 1);
+    -moz-transform: scale(1, 1);
+    -o-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+}
 @media (max-width: 767px) {
-  /* line 156, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_global.scss */
+  /* line 282, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_global.scss */
   .imh__title-h2 {
     font-size: 1.25em;
     margin-bottom: 15px;
   }
 
-  /* line 161, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_global.scss */
+  /* line 287, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_global.scss */
   .imh__title-h2--border {
     border: none;
     line-height: 27px;
   }
 
-  /* line 166, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_global.scss */
+  /* line 292, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_global.scss */
   .imh__title-h3 {
     margin-top: 0;
     margin-bottom: 2px;
   }
 
-  /* line 171, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_global.scss */
+  /* line 297, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_global.scss */
   .imh__container--wrapper {
     border-top-width: 0;
     padding: 0;
   }
 
-  /* line 176, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_global.scss */
+  /* line 302, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_global.scss */
   .imh__content {
     padding-top: 60px;
     margin-left: 0;
@@ -7036,26 +7202,26 @@ button:focus {
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
-  /* line 184, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_global.scss */
+  /* line 310, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_global.scss */
   .imh__bkg-image {
     left: 0;
   }
 }
 @media (max-width: 991px) {
-  /* line 189, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_global.scss */
+  /* line 315, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_global.scss */
   .imh__container--shadows::after,
   .imh__container--shadows::before {
     display: none;
   }
 }
 @media (min-width: 992px) {
-  /* line 195, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_global.scss */
+  /* line 321, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_global.scss */
   .imh__container {
     width: 980px;
   }
 }
 @media (max-width: 1199px) {
-  /* line 201, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_global.scss */
+  /* line 327, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_global.scss */
   .imh__bkg-image {
     display: none !important;
   }
@@ -7435,8 +7601,9 @@ button:focus {
   /* line 94, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_navigation.scss */
   .imh__navigation {
     background: black !important;
-    background: rgba(0, 0, 0, 0.9) !important;
+    background: rgba(0, 0, 0, 0.95) !important;
     position: fixed;
+    display: table;
     top: 0;
     left: 0;
     height: 100% !important;
@@ -7458,7 +7625,7 @@ button:focus {
     -o-transition: opacity 0.5s ease-in, visibility 0.5s ease-in;
     transition: opacity 0.5s ease-in, visibility 0.5s ease-in;
   }
-  /* line 108, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_navigation.scss */
+  /* line 109, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_navigation.scss */
   .imh__navigation.is-visible {
     opacity: 1;
     /* Good browsers */
@@ -7474,13 +7641,24 @@ button:focus {
     z-index: 3;
     /*& + .hamburger-wrapper { border-bottom: 1px solid $color-grey-dark; }*/
   }
-
   /* line 116, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_navigation.scss */
+  .imh__navigation .imh__container {
+    top: -30px;
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  /* line 123, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_navigation.scss */
+  .imh__container {
+    top: 0;
+  }
+
+  /* line 127, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_navigation.scss */
   .imh__navigation-main {
     background: none;
     border: none;
   }
-  /* line 120, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_navigation.scss */
+  /* line 131, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_navigation.scss */
   .imh__navigation-main li {
     display: block;
     top: 0;
@@ -7489,25 +7667,25 @@ button:focus {
     z-index: inherit;
     margin: 0 0 7px;
   }
-  /* line 128, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_navigation.scss */
+  /* line 139, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_navigation.scss */
   .imh__navigation-main li.current {
     border: none;
     background: none;
   }
-  /* line 131, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_navigation.scss */
+  /* line 142, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_navigation.scss */
   .imh__navigation-main li.current span {
     color: white;
     border: 1px solid #898989;
   }
-  /* line 137, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_navigation.scss */
+  /* line 148, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_navigation.scss */
   .imh__navigation-main li a {
     transition: none;
   }
-  /* line 139, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_navigation.scss */
+  /* line 150, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_navigation.scss */
   .imh__navigation-main li a:hover {
     border: none;
   }
-  /* line 142, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_navigation.scss */
+  /* line 153, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_navigation.scss */
   .imh__navigation-main li a, .imh__navigation-main li span {
     display: inline-block;
     height: 50px;
@@ -7516,12 +7694,7 @@ button:focus {
     width: 100%;
   }
 
-  /* line 152, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_navigation.scss */
-  .imh__container {
-    top: 0;
-  }
-
-  /* line 156, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_navigation.scss */
+  /* line 163, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_navigation.scss */
   .globe {
     padding: 12px 15px;
     display: inline-block;
@@ -7530,29 +7703,29 @@ button:focus {
     background: none;
   }
 
-  /* line 164, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_navigation.scss */
+  /* line 171, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_navigation.scss */
   .audio {
     display: inline-block;
     vertical-align: middle;
   }
 
-  /* line 169, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_navigation.scss */
+  /* line 176, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_navigation.scss */
   .audio--play {
     display: none;
   }
 
-  /* line 173, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_navigation.scss */
+  /* line 180, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_navigation.scss */
   .hamburger-wrapper {
     background: black;
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.97);
     position: fixed;
     width: 100%;
     height: 60px;
-    border-bottom: 1px solid #3f3f3f;
+    border-bottom: 1px solid #222222;
     z-index: 3;
   }
 
-  /* line 183, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_navigation.scss */
+  /* line 190, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_navigation.scss */
   .hamburger {
     position: fixed;
     right: 0;
@@ -7560,7 +7733,7 @@ button:focus {
     display: inline-block;
     padding: 18px 15px;
   }
-  /* line 190, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_navigation.scss */
+  /* line 197, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_navigation.scss */
   .hamburger:hover {
     opacity: 1;
     /* Good browsers */
@@ -7574,7 +7747,7 @@ button:focus {
     /* IE 8 */
   }
 
-  /* line 193, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_navigation.scss */
+  /* line 200, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_navigation.scss */
   .hamburger-label {
     font-family: "ralewaysemibold", Arial, Helvetica, sans-serif;
     display: inline-block;
@@ -7583,13 +7756,13 @@ button:focus {
     margin: 1px 7px 0 0;
   }
 
-  /* line 201, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_navigation.scss */
+  /* line 208, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_navigation.scss */
   .hamburger-box {
     width: 35px;
     vertical-align: middle;
   }
 
-  /* line 208, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_navigation.scss */
+  /* line 215, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_navigation.scss */
   .hamburger-inner,
   .hamburger-inner::before,
   .hamburger-inner::after {
@@ -7688,7 +7861,7 @@ button:focus {
     display: inline-block;
     height: 50px;
     line-height: 50px;
-    max-width: 150px;
+    max-width: 75px;
     width: 100%;
     font-size: 1.167em;
     overflow: inherit;
@@ -7710,7 +7883,6 @@ button:focus {
   margin-left: -15px;
   margin-right: -15px;
   background: url("/bundles/imhbase/images/header-bg.png") repeat scroll 0 0;
-  min-height: 110px;
   border-top: 1px solid lightgrey;
   color: #898989;
   padding-top: 20px;
@@ -7724,18 +7896,19 @@ button:focus {
 .imh__footer:after {
   clear: both;
 }
-/* line 9, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_footer.scss */
+/* line 8, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_footer.scss */
 .imh__footer .imh__container {
   padding: 0;
   top: 0;
 }
 
-/* line 15, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_footer.scss */
+/* line 14, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_footer.scss */
 .imh__footer-column {
   border-right: 1px dotted #dddddd;
   text-align: left;
   vertical-align: top;
-  min-height: 118px;
+  display: table-cell;
+  float: none;
 }
 /* line 21, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_footer.scss */
 .imh__footer-column h3 {
@@ -7746,7 +7919,7 @@ button:focus {
 }
 /* line 28, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_footer.scss */
 .imh__footer-column ul {
-  list-style: square inside none;
+  list-style: none;
 }
 /* line 32, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_footer.scss */
 .imh__footer-column li {
@@ -7757,149 +7930,200 @@ button:focus {
 .imh__footer-column li a, .imh__footer-column li span {
   color: #898989;
   display: inline-block;
-  -webkit-transition: all, 0.2s, ease-in, 0s;
-  -o-transition: all, 0.2s, ease-in, 0s;
-  transition: all, 0.2s, ease-in, 0s;
+  -webkit-transition: all 0.2s ease-in 0s;
+  -o-transition: all 0.2s ease-in 0s;
+  transition: all 0.2s ease-in 0s;
 }
-/* line 42, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_footer.scss */
+/* line 41, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_footer.scss */
 .imh__footer-column li a:hover, .imh__footer-column li span:hover {
   color: #3f3f3f;
 }
-/* line 48, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_footer.scss */
+/* line 46, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_footer.scss */
 .imh__footer-column li a {
   border: 1px solid transparent;
   padding: 6px 0;
 }
-/* line 53, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_footer.scss */
+/* line 51, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_footer.scss */
 .imh__footer-column li.current {
   list-style: none;
 }
-/* line 55, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_footer.scss */
+/* line 53, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_footer.scss */
 .imh__footer-column li.current a, .imh__footer-column li.current span {
   color: #3f3f3f;
   background: white;
   border: 1px solid lightgrey;
   border-radius: 16px;
-  padding: 6px 14px;
+  padding: 6px 14px 8px;
 }
-/* line 65, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_footer.scss */
+/* line 62, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_footer.scss */
 .imh__footer-column li .fa-home {
   display: none;
 }
 
-/* line 71, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_footer.scss */
+/* line 68, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_footer.scss */
+.imh__footer-column--last {
+  border: none;
+}
+
+/* line 72, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_footer.scss */
+.imh__footer-column--extraspace {
+  padding-left: 40px;
+}
+
+/* line 76, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_footer.scss */
 .imh__footer-wrap {
   padding: 7px 0;
 }
 
-/* line 78, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_footer.scss */
-.imh__footer-column--site ul {
-  width: 175px;
-}
 /* line 82, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_footer.scss */
+.imh__footer-column--site ul {
+  width: 152px;
+}
+/* line 3, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_mixins.scss */
+.imh__footer-column--site ul:before, .imh__footer-column--site ul:after {
+  content: " ";
+  display: table;
+}
+/* line 7, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_mixins.scss */
+.imh__footer-column--site ul:after {
+  clear: both;
+}
+/* line 87, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_footer.scss */
 .imh__footer-column--site li {
   float: left;
   padding-right: 10px;
 }
-/* line 87, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_footer.scss */
+/* line 91, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_footer.scss */
 .imh__footer-column--site li:nth-child(even) {
   padding-right: 0;
 }
 
-/* line 122, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_footer.scss */
-.imh__footer-column--follow .fb, .imh__footer-column--follow .tw, .imh__footer-column--follow .gp {
-  display: inline-block;
-  vertical-align: top;
-  margin-right: 7px;
-}
-/* line 128, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_footer.scss */
-.imh__footer-column--follow .fb img {
-  background: url("/bundles/imhbase/images/sprite.png") no-repeat scroll -8px -131px;
-  height: 16px;
-  width: 8px;
-}
-/* line 134, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_footer.scss */
-.imh__footer-column--follow .fb:hover img {
-  background-position: 0 -131px;
-}
-/* line 140, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_footer.scss */
-.imh__footer-column--follow .tw img {
-  background: url("/bundles/imhbase/images/sprite.png") no-repeat scroll -34px -131px;
-  height: 16px;
-  width: 18px;
-}
-/* line 146, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_footer.scss */
-.imh__footer-column--follow .tw:hover img {
-  background-position: -16px -131px;
-}
-/* line 152, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_footer.scss */
-.imh__footer-column--follow .gp img {
-  background: url("/bundles/imhbase/images/sprite.png") no-repeat scroll -74px -131px;
-  height: 18px;
-  width: 22px;
-}
-/* line 158, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_footer.scss */
-.imh__footer-column--follow .gp:hover img {
-  background-position: -52px -131px;
+/* line 101, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_footer.scss */
+.imh__footer-column--language {
+  text-align: center;
 }
 
-/* line 165, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_footer.scss */
-.imh__footer-column--powered {
-  border: none;
+/* line 105, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_footer.scss */
+.imh__footer-column--follow {
+  text-align: center;
 }
-/* line 168, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_footer.scss */
+/* line 108, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_footer.scss */
+.imh__footer-column--follow .social {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 4px;
+  font-size: 20px;
+  color: #3f3f3f;
+  width: 18px;
+}
+/* line 116, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_footer.scss */
+.imh__footer-column--follow .social:hover {
+  color: black;
+}
+
+/* line 122, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_footer.scss */
+.imh__footer-column--powered {
+  text-align: center;
+}
+/* line 125, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_footer.scss */
 .imh__footer-column--powered a {
   display: block;
 }
-/* line 171, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_footer.scss */
-.imh__footer-column--powered a:hover img {
-  background-position: -158px -131px;
+/* line 129, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_footer.scss */
+.imh__footer-column--powered .icon--symfony {
+  width: 100%;
+  height: 55px;
+  fill: #3f3f3f;
+  -webkit-transition: fill 0.2s ease-in 0s;
+  -o-transition: fill 0.2s ease-in 0s;
+  transition: fill 0.2s ease-in 0s;
 }
-/* line 177, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_footer.scss */
-.imh__footer-column--powered img {
-  background: url("/bundles/imhbase/images/sprite.png") no-repeat scroll -221px -131px;
-  width: 63px;
-  height: 61px;
+/* line 135, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_footer.scss */
+.imh__footer-column--powered .icon--symfony:hover {
+  fill: black;
 }
 
-/* line 184, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_footer.scss */
+/* line 141, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_footer.scss */
 .imh__footer-rights {
   display: block;
   font-size: 0.917em;
-  margin-bottom: 15px;
+  margin: 20px 0 15px;
 }
-/* line 189, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_footer.scss */
+/* line 146, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_footer.scss */
 .imh__footer-rights span {
   font-size: 1.167em;
 }
+/* line 150, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_footer.scss */
+.imh__footer-rights br {
+  display: none;
+}
 
 @media (max-width: 767px) {
-  /* line 199, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_footer.scss */
+  /* line 157, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_footer.scss */
+  .imh__footer {
+    color: white;
+    border-top: none;
+    background: black;
+  }
+  /* line 162, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_footer.scss */
   .imh__footer .imh__container {
     padding: 0;
   }
 
-  /* line 204, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_footer.scss */
+  /* line 167, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_footer.scss */
   .imh__footer-column {
     margin-top: 10px;
-    min-height: inherit;
-    border-right: none;
+    display: block;
+    float: left;
+    border-right-color: #898989;
   }
 
-  /* line 211, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_footer.scss */
+  /* line 175, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_footer.scss */
   .imh__footer-column--follow,
   .imh__footer-column--powered {
     text-align: center;
   }
+
+  /* line 179, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_footer.scss */
+  .imh__footer-column--follow .social {
+    color: white;
+  }
+  /* line 182, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_footer.scss */
+  .imh__footer-column--follow .social:first-child {
+    margin-left: 0;
+  }
+
+  /* line 187, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_footer.scss */
+  .imh__footer-column--powered .icon--symfony {
+    height: 47px;
+    fill: black;
+    -webkit-transition: none;
+    -o-transition: none;
+    transition: none;
+  }
+  /* line 192, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_footer.scss */
+  .imh__footer-column--powered .icon--symfony:hover {
+    fill: black;
+  }
+
+  /* line 197, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_footer.scss */
+  .imh__footer-rights {
+    margin: 0 0 20px;
+    color: #898989;
+  }
+  /* line 201, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_footer.scss */
+  .imh__footer-rights br {
+    display: inline;
+  }
 }
 @media (min-width: 768px) and (max-width: 991px) {
-  /* line 217, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_footer.scss */
+  /* line 206, ../home/gautier/Projects/imh-website/Symfony/src/Imh/BaseBundle/Resources/assets/sass/_footer.scss */
   .imh__footer-column--follow {
     border: none;
   }
 }
 @-webkit-keyframes pop-icon-in {
-  /* line 5, assetic_compassaFAz97.scss */
+  /* line 5, assetic_compass2rrOBf.scss */
   0% {
     opacity: 0;
     /* Good browsers */
@@ -7917,7 +8141,7 @@ button:focus {
     transform: scale(0);
   }
 
-  /* line 10, assetic_compassaFAz97.scss */
+  /* line 10, assetic_compass2rrOBf.scss */
   50% {
     -webkit-transform: scale(1.1);
     -moz-transform: scale(1.1);
@@ -7926,7 +8150,7 @@ button:focus {
     zoom: 100%;
   }
 
-  /* line 14, assetic_compassaFAz97.scss */
+  /* line 14, assetic_compass2rrOBf.scss */
   100% {
     opacity: 0.8;
     /* Good browsers */
@@ -7946,7 +8170,7 @@ button:focus {
 }
 
 @-moz-keyframes pop-icon-in {
-  /* line 5, assetic_compassaFAz97.scss */
+  /* line 5, assetic_compass2rrOBf.scss */
   0% {
     opacity: 0;
     /* Good browsers */
@@ -7964,7 +8188,7 @@ button:focus {
     transform: scale(0);
   }
 
-  /* line 10, assetic_compassaFAz97.scss */
+  /* line 10, assetic_compass2rrOBf.scss */
   50% {
     -webkit-transform: scale(1.1);
     -moz-transform: scale(1.1);
@@ -7973,7 +8197,7 @@ button:focus {
     zoom: 100%;
   }
 
-  /* line 14, assetic_compassaFAz97.scss */
+  /* line 14, assetic_compass2rrOBf.scss */
   100% {
     opacity: 0.8;
     /* Good browsers */
@@ -7993,7 +8217,7 @@ button:focus {
 }
 
 @-ms-keyframes pop-icon-in {
-  /* line 5, assetic_compassaFAz97.scss */
+  /* line 5, assetic_compass2rrOBf.scss */
   0% {
     opacity: 0;
     /* Good browsers */
@@ -8011,7 +8235,7 @@ button:focus {
     transform: scale(0);
   }
 
-  /* line 10, assetic_compassaFAz97.scss */
+  /* line 10, assetic_compass2rrOBf.scss */
   50% {
     -webkit-transform: scale(1.1);
     -moz-transform: scale(1.1);
@@ -8020,7 +8244,7 @@ button:focus {
     zoom: 100%;
   }
 
-  /* line 14, assetic_compassaFAz97.scss */
+  /* line 14, assetic_compass2rrOBf.scss */
   100% {
     opacity: 0.8;
     /* Good browsers */
@@ -8040,7 +8264,7 @@ button:focus {
 }
 
 @-o-keyframes pop-icon-in {
-  /* line 5, assetic_compassaFAz97.scss */
+  /* line 5, assetic_compass2rrOBf.scss */
   0% {
     opacity: 0;
     /* Good browsers */
@@ -8058,7 +8282,7 @@ button:focus {
     transform: scale(0);
   }
 
-  /* line 10, assetic_compassaFAz97.scss */
+  /* line 10, assetic_compass2rrOBf.scss */
   50% {
     -webkit-transform: scale(1.1);
     -moz-transform: scale(1.1);
@@ -8067,7 +8291,7 @@ button:focus {
     zoom: 100%;
   }
 
-  /* line 14, assetic_compassaFAz97.scss */
+  /* line 14, assetic_compass2rrOBf.scss */
   100% {
     opacity: 0.8;
     /* Good browsers */
@@ -8087,7 +8311,7 @@ button:focus {
 }
 
 @keyframes pop-icon-in {
-  /* line 5, assetic_compassaFAz97.scss */
+  /* line 5, assetic_compass2rrOBf.scss */
   0% {
     opacity: 0;
     /* Good browsers */
@@ -8105,7 +8329,7 @@ button:focus {
     transform: scale(0);
   }
 
-  /* line 10, assetic_compassaFAz97.scss */
+  /* line 10, assetic_compass2rrOBf.scss */
   50% {
     -webkit-transform: scale(1.1);
     -moz-transform: scale(1.1);
@@ -8114,7 +8338,7 @@ button:focus {
     zoom: 100%;
   }
 
-  /* line 14, assetic_compassaFAz97.scss */
+  /* line 14, assetic_compass2rrOBf.scss */
   100% {
     opacity: 0.8;
     /* Good browsers */
@@ -8134,7 +8358,7 @@ button:focus {
 }
 
 @-webkit-keyframes pop-icon-out {
-  /* line 21, assetic_compassaFAz97.scss */
+  /* line 21, assetic_compass2rrOBf.scss */
   0% {
     opacity: 0.8;
     /* Good browsers */
@@ -8152,7 +8376,7 @@ button:focus {
     transform: scale(1);
   }
 
-  /* line 25, assetic_compassaFAz97.scss */
+  /* line 25, assetic_compass2rrOBf.scss */
   100% {
     opacity: 0;
     /* Good browsers */
@@ -8172,7 +8396,7 @@ button:focus {
 }
 
 @-moz-keyframes pop-icon-out {
-  /* line 21, assetic_compassaFAz97.scss */
+  /* line 21, assetic_compass2rrOBf.scss */
   0% {
     opacity: 0.8;
     /* Good browsers */
@@ -8190,7 +8414,7 @@ button:focus {
     transform: scale(1);
   }
 
-  /* line 25, assetic_compassaFAz97.scss */
+  /* line 25, assetic_compass2rrOBf.scss */
   100% {
     opacity: 0;
     /* Good browsers */
@@ -8210,7 +8434,7 @@ button:focus {
 }
 
 @-ms-keyframes pop-icon-out {
-  /* line 21, assetic_compassaFAz97.scss */
+  /* line 21, assetic_compass2rrOBf.scss */
   0% {
     opacity: 0.8;
     /* Good browsers */
@@ -8228,7 +8452,7 @@ button:focus {
     transform: scale(1);
   }
 
-  /* line 25, assetic_compassaFAz97.scss */
+  /* line 25, assetic_compass2rrOBf.scss */
   100% {
     opacity: 0;
     /* Good browsers */
@@ -8248,7 +8472,7 @@ button:focus {
 }
 
 @-o-keyframes pop-icon-out {
-  /* line 21, assetic_compassaFAz97.scss */
+  /* line 21, assetic_compass2rrOBf.scss */
   0% {
     opacity: 0.8;
     /* Good browsers */
@@ -8266,7 +8490,7 @@ button:focus {
     transform: scale(1);
   }
 
-  /* line 25, assetic_compassaFAz97.scss */
+  /* line 25, assetic_compass2rrOBf.scss */
   100% {
     opacity: 0;
     /* Good browsers */
@@ -8286,7 +8510,7 @@ button:focus {
 }
 
 @keyframes pop-icon-out {
-  /* line 21, assetic_compassaFAz97.scss */
+  /* line 21, assetic_compass2rrOBf.scss */
   0% {
     opacity: 0.8;
     /* Good browsers */
@@ -8304,7 +8528,7 @@ button:focus {
     transform: scale(1);
   }
 
-  /* line 25, assetic_compassaFAz97.scss */
+  /* line 25, assetic_compass2rrOBf.scss */
   100% {
     opacity: 0;
     /* Good browsers */
@@ -8324,7 +8548,7 @@ button:focus {
 }
 
 @-webkit-keyframes make-opacity-in {
-  /* line 32, assetic_compassaFAz97.scss */
+  /* line 32, assetic_compass2rrOBf.scss */
   0% {
     opacity: 0;
     /* Good browsers */
@@ -8338,7 +8562,7 @@ button:focus {
     /* IE 8 */
   }
 
-  /* line 35, assetic_compassaFAz97.scss */
+  /* line 35, assetic_compass2rrOBf.scss */
   100% {
     opacity: 1;
     /* Good browsers */
@@ -8354,7 +8578,7 @@ button:focus {
 }
 
 @-moz-keyframes make-opacity-in {
-  /* line 32, assetic_compassaFAz97.scss */
+  /* line 32, assetic_compass2rrOBf.scss */
   0% {
     opacity: 0;
     /* Good browsers */
@@ -8368,7 +8592,7 @@ button:focus {
     /* IE 8 */
   }
 
-  /* line 35, assetic_compassaFAz97.scss */
+  /* line 35, assetic_compass2rrOBf.scss */
   100% {
     opacity: 1;
     /* Good browsers */
@@ -8384,7 +8608,7 @@ button:focus {
 }
 
 @-ms-keyframes make-opacity-in {
-  /* line 32, assetic_compassaFAz97.scss */
+  /* line 32, assetic_compass2rrOBf.scss */
   0% {
     opacity: 0;
     /* Good browsers */
@@ -8398,7 +8622,7 @@ button:focus {
     /* IE 8 */
   }
 
-  /* line 35, assetic_compassaFAz97.scss */
+  /* line 35, assetic_compass2rrOBf.scss */
   100% {
     opacity: 1;
     /* Good browsers */
@@ -8414,7 +8638,7 @@ button:focus {
 }
 
 @-o-keyframes make-opacity-in {
-  /* line 32, assetic_compassaFAz97.scss */
+  /* line 32, assetic_compass2rrOBf.scss */
   0% {
     opacity: 0;
     /* Good browsers */
@@ -8428,7 +8652,7 @@ button:focus {
     /* IE 8 */
   }
 
-  /* line 35, assetic_compassaFAz97.scss */
+  /* line 35, assetic_compass2rrOBf.scss */
   100% {
     opacity: 1;
     /* Good browsers */
@@ -8444,7 +8668,7 @@ button:focus {
 }
 
 @keyframes make-opacity-in {
-  /* line 32, assetic_compassaFAz97.scss */
+  /* line 32, assetic_compass2rrOBf.scss */
   0% {
     opacity: 0;
     /* Good browsers */
@@ -8458,7 +8682,7 @@ button:focus {
     /* IE 8 */
   }
 
-  /* line 35, assetic_compassaFAz97.scss */
+  /* line 35, assetic_compass2rrOBf.scss */
   100% {
     opacity: 1;
     /* Good browsers */
@@ -8474,7 +8698,7 @@ button:focus {
 }
 
 @-webkit-keyframes make-opacity-out {
-  /* line 41, assetic_compassaFAz97.scss */
+  /* line 41, assetic_compass2rrOBf.scss */
   0% {
     opacity: 1;
     /* Good browsers */
@@ -8488,7 +8712,7 @@ button:focus {
     /* IE 8 */
   }
 
-  /* line 44, assetic_compassaFAz97.scss */
+  /* line 44, assetic_compass2rrOBf.scss */
   100% {
     opacity: 0;
     /* Good browsers */
@@ -8504,7 +8728,7 @@ button:focus {
 }
 
 @-moz-keyframes make-opacity-out {
-  /* line 41, assetic_compassaFAz97.scss */
+  /* line 41, assetic_compass2rrOBf.scss */
   0% {
     opacity: 1;
     /* Good browsers */
@@ -8518,7 +8742,7 @@ button:focus {
     /* IE 8 */
   }
 
-  /* line 44, assetic_compassaFAz97.scss */
+  /* line 44, assetic_compass2rrOBf.scss */
   100% {
     opacity: 0;
     /* Good browsers */
@@ -8534,7 +8758,7 @@ button:focus {
 }
 
 @-ms-keyframes make-opacity-out {
-  /* line 41, assetic_compassaFAz97.scss */
+  /* line 41, assetic_compass2rrOBf.scss */
   0% {
     opacity: 1;
     /* Good browsers */
@@ -8548,7 +8772,7 @@ button:focus {
     /* IE 8 */
   }
 
-  /* line 44, assetic_compassaFAz97.scss */
+  /* line 44, assetic_compass2rrOBf.scss */
   100% {
     opacity: 0;
     /* Good browsers */
@@ -8564,7 +8788,7 @@ button:focus {
 }
 
 @-o-keyframes make-opacity-out {
-  /* line 41, assetic_compassaFAz97.scss */
+  /* line 41, assetic_compass2rrOBf.scss */
   0% {
     opacity: 1;
     /* Good browsers */
@@ -8578,7 +8802,7 @@ button:focus {
     /* IE 8 */
   }
 
-  /* line 44, assetic_compassaFAz97.scss */
+  /* line 44, assetic_compass2rrOBf.scss */
   100% {
     opacity: 0;
     /* Good browsers */
@@ -8594,7 +8818,7 @@ button:focus {
 }
 
 @keyframes make-opacity-out {
-  /* line 41, assetic_compassaFAz97.scss */
+  /* line 41, assetic_compass2rrOBf.scss */
   0% {
     opacity: 1;
     /* Good browsers */
@@ -8608,7 +8832,7 @@ button:focus {
     /* IE 8 */
   }
 
-  /* line 44, assetic_compassaFAz97.scss */
+  /* line 44, assetic_compass2rrOBf.scss */
   100% {
     opacity: 0;
     /* Good browsers */
@@ -8623,17 +8847,17 @@ button:focus {
   }
 }
 
-/* line 49, assetic_compassaFAz97.scss */
+/* line 49, assetic_compass2rrOBf.scss */
 body {
   background-color: black;
 }
 
-/* line 53, assetic_compassaFAz97.scss */
+/* line 53, assetic_compass2rrOBf.scss */
 .imh__container-fluid {
   height: 100%;
   position: relative;
 }
-/* line 57, assetic_compassaFAz97.scss */
+/* line 57, assetic_compass2rrOBf.scss */
 .imh__container-fluid::before, .imh__container-fluid::after {
   content: '';
   position: absolute;
@@ -8653,16 +8877,16 @@ body {
   /* IE 8 */
   z-index: 1;
 }
-/* line 68, assetic_compassaFAz97.scss */
+/* line 68, assetic_compass2rrOBf.scss */
 .imh__container-fluid::before {
   top: 0;
 }
-/* line 72, assetic_compassaFAz97.scss */
+/* line 72, assetic_compass2rrOBf.scss */
 .imh__container-fluid::after {
   bottom: 3px;
 }
 
-/* line 77, assetic_compassaFAz97.scss */
+/* line 77, assetic_compass2rrOBf.scss */
 .imh__content {
   height: -webkit-calc(100% - 200px);
   height: calc(100% - 200px);
@@ -8670,7 +8894,7 @@ body {
   top: 100px;
 }
 
-/* line 83, assetic_compassaFAz97.scss */
+/* line 83, assetic_compass2rrOBf.scss */
 .imh__sidebar {
   -webkit-box-sizing: content-box;
   -moz-box-sizing: content-box;
@@ -8692,14 +8916,14 @@ body {
   padding: 0 80px 0 120px;
   z-index: 0;
 }
-/* line 102, assetic_compassaFAz97.scss */
+/* line 102, assetic_compass2rrOBf.scss */
 .imh__sidebar.is-hidden {
   padding: 0;
   right: -95px;
   background: none;
   box-shadow: none;
 }
-/* line 108, assetic_compassaFAz97.scss */
+/* line 108, assetic_compass2rrOBf.scss */
 .imh__sidebar.is-hidden .imh__sidebar-verticalcenter {
   opacity: 0;
   /* Good browsers */
@@ -8718,12 +8942,12 @@ body {
   animation: make-opacity-out .1s;
   visibility: hidden;
 }
-/* line 114, assetic_compassaFAz97.scss */
+/* line 114, assetic_compass2rrOBf.scss */
 .imh__sidebar.is-hidden .imh__navigation-menu-display {
   background-color: black;
   left: -12px;
 }
-/* line 118, assetic_compassaFAz97.scss */
+/* line 118, assetic_compass2rrOBf.scss */
 .imh__sidebar.is-hidden .imh__navigation-menu-display .fa {
   left: -5px;
   -webkit-transform: rotate(180deg);
@@ -8732,7 +8956,7 @@ body {
   transform: rotate(180deg);
 }
 
-/* line 126, assetic_compassaFAz97.scss */
+/* line 126, assetic_compass2rrOBf.scss */
 .imh__sidebar-verticalcenter {
   width: -webkit-calc(100% - 1px);
   width: calc(100% - 1px);
@@ -8756,7 +8980,7 @@ body {
   display: inline-block;
 }
 
-/* line 135, assetic_compassaFAz97.scss */
+/* line 135, assetic_compass2rrOBf.scss */
 .imh__navigation-menu-display {
   -webkit-transform: translate(0, -50%);
   -ms-transform: translate(0, -50%);
@@ -8772,7 +8996,7 @@ body {
   background-color: rgba(255, 255, 255, 0.1);
   padding: 27px 12px;
 }
-/* line 145, assetic_compassaFAz97.scss */
+/* line 145, assetic_compass2rrOBf.scss */
 .imh__navigation-menu-display .fa {
   -webkit-transform-origin: 50% 53%;
   -khtml-transform-origin: 50% 53%;
@@ -8784,100 +9008,100 @@ body {
   left: 2px;
   color: white;
 }
-/* line 153, assetic_compassaFAz97.scss */
+/* line 153, assetic_compass2rrOBf.scss */
 .imh__navigation-menu-display:hover {
   background-color: white;
   background-color: rgba(255, 255, 255, 0.2);
 }
 
-/* line 160, assetic_compassaFAz97.scss */
+/* line 160, assetic_compass2rrOBf.scss */
 .imh__gallery-menu li.first,
 .imh__navigation-menu > span {
   color: #898989;
 }
 
-/* line 164, assetic_compassaFAz97.scss */
+/* line 164, assetic_compass2rrOBf.scss */
 .imh__navigation-menu {
   position: static;
   display: block;
 }
-/* line 168, assetic_compassaFAz97.scss */
+/* line 168, assetic_compass2rrOBf.scss */
 .imh__navigation-menu ul {
   background: black;
   border: 1px solid #3f3f3f;
 }
-/* line 173, assetic_compassaFAz97.scss */
+/* line 173, assetic_compass2rrOBf.scss */
 .imh__navigation-menu ul li:not(.gallery) a, .imh__navigation-menu ul li:not(.gallery) span {
   color: lightgrey;
   white-space: nowrap;
 }
-/* line 179, assetic_compassaFAz97.scss */
+/* line 179, assetic_compass2rrOBf.scss */
 .imh__navigation-menu ul li:not(.gallery):hover a, .imh__navigation-menu ul li:not(.gallery):hover span {
   color: white;
 }
-/* line 182, assetic_compassaFAz97.scss */
+/* line 182, assetic_compass2rrOBf.scss */
 .imh__navigation-menu ul li:not(.gallery):hover::after {
   background-color: white;
   border-color: white;
 }
-/* line 189, assetic_compassaFAz97.scss */
+/* line 189, assetic_compass2rrOBf.scss */
 .imh__navigation-menu ul li:not(.gallery).current a, .imh__navigation-menu ul li:not(.gallery).current span {
   background: black;
   border-color: #3f3f3f;
   color: lightgrey;
 }
-/* line 195, assetic_compassaFAz97.scss */
+/* line 195, assetic_compass2rrOBf.scss */
 .imh__navigation-menu ul li:not(.gallery).current::after {
   background-color: white;
   border-color: white;
   box-shadow: none;
 }
-/* line 204, assetic_compassaFAz97.scss */
+/* line 204, assetic_compass2rrOBf.scss */
 .imh__navigation-menu .fa-home {
   display: none;
 }
-/* line 207, assetic_compassaFAz97.scss */
+/* line 207, assetic_compass2rrOBf.scss */
 .imh__navigation-menu .fa-home + span {
   display: inline;
 }
 
-/* line 213, assetic_compassaFAz97.scss */
+/* line 213, assetic_compass2rrOBf.scss */
 .imh__gallery-menu {
   margin-top: 50px;
 }
-/* line 216, assetic_compassaFAz97.scss */
+/* line 216, assetic_compass2rrOBf.scss */
 .imh__gallery-menu > ul {
   border: none;
   margin: 0;
 }
-/* line 221, assetic_compassaFAz97.scss */
+/* line 221, assetic_compass2rrOBf.scss */
 .imh__gallery-menu li:first-child {
   margin-top: 17px;
 }
-/* line 225, assetic_compassaFAz97.scss */
+/* line 225, assetic_compass2rrOBf.scss */
 .imh__gallery-menu li:last-child {
   margin-bottom: 17px;
 }
-/* line 229, assetic_compassaFAz97.scss */
+/* line 229, assetic_compass2rrOBf.scss */
 .imh__gallery-menu li::after {
   border-color: #222222;
 }
 
-/* line 234, assetic_compassaFAz97.scss */
+/* line 234, assetic_compass2rrOBf.scss */
 .imh__navigation-menu-social {
   margin-top: 50px;
 }
-/* line 237, assetic_compassaFAz97.scss */
+/* line 237, assetic_compass2rrOBf.scss */
 .imh__navigation-menu-social .imh__navigation-menu-title {
   margin-bottom: 15px;
 }
-/* line 241, assetic_compassaFAz97.scss */
+/* line 241, assetic_compass2rrOBf.scss */
 .imh__navigation-menu-social .icon {
   display: block;
   width: 100%;
   height: 100%;
 }
-/* line 247, assetic_compassaFAz97.scss */
+/* line 247, assetic_compass2rrOBf.scss */
 .imh__navigation-menu-social .icon:hover .fa-inverse {
   color: white;
   opacity: 1;
@@ -8891,7 +9115,7 @@ body {
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
   /* IE 8 */
 }
-/* line 254, assetic_compassaFAz97.scss */
+/* line 254, assetic_compass2rrOBf.scss */
 .imh__navigation-menu-social .fa-inverse {
   color: #898989;
   opacity: 0.4;
@@ -8909,20 +9133,40 @@ body {
   transition: opacity 0.3s linear 0s;
 }
 
-/* line 261, assetic_compassaFAz97.scss */
+/* line 261, assetic_compass2rrOBf.scss */
 .imh__gallery-wrapper {
-  -webkit-transition: opacity 0.3s linear 0.5s;
-  -o-transition: opacity 0.3s linear 0.5s;
-  transition: opacity 0.3s linear 0.5s;
+  -webkit-transition: opacity 0.5s linear 0.5s;
+  -o-transition: opacity 0.5s linear 0.5s;
+  transition: opacity 0.5s linear 0.5s;
+  opacity: 0;
+  /* Good browsers */
+  -moz-opacity: 0;
+  /* Netscape */
+  -khtml-opacity: 0;
+  /* Safari 1.x */
+  filter: alpha(opacity=0);
+  /* IE 5-7 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  /* IE 8 */
   height: 100%;
   position: relative;
   padding: 25px;
 }
-/* line 267, assetic_compassaFAz97.scss */
-.imh__gallery-wrapper.loading {
-  -webkit-transition: opacity 0.2s linear 0s;
-  -o-transition: opacity 0.2s linear 0s;
-  transition: opacity 0.2s linear 0s;
+/* line 268, assetic_compass2rrOBf.scss */
+.imh__gallery-wrapper.is-loaded {
+  opacity: 1;
+  /* Good browsers */
+  -moz-opacity: 1;
+  /* Netscape */
+  -khtml-opacity: 1;
+  /* Safari 1.x */
+  filter: alpha(opacity=100);
+  /* IE 5-7 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  /* IE 8 */
+}
+/* line 271, assetic_compass2rrOBf.scss */
+.imh__gallery-wrapper.is-loaded + .loader {
   opacity: 0;
   /* Good browsers */
   -moz-opacity: 0;
@@ -8934,11 +9178,12 @@ body {
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   /* IE 8 */
 }
-/* line 271, assetic_compassaFAz97.scss */
-.imh__gallery-wrapper.loading + .imh__spinner {
-  -webkit-transition: opacity 0.2s linear 0.3s;
-  -o-transition: opacity 0.2s linear 0.3s;
-  transition: opacity 0.2s linear 0.3s;
+
+/* line 277, assetic_compass2rrOBf.scss */
+.loader {
+  -webkit-transition: opacity 0.5s linear 0s;
+  -o-transition: opacity 0.5s linear 0s;
+  transition: opacity 0.5s linear 0s;
   opacity: 1;
   /* Good browsers */
   -moz-opacity: 1;
@@ -8951,7 +9196,7 @@ body {
   /* IE 8 */
 }
 
-/* line 278, assetic_compassaFAz97.scss */
+/* line 282, assetic_compass2rrOBf.scss */
 .frame {
   height: 100%;
 }
@@ -8983,12 +9228,12 @@ body {
     }
   }
 }*/
-/* line 310, assetic_compassaFAz97.scss */
+/* line 314, assetic_compass2rrOBf.scss */
 .imh__trigger {
   display: none;
 }
 
-/* line 314, assetic_compassaFAz97.scss */
+/* line 318, assetic_compass2rrOBf.scss */
 .imh__scrollbar {
   position: absolute;
   left: 0;
@@ -8997,7 +9242,7 @@ body {
   width: 100%;
   z-index: 2;
 }
-/* line 322, assetic_compassaFAz97.scss */
+/* line 326, assetic_compass2rrOBf.scss */
 .imh__scrollbar::after {
   -webkit-transition: width 0.4s ease 0s;
   -o-transition: width 0.4s ease 0s;
@@ -9009,7 +9254,7 @@ body {
   top: 0;
   background: #222222;
 }
-/* line 332, assetic_compassaFAz97.scss */
+/* line 336, assetic_compass2rrOBf.scss */
 .imh__scrollbar .handle {
   opacity: 0;
   /* Good browsers */
@@ -9035,11 +9280,11 @@ body {
   position: relative;
   z-index: 1;
 }
-/* line 347, assetic_compassaFAz97.scss */
+/* line 351, assetic_compass2rrOBf.scss */
 .imh__scrollbar .handle:hover {
   background: lightgrey;
 }
-/* line 351, assetic_compassaFAz97.scss */
+/* line 355, assetic_compass2rrOBf.scss */
 .imh__scrollbar .handle .mousearea {
   position: absolute;
   top: -31px;
@@ -9047,7 +9292,7 @@ body {
   height: 128px;
   width: 100%;
 }
-/* line 361, assetic_compassaFAz97.scss */
+/* line 365, assetic_compass2rrOBf.scss */
 .imh__scrollbar.mA_2 .handle {
   opacity: 1;
   /* Good browsers */
@@ -9060,17 +9305,17 @@ body {
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
   /* IE 8 */
 }
-/* line 365, assetic_compassaFAz97.scss */
+/* line 369, assetic_compass2rrOBf.scss */
 .imh__scrollbar.mA_2:after {
   width: 100%;
 }
 
-/* line 371, assetic_compassaFAz97.scss */
+/* line 375, assetic_compass2rrOBf.scss */
 .sonata-media-gallery-media-list {
   height: 100%;
 }
 
-/* line 375, assetic_compassaFAz97.scss */
+/* line 379, assetic_compass2rrOBf.scss */
 .sonata-media-gallery-media-item {
   height: 50%;
   -webkit-transition: opacity 0.5s linear 0s;
@@ -9081,7 +9326,7 @@ body {
     @include transition(opacity, 2s, linear, 0s);
   }*/
 }
-/* line 379, assetic_compassaFAz97.scss */
+/* line 383, assetic_compass2rrOBf.scss */
 .sonata-media-gallery-media-item.mA_1 {
   opacity: 0.1;
   /* Good browsers */
@@ -9094,80 +9339,23 @@ body {
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=10)";
   /* IE 8 */
 }
-/* line 382, assetic_compassaFAz97.scss */
+/* line 386, assetic_compass2rrOBf.scss */
 .sonata-media-gallery-media-item.mA_1 .sonata-media-gallery-media-item-link {
   cursor: default;
 }
-/* line 385, assetic_compassaFAz97.scss */
+/* line 389, assetic_compass2rrOBf.scss */
 .sonata-media-gallery-media-item.mA_1 .sonata-media-gallery-media-item-link:hover .media-object {
   -webkit-transform: scale(1);
   -moz-transform: scale(1);
   -o-transform: scale(1);
   transform: scale(1);
 }
-/* line 389, assetic_compassaFAz97.scss */
+/* line 393, assetic_compass2rrOBf.scss */
 .sonata-media-gallery-media-item.mA_1 .sonata-media-gallery-media-item-link:after {
   display: none;
 }
-/* line 400, assetic_compassaFAz97.scss */
-.sonata-media-gallery-media-item.is-expanded {
-  height: 100%;
-  width: auto;
-}
-/* line 404, assetic_compassaFAz97.scss */
-.sonata-media-gallery-media-item.is-expanded .sonata-media-gallery-media-item-link {
-  cursor: default;
-}
-/* line 407, assetic_compassaFAz97.scss */
-.sonata-media-gallery-media-item.is-expanded .sonata-media-gallery-media-item-link:hover {
-  /*.media-bar {
-    @include transform(translate(0, 0%));
-  }*/
-}
-/* line 408, assetic_compassaFAz97.scss */
-.sonata-media-gallery-media-item.is-expanded .sonata-media-gallery-media-item-link:hover .media-object {
-  -webkit-transform: none;
-  -moz-transform: none;
-  -o-transform: none;
-  transform: none;
-}
-/* line 412, assetic_compassaFAz97.scss */
-.sonata-media-gallery-media-item.is-expanded .sonata-media-gallery-media-item-link:hover .media-btns {
-  opacity: 1;
-  /* Good browsers */
-  -moz-opacity: 1;
-  /* Netscape */
-  -khtml-opacity: 1;
-  /* Safari 1.x */
-  filter: alpha(opacity=100);
-  /* IE 5-7 */
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-  /* IE 8 */
-}
-/* line 415, assetic_compassaFAz97.scss */
-.sonata-media-gallery-media-item.is-expanded .sonata-media-gallery-media-item-link:hover .media-btns > span {
-  /*border-width: 1px;
-  border-style: solid;
-  border-color: rgb(0, 0, 0);
-  border-color: rgba(0, 0, 0, 0.8);*/
-}
-/* line 421, assetic_compassaFAz97.scss */
-.sonata-media-gallery-media-item.is-expanded .sonata-media-gallery-media-item-link:hover .media-btns > span:hover {
-  background-color: black;
-  background-color: rgba(0, 0, 0, 0.8);
-}
-/* line 432, assetic_compassaFAz97.scss */
-.sonata-media-gallery-media-item.is-expanded .sonata-media-gallery-media-item-link:after {
-  display: none;
-}
-/* line 437, assetic_compassaFAz97.scss */
-.sonata-media-gallery-media-item.is-expanded .media-object {
-  transition: none;
-  height: 100%;
-  width: auto;
-}
-/* line 443, assetic_compassaFAz97.scss */
-.sonata-media-gallery-media-item.is-expanded .media-btns {
+/* line 404, assetic_compass2rrOBf.scss */
+.sonata-media-gallery-media-item .media-btn-group {
   display: block;
   position: absolute;
   top: 0;
@@ -9188,39 +9376,86 @@ body {
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   /* IE 8 */
 }
-/* line 453, assetic_compassaFAz97.scss */
-.sonata-media-gallery-media-item.is-expanded .media-btns > span {
-  display: inline-block;
+/* line 415, assetic_compass2rrOBf.scss */
+.sonata-media-gallery-media-item .media-btn {
+  display: table;
+  float: left;
   cursor: pointer;
-  text-align: center;
-  height: 20px;
-  line-height: 23px;
-  width: 20px;
-  vertical-align: middle;
-  padding: 8px;
-  box-sizing: content-box;
   -webkit-transition: background-color 0.2s ease-in 0s;
   -o-transition: background-color 0.2s ease-in 0s;
   transition: background-color 0.2s ease-in 0s;
 }
-/* line 466, assetic_compassaFAz97.scss */
-.sonata-media-gallery-media-item.is-expanded .media-btns > span.zoom img {
-  background: url("/bundles/imhbase/images/sprite.png") no-repeat scroll -96px -131px;
-  height: 20px;
-  width: 19px;
+/* line 421, assetic_compass2rrOBf.scss */
+.sonata-media-gallery-media-item .media-btn .fa {
+  color: white;
+  display: table-cell;
+  vertical-align: middle;
+  padding: 12px;
 }
-/* line 474, assetic_compassaFAz97.scss */
-.sonata-media-gallery-media-item.is-expanded .media-btns > span.close img {
-  background: url("/bundles/imhbase/images/sprite.png") no-repeat scroll -115px -131px;
-  height: 12px;
-  width: 12px;
+/* line 430, assetic_compass2rrOBf.scss */
+.sonata-media-gallery-media-item .media-btn--zoom .fa {
+  font-size: 14px;
 }
-/* line 483, assetic_compassaFAz97.scss */
+/* line 434, assetic_compass2rrOBf.scss */
+.sonata-media-gallery-media-item .media-btn--close .fa {
+  font-size: 14px;
+}
+/* line 437, assetic_compass2rrOBf.scss */
+.sonata-media-gallery-media-item.is-expanded {
+  height: 100%;
+  width: auto;
+}
+/* line 441, assetic_compass2rrOBf.scss */
+.sonata-media-gallery-media-item.is-expanded .sonata-media-gallery-media-item-link {
+  cursor: default;
+}
+/* line 444, assetic_compass2rrOBf.scss */
+.sonata-media-gallery-media-item.is-expanded .sonata-media-gallery-media-item-link:hover {
+  /*.media-bar {
+    @include transform(translate(0, 0%));
+  }*/
+}
+/* line 445, assetic_compass2rrOBf.scss */
+.sonata-media-gallery-media-item.is-expanded .sonata-media-gallery-media-item-link:hover .media-object {
+  -webkit-transform: none;
+  -moz-transform: none;
+  -o-transform: none;
+  transform: none;
+}
+/* line 449, assetic_compass2rrOBf.scss */
+.sonata-media-gallery-media-item.is-expanded .sonata-media-gallery-media-item-link:hover .media-btn-group {
+  opacity: 1;
+  /* Good browsers */
+  -moz-opacity: 1;
+  /* Netscape */
+  -khtml-opacity: 1;
+  /* Safari 1.x */
+  filter: alpha(opacity=100);
+  /* IE 5-7 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  /* IE 8 */
+}
+/* line 454, assetic_compass2rrOBf.scss */
+.sonata-media-gallery-media-item.is-expanded .sonata-media-gallery-media-item-link:hover .media-btn:hover {
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+/* line 465, assetic_compass2rrOBf.scss */
+.sonata-media-gallery-media-item.is-expanded .sonata-media-gallery-media-item-link:after {
+  display: none;
+}
+/* line 470, assetic_compass2rrOBf.scss */
+.sonata-media-gallery-media-item.is-expanded .media-object {
+  transition: none;
+  height: 100%;
+  width: auto;
+}
+/* line 476, assetic_compass2rrOBf.scss */
 .sonata-media-gallery-media-item.is-expanded .plus-icon {
   display: none;
 }
 
-/* line 487, assetic_compassaFAz97.scss */
+/* line 480, assetic_compass2rrOBf.scss */
 .sonata-media-gallery-media-item-link {
   display: block;
   overflow: hidden;
@@ -9244,7 +9479,7 @@ body {
 
     .media-description {
       float: left;
-      color: $color-white;
+      color: white;
       margin: 0 0 0 10px;
       height: 37px;
       line-height: 37px;
@@ -9252,21 +9487,21 @@ body {
     }
   }*/
 }
-/* line 520, assetic_compassaFAz97.scss */
+/* line 513, assetic_compass2rrOBf.scss */
 .sonata-media-gallery-media-item-link:hover .media-object {
   -webkit-transform: scale(1.1);
   -moz-transform: scale(1.1);
   -o-transform: scale(1.1);
   transform: scale(1.1);
 }
-/* line 524, assetic_compassaFAz97.scss */
+/* line 517, assetic_compass2rrOBf.scss */
 .sonata-media-gallery-media-item-link:hover .media-bar {
   -webkit-transform: translate(0, 0%);
   -moz-transform: translate(0, 0%);
   -o-transform: translate(0, 0%);
   transform: translate(0, 0%);
 }
-/* line 528, assetic_compassaFAz97.scss */
+/* line 521, assetic_compass2rrOBf.scss */
 .sonata-media-gallery-media-item-link:hover .plus-icon {
   -webkit-animation: pop-icon-in .4s;
   -moz-animation: pop-icon-in .4s;
@@ -9285,7 +9520,7 @@ body {
   /* IE 8 */
 }
 
-/* line 535, assetic_compassaFAz97.scss */
+/* line 528, assetic_compass2rrOBf.scss */
 .media-object {
   -webkit-transition: all 1s ease 0s;
   -o-transition: all 1s ease 0s;
@@ -9296,12 +9531,12 @@ body {
   width: auto;
 }
 
-/* line 543, assetic_compassaFAz97.scss */
+/* line 536, assetic_compass2rrOBf.scss */
 .media-btns {
   display: none;
 }
 
-/* line 547, assetic_compassaFAz97.scss */
+/* line 540, assetic_compass2rrOBf.scss */
 .plus-icon {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -9331,7 +9566,7 @@ body {
   background: black;
   margin: -35px 0 0 -35px;
 }
-/* line 560, assetic_compassaFAz97.scss */
+/* line 553, assetic_compass2rrOBf.scss */
 .plus-icon::before, .plus-icon::after {
   content: '';
   position: absolute;
@@ -9343,7 +9578,7 @@ body {
   -o-transform: scale(1);
   transform: scale(1);
 }
-/* line 569, assetic_compassaFAz97.scss */
+/* line 562, assetic_compass2rrOBf.scss */
 .plus-icon::before {
   width: 1px;
   height: 18px;
@@ -9352,7 +9587,7 @@ body {
   -o-transform: translate(0, -50%);
   transform: translate(0, -50%);
 }
-/* line 575, assetic_compassaFAz97.scss */
+/* line 568, assetic_compass2rrOBf.scss */
 .plus-icon::after {
   width: 18px;
   height: 1px;
@@ -9362,39 +9597,8 @@ body {
   transform: translate(-50%, 0);
 }
 
-/* line 582, assetic_compassaFAz97.scss */
-.imh__spinner, #infscr-loading {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  margin: -22px 0 0 -22px;
-}
-/* line 588, assetic_compassaFAz97.scss */
-.imh__spinner img, #infscr-loading img {
-  display: block;
-}
-
-/* line 593, assetic_compassaFAz97.scss */
-.imh__spinner {
-  -webkit-transition: opacity 0.2s linear 0s;
-  -o-transition: opacity 0.2s linear 0s;
-  transition: opacity 0.2s linear 0s;
-  opacity: 0;
-  /* Good browsers */
-  -moz-opacity: 0;
-  /* Netscape */
-  -khtml-opacity: 0;
-  /* Safari 1.x */
-  filter: alpha(opacity=0);
-  /* IE 5-7 */
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-  /* IE 8 */
-  margin: -19px 0 0 -19px;
-  z-index: -1;
-}
-
 @media (max-width: 767px) {
-  /* line 603, assetic_compassaFAz97.scss */
+  /* line 578, assetic_compass2rrOBf.scss */
   .imh__content {
     height: -webkit-calc(100% - 90px);
     height: calc(100% - 90px);
@@ -9402,42 +9606,42 @@ body {
     padding-top: 0;
   }
 
-  /* line 609, assetic_compassaFAz97.scss */
+  /* line 584, assetic_compass2rrOBf.scss */
   .imh__gallery-wrapper {
     padding: 0;
   }
 }
 @media (min-width: 768px) and (max-width: 1199px) {
-  /* line 615, assetic_compassaFAz97.scss */
+  /* line 590, assetic_compass2rrOBf.scss */
   .imh__gallery-wrapper {
     padding: 15px 0;
   }
 }
-/* line 623, assetic_compassaFAz97.scss */
+/* line 598, assetic_compass2rrOBf.scss */
 .touchevents .plus-icon, .touchevents .imh__scrollbar {
   display: none;
 }
 @media (min-width: 992px) {
-  /* line 628, assetic_compassaFAz97.scss */
+  /* line 603, assetic_compass2rrOBf.scss */
   .touchevents .imh__navigation {
     background: none;
     border: none;
     height: 91px;
   }
-  /* line 633, assetic_compassaFAz97.scss */
+  /* line 608, assetic_compass2rrOBf.scss */
   .touchevents .imh__navigation ul {
     border-top: none;
   }
-  /* line 637, assetic_compassaFAz97.scss */
+  /* line 612, assetic_compass2rrOBf.scss */
   .touchevents .imh__navigation li.current {
     background-color: #3f3f3f;
     border: none;
   }
-  /* line 640, assetic_compassaFAz97.scss */
+  /* line 615, assetic_compass2rrOBf.scss */
   .touchevents .imh__navigation li.current span {
     color: white;
   }
-  /* line 645, assetic_compassaFAz97.scss */
+  /* line 620, assetic_compass2rrOBf.scss */
   .touchevents .imh__content {
     top: 0;
     height: -webkit-calc(100% - 91px);
@@ -9446,7 +9650,7 @@ body {
 }
 
 @media (max-width: 1199px) {
-  /* line 654, assetic_compassaFAz97.scss */
+  /* line 629, assetic_compass2rrOBf.scss */
   .imh__container-fluid::before, .imh__container-fluid::after {
     display: none;
   }
@@ -9485,54 +9689,54 @@ body {
     }
   }
 }*/
-/* line 699, assetic_compassaFAz97.scss */
+/* line 674, assetic_compass2rrOBf.scss */
 .touchevents {
   /* Galaxy Tab 10.1 ----------- */
   /* Portrait */
   /* Landscape */
 }
 @media only screen and (max-width: 800px) and (max-aspect-ratio: 13 / 9) {
-  /* line 699, assetic_compassaFAz97.scss */
+  /* line 674, assetic_compass2rrOBf.scss */
   .touchevents {
     /*.imh__content {
       height: calc(100% - 200px);
     }*/
   }
-  /* line 705, assetic_compassaFAz97.scss */
+  /* line 680, assetic_compass2rrOBf.scss */
   .touchevents .imh__trigger {
     display: none;
   }
-  /* line 713, assetic_compassaFAz97.scss */
+  /* line 688, assetic_compass2rrOBf.scss */
   .touchevents .imh__gallery-wrapper {
     width: 100%;
     height: 100%;
   }
-  /* line 718, assetic_compassaFAz97.scss */
+  /* line 693, assetic_compass2rrOBf.scss */
   .touchevents .sonata-media-gallery-media-list {
     height: auto;
   }
-  /* line 722, assetic_compassaFAz97.scss */
+  /* line 697, assetic_compass2rrOBf.scss */
   .touchevents .sonata-media-gallery-media-item {
     width: 33.33%;
     height: auto;
   }
-  /* line 726, assetic_compassaFAz97.scss */
+  /* line 701, assetic_compass2rrOBf.scss */
   .touchevents .sonata-media-gallery-media-item.is-expanded {
     width: auto;
     height: auto;
   }
-  /* line 730, assetic_compassaFAz97.scss */
+  /* line 705, assetic_compass2rrOBf.scss */
   .touchevents .sonata-media-gallery-media-item.is-expanded .media-object {
     height: auto;
     width: auto;
     max-width: 100%;
   }
-  /* line 738, assetic_compassaFAz97.scss */
+  /* line 713, assetic_compass2rrOBf.scss */
   .touchevents .media-object {
     height: auto;
     width: 100%;
   }
-  /* line 743, assetic_compassaFAz97.scss */
+  /* line 718, assetic_compass2rrOBf.scss */
   .touchevents .imh__scrollbar {
     top: 0;
     right: -20px;
@@ -9541,13 +9745,13 @@ body {
     width: 5px;
     height: 100%;
   }
-  /* line 751, assetic_compassaFAz97.scss */
+  /* line 726, assetic_compass2rrOBf.scss */
   .touchevents .imh__scrollbar .handle {
     width: 100%;
     height: 100px;
     /* overriden if dynamicHandle: 1 */
   }
-  /* line 755, assetic_compassaFAz97.scss */
+  /* line 730, assetic_compass2rrOBf.scss */
   .touchevents .imh__scrollbar .handle .mousearea {
     position: absolute;
     top: 0;
@@ -9557,7 +9761,7 @@ body {
   }
 }
 @media only screen and (max-width: 1280px) and (min-aspect-ratio: 13 / 9) {
-  /* line 699, assetic_compassaFAz97.scss */
+  /* line 674, assetic_compass2rrOBf.scss */
   .touchevents {
     /*.sonata-media-gallery-media-list {
       height: 100%;

@@ -7,6 +7,9 @@ use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 
 class GalleryController extends Controller
 {
+    /**
+     * @return boolean $touchDevice
+     */
     public function detectDevice()
     {
         $mobileDetector = $this->get('mobile_detect.mobile_detector');

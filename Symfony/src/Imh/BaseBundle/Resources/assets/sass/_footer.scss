@@ -1,7 +1,6 @@
 .imh__footer {
   @include make-row();
   background: url("/bundles/imhbase/images/header-bg.png") repeat scroll 0 0;
-  min-height: 110px;
   border-top: 1px solid $color-grey-light;
   color: $color-grey-medium;
   padding-top: 20px;
@@ -16,7 +15,8 @@
   border-right: 1px dotted $color-grey-lighter;
   text-align: left;
   vertical-align: top;
-  min-height: 118px;
+  display: table-cell;
+  float: none;
 
   h3 {
     font-family: 'ralewaysemibold', $font-fallback;
@@ -26,7 +26,7 @@
   }
 
   ul {
-    list-style: square inside none;
+    list-style: none;
   }
 
   li {
@@ -36,7 +36,7 @@
     a, span {
       color: $color-grey-medium;
       display: inline-block;
-      @include transition(all, 0.2s, ease-in, 0s);
+      @include transition(all .2s ease-in 0s);
 
       &:hover {
         color: $color-grey-dark;
@@ -52,10 +52,10 @@
       list-style: none;
       a, span {
         color: $color-grey-dark;
-        background: $color-white;
+        background: white;
         border: 1px solid $color-grey-light;
         border-radius: 16px;
-        padding: 6px 14px;
+        padding: 6px 14px 8px;
       }
     }
 
@@ -65,6 +65,14 @@
   }
 }
 
+.imh__footer-column--last {
+  border: none;
+}
+
+.imh__footer-column--extraspace {
+  padding-left: 40px;
+}
+
 .imh__footer-wrap {
   padding: 7px 0;
 }
@@ -72,7 +80,8 @@
 .imh__footer-column--site {
 
   ul {
-    width: 175px;
+    @include clearfix();
+    width: 152px;
   }
 
   li {
@@ -89,37 +98,20 @@
   }
 }
 
-//    &.school {
-//      a {
-//        height: inherit;
-//        @include transition(all, 0.2s, ease-in);
-//
-//        img {
-//          vertical-align: middle;
-//          margin-right: 5px;
-//        }
-//
-//        span {
-//          display: inline-block;
-//          height: 13px;
-//        }
-//
-//        &:hover {
-//          border: none;
-//          span {
-//            border-bottom: 1px dotted $color-grey-dark;
-//          }
-//        }
-//      }
-//    }
+.imh__footer-column--language {
+  text-align: center;
+}
 
 .imh__footer-column--follow {
+  text-align: center;
+
   .social {
     display: inline-block;
     vertical-align: top;
-    margin-right: 7px;
+    margin: 0 4px;
     font-size: 20px;
     color: $color-grey-dark;
+    width: 18px;
 
     &:hover {
       color: black;
@@ -128,32 +120,34 @@
 }
 
 .imh__footer-column--powered {
-  border: none;
+  text-align: center;
 
   a {
     display: block;
-    &:hover {
-      img {
-        background-position: -158px -131px;
-      }
-    }
   }
 
-  img {
-    background: url("/bundles/imhbase/images/sprite.png") no-repeat scroll -221px -131px;
-    width: 63px;
-    height: 61px;
+  .icon--symfony {
+    width: 100%;
+    height: 55px;
+    fill: $color-grey-dark;
+    @include transition(fill .2s ease-in 0s);
+
+    &:hover {
+      fill: black;
+    }
   }
 }
 
 .imh__footer-rights {
   display: block;
   font-size: $elevenpx;
-  margin-bottom: 15px;
+  margin: 20px 0 15px;
 
   span {
     font-size: $fourteenpx;
   }
+
+  br { display: none; }
 }
 
 // Media queries
@@ -161,6 +155,10 @@
 
 @media (max-width: $screen-xs-max) {
   .imh__footer {
+    color: white;
+    border-top: none;
+    background: black;
+
     .imh__container {
       padding: 0;
     }
@@ -168,13 +166,39 @@
 
   .imh__footer-column {
     margin-top: 10px;
-    min-height: inherit;
-    border-right: none;
+    display: block;
+    float: left;
+    border-right-color: $color-grey-medium;
   }
 
   .imh__footer-column--follow,
   .imh__footer-column--powered {
     text-align: center;
+  }
+
+  .imh__footer-column--follow .social {
+      color: white;
+
+      &:first-child {
+        margin-left: 0;
+      }
+  }
+
+  .imh__footer-column--powered .icon--symfony {
+    height: 47px;
+    fill: black;
+    @include transition(none);
+
+    &:hover {
+      fill: black;
+    }
+  }
+
+  .imh__footer-rights {
+    margin: 0 0 20px;
+    color: $color-grey-medium;
+
+    br { display: inline; }
   }
 }
 

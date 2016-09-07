@@ -1,6 +1,26 @@
+@-webkit-keyframes make-rotation {
+  0% {
+    @include transform(rotate(0deg));
+  }
+  100% {
+    @include transform(rotate(360deg));
+  }
+}
+
+@keyframes make-rotation {
+  0% {
+    @include transform(rotate(0deg));
+  }
+  100% {
+    @include transform(rotate(360deg));
+  }
+}
+
+
 * {
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0); // Disable blue highlight when Touch/Press
   @include box-sizing(border-box);
+  @include backface-visibility(hidden);
 }
 
 html, body {
@@ -14,7 +34,7 @@ body {
 
 a {
   text-decoration: none;
-  color: $color-black;
+  color: black;
   outline: none;
 }
 
@@ -97,8 +117,8 @@ button {
 
 .imh__container--wrapper {
   @include make-row();
-  background-color: $color-white;
-  border-top: 34px solid $color-white;
+  background-color: white;
+  border-top: 34px solid white;
   padding: 26px 0 45px;
   position: relative;
 
@@ -140,7 +160,7 @@ button {
   top: 0;
   height: 100%;
   border-bottom-style: solid;
-  border-bottom-color: $color-white;
+  border-bottom-color: white;
   border-left-style: solid;
   border-left-color: rgba(0, 0, 0, 0);
   -moz-transform: scale(.9999); /* Antialiasing - trick for firefox */
@@ -154,8 +174,109 @@ button {
   height: 100%;
 }
 
+// Orientation change
+.imh__orientation-change {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0,0,0,.95);
+  z-index: 99999;
+  visibility: hidden;
+  opacity: 0;
+  @include transition(all 1.2s cubic-bezier(.19,1,.22,1) 0s);
+
+  .rotate-device, .rotate-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    @include translate(-50%, -50%);
+  }
+
+  .rotate-device {
+    width: 50px;
+  }
+
+  .rotate-icon {
+    width: 20px;
+  }
+
+  .device-icon {
+    width: 100%;
+  }
+}
+
+// SVG icons
+// ==================================================
+.svg {
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+
+.icon {
+  display: inline-block;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+.icon--rotate,
+.icon--device {
+  width: 100%;
+}
+
+// Loader
+// =================================================
+.loader {
+  border-width: 2px;
+  border-style: solid;
+  @include animation(make-rotation .7s infinite linear);
+
+  &.loader--white {
+    border-color: rgba(255, 255, 255, 0.1);
+    border-left-color: white;
+  }
+
+  &.loader--black {
+    border-color: rgba(0, 0, 0, 0.1);
+    border-left-color: black;
+  }
+}
+.loader,
+.loader:after {
+  @include border-radius(50%);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 38px;
+  width: 38px;
+  margin: -19px 0 0 -19px;
+}
+
 // Media queries
 // ==================================================
+
+@media screen and (orientation: portrait) {
+  .imh__orientation-change {
+    visibility: hidden;
+    opacity: 0;
+    @include transform(scale(2,2));
+  }
+}
+
+@media screen and (orientation: landscape) and (max-width: $screen-xs-max) {
+    html, body {
+      overflow: hidden;
+    }
+
+    .imh__orientation-change {
+      visibility: visible;
+      opacity: 1;
+      @include transform(scale(1,1));
+    }
+}
 
 @media (max-width: $screen-xs-max) {
   .imh__title-h2 {

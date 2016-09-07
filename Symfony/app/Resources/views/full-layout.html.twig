@@ -31,10 +31,11 @@
     <body>
         {% block facebookSDK '' %}
         {% block flashes '' %}
+        {% include 'ImhBaseBundle:Part:svg.html.twig' %}
 
         <div class="container-fluid imh__container-fluid">
             {% block header %}
-                <header class="imh__header" role="navigation">
+                <header class="imh__header">
                     {% include 'ImhBaseBundle:Menu:navigation.html.twig' %}
                 </header>
             {% endblock %}
@@ -51,6 +52,19 @@
                 {% include 'ImhBaseBundle:Part:footer.html.twig' %}
             {% endblock %}
         </div>
+
+        {% if isTouchDevice %}
+        <div class="imh__orientation-change">
+            <div class="rotate-device">
+                <div class="rotate-icon">
+                    <svg class="icon icon--rotate"><use xlink:href="#svg-rotate"></use></svg>
+                </div>
+                <div class="device-icon">
+                    <svg class="icon icon--device"><use xlink:href="#svg-device"></use></svg>
+                </div>
+            </div>
+        </div>
+        {% endif %}
 
         {% block javascripts %}
             {% javascripts output='assets/compiled/js/main.js'

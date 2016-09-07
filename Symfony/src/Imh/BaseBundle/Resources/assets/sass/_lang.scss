@@ -8,7 +8,7 @@
     margin-bottom: 3px;
 
     &.current a {
-      color: $color-white;
+      color: white;
       background-color: $color-grey-dark;
       border-color: $color-grey-dark;
 
@@ -48,7 +48,7 @@
     }
 
     &:hover {
-      color: $color-white;
+      color: white;
       border: 1px solid $color-grey-dark;
 
       &:after {

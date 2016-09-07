@@ -122,4 +122,5 @@ imh:
       engine:
         title:        'Разработано'
         framework:    'Symfony Framework'
-      copyright:      'Ионелла Маринуца. Все права защищены.'
+      copyright: >
+        Ионелла Маринуца.<br> Все права защищены.

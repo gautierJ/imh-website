@@ -135,8 +135,8 @@ sonata_media:
                 - sonata.media.provider.custom
 
             formats:
-                small:         { width: 150, height: 84, constraint: false, quality: 100 } # 16/9
-                big:           { width: 640, height: 360, quality: 100 } # 16/9
+                small:         { width: 300, height: 168, constraint: false, quality: 100 } # ~16/9
+                big:           { width: 640, height: 360, constraint: false, quality: 100 } # ~16/9, constraint: false if width or height should not automatically be calculated
                 gallery_small: { height: 600, quality: 100 }
                 gallery_popin: { width: 800, quality: 100 }
 

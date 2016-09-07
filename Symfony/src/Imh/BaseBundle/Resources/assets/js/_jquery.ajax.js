@@ -46,9 +46,6 @@
     // the below code is to override back button to get
     // the ajax content without page reload
     $(window).on('popstate', function (event) {
-        var state = event;
-        console.log(state);
-
         $.ajax({
             url: location.pathname,
             success: function (data) {

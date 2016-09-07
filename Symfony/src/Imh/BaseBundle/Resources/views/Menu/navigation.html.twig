@@ -1,4 +1,4 @@
-<nav class="imh__navigation" data-layer>
+<nav class="imh__navigation" id="navigation" data-layer>
     <div class="container imh__container">
         {% spaceless %}
             <nav class="imh__navigation-main" data-main>
@@ -14,8 +14,10 @@
     <button class="globe" type="button" aria-label="Languages" aria-controls="navigation" data-globe>
         <i class="fa fa-3x fa-inverse fa-globe" aria-hidden="true"></i>
     </button>
-    <svg class="audio" id="svg_audio-collapse" width="22" height="30" viewBox="0 0 22 30" fill="#fff" xmlns="http://www.w3.org/2000/svg">
-    <img class="audio audio--play" id="svg_audio-play" src="{{ asset('bundles/imhbase/images/audio2.svg') }}" alt="">
+
+    <svg class="audio" id="svg_audio-collapse" width="22" height="30" viewBox="0 0 22 30" fill="#fff" xmlns="http://www.w3.org/2000/svg"></svg>
+    <svg class="audio audio--play" id="svg_audio-play" width="22" height="30" fill="#fff"><use xlink:href="#svg-audio"></use></svg>
+
     <button class="hamburger hamburger--collapse" type="button" aria-label="Menu" aria-controls="navigation" data-hamburger>
         <span class="hamburger-label text-uppercase">{{ 'imh.base.menu.label'|trans }}</span>
         <span class="hamburger-box">

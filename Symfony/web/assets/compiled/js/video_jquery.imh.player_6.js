@@ -7,7 +7,6 @@ var YT_ready = function() {
     var cssVolumeCtn       = 'volume';
     var cssVolumeLevelWrap = 'wrap-level';
     var cssVolumeLevel     = 'level';
-    var cssVolumeSlider    = 'slider';
     var cssLayer           = 'layer';
     var cssPlayerReady     = 'is-ready';
     var progressBarWrap    = $('[data-progress-bar-wrapper]');
@@ -16,12 +15,14 @@ var YT_ready = function() {
     var bufferBar          = $('[data-buffer]');
     var time               = $('[data-time-control]');
     var playBtn            = $('[data-play]');
-    var playPauseBtn       = $('.play-pause a');
-    var volumeCtn          = $('.' + cssVolumeCtn);
-    var volumeBtn          = volumeCtn.find('a');
+    var playPauseBtn       = $('[data-play-pause-btn]');
+    var playPausePicto     = $('[data-play-pause-picto]');
+    var volumeBtn          = $('[data-volume-btn]');
+    var volumeSlider       = $('[data-volume-slider]');
+    var volumePicto        = $('[data-volume-picto]');
     var volumeLevelWrap    = $('.' + cssVolumeLevelWrap);
-    var volumeLevel        = volumeLevelWrap.find('.' + cssVolumeLevel);
-    var fsButton           = $('.fullscreen a');
+    var volumeLevel        = $('[data-volume-level]');
+    var fullscreenBtn      = $('[data-fullscreen-btn]');
     var video              = $('#ytplayer')[0];
     var player = new YT.Player('ytplayer', {
         events: {
@@ -43,7 +44,7 @@ var YT_ready = function() {
         playerTotalTime = player.getDuration();
 
         $('[data-total]').text(formatDuration(playerTotalTime));
-        time.width((Math.round(time.width()) + 10 + 'px'));
+        time.width((Math.round(time.width()) + 15 + 'px'));
 
         progressBarWrap.addClass(cssPlayerReady);
         progressBar.width((progressBar.parent().width()) - time.width());
@@ -61,7 +62,7 @@ var YT_ready = function() {
             e.preventDefault();
         });
 
-        playPauseBtn.off().on('click', function(e) {
+        playPauseBtn.on('click', function(e) {
             playBtn.click();
             //playPause(status);
             e.preventDefault();
@@ -73,10 +74,10 @@ var YT_ready = function() {
             'minRange' : 0,
             'maxRange' : 100
         };
-        slider = volumeLevel.find('.' + cssVolumeSlider);
-        slider.noUiSlider({
+
+        volumeSlider.noUiSlider({
             start: [ opts.start ],
-            orientation: "vertical",
+            orientation: 'vertical',
             behaviour: 'drag',
             step: opts.step,
             range: {
@@ -88,20 +89,15 @@ var YT_ready = function() {
             player.setVolume(value);
 
             switch(Math.round(value)) {
-                case opts.minRange: setImage(opts.minRange, true); break;
-                case opts.maxRange/4: setImage(opts.maxRange/4, true); break;
-                case (opts.maxRange/4)*2: setImage((opts.maxRange/4)*2, true); break;
-                case (opts.maxRange/4)*3: setImage((opts.maxRange/4)*3, true); break;
-                case opts.maxRange: setImage(opts.maxRange, true); break;
+                case opts.minRange: setImage('fa fa-volume-off'); break;
+                case (opts.maxRange/4)*2: setImage('fa fa-volume-down'); break;
+                case opts.maxRange: setImage('fa fa-volume-up'); break;
             }
         });
 
-        var setImage = function(range, hovered) {
-            volumeBtn.removeClass().addClass('_' + range + (hovered == true ? ' hover' : ''));
+        var setImage = function(imageClass) {
+            volumePicto.removeClass().addClass(imageClass);
         };
-
-        // set css image for the first call
-        setImage(opts.start, false);
 
         volumeBtn.hover(
             function() {
@@ -121,7 +117,7 @@ var YT_ready = function() {
             }
         ).click(function(e) { e.preventDefault(); });
 
-        fsButton.on('click', function(e) {
+        fullscreenBtn.on('click', function(e) {
             if (screenfull.enabled) {
                 if (status != -1 && status != 5) {
                     screenfull.request(video);
@@ -145,14 +141,14 @@ var YT_ready = function() {
                 $('[data-current]').empty().text(formatDuration(playerCurrentTime) + " /");
                 progress(playerTimeDifference, progressBar, advancementBar);
                 progress(playerLoaded, progressBar, bufferBar);
-                progressBar.width($('.' + cssMedia).width() - 30 - time.outerWidth(true));
+                progressBar.width((progressBar.parent().width()) - time.width());
             }, 500);
         } else { clearTimeout(timer); }
 
         if (status == 2) playPause(1);
         if (status == 0) playPause(0);
 
-        playPauseBtn.off().on('click', function(e) {
+        playPauseBtn.on('click', function(e) {
             if (status == 0) player.playVideo(); // Replay
             playPause(status);
             e.preventDefault();
@@ -182,8 +178,9 @@ var YT_ready = function() {
         };
         if (status == 0) {
             changeText(cssClassReplay);
-            playPauseBtn.removeClass(cssClassPause.toLowerCase())
-                        .attr('title', cssClassReplay);
+            playPausePicto.removeClass('fa-pause')
+                          .addClass('fa-play')
+                          .attr('title', cssClassPlay);
 
             if (Modernizr.touchevents) {
                 svgPlay.style.display = 'none';
@@ -194,8 +191,9 @@ var YT_ready = function() {
         if (status == 1) {
             player.pauseVideo();
             changeText(cssClassPlay);
-            playPauseBtn.removeClass(cssClassPause.toLowerCase())
-                        .attr('title', cssClassPlay);
+            playPausePicto.removeClass('fa-pause')
+                          .addClass('fa-play')
+                          .attr('title', cssClassPlay);
 
             if (Modernizr.touchevents) {
                 svgPlay.style.display = 'none';
@@ -206,7 +204,8 @@ var YT_ready = function() {
         if (status == -1 || status == 2 || status == 5) {
             player.playVideo();
             changeText(cssClassPause);
-            playPauseBtn.addClass(cssClassPause.toLowerCase())
+            playPausePicto.removeClass('fa-play')
+                        .addClass('fa-pause')
                         .attr('title', cssClassPause);
 
             if (Modernizr.touchevents) {
