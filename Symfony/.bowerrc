@@ -1,0 +1,4 @@
+{
+  "directory": "src/AppBundle/Resources/public/bower_components",
+  "timeout": 120000
+}

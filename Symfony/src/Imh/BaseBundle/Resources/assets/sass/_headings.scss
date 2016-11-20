@@ -1,0 +1,64 @@
+// Headings
+// All page
+// ==================================================
+
+.imh__title { font-weight: normal; }
+.imh__title-h1 {}
+.imh__title-h2 {
+  font-family: 'ralewaymedium', $font-fallback;
+  font-size: $fourteenpx;
+  color: $color-grey-dark;
+  line-height: 40px;
+  margin: 0 0 20px;
+
+  small {
+    font-size: 13px;
+    color: $color-grey-dark;
+  }
+}
+
+.imh__title-h2--border {
+  border: 1px solid $color-grey-light;
+  background-color: $color-grey-extremlight;
+}
+.imh__title-h3 {
+  font-family: 'ralewaymedium', $font-fallback;
+  font-size: $thirteenpx;
+  margin-top: 10px;
+}
+
+
+
+// Home page
+// ==================================================
+
+.imh__title-group {
+  @include opacity(0);
+  @include translate(-50%, -50%);
+  width: 250px;
+  height: 120px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.imh-title-large {
+
+}
+
+.imh-title-medium {
+
+}
+
+.imh-title-strong {
+
+}
+
+.imh__opening {
+  &.mA_0 {
+    .imh__title-group {
+      @include opacity(1);
+      @include transition(opacity 1s linear .7s);
+    }
+  }
+}

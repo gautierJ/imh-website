@@ -1,0 +1,71 @@
+@include keyframes(stack-up-down) {
+  from { @include transform(translateY(0)); }
+  to   { @include transform(translateY(30%)); }
+}
+
+.imh-mouse {
+  @include opacity(0);
+  @include transition(opacity .5s linear 0s);
+  position: absolute;
+  left: calc(50% - 1px);
+  bottom: 220px;
+  margin-left: -7px;
+  width: 15px;
+  height: 51px;
+  padding: 10px 0;
+  background: $color-grey-ultralight;
+
+  .fa {
+    @include animation('stack-up-down .5s linear 0s infinite alternate');
+    position: absolute;
+    bottom: -11px;
+    left: 4px;
+    color: $color-grey-dark;
+    background: $color-grey-ultralight;
+    padding-bottom: 5px;
+  }
+}
+
+.imh-mouse__elt {
+  position: absolute;
+  background: $color-grey-ultralight;
+}
+
+.imh-mouse__elt--end {
+  @include size(15px, 8px);
+  @include border-radius(15px 15px 0 0);
+  border-top: 1px solid $color-grey-medium;
+}
+
+.imh-mouse__elt--end-b {
+  top: 33px;
+  @include border-radius(0 0 15px 15px);
+  border-top: none;
+  border-bottom: 1px solid $color-grey-medium;
+}
+
+.imh-mouse__elt--center {
+  @include size(15px, 15px);
+  top: 8px;
+  position: relative;
+
+  &::after {
+    content: '';
+    @include size(3px, 4px);
+    @include border-radius(50%);
+    background-color: $color-grey-medium;
+    position: absolute;
+    top: 0;
+    left: 13px;
+    margin-left: -7px;
+  }
+}
+
+.imh__content {
+  &.mA_1 {
+    .imh-mouse { @include opacity(1); }
+  }
+  &.mA_2 {
+    .imh-mouse { @include opacity(0); }
+  }
+}
