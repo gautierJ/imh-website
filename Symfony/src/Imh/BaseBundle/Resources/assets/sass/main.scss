@@ -1,10 +1,15 @@
 // Vendors
 // ==================================================
-@import "../../../../../../web/assets/vendor/components-font-awesome/scss/font-awesome";
+@import "../../public/bower_components/fontawesome/scss/font-awesome";
 
 $grid-columns: 24;
-@import "../../../../../../web/assets/vendor/bootstrap-sass/assets/stylesheets/bootstrap";
+@import "../../public/bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
 
+$hamburger-layer-color: white;
+@import "../../public/bower_components/css-hamburgers/_sass/hamburgers/hamburgers";
+
+// Core
+// ==================================================
 @import "variables";
 @import "mixins";
 @import "keyframes";
@@ -12,6 +17,9 @@ $grid-columns: 24;
 //@import "media_queries";
 @import "fonts";
 @import "global";
+@import "components/loader";
+@import "components/mouse";
+@import "headings";
 @import "sidebar";
 @import "navigation";
 @import "lang";

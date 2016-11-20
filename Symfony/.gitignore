@@ -3,6 +3,7 @@
 /app/logs/*
 
 # Assets and user uploads
+/web/assets/compiled
 /web/bundles/
 /web/uploads/
 
@@ -10,6 +11,9 @@
 /app/bootstrap.php.cache
 /vendor/
 /bin/
+
+# Managed by Bower
+bower_components
 
 # Parameters
 /app/config/parameters.yml

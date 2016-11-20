@@ -1,4 +1,4 @@
-;(function($) {
+;(function($, window) {
     'use strict';
 
     var GalleryManager = {
@@ -57,6 +57,11 @@
         else return $container.css('cursor', 'ns-resize');
     };
 
+    // Detect whether device supports orientationchange event, otherwise fall back to
+    // the resize event.
+    var supportsOrientationChange = "onorientationchange" in window,
+        orientationEvent = supportsOrientationChange ? "orientationchange" : "resize";
+
     // layout Packery after all images have loaded
     $container.imagesLoaded(function() {
         isVisible = true;
@@ -66,16 +71,23 @@
 
         $g.addClass('is-loaded');
 
-        // bug fix for Chrome
+        // bug fix for Chrome (forced width on each item)
         var calcEltWidth = function($trgi) {
             $i.each(function() {
                 var $img     = $(this).find('.' + imageSelector),
                     imgRatio = $img.height()/$img.width(),
                     newWidth = Math.round($img.height()/imgRatio);
 
-                if(orientation) { $(this).width(newWidth); }
-                else if (!isClosed) { $trgi.css('width', GalleryManager.cst.PORTRAIT_MAX_WIDTH); }
-                else { $(this).css('width', GalleryManager.cst.PORTRAIT_WIDTH); }
+                if(orientationEvent == 'resize' && orientation) { // desktop - landscape
+                    $(this).width(newWidth);
+                }
+                if (orientationEvent == 'orientationchange') {
+                    if(!orientation) {
+                        $(this).css('width', GalleryManager.cst.PORTRAIT_WIDTH);
+                        if (!isClosed) $trgi.css('width', GalleryManager.cst.PORTRAIT_MAX_WIDTH);
+                    }
+                    else { $(this).css('width', 'auto'); }
+                }
             });
             $container.packery();
         };
@@ -107,40 +119,36 @@
         $('.' + scrollbarSelector).addClass(GalleryManager.cssAnimations[1]);
         sly = new Sly($('.' + frameSelector), slyOptions).init();
 
-        // Detect whether device supports orientationchange event,
-        // otherwise fall back to the resize event.
-        var supportsOrientationChange = 'onorientationchange' in window,
-            orientationEvent = supportsOrientationChange ? 'orientationchange' : 'resize';
-
         window.addEventListener(orientationEvent, function() {
-
-            var wWidth      = $(this).width(),
-                wHeight     = $(this).height(),
+            var wWidth      = screen.width, // not working on IOS
+                wHeight     = screen.height, // not working on IOS
                 ratio       = wWidth/wHeight;
 
             orientation = getOrientation(ratio);
 
             var _destroy = function() {
-                sly.destroy();
-                $('.' + scrollbarSelector).removeClass(GalleryManager.cssAnimations[1]);
-                $container.packery('destroy');
-            },
-            _setOption = function(o) {
-                sly.options.horizontal = o;
-                pckry.options.horizontal = o;
-            },
-            _reinit = function() { // reinitialize sly and packery with new orientation option flag
-                sly = new Sly($('.' + frameSelector), sly.options).init();
-                $container.packery(pckry.options);
-                $container.on('layoutComplete', function(){ onLayout(); });
-            };
+                    sly.destroy();
+                    $('.' + scrollbarSelector).removeClass(GalleryManager.cssAnimations[1]);
+                    $container.packery('destroy');
+                },
+                _setOption = function(o) {
+                    sly.options.horizontal = o;
+                    pckry.options.horizontal = o;
+                },
+                _reinit = function() { // reinitialize sly and packery with new orientation option flag
+                    sly = new Sly($('.' + frameSelector), sly.options).init();
+                    $container.packery(pckry.options);
+                    $container.on('layoutComplete', function(){ onLayout(); });
+                };
+
+            //alert(window.orientation + " " + screen.width);
 
             if(orientationEvent == 'orientationchange') {  // MOBILE - TABLET
-                //alert(window.orientation + " " + screen.width);
+
                 var o = window.orientation;
                 _destroy();
-                if (o == 0 || o == 180) _setOption(true); // landscape mode
-                else _setOption(false); // portrait mode
+                if (o == 0 || o == 180) _setOption(false); // portrait orientation mobile, tablet is different
+                else _setOption(true); // landscape orientation mobile
                 _reinit();
 
                 sly.reload();
@@ -183,18 +191,25 @@
 
         $container.on('click', function(e) {
             var target = e.target;
-            function open() {
+
+            if(isClosed) {
+                if($(target).data('icon') == 'plus') openItem();
+
+                // mobile
+                if(Modernizr.touchevents) {
+                    if($(target).data('image') == 'media') openItem();
+                }
+            }
+
+            function openItem() {
                 $('.' + itemSelector).removeClass(expSelector);
                 $targetItem = $(target).parent().parent();
-                $targetItem.addClass(expSelector);
-                getInactiveItems().addClass(GalleryManager.cssAnimations[0]);
+                $targetItem.addClass(expSelector).find('[data-icon]').hide();
+                getInactiveItems().addClass(GalleryManager.cssAnimations[0]).find('[data-icon]').hide();
                 isClosed = false;
                 calcEltWidth($targetItem);
             }
-            if($(target).data('icon') == 'plus') open();
-            if(Modernizr.touchevents) {
-                if($(target).data('image') == 'media') open();
-            }
+
             e.preventDefault();
         });
 
@@ -202,8 +217,14 @@
             $close.off().on('click', function(e) {
                 $trgi.removeClass(expSelector);
                 getInactiveItems().removeClass(GalleryManager.cssAnimations[0]);
+
+                if(!Modernizr.touchevents) {
+                    getInactiveItems().find('[data-icon]').show()
+                }
+
                 isClosed = true;
                 calcEltWidth($trgi);
+
                 e.preventDefault();
             });
         };
@@ -234,7 +255,7 @@
         debug: true,
         loading: {
             selector: '.' + gallerySelector,
-            img: '/bundles/imhbase/images/circles_white.svg',
+            //img: '/bundles/imhbase/images/circles_white.svg',
             msgText: '',
             finishedMsg: "<em>No more items !</em>",
             speed: 2000
@@ -306,4 +327,4 @@
             setCssCursor();
         });
     });
-}(jQuery));
+}(jQuery, window));

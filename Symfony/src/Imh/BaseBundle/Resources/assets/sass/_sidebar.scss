@@ -32,8 +32,9 @@
     }
 
     &::after {
-      border: 1px solid $color-grey-medium;
       @include transition(all, 0.2s, ease-in, 0s);
+      @include box-sizing(content-box);
+      border: 1px solid $color-grey-medium;
       content: " ";
       position: absolute;
       top: 50%;

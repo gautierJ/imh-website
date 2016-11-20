@@ -11,36 +11,52 @@
 {% block header '' %}
 
 {% block main %}
-    <div class="imh__content--home" data-content-home>
-        {% spaceless %}
-            <figure class="bkg-image-ctn">
-                <img class="bkg-image" src="{{ asset('bundles/imhbase/images/ionella_bw.jpg') }}" alt="Ionella Marinutsa" />
-                <img class="bkg-image" src="{{ asset('bundles/imhbase/images/ionella.jpg') }}" alt="Ionella Marinutsa" />
+    {% spaceless %}
+
+        <div class="imh__content-home" data-content-home>
+            <figure class="imh__ionella-bkg-content" data-bkg-content>
+                <img class="imh-ionella-bkg-image" data-bkg-image src="{{ asset('bundles/imhbase/images/ionella_bw.jpg') }}" alt="Ionella Marinutsa" />
+                <img class="imh-ionella-bkg-image" data-bkg-image src="{{ asset('bundles/imhbase/images/ionella.jpg') }}" alt="Ionella Marinutsa" />
             </figure>
-            <div class="block-myself">
-                <div class="block-triangle"></div>
-                <div class="block-center">
-                    <img class="logo" src="{{ asset('bundles/imhbase/images/logo.png') }}" alt="Harp" />
-                    <div>
-                        <h1>Ionella&nbsp;</h1>
-                        <h2>Marinutsa</h2>
-                        <div class="wrap-loader">
-                            <div class="loader-progress-bar" data-loading-bar>
-                                <img class="empty" src="{{ asset('bundles/imhbase/images/empty.gif') }}" />
-                            </div>
-                        </div>
-                        <p class="progressCounter">0 %</p>
-                        <h3>Harpist</h3>
-                    </div>
-                </div>
-                <div class="block-language">
-                    {% for i in range(0,2) -%}
-                    <a href="{{ path('imh_base_biography', {'_locale': ('imh.base.menu_lang.'~i~'.locale')|trans}) }}">{{ ('imh.base.menu_lang.'~i~'.text')|trans }}</a>
-                    {%- endfor %}
-                </div>
+
+            <a class="imh__content-home-link" href="{{ path('imh_base_biography') }}" data-enter-website>
+                <i class="fa fa-angle-down fa-4x" aria-hidden="true"></i>
+            </a>
+        </div>
+
+        <div class="imh__shutter">
+            <div class="imh-opening-col">
+                <div class="imh-opening-shutter" data-shutter></div>
+                <div class="imh-opening-shutter" data-shutter></div>
             </div>
-        {% endspaceless %}
-    </div>
+            <div class="imh-opening-col imh-opening-col--last">
+                <div class="imh-opening-shutter" data-shutter></div>
+                <div class="imh-opening-shutter" data-shutter></div>
+            </div>
+        </div>
+
+        <div class="imh__opening" data-opening>
+            <div class="imh__progress" data-progress>
+                <div class="imh-progress-bar" data-progress-bar></div>
+                <p class="imh-progress-counter" data-progress-counter>0 %</p>
+            </div>
+
+            <div class="imh__intro">
+                <hgroup class="imh__intro-heading-group">
+                    <h1 class="imh-intro-title helper-size-large">Ionella<strong class="imh-title-strong"> Marinutsa</strong></h1>
+                    <h2 class="imh-intro-subtitle helper-size-medium">Official Website</h2>
+                </hgroup>
+            </div>
+
+            <div class="imh-mouse">
+                <p class="imh-mouse__info">Scroll</p>
+                <div class="imh-mouse__elt imh-mouse__elt--end"></div>
+                <div class="imh-mouse__elt imh-mouse__elt--center"></div>
+                <div class="imh-mouse__elt imh-mouse__elt--end imh-mouse__elt--end-b"></div>
+                <i class="fa fa-angle-down" aria-hidden="true"></i>
+            </div>
+        </div>
+    {% endspaceless %}
 {% endblock %}
 
 {% block sidebar '' %}
@@ -61,28 +77,29 @@
             'use strict';
 
             var assetUrl     = '{{ asset('bundles/imhbase/images/ionella_bw.jpg') }}',
-                context      = $('[data-content-home]'),
-                lang         = $('.block-language'),
-                langLinks    = lang.children('a'),
-                loader       = $('[data-loading-bar]'),
-                counter      = $('.progressCounter'),
-                triangle     = $('.block-triangle'),
                 titles       = ['.block-myself h1', '.block-myself h2', '.block-myself h3'],
                 grTitles     = $(titles.join(', ')),
-                fontLoaded   = false,
+                context      = $('[data-content]'),
+                enterLink    = $('[data-enter-website]'),
+                opening      = $('[data-opening]'),
+                shutter      = $('[data-shutter]'),
+                bar          = $('[data-progress-bar]'),
+                counter      = $('[data-progress-counter]'),
                 windowH      = $(window).height(),
-                imageCtn     = $('.bkg-image-ctn'),
+                imageCtn     = $('[data-bkg-content]'),
                 imageCtnW    = imageCtn.width(),
-                image        = imageCtn.find('.bkg-image'),
+                image        = imageCtn.find('[data-bkg-image]'),
                 imageH       = image.height(),
                 imageW       = image.width(),
-                gap          = (image.width() + image.offset().left) - imageCtn.width(),
-                imageRatio   = imageH / imageW;
+                gap          = (imageW + image.offset().left) - imageCtn.width(),
+                imageRatio   = imageH / imageW,
+                animations   = 'animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd',
+                fontLoaded   = false,
+                wheelCount   = 0;
 
-
-            function adjustBkgImg(i, ic, icw, g, ir, wh) {
-                i.width(icw + g);
-                ic.height((icw + g) * ir);
+            function adjustBkgImg(i, ic, icw, gap, ir, wh) {
+                i.width(icw + gap);
+                ic.height((icw + gap) * ir);
                 if(ic.height() < wh) {
                     ic.height(wh);
                     i.css('width', 'auto');
@@ -104,41 +121,40 @@
                 type: 'GET',
                 url: assetUrl,
                 cache: false,
-                xhr: function () {
+                xhr: function() {
                     var xhr = new window.XMLHttpRequest();
                     //Download progress
                     addEvent("progress", xhr, function (evt) {
                         if (evt.lengthComputable) {
                             var percentComplete = Math.round((evt.loaded / evt.total) * 100);
                             counter.empty().html(percentComplete + ' %');
-                            loader.width(percentComplete + '%');
+                            bar.width(percentComplete + '%');
                         }
                     }, false);
                     return xhr;
                 },
-                success: function (data) {
-                    if(fontLoaded) {
+                success: function(data) {
+                    //if(fontLoaded) {
+                        adjustBkgImg(image, imageCtn, imageCtnW, gap, imageRatio, windowH);
                         context.addClass('mA_1');
-                    }
+                        document.addEventListener('DOMMouseScroll', handleScroll, false); // for Firefox
+                        document.addEventListener('mousewheel',     handleScroll, false); // for everyone else
+                   // }
                 },
                 error: function (jqXHR, textStatus, errorThrown) {
                     console.log('Error : ' + errorThrown);
                 }
             });
 
-            grTitles.fontSpy({
+            /*grTitles.fontSpy({
                 onLoad: 'hideMe',
-                onFail: 'fontFail georgia',
+                onFail: 'fontFail fontCall',
                 callback: function() { fontLoaded = true; }
-            });
+            });*/
 
-            image.on('transitionend webkitTransitionEnd oTransitionEnd MSTransitionEnd', function() {
-                context.addClass('mA_2');
-            });
-
-            $(window).on('load', function () {
+            $(window).on('load', function() {
                 var firstImg = imageCtn.find('img:first');
-                langLinks.hover(function() {
+                enterLink.hover(function() {
                     image.addClass('notransition');
                     firstImg.stop().animate({opacity:0}, 1500);
                 }, function() {
@@ -146,7 +162,7 @@
                 });
             });
 
-            var delay = (function(){
+            var delay = (function() {
                 var timer = 0;
                 return function(callback, ms){
                     clearTimeout (timer);
@@ -154,16 +170,34 @@
                 };
             })();
 
-            $(window).on('resize', function () {
+            $(window).on('resize', function() {
                 delay(function(){
                     imageCtnW = imageCtn.width();
-                    triangle.shape(this);
+                    windowH = $(window).height();
                     adjustBkgImg(image, imageCtn, imageCtnW, gap, imageRatio, windowH);
                 }, 500);
             });
 
-            triangle.shape(window);
-            adjustBkgImg(image, imageCtn, imageCtnW, gap, imageRatio, windowH);
+            var handleScroll = function(e) {
+                wheelCount++;
+                if (!e) e = event;
+                var direction = (e.detail < 0 || e.wheelDelta > 0) ? 1 : -1;
+
+                if (direction == 1) wheelCount = 0;
+                if (wheelCount == 4 && direction == -1) context.addClass('mA_2');
+            };
+
+            if (Modernizr.touchevents) {
+                context.one(animations, function(e) {
+                    context.delay(3000).addClass('mA_2');
+                });
+            }
+
+            shutter.one(animations, function(e) {
+                if (e.originalEvent.animationName != 'stack-in-height') {
+                    context.addClass('mA_3');
+                }
+            });
         });
 
     </script>

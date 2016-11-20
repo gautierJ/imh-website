@@ -1,13 +1,12 @@
 {% for thumb in options %}
-    <li {% if thumb.current is defined %}class="{{ thumb.current }}" data-active{% endif %}>
-        <a href="{{ path('sonata_media_view', {'id': thumb.id}) }}" title="{{ thumb.title }}">
+    <li class="imh__media-gallery-list-item{% if thumb.current is defined %} {{ thumb.current }}" data-active{% else %}"{% endif %}>
+        <a href="{{ path('sonata_media_view', {'id': thumb.id}) }}" class="imh__media-gallery-list-link" title="{{ thumb.title }}">
             <img src="{{ thumb.src }}" alt="{{ thumb.title }}" {#width="{{ thumb.width }}" height="{{ thumb.height }}"#} data-img>
             <span class="duration">{{ thumb.duration }}</span>
-                <span class="legend">
-                    <span class="title">{{ thumb.jsonData.title }}</span>
-                    <span class="description">{{ thumb.jsonData.viewCount }} {{ 'sonata.media.video.views'|trans }}</span>
-                </span>
-            <span class="decoration"></span>
+            <span class="legend">
+                <span class="title">{{ thumb.jsonData.title }}</span>
+                <span class="description">{{ thumb.jsonData.viewCount }} {{ 'sonata.media.video.views'|trans }}</span>
+            </span>
         </a>
     </li>
 {% endfor %}

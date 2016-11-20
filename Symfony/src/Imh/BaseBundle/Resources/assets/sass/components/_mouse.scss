@@ -5,7 +5,7 @@
 
 .imh-mouse {
   @include opacity(0);
-  @include transition(opacity .5s linear 0s);
+  @include transition(opacity .5s linear);
   position: absolute;
   left: calc(50% - 1px);
   bottom: 220px;
@@ -26,8 +26,19 @@
   }
 }
 
-.imh-mouse__elt {
+.imh-mouse__info {
+  font-size: $elevenpx;
+  color: $color-grey-dark;
+  font-family: "ethos_regular_italic", $font-fallback;
   position: absolute;
+  top: -17px;
+  left: -6px;
+  background-color: $color-grey-ultralight;
+  padding: 5px 0;
+  margin: 0;
+}
+
+.imh-mouse__elt {
   background: $color-grey-ultralight;
 }
 
@@ -38,7 +49,6 @@
 }
 
 .imh-mouse__elt--end-b {
-  top: 33px;
   @include border-radius(0 0 15px 15px);
   border-top: none;
   border-bottom: 1px solid $color-grey-medium;
@@ -46,7 +56,6 @@
 
 .imh-mouse__elt--center {
   @include size(15px, 15px);
-  top: 8px;
   position: relative;
 
   &::after {
@@ -63,9 +72,21 @@
 
 .imh__content {
   &.mA_1 {
-    .imh-mouse { @include opacity(1); }
+    .imh-mouse {
+      @include opacity(1);
+      @include transition-delay(.2s);
+    }
   }
   &.mA_2 {
-    .imh-mouse { @include opacity(0); }
+    .imh-mouse {
+      @include opacity(0);
+      @include transition-delay(0s);
+    }
+  }
+}
+
+@media (max-width: $screen-md-max) {
+  .imh-mouse {
+    display: none;
   }
 }

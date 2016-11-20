@@ -1,4 +1,4 @@
-$fa-font-path: "../../../../assets/vendor/components-font-awesome/fonts";
+$fa-font-path: "/bundles/imhbase/bower_components/fontawesome/fonts";
 @import "../main";
 
 .imh__container--wrapper {
@@ -64,6 +64,10 @@ $fa-font-path: "../../../../assets/vendor/components-font-awesome/fonts";
   float: right;
 }
 
+.imh__biography-title-h2 {
+  display: none;
+}
+
 .imh__biography-text {
   overflow: hidden;
   width: calc(100% - 5px);
@@ -72,18 +76,18 @@ $fa-font-path: "../../../../assets/vendor/components-font-awesome/fonts";
 
   p {
     font-size: $fourteenpx;
-    line-height: 1.4em;
+    line-height: 1.6em;
     color: $color-grey-darker;
   }
 
-  p:first-child {
+  .first {
     margin-top: 0;
 
     &::first-letter {
-      font-size: 66px;
-      line-height: 54px;
+      font-size: 44px;
+      line-height: 41px;
       float: left;
-      margin: 0 5px 0 -5px;
+      margin: 0 5px 0 -3px;
     }
   }
 
@@ -136,7 +140,7 @@ $fa-font-path: "../../../../assets/vendor/components-font-awesome/fonts";
 
   &.closed {
     .imh__prizes-slider-title {
-      &:after {
+      &::after {
         background-position: -102px -155px;
       }
     }
@@ -252,9 +256,7 @@ $fa-font-path: "../../../../assets/vendor/components-font-awesome/fonts";
   display: inline-block;
   height: 100%;
 
-  img {
-    background: url("/bundles/imhbase/images/sprite.png") -285px -131px no-repeat;
-    display: inline-block;
+  .icon--download {
     height: 20px;
     width: 19px;
     position: absolute;
@@ -263,6 +265,7 @@ $fa-font-path: "../../../../assets/vendor/components-font-awesome/fonts";
     margin-top: -10px;
     margin-left: -10px;
     z-index: 1;
+    fill: white;
   }
 
   &::after {
@@ -288,6 +291,10 @@ $fa-font-path: "../../../../assets/vendor/components-font-awesome/fonts";
 // ==================================================
 
 @media (max-width: $screen-xs-max) {
+  .imh__container-fluid {
+    background-color: $color-grey-ultralight;
+  }
+
   .imh__header {
     margin-bottom: 0;
   }
@@ -298,23 +305,73 @@ $fa-font-path: "../../../../assets/vendor/components-font-awesome/fonts";
     height: auto;
   }
 
-  .imh__container--wrapper {
-    padding: 15px 0;
+  .imh__container {
+    padding-bottom: 30px;
   }
 
-  .imh__biography {
-    margin-bottom: 34px;
+  .imh__container--wrapper {
+    padding: 0;
+    background: none;
+  }
+
+  .imh__mobile-cover {
+
+  }
+
+  .imh__image-painting {
+    width: 200px;
+    height: auto;
+    margin: 20px auto 40px;
+  }
+
+  .imh__image-enmp {
+    margin: 20px auto 40px;
+    border: 1px solid $color-grey-medium;
+  }
+
+  .imh__section {
+    margin-bottom: 20px;
+  }
+
+  .imh__biography-title-h2 {
+    display: block;
+    font-family: "ethos_regular", $font-fallback;
+    font-size: $twentyeightpx;
+    color: $color-grey-dark;
+    background-color: $color-grey-ultralight;
+    text-align: center;
+    position: relative;
+    margin: 30px 0;
+    padding: 6px 0;
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 1px;
+      height: 75px;
+      background-color: $color-grey-dark;
+      bottom: -16px;
+      left: 50%;
+      z-index: -1;
+      margin-left: -1px;
+    }
   }
 
   .imh__biography-text {
-    width: calc(100% - 1px);
-    padding: 0 15px 0 0;
+    width: 100%;
+    padding: 0;
+    visibility: visible;
+    float: none;
+    text-align: inherit;
 
     p {
-      font-size: $thirteenpx;
+      font-size: $fifteenpx;
 
-      &:first-child::first-letter {
-        font-size: 59px;
+      &.first::first-letter {
+        font-size: inherit;
+        line-height: normal;
+        margin: 0;
+        float: none;
       }
     }
   }
@@ -334,13 +391,29 @@ $fa-font-path: "../../../../assets/vendor/components-font-awesome/fonts";
   }
 
   .imh__prizes-slider-title {
-    font-size: $basepx;
+    font-size: $fifteenpx;
+    background-color: white;
+    padding: 10px 0;
+    border: 1px solid $color-grey-medium;
+    color: $color-grey-darker;
+    line-height: 25px;
+
+    &::before { border-top-color: $color-grey-medium; }
     &::after { display: none; }
+    &:hover {
+      background-color: $color-grey-medium;
+      &::before { border-top-color: $color-grey-medium; }
+    }
   }
 
   .imh__prizes-slider-content {
     margin-bottom: 0;
-    li { text-align: left; }
+    li {
+      text-align: left;
+      font-size: $fifteenpx;
+      padding-left: 5px;
+      padding-right: 5px;
+    }
   }
 
   .imh__prizes,

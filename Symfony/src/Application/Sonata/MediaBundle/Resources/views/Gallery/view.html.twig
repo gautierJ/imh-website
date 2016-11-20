@@ -58,12 +58,12 @@
                                 </div>#}
                                 <div class="media-btn-group">
                                     {% spaceless %}
-                                    {#<span class="media-btn media-btn--zoom">
+                                    {#<div class="media-btn media-btn--zoom">
                                         <i class="fa fa-search" aria-hidden="true"></i>
-                                    </span>#}
-                                    <span class="media-btn media-btn--close" data-close>
-                                        <i class="fa fa-times" aria-hidden="true"></i>
-                                    </span>
+                                    </div>#}
+                                    <div class="media-btn" data-close>
+                                        <svg class="icon icon--cross"><use xlink:href="#svg-cross"></use></svg>
+                                    </div>
                                     {% endspaceless %}
                                 </div>
                                 <div class="plus-icon" data-icon="plus"></div>
@@ -82,7 +82,7 @@
             {% embed "ImhBaseBundle:Part:sidebar.html.twig" %}
                 {% block menu_display %}
                     <a class="imh__navigation-menu-display" href="#" title="">
-                        <i class="fa fa-angle-right fa-3x"></i>
+                        <i class="fa fa-angle-right fa-3x" aria-hidden="true"></i>
                     </a>
                 {% endblock %}
                 {% block menu_social %}
@@ -132,12 +132,12 @@
     {#<script src="{{ asset('/assets/lib/isotope/smartresize.js') }}"></script>#}
 
     {% javascripts output='assets/compiled/js/gallery.js'
-        'assets/lib/sly/sly.js'
-        'assets/lib/infinite-scroll/jquery.infinite-scroll.js'
-        'assets/lib/isotope/imagesloaded.pkgd.min.js'
-        'assets/lib/isotope/pkgd.js'
-        '@ImhBaseBundle/Resources/assets/js/jquery.imh.gallery.js'
-        '@ImhBaseBundle/Resources/assets/js/jquery.imh.shape.js'
+    '@ImhBaseBundle/Resources/public/bower_components/sly/dist/sly.min.js'
+    'assets/lib/infinite-scroll/jquery.infinite-scroll.js'
+    'assets/lib/isotope/imagesloaded.pkgd.min.js'
+    'assets/lib/isotope/pkgd.js'
+    '@ImhBaseBundle/Resources/assets/js/jquery.imh.gallery.js'
+    '@ImhBaseBundle/Resources/assets/js/jquery.imh.shape.js'
     %}
     <script type="text/javascript" src="{{ asset_url }}"></script>
     {% endjavascripts %}

@@ -29,8 +29,10 @@
     {% stylesheets output='assets/compiled/css/video.css' filter='compass, cssrewrite'
         '@ApplicationSonataMediaBundle/Resources/assets/sass/video.scss'
         '@ImhBaseBundle/Resources/assets/sass/jquery.nouislider.scss'
-        '@ApplicationSonataCommentBundle/Resources/assets/sass/comments.scss'
     %}
+
+    {#'@ApplicationSonataCommentBundle/Resources/assets/sass/comments.scss'#}
+
     <link rel="stylesheet" href="{{ asset_url }}" type="text/css"/>
     {% endstylesheets %}
 {% endblock %}
@@ -195,13 +197,13 @@
     {{ parent() }}
 
     {% javascripts output='assets/compiled/js/video.js'
-        'assets/lib/sly/sly.js'
-        '@ImhBaseBundle/Resources/assets/js/svg/audio.js'
-        '@ImhBaseBundle/Resources/assets/js/screenfull.js'
-        '@ImhBaseBundle/Resources/assets/js/jquery.imh.scrollmove.js'
-        '@ImhBaseBundle/Resources/assets/js/jquery.nouislider.js'
-        '@ImhBaseBundle/Resources/assets/js/jquery.imh.player.js'
-        '@ImhBaseBundle/Resources/assets/js/twitter.js'
+    '@ImhBaseBundle/Resources/public/bower_components/sly/dist/sly.min.js'
+    '@ImhBaseBundle/Resources/assets/js/svg/audio.js'
+    '@ImhBaseBundle/Resources/assets/js/screenfull.js'
+    '@ImhBaseBundle/Resources/assets/js/jquery.imh.scrollmove.js'
+    '@ImhBaseBundle/Resources/assets/js/jquery.nouislider.js'
+    '@ImhBaseBundle/Resources/assets/js/jquery.imh.player.js'
+    '@ImhBaseBundle/Resources/assets/js/twitter.js'
     %}
     <script type="text/javascript" src="{{ asset_url }}"></script>
     {% endjavascripts %}
@@ -215,7 +217,6 @@
                 $fb           = $('[data-fb-share]'),
                 $tw           = $('[data-tw]');
 
-            // Lazy Load
             $('img.lazy').show().lazyload({
                 effect : 'fadeIn',
                 placeholder: '../../../../bundles/imhbase/images/empty.gif'
@@ -225,8 +226,6 @@
                 $('.navigation-menu').scrollMove(); // Menu plugin
             }
 
-            //$('#' + contentSelector).contentHeightAdjust();
-
             $.ajax({
                 type: 'GET',
                 dataType: 'html',
@@ -235,20 +234,31 @@
                     id: {{ app.request.get('id') }}
                 }),
                 success: function (data) {
-                    var i = 0;
-                    $(data).find('[data-img]').on('load', function() {
-                        i++;
-                        if (i == $(this).length) {
-                            $loader.fadeOut(500, function() {
-                                $mediaGallery.append(data).addClass('is-loaded');
-                                loadSly();
-                            });
-                        }
+                    var loadedImg = [],
+                        img = $(data).find('[data-img]'),
+                        totalImg = img.length;
+
+                    img.each(function(i) {
+                        $(this).on('load', function() {
+                            loadedImg.push(i);
+                            if (totalImg === loadedImg.length) {
+                                $loader.fadeOut(500, function () {
+                                    $mediaGallery.empty().append(data).addClass('is-loaded');
+                                    loadSly();
+                                });
+                            }
+                        });
                     });
                 },
-                error: function (jqXHR, textStatus, errorThrown) {
-                    alert('Error : ' + errorThrown);
-                }
+                error: function (jqXHR, textStatus, errorThrown) { // will fire when timeout is reached
+                    $loader.fadeOut(500, function() {
+                        $mediaGallery.addClass('is-loaded')
+                                     .append('<p class="imh__ajax-error text-center">An error occurred : <strong>'
+                                            + errorThrown +
+                                            '</strong>. Please try again later.</p>');
+                    });
+                },
+                timeout: 60000 // 1 min
             });
 
             function loadSly() {
@@ -258,6 +268,7 @@
                     $prev      = $('[data-prev]'),
                     $next      = $('[data-next]'),
                     activePos  = $frame.find('li[data-active]').index(),
+                    touch      = Modernizr.touchevents,
 
                     delay = (function () {
                         var timer = 0;
@@ -269,8 +280,8 @@
 
                     sly = new Sly($frame, {
                         horizontal: 1,
-                        itemNav: 'forceCentered',
-                        activateMiddle: 1,
+                        itemNav: touch ? 'forceCentered' : 'centered',
+                        activateMiddle: touch ? 1 : 0,
                         smart: 1,
                         scrollSource: $(".slidee"),
                         //activateOn: 'click',
@@ -310,15 +321,15 @@
                 e.preventDefault();
 
                 var width  = 575,
-                        height = 400,
-                        left   = ($(window).width()  - width)  / 2,
-                        top    = ($(window).height() - height) / 2,
-                        url    = this.href,
-                        opts   = 'status=1' +
-                                ',width='  + width  +
-                                ',height=' + height +
-                                ',top='    + top    +
-                                ',left='   + left;
+                    height = 400,
+                    left   = ($(window).width()  - width)  / 2,
+                    top    = ($(window).height() - height) / 2,
+                    url    = this.href,
+                    opts   = 'status=1' +
+                            ',width='  + width  +
+                            ',height=' + height +
+                            ',top='    + top    +
+                            ',left='   + left;
 
                 window.open(url, 'twitter', opts);
             });

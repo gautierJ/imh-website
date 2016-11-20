@@ -18,32 +18,50 @@
 
     <div class="container imh__container">
         <div class="imh__container--wrapper imh__container--shadows">
-            <section class="imh__biography">
+            <section class="imh__section imh__biography">
                 {% spaceless %}
-                <div class="col-xs-24 col-sm-10 col-md-10">
-                    <div class="imh__carousel owl-carousel" data-carousel>
-                        {% for i in range(3,1) -%}
-                            <div class="item"><img class="owl-lazy" data-src="{{ asset('bundles/imhbase/images/bio_0'~i~'.jpg') }}" alt="" /></div>
-                        {%- endfor %}
-                    </div>
-                </div>
-                <div class="col-xs-24 col-sm-14 col-md-14">
-                    <div class="imh__biography-scrollbar" data-scrollbar>
-                        <div class="handle">
-                            <div class="mousearea"></div>
+                    {% if isMobileDevice %}
+                        <div class="imh__mobile-cover">
+
                         </div>
-                    </div>
-                    <div class="imh__biography-text" data-text>
-                        <div class="frame">
-                            <div class="slidee">
-                                {{ 'imh.base.biography.main_text'|trans|raw }}
+                        <div class="col-xs-24">
+                            <div class="imh__biography-text">
+                                {{ 'imh.base.biography.main_text-section1'|trans|raw }}
+                                <img class="visible-xs imh__image-painting img-responsive" src="../../bundles/imhbase/images/painting.jpg" alt="Painting" />
+                                {{ 'imh.base.biography.main_text-section2'|trans|raw }}
+                                <img class="visible-xs imh__image-enmp img-responsive" src="../../bundles/imhbase/images/enmp.jpg" alt="ENMP" />
+                                {{ 'imh.base.biography.main_text-section3'|trans|raw }}
                             </div>
                         </div>
-                    </div>
-                </div>
+                    {% else %}
+                        <div class="col-xs-24 col-sm-10 col-md-10">
+                            <div class="imh__carousel owl-carousel" data-carousel>
+                                {% for i in range(1,2) -%}
+                                    <div class="item"><img class="owl-lazy" data-src="{{ asset('bundles/imhbase/images/bio_0'~i~'.jpg') }}" alt="" /></div>
+                                {%- endfor %}
+                            </div>
+                        </div>
+                        <div class="col-xs-24 col-sm-14 col-md-14">
+                            <div class="imh__biography-scrollbar" data-scrollbar>
+                                <div class="handle">
+                                    <div class="mousearea"></div>
+                                </div>
+                            </div>
+                            <div class="imh__biography-text" data-text>
+                                <div class="frame">
+                                    <div class="slidee">
+                                        {{ 'imh.base.biography.main_text-section1'|trans|raw }}
+                                        {{ 'imh.base.biography.main_text-section2'|trans|raw }}
+                                        {{ 'imh.base.biography.main_text-section3'|trans|raw }}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    {% endif %}
+
                 {% endspaceless %}
             </section>
-            <section class="imh__prizes closed" data-prizes>
+            <section class="imh__section imh__prizes closed" data-prizes>
                 <div class="col-xs-24">
                     <h2 class="imh__prizes-slider-title" data-prizes-title>{{ 'imh.base.biography.prizes.title'|trans }}</h2>
                     <ul class="imh__prizes-slider-content" data-prizes-content>
@@ -51,14 +69,16 @@
                     </ul>
                 </div>
             </section>
-            <section class="imh__download">
+            <section class="imh__section imh__download">
                 <div class="col-xs-24">
                     <h2 class="imh__prizes-slider-title visible-xs">{{ 'imh.base.biography.download'|trans }}</h2>
                 </div>
                 <div class="col-xs-24">
                     <div class="imh__download-button">
                         {#<a class="bio" href="{{ path('sonata_media_download', {'id': media|sonata_urlsafeid }) }}"><img class="empty" src="{{ asset('bundles/imhbase/images/empty.gif') }}" alt="" /></a>#}
-                        <a href="" class="imh__download-link" title="{{ 'imh.base.biography.download'|trans }}"><img class="empty" src="{{ asset('bundles/imhbase/images/empty.gif') }}" alt="" /></a>
+                        <a href="" class="imh__download-link" title="{{ 'imh.base.biography.download'|trans }}">
+                            <svg class="icon icon--download"><use xlink:href="#svg-download"></use></svg>
+                        </a>
                     </div>
                 </div>
             </section>
@@ -84,9 +104,9 @@
     {{ parent() }}
 
     {% javascripts output='assets/compiled/js/biography.js'
-        'assets/lib/owl-carousel/owl.carousel.min.js'
-        'assets/lib/sly/sly.js'
-        '@ImhBaseBundle/Resources/assets/js/jquery.imh.scrollmove.js'
+    'assets/lib/owl-carousel/owl.carousel.min.js'
+    '@ImhBaseBundle/Resources/public/bower_components/sly/dist/sly.min.js'
+    '@ImhBaseBundle/Resources/assets/js/jquery.imh.scrollmove.js'
     %}
     <script src="{{ asset_url }}"></script>
     {% endjavascripts %}
@@ -118,63 +138,63 @@
             if (!Modernizr.touchevents) {
                 $('[data-sidebar]').scrollMove(); // Menu plugin
             } else {
-                $sT.removeClass(cssClosed).trigger('click'); // Open prizes menu on mobile / tablet
+                $sT.removeClass(cssClosed).trigger('click').off(); // Open prizes menu on mobile / tablet
             }
 
-            var recalcHeight = function(isVisible) {
-                var $item = $('.item'),
-                    $elts = $('.loading, .imh__biography-text, .imh__biography-scrollbar');
-                $elts.height($item.height());
-                if(!isVisible) $elts.css('visibility', 'visible');
-            };
-
-            sly = new Sly($text, {
-                scrollBy: 250,
-                speed: 1000,
-                easing: 'easeOutQuad',
-                scrollBar: $scrollbar,
-                //dynamicHandle: 1,
-                dragHandle: 1,
-                clickBar: 1,
-                mouseDragging: 1,
-                touchDragging: 1,
-                releaseSwing: 1,
-                scrollTrap: 1
-            });
-
-            $carousel.owlCarousel({
-                items: 1,
-                lazyLoad: true
-            });
-
-            $carousel.on('loaded.owl.lazy', function(event) {
-                recalcHeight(isVisible);
-                $carousel.addClass(cssReady);
-                var ctrls = $('.owl-controls');
-                ctrls.css('marginLeft', -(ctrls.width()/2) + 'px');
-                sly.init();
-            });
-
-            /* Lazy Load */
             $('img.lazy').show().lazyload({
                 effect : 'fadeIn',
                 placeholder: '../../../bundles/imhbase/images/empty.gif'
             });
 
-            var delay = (function(){
-                var timer = 0;
-                return function(callback, ms){
-                    clearTimeout (timer);
-                    timer = setTimeout(callback, ms);
-                };
-            })();
+            if (Modernizr.mq('(min-width: 768px)')) { //
+                sly = new Sly($text, {
+                    scrollBy: 250,
+                    speed: 1000,
+                    easing: 'easeOutQuad',
+                    scrollBar: $scrollbar,
+                    //dynamicHandle: 1,
+                    dragHandle: 1,
+                    clickBar: 1,
+                    mouseDragging: 1,
+                    touchDragging: 1,
+                    releaseSwing: 1,
+                    scrollTrap: 1
+                });
 
-            $(window).on('resize', function () {
-                delay(function(){
-                    recalcHeight(isVisible = true);
-                    sly.reload();
-                }, 500);
-            });
+                $carousel.owlCarousel({
+                    items: 1,
+                    lazyLoad: true
+                });
+
+                $(document).on('loaded.owl.lazy', $carousel, function(event) {
+                    recalcHeight(isVisible);
+                    $carousel.addClass(cssReady);
+                    var ctrls = $('.owl-controls');
+                    ctrls.css('marginLeft', -(ctrls.width()/2) + 'px');
+                    sly.init();
+                });
+
+                var recalcHeight = function(isVisible) {
+                    var $elts = $('.loading, .imh__biography-text, .imh__biography-scrollbar');
+                    $elts.height($('.item').height());
+                    if(!isVisible) $elts.css('visibility', 'visible');
+                };
+
+                var delay = (function(){
+                    var timer = 0;
+                    return function(callback, ms){
+                        clearTimeout (timer);
+                        timer = setTimeout(callback, ms);
+                    };
+                })();
+
+                $(window).on('resize', function () {
+                    delay(function(){
+                        recalcHeight(isVisible = true);
+                        sly.reload();
+                    }, 500);
+                });
+            }
         });
     </script>
 {% endblock %}

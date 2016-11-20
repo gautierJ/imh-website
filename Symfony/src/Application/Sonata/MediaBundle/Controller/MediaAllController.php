@@ -7,7 +7,6 @@ use Sonata\MediaBundle\Model\MediaInterface;
 use Sonata\MediaBundle\Provider\MediaProviderInterface;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
-use Symfony\Component\Security\Core\Exception\AccessDeniedException;
 
 class MediaAllController extends BaseMediaController
 {
@@ -19,33 +18,22 @@ class MediaAllController extends BaseMediaController
      *
      * @return Response
      */
-    public function viewAction($id, $format = 'reference')
+    public function viewAction($id = null, $format = 'reference')
     {
-        $id = (int) $id;
-        $media = $this->getOne($id);
-
-        if (!$media) {
-            throw new NotFoundHttpException(sprintf('Unable to find the media with the id : %s', $id));
-        }
-
-        if (!$this->get('sonata.media.pool')->getDownloadSecurity($media)->isGranted($media, $this->getRequest())) {
-            throw new AccessDeniedException();
-        }
-
         $mediaAll = $this->getAll();
 
         if (!$mediaAll) {
-            throw new NotFoundHttpException('Unable to retrieve the gallery of medias');
+            throw new NotFoundHttpException('Unable to retrieve the medias');
         }
 
-        $provider = $this->container->get($media->getProviderName());
-
         $thumbnailFormat = 'default_small';
-        $format_definition = $provider->getFormat($thumbnailFormat);
         $options = array();
 
         foreach($mediaAll as $key => $value)
         {
+            $provider = $this->container->get($value->getProviderName());
+            $format_definition = $provider->getFormat($thumbnailFormat);
+
             $options[$key]['id'] = $value->getId();
             $options[$key]['title'] = $value->getName();
             $options[$key]['width'] = '';
@@ -61,19 +49,27 @@ class MediaAllController extends BaseMediaController
             $options[$key]['src'] = $provider->generatePublicUrl($value, $thumbnailFormat);
 
             $providerReference = $value->getProviderReference();
+
             $options[$key]['jsonData'] = $this->getApiJsonInformations($providerReference);
             $options[$key]['duration'] = $this->convertISO8601Duration($options[$key]['jsonData']['duration']);
 
-            if($value->getId() === $id) {
+            if($value->getId() == $this->getRequest()->get('id')) {
                 $options[$key]['current'] = 'active';
             }
         }
 
-        return $this->render('SonataMediaBundle:Media:media_gallery.html.twig', array(
-            'options'       => $options,
-            'formats'       => $this->get('sonata.media.pool')->getFormatNamesByContext($media->getContext()),
-            'format'        => $format
+        $response = $this->render('SonataMediaBundle:Media:media_gallery.html.twig', array(
+            'options' => $options,
+            'format'  => $format
         ));
+
+        // cache for 3600 seconds
+        $response->setSharedMaxAge(3600);
+
+        // (optional) set a custom Cache-Control directive
+        $response->headers->addCacheControlDirective('must-revalidate', true);
+
+        return $response;
     }
 
     /**
@@ -90,7 +86,7 @@ class MediaAllController extends BaseMediaController
         $data = file_get_contents($url);
 
         if (!$data) {
-            return false;
+            throw new \RuntimeException('Unable to read' . $url);
         }
 
         $metadata = json_decode($data);
@@ -126,21 +122,6 @@ class MediaAllController extends BaseMediaController
             }
         }
         return implode(':', $matches[0]);
-    }
-
-    /**
-     * Retrieve one media with custom youtube provider
-     *
-     * @param int $id
-     *
-     * @return MediaInterface
-     */
-    public function getOne($id)
-    {
-        return $this->get('sonata.media.manager.media')->findOneBy(array(
-            'id'           => $id,
-            'providerName' => 'sonata.media.provider.custom'
-        ));
     }
 
     /**

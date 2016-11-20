@@ -1,9 +1,15 @@
 // Headings
-// All page
+// All pages
 // ==================================================
 
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0;
+}
+
 .imh__title { font-weight: normal; }
+
 .imh__title-h1 {}
+
 .imh__title-h2 {
   font-family: 'ralewaymedium', $font-fallback;
   font-size: $fourteenpx;
@@ -27,38 +33,46 @@
   margin-top: 10px;
 }
 
-
-
 // Home page
 // ==================================================
 
-.imh__title-group {
+.imh__intro {
   @include opacity(0);
   @include translate(-50%, -50%);
-  width: 250px;
-  height: 120px;
+  background-color: $color-grey-ultralight;
+  width: 280px;
+  height: 110px;
   position: absolute;
   top: 50%;
   left: 50%;
+  z-index: 1;
+  text-align: center;
+  display: table;
 }
 
-.imh-title-large {
-
+.imh__intro-heading-group {
+  display: table-cell;
+  vertical-align: middle;
 }
 
-.imh-title-medium {
+.imh-intro-title {
+  font-family: 'ralewaylight', $font-fallback;
+  margin: 12px 0;
 
+  .imh-title-strong {
+    font-family: 'ralewayregular', $font-fallback;
+    color: $color-grey-dark;
+  }
 }
 
-.imh-title-strong {
-
+.imh-intro-subtitle {
+  font-family: 'ethos_regular_italic', $font-fallback;
+  color: $color-grey-dark;
+  margin: 12px 0;
 }
 
-.imh__opening {
-  &.mA_0 {
-    .imh__title-group {
-      @include opacity(1);
-      @include transition(opacity 1s linear .7s);
-    }
+@media (max-width: $screen-xs-max) {
+  .imh__intro {
+    //top: 42%;
   }
 }

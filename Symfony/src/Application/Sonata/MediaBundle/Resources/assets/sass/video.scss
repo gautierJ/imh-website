@@ -1,4 +1,4 @@
-$fa-font-path: "../../../assets/vendor/components-font-awesome/fonts";
+$fa-font-path: "/bundles/imhbase/bower_components/fontawesome/fonts";
 @import "../../../../../../Imh/BaseBundle/Resources/assets/sass/main";
 
 .imh__container--wrapper {
@@ -412,7 +412,7 @@ $fa-font-path: "../../../assets/vendor/components-font-awesome/fonts";
     display: inline-block;
     @include border-radius(13px);
 
-    &:after {
+    &::after {
       content: '';
       position: absolute;
       left: 9px;
@@ -458,7 +458,7 @@ $fa-font-path: "../../../assets/vendor/components-font-awesome/fonts";
         left: -25px;
       }
 
-      &:after {
+      &::after {
         content: normal;
       }
     }
@@ -493,6 +493,7 @@ $fa-font-path: "../../../assets/vendor/components-font-awesome/fonts";
 .imh__media-gallery-frame {
   @include calc(width, '100% - 100px');
   height: 135px;
+  padding: 0 14px;
 }
 
 .imh__media-gallery-list {
@@ -500,75 +501,6 @@ $fa-font-path: "../../../assets/vendor/components-font-awesome/fonts";
   text-align: center;
   padding-top: 8px;
   white-space: nowrap;
-
-  li {
-    display: inline-block;
-    vertical-align: top;
-    text-align: left;
-    margin: 0 11px;
-    width: 150px;
-
-    a {
-      position: relative;
-      display: block;
-
-      &:hover {
-        .decoration {
-          background-color: white;
-          border-color: $color-grey-medium;
-        }
-
-        img {
-          @include saturation(0);
-        }
-      }
-    }
-
-    &.active {
-      .decoration {
-        background-color: white;
-        border-color: $color-grey-medium;
-      }
-
-      img {
-        @include saturation(0);
-      }
-    }
-
-    img {
-      @include saturation(100%);
-      @include transition(all .2s ease-in 0s);
-      display: block;
-      width: 150px;
-      height: auto;
-      //-ms-interpolation-mode: nearest-neighbor;
-    }
-
-    .duration {
-      position: absolute;
-      bottom: 2px;
-      right: 2px;
-      color: white;
-      background: $color-grey-darker;
-      font-size: $tenpx;
-      padding: 2px 5px;
-      border: 1px solid $color-grey-lighter;
-    }
-
-    .decoration {
-      @include transition(all .2s ease-in 0s);
-      background: none;
-      border: 1px solid transparent;
-      height: 100%;
-      width: 100%;
-      padding: 7px 7px 42px;
-      position: absolute;
-      top: -8px;
-      left: -8px;
-      z-index: -1;
-      box-sizing: content-box;
-    }
-  }
 
   .legend {
     position: absolute;
@@ -589,6 +521,78 @@ $fa-font-path: "../../../assets/vendor/components-font-awesome/fonts";
       font-size: $tenpx;
       color: $color-grey-medium;
     }
+  }
+}
+
+.imh__media-gallery-list-item {
+  display: inline-block;
+  vertical-align: top;
+  text-align: left;
+  margin: 0 11px;
+  width: 150px;
+
+  &.active {
+    .imh__media-gallery-list-link {
+      &::after {
+        background-color: white;
+        border-color: $color-grey-medium;
+      }
+    }
+
+    img {
+      @include saturation(0);
+    }
+  }
+
+  img {
+    @include saturation(100%);
+    @include transition(all .2s ease-in 0s);
+    display: block;
+    width: 150px;
+    height: auto;
+    //-ms-interpolation-mode: nearest-neighbor;
+  }
+
+  .duration {
+    position: absolute;
+    bottom: 2px;
+    right: 2px;
+    color: white;
+    background: $color-grey-darker;
+    font-size: $tenpx;
+    padding: 2px 5px;
+    border: 1px solid $color-grey-lighter;
+  }
+}
+
+.imh__media-gallery-list-link {
+  position: relative;
+  display: block;
+
+  &:hover {
+    &::after {
+      background-color: white;
+      border-color: $color-grey-medium;
+    }
+
+    img {
+      @include saturation(0);
+    }
+  }
+
+  &::after {
+    @include transition(all .2s ease-in 0s);
+    content: '';
+    background: none;
+    border: 1px solid transparent;
+    height: 100%;
+    width: 100%;
+    padding: 7px 7px 42px;
+    position: absolute;
+    top: -8px;
+    left: -8px;
+    z-index: -1;
+    box-sizing: content-box;
   }
 }
 
@@ -645,6 +649,14 @@ $fa-font-path: "../../../assets/vendor/components-font-awesome/fonts";
   }
 }
 
+.imh__ajax-error {
+  background-color: rgba(255,0,0,.02);
+  border-top: 1px solid rgba(145,0,11,.3);
+  margin: 0;
+  padding: 20px 15px 23px;
+  font-size: $fourteenpx;
+}
+
 // Media queries
 // ==================================================
 
@@ -657,7 +669,7 @@ $fa-font-path: "../../../assets/vendor/components-font-awesome/fonts";
 
   .imh__progress-bar-wrapper {
     padding: 0 15px;
-    height: 30px;
+    height: 31px;
     line-height: 26px;
   }
 
@@ -739,5 +751,11 @@ $fa-font-path: "../../../assets/vendor/components-font-awesome/fonts";
 
   .imh__scrollbar {
     display: none;
+  }
+
+  .imh__ajax-error {
+    background-color: rgba(255,0,0,.1);
+    padding: 13px 15px 16px;
+    font-size: $thirteenpx;
   }
 }

@@ -1,186 +1,98 @@
-.top-page {
-  text-align: center;
-  height: 30px;
-  width: 100%;
-  position: relative;
-  margin-top: 120px; }
-  .top-page:after {
-    background: #b18f5c;
-    bottom: -1px;
-    content: "";
-    display: block;
-    height: 1px;
-    left: 50%;
-    position: absolute;
-    -webkit-transition: all 0.3s ease 0s;
-    -o-transition: all 0.3s ease 0s;
-    transition: all 0.3s ease 0s;
-    width: 0; }
-  .top-page:hover:after {
-    left: 0;
-    width: 100%; }
-  .top-page a {
-    position: relative;
-    display: block;
-    height: 37px; }
-    .top-page a .arrow, .top-page a .circle {
-      background: url("/bundles/imhbase/images/sprite.png") no-repeat;
-      position: absolute;
-      left: 50%; }
-    .top-page a .arrow {
-      background-position: -246px -106px;
-      height: 14px;
-      width: 27px;
-      margin-left: -13px;
-      display: block;
-      margin-top: 8px;
-      opacity: 0.3; }
-    .top-page a .circle {
-      background-position: -280px -81px;
-      height: 7px;
-      width: 7px;
-      top: 27px;
-      margin-left: -3px;
-      z-index: 1; }
-    .top-page a:hover .arrow {
-      background-position: -246px -81px;
-      opacity: 1; }
-    .top-page a:hover .circle {
-      background-position: -280px -92px; }
+/*
+Syntax error: Invalid CSS after "        ba": expected "{", was "}"
+        on line 58 of ../../../../../../Imh/BaseBundle/Resources/assets/sass/_loader.scss
+        from line 20 of ../../../../../../Imh/BaseBundle/Resources/assets/sass/main.scss
+        from line 1 of comments.scss
 
-#comment {
-  background: url("/bundles/imhbase/images/stripes.png") repeat;
-  min-height: 300px;
-  border-top: 1px solid whitesmoke;
-  padding: 30px 0 100px; }
-  #comment .box {
-    width: 843px;
-    margin: 0 auto; }
-    #comment .box .fos_comment_comment_form_holder {
-      background-color: white;
-      border: 1px solid lightgrey;
-      padding: 23px; }
-      #comment .box .fos_comment_comment_form_holder #fos_comment_comment_body {
-        border: 1px solid #898989; }
-    #comment .box footer {
-      text-align: center;
-      width: 100%; }
-      #comment .box footer a {
-        background-color: white;
-        font-size: 0.917em;
-        color: #898989;
-        padding: 5px 15px;
-        border: 1px solid lightgrey;
-        display: inline-block;
-        -webkit-transition: all 0.2s ease 0s;
-        -o-transition: all 0.2s ease 0s;
-        transition: all 0.2s ease 0s; }
-        #comment .box footer a:hover {
-          border: 1px solid #898989;
-          color: #3f3f3f; }
+53:         position: absolute;
+54:         bottom: -1px;
+55:         width: 10%;
+56:         height: 1px;
+57:         ba
+58:       }
+59: 
+60:     }
+61:   }
+62: 
+63:   &:nth-child(even) {
 
-.fos_comment_thread_show {
-  margin-top: 2em;
-  padding: 1em 20px;
-  width: 472px;
-  background: #f0f0f0;
-  box-shadow: 0 0 7px #bbb;
-  -moz-box-shadow: 0 0 7px #bbb;
-  -webkit-box-shadow: 0 0 7px #bbb;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px; }
-
-.fos_comment_thread_show h3 {
-  font-size: 1.3em;
-  font-weight: bold;
-  margin-bottom: 1em;
-  color: #a0a0a0; }
-
-.fos_comment_comment_show {
-  color: #555; }
-
-.fos_comment_comment_metas {
-  margin: 1.5em 0 0.5em 0;
-  padding: 1em 20px;
-  background: #e6e6e6;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px; }
-
-.fos_comment_comment_body {
-  line-height: 1.5em; }
-
-.fos_comment_comments .fos_comment_comments {
-  margin-left: 2em; }
-
-.fos_comment_comment_reply {
-  text-align: right; }
-
-.fos_comment_comment_reply.replying {
-  text-align: left;
-  margin-top: 1em;
-  padding: 1em 20px;
-  background: #d6d6d6;
-  border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px; }
-
-.fos_comment_comment_reply_show_form {
-  padding: 2px 5px;
-  font-size: 0.8em; }
-
-.fos_comment_comment_reply.fos_comment_replying button.fos_comment_comment_reply_show_form {
-  display: none; }
-
-.fos_comment_thread_comments {
-  margin-bottom: 1.5em; }
-
-.fos_comment_reply_prototype {
-  display: none; }
-
-.fos_comment_thread_show > form.fos_comment_comment_form {
-  margin-bottom: 1em; }
-
-form.fos_comment_comment_form.processing {
-  opacity: 0.5; }
-
-form.fos_comment_comment_form label.author_name {
-  margin-top: 3px;
-  float: left; }
-
-form.fos_comment_comment_form label.author_name input {
-  padding: 2px 5px; }
-
-form.fos_comment_comment_form textarea {
-  width: 98%;
-  height: 6em;
-  padding: 1%; }
-
-form.fos_comment_comment_form.error textarea {
-  border-color: red; }
-
-.fos_comment_form_errors {
-  color: #ff0000; }
-
-.fos_comment_submit {
-  text-align: right; }
-
-.fos_comment_submit input {
-  font-size: 1.2em;
-  padding: 3px 12px;
-  margin-top: 3px; }
-
-a.fos_comment_thread_feed {
-  width: 16px;
-  height: 16px;
-  display: block;
-  float: right; }
-
-.fos_comment_comment_voting {
-  float: right; }
-
-.fos_comment_comment_score {
-  display: inline-block; }
+Backtrace:
+../../../../../../Imh/BaseBundle/Resources/assets/sass/_loader.scss:58
+../../../../../../Imh/BaseBundle/Resources/assets/sass/main.scss:20
+comments.scss:1
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:1146:in `expected'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:1084:in `expected'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:1079:in `tok!'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:533:in `block'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:528:in `ruleset'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:590:in `block in declaration_or_ruleset'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:1122:in `rethrow'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:591:in `declaration_or_ruleset'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:553:in `block_child'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:545:in `block_contents'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:534:in `block'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:528:in `ruleset'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:590:in `block in declaration_or_ruleset'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:1122:in `rethrow'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:591:in `declaration_or_ruleset'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:553:in `block_child'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:542:in `block_contents'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:534:in `block'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:528:in `ruleset'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:590:in `block in declaration_or_ruleset'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:1122:in `rethrow'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:591:in `declaration_or_ruleset'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:553:in `block_child'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:545:in `block_contents'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:534:in `block'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:528:in `ruleset'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:590:in `block in declaration_or_ruleset'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:1122:in `rethrow'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:591:in `declaration_or_ruleset'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:553:in `block_child'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:545:in `block_contents'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:534:in `block'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:528:in `ruleset'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:552:in `block_child'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:545:in `block_contents'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:82:in `stylesheet'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:27:in `parse'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:342:in `_to_tree'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:274:in `to_tree'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:225:in `visit_import'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:37:in `visit'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:100:in `visit'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:227:in `block in visit_import'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:227:in `map'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:227:in `visit_import'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:37:in `visit'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:100:in `visit'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:53:in `block in visit_children'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:53:in `map'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:53:in `visit_children'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:109:in `block in visit_children'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:121:in `with_environment'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:108:in `visit_children'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:37:in `block in visit'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:128:in `visit_root'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:37:in `visit'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:100:in `visit'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:7:in `visit'
+/usr/lib/ruby/vendor_ruby/sass/tree/root_node.rb:20:in `render'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:315:in `_render'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:262:in `render'
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:362:in `update_stylesheet'
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:203:in `block in update_stylesheets'
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:201:in `each'
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:201:in `update_stylesheets'
+/usr/lib/ruby/vendor_ruby/sass/plugin.rb:81:in `update_stylesheets'
+/usr/lib/ruby/vendor_ruby/sass/exec.rb:439:in `watch_or_update'
+/usr/lib/ruby/vendor_ruby/sass/exec.rb:326:in `process_result'
+/usr/lib/ruby/vendor_ruby/sass/exec.rb:41:in `parse'
+/usr/lib/ruby/vendor_ruby/sass/exec.rb:21:in `parse!'
+/usr/bin/scss:8:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: Invalid CSS after \"        ba\": expected \"{\", was \"}\"\A         on line 58 of ../../../../../../Imh/BaseBundle/Resources/assets/sass/_loader.scss\A         from line 20 of ../../../../../../Imh/BaseBundle/Resources/assets/sass/main.scss\A         from line 1 of comments.scss\A \A 53:         position: absolute;\A 54:         bottom: -1px;\A 55:         width: 10%;\A 56:         height: 1px;\A 57:         ba\A 58:       }\A 59: \A 60:     }\A 61:   }\A 62: \A 63:   &:nth-child(even) {"; }
