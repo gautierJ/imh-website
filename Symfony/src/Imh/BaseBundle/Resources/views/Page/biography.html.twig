@@ -1,6 +1,6 @@
 {% extends 'ImhBaseBundle::layout.html.twig' %}
 
-{% block title %}{{ 'imh.base.biography.page_title'|trans }}{% endblock%}
+{% block title %}{{ 'imh.base.biography.page_title'|trans }}{% endblock %}
 
 {% block stylesheets %}
     <link rel="stylesheet" href="{{ asset('/assets/lib/owl-carousel/owl.carousel.css') }}" type="text/css" />
@@ -13,6 +13,7 @@
 {% endblock %}
 
 {% block main %}
+
     <img class="imh__bkg-image lazy" data-original="{{ asset('bundles/imhbase/images/strings.jpg') }}" alt="" />
     <noscript><img src="{{ asset('bundles/imhbase/images/strings.jpg') }}" alt="Harp strings"></noscript>
 
@@ -27,7 +28,7 @@
                         <div class="col-xs-24">
                             <div class="imh__biography-text">
                                 {{ 'imh.base.biography.main_text-section1'|trans|raw }}
-                                <img class="visible-xs imh__image-painting img-responsive" src="../../bundles/imhbase/images/painting.jpg" alt="Painting" />
+                                {#<img class="visible-xs imh__image-painting img-responsive" src="../../bundles/imhbase/images/painting.jpg" alt="Painting" />#}
                                 {{ 'imh.base.biography.main_text-section2'|trans|raw }}
                                 <img class="visible-xs imh__image-enmp img-responsive" src="../../bundles/imhbase/images/enmp.jpg" alt="ENMP" />
                                 {{ 'imh.base.biography.main_text-section3'|trans|raw }}

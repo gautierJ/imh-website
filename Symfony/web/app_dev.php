@@ -17,6 +17,12 @@ use Symfony\Component\Debug\Debug;
     exit('You are not allowed to access this file. Check '.basename(__FILE__).' for more information.');
 }*/
 
+/*--------------------------------------*/
+/*   Access coresphereconsole in prod
+/*--------------------------------------*/
+
+// http://ionella-marinutsa.com/Symfony/web/app_dev.php/_console/
+
 $loader = require_once __DIR__.'/../app/bootstrap.php.cache';
 Debug::enable();
 

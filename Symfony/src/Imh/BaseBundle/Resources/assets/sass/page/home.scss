@@ -29,15 +29,7 @@ $fa-font-path: "/bundles/imhbase/bower_components/fontawesome/fonts";
   }
 }
 
-.imh__container-fluid,
-.imh__content {
-  height: 100%;
-}
-
-.imh__content {
-  margin-left: -15px;
-  margin-right: -15px;
-
+body {
   &.mA_1 {
     .imh__progress {
       &::before, &::after {
@@ -122,13 +114,15 @@ $fa-font-path: "/bundles/imhbase/bower_components/fontawesome/fonts";
   }
 }
 
-.imh__content-home {
+.imh__container-fluid,
+.imh__content {
   height: 100%;
-  width: 100%;
+}
+
+.imh__content {
+  margin-left: -15px;
+  margin-right: -15px;
   overflow: hidden;
-  position: absolute;
-  top: 0;
-  left: 0;
 }
 
 .imh__ionella-bkg-content {
@@ -136,6 +130,7 @@ $fa-font-path: "/bundles/imhbase/bower_components/fontawesome/fonts";
   width: 80%;
   height: 100%;
   position: relative;
+  z-index: 0;
 }
 
 .imh-ionella-bkg-image {
@@ -209,10 +204,6 @@ $fa-font-path: "/bundles/imhbase/bower_components/fontawesome/fonts";
 @media (max-width: $screen-xs-max) {
   .imh__content {
     padding-top: 0;
-  }
-
-  .imh__content-home {
-    overflow: inherit;
   }
 
   .imh__content-home-link {

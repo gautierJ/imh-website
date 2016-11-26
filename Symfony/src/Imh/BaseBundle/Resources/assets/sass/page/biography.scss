@@ -125,7 +125,7 @@ $fa-font-path: "/bundles/imhbase/bower_components/fontawesome/fonts";
 
 .imh__prizes-slider-title::after,
 .imh__prizes.closed .slider-title::after {
-  content: "";
+  content: '';
   background: url("/bundles/imhbase/images/sprite.png");
   height: 18px;
   width: 18px;
@@ -165,12 +165,12 @@ $fa-font-path: "/bundles/imhbase/bower_components/fontawesome/fonts";
   text-transform: uppercase;
   @include transition(background-color .3s ease 0s);
 
-  &:before {
+  &::before {
+    content: '';
     position: absolute;
     left: 50%;
     margin-left: -5px;
     bottom: -6px;
-    content: "";
     width: 0;
     height: 0;
     border-style: solid;
@@ -179,14 +179,14 @@ $fa-font-path: "/bundles/imhbase/bower_components/fontawesome/fonts";
     @include transition(border-color .3s ease 0s);
   }
 
-  &:after {
+  &::after {
     background-position: -102px -173px;
   }
 
   &:hover {
     background-color: $color-brown-dark;
 
-    &:before {
+    &::before {
       border-color: $color-brown-dark transparent transparent transparent;
     }
   }
@@ -398,8 +398,28 @@ $fa-font-path: "/bundles/imhbase/bower_components/fontawesome/fonts";
     color: $color-grey-darker;
     line-height: 25px;
 
-    &::before { border-top-color: $color-grey-medium; }
-    &::after { display: none; }
+    &::before {
+      border-top-color: $color-grey-medium;
+      border-width: 8px 7px 0;
+      margin-left: -7px;
+      bottom: -8px;
+    }
+
+    &::after {
+      content: '';
+      background-position: inherit;
+      position: absolute;
+      left: 50%;
+      margin-left: -5px;
+      top: auto;
+      bottom: -6px;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 6px 5px 0;
+      border-color: white transparent transparent transparent;
+    }
+
     &:hover {
       background-color: $color-grey-medium;
       &::before { border-top-color: $color-grey-medium; }

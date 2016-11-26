@@ -28,12 +28,14 @@
         {% block stylesheets '' %}
     </head>
 
-    <body>
+    <body data-body>
         {% block facebookSDK '' %}
         {% block flashes '' %}
         {% include 'ImhBaseBundle:Part:svg.html.twig' %}
+        {% block loader '' %}
 
         <div class="container-fluid imh__container-fluid">
+
             {% block header %}
                 <header class="imh__header">
                     {% include 'ImhBaseBundle:Menu:navigation.html.twig' %}
@@ -76,15 +78,15 @@
             'assets/lib/modernizr/modernizr-custom.js'
             '@ImhBaseBundle/Resources/assets/js/jquery.fontspy.js'
             '@ImhBaseBundle/Resources/assets/js/jquery.imh.menumobile.js'
+            '@ImhBaseBundle/Resources/assets/js/ajax.js'
             %}
+
+            <script src="{{ asset_url }}"></script>
+            {% endjavascripts %}
 
             {#FOSJsRoutingBundle#}
             <script src="{{ asset('bundles/fosjsrouting/js/router.js') }}"></script>
             <script src="{{ path('fos_js_routing_js', {"callback": "fos.Router.setData"}) }}"></script>
-
-            {#'@ImhBaseBundle/Resources/assets/js/_jquery.ajax.js'#}
-            <script src="{{ asset_url }}"></script>
-            {% endjavascripts %}
 
             <script>
                 $(function () {

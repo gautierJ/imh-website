@@ -32,6 +32,10 @@ twig:
     debug:            %kernel.debug%
     strict_variables: %kernel.debug%
 
+# FOSJsRouting Configuration
+fos_js_routing:
+    routes_to_expose: [ imh_base_biography ]
+
 # Assetic Configuration
 assetic:
     debug:          %kernel.debug%

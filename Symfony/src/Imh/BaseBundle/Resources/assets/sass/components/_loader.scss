@@ -43,11 +43,22 @@
   }
 }
 
+.imh-loader {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
 .imh__opening {
   @include opacity(1);
   height: 100%;
-  position: relative;
-  z-index: 1;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
 
   &::after {
     @extend %pseudo-vertical-align;
@@ -55,10 +66,8 @@
 }
 
 .imh__shutter {
-  position: absolute;
-  width: 100%;
   height: 100%;
-  z-index: 1;
+  width: 100%;
 }
 
 .imh-opening-col {
@@ -113,8 +122,6 @@
   height: 50%;
 }
 
-
-
 /*.imh-opening-col {
   .imh-opening-shutter:first-child {
     top: 0;
@@ -133,9 +140,6 @@
     right: 0;
   }
 }*/
-
-
-
 
 .imh__progress {
   width: 400px;

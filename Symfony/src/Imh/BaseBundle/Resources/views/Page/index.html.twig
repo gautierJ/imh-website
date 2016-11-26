@@ -8,54 +8,26 @@
     {% endstylesheets %}
 {% endblock %}
 
+{% block loader %}
+    {% include 'ImhBaseBundle:Part:loader.html.twig' %}
+{% endblock %}
+
 {% block header '' %}
 
 {% block main %}
     {% spaceless %}
+    <figure class="imh__ionella-bkg-content" data-bkg-content>
+        <img class="imh-ionella-bkg-image" data-bkg-image src="{{ asset('bundles/imhbase/images/ionella_bw.jpg') }}" alt="Ionella Marinutsa" />
+        <img class="imh-ionella-bkg-image" data-bkg-image src="{{ asset('bundles/imhbase/images/ionella.jpg') }}" alt="Ionella Marinutsa" />
+    </figure>
 
-        <div class="imh__content-home" data-content-home>
-            <figure class="imh__ionella-bkg-content" data-bkg-content>
-                <img class="imh-ionella-bkg-image" data-bkg-image src="{{ asset('bundles/imhbase/images/ionella_bw.jpg') }}" alt="Ionella Marinutsa" />
-                <img class="imh-ionella-bkg-image" data-bkg-image src="{{ asset('bundles/imhbase/images/ionella.jpg') }}" alt="Ionella Marinutsa" />
-            </figure>
+    {#<a href="#" class="imh__content-home-link" data-ajax data-path='imh_base_biography,{{ app.request.locale }}' data-enter-website>
+        <i class="fa fa-angle-down fa-4x" aria-hidden="true"></i>
+    </a>#}
 
-            <a class="imh__content-home-link" href="{{ path('imh_base_biography') }}" data-enter-website>
-                <i class="fa fa-angle-down fa-4x" aria-hidden="true"></i>
-            </a>
-        </div>
-
-        <div class="imh__shutter">
-            <div class="imh-opening-col">
-                <div class="imh-opening-shutter" data-shutter></div>
-                <div class="imh-opening-shutter" data-shutter></div>
-            </div>
-            <div class="imh-opening-col imh-opening-col--last">
-                <div class="imh-opening-shutter" data-shutter></div>
-                <div class="imh-opening-shutter" data-shutter></div>
-            </div>
-        </div>
-
-        <div class="imh__opening" data-opening>
-            <div class="imh__progress" data-progress>
-                <div class="imh-progress-bar" data-progress-bar></div>
-                <p class="imh-progress-counter" data-progress-counter>0 %</p>
-            </div>
-
-            <div class="imh__intro">
-                <hgroup class="imh__intro-heading-group">
-                    <h1 class="imh-intro-title helper-size-large">Ionella<strong class="imh-title-strong"> Marinutsa</strong></h1>
-                    <h2 class="imh-intro-subtitle helper-size-medium">Official Website</h2>
-                </hgroup>
-            </div>
-
-            <div class="imh-mouse">
-                <p class="imh-mouse__info">Scroll</p>
-                <div class="imh-mouse__elt imh-mouse__elt--end"></div>
-                <div class="imh-mouse__elt imh-mouse__elt--center"></div>
-                <div class="imh-mouse__elt imh-mouse__elt--end imh-mouse__elt--end-b"></div>
-                <i class="fa fa-angle-down" aria-hidden="true"></i>
-            </div>
-        </div>
+    <a href="{{ path('imh_base_biography') }}" class="imh__content-home-link" data-enter-website>
+        <i class="fa fa-angle-down fa-4x" aria-hidden="true"></i>
+    </a>
     {% endspaceless %}
 {% endblock %}
 
@@ -79,7 +51,7 @@
             var assetUrl     = '{{ asset('bundles/imhbase/images/ionella_bw.jpg') }}',
                 titles       = ['.block-myself h1', '.block-myself h2', '.block-myself h3'],
                 grTitles     = $(titles.join(', ')),
-                context      = $('[data-content]'),
+                context      = $('[data-body]'),
                 enterLink    = $('[data-enter-website]'),
                 opening      = $('[data-opening]'),
                 shutter      = $('[data-shutter]'),
@@ -124,16 +96,16 @@
                 xhr: function() {
                     var xhr = new window.XMLHttpRequest();
                     //Download progress
-                    addEvent("progress", xhr, function (evt) {
-                        if (evt.lengthComputable) {
-                            var percentComplete = Math.round((evt.loaded / evt.total) * 100);
+                    addEvent("progress", xhr, function (e) {
+                        if (e.lengthComputable) {
+                            var percentComplete = Math.round((e.loaded / e.total) * 100);
                             counter.empty().html(percentComplete + ' %');
                             bar.width(percentComplete + '%');
                         }
                     }, false);
                     return xhr;
                 },
-                success: function(data) {
+                success: function() {
                     //if(fontLoaded) {
                         adjustBkgImg(image, imageCtn, imageCtnW, gap, imageRatio, windowH);
                         context.addClass('mA_1');
@@ -188,8 +160,8 @@
             };
 
             if (Modernizr.touchevents) {
-                context.one(animations, function(e) {
-                    context.delay(3000).addClass('mA_2');
+                context.one(animations, function() {
+                    $(this).delay(3000).addClass('mA_2');
                 });
             }
 
