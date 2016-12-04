@@ -10,30 +10,29 @@
         'cssAnimations' : ['mA_1', 'mA_2']
     };
 
-    var gallerySelector   = 'imh__gallery-wrapper',
-        frameSelector     = 'frame',
-        slideeSelector    = 'slidee',
-        scrollbarSelector = 'imh__scrollbar',
-        navDispSelector   = 'imh__navigation-menu-display',
-        sly,
-        wWidth            = $(window).width(),
-        wHeight           = $(window).height(),
-        ratio             = wWidth/wHeight,
+    var gallery      = $('[data-gallery]'),
+        frame        = $('[data-gallery-frame]'),
+        list         = $('[data-gallery-list]'),
+        item         = $('[data-gallery-item]'),
+        scrollbar    = $('[data-scrollbar]'),
+        navigation   = $('[data-navigation]'),
+        image        = $('[data-image]'),
+        $zoom        = $('[data-zoom]'),
+        $close       = $('[data-close]'),
 
-        containerSelector = 'sonata-media-gallery-media-list',
-        itemSelector      = 'sonata-media-gallery-media-item',
-        linkSelector      = 'sonata-media-gallery-media-item-link',
-        imageSelector     = 'media-object',
-        expSelector       = 'is-expanded',
-        hiddenSelector    = 'is-hidden',
-        triggerSelector   = 'imh__trigger',
-        $zoom             = $('[data-zoom]'),
-        $close            = $('[data-close]'),
-        $container        = $('.' + containerSelector),
-        $targetItem       = null,
-        isClosed          = true,
-        isVisible         = false,
-        isTriggered       = false,
+        sly,
+        wWidth       = $(window).width(),
+        wHeight      = $(window).height(),
+        ratio        = wWidth/wHeight,
+
+        expandState  = 'is-expanded',
+        displayState = 'is-hidden',
+        loadState    = 'is-loaded',
+
+        $targetItem  = null,
+        isClosed     = true,
+        isVisible    = false,
+        isTriggered  = false,
 
         delay = (function(){
             var timer = 0;
@@ -48,13 +47,11 @@
     };
 
     var setCssCursor = function(o) {
-        var $slidee = $('.' + slideeSelector),
-            $frame  = $('.' + frameSelector);
-        if ($slidee.width() < $frame.width() || $slidee.height() < $frame.height()) {
+        if (list.width() < frame.width() || list.height() < frame.height()) {
             return false;
         }
-        else if(o) return $container.css('cursor', 'ew-resize');
-        else return $container.css('cursor', 'ns-resize');
+        else if(o) return list.css('cursor', 'ew-resize');
+        else return list.css('cursor', 'ns-resize');
     };
 
     // Detect whether device supports orientationchange event, otherwise fall back to
@@ -63,18 +60,18 @@
         orientationEvent = supportsOrientationChange ? "orientationchange" : "resize";
 
     // layout Packery after all images have loaded
-    $container.imagesLoaded(function() {
+    list.imagesLoaded(function() {
         isVisible = true;
-        var $g = $('.' + gallerySelector),
-            $i = $('.' + itemSelector),
+        var $g = gallery,
+            $i = item,
             orientation = getOrientation(ratio);
 
-        $g.addClass('is-loaded');
+        $g.addClass(loadState);
 
         // bug fix for Chrome (forced width on each item)
         var calcEltWidth = function($trgi) {
             $i.each(function() {
-                var $img     = $(this).find('.' + imageSelector),
+                var $img     = $(this).find(image),
                     imgRatio = $img.height()/$img.width(),
                     newWidth = Math.round($img.height()/imgRatio);
 
@@ -89,26 +86,26 @@
                     else { $(this).css('width', 'auto'); }
                 }
             });
-            $container.packery();
+            list.packery();
         };
 
         var pckryOptions = {
-            itemSelector: '.' + itemSelector,
+            itemSelector: '.sonata-media-gallery-media-item',
             horizontal: orientation
         };
 
-        $container.packery(pckryOptions);
+        list.packery(pckryOptions);
 
         // access Packery properties from jquery object
-        var pckry = $container.data('packery');
+        var pckry = list.data('packery');
 
         var slyOptions = {
             horizontal: orientation,
             scrollBy: 150,
-            speed: 2000,
+            speed: 1000,
             syncSpeed: 1,
             easing: 'easeOutQuad',
-            scrollBar: '.' + scrollbarSelector,
+            scrollBar: '.imh__scrollbar',
             dynamicHandle: 1,
             dragHandle: 1,
             clickBar: 1,
@@ -116,8 +113,8 @@
             touchDragging: 1,
             releaseSwing: 1
         };
-        $('.' + scrollbarSelector).addClass(GalleryManager.cssAnimations[1]);
-        sly = new Sly($('.' + frameSelector), slyOptions).init();
+        scrollbar.addClass(GalleryManager.cssAnimations[1]);
+        sly = new Sly(frame, slyOptions).init();
 
         window.addEventListener(orientationEvent, function() {
             var wWidth      = screen.width, // not working on IOS
@@ -128,17 +125,17 @@
 
             var _destroy = function() {
                     sly.destroy();
-                    $('.' + scrollbarSelector).removeClass(GalleryManager.cssAnimations[1]);
-                    $container.packery('destroy');
+                    scrollbar.removeClass(GalleryManager.cssAnimations[1]);
+                    list.packery('destroy');
                 },
                 _setOption = function(o) {
                     sly.options.horizontal = o;
                     pckry.options.horizontal = o;
                 },
                 _reinit = function() { // reinitialize sly and packery with new orientation option flag
-                    sly = new Sly($('.' + frameSelector), sly.options).init();
-                    $container.packery(pckry.options);
-                    $container.on('layoutComplete', function(){ onLayout(); });
+                    sly = new Sly(frame, sly.options).init();
+                    list.packery(pckry.options);
+                    list.on('layoutComplete', function(){ onLayout(); });
                 };
 
             //alert(window.orientation + " " + screen.width);
@@ -159,7 +156,7 @@
                 _reinit();
 
                 delay(function(){
-                    $('.' + scrollbarSelector).addClass(GalleryManager.cssAnimations[1]);
+                    scrollbar.addClass(GalleryManager.cssAnimations[1]);
                     sly.reload();
                     setCssCursor(orientation);
                     loading(isVisible = true);
@@ -168,28 +165,26 @@
             calcEltWidth();
         }, false);
 
-        $container.on('layoutComplete', function(){ onLayout(); });
-
-        var loading = function(isVisible) {
-            isVisible ? $g.addClass('is-loaded')
-                      : $g.removeClass('is-loaded');
-        };
+        list.on('layoutComplete', function(){ onLayout(); });
 
         var onLayout = function() {
             if($targetItem != null && !isTriggered) closeItem($targetItem);
             sly.reload();
+            sly.slideTo(sly.getPos($targetItem).center);
+
             setCssCursor(orientation);
         };
 
-        var getInactiveItems = function() {
-            return $('.' + itemSelector).not('.' + expSelector);
+        var loading = function(isVisible) {
+            isVisible ? $g.addClass(loadState)
+                : $g.removeClass(loadState);
         };
 
-        /*var getItemPosition = function(item) {
+        var getInactiveItems = function() {
+            return item.not('.' + expandState);
+        };
 
-        };*/
-
-        $container.on('click', function(e) {
+        list.on('click', function(e) {
             var target = e.target;
 
             if(isClosed) {
@@ -202,9 +197,9 @@
             }
 
             function openItem() {
-                $('.' + itemSelector).removeClass(expSelector);
+                item.removeClass(expandState);
                 $targetItem = $(target).parent().parent();
-                $targetItem.addClass(expSelector).find('[data-icon]').hide();
+                $targetItem.addClass(expandState).find('[data-icon]').hide();
                 getInactiveItems().addClass(GalleryManager.cssAnimations[0]).find('[data-icon]').hide();
                 isClosed = false;
                 calcEltWidth($targetItem);
@@ -215,7 +210,7 @@
 
         var closeItem = function($trgi) {
             $close.off().on('click', function(e) {
-                $trgi.removeClass(expSelector);
+                $trgi.removeClass(expandState);
                 getInactiveItems().removeClass(GalleryManager.cssAnimations[0]);
 
                 if(!Modernizr.touchevents) {
@@ -229,102 +224,10 @@
             });
         };
 
-        $('.' + triggerSelector).on('click', function(e) {
-            // needs behavior : 'twitter' and manual-trigger.js
-            isTriggered = true;
-            $('.' + itemSelector).removeClass(expSelector);
-
-            isClosed = true;
-            $container.isotope().infinitescroll('retrieve');
-            e.preventDefault();
-        });
-
-        $('.' + navDispSelector).on('click', function(e) {
-            $(this).parent().toggleClass(hiddenSelector);
+        navigation.on('click', function(e) {
+            $(this).parent().toggleClass(displayState);
             e.preventDefault();
         });
     });
 
-
-
-    // Infinite Scroll
-    $container.infinitescroll({
-        navSelector  : '.gallery', // selector for the paged navigation (it will be hidden)
-        nextSelector : '.gallery li a', // selector for the NEXT link (to page 2)
-        itemSelector : '.' + itemSelector, // selector for all items you'll retrieve
-        debug: true,
-        loading: {
-            selector: '.' + gallerySelector,
-            //img: '/bundles/imhbase/images/circles_white.svg',
-            msgText: '',
-            finishedMsg: "<em>No more items !</em>",
-            speed: 2000
-        },
-        behavior : 'twitter',
-        //binder : $container, // scroll on this element rather than on the window
-        //maxPage: 2,
-//        pathParse: function(path, currentPage) {
-//            console.log('path: ' + path);
-//            console.log('currentPage: ' + currentPage);
-//
-//            var match = path.match(/gallery\/view\/(\d+)/);
-//            if (match) {
-//                var id = match[1];
-//                console.log(id);
-//            }
-////            var re = new RegExp('^(.*?page=)'+currentPage+'(\/.*|$)');
-////            path = path.match(re).slice(1);
-//            //path = 'http://imh.localhost/app_dev.php/media/gallery/view/' + (parseInt(id) + currentPage);
-//            //'http://imh.localhost/app_dev.php/media/gallery/view/' + (parseInt(id) + currentPage)
-//            return ['http://imh.localhost/app_dev.php/media/gallery/view/', '/'];
-//        }
-        path: function generatePageUrl(currentPageNumber) {
-            return ("http://imh.localhost/app_dev.php/media/gallery/view/" + currentPageNumber);
-        }
-//        state: {
-//            // start from page 3
-//            currPage: 3
-//        }
-
-    },function(arrayOfNewElems) {
-        var opts = $container.data('infinitescroll').options;
-        console.log("curr page:", opts.state.currPage);
-
-       // console.log("navSelector:", opts.navSelector);
-        var $li = $(opts.navSelector).find('li');
-        var cur;
-        $li.each(function(i) {
-            if($li.hasClass('current')) {
-                $(this).removeClass('current');
-                cur = i;
-            }
-        });
-
-        opts.state.currPage = cur + 1;
-        $li.eq(cur + 1).addClass('current');
-        console.log("curr:" + (cur+1));
-
-
-        // hide new items while they are loading
-        var $newElems = $(arrayOfNewElems).css({
-            'opacity': 0
-        });
-
-        isTriggered = true;
-
-
-        $container.imagesLoaded( function() {
-//            if($targetItem != null) {
-//                //closeItem($targetItem);
-//                $targetItem.removeClass(expandedSelector);
-//                $container.isotope();
-//            }
-
-            $container.isotope('prepended', $newElems);
-            //$newElems.addClass('newElts');
-            sly.reload();
-            sly.toStart();
-            setCssCursor();
-        });
-    });
 }(jQuery, window));

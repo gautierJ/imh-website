@@ -45,13 +45,13 @@
 {% endblock %}
 
 {% block main %}
-    <div class="imh__gallery-wrapper">
-        <div class="frame">
-            <ul class="sonata-media-gallery-media-list clearfix slidee">
+    <div class="imh__gallery-wrapper" data-gallery>
+        <div class="frame" data-gallery-frame>
+            <ul class="sonata-media-gallery-media-list clearfix" data-gallery-list>
                {% spaceless %}
                    {% for galleryHasMedia in gallery.GalleryHasMedias %}
-                       <li class="sonata-media-gallery-media-item">
-                            <a href="#" class="sonata-media-gallery-media-item-link" data-item-link>  {# {{ url('sonata_media_view', {'id': galleryHasMedia.media|sonata_urlsafeid }) }} #}
+                       <li class="sonata-media-gallery-media-item" data-gallery-item>
+                            <a href="#" class="sonata-media-gallery-media-item-link" data-gallery-link>  {# {{ url('sonata_media_view', {'id': galleryHasMedia.media|sonata_urlsafeid }) }} #}
                                 {% thumbnail galleryHasMedia.media, gallery.defaultFormat with {'class': 'media-object', 'data-image': 'media'} %}
                                 {#<div class="media-bar clearfix">
                                     {% if galleryHasMedia.media.description != "" %}<p class="media-description">{{ galleryHasMedia.media.description|raw }}</p>{% endif %}
@@ -81,7 +81,7 @@
         {% if not isTouchDevice %}
             {% embed "ImhBaseBundle:Part:sidebar.html.twig" %}
                 {% block menu_display %}
-                    <a class="imh__navigation-menu-display" href="#" title="">
+                    <a class="imh__navigation-menu-display" href="#" title="" data-navigation>
                         <i class="fa fa-angle-right fa-3x" aria-hidden="true"></i>
                     </a>
                 {% endblock %}
@@ -112,7 +112,7 @@
 
     <div class="row">
         <div class="col-md-24">
-        <div class="imh__scrollbar">
+        <div class="imh__scrollbar" data-scrollbar>
             <div class="handle">
                 <div class="mousearea"></div>
             </div>
