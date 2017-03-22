@@ -170,7 +170,7 @@
         var onLayout = function() {
             if($targetItem != null && !isTriggered) closeItem($targetItem);
             sly.reload();
-            sly.slideTo(sly.getPos($targetItem).center);
+            sly.slideTo(Math.round(sly.getPos($targetItem).center));
 
             setCssCursor(orientation);
         };

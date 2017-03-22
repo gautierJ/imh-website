@@ -53,6 +53,7 @@
                 grTitles     = $(titles.join(', ')),
                 context      = $('[data-body]'),
                 enterLink    = $('[data-enter-website]'),
+                nextLink     = $('[data-next]'),
                 opening      = $('[data-opening]'),
                 shutter      = $('[data-shutter]'),
                 bar          = $('[data-progress-bar]'),
@@ -111,6 +112,11 @@
                         context.addClass('mA_1');
                         document.addEventListener('DOMMouseScroll', handleScroll, false); // for Firefox
                         document.addEventListener('mousewheel',     handleScroll, false); // for everyone else
+
+                        nextLink.on('click', function(e) {
+                            context.addClass('mA_2');
+                            e.preventDefault();
+                        });
                    // }
                 },
                 error: function (jqXHR, textStatus, errorThrown) {
