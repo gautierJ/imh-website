@@ -1,6 +1,8 @@
 <aside class="imh__sidebar" data-sidebar>
     {#<div class="block-triangle"></div>#}
+
     {% block menu_display '' %}
+
     {% spaceless %}
     <div class="imh__sidebar-verticalcenter">
         {% block menu_navigation %}
@@ -9,7 +11,7 @@
                     <i class="fa fa-chevron-down" aria-hidden="true"></i>
                     {{ 'sonata.media.gallery.menu.title_1'|trans }}
                 </h3>
-                {{ knp_menu_render('main', {'currentAsLink':false}) }}
+                {{ knp_menu_render('main', {'currentAsLink': false}) }}
             </div>
         {% endblock %}
 
@@ -19,7 +21,7 @@
                     <i class="fa fa-chevron-down" aria-hidden="true"></i>
                     {{ 'sonata.media.gallery.menu.title_2'|trans }}
                 </h3>
-                {{ knp_menu_render('gallery', {'currentAsLink':false, 'allow_safe_labels': true}) }}
+                {{ knp_menu_render('gallery', {'currentAsLink': false, 'allow_safe_labels': true}) }}
             </div>
         {% endblock %}
 

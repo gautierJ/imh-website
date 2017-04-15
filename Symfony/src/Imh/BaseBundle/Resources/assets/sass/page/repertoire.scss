@@ -1,5 +1,5 @@
 $fa-font-path: "/bundles/imhbase/bower_components/fontawesome/fonts";
-@import "../main";
+@import "../app";
 
 .imh__container--wrapper {
   padding: 26px 60px 62px;
@@ -7,6 +7,10 @@ $fa-font-path: "/bundles/imhbase/bower_components/fontawesome/fonts";
 
 .imh__repertoire {
   @include make-row();
+}
+
+.imh__repertoire-title {
+  display: none;
 }
 
 .imh__repertoire-wrapper {
@@ -27,20 +31,16 @@ $fa-font-path: "/bundles/imhbase/bower_components/fontawesome/fonts";
   border: 6px solid white;
 }
 
-.imh__repertoire-description {
-  p {
+.imh__repertoire-space {
     margin: 2px 0;
+}
 
-    &.work {
-      font-size: $elevenpx;
-      margin: 10px 0;
-      text-transform: uppercase;
-    }
+.imh__repertoire-work {
+  font-size: $elevenpx;
+}
 
-    &.arrangement {
-      font-style: italic;
-    }
-  }
+.imh__repertoire-arrangement {
+  font-style: italic;
 }
 
 .imh__repertoire-duration {
@@ -56,7 +56,8 @@ $fa-font-path: "/bundles/imhbase/bower_components/fontawesome/fonts";
   }
 
   .imh__container--wrapper {
-    padding: 15px 0;
+    padding: 0;
+    background: none;
   }
 
   .imh__repertoire-wrapper {
@@ -76,9 +77,41 @@ $fa-font-path: "/bundles/imhbase/bower_components/fontawesome/fonts";
     padding: 0;
   }
 
+  .imh__repertoire-title {
+    display: block;
+    font-family: "ethos_regular", $font-fallback;
+    font-size: $twentyeightpx;
+    color: $color-grey-dark;
+    background-color: white;
+    text-align: center;
+    position: relative;
+    margin: 30px 0;
+    padding: 6px 0;
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 1px;
+      height: 75px;
+      background-color: $color-grey-dark;
+      bottom: -16px;
+      left: 50%;
+      z-index: -1;
+      margin-left: -1px;
+    }
+  }
+
   .imh__repertoire-image {
     display: inline-block;
     width: 150px;
+  }
+
+  .imh__repertoire-work {
+    font-family: 'ethos_regular', $font-fallback;
+    font-size: $eighteenpx;
+    margin: 20px 0;
+    text-transform: uppercase;
+    line-height: 23px;
   }
 
   .imh__repertoire-description {

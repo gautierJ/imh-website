@@ -1,12 +1,14 @@
+@charset "UTF-8";
+
 // Vendors
 // ==================================================
-@import "../../public/bower_components/fontawesome/scss/font-awesome";
+@import "fontawesome/scss/font-awesome";
 
 $grid-columns: 24;
-@import "../../public/bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
+@import "bootstrap-sass/assets/stylesheets/bootstrap";
 
 $hamburger-layer-color: white;
-@import "../../public/bower_components/css-hamburgers/_sass/hamburgers/hamburgers";
+@import "css-hamburgers/_sass/hamburgers/hamburgers";
 
 // Core
 // ==================================================
@@ -17,8 +19,10 @@ $hamburger-layer-color: white;
 //@import "media_queries";
 @import "fonts";
 @import "global";
+
 @import "components/loader";
 @import "components/mouse";
+
 @import "headings";
 @import "sidebar";
 @import "navigation";

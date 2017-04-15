@@ -267,21 +267,6 @@ button {
 }
 
 @media (max-width: $screen-xs-max) {
-  .imh__title-h2 {
-    font-size: $fifteenpx;
-    margin-bottom: 15px;
-  }
-
-  .imh__title-h2--border {
-    border: none;
-    line-height: 27px;
-  }
-
-  .imh__title-h3 {
-    margin-top: 0;
-    margin-bottom: 2px;
-  }
-
   .imh__container--wrapper {
     border-top-width: 0;
     padding: 0;

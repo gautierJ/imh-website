@@ -1,5 +1,5 @@
 $fa-font-path: "/bundles/imhbase/bower_components/fontawesome/fonts";
-@import "../../../../../../Imh/BaseBundle/Resources/assets/sass/main";
+@import "app"; //this is imported from Imh bundle -> see assetic compass configuration
 
 .imh__container--wrapper {
   padding-bottom: 60px;

@@ -44,6 +44,7 @@
 
             <section class="imh__content" role="main" data-content>
                 {% block main '' %}
+                {% block events '' %}
             </section>
 
             {% block sidebar %}
@@ -69,11 +70,20 @@
         {% endif %}
 
         {% block javascripts %}
+
+            <!-- Google Analytics -->
+            <script>
+                window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+                ga('create', 'UA-64577170-1', 'auto');
+                ga('send', 'pageview');
+            </script>
+            <script async src='https://www.google-analytics.com/analytics.js'></script>
+            <!-- End Google Analytics -->
+
             {% javascripts output='assets/compiled/js/main.js'
             '@ImhBaseBundle/Resources/public/bower_components/jquery/dist/jquery.min.js'
             '@ImhBaseBundle/Resources/public/bower_components/jquery.easing/js/jquery.easing.min.js'
             '@ImhBaseBundle/Resources/public/bower_components/jquery-mousewheel/jquery.mousewheel.min.js'
-            'assets/lib/analytics/ga.js'
             'assets/lib/lazyload/jquery.lazyload.min.js'
             'assets/lib/modernizr/modernizr-custom.js'
             '@ImhBaseBundle/Resources/assets/js/jquery.fontspy.js'

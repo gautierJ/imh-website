@@ -26,20 +26,21 @@
 
                         </div>
                         <div class="col-xs-24">
+                            <h2 class="imh__biography-title">{{ 'imh.base.biography.main_section-title'|trans }}</h2>
                             <div class="imh__biography-text">
                                 {{ 'imh.base.biography.main_text-section1'|trans|raw }}
                                 {#<img class="visible-xs imh__image-painting img-responsive" src="../../bundles/imhbase/images/painting.jpg" alt="Painting" />#}
                                 {{ 'imh.base.biography.main_text-section2'|trans|raw }}
-                                <img class="visible-xs imh__image-enmp img-responsive" src="../../bundles/imhbase/images/enmp.jpg" alt="ENMP" />
+                                {#<img class="visible-xs imh__image-enmp img-responsive" src="../../bundles/imhbase/images/enmp.jpg" alt="ENMP" />#}
                                 {{ 'imh.base.biography.main_text-section3'|trans|raw }}
                             </div>
                         </div>
                     {% else %}
                         <div class="col-xs-24 col-sm-10 col-md-10">
                             <div class="imh__carousel owl-carousel" data-carousel>
-                                {% for i in range(1,2) -%}
+                                {% for i in range(1,2) %}
                                     <div class="item"><img class="owl-lazy" data-src="{{ asset('bundles/imhbase/images/bio_0'~i~'.jpg') }}" alt="" /></div>
-                                {%- endfor %}
+                                {% endfor %}
                             </div>
                         </div>
                         <div class="col-xs-24 col-sm-14 col-md-14">

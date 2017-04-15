@@ -3,7 +3,7 @@
   "authors": [
     "Gautier Jenkner <g.jenkner@gmail.com>"
   ],
-  "description": "IMH - Ionella Marinutsa Harpist",
+  "description": "IMH - Ionella Marinutsa - Harpist",
   "main": "",
   "license": "MIT",
   "homepage": "",
@@ -12,7 +12,6 @@
     "**/.*",
     "node_modules",
     "bower_components",
-    "src/Imh/BaseBundle/Resources/public/assets/bower_components",
     "test",
     "tests"
   ],
@@ -24,6 +23,7 @@
     "fontawesome": "4.6.3",
     "css-hamburgers": "0.5.0",
     "vex": "3.0.0",
-    "sly": "1.6.1"
+    "sly": "1.6.1",
+    "fullpage.js": "2.9.4",
   }
 }

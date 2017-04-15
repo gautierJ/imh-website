@@ -74,7 +74,7 @@ body {
   &.mA_1 {
     .imh-mouse {
       @include opacity(1);
-      @include transition-delay(.2s);
+      @include transition-delay(.25s);
     }
   }
   &.mA_2 {

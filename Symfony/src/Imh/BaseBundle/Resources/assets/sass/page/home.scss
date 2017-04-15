@@ -1,5 +1,6 @@
 $fa-font-path: "/bundles/imhbase/bower_components/fontawesome/fonts";
-@import "../main";
+@import "../app";
+@import "../blocks/events";
 
 // Font Spy
 // ==================================================
@@ -116,7 +117,7 @@ body {
 
 .imh__container-fluid,
 .imh__content {
-  height: 100%;
+  //height: 100%;
 }
 
 .imh__content {

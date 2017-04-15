@@ -193,6 +193,7 @@
     color: white;
     border-top: none;
     background: black;
+    padding-top: 15px;
 
     .imh__container {
       padding: 0;
@@ -219,6 +220,10 @@
     }
   }
 
+  .imh-footer__head {
+    margin-bottom: 0;
+  }
+
   .icon--symfony {
     height: 47px;
     fill: black;
@@ -230,7 +235,7 @@
   }
 
   .imh-footer__rights {
-    margin: 0 0 20px;
+    margin: 0 0 15px;
     color: $color-grey-medium;
 
     br { display: inline; }

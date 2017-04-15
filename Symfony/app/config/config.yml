@@ -49,9 +49,10 @@ assetic:
         compass:
             bin: %compass.bin%
             cache_location: %kernel.cache_dir%
-            #load_paths:
-                #- "%kernel.root_dir%/../assets/vendor/bootstrap-sass/assets/stylesheets/bootstrap"
-                #- "%kernel.root_dir%/../src"
+            load_paths:
+                - "%kernel.root_dir%/../src/Imh/BaseBundle/Resources/assets/sass"
+                - "%kernel.root_dir%/../src/Imh/BaseBundle/Resources/public/bower_components"
+            apply_to: ".(_scss|sass)$"
 
 #        yui_css:
 #            jar: "%kernel.root_dir%/Resources/java/yuicompressor.jar"

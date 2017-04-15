@@ -18,7 +18,7 @@
         <div class="imh__container--wrapper imh__container--shadows">
             <section class="imh__repertoire">
                 <div class="col-xs-24">
-                    <h2 class="imh__title imh__title-h2 imh__title-h2--border text-center text-uppercase">{{ 'imh.base.repertoire.concert.title'|trans|raw }}</h2>
+                    <h2 class="imh__repertoire-title">{{ 'imh.base.repertoire.main_section-title'|trans|raw }}</h2>
                 </div>
                 <div class="imh__repertoire-wrapper">
                     {% for i in range(0,3) -%}
@@ -30,9 +30,9 @@
                             <div class="col-xs-24 col-sm-15 col-md-13 imh__repertoire-col">
                                 <div class="imh__repertoire-description{% if loop.last %} imh__repertoire-description--last{% endif %}">
                                     <h3 class="imh__title-h3">{{ ('imh.base.repertoire.concert.'~i~'.composer')|trans }}</h3>
-                                    <p>{{ ('imh.base.repertoire.concert.'~i~'.life')|trans }}</p>
-                                    <p class="work">{{ ('imh.base.repertoire.concert.'~i~'.work')|trans }}</p>
-                                    <p class="arrangement">{{ ('imh.base.repertoire.concert.'~i~'.arrangement')|trans }}</p>
+                                    <p class="imh__repertoire-space">{{ ('imh.base.repertoire.concert.'~i~'.life')|trans }}</p>
+                                    <p class="imh__repertoire-work">{{ ('imh.base.repertoire.concert.'~i~'.work')|trans }}</p>
+                                    <p class="imh__repertoire-space imh__repertoire-arrangement">{{ ('imh.base.repertoire.concert.'~i~'.arrangement')|trans }}</p>
                                     <div class="imh__repertoire-duration">
                                         {{ ('imh.base.repertoire.concert.duration')|trans }}{{ ('imh.base.repertoire.concert.'~i~'.duration')|trans }}
                                     </div>
