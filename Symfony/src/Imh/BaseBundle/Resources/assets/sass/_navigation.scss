@@ -1,4 +1,4 @@
-.imh__header {
+.imh-header {
   @include make-row();
 }
 
@@ -41,7 +41,6 @@
     z-index: 1;
 
     a, span {
-      font-family: 'ralewaysemibold', $font-fallback;
       color: white;
       font-size: $fourteenpx;
       display: block;
@@ -181,10 +180,14 @@
     height: 60px;
     border-bottom: 1px solid $color-grey-darker;
     z-index: 3;
+
+    top: -60px;
+    left: 0;
+    @include transition(top .7s cubic-bezier(0,.92,.08,1) 1.5s);
   }
 
   .hamburger {
-    position: fixed;
+    position: absolute;
     right: 0;
     top: 0;
     display: inline-block;
@@ -207,13 +210,9 @@
   }
 
   .hamburger-inner,
-  .hamburger-inner::before,
-  .hamburger-inner::after {
+  .hamburger-inner:before,
+  .hamburger-inner:after {
     @include border-radius(0);
     width: 35px;
   }
 }
-
-@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {  }
-@media (min-width: $screen-md-min) and (max-width: $screen-md-max) {  }
-@media (min-width: $screen-lg-min) {  }

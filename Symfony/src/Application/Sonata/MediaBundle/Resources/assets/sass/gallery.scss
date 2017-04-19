@@ -54,7 +54,7 @@ body {
   height: 100%;
   position: relative;
 
-  &::before, &::after {
+  &:before, &:after {
     content: '';
     position: absolute;
     left: 0;
@@ -65,11 +65,11 @@ body {
     z-index: 1;
   }
 
-  &::before {
+  &:before {
     top: 0;
   }
 
-  &::after {
+  &:after {
     bottom: 3px;
   }
 }
@@ -80,7 +80,11 @@ body {
   top: 100px;
 }
 
-.imh__sidebar {
+.hamburger-wrapper {
+  top: 0;
+}
+
+.imh-sidebar {
   @include box-sizing(content-box);
   @include box-shadow(-3px, 0, 40px, -2px, black);
   @include transition(all 1s cubic-bezier(0,.92,.08,1) 0s);
@@ -92,10 +96,10 @@ body {
   background-color: rgb(0, 0, 0);
   background-color: rgba(0, 0, 0, .95);
   height: 100%;
-  padding: 0 80px 0 120px;
+  padding: 0 80px;
   z-index: 0;
 
-  &::after {
+  &:after {
     @extend %pseudo-vertical-align;
   }
 
@@ -105,7 +109,7 @@ body {
     background: none;
     box-shadow: none;
 
-    .imh__sidebar-verticalcenter {
+    .imh-sidebar__verticalcenter {
       @include opacity(0);
       @include animation('make-opacity-out .1s');
       visibility: hidden;
@@ -123,7 +127,7 @@ body {
   }
 }
 
-.imh__sidebar-verticalcenter {
+.imh-sidebar__verticalcenter {
   @include calc(width, '100% - 1px');
   @include opacity(1);
   @include animation('make-opacity-in .5s forwards');
@@ -163,98 +167,33 @@ body {
 
 .imh__navigation-menu {
   position: static;
-  display: block;
 
-  ul {
-    background: black;
-    border: 1px solid $color-grey-dark;
-
-    li:not(.gallery) {
-      a, span {
-        color: $color-grey-light;
-        white-space: nowrap;
-      }
-
-      &:hover {
-        a, span {
-          color: white;
-        }
-        &::after {
-          background-color: white;
-          border-color: white;
-        }
-      }
-
-      &.current {
-        a, span {
-          background: black;
-          border-color: $color-grey-dark;
-          color: $color-grey-light;
-        }
-
-        &::after {
-          background-color: white;
-          border-color: white;
-          box-shadow: none;
-        }
-      }
+  li:not(.gallery) {
+    a, span {
+      color: $color-grey-light;
+      white-space: nowrap;
     }
-  }
-
-  .fa-home {
-    display: none;
-
-    & + span {
-      display: inline;
-    }
-  }
-}
-
-.imh__gallery-menu {
-  margin-top: 50px;
-
-  > ul {
-    border: none;
-    margin: 0;
-  }
-
-  li:first-child {
-    margin-top: 17px;
-  }
-
-  li:last-child {
-    margin-bottom: 17px;
-  }
-
-  li::after {
-    border-color: $color-grey-darker;
-  }
-}
-
-.imh__navigation-menu-social {
-  margin-top: 50px;
-
-  .imh__navigation-menu-title {
-    margin-bottom: 15px;
-  }
-
-  .icon {
-    display: block;
-    width: 100%;
-    height: 100%;
 
     &:hover {
-      .fa-inverse {
+      a, span {
         color: white;
-        @include opacity(1);
+      }
+      &:after {
+        background-color: white;
+        border-color: white;
       }
     }
-  }
 
-  .fa-inverse {
-    color: $color-grey-medium;
-    @include opacity(.4);
-    @include transition(opacity .3s linear 0s);
+    &.current {
+      a, span {
+        color: $color-grey-light;
+      }
+
+      &:after {
+        background-color: white;
+        border-color: white;
+      }
+    }
   }
 }
 
@@ -324,7 +263,7 @@ body {
   width: 100%;
   z-index: 2;
 
-  &::after {
+  &:after {
     @include transition(width .4s ease 0s);
     content: '';
     position: absolute;

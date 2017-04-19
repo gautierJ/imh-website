@@ -1,19 +1,23 @@
 $fa-font-path: "/bundles/imhbase/bower_components/fontawesome/fonts";
 @import "../app";
 
+.hamburger-wrapper {
+  top: 0;
+}
+
 .imh__container--wrapper {
   padding: 26px 60px 62px;
 }
 
-.imh__repertoire {
+.imh-repertoire {
   @include make-row();
 }
 
-.imh__repertoire-title {
+.imh-repertoire__title {
   display: none;
 }
 
-.imh__repertoire-wrapper {
+.imh-repertoire__wrapper {
   @include clearfix();
   margin-top: 110px;
   font-size: $fourteenpx;
@@ -24,26 +28,26 @@ $fa-font-path: "/bundles/imhbase/bower_components/fontawesome/fonts";
   }
 }
 
-.imh__repertoire-image {
+.imh-repertoire__image {
   @include img-responsive();
   @include box-shadow(0, 0, 9px, 1px, $color-grey-light);
   border-radius: 50%;
   border: 6px solid white;
 }
 
-.imh__repertoire-space {
+.imh-repertoire__space {
     margin: 2px 0;
 }
 
-.imh__repertoire-work {
+.imh-repertoire__work {
   font-size: $elevenpx;
 }
 
-.imh__repertoire-arrangement {
+.imh-repertoire__arrangement {
   font-style: italic;
 }
 
-.imh__repertoire-duration {
+.imh-repertoire__duration {
   font-style: italic;
   font-size: 13px;
 }
@@ -60,7 +64,7 @@ $fa-font-path: "/bundles/imhbase/bower_components/fontawesome/fonts";
     background: none;
   }
 
-  .imh__repertoire-wrapper {
+  .imh-repertoire__wrapper {
     margin-top: 0;
 
     > div {
@@ -73,13 +77,13 @@ $fa-font-path: "/bundles/imhbase/bower_components/fontawesome/fonts";
     }
   }
 
-  .imh__repertoire-col {
+  .imh-repertoire__col {
     padding: 0;
   }
 
-  .imh__repertoire-title {
+  .imh-repertoire__title {
     display: block;
-    font-family: "ethos_regular", $font-fallback;
+    font-family: "Knockout-HTF49-Liteweight", $font-fallback;
     font-size: $twentyeightpx;
     color: $color-grey-dark;
     background-color: white;
@@ -87,8 +91,10 @@ $fa-font-path: "/bundles/imhbase/bower_components/fontawesome/fonts";
     position: relative;
     margin: 30px 0;
     padding: 6px 0;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
 
-    &::after {
+    &:after {
       content: '';
       position: absolute;
       width: 1px;
@@ -101,40 +107,37 @@ $fa-font-path: "/bundles/imhbase/bower_components/fontawesome/fonts";
     }
   }
 
-  .imh__repertoire-image {
+  .imh-repertoire__image {
     display: inline-block;
     width: 150px;
   }
 
-  .imh__repertoire-work {
+  .imh-repertoire__work {
     font-family: 'ethos_regular', $font-fallback;
-    font-size: $eighteenpx;
+    font-size: $sixteenpx;
     margin: 20px 0;
     text-transform: uppercase;
     line-height: 23px;
   }
 
-  .imh__repertoire-description {
+  .imh-repertoire__description {
     padding: 20px 0 30px;
     font-size: $elevenpx;
   }
 
-  .imh__repertoire-description--last {
+  .imh-repertoire__description--last {
     border-bottom: 0;
     margin-bottom: 0;
   }
 }
 
 @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
-  .imh__repertoire-col {
+  .imh-repertoire__col {
     float: none;
     display: table-cell;
     vertical-align: middle;
   }
 }
-
-@media (min-width: $screen-md-min) and (max-width: $screen-md-max) {  }
-@media (min-width: $screen-lg-min) {  }
 
 
 

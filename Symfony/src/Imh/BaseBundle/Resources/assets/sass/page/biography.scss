@@ -1,6 +1,10 @@
 $fa-font-path: "/bundles/imhbase/bower_components/fontawesome/fonts";
 @import "../app";
 
+.hamburger-wrapper {
+  top: 0;
+}
+
 .imh__container--wrapper {
   padding: 26px 60px 62px;
 }
@@ -73,10 +77,11 @@ $fa-font-path: "/bundles/imhbase/bower_components/fontawesome/fonts";
   width: calc(100% - 5px);
   text-align: justify;
   padding: 0 40px 0 10px;
+  position: relative;
 
   p {
     font-size: $fourteenpx;
-    line-height: 1.6em;
+    line-height: 2em;
     color: $color-grey-darker;
   }
 
@@ -84,10 +89,10 @@ $fa-font-path: "/bundles/imhbase/bower_components/fontawesome/fonts";
     margin-top: 0;
 
     &::first-letter {
-      font-size: 44px;
-      line-height: 41px;
+      font-size: 60px;
+      line-height: 53px;
       float: left;
-      margin: 0 5px 0 -3px;
+      margin: 0 10px 0 -3px;
     }
   }
 
@@ -206,10 +211,11 @@ $fa-font-path: "/bundles/imhbase/bower_components/fontawesome/fonts";
 
   li {
     color: $color-grey-darker;
-    font-size: $thirteenpx;
+    font-size: $fourteenpx;
+    line-height: 2em;
     border-top: 1px solid $color-grey-lighter;
-    padding-top: 14px;
-    margin-top: 15px;
+    padding-top: 12px;
+    margin-top: 12px;
     position: relative;
     text-align: center;
 
@@ -268,7 +274,7 @@ $fa-font-path: "/bundles/imhbase/bower_components/fontawesome/fonts";
     fill: white;
   }
 
-  &::after {
+  &:after {
     @include border-radius(70px);
     @include transition(all .3s ease-out 0s);
     background-color: $color-greybrown-dark;
@@ -280,7 +286,7 @@ $fa-font-path: "/bundles/imhbase/bower_components/fontawesome/fonts";
     margin-left: -35px;
   }
 
-  &:hover::after {
+  &:hover:after {
     background-color: $color-brown-dark;
     @include border-radius(0px);
     @include rotate(45deg);
@@ -295,7 +301,7 @@ $fa-font-path: "/bundles/imhbase/bower_components/fontawesome/fonts";
     background-color: $color-grey-ultralight;
   }
 
-  .imh__header {
+  .imh-header {
     margin-bottom: 0;
   }
 
@@ -335,7 +341,7 @@ $fa-font-path: "/bundles/imhbase/bower_components/fontawesome/fonts";
 
   .imh__biography-title {
     display: block;
-    font-family: "ethos_regular", $font-fallback;
+    font-family: "Knockout-HTF49-Liteweight", $font-fallback;
     font-size: $twentyeightpx;
     color: $color-grey-dark;
     background-color: $color-grey-ultralight;
@@ -343,6 +349,8 @@ $fa-font-path: "/bundles/imhbase/bower_components/fontawesome/fonts";
     position: relative;
     margin: 30px 0;
     padding: 6px 0;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
 
     &::after {
       content: '';
@@ -365,7 +373,7 @@ $fa-font-path: "/bundles/imhbase/bower_components/fontawesome/fonts";
     text-align: inherit;
 
     p {
-      font-size: $fifteenpx;
+      font-size: $sixteenpx;
 
       &.first::first-letter {
         font-size: inherit;
@@ -391,7 +399,7 @@ $fa-font-path: "/bundles/imhbase/bower_components/fontawesome/fonts";
   }
 
   .imh__prizes-slider-title {
-    font-size: $fifteenpx;
+    font-size: $sixteenpx;
     background-color: white;
     padding: 10px 0;
     border: 1px solid $color-grey-medium;
@@ -433,7 +441,7 @@ $fa-font-path: "/bundles/imhbase/bower_components/fontawesome/fonts";
 
     li {
       text-align: left;
-      font-size: $fifteenpx;
+      font-size: $sixteenpx;
       padding-left: 5px;
       padding-right: 5px;
       pointer-events: none;
@@ -447,10 +455,33 @@ $fa-font-path: "/bundles/imhbase/bower_components/fontawesome/fonts";
 }
 
 @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+
   .imh__prizes-slider-content li {
     font-size: $basepx;
   }
 }
-@media (min-width: $screen-md-min) and (max-width: $screen-md-max) {  }
-@media (min-width: $screen-lg-min) {  }
+
+@media (min-width: $screen-md-min) {
+
+  .imh__biography-text {
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 60px;
+      width: 100%;
+      background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
+      @include opacity(1);
+      @include transition(opacity .3s linear 0s);
+    }
+  }
+
+  .imh__biography-text.no-shadow {
+    &:after {
+      @include opacity(0);
+      pointer-events: none;
+    }
+  }
+}
 

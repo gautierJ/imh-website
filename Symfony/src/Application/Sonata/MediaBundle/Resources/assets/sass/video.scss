@@ -1,6 +1,10 @@
 $fa-font-path: "/bundles/imhbase/bower_components/fontawesome/fonts";
 @import "app"; //this is imported from Imh bundle -> see assetic compass configuration
 
+.hamburger-wrapper {
+  top: 0;
+}
+
 .imh__container--wrapper {
   padding-bottom: 60px;
 }
@@ -56,7 +60,7 @@ $fa-font-path: "/bundles/imhbase/bower_components/fontawesome/fonts";
   margin: -39px 0 0 -39px;
   z-index: 1;
 
-  &::before {
+  &:before {
     content: "";
     position: absolute;
     top: 50%;
@@ -71,7 +75,7 @@ $fa-font-path: "/bundles/imhbase/bower_components/fontawesome/fonts";
     @include opacity(.95);
   }
 
-  &::after {
+  &:after {
     @include transition(all .2s linear 0s);
     @include border-radius(50%);
     @include box-shadow(0, 0, 6px, 1px, $color-grey-dark);

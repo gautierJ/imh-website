@@ -16,24 +16,24 @@
 
     <div class="container imh__container">
         <div class="imh__container--wrapper imh__container--shadows">
-            <section class="imh__repertoire">
+            <section class="imh-repertoire">
                 <div class="col-xs-24">
-                    <h2 class="imh__repertoire-title">{{ 'imh.base.repertoire.main_section-title'|trans|raw }}</h2>
+                    <h2 class="imh-repertoire__title">{{ 'imh.base.repertoire.main_section-title'|trans|raw }}</h2>
                 </div>
-                <div class="imh__repertoire-wrapper">
+                <div class="imh-repertoire__wrapper">
                     {% for i in range(0,3) -%}
                         <div class="col-xs-24 col-sm-24 col-md-12">
                             {% spaceless %}
-                            <div class="col-xs-24 col-sm-9 col-md-11 imh__repertoire-col">
-                                <img class="img-responsive imh__repertoire-image" src="{{ asset('bundles/imhbase/images/'~('imh.base.repertoire.concert.'~i~'.name')|trans~'.jpg') }}" alt="{{ ('imh.base.repertoire.concert.'~i~'.composer')|trans }}">
+                            <div class="col-xs-24 col-sm-9 col-md-11 imh-repertoire__col">
+                                <img class="img-responsive imh-repertoire__image" src="{{ asset('bundles/imhbase/images/'~('imh.base.repertoire.concert.'~i~'.name')|trans~'.jpg') }}" alt="{{ ('imh.base.repertoire.concert.'~i~'.composer')|trans }}">
                             </div>
-                            <div class="col-xs-24 col-sm-15 col-md-13 imh__repertoire-col">
-                                <div class="imh__repertoire-description{% if loop.last %} imh__repertoire-description--last{% endif %}">
+                            <div class="col-xs-24 col-sm-15 col-md-13 imh-repertoire__col">
+                                <div class="imh-repertoire__description{% if loop.last %} imh-repertoire__description--last{% endif %}">
                                     <h3 class="imh__title-h3">{{ ('imh.base.repertoire.concert.'~i~'.composer')|trans }}</h3>
-                                    <p class="imh__repertoire-space">{{ ('imh.base.repertoire.concert.'~i~'.life')|trans }}</p>
-                                    <p class="imh__repertoire-work">{{ ('imh.base.repertoire.concert.'~i~'.work')|trans }}</p>
-                                    <p class="imh__repertoire-space imh__repertoire-arrangement">{{ ('imh.base.repertoire.concert.'~i~'.arrangement')|trans }}</p>
-                                    <div class="imh__repertoire-duration">
+                                    <p class="imh-repertoire__space">{{ ('imh.base.repertoire.concert.'~i~'.life')|trans }}</p>
+                                    <p class="imh-repertoire__work">{{ ('imh.base.repertoire.concert.'~i~'.work')|trans }}</p>
+                                    <p class="imh-repertoire__space imh-repertoire__arrangement">{{ ('imh.base.repertoire.concert.'~i~'.arrangement')|trans }}</p>
+                                    <div class="imh-repertoire__duration">
                                         {{ ('imh.base.repertoire.concert.duration')|trans }}{{ ('imh.base.repertoire.concert.'~i~'.duration')|trans }}
                                     </div>
                                 </div>

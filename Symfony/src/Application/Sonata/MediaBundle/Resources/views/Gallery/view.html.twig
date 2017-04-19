@@ -73,11 +73,13 @@
                {% endspaceless %}
             </ul>
         </div>
+
         <div class="imh__trigger">
             <a href="#" title="More pictures : {{ gallery.name }}">
                 <img src="{{ asset('bundles/imhbase/images/empty.gif') }}" alt="" />
             </a>
         </div>
+
         {% if not isTouchDevice %}
             {% embed "ImhBaseBundle:Part:sidebar.html.twig" %}
                 {% block menu_display %}
@@ -85,29 +87,11 @@
                         <i class="fa fa-angle-right fa-3x" aria-hidden="true"></i>
                     </a>
                 {% endblock %}
-                {% block menu_social %}
-                    <div class="imh__navigation-menu-social">
-                        <h3 class="imh__navigation-menu-title text-uppercase">
-                            <i class="fa fa-chevron-down" aria-hidden="true"></i>
-                            {{ 'sonata.media.gallery.menu.title_3'|trans }}
-                        </h3>
-                        <span class="fa-stack fa-2x">
-                            <a class="icon fbshare" href="{{ url('sonata_media_gallery_view', {'id': app.request.get('id')} ) }}">
-                                <i class="fa fa-circle fa-inverse fa-stack-2x"></i>
-                                <i class="fa fa-facebook fa-lg fa-stack-1x" aria-hidden="true"></i>
-                            </a>
-                        </span>
-                        <span class="fa-stack fa-2x">
-                            <a class="icon twitter popup" href="http://twitter.com/share?url={{ url('sonata_media_gallery_view', {'id': app.request.get('id')} ) }}">
-                                <i class="fa fa-circle fa-inverse fa-stack-2x"></i>
-                                <i class="fa fa-twitter fa-lg fa-stack-1x" aria-hidden="true"></i>
-                            </a>
-                        </span>
-                    </div>
-                {% endblock %}
+
             {% endembed %}
         {% endif %}
     </div>
+
     <i class="loader loader--white" aria-hidden="true"></i>
 
     <div class="row">

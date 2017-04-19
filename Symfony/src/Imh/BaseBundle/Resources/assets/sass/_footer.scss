@@ -12,9 +12,13 @@
 
   // overrides _lang.sccs
   .imh-lang__list {
-    &::after {
+    &:after {
       content: normal;
     }
+  }
+
+  .imh-lang__item {
+    margin-bottom: 0;
   }
 
   .imh-lang__link {
@@ -22,10 +26,10 @@
     display: inline-block;
     height: auto;
     width: auto;
-    line-height: normal;
+    line-height: 1.5em;
     color: inherit;
     background-color: inherit;
-    border: none;
+    border: 1px solid transparent;
     text-align: inherit;
     font-size: inherit;
     text-transform: inherit;
@@ -34,8 +38,12 @@
     z-index: inherit;
     @include border-radius(0);
 
-    &::after {
+    &:after {
       content: normal;
+    }
+
+    &:first-letter {
+      text-transform: uppercase;
     }
   }
 
@@ -59,7 +67,7 @@
 
   li {
     white-space: nowrap;
-    margin-bottom: -4px;
+    line-height: 1.5em;
 
     &.current {
       list-style: none;
@@ -68,7 +76,7 @@
         background: white;
         border: 1px solid $color-grey-light;
         border-radius: 16px;
-        padding: 6px 14px 8px;
+        padding: 6px 14px;
       }
     }
   }
@@ -174,8 +182,9 @@
 }
 
 .imh-footer__rights {
+  font-family: 'ralewayregular', $font-fallback;
   display: block;
-  font-size: $elevenpx;
+  font-size: $tenpx;
   margin: 20px 0 15px;
 
   span {
@@ -247,6 +256,3 @@
     border: none;
   }
 }
-
-@media (min-width: $screen-md-min) and (max-width: $screen-md-max) {  }
-@media (min-width: $screen-lg-min) {  }

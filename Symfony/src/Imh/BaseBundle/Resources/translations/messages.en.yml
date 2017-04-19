@@ -31,8 +31,8 @@ imh:
 
     biography:
       page_title:   'Biography | Ionella Marinutsa'
+      main_section-title: 'Biography'
       main_text-section1: >
-        <h2 class="imh__biography-title-h2">Biography</h2>
         <p class="first">Ionella Marinutsa was born in Saint Petersburg in 1992 into an artistic family. The creative atmosphere in which she was brought up led to her taking an interest in art and music from an early age. At the age of five she began to study piano, and when she was six she entered the harp class at the Okhtinsky Artistic Lycée in Saint Petersburg, Russia. During her time at the Lycée she took part in municipal and international music competitions, and in annual harp concerts of the childrens’ music schools of Saint Petersburg.</p>
         <p>Ionella has successfully participated in the Moscow harp festivals “The Harp in Russia – Yesterday, Today and Tomorrow” (2003) and “The Sounds of the Magic Harp” (2006).</p>
         <p>From 2009 to 2012 Ionella was a pupil of the M.S. Mussorgsky Saint Petersburg Music College in Professor I.A. Tishchenko-Donskaya’s harp class. In 2010 she won the 1st Prize in the “Symphonia” international competition in Volgograd, Russia, and in autumn 2010 she was awarded the special jury “Prize for the Best Interpretation of Hungarian music” at the 2nd International Harp Competition in Szeged, Hungary. In 2012 she was a prizewinner at the 2nd K. Erdeli International Harp Competition in Saint Petersburg. The young harpist has taken part in masterclasses with a number of outstanding European harpists – Florence Sitruk, Isabelle Moretti, Emmanuel Ceysson, Germaine Lorenzini and Marie-Pierre Langlamet.</p>
@@ -61,9 +61,8 @@ imh:
 
     repertoire:
       page_title:     'Repertoire | Ionella Marinutsa'
+      main_section-title: 'Répertoire'
       concert:
-        title: >
-          Concerts <br> <small>with harp and orchestra</small>
         duration:     'Duration : '
         0:
           composer:   'Georg Friedrich HAENDEL'

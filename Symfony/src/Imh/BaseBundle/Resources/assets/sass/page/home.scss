@@ -2,27 +2,6 @@ $fa-font-path: "/bundles/imhbase/bower_components/fontawesome/fonts";
 @import "../app";
 @import "../blocks/events";
 
-// Font Spy
-// ==================================================
-
-.hideMe {
-  visibility: hidden !important;
-}
-
-.fontFail {
-  visibility: visible !important;
-  /* fall back font */
-  /* necessary styling so fallback font doesn't break your layout */
-}
-
-.fontCall {
-  color: black !important;
-  font-family: "Georgia", Times, serif !important;
-}
-
-// End Font Spy
-// ==================================================
-
 @include keyframes(stack-in-button) {
   to {
     @include opacity(1);
@@ -30,116 +9,142 @@ $fa-font-path: "/bundles/imhbase/bower_components/fontawesome/fonts";
   }
 }
 
-body {
-  &.mA_1 {
-    .imh__progress {
-      &::before, &::after {
-        width: 50%;
-      }
-    }
+.mA_1 {
 
-    .imh__intro {
-      @include opacity(1);
-      @include transition(opacity 1.5s linear .7s);
-    }
-
-    .imh-opening-col::after {
-      @include animation('stack-in-width 3s cubic-bezier(0,.92,.08,1) .7s forwards');
-    }
-
-    .imh-opening-col:nth-child(odd) .imh-opening-shutter::after {
-      @include animation('stack-in-height 3s cubic-bezier(0,.92,.08,1) .7s forwards');
+  .imh__progress {
+    &:before, &:after {
+      width: 50%;
     }
   }
 
-  &.mA_2 {
-    .imh-ionella-bkg-image {
-      //@include transition(opacity 1s linear .5s);
-      @include opacity(1);
-
-      &.notransition {
-        -webkit-transition: none !important;
-        -moz-transition: none !important;
-        -o-transition: none !important;
-        transition: none !important;
-      }
-    }
-
-    .imh__progress {
-      display: none;
-    }
-
-    .imh-opening-col::after {
-      width: 5%;
-      background-color: #e2e2e2;
-      @include animation('stack-out-width 2s cubic-bezier(0,.92,.08,1) 0s forwards');
-    }
-
-    .imh-opening-col:nth-child(odd) .imh-opening-shutter::after {
-      height: 100%;
-      background-color: #e2e2e2;
-      @include animation('stack-out-height 2s cubic-bezier(0,.92,.08,1) 0s forwards');
-    }
-
-    .imh__intro {
-      @include animation('stack-opening .7s cubic-bezier(.72,.04,.83,.67) .3s forwards');
-    }
-
-    .imh-opening-shutter {
-      @include animation('stack-shutter .7s cubic-bezier(.72,.04,.83,.67) 1s forwards');
-    }
-
-    /*.imh-opening-col {
-      .imh-opening-shutter:first-child {
-        //@include animation-delay(.7s);
-      }
-      .imh-opening-shutter:last-child  {
-        //@include animation-delay(1.1s);
-      }
-    }
-    .imh-opening-col--last {
-      .imh-opening-shutter:first-child {
-        //@include animation-delay(1.3s);
-      }
-      .imh-opening-shutter:last-child {
-        //@include animation-delay(.9s);
-      }
-    }*/
+  .imh__intro {
+    @include opacity(1);
+    @include transition(opacity 1.5s linear .7s);
   }
 
-  &.mA_3 {
-    .imh__content-home-link {
-      @include animation('stack-in-button .7s cubic-bezier(0,.92,.08,1) 0s forwards');
-      z-index: 3;
+  .imh-opening-col::after {
+    @include animation('stack-in-width 3s cubic-bezier(0,.92,.08,1) .7s forwards');
+  }
+
+  .imh-opening-col:nth-child(odd) .imh-opening-shutter::after {
+    @include animation('stack-in-height 3s cubic-bezier(0,.92,.08,1) .7s forwards');
+  }
+}
+
+.mA_2 {
+
+  .hamburger-wrapper {
+    top: 0;
+  }
+
+  .imh__content {
+    @include opacity(1);
+  }
+
+  .imh__progress {
+    display: none;
+  }
+
+  .imh-opening-col::after {
+    width: 5%;
+    background-color: #e2e2e2;
+    @include animation('stack-out-width 2s cubic-bezier(0,.92,.08,1) 0s forwards');
+  }
+
+  .imh-opening-col:nth-child(odd) .imh-opening-shutter::after {
+    height: 100%;
+    background-color: #e2e2e2;
+    @include animation('stack-out-height 2s cubic-bezier(0,.92,.08,1) 0s forwards');
+  }
+
+  .imh__intro {
+    @include animation('stack-opening .5s ease-in .3s forwards');
+    will-change: opacity;
+  }
+
+  .imh-opening-shutter {
+    @include animation('stack-shutter .7s cubic-bezier(.72,.04,.83,.67) 1s forwards');
+  }
+
+  /*.imh-opening-col {
+    .imh-opening-shutter:first-child {
+      //@include animation-delay(.7s);
     }
+    .imh-opening-shutter:last-child  {
+      //@include animation-delay(1.1s);
+    }
+  }
+  .imh-opening-col--last {
+    .imh-opening-shutter:first-child {
+      //@include animation-delay(1.3s);
+    }
+    .imh-opening-shutter:last-child {
+      //@include animation-delay(.9s);
+    }
+  }*/
+}
+
+.mA_3 {
+  .imh-agenda {
+    @include animation('stack-in-button .7s cubic-bezier(0,.92,.08,1) 0s forwards');
+    z-index: 3;
+  }
+
+  .imh-loader {
+    display: none;
   }
 }
 
 .imh__container-fluid,
-.imh__content {
-  //height: 100%;
+.imh__content,
+.imh-fullpage,
+.imh-fullpage__section {
+  height: 100%;
 }
 
 .imh__content {
-  margin-left: -15px;
-  margin-right: -15px;
+  @include make-row();
   overflow: hidden;
+  @include opacity(0);
+  @include transition(opacity 1s ease-out 1s);
 }
 
-.imh__ionella-bkg-content {
+.imh-fullpage__section {
+  // better than : sectionsColor : ['#fff', '#f5f5f5'] in the fullpage plugin
+  // because of the z-index control
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: $color-grey-ultralight;
+    z-index: -2;
+  }
+}
+
+.imh-fullpage__section.active {
+  .imh-bkg-content {
+    @include opacity(1);
+  }
+}
+
+.imh-bkg-content {
+  @include opacity(0);
+  @include transition(opacity 1s ease-out 0s);
   display: block;
-  width: 80%;
   height: 100%;
   position: relative;
   z-index: 0;
 }
 
-.imh-ionella-bkg-image {
-  @include opacity(0);
+.imh-bkg-content__picture {
+  display: block;
   position: absolute;
   top: 0;
-  right: -200px; // change this property to fit the device screen
   max-height: 100%;
+  height: 100%;
   width: auto;
   z-index: 0;
 
@@ -148,7 +153,11 @@ body {
   }
 }
 
-.imh__content-home-link {
+.imh-bkg-content__image {
+  height: 100%;
+}
+
+.imh-agenda {
   @include size(100px, 100px);
   @include opacity(0);
   line-height: 125px;
@@ -158,8 +167,9 @@ body {
   margin-left: -50px;
   text-align: center;
   z-index: 0;
+  display: none;
 
-  &::before, &::after {
+  &:before, &:after {
     content: '';
     @include border-radius(50%);
     @include size(100%, 100%);
@@ -169,60 +179,84 @@ body {
     top: 0;
   }
 
-  &::before {
+  &:before {
     @include opacity(.7);
     @include box-shadow(0, 0, 10px, 0, $color-grey-darker);
     z-index: 2;
   }
 
-  &::after {
+  &:after {
     @include opacity(0);
     @include transition(all .2s ease-in-out 0s);
     @include size(100%, 100%);
     @include transform(scale(1.3));
     z-index: 1;
+    pointer-events: none;
   }
 
   .fa {
-    color: $color-grey-dark;
+    color: $color-grey-medium;
     position: relative;
     z-index: 3;
+    background: black;
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    line-height: 90px;
+    top: 1px;
+    @include opacity(.8);
   }
 
   &:hover {
-    &::after {
+    &:after {
       @include opacity(1);
       @include transform(scale(1));
       @include opacity(1);
     }
 
-    .fa-angle-down {
-      color: $color-grey-darker;
+    .fa {
+      @include opacity(.9);
+      color: white;
     }
   }
 }
 
-@media (max-width: $screen-xs-max) {
-  .imh__content {
-    padding-top: 0;
+.imh-agenda__title {
+  text-transform: uppercase;
+  font-family: 'Knockout-HTF49-Liteweight', $font-fallback;
+}
+
+.imh-sidebar {
+  top: 60px;
+  right: 80px;
+  left: auto;
+}
+
+.imh__navigation-menu {
+  position: static;
+}
+
+.imh__navigation-menu-title {
+  color: $color-grey-darker;
+  margin-top: 0;
+  border-bottom-color: $color-grey-medium;
+
+  .fa {
+    color: $color-grey-darker;
+  }
+}
+
+@media (min-width: $screen-sm-min) {
+
+  .imh-header {
+    display: none;
   }
 
-  .imh__content-home-link {
-    @include size(60px, 60px);
-    line-height: 76px;
-    margin-left: -30px;
-
-    &::after {
-      @include transform(scale(2));
-      @include transition-duration(.5s);
-    }
-
-    .fa {
-      font-size: 30px;
-    }
+  .imh-bkg-content__picture {
+    height: 100%;
   }
 
-  .imh__ionella-bkg-content {
-    width: 100%;
+  .imh-agenda {
+    display: block;
   }
 }

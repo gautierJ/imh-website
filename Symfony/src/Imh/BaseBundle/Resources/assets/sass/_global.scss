@@ -16,55 +16,6 @@
   }
 }
 
-
-* {
-  -webkit-tap-highlight-color: rgba(255, 255, 255, 0); // Disable blue highlight when Touch/Press
-  @include box-sizing(border-box);
-  @include backface-visibility(hidden);
-}
-
-html, body {
-  height: 100%;
-}
-
-body {
-  font-family: $font-stack, $font-fallback;
-  font-size: $font-stack-size;
-}
-
-a {
-  color: black;
-  text-decoration: none;
-}
-
-a:hover, a:focus {
-  color: black;
-  text-decoration: none;
-}
-
-a:focus {
-  outline: none;
-}
-
-a.icon {
-  display: inline-block;
-}
-
-ul, ol {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-button {
-  border: none;
-  background: none;
-
-  &:focus {
-    outline: none;
-  }
-}
-
 // IMH
 //============================================
 
@@ -94,7 +45,7 @@ button {
 
 .imh__content {
   position: relative;
-  @include make-row();
+  padding-top: 60px;
 }
 
 .imh__container {
@@ -105,32 +56,33 @@ button {
 
 .imh__container--wrapper {
   @include make-row();
+  border-top: none;
+  padding: 0;
   background-color: white;
-  border-top: 34px solid white;
-  padding: 26px 0 45px;
   position: relative;
+}
 
-  &.imh__container--shadows::after,
-  &.imh__container--shadows::before {
-    content: " ";
-    position: absolute;
-    top: -97px;
-    width: 5px;
-    height: 400px;
-    z-index: -10;
-  }
+.imh__container--shadows:after,
+.imh__container--shadows:before {
+  content: '';
+  position: absolute;
+  top: -97px;
+  width: 5px;
+  height: 400px;
+  z-index: -10;
+  display: none;
+}
 
-  &.imh__container--shadows::before {
-    left: 11px;
-    box-shadow: -10px 0 4px $color-grey-ultralight;
-    transform: rotate(-1deg);
-  }
+.imh__container--shadows:before {
+  left: 11px;
+  box-shadow: -10px 0 4px $color-grey-ultralight;
+  transform: rotate(-1deg);
+}
 
-  &.imh__container--shadows::after {
-    right: 11px;
-    box-shadow: 10px 0 4px $color-grey-ultralight;
-    transform: rotate(1deg);
-  }
+.imh__container--shadows:after {
+  right: 11px;
+  box-shadow: 10px 0 4px $color-grey-ultralight;
+  transform: rotate(1deg);
 }
 
 .empty {
@@ -140,18 +92,6 @@ button {
 
 .lazy {
   display: none;
-}
-
-.block-triangle {
-  @include opacity(.4);
-  position: absolute;
-  top: 0;
-  height: 100%;
-  border-bottom-style: solid;
-  border-bottom-color: white;
-  border-left-style: solid;
-  border-left-color: rgba(0, 0, 0, 0);
-  -moz-transform: scale(.9999); /* Antialiasing - trick for firefox */
 }
 
 %pseudo-vertical-align {
@@ -266,28 +206,25 @@ button {
     }
 }
 
-@media (max-width: $screen-xs-max) {
+@media (min-width: $screen-sm-min) {
+
   .imh__container--wrapper {
-    border-top-width: 0;
-    padding: 0;
+    border-top: 34px solid white;
+    padding: 26px 0 45px;
   }
 
   .imh__content {
-    padding-top: 60px;
-    margin-left: 0;
-    margin-right: 0;
+    padding-top: 0;
+  }
+
+  .imh__container--shadows:after,
+  .imh__container--shadows:before {
+    display: block;
   }
 }
 
 @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
   .imh__bkg-image { left: 0; }
-}
-
-@media (max-width: $screen-sm-max) {
-  .imh__container--shadows::after,
-  .imh__container--shadows::before {
-    display: none;
-  }
 }
 
 @media (min-width: $screen-md-min) {
@@ -298,4 +235,46 @@ button {
 
 @media (max-width: $screen-md-max) {
   .imh__bkg-image { display: none !important; }
+}
+
+// Plugin override
+// ==================================================
+
+#fp-nav {
+  top: 40px;
+  display: none;
+}
+
+#fp-nav ul li {
+  @include size(12px, 12px);
+}
+
+#fp-nav ul li:hover a span {
+  width: 12px;
+  height: 12px;
+  margin: -6px 0 0 -6px;
+}
+
+#fp-nav ul li:hover a:not(.active) span {
+  background-color: $color-brown-light;
+}
+
+#fp-nav ul li a.active span,
+.fp-slidesNav ul li a.active span,
+#fp-nav ul li:hover a.active span,
+.fp-slidesNav ul li:hover a.active span {
+  @include size(100%, 100%);
+  border-radius: 0;
+}
+
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+  border-radius: 0;
+}
+
+@media (min-width: $screen-sm-min) {
+  #fp-nav {
+    top: 50%;
+    display: block;
+  }
 }
