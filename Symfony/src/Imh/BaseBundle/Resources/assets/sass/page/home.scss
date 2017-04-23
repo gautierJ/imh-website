@@ -171,13 +171,13 @@ $fa-font-path: "/bundles/imhbase/bower_components/fontawesome/fonts";
 .imh__navigation-menu {
   position: static;
   padding-bottom: 40px;
-  border-bottom: 1px solid $color-grey-light;
+  border-bottom: 1px solid $color-grey-medium;
 }
 
 .imh__navigation-menu-title {
   color: $color-grey-darker;
   margin-top: 0;
-  border-bottom-color: $color-grey-light;
+  border-bottom-color: $color-grey-medium;
 
   .fa {
     color: $color-grey-darker;
