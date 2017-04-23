@@ -28,6 +28,13 @@ imh:
 
     home:
       page_title:     'Главная | Ионелла Маринуца'
+      website:        'Официальный веб-сайт'
+      menu:
+        section1:     'Ionella'
+        section2:     'события'
+      events:
+        title:        'ближайшие события'
+        sub_title:    'Найти программирование моих концертов с первого взгляда'
 
     biography:
       page_title:     'Биография | Ионелла Маринуца'

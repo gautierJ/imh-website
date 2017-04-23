@@ -23,7 +23,7 @@
         {% endif %}
 
         <div class="imh-fullpage" data-fullpage>
-            <div class="imh-fullpage__section section" data-tooltip="">
+            <div class="imh-fullpage__section section" data-tooltip="{{ ('imh.base.home.menu.section1')|trans }}">
 
                 <figure class="imh-bkg-content" data-bkg-content>
                     <picture class="imh-bkg-content__picture" data-bkg-image>
@@ -38,34 +38,94 @@
                     <img class="imh-bkg-content__image" data-bkg-image src="{{ asset('bundles/imhbase/images/ionella.jpg') }}" alt="Ionella Marinutsa" />#}
                 </figure>
 
-                {#<a href="#" class="imh__content-home-link" data-ajax data-path='imh_base_biography,{{ app.request.locale }}' data-enter-website>
+                {#<a href="#" class="imh-content-home-link" data-ajax data-path='imh_base_biography,{{ app.request.locale }}' data-enter-website>
                     <i class="fa fa-angle-down fa-4x" aria-hidden="true"></i>
                 </a>#}
 
                 <a href="#" class="imh-agenda" data-enter-website>
-                    {#<h2 class="imh-agenda__title">agenda</h2>#}
                     <i class="fa fa-angle-down fa-4x" aria-hidden="true"></i>
                 </a>
             </div>
 
-            <div class="imh-fullpage__section section" data-tooltip="events">
-                <div class="col-xs-24 imh-events">
-                    <div class="imh-topcartridge">
-                        <h2 class="imh-topcartridge__title">événements à venir</h2>
-                        <p class="imh-topcartridge__sub-title">Retrouvez toute la programmation de mes concerts en un coup d'oeil</p>
+            <div class="imh-fullpage__section section" data-tooltip="{{ ('imh.base.home.menu.section2')|trans }}">
+                <div class="imh-events">
+                    <div class="col-sm-12 col-sm-offset-6 imh-topcartridge">
+                        <h2 class="imh-topcartridge__title">{{ ('imh.base.home.events.title')|trans }}</h2>
+                        <p class="imh-topcartridge__sub-title">{{ ('imh.base.home.events.sub_title')|trans|raw }}</p>
                     </div>
 
-                    <div class="imh-block-events">
-                        <div class="imh-block-events__calendar"></div>
+                    <div class="col-lg-16 col-lg-offset-4 imh-block-events">
+                        {#<div class="imh-block-events__calendar"></div>#}
                         <ul class="imh-block-events__list">
-                            <li class="imh-block-events__item col-sm-7">
-
+                            <li class="imh-block-events__item col-sm-12 col-lg-8">
+                                <div class="imh-block-events__wrap">
+                                    <div class="imh-block-events__date">
+                                        <div class="imh-block-events__infos">
+                                            <p class="imh-block-events__month">Apr.</p>
+                                            <p class="imh-block-events__day">25</p>
+                                            <p class="imh-block-events__time">20H00</p>
+                                        </div>
+                                    </div>
+                                    <figure class="imh-block-events__figure">
+                                        <img class="" srcset="{{ asset('bundles/imhbase/images/gabarit.jpg') }}" alt="Ionella Marinutsa" />
+                                        <figcaption>
+                                            <h2>Warm <span>Oscar</span></h2>
+                                            <p>Oscar is a decent man. He used to clean porches with pleasure.</p>
+                                            <a href="#">View more</a>
+                                        </figcaption>
+                                    </figure>
+                                </div>
                             </li>
-                            <li class="imh-block-events__item col-sm-6">
+                            <li class="imh-block-events__item col-sm-12 col-lg-8">
 
+                                <div class="imh-block-events__wrap">
+                                    <div class="imh-block-events__date">
+                                        <div class="imh-block-events__infos">
+                                            <p class="imh-block-events__month">Apr.</p>
+                                            <p class="imh-block-events__day">30</p>
+                                            <p class="imh-block-events__time">19H00</p>
+                                        </div>
+                                    </div>
+                                    <figure class="imh-block-events__figure">
+                                        {#<picture class="">
+                                            <source srcset="{{ asset('bundles/imhbase/images/ionella.jpg') }}" media="(min-width: 768px)" />
+                                            <img class="" srcset="{{ asset('bundles/imhbase/images/ionella@2x.jpg') }}" alt="Ionella Marinutsa" />
+                                        </picture>#}
+
+                                        <img class="" srcset="{{ asset('bundles/imhbase/images/gabarit.jpg') }}" alt="Ionella Marinutsa" />
+
+                                        <figcaption>
+                                            <h2>Warm <span>Oscar</span></h2>
+                                            <p>Oscar is a decent man. He used to clean porches with pleasure.</p>
+                                            <a href="#">View more</a>
+                                        </figcaption>
+                                    </figure>
+                                </div>
                             </li>
-                            <li class="imh-block-events__item col-sm-6">
+                            <li class="imh-block-events__item col-sm-12 col-lg-8">
+                                <div class="imh-block-events__wrap">
+                                    <div class="imh-block-events__date">
+                                        <div class="imh-block-events__infos">
+                                            <p class="imh-block-events__month">May</p>
+                                            <p class="imh-block-events__day">10</p>
+                                            <p class="imh-block-events__time">20H00</p>
+                                        </div>
+                                    </div>
+                                    <figure class="imh-block-events__figure">
+                                        {#<picture class="">
+                                            <source srcset="{{ asset('bundles/imhbase/images/ionella.jpg') }}" media="(min-width: 768px)" />
+                                            <img class="" srcset="{{ asset('bundles/imhbase/images/ionella@2x.jpg') }}" alt="Ionella Marinutsa" />
+                                        </picture>#}
 
+                                        <img class="" srcset="{{ asset('bundles/imhbase/images/gabarit.jpg') }}" alt="Ionella Marinutsa" />
+
+                                        <figcaption>
+                                            <h2>Warm <span>Oscar</span></h2>
+                                            <p>Oscar is a decent man. He used to clean porches with pleasure.</p>
+                                            <a href="#">View more</a>
+                                        </figcaption>
+                                    </figure>
+                                </div>
                             </li>
                         </ul>
                     </div>
@@ -90,6 +150,7 @@
                 //titles       = ['.block-myself h1', '.block-myself h2', '.block-myself h3'],
                 //grTitles     = $(titles.join(', ')),
                 context      = $('[data-body]'),
+                topNav       = context.find('[data-top-navigation]'),
                 enterLink    = $('[data-enter-website]'),
                 nextLink     = $('[data-next]'),
                 opening      = $('[data-opening]'),
@@ -108,12 +169,12 @@
                 fontLoaded   = false,
                 wheelCount   = 0;
 
-            function adjustBkgImg(i, ic, icw, gap, ir, wh) {
-                i.width(icw + gap);
-                ic.height((icw + gap) * ir);
-                if(ic.height() < wh) {
-                    ic.height(wh);
-                    i.css('width', 'auto');
+            function adjustBkgImg(image, imageCtn, imageCtnW, gap, imageRatio, windowH) {
+                image.width(imageCtnW + gap);
+                imageCtn.height((imageCtnW + gap) * imageRatio);
+                if(imageCtn.height() < windowH) {
+                    imageCtn.height(windowH);
+                    image.css('width', 'auto');
                 }
             }
 
@@ -121,7 +182,7 @@
                 if (elem.addEventListener)  // W3C DOM
                     elem.addEventListener(evnt, func, false);
                 else if (elem.attachEvent) { // IE DOM
-                    elem.attachEvent("on" + evnt, func);
+                    elem.attachEvent('on' + evnt, func);
                 }
                 else { // No much to do
                     elem[evnt] = func;
@@ -135,7 +196,7 @@
                 xhr: function() {
                     var xhr = new window.XMLHttpRequest();
                     //Download progress
-                    addEvent("progress", xhr, function (e) {
+                    addEvent('progress', xhr, function (e) {
                         if (e.lengthComputable) {
                             var percentComplete = Math.round((e.loaded / e.total) * 100);
                             counter.empty().html(percentComplete + ' %');
@@ -155,52 +216,69 @@
 
                         nextLink.on('click', function(e) {
                             context.addClass('mA_2');
+                            loadFullPage();
                             e.preventDefault();
+
+                            //if (e.originalEvent.animationName == 'stack-opening') {
+
+
+                            //}
                         });
 
-                        context.on(animEnd, function(e) {
-                            if (Modernizr.touchevents) {
-                                $(this).delay(5000).addClass('mA_2');
-                            }
+                        if (Modernizr.touchevents) {
+                            context.one(animEnd, function(e) {
+                                console.log(e.originalEvent.animationName);
+                                if (e.originalEvent.animationName == 'stack-in-height') {
+                                    $(this).delay(5000).addClass('mA_2');
+                                    loadFullPage();
+                                }
+                            });
+                        }
 
-                            if (e.originalEvent.animationName == 'stack-opening') {
-
-                                $('[data-fullpage]').fullpage({
-                                    menu: '#menu',
-                                    //anchors:['firstPage', 'secondPage'],
-                                    css3: true,
-                                    navigation: true,
-                                    navigationPosition: 'right',
-                                    scrollingSpeed: 1000,
-                                    sectionsColor : ['#fff'], // for the first section
-                                    verticalCentered: false,
-                                    onLeave: function(index, nextIndex, direction) {
-                                        var leavingSection = $(this);
-
-                                        //after leaving section 1
-                                        if(index == 1 && direction =='down'){
-                                            console.log("Going to section 2!");
-                                        }
-
-                                        else if(index == 2 && direction == 'up'){
-                                            console.log("Going to section 1!");
-                                        }
-                                    }
-                                });
-                            }
-                        });
-
-                        shutter.on(animEnd, function(e) {
-                            if (e.originalEvent.animationName != 'stack-in-height') {
-                                context.addClass('mA_3');
-                            }
-                        });
                    // }
                 },
                 error: function (jqXHR, textStatus, errorThrown) {
                     console.log('Error : ' + errorThrown);
                 }
             });
+
+            var loadFullPage = function() {
+                $('[data-fullpage]').fullpage({
+                    menu: '#menu',
+                    //anchors:['firstPage', 'secondPage'],
+                    css3: true,
+                    navigation: true,
+                    navigationPosition: 'right',
+                    scrollingSpeed: 1000,
+                    sectionsColor : ['#fff'], // for the first section
+                    verticalCentered: false,
+                    showActiveTooltip: true,
+                    onLeave: function(index, nextIndex, direction) {
+                        var leavingSection = $(this);
+
+                        //after leaving section 1
+                        if (index == 1 && direction =='down') {
+                            console.log("Going to section 2!");
+                            topNav.addClass('is-visible');
+                        }
+                        else if (index == 2 && direction == 'up') {
+                            console.log("Going to section 1!");
+                            topNav.removeClass('is-visible');
+                        }
+                    },
+                    afterLoad: function(anchorLink, index) {
+                        var loadedSection = $(this);
+
+                        if (index == 1) {
+                            shutter.on(animEnd, function(e) {
+                                if (e.originalEvent.animationName != 'stack-in-height') {
+                                    context.addClass('mA_3');
+                                }
+                            });
+                        }
+                    }
+                });
+            };
 
             /*grTitles.fontSpy({
                 onLoad: 'hideMe',
@@ -242,7 +320,11 @@
                 var direction = (e.detail < 0 || e.wheelDelta > 0) ? 1 : -1;
 
                 if (direction == 1) wheelCount = 0;
-                if (wheelCount == 4 && direction == -1) context.addClass('mA_2');
+                if (wheelCount == 4 && direction == -1) {
+                    context.addClass('mA_2');
+                    $(window).off('scroll');
+                    loadFullPage();
+                }
             };
         });
 

@@ -28,6 +28,13 @@ imh:
 
     home:
       page_title:   'Home | Ionella Marinutsa'
+      website:      'Official website'
+      menu:
+        section1:   'Ionella'
+        section2:   'Events'
+      events:
+        title:      'upcoming events'
+        sub_title:  'Find the schedule of my concerts at a glance'
 
     biography:
       page_title:   'Biography | Ionella Marinutsa'

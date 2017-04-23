@@ -5,8 +5,10 @@ imh_base:
       _locale: en|fr|ru
 
 imh_base_homepage:
-    path: /
-    defaults: { _controller: ImhBaseBundle:Page:index }
+    path: /{_locale}
+    defaults: { _controller: ImhBaseBundle:Page:index, _locale: en }
+    requirements:
+      _locale: en|fr|ru
 
 admin:
     resource: '@SonataAdminBundle/Resources/config/routing/sonata_admin.xml'

@@ -1,7 +1,9 @@
 $fa-font-path: "/bundles/imhbase/bower_components/fontawesome/fonts";
 
 .imh-events {
-
+  @include clearfix();
+  padding-top: 60px;
+  height: 100%;
 }
 
 .imh-topcartridge {
@@ -37,86 +39,164 @@ $fa-font-path: "/bundles/imhbase/bower_components/fontawesome/fonts";
   font-family: 'ethos_regular_italic', $font-fallback;
   font-size: $sixteenpx;
   color: $color-grey-dark;
-  margin: 20px 0 0;
+  margin-top: 20px;
   letter-spacing: 0.05em;
 }
 
-
-
-
-
-
-
-
-
-
-/*---------------*/
-/***** Oscar *****/
-/*---------------*/
-
-figure.effect-oscar {
-  background: -webkit-linear-gradient(45deg, #22682a 0%, #9b4a1b 40%, #3a342a 100%);
-  background: linear-gradient(45deg, #22682a 0%,#9b4a1b 40%,#3a342a 100%);
+.imh-block-events {
+  margin-top: 75px;
+  @include clearfix();
 }
 
-figure.effect-oscar img {
-  opacity: 0.9;
-  -webkit-transition: opacity 0.35s;
-  transition: opacity 0.35s;
+.imh-block-events__item {
+  position: relative;
+  margin-bottom: 30px;
 }
 
-figure.effect-oscar figcaption {
-  padding: 3em;
-  background-color: rgba(58,52,42,0.7);
-  -webkit-transition: background-color 0.35s;
-  transition: background-color 0.35s;
-}
 
-figure.effect-oscar figcaption::before {
+
+
+
+
+
+
+
+
+
+.imh-block-events__date {
+  width: 100px;
+  height: 100px;
   position: absolute;
-  top: 30px;
-  right: 30px;
-  bottom: 30px;
-  left: 30px;
-  border: 1px solid #fff;
-  content: '';
+  left: 50%;
+  top: -60px;
+  @include translate(-50%, -50%);
+  background-color: $color-grey-ultralight;
+  z-index: 10;
+  @include border-radius(50%);
+  text-align: center;
+
+  &:before {
+    content: '';
+    position: absolute;
+    background-color: $color-grey-medium;
+    height: 1px;
+    width: 46px;
+    left: 50%;
+    top: 65%;
+    margin-left: -23px;
+  }
 }
 
-figure.effect-oscar h2 {
-  margin: 20% 0 10px 0;
-  -webkit-transition: -webkit-transform 0.35s;
-  transition: transform 0.35s;
-  -webkit-transform: translate3d(0,100%,0);
-  transform: translate3d(0,100%,0);
+.imh-block-events__infos {
+  padding-top: 10px;
 }
 
-figure.effect-oscar figcaption::before,
-figure.effect-oscar p {
-  opacity: 0;
-  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-  transition: opacity 0.35s, transform 0.35s;
-  -webkit-transform: scale(0);
-  transform: scale(0);
+.imh-block-events__month {
+  font-family: 'ralewaylight', $font-fallback;
+  font-size: $eighteenpx;
+  line-height: 20px;
+  margin: 0;
 }
 
-figure.effect-oscar:hover h2 {
-  -webkit-transform: translate3d(0,0,0);
-  transform: translate3d(0,0,0);
+.imh-block-events__day {
+  font-size: 70px;
+  font-family: "Knockout-HTF49-Liteweight", $font-fallback;
+  margin: 0;
+  line-height: 68px;
 }
 
-figure.effect-oscar:hover figcaption::before,
-figure.effect-oscar:hover p {
+.imh-block-events__time {
+  font-family: "Knockout-HTF49-Liteweight", $font-fallback;
+  font-size: $twentytwopx;
+  line-height: 50px;
+}
+
+.imh-block-events__wrap {
+  position: relative;
+  max-width: 350px;
+  margin: 0 auto;
+}
+
+.imh-block-events__figure {
+  background: linear-gradient(45deg, #b60006 0%, $color-brown-dark 40%, $color-grey-dark 100%);
+}
+
+.imh-block-events__figure:hover {
+  img {
+    @include opacity(0.4);
+  }
+
+  h2 {
+    transform: translate3d(0,0,0);
+  }
+
+  figcaption {
+    background-color: rgba(58, 52, 42, 0);
+  }
+}
+
+.imh-block-events__figure:hover figcaption:before,
+.imh-block-events__figure:hover p {
   opacity: 1;
-  -webkit-transform: scale(1);
   transform: scale(1);
 }
 
-figure.effect-oscar:hover figcaption {
-  background-color: rgba(58,52,42,0);
+.imh-block-events__figure img {
+  opacity: 0.9;
+  transition: opacity 0.35s;
+  max-width: 100%;
+  height: auto;
 }
 
-figure.effect-oscar:hover img {
-  opacity: 0.4;
+.imh-block-events__figure figcaption {
+  padding: 3em;
+  background-color: rgba(58, 52, 42, 0.7);
+  transition: background-color 0.35s;
+  color: white;
+  text-transform: uppercase;
+  font-size: 1.25em;
+  backface-visibility: hidden;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    bottom: 30px;
+    left: 30px;
+    border: 1px solid #fff;
+  }
+}
+
+.imh-block-events__figure figcaption,
+.imh-block-events__figure figcaption > a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.imh-block-events__figure figcaption > a {
+  z-index: 11;
+  text-indent: 200%;
+  white-space: nowrap;
+  font-size: 0;
+  @include opacity(0);
+}
+
+.imh-block-events__figure h2 {
+
+  margin: 20% 0 10px 0;
+  transition: transform 0.35s;
+  transform: translate3d(0, 100%, 0);
+}
+
+.imh-block-events__figure figcaption:before,
+.imh-block-events__figure p {
+  @include opacity(0);
+  transition: opacity 0.35s, transform 0.35s;
+  transform: scale(0);
 }
 
 // Media queries
@@ -136,18 +216,6 @@ figure.effect-oscar:hover img {
       height: 1px;
       background-color: $color-grey-darker;
     }
-
-    /*height: 100%;
-    width: 200px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    background-color: white;
-    @include opacity(0.7);*/
-  }
-
-  .imh-topcartridge {
-    padding-top: 60px;
   }
 
   .imh-topcartridge__title {
@@ -159,9 +227,9 @@ figure.effect-oscar:hover img {
     &:after {
       bottom: 0;
       left: 50%;
-      margin-left: -25px;
-      width: 50px;
+      width: 46px;
       height: 1px;
+      margin-left: -23px;
       background-color: $color-grey-medium;
       z-index: inherit;
     }
@@ -169,6 +237,19 @@ figure.effect-oscar:hover img {
 
   .imh-topcartridge__sub-title {
     font-size: $eighteenpx;
-    margin: 30px 0 0;
+    margin-top: 30px;
+  }
+
+  .imh-block-events {
+    margin-top: 250px;
+    padding-top: 50px;
+  }
+}
+
+@media (min-width: $screen-md-min) {
+
+  .imh-block-events__date {
+    width: 160px;
+    height: 160px;
   }
 }

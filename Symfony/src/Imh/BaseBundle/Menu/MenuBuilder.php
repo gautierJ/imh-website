@@ -44,7 +44,7 @@ class MenuBuilder extends ContainerAware
     {
         $menu = $this->factory->createItem('root');
 
-        $menu->addChild('imh.base.menu.home', array('route' => 'imh_base_homepage'))->setExtra('translation_domain', 'messages')->setAttribute('data-icon', 'fa fa-home fa-2x');;
+        $menu->addChild('imh.base.menu.home', array('route' => 'imh_base_homepage'))->setExtra('translation_domain', 'messages')->setAttribute('data-icon', 'fa fa-home fa-2x');
         $menu->addChild('imh.base.menu.biography', array('route' => 'imh_base_biography'))->setExtra('translation_domain', 'messages');
 //        $menu->addChild('Events', array('route' => 'imh_base_events'));
         $menu->addChild('imh.base.menu.repertoire', array('route' => 'imh_base_repertoire'))->setExtra('translation_domain', 'messages');

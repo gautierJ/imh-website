@@ -39,22 +39,22 @@
   z-index: -1;
 }
 
-.imh__container-fluid {
+.imh-container-fluid {
   overflow: hidden;
 }
 
-.imh__content {
+.imh-content {
   position: relative;
   padding-top: 60px;
 }
 
-.imh__container {
+.imh-container {
   position: relative;
   top: -34px;
   z-index: 1;
 }
 
-.imh__container--wrapper {
+.imh-container--wrapper {
   @include make-row();
   border-top: none;
   padding: 0;
@@ -62,8 +62,8 @@
   position: relative;
 }
 
-.imh__container--shadows:after,
-.imh__container--shadows:before {
+.imh-container--shadows:after,
+.imh-container--shadows:before {
   content: '';
   position: absolute;
   top: -97px;
@@ -73,13 +73,13 @@
   display: none;
 }
 
-.imh__container--shadows:before {
+.imh-container--shadows:before {
   left: 11px;
   box-shadow: -10px 0 4px $color-grey-ultralight;
   transform: rotate(-1deg);
 }
 
-.imh__container--shadows:after {
+.imh-container--shadows:after {
   right: 11px;
   box-shadow: 10px 0 4px $color-grey-ultralight;
   transform: rotate(1deg);
@@ -208,17 +208,17 @@
 
 @media (min-width: $screen-sm-min) {
 
-  .imh__container--wrapper {
+  .imh-container--wrapper {
     border-top: 34px solid white;
     padding: 26px 0 45px;
   }
 
-  .imh__content {
+  .imh-content {
     padding-top: 0;
   }
 
-  .imh__container--shadows:after,
-  .imh__container--shadows:before {
+  .imh-container--shadows:after,
+  .imh-container--shadows:before {
     display: block;
   }
 }
@@ -228,53 +228,11 @@
 }
 
 @media (min-width: $screen-md-min) {
-  .imh__container {
+  .imh-container {
     width: 980px;
   }
 }
 
 @media (max-width: $screen-md-max) {
   .imh__bkg-image { display: none !important; }
-}
-
-// Plugin override
-// ==================================================
-
-#fp-nav {
-  top: 40px;
-  display: none;
-}
-
-#fp-nav ul li {
-  @include size(12px, 12px);
-}
-
-#fp-nav ul li:hover a span {
-  width: 12px;
-  height: 12px;
-  margin: -6px 0 0 -6px;
-}
-
-#fp-nav ul li:hover a:not(.active) span {
-  background-color: $color-brown-light;
-}
-
-#fp-nav ul li a.active span,
-.fp-slidesNav ul li a.active span,
-#fp-nav ul li:hover a.active span,
-.fp-slidesNav ul li:hover a.active span {
-  @include size(100%, 100%);
-  border-radius: 0;
-}
-
-#fp-nav ul li a span,
-.fp-slidesNav ul li a span {
-  border-radius: 0;
-}
-
-@media (min-width: $screen-sm-min) {
-  #fp-nav {
-    top: 50%;
-    display: block;
-  }
 }

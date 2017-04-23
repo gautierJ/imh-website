@@ -1,8 +1,8 @@
 <nav class="imh__navigation" id="navigation" data-layer>
-    <div class="container imh__container">
+    <div class="container imh-container">
         {% spaceless %}
             <nav class="imh__navigation-main" data-main>
-                {{ knp_menu_render('main', {'currentAsLink':false, 'allow_safe_labels': true} ) }}
+                {{ knp_menu_render('main', {'currentAsLink':true, 'allow_safe_labels': true} ) }}
             </nav>
             <nav class="imh-lang" data-lang>
                 {% include 'ImhBaseBundle:Menu:lang.html.twig' %}
@@ -10,7 +10,7 @@
         {% endspaceless %}
     </div>
 </nav>
-<div class="hamburger-wrapper">
+<div class="hamburger-wrapper" data-top-navigation>
     <button class="globe" type="button" aria-label="Languages" aria-controls="navigation" data-globe>
         <i class="fa fa-3x fa-inverse fa-globe" aria-hidden="true"></i>
     </button>

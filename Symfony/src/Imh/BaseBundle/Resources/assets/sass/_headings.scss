@@ -43,7 +43,7 @@ h1, h2, h3, h4, h5, h6 {
 // Home page
 // ==================================================
 
-.imh__intro {
+.imh-intro {
   @include opacity(0);
   @include translate(-50%, -50%);
   background-color: $color-grey-ultralight;
@@ -57,7 +57,7 @@ h1, h2, h3, h4, h5, h6 {
   display: table;
 }
 
-.imh__intro-heading-group {
+.imh-intro-heading-group {
   display: table-cell;
   vertical-align: middle;
 }

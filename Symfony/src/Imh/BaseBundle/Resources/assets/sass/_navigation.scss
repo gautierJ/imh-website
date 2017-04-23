@@ -8,7 +8,7 @@
   border-top: 1px solid white;
   height: 126px;
 
-  .imh__container {
+  .imh-container {
     top: 27px;
     margin: 0 auto;
     z-index: 2;
@@ -107,14 +107,14 @@
       /*& + .hamburger-wrapper { border-bottom: 1px solid $color-grey-dark; }*/
     }
 
-    .imh__container {
+    .imh-container {
       top: -30px;
       display: table-cell;
       vertical-align: middle;
     }
   }
 
-  .imh__container {
+  .imh-container {
     top: 0;
   }
 
@@ -133,7 +133,7 @@
       &.current {
         border: none;
         background: none;
-        span {
+        a, span {
           color: white;
           border: 1px solid $color-grey-dark;
           background: black;
@@ -175,15 +175,21 @@
   .hamburger-wrapper {
     background: rgb(0, 0, 0);
     background: rgba(0, 0, 0, .97);
+    border-bottom: 1px solid $color-grey-darker;
     position: fixed;
     width: 100%;
     height: 60px;
-    border-bottom: 1px solid $color-grey-darker;
     z-index: 3;
 
     top: -60px;
     left: 0;
-    @include transition(top .7s cubic-bezier(0,.92,.08,1) 1.5s);
+    @include transition(top .7s cubic-bezier(0,.92,.08,1) .2s, opacity 1s linear 0s);
+    @include opacity(0);
+  }
+
+  .hamburger-wrapper.is-visible {
+    @include opacity(1);
+    top: 0;
   }
 
   .hamburger {

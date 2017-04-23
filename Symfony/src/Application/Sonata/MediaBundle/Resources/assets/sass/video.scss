@@ -2,10 +2,11 @@ $fa-font-path: "/bundles/imhbase/bower_components/fontawesome/fonts";
 @import "app"; //this is imported from Imh bundle -> see assetic compass configuration
 
 .hamburger-wrapper {
+  @include opacity(1);
   top: 0;
 }
 
-.imh__container--wrapper {
+.imh-container--wrapper {
   padding-bottom: 60px;
 }
 
@@ -98,7 +99,7 @@ $fa-font-path: "/bundles/imhbase/bower_components/fontawesome/fonts";
   }
 }
 
-.imh__progress-bar-wrapper {
+.imh-progress-bar-wrapper {
   @include clearfix();
   @include opacity(0);
   @include transition(opacity .5s linear 0s);
@@ -110,28 +111,28 @@ $fa-font-path: "/bundles/imhbase/bower_components/fontawesome/fonts";
   }
 }
 
-.imh__progress-bar {
+.imh-progress-bar {
   display: inline-block;
   vertical-align: middle;
   height: 2px;
   background-color: $color-grey-darker;
 }
 
-.imh__progress-bar-advancement,
-.imh__progress-bar-buffer {
+.imh-progress-bar-advancement,
+.imh-progress-bar-buffer {
   height: 100%;
   width: 0;
 }
 
-.imh__progress-bar-advancement {
+.imh-progress-bar-advancement {
   background-color: $color-brown-dark;
 }
 
-.imh__progress-bar-buffer {
+.imh-progress-bar-buffer {
   background-color: $color-brown-light;
 }
 
-.imh__progress-bar-time {
+.imh-progress-bar-time {
   display: inline-block;
   vertical-align: middle;
   font-size: $elevenpx;
@@ -665,13 +666,13 @@ $fa-font-path: "/bundles/imhbase/bower_components/fontawesome/fonts";
 // ==================================================
 
 @media (max-width: $screen-xs-max) {
-  .imh__container--wrapper {
+  .imh-container--wrapper {
     padding-bottom: 0;
     margin-left: -30px;
     margin-right: -30px;
   }
 
-  .imh__progress-bar-wrapper {
+  .imh-progress-bar-wrapper {
     padding: 0 15px;
     height: 31px;
     line-height: 26px;

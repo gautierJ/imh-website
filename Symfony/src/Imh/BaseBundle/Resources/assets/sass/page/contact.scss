@@ -52,7 +52,7 @@ $fa-font-path: "/bundles/imhbase/bower_components/fontawesome/fonts";
   }
 }
 
-.imh__container--wrapper {
+.imh-container--wrapper {
   background-color: white;
   padding: 30px 60px 0;
   width: 100%;
@@ -152,7 +152,7 @@ $fa-font-path: "/bundles/imhbase/bower_components/fontawesome/fonts";
 // Media queries
 // ==================================================
 @media (max-width: $screen-xs-max) {
-  .imh__container--wrapper {
+  .imh-container--wrapper {
     padding: 15px 0;
     border-top-width: 0;
   }

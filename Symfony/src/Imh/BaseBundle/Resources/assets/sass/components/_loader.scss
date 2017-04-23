@@ -141,7 +141,7 @@
   }
 }*/
 
-.imh__progress {
+.imh-progress {
   width: 400px;
   background-color: $color-grey-light;
   height: 1px;
@@ -190,7 +190,7 @@
 }
 
 @media (max-width: $screen-xs-max) {
-  .imh__progress {
+  .imh-progress {
     width: 200px;
     margin-left: -100px;
   }
