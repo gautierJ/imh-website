@@ -68,7 +68,7 @@
                                     </div>
                                     <figure class="imh-block-events__figure">
 
-                                        <img class="" src="{{ asset('bundles/imhbase/images/events/sorbonne_richelieu.jpg') }}" alt="Ionella Marinutsa">
+                                        <img class="imh-block-events__image" src="{{ asset('bundles/imhbase/images/events/sorbonne_richelieu.jpg') }}" alt="Ionella Marinutsa">
 
                                         <figcaption class="imh-block-events__figcaption">
                                             <h3 class="imh-block-events__title">Amphithéâtre Richelieu<br><span class="imh-block-events__title-emphased">Sorbonne</span></h3>
@@ -127,7 +127,7 @@
                                             <img class="" srcset="{{ asset('bundles/imhbase/images/ionella@2x.jpg') }}" alt="Ionella Marinutsa" />
                                         </picture>#}
 
-                                        <img class="" src="{{ asset('bundles/imhbase/images/events/centre_clignancourt.jpg') }}" alt="Ionella Marinutsa">
+                                        <img class="imh-block-events__image" src="{{ asset('bundles/imhbase/images/events/centre_clignancourt.jpg') }}" alt="Ionella Marinutsa">
 
                                         <figcaption class="imh-block-events__figcaption">
                                             <h3 class="imh-block-events__title">Auditorium du<br><span class="imh-block-events__title-emphased">Centre<br> Clignancourt</span></h3>
@@ -286,11 +286,13 @@
                             shutter.on(animEnd, function(e) {
                                 if (e.originalEvent.animationName != 'stack-in-height') {
                                     context.addClass('mA_3');
+                                    $.fn.fullpage.setAllowScrolling(true);
                                 }
                             });
                         }
                     }
                 });
+                $.fn.fullpage.setAllowScrolling(false);
             };
 
             /*grTitles.fontSpy({
@@ -335,7 +337,6 @@
                 if (direction == 1) wheelCount = 0;
                 if (wheelCount == 4 && direction == -1) {
                     context.addClass('mA_2');
-                    $(window).off('scroll');
                     loadFullPage();
                 }
             };

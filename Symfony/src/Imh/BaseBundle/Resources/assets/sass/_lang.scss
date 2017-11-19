@@ -80,6 +80,7 @@
 // ==================================================
 
 @media (max-width: $screen-sm-max) {
+
   .imh-lang {
     position: static;
     top: inherit;
@@ -127,5 +128,12 @@
       color: $color-grey-darker;
       border: none;
     }
+  }
+}
+
+@media (min-width: $screen-sm-min) {
+
+  .imh-lang__link {
+    font-family: 'ralewayregular', $font-fallback;
   }
 }

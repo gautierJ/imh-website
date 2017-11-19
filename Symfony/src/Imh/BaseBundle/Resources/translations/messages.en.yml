@@ -34,7 +34,7 @@ imh:
         section2:   'Events'
       events:
         title:      'upcoming events'
-        sub_title:  'Find the schedule of my concerts at a glance'
+        sub_title:  'Find the schedule of my concerts at a glance...'
 
     biography:
       page_title:   'Biography | Ionella Marinutsa'

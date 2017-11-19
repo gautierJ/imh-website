@@ -46,18 +46,17 @@
       display: block;
       padding: 0 20px;
       text-transform: uppercase;
+      line-height: 64px;
     }
 
     span {
       height: 62px;
-      line-height: 64px;
     }
 
     a {
       border: 1px solid rgba(0, 0, 0, 0);
       @include transition(all, 0.1s, ease-in, 0s);
       height: 64px;
-      line-height: 64px;
 
       &:hover {
         background-color: white;
@@ -71,7 +70,11 @@
       border: 1px solid $color-grey-darker;
       border-bottom: none;
 
-      span {
+      a {
+        border: none;
+      }
+
+      a, span {
         color: $color-grey-darker;
         border-bottom-color: white;
       }
