@@ -1,0 +1,46 @@
+@-webkit-keyframes make-rotation {
+  0% {
+    @include transform(rotate(0deg));
+  }
+  100% {
+    @include transform(rotate(360deg));
+  }
+}
+
+@keyframes make-rotation {
+  0% {
+    @include transform(rotate(0deg));
+  }
+  100% {
+    @include transform(rotate(360deg));
+  }
+}
+
+.c-spinner {
+  border-width: 2px;
+  border-style: solid;
+  @include animation(make-rotation .7s infinite linear);
+  @include transition(opacity .5s linear 0s);
+  @include opacity(1);
+}
+
+.c-spinner--white {
+  border-color: rgba(255, 255, 255, 0.1);
+  border-left-color: white;
+}
+
+.c-spinner--black {
+  border-color: rgba(0, 0, 0, 0.1);
+  border-left-color: black;
+}
+
+.c-spinner,
+.c-spinner:after {
+  @include border-radius(50%);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 38px;
+  width: 38px;
+  margin: -19px 0 0 -19px;
+}

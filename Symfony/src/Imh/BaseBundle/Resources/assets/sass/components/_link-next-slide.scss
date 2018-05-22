@@ -1,0 +1,93 @@
+$bottom-start: -60px;
+$bottom-end: 0;
+
+@include keyframes(stack-in-button) {
+  to {
+    @include opacity(1);
+    bottom: $bottom-end;
+  }
+}
+
+@include keyframes(stack-out-button) {
+  to {
+    @include opacity(0);
+    bottom: $bottom-start;
+  }
+}
+
+.c-link-next-slide {
+
+  .mA_3 & {
+    @include animation('stack-in-button 1s cubic-bezier(0, .92, .08, 1) 0s forwards');
+  }
+
+  .mA_4 & {
+    @include opacity(1);
+    bottom: $bottom-end;
+    @include animation('stack-out-button 0.5s cubic-bezier(.61,0,1,.39) 0s forwards');
+  }
+
+  display: block;
+  @include size(60px, 60px);
+  position: fixed;
+  bottom: $bottom-start;
+  @include opacity(0);
+  left: 50%;
+  margin-left: -30px;
+  text-align: center;
+  z-index: 1;
+
+  &:before, &:after {
+    content: '';
+    @include size(100%, 100%);
+    background-color: black;
+    background-color: rgba(0, 0, 0, 0.97);
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  &:after {
+    @include opacity(0);
+    @include transition(none);
+    @include size(100%, 100%);
+    @include transform(scale(1.3));
+    background-color: black;
+    background-color: rgba(0, 0, 0, 0.97);
+    z-index: 1;
+  }
+}
+
+.c-link-next-slide__icon {
+  @include size(100%, 100%);
+  font-size: 30px;
+  color: $color-grey-ultralight;
+  position: absolute;
+  z-index: 3;
+  line-height: 60px;
+  top: 0;
+  left: 0;
+  display: block;
+}
+
+@media (min-width: $screen-sm-min) {
+
+  .c-link-next-slide {
+    &:after {
+      @include transition(all .2s ease-in-out 0s);
+    }
+
+    &:hover {
+      &:after {
+        @include opacity(1);
+        @include transform(scale(1));
+        background-color: white;
+      }
+
+      .c-link-next-slide__icon {
+        color: $color-grey-darker;
+        @include opacity(1);
+      }
+    }
+  }
+}
