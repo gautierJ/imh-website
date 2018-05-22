@@ -1,0 +1,176 @@
+$fa-font-path: "/bundles/imhbase/bower_components/fontawesome/fonts";
+@import "../app";
+
+.flashbag-message {
+  display: none;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 100000;
+}
+
+.flashbag-message-content {
+  @include transform(translate(-50%, -50%));
+  @include border-radius(4px);
+  @include box-shadow(0, 0, 15px, 3px, $color-grey-dark);
+  background-color: white;
+  position: absolute;
+  min-height: 200px;
+  width: 80%;
+  max-width: 400px;
+  top: 50%;
+  left: 50%;
+
+  .top {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom: 1px solid $color-grey-medium;
+    background-color: $color-grey-lighter;
+    padding: 18px 20px;
+
+    > p {
+      margin: 0;
+      font-size: $fourteenpx;
+      text-transform: uppercase;
+    }
+
+    .close {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+  }
+
+  .msg {
+    margin: 23px 0;
+    padding: 0 20px;
+    font-size: $fourteenpx;
+  }
+}
+
+.imh-container--wrapper {
+  border-top-width: 0;
+  padding-bottom: 60px;
+}
+
+.imh__contact {
+  @include clearfix();
+}
+
+.imh__contact-form {
+  padding: 0;
+
+  label {
+    color: $color-grey-dark;
+    font-size: $fourteenpx;
+    display: inline-block;
+    width: 40%;
+    vertical-align: middle;
+    margin-bottom: 0;
+    font-weight: normal;
+  }
+
+  input, textarea {
+    font-size: $fourteenpx;
+    background-color: $color-grey-extremlight;
+    color: $color-grey-dark;
+    border: 1px solid $color-grey-medium;
+    padding: 8px 12px;
+    transition: border .2s ease-in, box-shadow .2s ease-in;
+  }
+
+  input {
+    vertical-align: middle;
+    width: 60%;
+  }
+
+  textarea {
+    resize: vertical;
+  }
+
+  input:focus, textarea:focus {
+    border: 1px solid $color-grey-darker;
+    outline: none;
+  }
+}
+
+.imh__contact-mandatory {
+  color: $color-grey-dark;
+  font-size: $basepx;
+  margin-top: 20px;
+}
+
+.imh__contact-info {
+
+  > div {
+    margin-bottom: 20px;
+  }
+}
+
+.imh__contact-message {
+
+  label {
+    margin-top: 8px;
+  }
+
+  textarea {
+    vertical-align: top;
+    width: 60%;
+    height: 110px;
+  }
+}
+
+.imh__contact-message-send {
+  font-size: $basepx;
+  margin-top: 10px;
+  color: $color-grey-dark;
+
+  button {
+    text-transform: uppercase;
+    background-color: white;
+    border: 1px solid $color-grey-medium;
+    padding: 9px 24px 8px;
+    @include transition(all, .2s, ease-in, 0s);
+
+    &:hover {
+      background-color: $color-grey-darker;
+      border: 1px solid $color-grey-darker;
+      color: white;
+    }
+  }
+}
+
+// Media queries
+// ==================================================
+
+@media (min-width: $screen-sm-min) {
+
+  .imh-container--wrapper {
+    padding: 30px 60px 0;
+  }
+
+  .imh__contact-form {
+    background: url("/bundles/imhbase/images/stripes.png");
+    padding: 80px 20px 40px;
+  }
+
+  .imh__contact-message {
+
+    textarea {
+      height: 180px;
+    }
+  }
+
+  .imh__contact-message-send {
+    margin-top: 30px;
+    font-size: $thirteenpx;
+  }
+
+  .imh__contact-mandatory {
+    font-size: $fourteenpx;
+  }
+}

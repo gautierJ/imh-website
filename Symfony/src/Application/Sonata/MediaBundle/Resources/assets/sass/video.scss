@@ -1,0 +1,772 @@
+$fa-font-path: "/bundles/imhbase/bower_components/fontawesome/fonts";
+@import "app"; //this is imported from Imh bundle -> see assetic compass configuration
+
+.imh-container--wrapper {
+  padding-bottom: 60px;
+}
+
+.media-content {
+  margin: 0 auto;
+  max-width: 640px;
+}
+
+.media-image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.media {
+  position: relative;
+  padding-bottom: 56.25%; // (360/640)*100
+  padding-top: 0;
+  height: 0;
+
+  .layer {
+    //background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+
+    a {
+      /*@include transform(translate(0, -50%));
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 100%;
+      height: 100%;*/
+      cursor: default;
+    }
+  }
+}
+
+.imh__media-button-play {
+  @include transition(all .2s linear 0s);
+  @include border-radius(50%);
+  background-color: rgb(255, 255, 255);
+  background-color: rgba(255, 255, 255, .85);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 78px;
+  height: 78px;
+  margin: -39px 0 0 -39px;
+  z-index: 1;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 12px 0 12px 20px;
+    border-color: transparent transparent transparent $color-grey-dark;
+    margin-left: -6px;
+    margin-top: -11px;
+    @include opacity(.95);
+  }
+
+  &:after {
+    @include transition(all .2s linear 0s);
+    @include border-radius(50%);
+    @include box-shadow(0, 0, 6px, 1px, $color-grey-dark);
+    @include opacity(.5);
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+  }
+
+  &:hover {
+    background-color: rgba(255, 255, 255, 1);
+    cursor: pointer;
+
+    &::after {
+      @include opacity(.8);
+    }
+  }
+}
+
+.imh-video-progress-bar-wrapper {
+  @include clearfix();
+  @include opacity(0);
+  @include transition(opacity .5s linear 0s);
+  height: 24px;
+  line-height: 20px;
+
+  &.is-ready {
+    @include opacity(1);
+  }
+}
+
+.imh-video-progress-bar {
+  display: inline-block;
+  vertical-align: middle;
+  height: 2px;
+  background-color: $color-grey-darker;
+}
+
+.imh-video-progress-bar-advancement,
+.imh-video-progress-bar-buffer {
+  height: 100%;
+  width: 0;
+}
+
+.imh-video-progress-bar-advancement {
+  background-color: $color-brown-dark;
+}
+
+.imh-video-progress-bar-buffer {
+  background-color: $color-brown-light;
+}
+
+.imh-video-progress-bar-time {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: $elevenpx;
+  text-align: right;
+}
+
+#ytplayer {
+  position: absolute;
+  display: block;
+  visibility: hidden;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.actions {
+  float: left;
+  margin-left: 10px;
+
+  li {
+    margin-top: 10px;
+
+    &:first-child {
+      margin-top: 0;
+    }
+
+    &.display {
+      a {
+        img { background-position: 0 -192px; }
+        &:hover img { background-position: -150px -192px; }
+      }
+    }
+
+    &.like {
+      a {
+        img { background-position: -50px -192px; }
+        &:hover img { background-position: -200px -192px; }
+      }
+    }
+
+    &.download {
+      a {
+        img { background-position: -100px -192px; }
+        &:hover img { background-position: -250px -192px; }
+      }
+    }
+  }
+
+  a {
+    color: $color-grey-dark;
+    border: 1px solid $color-grey-dark;
+    /*background-color: rgb(250, 250, 250);
+    background-color: rgba(250, 250, 250, 0.3);*/
+    display: block;
+    width: 111px;
+    height: 111px;
+    text-align: center;
+    line-height: 180px;
+    position: relative;
+
+    &:hover {
+      background-color: $color-grey-darker;
+      color: white;
+      border-color: $color-grey-darker;
+    }
+
+    img {
+      background: url("/bundles/imhbase/images/sprite.png") no-repeat;
+      display: inline-block;
+      height: 50px;
+      width: 50px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-top: -30px;
+      margin-left: -25px;
+    }
+  }
+}
+
+.imh__player-bar {
+  @include make-row();
+  border-top: 1px solid $color-grey-light;
+  border-bottom: 1px solid $color-grey-light;
+  height: 64px;
+  color: $color-grey-medium;
+}
+
+.imh__player-bar-views,
+.imh__player-bar-info,
+.imh__player-bar-controls,
+.imh__player-bar-share {
+  height: 100%;
+  border-right: 1px solid $color-grey-light;
+}
+
+.imh__player-bar-views {
+  background-color: rgb(255, 255, 255);
+  background-color: rgba(255, 255, 255, 0.9);
+
+  &::after {
+    @extend %pseudo-vertical-align;
+  }
+}
+
+.imh__player-bar-views-nb {
+  display: inline-block;
+  vertical-align: middle;
+  color: $color-grey-dark;
+  font-size: $twentytwopx;
+  line-height: 63px;
+  position: relative;
+  top: -1px;
+}
+
+.imh__player-bar-text {
+  width: 43%;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: $elevenpx;
+  line-height: 1.1em;
+}
+
+.imh__player-bar-text--indent {
+  margin-left: 8px;
+}
+
+.imh__player-bar-info {
+  background-color: rgb(255, 255, 255);
+  background-color: rgba(255, 255, 255, 0.9); //rgb(251, 248, 252)
+
+  &::after {
+    @extend %pseudo-vertical-align;
+  }
+}
+
+.imh__player-bar-info-description {
+  font-size: $basepx;
+  margin: 0;
+}
+
+.imh__player-bar-info-name {
+  @include calc(width, '100% - 1px');
+  display: inline-block;
+  vertical-align: middle;
+  font-size: $fourteenpx;
+  color: $color-grey-dark;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: -1px 0 0 0;
+}
+
+.imh__player-bar-share {
+  background-color: rgb(255, 255, 255);
+  background-color: rgba(255, 255, 255, 0.9);
+  border-right: none;
+
+  .icon {
+    display: inline;
+
+    &:hover {
+      .fa-circle {
+        color: white;
+      }
+    }
+  }
+  .fa-circle {
+    @include transition(all .2s ease-in 0s);
+    color: $color-grey-ultralight;
+    position: relative;
+    &::after {
+      content: '';
+      position: absolute;
+      top: 3px;
+      left: 3px;
+      height: 84%;
+      width: 84%;
+      border: 1px solid $color-grey-light;
+      @include border-radius(50%);
+    }
+  }
+
+  &::after {
+    @extend %pseudo-vertical-align;
+  }
+}
+
+.imh__player-bar-controls {
+  background-color: $color-grey-ultralight;
+
+  ul {
+    @include make-row();
+  }
+
+  li {
+    float: left;
+    border-left: 1px solid $color-grey-light;
+    width: 33.33%;
+    display: table;
+    text-align: center;
+
+    &:first-child {
+      border: none;
+    }
+
+    a {
+      position: relative;
+      font-size: $elevenpx;
+      height: 62px;
+      color: $color-grey-medium;
+      display: table-cell;
+      vertical-align: middle;
+      @include transition(all .2s ease-in 0s);
+
+      &:hover {
+        background-color: white;
+        color: $color-grey-darker;
+      }
+    }
+
+    .fa {
+      display: block;
+      margin-bottom: 3px;
+      color: black;
+    }
+
+    &.play-pause {
+      .fa { font-size: 22px; }
+    }
+
+    &.volume {
+      position: relative;
+
+      .fa {
+        font-size: 28px;
+        line-height: 80%;
+      }
+
+      a {
+        &.hover {
+          background-color: white;
+          color: $color-grey-darker;
+        }
+      }
+    }
+
+    &.fullscreen {
+      .fa { font-size: 22px; }
+    }
+  }
+  li:first-child {
+    margin-left: 0;
+  }
+
+  .wrap-level {
+    position: absolute;
+    top: -116px;
+    left: 50%;
+    margin-left: -20px;
+    width: 40px;
+    height: 116px;
+    text-align: center;
+    z-index: 2;
+  }
+
+  .level {
+    position: relative;
+    display: none;
+    margin-top: 10px;
+    text-align: center;
+    @include calc(height, '100% - 14px');
+  }
+
+  .level__bkg {
+    position: relative;
+    width: 20px;
+    height: 100%;
+    background: black;
+    background: rgba(0, 0, 0, .8);
+    display: inline-block;
+    @include border-radius(13px);
+
+    &:after {
+      content: '';
+      position: absolute;
+      left: 9px;
+      top: 16px;
+      width: 2px;
+      height: 70%;
+      background: rgb(255, 255, 255);
+      background: rgba(255, 255, 255, .3);
+    }
+  }
+
+  .slider {
+    position: absolute;
+    top: 15px;
+    left: 16px;
+    height: 70px;
+  }
+
+  .noUi-target {
+    border: none;
+    border-radius: inherit;
+    box-shadow: none;
+  }
+
+  .noUi-vertical {
+    width: 8px;
+
+    .noUi-handle {
+      box-shadow: none;
+      border: none;
+      height: 8px;
+      width: 8px;
+      top: -3px;
+      left: 0;
+      cursor: pointer;
+      @include border-radius(4px);
+
+      &:before {
+        background: none;
+        height: 60px;
+        width: 60px;
+        top: -38px;
+        left: -25px;
+      }
+
+      &:after {
+        content: normal;
+      }
+    }
+  }
+
+  .noUi-background {
+    background: none;
+  }
+}
+
+.imh__media-gallery-wrapper {
+  position: relative;
+}
+
+.imh__media-gallery {
+  @include make-row();
+  @include opacity(0);
+  @include transition(opacity .5s linear 0s);
+  margin-top: 60px;
+  margin-bottom: 50px;
+  height: 135px;
+
+  &.is-loaded {
+    @include opacity(1);
+  }
+}
+
+.imh__media-gallery-frame {
+  @include calc(width, '100% - 100px');
+  height: 135px;
+  padding: 0 14px;
+}
+
+.imh__media-gallery-list {
+  height: 100%;
+  text-align: center;
+  padding-top: 8px;
+  white-space: nowrap;
+
+  .legend {
+    position: absolute;
+    width: 100%;
+
+    .title {
+      display: block;
+      font-size: $elevenpx;
+      color: $color-grey-darker;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+      margin: 7px 0 0 0;
+      line-height: 1.1em;
+    }
+
+    .description {
+      font-size: $tenpx;
+      color: $color-grey-medium;
+    }
+  }
+}
+
+.imh__media-gallery-list-item {
+  display: inline-block;
+  vertical-align: top;
+  text-align: left;
+  margin: 0 11px;
+  width: 150px;
+
+  &.active {
+    .imh__media-gallery-list-link {
+      &::after {
+        background-color: white;
+        border-color: $color-grey-medium;
+      }
+    }
+
+    img {
+      @include saturation(0);
+    }
+  }
+
+  img {
+    @include saturation(100%);
+    @include transition(all .2s ease-in 0s);
+    display: block;
+    width: 150px;
+    height: auto;
+    //-ms-interpolation-mode: nearest-neighbor;
+  }
+
+  .duration {
+    position: absolute;
+    bottom: 6px;
+    right: 6px;
+    color: white;
+    background: $color-grey-darker;
+    font-size: $tenpx;
+    padding: 2px 5px;
+    border: 1px solid $color-grey-lighter;
+  }
+}
+
+.imh__media-gallery-list-link {
+  position: relative;
+  display: block;
+
+  &:hover {
+    &::after {
+      background-color: white;
+      border-color: $color-grey-medium;
+    }
+
+    img {
+      @include saturation(0);
+    }
+  }
+
+  &::after {
+    @include transition(all .2s ease-in 0s);
+    content: '';
+    background: none;
+    border: 1px solid transparent;
+    height: 100%;
+    width: 100%;
+    padding: 7px 7px 42px;
+    position: absolute;
+    top: -8px;
+    left: -8px;
+    z-index: -1;
+    box-sizing: content-box;
+  }
+}
+
+.imh__media-gallery-button {
+  height: 100%;
+  @include calc(width, '(100% - 166px) / 2');
+  font-size: 50px;
+  padding: 0;
+
+  .fa {
+    width: 100%;
+  }
+
+  &[disabled] {
+    .fa {
+      color: $color-grey-light;
+    }
+  }
+}
+
+.imh__media-gallery-button--prev {
+  float: left;
+
+  .fa {
+    width: 30%;
+    text-align: right;
+  }
+}
+
+.imh__media-gallery-button--next {
+  float: right;
+
+  .fa {
+    width: 30%;
+    text-align: left;
+  }
+}
+
+.imh__scrollbar {
+  background-color: $color-grey-ultralight;
+  position: relative;
+  height: 2px;
+  z-index: 1;
+  top:-2px;
+  width: 30%;
+  margin: 30px auto 0;
+
+  .handle {
+    position: absolute;
+    height: 2px;
+    width: 150px;
+    top: 0;
+    cursor: pointer;
+    background-color: $color-grey-darker;
+
+    &:hover {
+      background-color: $color-brown-dark;
+    }
+  }
+
+  .mousearea {
+    position: absolute;
+    top: -9px;
+    left: 0;
+    width: 100%;
+    height: 20px;
+  }
+}
+
+.imh__ajax-error {
+  background-color: rgba(255,0,0,.02);
+  border-top: 1px solid rgba(145,0,11,.3);
+  margin: 0;
+  padding: 20px 15px 23px;
+  font-size: $fourteenpx;
+}
+
+// Media queries
+// ==================================================
+
+@media (min-width: $screen-sm-min) {
+  .imh__media-gallery-button {
+    width: 50px;
+
+    .fa {
+      width: 100%;
+      text-align: inherit;
+    }
+  }
+}
+
+@media (max-width: $screen-xs-max) {
+  .imh-container--wrapper {
+    padding-bottom: 0;
+    margin-left: -30px;
+    margin-right: -30px;
+  }
+
+  .imh-video-progress-bar-wrapper {
+    padding: 0 15px;
+    height: 31px;
+    line-height: 26px;
+  }
+
+  .imh__player-bar {
+    height: 56px;
+  }
+
+  .imh__player-bar-views {
+    text-align: center;
+    &::after { display: none; }
+  }
+
+  .imh__player-bar-views-nb {
+    line-height: 21px;
+    padding-top: 10px;
+    font-size: $fifteenpx;
+  }
+
+  .imh__player-bar-text {
+    width: auto;
+    display: block;
+  }
+
+  .imh__player-bar-text--indent {
+    margin-left: 0;
+  }
+
+  .imh__player-bar-controls {
+    li {
+      margin-left: 0;
+      width: 50%;
+
+      a { height: 54px; }
+
+      &.play-pause .fa { font-size: 18px; }
+      &.volume .fa {
+        font-size: 24px;
+        margin-bottom: 2px;
+      }
+    }
+  }
+
+  .imh__player-bar-info {
+    border-right: none;
+    margin-top: 1px;
+    padding: 10px 0;
+  }
+
+  .imh__player-bar-info-name {
+    font-size: $thirteenpx;
+  }
+
+  .imh__player-bar-share {
+    .fa-stack {
+      width: 49%;
+    }
+  }
+
+  .imh__media-gallery {
+    margin-bottom: 35px;
+  }
+
+  .imh__media-gallery-frame {
+    width: 166px;
+  }
+
+  .imh__media-gallery-list li {
+    margin: 0 8px;
+  }
+
+  .imh__scrollbar {
+    display: none;
+  }
+
+  .imh__ajax-error {
+    background-color: rgba(255,0,0,.1);
+    padding: 13px 15px 16px;
+    font-size: $thirteenpx;
+  }
+}

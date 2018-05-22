@@ -1,0 +1,88 @@
+@include keyframes(animate-up-down) {
+  from { @include transform(translateY(0)); }
+  to   { @include transform(translateY(30%)); }
+}
+
+.c-mouse {
+  .mA_1 & {
+    @include opacity(1);
+    @include transition-delay(.25s);
+  }
+
+  .mA_2 & {
+    @include opacity(0);
+    @include transition-delay(0s);
+  }
+
+  @include opacity(0);
+  @include transition(opacity .5s linear);
+  position: absolute;
+  left: calc(50% - 1px);
+  bottom: 220px;
+  margin-left: -7px;
+  width: 15px;
+  height: 51px;
+  padding: 10px 0;
+  background: $color-grey-ultralight;
+}
+
+.c-mouse__info {
+  font-size: $elevenpx;
+  color: $color-grey-dark;
+  font-family: "ethos_regular_italic", $font-fallback;
+  position: absolute;
+  top: -17px;
+  left: -6px;
+  background-color: $color-grey-ultralight;
+  padding: 5px 0;
+  margin: 0;
+}
+
+.c-mouse__elt {
+  background: $color-grey-ultralight;
+}
+
+.c-mouse__elt--end {
+  @include size(15px, 8px);
+  @include border-radius(15px 15px 0 0);
+  border-top: 1px solid $color-grey-medium;
+}
+
+.c-mouse__elt--end-b {
+  @include border-radius(0 0 15px 15px);
+  border-top: none;
+  border-bottom: 1px solid $color-grey-medium;
+}
+
+.c-mouse__elt--center {
+  @include size(15px, 15px);
+  position: relative;
+
+  &:after {
+    content: '';
+    @include size(3px, 4px);
+    @include border-radius(50%);
+    background-color: $color-grey-medium;
+    position: absolute;
+    top: 0;
+    left: 13px;
+    margin-left: -7px;
+  }
+}
+
+.c-mouse__icon {
+  @include animation('animate-up-down .5s linear 0s infinite alternate');
+  position: absolute;
+  bottom: -11px;
+  left: 4px;
+  color: $color-grey-dark;
+  background: $color-grey-ultralight;
+  padding-bottom: 5px;
+}
+
+@media (max-width: $screen-md-max) {
+
+  .c-mouse {
+    display: none;
+  }
+}

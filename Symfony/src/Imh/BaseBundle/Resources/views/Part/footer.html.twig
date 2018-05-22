@@ -1,40 +1,61 @@
-<footer id="footer">
-    <section class="footer-column site">
-        <h3>{{ 'imh.base.footer.site'|trans }}</h3>
-        {{ knp_menu_render('main', {'currentAsLink':false, 'allow_safe_labels': true}) }}
-    </section>
-    <section class="footer-column language">
-        <h3>{{ 'imh.base.footer.language'|trans }}</h3>
-        {% include 'ImhBaseBundle:Menu:lang.html.twig' %}
-    </section>
-    <section class="footer-column school">
-        <h3>{{ 'imh.base.footer.schools.title'|trans }}</h3>
-        <ul>
-            <li>
-                <a href="http://www.ecolenormalecortot.com/" title="{{ 'imh.base.footer.schools.enmp.title'|trans }}" target="_blank">{{ 'imh.base.footer.schools.enmp.text'|trans }}</a>
-            </li>
-            <li>
-                <a href="http://www.conservatoirerachmaninoff.com" title="{{ 'imh.base.footer.schools.crsr.title'|trans }}" target="_blank">{{ 'imh.base.footer.schools.crsr.text'|trans }}</a>
-            </li>
-        </ul>
-    </section>
-    <section class="footer-column follow">
-        <h3>{{ 'imh.base.footer.follow.title'|trans }}</h3>
-        <a href="" class="fb" title="{{ 'imh.base.footer.follow.fb'|trans }}" target="_blank">
-            <img src="{{ asset('bundles/imhbase/images/empty.gif') }}" alt="" />
-        </a>
-        <a href="" class="tw" title="{{ 'imh.base.footer.follow.tw'|trans }}" target="_blank">
-            <img src="{{ asset('bundles/imhbase/images/empty.gif') }}" alt="" />
-        </a>
-        <a href="https://plus.google.com/103289114690032171187/posts" class="gp" title="{{ 'imh.base.footer.follow.g+'|trans }}" target="_blank">
-            <img src="{{ asset('bundles/imhbase/images/empty.gif') }}" alt="" />
-        </a>
-    </section>
-    <section class="footer-column powered">
-        <h3>{{ 'imh.base.footer.engine.title'|trans }}</h3>
-        <a href="http://symfony.com/" title="{{ 'imh.base.footer.engine.framework'|trans }}" target="_blank">
-            <img src="{{ asset('bundles/imhbase/images/empty.gif') }}" alt="" />
-        </a>
-    </section>
-    <p><span>&copy;</span> {{"now"|date('Y')}}. {{ 'imh.base.footer.copyright'|trans }}</p>
+<footer class="imh-footer">
+    <div class="container imh-container">
+        <div class="col-xs-16 col-sm-7 col-md-5 hidden-xs imh-footer__column">
+            <div class="imh-footer__column--site">
+                <h3 class="imh-footer__head">{{ 'imh.base.footer.site'|trans }}</h3>
+                {{ knp_menu_render('main', {'currentAsLink':false, 'allow_safe_labels': true}) }}
+            </div>
+        </div>
+        <div class="col-xs-8 col-sm-4 col-md-3 hidden-xs imh-footer__column">
+            <div class="imh-footer__column--language">
+                <h3 class="imh-footer__head">{{ 'imh.base.footer.language'|trans }}</h3>
+                {% include 'ImhBaseBundle:Menu:lang.html.twig' %}
+            </div>
+        </div>
+        <div class="col-xs-24 col-sm-9 col-md-8 hidden-xs imh-footer__column imh-footer__column--extraspace">
+            <div class="imh-footer__column--school">
+                <h3 class="imh-footer__head">{{ 'imh.base.footer.schools.title'|trans }}</h3>
+                <ul class="imh-footer__list">
+                    <li>
+                        <a class="imh-footer__link" href="http://www.ecolenormalecortot.com/" title="{{ 'imh.base.footer.schools.enmp.title'|trans }}" target="_blank">{{ 'imh.base.footer.schools.enmp.text'|trans }}</a>
+                    </li>
+                    <li>
+                        <a class="imh-footer__link" href="http://www.conservatoirerachmaninoff.com" title="{{ 'imh.base.footer.schools.crsr.title'|trans }}" target="_blank">{{ 'imh.base.footer.schools.crsr.text'|trans }}</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-4 col-md-4 imh-footer__column">
+            <div class="imh-footer__column--follow">
+                <h3 class="imh-footer__head">{{ 'imh.base.footer.follow.title'|trans }}</h3>
+                <div class="imh-footer-wrap">
+                    {#<a href="" class="imh-footer__link imh-footer__link--social" title="{{ 'imh.base.footer.follow.fb'|trans }}" target="_blank">
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                    </a>
+                    <a href="" class="imh-footer__link imh-footer__link--social" title="{{ 'imh.base.footer.follow.tw'|trans }}" target="_blank">
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://plus.google.com/103289114690032171187/posts" class="imh-footer__link imh-footer__link--social" title="{{ 'imh.base.footer.follow.g+'|trans }}" target="_blank">
+                        <i class="fa fa-google-plus" aria-hidden="true"></i>
+                    </a>#}
+                    <a href="https://www.instagram.com/ionella.marinutsa/?hl=fr" class="imh-footer__link imh-footer__link--social" title="{{ 'imh.base.footer.follow.ig'|trans }}" target="_blank">
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-md-4 hidden-sm imh-footer__column imh-footer__column--last">
+            <div class="imh-footer__column--powered">
+                <h3 class="imh-footer__head">{{ 'imh.base.footer.engine.title'|trans }}</h3>
+                <div class="imh-footer-wrap">
+                    <a class="imh-footer__link" href="http://symfony.com/" title="{{ 'imh.base.footer.engine.framework'|trans }}" target="_blank">
+                        <svg class="icon icon--symfony"><use xlink:href="#svg-symfony"></use></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-24">
+            <small class="imh-footer__rights text-center"><span>&copy;</span> {{"now"|date('Y')}}. {{ 'imh.base.footer.copyright'|trans|raw }}</small>
+        </div>
+    </div>
 </footer>

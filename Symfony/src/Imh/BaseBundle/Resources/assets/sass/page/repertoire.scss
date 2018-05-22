@@ -1,0 +1,99 @@
+$fa-font-path: "/bundles/imhbase/bower_components/fontawesome/fonts";
+@import "../app";
+
+.imh-repertoire {
+  @include make-row();
+}
+
+.imh-repertoire__wrapper {
+  @include clearfix();
+  margin-top: 0;
+  text-align: center;
+
+  > div {
+    padding: 30px 15px 0 15px;
+    min-height: inherit;
+  }
+
+  > div:nth-child(odd) {
+    background-color: $color-grey-ultralight;
+  }
+}
+
+.imh-repertoire__image {
+  @include img-responsive();
+  @include box-shadow(0, 0, 9px, 1px, $color-grey-light);
+  border-radius: 50%;
+  border: 6px solid white;
+  display: inline-block;
+  width: 150px;
+}
+
+.imh-repertoire__space {
+    margin: 2px 0;
+}
+
+.imh-repertoire__work {
+  font-family: 'ethos_regular', $font-fallback;
+  font-size: $sixteenpx;
+  margin: 20px 0;
+  text-transform: uppercase;
+  line-height: 23px;
+}
+
+.imh-repertoire__description {
+  padding: 20px 0 30px;
+}
+
+.imh-repertoire__description--last {
+  border-bottom: 0;
+  margin-bottom: 0;
+}
+
+.imh-repertoire__arrangement {
+  font-style: italic;
+}
+
+.imh-repertoire__duration {
+  font-style: italic;
+  font-size: 13px;
+}
+
+// Media queries
+// ==================================================
+
+@media (min-width: $screen-sm-min) {
+
+  .imh-container--wrapper {
+    padding: 26px 60px 62px;
+  }
+
+  .imh-repertoire__wrapper {
+    margin-top: 50px;
+    font-size: $fourteenpx;
+
+    > div {
+      padding-top: 0;
+      min-height: 240px;
+    }
+
+    > div:nth-child(odd) {
+      background-color: inherit;
+    }
+  }
+
+  .imh-repertoire__image {
+    width: auto;
+  }
+
+  .imh-repertoire__work {
+    font-size: $elevenpx;
+  }
+
+  .imh-repertoire__description {
+    padding: 0;
+    font-size: inherit;
+  }
+}
+
+

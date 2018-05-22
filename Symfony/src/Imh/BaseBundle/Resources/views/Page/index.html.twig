@@ -1,170 +1,317 @@
 {% extends 'ImhBaseBundle::layout.html.twig' %}
 
 {% block stylesheets %}
-    {{ parent() }}
-
     {% stylesheets output='assets/compiled/css/home.css' filter='compass, cssrewrite'
-    '@ImhBaseBundle/Resources/assets/sass/home.scss'
+    '@ImhBaseBundle/Resources/assets/sass/page/home.scss'
     %}
     <link rel="stylesheet" href="{{ asset_url }}" type="text/css"/>
     {% endstylesheets %}
 {% endblock %}
 
-{% block body %}
-    <section id="home-content">
-        {% block main %}
-            {% spaceless %}
-                <figure class="bkg-image-ctn">
-                    <img class="bkg-image" src="{{ asset('bundles/imhbase/images/ionella_bw.jpg') }}" alt="Ionella Marinutsa" />
-                    <img class="bkg-image" src="{{ asset('bundles/imhbase/images/ionella.jpg') }}" alt="Ionella Marinutsa" />
+{% block loader %}
+    {% include 'ImhBaseBundle:Part:loader.html.twig' %}
+{% endblock %}
+
+{% block main %}
+    {% spaceless %}
+        {% if not isTouchDevice %}
+            {% embed "ImhBaseBundle:Part:sidebar.html.twig" %}
+                {% block menu_gallery '' %}
+                {% block menu_social '' %}
+            {% endembed %}
+        {% endif %}
+
+        {% include 'ImhBaseBundle:Components:link-next-slide.html.twig' %}
+
+        <div class="imh-fullpage" data-fullpage>
+
+            <div class="imh-fullpage__section section" data-tooltip="{{ ('imh.base.home.menu.section2')|trans }}">
+                {% include 'ImhBaseBundle:Components:video.html.twig' %}
+            </div>
+            <div class="imh-fullpage__section section" data-tooltip="{{ ('imh.base.home.menu.section1')|trans }}">
+                <figure class="imh-bkg-content" data-bkg-content>
+                    <picture class="imh-bkg-content__picture" data-bkg-image>
+                        <source srcset="{{ asset('bundles/imhbase/images/ionella.jpg') }}" media="(min-width: 768px)" />
+                        <img class="imh-bkg-content__image" srcset="{{ asset('bundles/imhbase/images/ionella@2x.jpg') }}" alt="Ionella Marinutsa" />
+                    </picture>
+                    <picture class="imh-bkg-content__picture" data-bkg-image>
+                        <source srcset="{{ asset('bundles/imhbase/images/ionella_bw.jpg') }}" media="(min-width: 768px)" />
+                        <img class="imh-bkg-content__image" srcset="" alt="Ionella Marinutsa" />
+                    </picture>
+                    {#<img class="imh-bkg-content__image" data-bkg-image src="{{ asset('bundles/imhbase/images/ionella_bw.jpg') }}" alt="Ionella Marinutsa" />
+                    <img class="imh-bkg-content__image" data-bkg-image src="{{ asset('bundles/imhbase/images/ionella.jpg') }}" alt="Ionella Marinutsa" />#}
                 </figure>
-                <div class="block-myself">
-                    <div class="block-triangle"></div>
-                    <div class="block-center">
-                        <img class="logo" src="{{ asset('bundles/imhbase/images/logo.png') }}" alt="Harp" />
-                        <div>
-                            <h1>Ionella&nbsp;</h1>
-                            <h2>Marinutsa</h2>
-                            <div class="wrap-loader">
-                                <div class="loader">
-                                    <img class="empty" src="{{ asset('bundles/imhbase/images/empty.gif') }}" />
-                                </div>
-                            </div>
-                            <p class="progressCounter">0 %</p>
-                            <h3>Harpist</h3>
-                        </div>
+
+                {#<a href="#" class="imh-content-home-link" data-ajax data-path='imh_base_biography,{{ app.request.locale }}' data-enter-website>
+                    <i class="fa fa-angle-down fa-4x" aria-hidden="true"></i>
+                </a>#}
+            </div>
+            <div class="imh-fullpage__section section" data-tooltip="{{ ('imh.base.home.menu.section3')|trans }}">
+                <div class="imh-events">
+                    <div class="col-sm-12 col-sm-offset-6 text-center">
+                        {% embed 'ImhBaseBundle:Components:title-secondary.html.twig' with {
+                            'titleSecondaryInside': {'modifierClasses': 'c-title-secondary__inside--ultralight'}
+                        }%}
+                            {% block title %}
+                                {{- ('imh.base.home.events.title')|trans -}}
+                            {% endblock %}
+                        {% endembed %}
+                        {% embed 'ImhBaseBundle:Components:sub-title.html.twig' %}
+                            {% block sub_title %}
+                                {{- ('imh.base.home.events.sub_title')|trans|raw -}}
+                            {% endblock %}
+                        {% endembed %}
                     </div>
-                    <div class="block-language">
-                        {% for i in range(0,2) -%}
-                        <a href="{{ path('imh_base_biography', {'_locale': ('imh.base.menu_lang.'~i~'.locale')|trans}) }}">{{ ('imh.base.menu_lang.'~i~'.text')|trans }}</a>
-                        {%- endfor %}
-                    </div>
+
+                    {% include 'ImhBaseBundle:Part:partialEvents.html.twig' %}
                 </div>
-            {% endspaceless %}
-        {% endblock %}
-    </section>
+            </div>
+        </div>
+    {% endspaceless %}
+{% endblock %}
 
-    {% block javascripts %}
-        {{ parent() }}
+{% block footer '' %}
 
-        {% javascripts output='assets/compiled/js/shape.js'
-            '@ImhBaseBundle/Resources/assets/js/jquery.imh.shape.js'
-        %}
-        <script type="text/javascript" src="{{ asset_url }}"></script>
-        {% endjavascripts %}
+{% block javascripts %}
+    {{ parent() }}
 
-        <script type="text/javascript">
+    {% javascripts output='assets/compiled/js/video.js'
+    '@ImhBaseBundle/Resources/assets/js/screenfull.js'
+    %}
+    <script type="text/javascript" src="{{ asset_url }}"></script>
+    {% endjavascripts %}
 
-            $(function () {
-                'use strict';
+    <script>
+        $(function () {
+            'use strict';
 
-                var assetUrl     = '{{ asset('bundles/imhbase/images/ionella_bw.jpg') }}',
-                    context      = $('#home-content'),
-                    lang         = $('.block-language'),
-                    langLinks    = lang.children('a'),
-                    loader       = $('.loader'),
-                    counter      = $('.progressCounter'),
-                    triangle     = $('.block-triangle'),
-                    titles       = ['.block-myself h1', '.block-myself h2', '.block-myself h3'],
-                    grTitles     = $(titles.join(', ')),
-                    fontLoaded   = false,
-                    windowH      = $(window).height(),
-                    imageCtn     = $('.bkg-image-ctn'),
-                    imageCtnW    = imageCtn.width(),
-                    image        = imageCtn.find('.bkg-image'),
-                    imageH       = image.height(),
-                    imageW       = image.width(),
-                    gap          = (image.width() + image.offset().left) - imageCtn.width(),
-                    imageRatio   = imageH / imageW;
+            var assetUrl      = '{{ asset('bundles/imhbase/images/ionella_bw.jpg') }}',
+                //titles      = ['.block-myself h1', '.block-myself h2', '.block-myself h3'],
+                //grTitles    = $(titles.join(', ')),
+                context       = $('[data-body]'),
+                topNav        = context.find('[data-top-navigation]'),
+                nextSlideLink = $('[data-link-next-slide]'),
+                nextLink      = $('[data-next]'),
+                opening       = $('[data-opening]'),
+                shutter       = $('[data-shutter]'),
+                bar           = $('[data-progress-bar]'),
+                counter       = $('[data-progress-counter]'),
+                windowH       = $(window).height(),
+                imageCtn      = $('[data-bkg-content]'),
+                imageCtnW     = imageCtn.width(),
+                image         = imageCtn.find('[data-bkg-image]'),
+                imageH        = image.height(),
+                imageW        = image.width(),
+                gap           = (imageW + image.offset().left) - imageCtn.width(),
+                imageRatio    = imageH / imageW,
+                animEnd       = 'animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd',
+                fontLoaded    = false,
+                wheelCount    = 0,
+                $video        = $('[data-video]');
 
-
-                function adjustBkgImg(i, ic, icw, g, ir, wh) {
-                    i.width(icw + g);
-                    ic.height((icw + g) * ir);
-                    if(ic.height() < wh) {
-                        ic.height(wh);
-                        i.css('width', 'auto');
-                    }
+            var addEvent = function(evnt, elem, func) {
+                if (elem.addEventListener)  // W3C DOM
+                    elem.addEventListener(evnt, func, false);
+                else if (elem.attachEvent) { // IE DOM
+                    elem.attachEvent('on' + evnt, func);
                 }
-
-                function addEvent(evnt, elem, func) {
-                    if (elem.addEventListener)  // W3C DOM
-                        elem.addEventListener(evnt, func, false);
-                    else if (elem.attachEvent) { // IE DOM
-                        elem.attachEvent("on" + evnt, func);
-                    }
-                    else { // No much to do
-                        elem[evnt] = func;
-                    }
+                else { // No much to do
+                    elem[evnt] = func;
                 }
+            };
 
-                $.ajax({
-                    type: 'GET',
-                    url: assetUrl,
-                    cache: false,
-                    xhr: function () {
-                        var xhr = new window.XMLHttpRequest();
-                        //Download progress
-                        addEvent("progress", xhr, function (evt) {
-                            if (evt.lengthComputable) {
-                                var percentComplete = Math.round((evt.loaded / evt.total) * 100);
-                                counter.empty().html(percentComplete + ' %');
-                                loader.width(percentComplete + '%');
-                            }
-                        }, false);
-                        return xhr;
-                    },
-                    success: function (data) {
-                        if(fontLoaded) {
-                            context.addClass('mA_1');
+            var adjustBkgImg = function(image, imageCtn, imageCtnW, gap, imageRatio, windowH) {
+                image.width(imageCtnW + gap);
+                imageCtn.height((imageCtnW + gap) * imageRatio);
+                if(imageCtn.height() < windowH) {
+                    imageCtn.height(windowH);
+                    image.css('width', 'auto');
+                }
+            };
+
+            $.ajax({
+                type: 'GET',
+                url: assetUrl,
+                cache: false,
+                xhr: function() {
+                    var xhr = new window.XMLHttpRequest();
+                    //Download progress
+                    addEvent('progress', xhr, function (e) {
+                        if (e.lengthComputable) {
+                            var percentComplete = Math.round((e.loaded / e.total) * 100);
+                            counter.empty().html(percentComplete + ' %');
+                            bar.width(percentComplete + '%');
                         }
-                    },
-                    error: function (jqXHR, textStatus, errorThrown) {
-                        console.log('Error : ' + errorThrown);
-                    }
-                });
+                    }, false);
+                    return xhr;
+                },
+                success: function() {
+                    //if(fontLoaded) {
 
-                grTitles.fontSpy({
-                    onLoad: 'hideMe',
-                    onFail: 'fontFail georgia',
-                    callback: function() { fontLoaded = true; }
-                });
-
-                image.on('transitionend webkitTransitionEnd oTransitionEnd MSTransitionEnd', function() {
-                    context.addClass('mA_2');
-                });
-
-                $(window).on('load', function () {
-                    var firstImg = imageCtn.find('img:first');
-                    langLinks.hover(function() {
-                        image.addClass('notransition');
-                        firstImg.stop().animate({opacity:0}, 1500);
-                    }, function() {
-                        firstImg.stop().animate({opacity:1}, 3000);
-                    });
-                });
-
-                var delay = (function(){
-                    var timer = 0;
-                    return function(callback, ms){
-                        clearTimeout (timer);
-                        timer = setTimeout(callback, ms);
-                    };
-                })();
-
-                $(window).on('resize', function () {
-                    delay(function(){
-                        imageCtnW = imageCtn.width();
-                        triangle.shape(this);
                         adjustBkgImg(image, imageCtn, imageCtnW, gap, imageRatio, windowH);
-                    }, 500);
-                });
 
-                triangle.shape(window);
-                adjustBkgImg(image, imageCtn, imageCtnW, gap, imageRatio, windowH);
+                        context.addClass('mA_1');
+                        document.addEventListener('DOMMouseScroll', handleScroll, false); // for Firefox
+                        document.addEventListener('mousewheel',     handleScroll, false); // for everyone else
+
+                        nextLink.on('click', function(e) {
+                            context.addClass('mA_2');
+                            loadFullPage();
+                            e.preventDefault();
+
+                            //if (e.originalEvent.animationName == 'stack-opening') {
+                            //}
+                        });
+
+                        if (Modernizr.touchevents) {
+                            context.one(animEnd, function(e) {
+                                console.log(e.originalEvent.animationName);
+                                if (e.originalEvent.animationName == 'stack-in-height') {
+                                    $(this).delay(5000).addClass('mA_2');
+                                    loadFullPage();
+                                }
+                            });
+                        }
+                   // }
+                },
+                error: function (jqXHR, textStatus, errorThrown) {
+                    console.log('Error : ' + errorThrown);
+                }
             });
 
-        </script>
-    {% endblock %}
+
+
+            var loadFullPage = function() {
+                $('[data-fullpage]').fullpage({
+                    menu: '#menu',
+                    //anchors:['firstPage', 'secondPage'],
+                    css3: true,
+                    navigation: true,
+                    navigationPosition: 'right',
+                    scrollingSpeed: 1000,
+                    sectionsColor : ['#000', '#fff', '#f5f5f5'], // for the first and second sections
+                    verticalCentered: false,
+                    showActiveTooltip: true,
+                    onLeave: function(index, nextIndex, direction) {
+                        var leavingSection = $(this);
+
+                        //after leaving section 1
+                        if (index == 1 && direction =='down') {
+                            console.log("Going to section 2!");
+                        }
+                        if (index == 2 && direction == 'up') {
+                            console.log("Going to section 1!");
+                        }
+
+                        if (nextIndex != 1 && Modernizr.touchevents) {
+                            topNav.addClass('is-visible'); //mobile menu only
+                        } else {
+                            topNav.removeClass('is-visible'); //mobile menu only
+                        }
+
+                        checkLastSlide(nextIndex);
+                    },
+                    afterLoad: function(anchorLink, index) {
+                        var loadedSection = $(this);
+
+                        if (index == 1) {
+                            $('[data-sidebar]').css('visibility', 'hidden'); //@TODO need improvement
+                            $('.fp-show-active').css('visibility', 'hidden'); //@TODO need improvement
+
+                            shutter.on(animEnd, function(e) {
+                                if (e.originalEvent.animationName != 'stack-in-height') {
+                                    context.addClass('mA_3');
+                                    $.fn.fullpage.setAllowScrolling(true);
+
+                                }
+                            });
+                            $video.get(0).play();
+                        } else {
+                            $video.get(0).pause();
+                            $('[data-sidebar]').css('visibility', 'visible'); //@TODO need improvement
+                            $('.fp-show-active').css('visibility', 'visible'); //@TODO need improvement
+                        }
+
+                        if (index == 2) {
+                            var firstImg = imageCtn.find('img:first');
+
+                            nextSlideLink.hover(function() {
+                                firstImg.stop().animate({opacity:0}, 1500);
+                            }, function() {
+                                firstImg.stop().animate({opacity:1}, 3000);
+                            });
+                        }
+
+                        nextSlideTriggerByClick(index);
+                    }
+                });
+                $.fn.fullpage.setAllowScrolling(false);
+            };
+
+            /*grTitles.fontSpy({
+                onLoad: 'hideMe',
+                onFail: 'fontFail fontCall',
+                callback: function() { fontLoaded = true; }
+            });*/
+
+            var delay = (function() {
+                var timer = 0;
+                return function(callback, ms){
+                    clearTimeout (timer);
+                    timer = setTimeout(callback, ms);
+                };
+            })();
+
+            $(window).on('resize', function() {
+                delay(function(){
+                    imageCtnW = imageCtn.width();
+                    windowH = $(window).height();
+                    adjustBkgImg(image, imageCtn, imageCtnW, gap, imageRatio, windowH);
+                    $.fn.fullpage.reBuild();
+                }, 500);
+            });
+
+            /**
+             * 1. Chrome mobile bug
+             * fix incorrect HTML5 video height calculation when it is currently playing
+             * so stop it when an orientation change is triggered
+             **/
+            window.addEventListener('orientationchange', function() {
+                $video.get(0).pause(); /* [1] */
+
+
+                    screenfull.request($video.get(0));
+
+            }, false);
+
+            var checkLastSlide = function(index) {
+                if (index === $('[data-fullpage]').children().length) {
+                    context.addClass('mA_4');
+                } else {
+                    context.removeClass('mA_4');
+                }
+            };
+
+            var nextSlideTriggerByClick = function(index) {
+                nextSlideLink.off().on('click', function (e) {
+                    $.fn.fullpage.moveTo(index + 1);
+                    checkLastSlide(index + 1);
+                    e.preventDefault();
+                });
+            };
+
+            var handleScroll = function(e) {
+                wheelCount++;
+                if (!e) e = event;
+                var direction = (e.detail < 0 || e.wheelDelta > 0) ? 1 : -1;
+
+                if (direction == 1) wheelCount = 0;
+                if (wheelCount == 4 && direction == -1) {
+                    context.addClass('mA_2');
+                    loadFullPage();
+                }
+            };
+        });
+    </script>
 {% endblock %}
 

@@ -1,0 +1,203 @@
+@include keyframes(stack-opening) {
+  0% {
+    @include opacity(1);
+  }
+  100% {
+    @include opacity(0);
+    top: 40%;
+  }
+}
+
+@include keyframes(stack-shutter) {
+  to {
+    @include opacity(0);
+    background-color: white;
+  }
+}
+
+@include keyframes(stack-in-width) {
+  to {
+    width: 5%;
+    background-color: #e2e2e2;
+  }
+}
+
+@include keyframes(stack-in-height) {
+  to {
+    height: 100%;
+    background-color: #e2e2e2;
+  }
+}
+
+@include keyframes(stack-out-width) {
+  to {
+    width: 0;
+    background-color: $color-grey-dark;
+  }
+}
+
+@include keyframes(stack-out-height) {
+  to {
+    height: 0;
+    background-color: $color-grey-dark;
+  }
+}
+
+.imh-loader {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.imh__opening {
+  @include opacity(1);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  &:after {
+    @extend %pseudo-vertical-align;
+  }
+}
+
+.imh__shutter {
+  height: 100%;
+  width: 100%;
+}
+
+.imh-opening-col {
+  width: 50%;
+  height: 100%;
+  display: inline-block;
+
+  &:nth-child(odd) .imh-opening-shutter::after, &::after {
+    content: '';
+    position: absolute;
+  }
+
+  &:nth-child(odd) {
+    .imh-opening-shutter::after {
+      right: 0;
+      height: 0;
+      width: 1px;
+      background-color: $color-grey-dark;
+    }
+
+    .imh-opening-shutter:first-child::after {
+      top: 0;
+    }
+
+    .imh-opening-shutter:last-child::after {
+      bottom: 0;
+    }
+  }
+
+  &:after {
+    left: 0;
+    top: 50%;
+    width: 0;
+    height: 1px;
+    background-color: $color-grey-dark;
+  }
+}
+
+.imh-opening-col--last {
+  &::after {
+    left: auto;
+    right: 0;
+  }
+}
+
+.imh-opening-shutter {
+  @include opacity(1);
+  background-color: $color-grey-ultralight;
+  //position: absolute;
+  position: relative;
+  width: 100%;
+  height: 50%;
+}
+
+/*.imh-opening-col {
+  .imh-opening-shutter:first-child {
+    top: 0;
+    left: 0;
+  }
+  .imh-opening-shutter:last-child  {
+
+  }
+}
+.imh-opening-col--last {
+  .imh-opening-shutter:first-child {
+
+  }
+  .imh-opening-shutter:last-child {
+    bottom: 0;
+    right: 0;
+  }
+}*/
+
+.imh-progress {
+  width: 400px;
+  background-color: $color-grey-light;
+  height: 1px;
+  position: relative;
+  left: 50%;
+  margin-left: -200px;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+
+  &:before, &:after {
+    @include transition(width .7s cubic-bezier(.72,.04,.83,.67) 0s);
+    content: '';
+    position: absolute;
+    top: -14px;
+    height: 30px;
+    width: 0;
+    background-color: $color-grey-ultralight;
+    z-index: 1;
+  }
+
+  &:before { left: 0; }
+  &:after { right: 0; }
+}
+
+.imh-progress-bar {
+  @include transition(width 1s cubic-bezier(0,.92,.08,1) 0s);
+  background-color: $color-grey-dark;
+  display: block;
+  width: 0;
+  height: 1px;
+}
+
+.imh-progress-counter {
+  font-family: "ethos_regular_italic", $font-fallback;
+  color: $color-grey-dark;
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  width: 50px;
+  height: 110px;
+  line-height: 110px;
+  margin-left: -25px;
+  top: -55px;
+  background-color: $color-grey-ultralight;
+}
+
+@media (max-width: $screen-xs-max) {
+  .imh-progress {
+    width: 200px;
+    margin-left: -100px;
+  }
+
+  .imh-progress-counter {
+    width: 42px;
+    margin-left: -21px;
+    line-height: 112px;
+  }
+}

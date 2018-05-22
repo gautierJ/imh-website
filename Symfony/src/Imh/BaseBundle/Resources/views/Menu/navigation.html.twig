@@ -1,7 +1,28 @@
-<nav class="navigation">
-    <div class="wrapper">
+<nav class="imh__navigation" id="navigation" data-layer>
+    <div class="container imh-container">
         {% spaceless %}
-            {{ knp_menu_render('main', {'currentAsLink':false, 'allow_safe_labels': true} ) }}
+            <nav class="imh__navigation-main" data-main>
+                {{ knp_menu_render('main', {'currentAsLink': true, 'allow_safe_labels': true} ) }}
+            </nav>
+            <nav class="imh-lang" data-lang>
+                {% include 'ImhBaseBundle:Menu:lang.html.twig' %}
+            </nav>
         {% endspaceless %}
     </div>
 </nav>
+<div class="hamburger-wrapper" data-top-navigation>
+    <button class="globe" type="button" aria-label="Languages" aria-controls="navigation" data-globe>
+        <i class="fa fa-3x fa-inverse fa-globe" aria-hidden="true"></i>
+        <span class="hamburger-label text-uppercase">{{ 'imh.base.menu.label_locale'|trans }}</span>
+    </button>
+
+    <svg class="audio" id="svg_audio-collapse" width="22" height="30" viewBox="0 0 22 30" fill="#fff" xmlns="http://www.w3.org/2000/svg"></svg>
+    <svg class="audio audio--play" id="svg_audio-play" width="22" height="30" fill="#fff"><use xlink:href="#svg-audio"></use></svg>
+
+    <button class="hamburger hamburger--collapse" type="button" aria-label="Menu" aria-controls="navigation" data-hamburger>
+        <span class="hamburger-label text-uppercase">{{ 'imh.base.menu.label_menu'|trans }}</span>
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+</div>

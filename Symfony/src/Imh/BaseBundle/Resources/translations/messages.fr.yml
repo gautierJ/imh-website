@@ -1,6 +1,8 @@
 imh:
   base:
     menu:
+      label_locale:   'Langue'
+      label_menu:     'Menu'
       home:           'Accueil'
       biography:      'Biographie'
       repertoire:     'Répertoire'
@@ -27,35 +29,49 @@ imh:
 
     home:
       page_title:     'Accueil | Ionella Marinutsa'
+      website:        'Site officiel'
+      menu:
+        section1:     'Ionella'
+        section2:     'Concert'
+        section3:     'Événements'
+      events:
+        title:        'événements à venir'
+        sub_title:    "Retrouvez la programmation de mes concerts en un coup d'&#339;il..."
 
     biography:
-      page_title:     'Biographie | Ionella Marinutsa'
-      main_text: >
-        <p>Née en 1992 à Saint-Pétersbourg, Ionella Marinutsa baigne dès sa tendre enfance dans les milieux artistiques et musicaux de la capitale culturelle russe. Fille de peintre, Ionella manifeste très tôt un vif intérêt et une sensibilité raffinée pour l'art pictural et la musique. Elle joue ses premières notes de piano à l'âge de cinq ans avant d'intégrer, l'année suivante, la classe de harpe au lycée des Beaux-Arts "Okhtinski" de Saint-Pétersbourg. Concours municipaux et internationaux jalonnent ses années d'apprentissage, tout comme les concerts annuels de harpe organisés par les conservatoires de la ville.</p>
-        <p>Ionella poursuit ses études au Conservatoire M.S. Moussorgski de Saint-Pétersbourg dans la classe d’I.A. Donskaya-Tishchenko. Toute jeune diplômée, elle remporte en 2010 le premier prix du Concours International Symphonie à Volgograd (Russie) et se voit décerner, la même année, le Prix spécial du jury pour la meilleure interprétation de la musique hongroise lors du 2<sup>ème</sup> Concours international des harpistes à Szeged (Hongrie). A 20 ans, elle est lauréate du Concours international des harpistes Ksenia Erdely à Saint-Pétersbourg.</p>
-        <p>La jeune musicienne assiste à plusieurs Masterclass auprès de harpistes de renommée, tels que Florence Sitruk (Suisse), Isabelle Moretti (France), Emmanuel Ceysson (Franсe), Germaine Lorenzini (France) et Marie-Pierre Langlamet (Allemagne).</p>
-        <p>En 2012, Ionella est admise à l'Ecole Normale de Musique de Paris A. Cortot, où elle approfondit ses compétences musicales sous la direction d'Isabelle Perrin. Titulaire du Diplôme Supérieur d'Exécution, la jeune musicienne poursuit ses études au Pôle Supérieur d'Enseignement Artistique de Paris dans la classe de Gislaine Petit-Volta.</p>
-        <p>En avril 2015, Ionella remporte avec succès le Premier Prix du 89<sup>ème</sup> Concours International Léopold Bellan à Paris dans sa catégorie (harpe).</p>
-        <p>Parallèlement à ses études, la jeune harpiste mène une activité de concertiste qui la propulse au devant des scènes de Russie et d'Europe. Sélectionnée en 2011 comme soliste de la "Maison de la Musique de Saint-Pétersbourg" dans le cadre de l'organisation "Les Musiciens de Russie", Ionella entreprend régulièrement des tournées à travers son pays. Elle joue, en récital ou accompagnée d'un orchestre symphonique, à la Philarmonie de Togliatti, de Samara, de Ekaterinbourg.</p>
-        <p>En 2014 et 2015, I. Marinutsa donne deux récitals à la salle Cortot à Paris et accompagne à la harpe le chœur d'Enfants Caecilie, dirigé par Alice Korovitch (Paris). Au printemps 2015, Ionella est soliste invitée du Festival international de musique d'Albe en Italie, qui lui vaut un vif succès auprès du public et de la presse. En automne 2015, Ionella a donné plusieurs récitals de harpe à Paris entre autres, au Centre de Russie pour la Science et la Culture (concert soutenu par le Ministère de la Culture de la Russie).</p>
-        <p>En mars 2016, Ionella est nommée soliste de l'Association française "Jeunes talents" en vue de la saison 2016-2017 au cours de laquelle elle donnera plusieurs récitals.</p>
+      page_title:         'Biographie | Ionella Marinutsa'
+      main_section-title: 'Biographie'
+      main_text-section1: >
+        <p class="first">Née en 1992 à Saint-Pétersbourg, Ionella Marinutsa baigne dès sa tendre enfance dans les milieux artistiques et musicaux de la capitale culturelle russe. Fille de peintre, Ionella manifeste très tôt un vif intérêt et une sensibilité pour l'art pictural et la musique. Elle joue ses premières notes de piano à l'âge de cinq ans et, dès l'année suivante, se consacre entièrement à la harpe.</p>
+        <p>En 2012, toute jeune diplômée de conservatoire et lauréate de plusieurs concours nationaux, Ionella décide de se rendre à Paris. Admise à l'Ecole Normale de Paris A. Cortot, elle approfondit ses compétences musicales sous la direction d'Isabelle Perrin. Aujourd'hui, la jeune harpiste poursuit ses études au Pôle Supérieur d'Enseignement Artistique de Paris dans la classe de Gislaine Petit-Volta et celle de Jacques Saint-Yves en musique de chambre.</p>
+        <p>Ionella mène une activité de concertiste qui la propulse au devant des scènes de Russie et d'Europe. Elle joue en tant que soliste avec les orchestres symphoniques de Sorbonne Université, les orchestres philharmoniques de Samara, d'Ekaterinbourg, de Volgograd et bien d'autres. Elle donne régulièrement des récitals à la salle Cortot à Paris, en tant que soliste invitée au Festival Debussy et au Festival International de Musique d'Albe en Italie, et remporte un franc succès auprès du public et de la presse.</p>
+
+      main_text-section2: >
+        <p>Ionella est nommée soliste de l'association française «Jeunes Talents» et de la «Maison de la musique de Saint-Pétersbourg». Elle remporte de nombreux prix aux concours internationaux de harpe: le 1<sup>er</sup> Prix du 89<sup>ème</sup> Concours international Leopold Bellan à Paris, le Prix spécial du jury pour la meilleure interprétation de musique hongroise du 2<sup>ème</sup> Concours International de Harpe en Hongrie, le 1<sup>er</sup> Prix du Concours «Symphonie» en Russie, etc...</p>
+        <p>En tant que musicien d'orchestre, elle joue souvent avec l'Orchestre philarmonique de Radio France.</p>
+        <p>Ionella est sans cesse à la recherche de nouveaux sons de harpe, ce qui l'amène à enrichir son répertoire de nouvelles pièces qu'elle arrange pour harpe, puisant essentiellement dans la musique baroque et la musique moderne russe.</p>
+
+      main_text-section3: >
+        <p>En janvier 2017, la jeune musicienne crée un projet de recherches acoustiques des sons de harpe en partenariat avec l'IRCAM, parcours ATIAM.</p>
+        <p>Animée par le désir de partager sa musique avec une audience toujours plus large, elle donne de nombreux concerts de bienfaisance ou des concerts-éducatifs dans des hôpitaux, écoles et autres institutions.</p>
+        <p>Ambassadrice de la culture russe en France, Ionella s'attache à faire découvrir les trésors de la musique russe au public français, et, inversement, à promouvoir la musique française en Russie, dans l'espoir de créer un pont culturel entre les deux pays.</p>
 
       prizes:
-        title:        'Prix aux Concours Internationaux'
+        title:        'Prix aux concours Internationaux'
         list: >
           <li>2015 – <strong>1<sup>er</sup> Prix</strong> au 89<sup>ème</sup> Concours International Léopold Bellan (Paris).</li>
-          <li>2012 – <strong>5<sup>ème</sup> Prix</strong> au Concours International de Harpe « Crystal Key » (Saint-Pétersbourg).</li>
+          <li>2012 – <strong>5<sup>ème</sup> Prix</strong> au Concours International de Harpe «Crystal Key» (Saint-Pétersbourg).</li>
           <li>2010 – <strong>Prix Spécial</strong> pour la meilleure interprétation de la musique Hongroise au 2<sup>ème</sup> Concours International des Harpistes en Hongrie (Szeged).</li>
-          <li>2010 – <strong>1<sup>er</sup> Prix</strong> au 7<sup>ème</sup> Concours International « Symphony » pour Jeunes Musiciens (Volgograd).</li>
+          <li>2010 – <strong>1<sup>er</sup> Prix</strong> au 7<sup>ème</sup> Concours International «Symphony» pour Jeunes Musiciens (Volgograd).</li>
           <li>2005 – <strong>3<sup>ème</sup> Prix</strong> au Concours ouvert aux Jeunes Violonistes, Violoncellistes et Harpistes (Saint-Pétersbourg).</li>
           <li>2003 – <strong>2<sup>ème</sup> Prix</strong> au Concours Métropolitain pour Jeunes Harpistes (Saint-Pétersbourg).</li>
 
       download:       'Télécharger la biographie'
 
     repertoire:
-      page_title:     'Répertoire | Ionella Marinutsa'
+      page_title:         'Répertoire | Ionella Marinutsa'
+      main_section-title: 'Répertoire'
       concert:
-        title:        'Concerts (avec harpe et orchestre)'
         duration:     'Durée : '
         0:
           composer:   'Georg Friedrich HAENDEL'
@@ -89,15 +105,16 @@ imh:
         title:        'Récitals'
 
     contact:
-      page_title:     'Contact | Ionella Marinutsa'
-      answer:         'Laissez-moi un message, je serai ravie de vous répondre !'
-      lastname:       'Nom * :'
-      firstname:      'Prénom * :'
-      email:          'Email * :'
-      subject:        'Sujet * :'
-      message:        'Message * :'
-      send:           'Envoyer'
-      mandatory:      'Champs obligatoires'
+      page_title:         'Contact | Ionella Marinutsa'
+      main_section-title: 'Contact'
+      answer:             'Laissez-moi un message, je serai ravie de vous répondre !'
+      lastname:           'Nom * :'
+      firstname:          'Prénom * :'
+      email:              'Email * :'
+      subject:            'Sujet * :'
+      message:            'Message * :'
+      send:               'Envoyer'
+      mandatory:          'Champs obligatoires'
 
     footer:
       site:           'Ionella-marinutsa.com'
@@ -115,7 +132,9 @@ imh:
         fb:           'Facebook'
         tw:           'Twitter'
         g+:           'Google +'
+        ig:           'Instagram'
       engine:
         title:        'Propulsé par'
         framework:    'Symfony Framework'
-      copyright:      'Ionella Marinutsa. Tous droits réservés.'
+      copyright: >
+        Ionella Marinutsa.<br> Tous droits réservés.

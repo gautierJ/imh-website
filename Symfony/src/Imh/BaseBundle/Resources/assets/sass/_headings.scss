@@ -1,0 +1,37 @@
+// Home page
+// ==================================================
+
+.imh-intro {
+  @include opacity(0);
+  @include translate(-50%, -50%);
+  background-color: $color-grey-ultralight;
+  width: 280px;
+  height: 110px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  text-align: center;
+  display: table;
+}
+
+.imh-intro-heading-group {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.imh-intro-title {
+  font-family: 'ralewaylight', $font-fallback;
+  margin: 12px 0;
+
+  .imh-title-strong {
+    font-family: 'ralewayregular', $font-fallback;
+    color: $color-grey-dark;
+  }
+}
+
+.imh-intro-subtitle {
+  font-family: 'ethos_regular_italic', $font-fallback;
+  color: $color-grey-dark;
+  margin: 12px 0;
+}

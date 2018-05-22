@@ -1,6 +1,8 @@
 imh:
   base:
     menu:
+      label_locale: 'Language'
+      label_menu:   'Menu'
       home:         'Home'
       biography:    'Biography'
       repertoire:   'Repertoire'
@@ -27,36 +29,48 @@ imh:
 
     home:
       page_title:   'Home | Ionella Marinutsa'
+      website:      'Official website'
+      menu:
+        section1:   'Ionella'
+        section2:   'Concert'
+        section3:   'Events'
+      events:
+        title:      'upcoming events'
+        sub_title:  'Find the schedule of my concerts at a glance...'
 
     biography:
       page_title:   'Biography | Ionella Marinutsa'
-      main_text: >
-        <p>Ionella Marinutsa was born in Saint Petersburg in 1992 into an artistic family. The creative atmosphere in which she was brought up led to her taking an interest in art and music from an early age. At the age of five she began to study piano, and when she was six she entered the harp class at the Okhtinsky Artistic Lycée in Saint Petersburg, Russia. During her time at the Lycée she took part in municipal and international music competitions, and in annual harp concerts of the childrens’ music schools of Saint Petersburg.</p>
-        <p>Ionella has successfully participated in the Moscow harp festivals “The Harp in Russia – Yesterday, Today and Tomorrow” (2003) and “The Sounds of the Magic Harp” (2006).</p>
-        <p>From 2009 to 2012 Ionella was a pupil of the M.S. Mussorgsky Saint Petersburg Music College in Professor I.A. Tishchenko-Donskaya’s harp class. In 2010 she won the 1st Prize in the “Symphonia” international competition in Volgograd, Russia, and in autumn 2010 she was awarded the special jury “Prize for the Best Interpretation of Hungarian music” at the 2nd International Harp Competition in Szeged, Hungary. In 2012 she was a prizewinner at the 2nd K. Erdeli International Harp Competition in Saint Petersburg. The young harpist has taken part in masterclasses with a number of outstanding European harpists – Florence Sitruk, Isabelle Moretti, Emmanuel Ceysson, Germaine Lorenzini and Marie-Pierre Langlamet.</p>
-        <p>In 2012 Ionella became a student at the École Normale de Musique de Paris A.Cortot in the class of harpist Isabelle Perrin. On completing her studies at the École Normale in 2015, she entered the Conservatoire Pôle Supérieur de Paris, where she is currently continuing her training under the guidance of Professor Gislaine Petit-Volta.</p>
-        <p>In April 2015 the young harpist won the first prize in the harp category of one of the oldest competitions in Europe – the 89<sup>th</sup> Léopold Bellan International Music Competition.</p>
-        <p>Ionella has a busy concert schedule in Russia and abroad. Since 2011 she has been a soloist in residence at the Saint Petersburg House of Music, which has led to performances (both as a soloist and with symphony orchestra) in the Philharmonias of Togliatti, Samara, Ekaterinburg, and in the English Hall of the Saint Petersburg House of Music as part of the “Musical Ensembles of Russia” project. She gave solo concerts at the prestigious Salle Cortot in Paris in 2014 and 2015, and took part in a joint project with the “Chœur Caecilie” choir in Paris in 2014.</p>
-        <p>In May 2015 Ionella was invited to perform in a solo concert at the Alba International Music Festival in Italy, where she received a large number of positive reactions from the public and in the press.</p>
-        <p>In the autumn of 2015, Ionella gave several solo recitals in Paris. Among these was one that took place in the Cultural Center of Russia (a concert supported by the Russian Ministry of Culture).</p>
-        <p>In March 2016, Ionella was named soloist for the French Association "Jeunes Talents", and she is giving recitals for them this season (2016-2017).</p>
+      main_section-title: 'Biography'
+      main_text-section1: >
+        <p class="first">Born in St.-Petersburg in 1992, Ionella Marinutsa is a Paris-based professional harpist, regularly performing in Europe and in her home country Russia.</p>
+        <p>She has collaborated as a soloist with several orchestras such as symphony orchestra of the Sorbonne University, philharmonic orchestras of Samara, Yekaterinburg, Volgograd, Togliatti etc. As an orchestral musician, Ionella often plays with the “Orchestre Philharmonique de Radio France”.</p>
+
+      main_text-section2: >
+        <p>Ionella has been a major prizewinner in international harp competitions, including First Prize of the 89<sup>th</sup> International Leopold Bellan Competition (Paris), The Special Jury Prize of the Second International Harp Competition (Hungary), Laureate of the First Prize “Symphony” Competition (Russia).</p>
+        <p>In January 2017 she created a project of acoustic research of harp sounds in partnership with the Institute for Research and Coordination in Acoustics/Music (IRCAM), ATIAM course. The Institute is linked with the Centre Georges Pompidou in Paris.</p>
+        <p>The harpist regularly gives recitals at the Salle Cortot in Paris. As a guest soloist she was performing at the Debussy Festival in 2017 and at the International Music Festival of Alba (Italy), her performances were a great success among audience and press.</p>
+        <p>Moreover, since 2015 Ionella is a soloist for the French association “Jeunes talents” (Young talents), as well as a soloist for the association “Saint-Petersburg Music House of Saint-Petersburg” since 2010.</p>
+
+      main_text-section3: >
+        <p>Being a graduate of the Ecole Normale Paris A. Cortot in class of Isabelle Perrin, today, Ionella continuing her studies at the Pôle Supérieur de Paris PSPBB in the class of G. Petit-Volta. In the beginning of 2018, Ionella was admitted to a Master's programme at the National Conservatory of Music and Dance of Paris in Isabelle Moretti's class (Conservatoire National Supérieur de Musique et de Danse de Paris CNSMDP).</p>
+        <p>Since 2018 Ionella Marinutsa is supported by SAFRAN Foundation in Paris.</p>
 
       prizes:
-        title:      'Prizes in the International Competitions'
+        title:      'Prizes - International Competitions'
         list: >
           <li>2015 – <strong>1<sup>st</sup> Prize</strong> in the 89<sup>th</sup> Léopold Bellan International Music Competition (Paris).</li>
-          <li>2012 – <strong>5<sup>th</sup> Prize</strong> in the « Crystal Key » International Harp Competition (Saint-Petersburg).</li>
+          <li>2012 – <strong>5<sup>th</sup> Prize</strong> in the «Crystal Key» International Harp Competition (Saint-Petersburg).</li>
           <li>2010 – <strong>Special Prize</strong> for the best interpretation of Hungarian music in the 2<sup>nd</sup> International Harpist Competition in Hungary (Szeged).</li>
-          <li>2010 – <strong>1<sup>st</sup> Prize</strong> in the 7<sup>th</sup> International « Symphony » Competition for Young Musicians (Volgograd).</li>
+          <li>2010 – <strong>1<sup>st</sup> Prize</strong> in the 7<sup>th</sup> International «Symphony» Competition for Young Musicians (Volgograd).</li>
           <li>2005 – <strong>3<sup>rd</sup> Prize</strong> in the Open Competition for Young Violinists, Cellists and Harpists (Saint-Petersburg).</li>
           <li>2003 – <strong>2<sup>nd</sup> Prize</strong> in the Metropolitan Competition for Young Harpists (Saint-Petersburg).</li>
 
-      download:     'Download the biography'
+      download:     'Download the biography (.pdf)'
 
     repertoire:
       page_title:     'Repertoire | Ionella Marinutsa'
+      main_section-title: 'Répertoire'
       concert:
-        title:        'Concerts (with harp and orchestra)'
         duration:     'Duration : '
         0:
           composer:   'Georg Friedrich HAENDEL'
@@ -90,15 +104,16 @@ imh:
         title:        'Recitals'
 
     contact:
-      page_title:   'Contact | Ionella Marinutsa'
-      answer:       'Leave a message !'
-      lastname:     'Last Name * :'
-      firstname:    'First Name * :'
-      email:        'Email * :'
-      subject:      'Subject * :'
-      message:      'Message * :'
-      send:         'Send'
-      mandatory:    'Mandatory fields'
+      page_title:         'Contact | Ionella Marinutsa'
+      main_section-title: 'Contact'
+      answer:             'Leave a message !'
+      lastname:           'Last Name * :'
+      firstname:          'First Name * :'
+      email:              'Email * :'
+      subject:            'Subject * :'
+      message:            'Message * :'
+      send:               'Send'
+      mandatory:          'Mandatory fields'
 
     footer:
       site:         'Ionella-marinutsa.com'
@@ -116,7 +131,9 @@ imh:
         fb:         'Facebook'
         tw:         'Twitter'
         g+:         'Google +'
+        ig:         'Instagram'
       engine:
         title:      'Powered by'
         framework:  'Symfony Framework'
-      copyright:    'Ionella Marinutsa. All rights reserved.'
+      copyright: >
+        Ionella Marinutsa.<br> All rights reserved.
