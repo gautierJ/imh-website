@@ -1,0 +1,14 @@
+.hideMe {
+  visibility: hidden !important;
+}
+
+.fontFail {
+  visibility: visible !important;
+  /* fall back font */
+  /* necessary styling so fallback font doesn't break your layout */
+}
+
+.fontCall {
+  color: black !important;
+  font-family: "Georgia", Times, serif !important;
+}

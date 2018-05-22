@@ -1,0 +1,58 @@
+.c-title-secondary {
+  position: relative;
+  font-family: "Knockout-HTF49-Liteweight", $font-fallback;
+  font-size: $twentyeightpx;
+  text-align: center;
+  color: $color-grey-dark;
+  margin: 16px 0;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+
+  &:after {
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 74px;
+    background-color: $color-grey-dark;
+    top: -16px;
+    left: 50%;
+    z-index: 0;
+    margin-left: -1px;
+  }
+}
+
+.c-title-secondary__inside {
+  position: relative;
+  z-index: 1;
+  display: block;
+  padding: 6px 0;
+  background-color: white;
+}
+
+.c-title-secondary__inside--ultralight {
+  background-color: $color-grey-ultralight;
+}
+
+// Media queries
+// ==================================================
+
+@media (min-width: $screen-sm-min) {
+
+  .c-title-secondary {
+    font-size: 40px;
+    margin: 0;
+    padding: 0 0 15px;
+    background: none;
+
+    &:after {
+      top: auto;
+      bottom: 0;
+      left: 50%;
+      width: 46px;
+      height: 1px;
+      margin-left: -23px;
+      background-color: $color-grey-medium;
+      z-index: inherit;
+    }
+  }
+}

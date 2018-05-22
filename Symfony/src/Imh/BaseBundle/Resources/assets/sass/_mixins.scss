@@ -1,0 +1,85 @@
+@mixin clearfix() {
+  &:before,
+  &:after {
+    content: " "; // 1
+    display: table; // 2
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+
+@mixin box-shadow($h-shadow, $v-shadow, $blur, $spread, $color) {
+  -webkit-box-shadow: $h-shadow $v-shadow $blur $spread $color;
+  -moz-box-shadow: $h-shadow $v-shadow $blur $spread $color;
+  box-shadow: $h-shadow $v-shadow $blur $spread $color;
+}
+
+@mixin box-sizing($property) {
+  -webkit-box-sizing: $property;
+  -moz-box-sizing: $property;
+  box-sizing: $property;
+}
+
+@mixin opacity($alphavalue) {
+  opacity: $alphavalue; /* Good browsers */
+  -moz-opacity: $alphavalue; /* Netscape */
+  -khtml-opacity: $alphavalue; /* Safari 1.x */
+  filter: alpha(opacity=($alphavalue*100)); /* IE 5-7 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=" + $alphavalue*100 + ")"; /* IE 8 */
+}
+
+/*@mixin transition($property, $duration, $timing-function, $delay) {
+  -webkit-transition: $property $duration $timing-function $delay;
+  -moz-transition: $property $duration $timing-function $delay;
+  -o-transition: $property $duration $timing-function $delay;
+  transition: $property $duration $timing-function $delay;
+}*/
+
+@mixin transform($transform-function) {
+  -webkit-transform: $transform-function;
+  -moz-transform: $transform-function;
+  -o-transform: $transform-function;
+  transform: $transform-function;
+}
+
+@mixin transform-origin($value) {
+  -webkit-transform-origin: $value;
+  -khtml-transform-origin: $value;
+  -moz-transform-origin: $value;
+  -ms-transform-origin: $value;
+  transform-origin: $value;
+}
+
+@mixin saturation($grayscale) {
+  -webkit-filter: grayscale($grayscale);
+  -moz-filter: grayscale($grayscale);
+  -ms-filter: grayscale($grayscale);
+  -o-filter: grayscale($grayscale);
+  filter: grayscale($grayscale);
+}
+
+@mixin rotate($degree) {
+  -moz-transform: rotate($degree);
+  -webkit-transform: rotate($degree);
+  -o-transform: rotate($degree);
+  -ms-transform: rotate($degree);
+}
+
+//@mixin saturation($value) {
+//  -webkit-filter: #{"grayscale(#{$value})"};
+//  -moz-filter: #{"grayscale(#{$value})"};
+//  filter:#{"grayscale(#{$value})"};
+//}
+
+@mixin calc($property, $expression) {
+  #{$property}: -webkit-calc(#{$expression});
+  #{$property}: calc(#{$expression});
+}

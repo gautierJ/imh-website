@@ -1,0 +1,62 @@
+.c-device-orientation-change {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0,0,0,.95);
+  z-index: 99999;
+  visibility: hidden;
+  opacity: 0;
+  @include transition(all 1.2s cubic-bezier(.19,1,.22,1) 0s);
+}
+
+.c-device-orientation-change__rotate,
+.c-device-orientation-change__icon-rotate-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  @include translate(-50%, -50%);
+}
+
+.c-device-orientation-change__rotate {
+  width: 50px;
+}
+
+.c-device-orientation-change__icon-rotate-wrapper {
+  width: 20px;
+}
+
+.c-device-orientation-change__icon-device-wrapper {
+  width: 100%;
+}
+
+.c-device-orientation-change__icon-rotate,
+.c-device-orientation-change__icon-device {
+  width: 100%;
+}
+
+// Media queries
+// ==================================================
+
+@media screen and (orientation: portrait) {
+
+  .c-device-orientation-change {
+    visibility: hidden;
+    opacity: 0;
+    @include transform(scale(2,2));
+  }
+}
+
+@media screen and (orientation: landscape) and (max-width: $screen-xs-max) {
+
+  html, body {
+    overflow: hidden;
+  }
+
+  .c-device-orientation-change {
+    visibility: visible;
+    opacity: 1;
+    @include transform(scale(1,1));
+  }
+}

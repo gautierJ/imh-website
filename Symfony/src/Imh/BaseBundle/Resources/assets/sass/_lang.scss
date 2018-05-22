@@ -1,0 +1,139 @@
+.imh-lang {
+  position: absolute;
+  top: 122px;
+  right: -73px;
+}
+
+.imh-lang__list {
+  &:after {
+    content: '';
+    height: 100%;
+    width: 4px;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    margin-left: -2px;
+    background-color: $color-grey-dark;
+    z-index: -1;
+  }
+}
+
+.imh-lang__item {
+  color: $color-grey-medium;
+  margin-bottom: 6px;
+
+  &.current .imh-lang__link {
+    color: white;
+    background-color: $color-grey-dark;
+    border-color: $color-grey-dark;
+
+    &:after {
+      background-color: $color-grey-dark;
+    }
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.imh-lang__link {
+  display: block;
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  color: $color-grey-dark;
+  background-color: $color-grey-extremlight;
+  border: 1px solid $color-grey-dark;
+  text-align: center;
+  font-size: $elevenpx;
+  text-transform: uppercase;
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+  @include border-radius(50%);
+
+  &:after {
+    content: "";
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, .8);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: -1;
+    @include transition(top, .3s, cubic-bezier(0,.92,.08,1), 0s);
+  }
+
+  &:hover {
+    color: white;
+    border: 1px solid $color-grey-dark;
+
+    &::after {
+      top: 0;
+    }
+  }
+}
+
+// Media queries
+// ==================================================
+
+@media (max-width: $screen-sm-max) {
+
+  .imh-lang {
+    position: static;
+    top: inherit;
+    right: inherit;
+    text-align: center;
+  }
+
+  .imh-lang__list {
+    &:after {
+      content: normal;
+    }
+  }
+
+  .imh-lang__item {
+    margin: 0 0 7px;
+
+    &.current {
+      .imh-lang__link {
+        border: 1px solid $color-grey-dark;
+        background: black;
+      }
+    }
+  }
+
+  .imh-lang__link {
+    @include border-radius(0);
+    background: none;
+    border: 1px solid rgba(0, 0, 0, 0);
+    color: white;
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;
+    max-width: 75px;
+    width: 100%;
+    font-size: $fourteenpx;
+    overflow: inherit;
+    padding: 0 20px;
+
+    &:after {
+      content: normal;
+    }
+
+    &:hover {
+      background-color: white;
+      color: $color-grey-darker;
+      border: none;
+    }
+  }
+}
+
+@media (min-width: $screen-sm-min) {
+
+  .imh-lang__link {
+    font-family: 'ralewayregular', $font-fallback;
+  }
+}

@@ -1,0 +1,11 @@
+.c-title-tertiary {
+  font-family: 'ralewaymedium', $font-fallback;
+  font-size: $thirteenpx;
+  margin-top: 10px;
+}
+
+@media (min-width: $screen-sm-min) {
+  .c-title-tertiary {
+    margin-top: 0;
+  }
+}

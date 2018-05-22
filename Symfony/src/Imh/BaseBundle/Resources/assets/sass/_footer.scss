@@ -1,0 +1,258 @@
+.imh-footer {
+  @include make-row();
+  background: url("/bundles/imhbase/images/header-bg.png") repeat scroll 0 0;
+  border-top: 1px solid $color-grey-light;
+  color: $color-grey-medium;
+  padding-top: 20px;
+
+  .imh-container {
+    padding: 0;
+    top: 0;
+  }
+
+  // overrides _lang.sccs
+  .imh-lang__list {
+    &:after {
+      content: normal;
+    }
+  }
+
+  .imh-lang__item {
+    margin-bottom: 0;
+  }
+
+  .imh-lang__link {
+    font-family: inherit;
+    display: inline-block;
+    height: auto;
+    width: auto;
+    line-height: 1.5em;
+    color: inherit;
+    background-color: inherit;
+    border: 1px solid transparent;
+    text-align: inherit;
+    font-size: inherit;
+    text-transform: inherit;
+    position: static;
+    overflow: inherit;
+    z-index: inherit;
+    @include border-radius(0);
+
+    &:after {
+      content: normal;
+    }
+
+    &:first-letter {
+      text-transform: uppercase;
+    }
+  }
+
+  .imh-lang__item.current .imh-lang__link {
+    color: $color-grey-dark;
+    background-color: white;
+    border-color: $color-grey-light;
+  }
+}
+
+.imh-footer__column {
+  border-right: 1px dotted $color-grey-lighter;
+  text-align: left;
+  vertical-align: top;
+  display: table-cell;
+  float: none;
+
+  ul {
+    list-style: none;
+  }
+
+  li {
+    white-space: nowrap;
+    line-height: 1.5em;
+
+    &.current {
+      list-style: none;
+      a, span {
+        color: $color-grey-dark;
+        background: white;
+        border: 1px solid $color-grey-light;
+        border-radius: 16px;
+        padding: 6px 14px;
+      }
+    }
+  }
+
+  a, span {
+    color: $color-grey-medium;
+    display: inline-block;
+    @include transition(all .2s ease-in 0s);
+
+    &:hover {
+      color: $color-grey-dark;
+    }
+  }
+
+  a {
+    border: 1px solid transparent;
+    padding: 6px 0;
+  }
+
+  .fa-home {
+    display: none;
+  }
+}
+
+.imh-footer__head {
+  font-family: 'ralewaysemibold', $font-fallback;
+  font-weight: normal;
+  margin: 5px 0 15px;
+  font-size: $thirteenpx;
+}
+
+.imh-footer__column--last {
+  border: none;
+}
+
+.imh-footer__column--extraspace {
+  padding-left: 40px;
+}
+
+.imh-footer-wrap {
+  padding: 7px 0;
+}
+
+.imh-footer__column--site {
+
+  ul {
+    @include clearfix();
+    width: 152px;
+  }
+
+  li {
+    float: left;
+    padding-right: 10px;
+
+    &:nth-child(even) {
+      padding-right: 0;
+    }
+
+    &.current {
+      //float: none;
+    }
+  }
+}
+
+.imh-footer__column--language {
+  text-align: center;
+}
+
+.imh-footer__column--follow {
+  text-align: center;
+}
+
+.imh-footer__link--social {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 4px;
+  font-size: 20px;
+  color: $color-grey-dark;
+  width: 18px;
+
+  &:hover {
+    color: black;
+  }
+}
+
+.imh-footer__column--powered {
+  text-align: center;
+
+  a {
+    display: block;
+  }
+}
+
+.icon--symfony {
+  width: 100%;
+  height: 55px;
+  fill: $color-grey-dark;
+  @include transition(fill .2s ease-in 0s);
+
+  &:hover {
+    fill: black;
+  }
+}
+
+.imh-footer__rights {
+  font-family: 'ralewayregular', $font-fallback;
+  display: block;
+  font-size: $tenpx;
+  margin: 20px 0 15px;
+
+  span {
+    font-size: $fourteenpx;
+  }
+
+  br { display: none; }
+}
+
+// Media queries
+// ==================================================
+
+@media (max-width: $screen-xs-max) {
+  .imh-footer {
+    color: white;
+    border-top: none;
+    background: black;
+    padding-top: 15px;
+
+    .imh-container {
+      padding: 0;
+    }
+  }
+
+  .imh-footer__column {
+    margin-top: 10px;
+    display: block;
+    float: left;
+    border-right-color: $color-grey-medium;
+  }
+
+  .imh-footer__column--follow,
+  .imh-footer__column--powered {
+    text-align: center;
+  }
+
+  .imh-footer__column--follow .imh-footer__link--social {
+    color: white;
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+
+  .imh-footer__head {
+    margin-bottom: 0;
+  }
+
+  .icon--symfony {
+    height: 47px;
+    fill: black;
+    @include transition(none);
+
+    &:hover {
+      fill: black;
+    }
+  }
+
+  .imh-footer__rights {
+    margin: 0 0 15px;
+    color: $color-grey-medium;
+
+    br { display: inline; }
+  }
+}
+
+@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+  .imh-footer__column--follow {
+    border: none;
+  }
+}

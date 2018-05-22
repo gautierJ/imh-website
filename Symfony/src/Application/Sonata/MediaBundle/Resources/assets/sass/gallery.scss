@@ -1,0 +1,701 @@
+$fa-font-path: "/bundles/imhbase/bower_components/fontawesome/fonts";
+@import "app"; //this is imported from Imh bundle -> see assetic compass configuration
+
+@include keyframes(pop-icon-in) {
+  0% {
+    @include opacity(0);
+    @include transform(scale(0));
+
+  }
+  50% {
+    @include transform(scale(1.1));
+    zoom: 100%; // to prevent text zooming by default
+  }
+  100% {
+    @include opacity(.8);
+    @include transform(scale(1));
+  }
+}
+
+@include keyframes(pop-icon-out) {
+  0% {
+    @include opacity(.8);
+    @include transform(scale(1));
+  }
+  100% {
+    @include opacity(0);
+    @include transform(scale(0));
+  }
+}
+
+@include keyframes(make-opacity-in) {
+  0% {
+    @include opacity(0);
+  }
+  100% {
+    @include opacity(1);
+  }
+}
+
+@include keyframes(make-opacity-out) {
+  0% {
+    @include opacity(1);
+  }
+  100% {
+    @include opacity(0);
+  }
+}
+
+body {
+  background-color: black;
+}
+
+.imh-container-fluid {
+  height: 100%;
+  position: relative;
+
+  &:before, &:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    background: url("/bundles/imhbase/images/points.png") repeat scroll 2px -2px;
+    height: 100px;
+    width: 100%;
+    @include opacity(.8);
+    z-index: 1;
+  }
+
+  &:before {
+    top: 0;
+  }
+
+  &:after {
+    bottom: 3px;
+  }
+}
+
+.imh-content {
+  position: relative;
+  @include calc(height, '100% - 90px');
+  top: 75px;
+  padding-top: 0;
+}
+
+.imh-sidebar {
+  @include box-sizing(content-box);
+  @include box-shadow(-3px, 0, 40px, -2px, black);
+  @include transition(all 1s cubic-bezier(0,.92,.08,1) 0s);
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, .95);
+  height: 100%;
+  padding: 0 80px;
+  z-index: 0;
+
+  &:after {
+    @extend %pseudo-vertical-align;
+  }
+
+  &.is-hidden {
+    padding: 0;
+    right: -95px;
+    background: none;
+    box-shadow: none;
+
+    .imh-sidebar__verticalcenter {
+      @include opacity(0);
+      @include animation('make-opacity-out .1s');
+      visibility: hidden;
+    }
+
+    .imh__navigation-menu-display {
+      background-color: black;
+      left: -12px;
+
+      .fa {
+        left: -5px;
+        @include transform(rotate(180deg));
+      }
+    }
+  }
+}
+
+.imh-sidebar__verticalcenter {
+  @include calc(width, '100% - 1px');
+  @include opacity(1);
+  @include animation('make-opacity-in .5s forwards');
+  visibility: visible;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.imh__navigation-menu-display {
+  @include translate(0, -50%);
+  @include transition(all .3s ease 0s);
+  position: absolute;
+  top: 50%;
+  left: 0;
+  background-color: rgb(255, 255, 255);
+  background-color: rgba(255, 255, 255, .1);
+  padding: 27px 12px;
+
+  .fa {
+    @include transform-origin(50% 53%);
+    position: relative;
+    top: -2px;
+    left: 2px;
+    color: white;
+  }
+
+  &:hover {
+    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, .2);
+  }
+}
+
+.imh__gallery-menu li.first,
+.imh__navigation-menu > span {
+  color: $color-grey-medium;
+}
+
+.imh__navigation-menu {
+  position: static;
+
+  li:not(.gallery) {
+    a, span {
+      color: $color-grey-light;
+      white-space: nowrap;
+    }
+
+    &:hover {
+      a, span {
+        color: white;
+      }
+      &:after {
+        background-color: white;
+        border-color: white;
+      }
+    }
+
+    &.current {
+      a, span {
+        color: $color-grey-light;
+      }
+
+      &:after {
+        background-color: white;
+        border-color: white;
+      }
+    }
+  }
+}
+
+.imh__gallery-wrapper {
+  @include transition(opacity .5s linear .5s);
+  @include opacity(0);
+  height: 100%;
+  width: 100%;
+  position: relative;
+  padding: 0;
+
+  &.is-loaded {
+    @include opacity(1);
+
+    & + .c-spinner {
+      @include opacity(0);
+    }
+  }
+}
+
+.frame {
+  height: 100%;
+  touch-action: none;
+}
+
+/*.imh__trigger {
+  position: absolute;
+  right: 18%;
+  top: 0;
+  width: 30px;
+  height: 100%;
+  z-index: 9999;
+
+  a {
+    position: relative;
+    top: 50%;
+    margin-top: -32px;
+    display: block;
+
+    img {
+      background: url("/bundles/imhbase/images/sprite.png") no-repeat scroll -2px -242px;
+      height: 64px;
+      width: 30px;
+      display: block;
+    }
+    &:hover {
+      img {
+        background-position: -33px -242px;
+      }
+    }
+  }
+}*/
+
+.imh__trigger {
+  display: none;
+}
+
+.imh__scrollbar {
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  height: 2px;
+  width: 100%;
+  z-index: 2;
+
+  &:after {
+    @include transition(width .4s ease 0s);
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 0;
+    top: 0;
+    background: $color-grey-darker;
+  }
+
+  .handle {
+    @include opacity(0);
+    -webkit-transition: background .2s linear, opacity .2s ease .4s, width .2s ease;
+    -moz-transition: background .2s linear, opacity .2s ease .4s, width .2s ease;
+    -ms-transition: background .2s linear, opacity .2s ease .4s, width .2s ease; /* IE10 is actually unprefixed */
+    -o-transition: background .2s linear, opacity .2s ease .4s, width .2s ease;
+    transition: background .2s linear, opacity .2s ease .4s, width .2s ease;
+
+    cursor: pointer;
+    background: $color-grey-dark;
+    width: 100px; /* overriden if dynamicHandle: 1 */
+    height: 100%;
+    position: relative;
+    z-index: 1;
+
+    &:hover {
+      background: $color-grey-light;
+    }
+
+    .mousearea {
+      position: absolute;
+      top: -31px;
+      left: 0;
+      height: 128px;
+      width: 100%;
+    }
+  }
+
+  &.mA_2 {
+    .handle {
+      @include opacity(1);
+    }
+
+    &::after {
+      width: 100%;
+    }
+  }
+}
+
+.sonata-media-gallery-media-list { // isotope container
+  height: 100%; // height is mandatory (either px or %)
+}
+
+.sonata-media-gallery-media-item {
+  height: 50%;
+  @include transition(opacity .5s linear 0s);
+
+  &.mA_1 {
+    @include opacity(.1);
+
+    .sonata-media-gallery-media-item-link {
+      cursor: default;
+      &:hover {
+        .media-object {
+          @include transform(scale(1));
+        }
+      }
+      &::after {
+        display: none;
+      }
+    }
+  }
+
+  /*&.newElts {
+    @include opacity(1);
+    @include transition(opacity, 2s, linear, 0s);
+  }*/
+
+  .media-btn-group {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.5);
+    visibility: hidden;
+    @include transition(opacity .2s linear 0s);
+    @include opacity(0);
+  }
+
+  .media-btn {
+    display: table;
+    float: left;
+    cursor: pointer;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    @include transition(background-color .2s ease-in 0s);
+
+    .fa {
+      color: white;
+      display: table-cell;
+      vertical-align: middle;
+      padding: 12px;
+    }
+  }
+
+  .media-btn--zoom {
+    .fa { font-size: 14px; }
+  }
+
+  .icon--cross {
+    width: 20px;
+    height: 40px;
+    stroke: $color-grey-ultralight;
+    vertical-align: middle;
+  }
+
+  &.is-expanded {
+    height: 100%;
+    width: auto;
+
+    .sonata-media-gallery-media-item-link {
+      cursor: default;
+
+      &:hover {
+        .media-object {
+          @include transform(none);
+        }
+
+        .media-btn-group {
+          visibility: visible;
+          @include opacity(1);
+        }
+
+        .media-btn {
+          &:hover {
+            background-color: rgb(0, 0, 0);
+            background-color: rgba(0, 0, 0, .8);
+
+            .icon--cross {
+              stroke: white;
+            }
+          }
+        }
+
+        /*.media-bar {
+          @include transform(translate(0, 0%));
+        }*/
+      }
+
+      &:after {
+        display: none;
+      }
+    }
+
+    .media-object {
+      transition: none;
+      height: 100%;
+      width: auto;
+    }
+
+    .plus-icon { display: none; }
+  }
+}
+
+.sonata-media-gallery-media-item-link {
+  display: block;
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+  cursor: default;
+
+  /*.media-bar {
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+
+    @include transform(translate(0, 100%));
+    -webkit-transition:-webkit-transform .3s cubic-bezier(0,.92,.08,1) .2s;
+    -moz-transition:   -moz-transform .3s cubic-bezier(0,.92,.08,1) .2s;
+    -ms-transition:    -ms-transform .3s cubic-bezier(0,.92,.08,1) .2s;
+    transition:        transform .3s cubic-bezier(0,.92,.08,1) .2s;
+
+    .media-description {
+      float: left;
+      color: white;
+      margin: 0 0 0 10px;
+      height: 37px;
+      line-height: 37px;
+      font-weight: bold;
+    }
+  }*/
+
+  &:hover {
+    .media-object {
+      @include transform(scale(1.1));
+    }
+
+    .media-bar {
+      @include transform(translate(0, 0%));
+    }
+
+    .plus-icon {
+      @include animation('pop-icon-in .4s');
+      @include opacity(.8);
+    }
+  }
+}
+
+.media-object {
+  @include transition(all 1s ease 0s);
+  -webkit-backface-visibility: hidden;
+  display: block;
+  height: 100%;
+  width: auto;
+}
+
+.media-btns {
+  display: none;
+}
+
+.plus-icon {
+  @include border-radius(50%);
+  @include opacity(0);
+  @include animation('pop-icon-out .2s');
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 70px;
+  height: 70px;
+  background: black;
+  margin: -35px 0 0 -35px;
+
+  &::before, &::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background: white;
+    @include transform(scale(1));
+  }
+
+  &::before {
+    width: 1px;
+    height: 18px;
+    @include transform(translate(0, -50%));
+  }
+
+  &::after {
+    width: 18px;
+    height: 1px;
+    @include transform(translate(-50%, 0));
+  }
+}
+
+// Media queries
+// ==================================================
+
+@media (min-width: $screen-sm-min) {
+  .imh-content {
+    @include calc(height, '100% - 200px');
+    top: 100px;
+  }
+
+  .imh__gallery-wrapper {
+    padding: 25px 10px;
+  }
+}
+
+.touchevents {
+  .plus-icon, .imh__scrollbar {
+    display: none;
+  }
+
+  @media (min-width: $screen-md-min) {
+    .imh__navigation {
+      background: none;
+      border: none;
+      height: 91px;
+
+      ul {
+        border-top: none;
+      }
+
+      li.current {
+        background-color: $color-grey-dark;
+        border: none;
+        span {
+          color: white;
+        }
+      }
+    }
+    .imh-content {
+      top: 0;
+      @include calc(height, '100% - 91px');
+    }
+  }
+}
+
+@media (max-width: $screen-md-max) {
+  .imh-container-fluid {
+    &::before, &::after { display: none; }
+  }
+}
+
+
+
+
+
+
+
+/*.no-touchevents {
+  @media all and (orientation: portrait) {
+
+    .imh__trigger { display: none; }
+
+    .sonata-media-gallery-media-list {
+      height: auto;
+    }
+
+    .sonata-media-gallery-media-item {
+      height: auto;
+      width: 33.33%;
+
+      &.is-expanded {
+        height: auto;
+        width: 66.66%;
+
+        .media-object {
+          height: auto;
+          width: 100%;
+        }
+      }
+    }
+
+    .media-object {
+      height: auto;
+      width: 100%;
+    }
+
+    .imh__scrollbar {
+      display: none;
+    }
+  }
+}*/
+
+.touchevents {
+  /* Galaxy Tab 10.1 ----------- */
+
+  /* Portrait */
+  @media only screen and (max-width: 800px) and (max-aspect-ratio: 13/9) { //bugfix aspect ratio android = orientation: portrait
+
+    .imh__trigger {
+      display: none;
+    }
+
+    /*.imh-content {
+      height: calc(100% - 200px);
+    }*/
+
+    .sonata-media-gallery-media-list {
+      height: auto;
+    }
+
+    .sonata-media-gallery-media-item {
+      width: 33.33%;
+      height: auto;
+
+      &.is-expanded {
+        width: auto;
+        height: auto;
+
+        .media-object {
+          height: auto;
+          width: auto;
+          max-width: 100%;
+        }
+      }
+    }
+
+    .media-object {
+      height: auto;
+      width: 100%;
+    }
+
+    .imh__scrollbar {
+      top: 0;
+      right: -20px;
+      bottom: inherit;
+      left: inherit;
+      width: 5px;
+      height: 100%;
+
+      .handle {
+        width: 100%;
+        height: 100px; /* overriden if dynamicHandle: 1 */
+
+        .mousearea {
+          position: absolute;
+          top: 0;
+          left: -12px;
+          width: 25px;
+          height: 100%;
+        }
+      }
+    }
+  }
+
+  /* Landscape */
+  /*@media only screen and (max-width: 1280px) and (min-aspect-ratio: 13/9) { //bugfix aspect ratio android = orientation: landscape
+
+    .sonata-media-gallery-media-list {
+      height: 100%;
+    }
+
+    .sonata-media-gallery-media-item {
+      width: auto;
+      height: 50%;
+
+      !*&.is-expanded {
+        height: 100%;
+        width: auto;
+
+        .media-object {
+          height: 100%;
+          max-height: 100%;
+          width: auto;
+        }
+      }*!
+    }
+
+    .media-object {
+      height: 100%;
+      width: auto;
+    }
+  }*/
+}

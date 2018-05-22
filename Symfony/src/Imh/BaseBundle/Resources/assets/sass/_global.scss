@@ -1,0 +1,135 @@
+// IMH
+//============================================
+
+.helper-size-extralarge { font-size: 35px; }
+.helper-size-large      { font-size: 32px; }
+.helper-size-medium     { font-size: 16px; }
+.helper-size-small      { font-size: 14px; }
+.helper-size-extrasmall { font-size: 10px; }
+
+> p {
+  margin: 0;
+  padding-bottom: 15px;
+  border-bottom: 1px solid $color-grey-medium;
+}
+
+.imh__bkg-image {
+  position: absolute;
+  top: 0;
+  left: 120px;
+  width: 100%;
+  z-index: -1;
+}
+
+.imh-container-fluid {
+  overflow: hidden;
+}
+
+.imh-content {
+  position: relative;
+  padding-top: 60px;
+}
+
+.imh-container {
+  position: relative;
+  top: -34px;
+  z-index: 1;
+}
+
+.imh-container--wrapper {
+  @include make-row();
+  border-top: none;
+  padding: 0;
+  background-color: white;
+  position: relative;
+}
+
+.imh-container--shadows:after,
+.imh-container--shadows:before {
+  content: '';
+  position: absolute;
+  top: -97px;
+  width: 5px;
+  height: 400px;
+  z-index: -10;
+  display: none;
+}
+
+.imh-container--shadows:before {
+  left: 11px;
+  box-shadow: -10px 0 4px $color-grey-ultralight;
+  transform: rotate(-1deg);
+}
+
+.imh-container--shadows:after {
+  right: 11px;
+  box-shadow: 10px 0 4px $color-grey-ultralight;
+  transform: rotate(1deg);
+}
+
+.empty {
+  width: 0;
+  height: 0;
+}
+
+.lazy {
+  display: none;
+}
+
+%pseudo-vertical-align {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  width: 1px;
+  height: 100%;
+}
+
+// SVG icons
+// ==================================================
+
+.svg {
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+
+.icon {
+  display: inline-block;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+// Media queries
+// ==================================================
+
+@media (min-width: $screen-sm-min) {
+
+  .imh-container--wrapper {
+    border-top: 34px solid white;
+    padding: 26px 0 45px;
+  }
+
+  .imh-content {
+    padding-top: 0;
+  }
+
+  .imh-container--shadows:after,
+  .imh-container--shadows:before {
+    display: block;
+  }
+}
+
+@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+  .imh__bkg-image { left: 0; }
+}
+
+@media (min-width: $screen-md-min) {
+  .imh-container {
+    width: 980px;
+  }
+}
+
+@media (max-width: $screen-md-max) {
+  .imh__bkg-image { display: none !important; }
+}
