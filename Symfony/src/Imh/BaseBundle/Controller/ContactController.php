@@ -7,6 +7,14 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
 class ContactController extends Controller
 {
+    public function detectDevice()
+    {
+        $mobileDetector = $this->get('mobile_detect.mobile_detector');
+        $touchDevice = $mobileDetector->isMobile() || $mobileDetector->isTablet();
+
+        return $touchDevice;
+    }
+
     public function indexAction(Request $request)
     {
         $contactFormType = $this->get('imh_base.form.type.contact');
@@ -46,7 +54,8 @@ class ContactController extends Controller
         }
 
         return $this->render('ImhBaseBundle:Page:contact.html.twig', array(
-            'form' => $form->createView()
+            'form' => $form->createView(),
+            'isTouchDevice' => $this->detectDevice()
         ));
     }
 }
