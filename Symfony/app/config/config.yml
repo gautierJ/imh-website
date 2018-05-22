@@ -32,6 +32,10 @@ twig:
     debug:            %kernel.debug%
     strict_variables: %kernel.debug%
 
+# FOSJsRouting Configuration
+fos_js_routing:
+    routes_to_expose: [ imh_base_biography ]
+
 # Assetic Configuration
 assetic:
     debug:          %kernel.debug%
@@ -40,11 +44,16 @@ assetic:
     ruby: %ruby.bin%
     filters:
         cssrewrite: ~
-#        sass:
-#            bin: %sass.bin%
+        sass:
+            bin: %sass.bin%
         compass:
             bin: %compass.bin%
             cache_location: %kernel.cache_dir%
+            load_paths:
+                - "%kernel.root_dir%/../src/Imh/BaseBundle/Resources/assets/sass"
+                - "%kernel.root_dir%/../src/Imh/BaseBundle/Resources/public/bower_components"
+            apply_to: ".(_scss|sass)$"
+
 #        yui_css:
 #            jar: "%kernel.root_dir%/Resources/java/yuicompressor.jar"
 #        yui_js:
@@ -69,7 +78,7 @@ doctrine:
         entity_managers:
             default:
                 auto_mapping: true
-#                mappings:
+                mappings:
 #                    ApplicationSonataMediaBundle: ~
 #                    SonataMediaBundle: ~
 #                    ApplicationSonataClassificationBundle: ~
@@ -131,10 +140,26 @@ sonata_media:
                 - sonata.media.provider.custom
 
             formats:
-                small:         { width: 150, height: 84, constraint: false, quality: 100 } # 16/9
-                big:           { width: 640, height: 360, constraint: false, quality: 100 } # 16/9
-                gallery_small: { height: 600, quality: 100 }
-                gallery_popin: { width: 800, quality: 100 }
+                small:           { width: 300, height: 168, constraint: false, quality: 100 } # ~16/9
+                big:             { width: 640, height: 360, constraint: false, quality: 100 } # 16/9, constraint: false if width or height should not automatically be calculated
+                gallery_mobile:  { width: 580, quality: 100 }
+                gallery_desktop: { height: 1000, quality: 100 }
+
+        sonata_collection:
+            providers:
+              - sonata.media.provider.image
+
+            formats:
+                preview: { width: 100, quality: 100}
+                wide:    { width: 820, quality: 100}
+
+        sonata_category:
+            providers:
+              - sonata.media.provider.image
+
+            formats:
+                preview: { width: 100, quality: 100}
+                wide:    { width: 820, quality: 100}
 
     cdn:
         server:
@@ -198,6 +223,8 @@ sonata_classification:
         tag:          Application\Sonata\ClassificationBundle\Entity\Tag
         category:     Application\Sonata\ClassificationBundle\Entity\Category
         collection:   Application\Sonata\ClassificationBundle\Entity\Collection
+        #media:        Application\Sonata\MediaBundle\Entity\Collection
+        context:      Application\Sonata\ClassificationBundle\Entity\Context
 
     admin:
         tag:
@@ -206,10 +233,14 @@ sonata_classification:
             translation:  SonataClassificationBundle
         category:
             class:        Sonata\ClassificationBundle\Admin\CategoryAdmin
-            controller:   SonataAdminBundle:CRUD
+            controller:   SonataClassificationBundle:CategoryAdmin
             translation:  SonataClassificationBundle
         collection:
             class:        Sonata\ClassificationBundle\Admin\CollectionAdmin
+            controller:   SonataAdminBundle:CRUD
+            translation:  SonataClassificationBundle
+        context:
+            class:        Sonata\ClassificationBundle\Admin\ContextAdmin
             controller:   SonataAdminBundle:CRUD
             translation:  SonataClassificationBundle
 
@@ -247,3 +278,34 @@ liip_imagine:
 knp_menu:
     twig:
         template: ImhBaseBundle:Menu:knp_menu.html.twig
+
+mobile_detect:
+    redirect:
+        full:
+            is_enabled: false           # default false
+            host: http://site.com       # with scheme (http|https), default null, url validate
+            status_code: 301            # default 302
+            action: redirect            # redirect, no_redirect, redirect_without_path
+        mobile:
+            is_enabled: false           # default false
+            host: http://m.site.com     # with scheme (http|https), default null, url validate
+            status_code: 301            # default 302
+            action: redirect            # redirect, no_redirect, redirect_without_path
+        tablet:
+            is_enabled: false           # default false
+            host: http://t.site.com     # with scheme (http|https), default null, url validate
+            status_code: 301            # default 302
+            action: redirect            # redirect, no_redirect, redirect_without_path
+        detect_tablet_as_mobile: false  # default false
+    switch_device_view:
+        save_referer_path: true         # default true
+                                        # true  redirectUrl = http://site.com/current/path?currentQuery=string
+                                        # false redirectUrl = http://site.com
+    service:
+        mobile_detector: mobile_detect.mobile_detector.default
+
+    cookie_key: "device_view"                     # default
+    switch_param: "device_view"                   # default
+    device_view_class: "SunCat\MobileDetectBundle\Helper\DeviceView"
+    request_listener_class: "SunCat\MobileDetectBundle\EventListener\RequestListener"
+    extension_class: "SunCat\MobileDetectBundle\Twig\Extension\MobileDetectExtension"
