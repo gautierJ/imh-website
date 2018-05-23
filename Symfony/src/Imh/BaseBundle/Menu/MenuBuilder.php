@@ -44,7 +44,7 @@ class MenuBuilder extends ContainerAware
     {
         $menu = $this->factory->createItem('root');
 
-        $menu->addChild('imh.base.menu.home', array('route' => 'imh_base_homepage'))->setExtra('translation_domain', 'messages')->setAttribute('data-icon', 'fa fa-home fa-2x');;
+        $menu->addChild('imh.base.menu.home', array('route' => 'imh_base_homepage'))->setExtra('translation_domain', 'messages')->setAttribute('data-icon', 'fa fa-home fa-2x');
         $menu->addChild('imh.base.menu.biography', array('route' => 'imh_base_biography'))->setExtra('translation_domain', 'messages');
 //        $menu->addChild('Events', array('route' => 'imh_base_events'));
         $menu->addChild('imh.base.menu.repertoire', array('route' => 'imh_base_repertoire'))->setExtra('translation_domain', 'messages');
@@ -62,10 +62,14 @@ class MenuBuilder extends ContainerAware
         $statement->execute();
         $results = $statement->fetchAll();
 
-        $menu->addChild('imh.base.menu.gallery', array(
-            'route' => 'sonata_media_gallery_view',
-            'routeParameters' => array('id' => $results[0]['id']) // Shows first gallery
-        ))->setExtra('translation_domain', 'messages');
+        $errors = array_filter($results);
+
+        if(!empty($errors)) { // if there is a gallery we show the menu
+            $menu->addChild('imh.base.menu.gallery', array(
+                'route' => 'sonata_media_gallery_view',
+                'routeParameters' => array('id' => $results[0]['id']) // Shows first gallery
+            ))->setExtra('translation_domain', 'messages');
+        }
 
         $request_id = $request->attributes->get('id');
         $routeName = $request->get('_route');

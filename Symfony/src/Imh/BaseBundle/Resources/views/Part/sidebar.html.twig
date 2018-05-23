@@ -1,22 +1,46 @@
-<aside id="sidebar-main">
-    {#<div class="block-triangle"></div>#}
-    {% block menu_navigation %}
-        <div class="navigation-menu">
-            <h4 class="title">
-                <i class="fa fa-dot-circle-o" aria-hidden="true"></i>
-                {{ 'sonata.media.gallery.menu.title_1'|trans }}
-            </h4>
-            {{ knp_menu_render('main', {'currentAsLink':false}) }}
-        </div>
-    {% endblock %}
+<aside class="imh-sidebar" data-sidebar>
 
-    {% block menu_gallery %}
-        <div class="navigation-menu gallery-menu">
-            <h4 class="title">
-                <i class="fa fa-dot-circle-o" aria-hidden="true"></i>
-                {{ 'sonata.media.gallery.menu.title_2'|trans }}
-            </h4>
-            {{ knp_menu_render('gallery', {'currentAsLink':false, 'allow_safe_labels': true}) }}
-        </div>
-    {% endblock %}
+    {% block menu_display '' %}
+
+    {% spaceless %}
+    <div class="imh-sidebar__verticalcenter clearfix">
+        {% block menu_navigation %}
+            <div class="imh__navigation-menu">
+                <h3 class="imh__navigation-menu-title text-uppercase">
+                    {{ 'sonata.media.gallery.menu.title_1'|trans }}
+                </h3>
+                {{ knp_menu_render('main', {'currentAsLink': false}) }}
+            </div>
+        {% endblock %}
+
+        {% block menu_gallery %}
+            <div class="imh__navigation-menu imh__gallery-menu">
+                <h3 class="imh__navigation-menu-title text-uppercase">
+                    {{ 'sonata.media.gallery.menu.title_2'|trans }}
+                </h3>
+                {{ knp_menu_render('gallery', {'currentAsLink': false, 'allow_safe_labels': true}) }}
+            </div>
+        {% endblock %}
+
+        {% block menu_social %}
+            <div class="imh__navigation-menu-social">
+                <h3 class="imh__navigation-menu-title text-uppercase">
+                    {{ 'sonata.media.gallery.menu.title_3'|trans }}
+                </h3>
+                <span class="fa-stack fa-2x">
+                    <a class="icon fbshare" href="{{ url('sonata_media_gallery_view', {'id': app.request.get('id')} ) }}">
+                        <i class="fa fa-circle fa-inverse fa-stack-2x"></i>
+                        <i class="fa fa-facebook fa-lg fa-stack-1x" aria-hidden="true"></i>
+                    </a>
+                </span>
+                <span class="fa-stack fa-2x">
+                    <a class="icon twitter popup" href="http://twitter.com/share?url={{ url('sonata_media_gallery_view', {'id': app.request.get('id')} ) }}">
+                        <i class="fa fa-circle fa-inverse fa-stack-2x"></i>
+                        <i class="fa fa-twitter fa-lg fa-stack-1x" aria-hidden="true"></i>
+                    </a>
+                </span>
+            </div>
+        {% endblock %}
+    </div>
+    {% endspaceless %}
 </aside>

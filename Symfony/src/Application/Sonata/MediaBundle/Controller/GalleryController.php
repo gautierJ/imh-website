@@ -8,6 +8,17 @@ use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 class GalleryController extends Controller
 {
     /**
+     * @return boolean $touchDevice
+     */
+    public function detectDevice()
+    {
+        $mobileDetector = $this->get('mobile_detect.mobile_detector');
+        $touchDevice = $mobileDetector->isMobile() || $mobileDetector->isTablet();
+
+        return $touchDevice;
+    }
+
+    /**
      * @return \Symfony\Bundle\FrameworkBundle\Controller\Response
      */
     public function indexAction()
@@ -17,7 +28,7 @@ class GalleryController extends Controller
         ));
 
         return $this->render('ApplicationSonataMediaBundle:Gallery:index.html.twig', array(
-            'galleries'   => $galleries,
+            'galleries' => $galleries
         ));
     }
 
@@ -39,7 +50,8 @@ class GalleryController extends Controller
         }
 
         return $this->render('ApplicationSonataMediaBundle:Gallery:view.html.twig', array(
-            'gallery'   => $gallery,
+            'gallery'       => $gallery,
+            'isTouchDevice' => $this->detectDevice()
         ));
     }
 }

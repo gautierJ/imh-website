@@ -1,0 +1,21 @@
+<button class="imh__media-gallery-button imh__media-gallery-button--prev" data-prev>
+    <i class="fa fa-angle-left"></i>
+</button>
+
+<button class="imh__media-gallery-button imh__media-gallery-button--next" data-next>
+    <i class="fa fa-angle-right"></i>
+</button>
+
+{% spaceless %}
+    <div class="imh__media-gallery-frame frame" data-frame>
+        <ul class="imh__media-gallery-list slidee">
+            {% include 'ApplicationSonataMediaBundle:Media:thumbnail_list.html.twig' %}
+        </ul>
+    </div>
+{% endspaceless %}
+
+<div class="imh__scrollbar" data-scrollbar>
+    <div class="handle">
+        <div class="mousearea"></div>
+    </div>
+</div>

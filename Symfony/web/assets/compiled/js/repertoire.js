@@ -58,9 +58,9 @@
 
     $.fn.contentHeightAdjust = function () {
         var cssClasses = {
-                header: '#header',
-                content: '#content',
-                footer : '#footer'
+                header: 'header',
+                content: '.imh-content',
+                footer : 'footer'
             },
         hh = $(cssClasses.header).outerHeight(),
         ch = $(cssClasses.content).outerHeight(),

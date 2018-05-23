@@ -1,5 +1,4 @@
-@import "../../../../../../Imh/BaseBundle/Resources/assets/sass/variables";
-@import "../../../../../../Imh/BaseBundle/Resources/assets/sass/mixins";
+@import "app";
 
 .top-page {
   text-align: center;
@@ -16,7 +15,7 @@
     height: 1px;
     left: 50%;
     position: absolute;
-    @include transition(all, 0.3s, ease, 0s);
+    @include transition(all 0.3s ease 0s);
     width: 0;
   }
 
@@ -80,7 +79,7 @@
     margin: 0 auto;
 
     .fos_comment_comment_form_holder {
-      background-color: $color-white;
+      background-color: white;
       border: 1px solid $color-grey-light;
       padding: 23px;
 
@@ -100,13 +99,13 @@
       width: 100%;
 
       a {
-        background-color: $color-white;
+        background-color: white;
         font-size: $elevenpx;
         color: $color-grey-medium;
         padding: 5px 15px;
         border: 1px solid $color-grey-light;
         display: inline-block;
-        @include transition(all, 0.2s, ease, 0s);
+        @include transition(all 0.2s ease 0s);
 
         &:hover {
           border: 1px solid $color-grey-medium;

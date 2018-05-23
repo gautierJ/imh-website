@@ -5,6 +5,7 @@ sonata:
       menu:
         title_1:  'Menu'
         title_2:  'Gallery'
+        title_3:  'Share'
     video:
       page_title: 'Videos | Ionella Marinutsa'
       display:    'Display'
@@ -14,10 +15,6 @@ sonata:
         Total number <br> of views
       share: >
         Share <br> the video :
-      play:       'Play'
-      pause:      'Pause'
-      volume:     'Volume'
-      fullscreen: 'Fullscreen'
-      views:      'views'
+      views:      'Views'
 
 
