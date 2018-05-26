@@ -5,3 +5,29 @@ out
 gen
 
 
+Supprimerait app/cache/
+Supprimerait app/logs/
+Supprimerait src/Application/Sonata/ClassificationBundle/Command/
+Supprimerait src/Application/Sonata/ClassificationBundle/Controller/
+Supprimerait src/Application/Sonata/ClassificationBundle/DependencyInjection/
+Supprimerait src/Application/Sonata/ClassificationBundle/PHPCR/
+Supprimerait src/Application/Sonata/ClassificationBundle/Resources/config/routing/
+Supprimerait src/Application/Sonata/ClassificationBundle/Resources/views/
+Supprimerait src/Application/Sonata/CommentBundle/Command/
+Supprimerait src/Application/Sonata/CommentBundle/Controller/
+Supprimerait src/Application/Sonata/CommentBundle/DependencyInjection/
+Supprimerait src/Application/Sonata/CommentBundle/PHPCR/
+Supprimerait src/Application/Sonata/CommentBundle/Resources/config/doctrine/
+Supprimerait src/Application/Sonata/CommentBundle/Resources/config/routing/
+Supprimerait src/Application/Sonata/MediaBundle/Command/
+Supprimerait src/Application/Sonata/MediaBundle/DependencyInjection/
+Supprimerait src/Application/Sonata/UserBundle/Command/
+Supprimerait src/Application/Sonata/UserBundle/Controller/
+Supprimerait src/Application/Sonata/UserBundle/DependencyInjection/
+Supprimerait src/Application/Sonata/UserBundle/PHPCR/
+Supprimerait src/Application/Sonata/UserBundle/Resources/config/routing/
+Supprimerait src/Application/Sonata/UserBundle/Resources/views/
+Supprimerait src/Imh/BaseBundle/Resources/assets/sass/objects/
+Supprimerait src/Imh/BaseBundle/Resources/public/css/
+Supprimerait src/Imh/BaseBundle/Resources/public/js/
+Supprimerait web/assets/vendor/

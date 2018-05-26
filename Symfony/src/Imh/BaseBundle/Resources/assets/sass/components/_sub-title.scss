@@ -2,7 +2,7 @@
   font-family: 'ethos_regular_italic', $font-fallback;
   font-size: $sixteenpx;
   color: $color-grey-dark;
-  margin-top: 20px;
+  margin-bottom: 0;
   letter-spacing: 0.04em;
 }
 
@@ -10,6 +10,5 @@
 
   .c-sub-title {
     font-size: $sixteenpx;
-    margin-top: 30px;
   }
 }

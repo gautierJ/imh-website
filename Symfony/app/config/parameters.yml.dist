@@ -14,8 +14,8 @@ parameters:
     locale:            en
     secret:            ThisTokenIsNotSoSecretChangeIt
 
-    sass.bin:          /usr/bin/sass
-    compass.bin:       /usr/bin/compass
     ruby.bin:          /usr/bin/ruby
+    compass.bin:       /usr/local/bin/compass
+    sass.bin:          /usr/local/bin/sass
 
-    contact_email: ~
+    contact_email:     ~
